@@ -1,7 +1,7 @@
 <cms path="/col2" type="html" locale="en_US" host="liftweb.net">
   <content>
     <div id="right">
-      <h1>Latest Happenings</h1>
+      <h2>Latest Happenings</h2>
       
       <div class="cols2">
 	<lift:subs type="happening">
