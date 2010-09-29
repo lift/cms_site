@@ -1,0 +1,78 @@
+<cms path="/index" serve="true" type="html" locale="en_US" host="liftweb.net">
+<tag name="menu" value="Home"/>
+<tag name="order" value="1"/>
+<content>
+  <lift:surround with="default" at="content" quotes="true">
+    <head>
+      <title>Lift Web Framework :: Home</title>
+    </head>
+
+    <div class="box-gradient">
+      <h1><lift:a name="getting_started">Taking Off</lift:a></h1>
+      Get started with Lift.  Build
+      your first interactive Lift-powered
+      app.
+    </div>
+    
+    <div class="box-gradient">
+      <h1><lift:a name="community">Flying in Formation</lift:a></h1>
+      Join the warm, welcoming Lift community, ask questions,
+      suggest features, have fun!
+    </div>
+
+    <div class="box-gradient">
+      <h1><lift:a name="team">Team</lift:a></h1>
+      Learn about the Lift team
+    </div>
+    
+    <div class="box-gradient">
+      <h1><a href="http://www.assembla.com/wiki/show/liftweb">Wiki</a></h1>
+      Learn and share information about Lift on our wiki
+    </div>
+    
+    <!--
+    <div class="box-gradient">
+      <h1><lift:a name="stunts">Stunt Flying</lift:a></h1>
+      FIXME
+    </div>
+    
+    <div class="box-gradient">
+      <h1><lift:a name="commercial">Flying Commercial</lift:a></h1>
+      Get commercial support for you Lift development to
+      keep your Lift project on track.
+    </div>
+    -->
+    
+    <div class="clear"></div>
+    
+    <div id="logo-container">
+      <div class="logo"><a href="http://foursquare.com"><img src="http://static.liftweb.com/logo-foursquare.gif" alt="" /></a></div>
+      <div class="logo"><a href="http://snapsort.com"><img src="http://static.liftweb.com/logo-snapsort.gif" alt="" /></a></div>
+      <div class="logo"><a href="http://innovationgames.com"><img src="http://static.liftweb.com/logo-innovation.gif" alt="" /></a></div>
+      <div class="logo" style="margin-right: 0px;"><a href="http://www.novell.com/products/pulse/"><img src="http://static.liftweb.com/logo-novell.gif" alt="" /></a></div>
+    </div><!--logo-container-->
+    
+    <div id="left">
+      <h1>What is Lift?</h1>
+      <p>Lift is an expressive and elegant framework for writing web applications.  Lift applications are:</p>
+      <ul>
+	<li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
+	<li>Developer centeric -- Lift apps are fast to build, concise and easy to maintain</li>
+	<li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
+	<li>Interactive like a desktop app -- Lift's Comet support is unparalled and Lift's ajax support is super-easy and very secure</li>
+      </ul>
+
+      <p>Read an <lift:a name="lift_overview">overview</lift:a> of how Lift achieves these important goals.</p>
+      
+      <p>Lift open source software licensed under an Apache 2.0 license.</p>
+      
+      <p><a href="http://demo.liftweb.net">See a Demo</a></p>
+      
+      <p>Because Lift applications are written in Scala, an elegant JVM language, you can still use your favorite Java libraries and deploy to your favorite Servlet Container and app server. Use the code you've already written and deploy to the container you've already configured!</p>
+      
+      <div class="clear"></div>
+      
+    </div><!--left-->
+  </lift:surround>
+</content>
+</cms>

@@ -1,0 +1,171 @@
+<cms path="/10_release" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2009/02/26">
+  <tag name="sub" value="happening">
+    Lift 1.0 Released!
+  </tag>
+  <tag name="desc">
+    2009/02/26 - After months of development, we're proud to announce the release of Lift 1.0
+  </tag>
+  <content>
+    <lift:surround with="default" at="content" >
+      <head>
+	<title>Lift Web Framework :: 1.0 Release</title>
+      </head>
+      
+      <div id="left">
+	<p>
+	  <b>Hey
+	    Web Developer – Need a Lift
+	    (1.0)? </b>
+	</p>
+	<p >
+	  <br />
+	</p>
+	<p align="center">
+	  <i>Promising
+	    New Web Framework Now
+	    Available for Download; Developers Applaud Framework’s ‘Conciseness
+	    of Ruby with the Compile Times Performance of Java’</i></p>
+	<p>
+	  <br />
+	</p>
+	<p>
+	  <b>San
+	    Francisco–
+	    February 26, 2009 –</b>
+	  On the eve of the <u><a href="http://liftweb.net/"></a></u>
+	  Project’s second anniversary, the creators and early adopters of
+	  the Scala-based open source web framework toasted beers and heavily
+	  caffeinated beverages across the globe as they made version 1.0
+	  available for download (web link here)at http://liftweb.net.</p>
+	<p >
+	  <br />
+	</p>
+	<p >
+	  “Each
+	  new major era of software development began with a problem that
+	  traditional languages and design patterns could not solve,” said
+	  David Pollak, creator of Lift.  “If the current technical
+	  challenges of Facebook, Twitter and massive multi-player online games
+	  are harbingers, it’s pretty clear that it’s time again for a new
+	  programming language and a new development framework to foster
+	  efficient delivery of a whole new generation of applications and web
+	  services.  Today, we’re here to say that Scala and Lift are the new
+	  guard, built specifically for the future challenges of web
+	  development.”</p>
+	<p>
+	  <br />
+	</p>
+	<p>
+	  While
+	  Lift has
+	  been too nascent for the mainstream thus far, it has quietly become
+	  indispensable for the developers of the next generation of consumer
+	  web and enterprise development projects that involve highly
+	  interactive web sites.  To date, more than a dozen developers are
+	  working on the open-source project across Asia, Europe and the United
+	  States and there are approximately 20 applications of Lift in
+	  commercial production including <u><a CLASS="western" href="http://buyafeature.com/">Buy
+	      a Feature</a></u>
+	  (http://buyafeature.com).</p>
+	<p>
+	  <br />
+	</p>
+	<p>
+	  “Lift's
+	  excellent 'Comet –made- easy' philosophy made it an absolute
+	  no-brainer as the choice of framework for the Apache ESME project,”
+	  said Darren Hauge, SAP Mentor and ESME Team Lead.  “Additionally,
+	  the fact that Lift-based applications run unchanged on the SAP's
+	  NetWeaver CE Java application server makes an intriguing approach for
+	  enterprise applications in the SAP world.”</p>
+	<p>
+	  <br />
+	</p>
+	<p >
+	  Mr.
+	  Hauge, as well as many
+	  other developers, have
+	  realized the following benefits:</p>
+	<p>
+	  <br />
+	</p>
+	<ul>
+	  <li><p>
+	      Lift
+	      is a
+	      faster way to build multi-person, highly interactive web sites,
+	      fully deployable on J2EE stack</p>
+	  </li>
+
+	  <li>
+	    <p>
+	      Superior
+	      development and runtime performance
+	      and scalability 
+	    </p>
+	  </li>
+	  
+	  <li><p>
+	      Lift
+	      applications
+	      are more secure than those built with other popular frameworks
+	    </p>
+	  </li>
+
+	  <li>
+	    <p>
+	      Lift
+	      works
+	      with existing Java libraries and tools
+	    </p>
+	  </li>
+
+	  <li>
+	    <p>
+	      Real
+	      time multiperson interactive web sites run better on Lift than
+	      anything else
+	    </p>
+	  </li>
+	
+	  <li>
+	    <p>
+	      Scala
+	      (ruby+Java greatness in one),
+	      plus smart folks in the open source project
+	    </p>
+	  </li>
+	
+	  <li>
+	    <p>
+	      Crazy
+	      J2EE-class
+	      scalability, don't without having to give up runtime for
+	      development performance
+	    </p>
+	  </li>
+	</ul>
+	
+	<p>
+	  Developers
+	  can prototype
+	  applicationss in a matter of days in a small community (much like
+	  Rails)
+	</p>
+	
+	<p>
+	  <br />
+	</p>
+	
+	<p>“The
+	  interest and excitement about Scala continues to grow. &nbsp;It’s
+	  great to see Lift reaching the 1.0 milestone as this is a proof point
+	  for the maturity of Scala as a software platform,” said Martin
+	  Odersky, ACM Fellow, and father of Scala.</p>
+	<p><br /><br />
+	</p>
+      </div><!--left-->
+    </lift:surround>
+  </content>
+</cms>

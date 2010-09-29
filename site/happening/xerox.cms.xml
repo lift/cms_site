@@ -1,0 +1,13 @@
+<cms path="/xerox" serve="true" type="html" locale="en_US" 
+     valid_from="2009/04/30" host="liftweb.net">
+  <tag name="redirect" value="http://www.scala-lang.org/node/2766"/>
+  <tag name="sub" value="happening">
+    Xerox uses Lift &amp; Scala
+  </tag>
+  <tag name="desc">
+    An interview with Tim Perrett about
+    his use of Lift and Scala at Xerox
+  </tag>
+  <content>
+  </content>
+</cms>

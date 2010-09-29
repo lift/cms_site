@@ -1,0 +1,12 @@
+<cms path="/floss" serve="true" type="html" locale="en_US" 
+     valid_from="2010/07/30" host="liftweb.net">
+  <tag name="redirect" value="http://twit.tv/floss125"/>
+  <tag name="sub" value="happening">
+    FLOSS Interview
+  </tag>
+  <tag name="desc">
+    Lift's David Pollak interviewed on Twit.tv FLOSS channel 
+  </tag>
+  <content>
+  </content>
+</cms>

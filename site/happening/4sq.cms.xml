@@ -1,0 +1,12 @@
+<cms path="/4sq" serve="true" type="html" locale="en_US" 
+     valid_from="2009/05/30" host="liftweb.net">
+  <tag name="redirect" value="http://www.scala-lang.org/node/5130"/>
+  <tag name="sub" value="happening">
+    Foursquare checks in on Lift
+  </tag>
+  <tag name="desc">
+    Learn about how Foursquare uses Lift
+  </tag>
+  <content>
+  </content>
+</cms>

@@ -1,0 +1,16 @@
+<cms path="/tickets" serve="true" type="html" locale="en_US" host="liftweb.net">
+  <tag name="redirect" value="http://ticket.liftweb.net"/>
+  <tag name="name" value="tickets"/>
+  <tag name="menu" value="Tickets"/>
+  <tag name="order" value="9"/>
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+	<title>Lift Web Framework :: Tickets</title>
+      </head>
+      
+      <div id="left">
+      </div> <!-- left -->
+    </lift:surround>
+  </content>
+</cms>

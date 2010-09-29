@@ -1,0 +1,95 @@
+<cms path="/templates-hidden/default" serve="false" type="html" locale="en_US" host="liftweb.net">
+<content>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en-US" />
+<meta http-equiv="imagetoolbar" content="no" />
+
+<link rel="stylesheet" href="/style/style.css" type="text/css" media="screen" />
+<!--[if lte IE 6]>
+
+    <link rel="stylesheet" type="text/css" href="/style/style-ie6.css" />
+<![endif]-->
+<!--[if lte IE 7]>
+
+    <link rel="stylesheet" type="text/css" href="/style/style-ie7.css" />
+<![endif]-->
+
+<script type="text/javascript" src="http://www.google-analytics.com/ga.js">
+</script>
+</head>
+
+<body id="back">
+  <div id="wrapper">	
+    <div id="container-bg">
+      <div id="header">
+ 	
+	<div id="hdr"><a href="/" class="header-home"><h1>Lift</h1></a></div>
+	<div class="top-btn"><a href="http://demo.liftweb.net">Demo</a></div>
+	<!--menu-page-->	
+	<div id="main-menu-page">
+	  <ul>
+	    <lift:xmenu active_class="active">
+	      <li menu:class="active"><a menu:href="index"><span><menu:item/></span></a></li>
+	    </lift:xmenu>
+	  </ul>
+	</div><!--menu-page-->		
+	
+	
+	<lift:if toTest="quotes">
+	  <div id="hdr-2">
+	    <lift:choose>
+	      <lift:embed what="/quotes/novell"/>
+	      <lift:embed what="/quotes/luke"/>
+	      <lift:embed what="/quotes/lukasz"/>
+	      <lift:embed what="/quotes/ebay"/>
+	      <lift:embed what="/quotes/martin"/>
+	      <lift:embed what="/quotes/esme"/>
+	      <lift:embed what="/quotes/tyler"/>
+	      <lift:embed what="/quotes/foursquare"/>
+	    </lift:choose>
+	  </div><!--hdr-2-->
+	</lift:if>
+
+      </div>
+
+      <!--// ENDS HEADER -->
+
+
+
+      <div id="content">
+	<lift:bind name="content" />
+	<lift:embed what="col2"/> 
+      </div><!--content-->
+
+      
+    </div><!--// ENDS CONTAINER-BG -->
+    
+    <div id="footer">
+      <div class="ftr-links">
+	<lift:xmenu active_class="active">
+	  <a menu:href="index"><menu:item/></a> &nbsp;
+	</lift:xmenu>
+      </div>
+      
+      <div class="ftr-copy">Copyright &copy; 2010 WorldWide Conferencing, LLC</div>
+      Lift performance and tuning is courtesy of <a href="http://yourkit.com">YourKit. </a><br />
+
+      Design by <a href="http://www.joyreyes.com" target="_blank">Joy Reyes</a><br />
+      Powered by <a href="http://liftweb.net">Lift</a>
+      
+    </div><!--footer-->
+  </div><!--wrapper-->
+
+   <script type="text/javascript">
+    //<![CDATA[
+      try { var pageTracker = _gat._getTracker("UA-334500-19"); pageTracker._trackPageview(); } catch(err) {}
+    //]]>
+    </script>
+
+</body>
+
+</html>
+</content>
+</cms>

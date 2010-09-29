@@ -1,0 +1,14 @@
+<cms path="/pulse" serve="true" type="html" locale="en_US" 
+     valid_from="2010/01/01" host="liftweb.net">
+  <tag name="redirect" value="http://www.scala-lang.org/node/6618"/>
+  <tag name="sub" value="happening">
+    Novell Pulse -- Lift at Heart
+  </tag>
+  <tag name="desc">
+    Learn more about how Novell uses
+    Lift to build their real-time collaboration
+    platform.
+  </tag>
+  <content>
+  </content>
+</cms>

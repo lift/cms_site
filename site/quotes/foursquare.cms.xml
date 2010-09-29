@@ -1,0 +1,12 @@
+<cms path="/quotes/foursquare" type="html" locale="en_US" host="liftweb.net">
+<content>
+  <div class="left">&ldquo;</div>
+  <div class="center">
+    <h1>
+Foursquare switched over to Scala &amp; Lift last September and we've been thrilled with the results. The ease of developing complex interactive ajax web pages enabled a very rapid port from our previous platform. In addition, the support we've gotten from David Pollak and the rest of the Lift team has been invaluable. It's clear they are very committed to making sure that production Lift deployments get all the attention they need to succeed.
+    </h1>
+    @harryh, Foursquare Engineering Tech Lead
+  </div>
+  <div class="right">&rdquo;</div>
+</content>
+</cms>

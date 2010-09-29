@@ -1,0 +1,12 @@
+<cms path="/quotes/luke" type="html" locale="en_US" host="liftweb.net">
+<content>
+  <div class="left">&ldquo;</div>
+  <div class="center">
+    <h1>
+When I decided to put Innovation Games® online, I knew that I couldn't afford a massive development effort. I needed a small, sharp team who could leverage best-in-class tools to help us solve the problems we knew that we'd have to solve in creating a new kind of collaborative gaming experience on the web. David suggested Lift and Scala and initial testing proved that we could realize the developer efficiency and backend scalability that we felt was required to efficiently support thousands of simultaneous games.
+    </h1>
+    Luke Hohmann, CEO Enthiosys 
+  </div>
+  <div class="right">&rdquo;</div>
+</content>
+</cms>

@@ -1,0 +1,9 @@
+<cms path="/style/style-ie6.css" serve="true" type="css" host="liftweb.net">
+<content>
+<![CDATA[
+#header #hdr-2 {width:992px; padding:0; }
+#home #content {position:relative; top:-20px; padding:10px 0px 20px 20px;}
+#back #content {position:relative; top:-10px; padding:10px 10px 20px 12px;}
+]]>
+</content>
+</cms>

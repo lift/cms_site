@@ -1,0 +1,45 @@
+<cms path="/col2" type="html" locale="en_US" host="liftweb.net">
+  <content>
+    <div id="right">
+      <h1>Latest Happenings</h1>
+      
+      <div class="cols2">
+	<lift:subs type="happening">
+	  <h2><a sub:href="/"><sub:title/></a></h2>
+	  <p><sub:desc/></p>
+	  <hr/>
+	</lift:subs>
+	
+      </div><!--cols2-->
+      
+      <div class="clear"></div>
+
+      <h1>
+        Lift Books
+      </h1>
+      <p>
+	The <a href="http://groups.google.com/group/the-lift-book">Lift
+	  Book</a> by Derek Chen-Becker, Tyler Weir, and Marius
+	Danciu is available as a free 
+	<a href="http://groups.google.com/group/the-lift-book/web/master.pdf">PDF</a>.
+      </p>
+
+      <p>
+	<a href="http://www.manning.com/perrett/">Lift In Action</a>
+	by Tim Perrett
+	is available via the Manning Early Access Program.
+      </p>
+
+      
+      <h1>What is Scala?</h1>
+      <p>Scala is a general purpose programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages. It is also fully interoperable with Java. </p>
+      
+      <p><a href="http://scala-lang.org">Learn more about Scala</a></p>
+      
+      <p>Because Lift applications are written in Scala, an elegant JVM language, you can still use your favorite Java libraries and deploy to your favorite Servlet Container. Use the code you've already written and deploy to the container you've already configured!</p>
+      
+      
+    </div><!--right-->
+
+  </content>
+</cms>

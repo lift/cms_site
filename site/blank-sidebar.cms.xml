@@ -1,0 +1,139 @@
+<cms path="/blank-sidebar" serve="true" type="html" locale="en_US" host="liftweb.net">
+<content>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lift WebFramework </title>
+<meta http-equiv="Content-Language" content="en-US" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+
+<meta name="keywords" content="LIFT WebFramework" lang="en-US" />
+<meta name="description" content="LIFT WebFramework" lang="en-US" />
+<meta name="copyright" content="LIFT WebFramework" lang="en-US" />
+<meta name="generator" content="" lang="en-US" />
+<meta name="author" content="LIFT WebFramework" lang="en-US" />
+<meta name="Robots" content="index,follow,noodp" />
+<link rel="stylesheet" href="/style/style.css" type="text/css" media="screen" />
+<!--[if lte IE 6]>
+
+    <link rel="stylesheet" type="text/css" href="/style/style-ie6.css" />
+<![endif]-->
+<!--[if lte IE 7]>
+
+    <link rel="stylesheet" type="text/css" href="/style/style-ie7.css" />
+<![endif]-->
+</head>
+
+<body id="back">
+
+
+		<div id="wrapper">	
+
+<div id="container-bg">
+
+<div id="header">
+ 		
+	<div id="hdr"><a href="/" class="header-home"><h1>LIFT WebFramework</h1></a></div>
+	
+	<!--menu-page-->	
+	<div id="main-menu-page">
+		<ul>
+			<li class="active"><a href="index.html"><span>home</span></a></li>
+			<li><a href="pricing.html"><span>getting started</span></a></li>
+			<li><a href="testimonials.html"><span>download API</span></a></li>
+			<li><a href="about.html"><span>documentation</span></a></li>
+			<li><a href="sample-websites.html"><span>community</span></a></li>
+			<li><a href="contact.html"><span>wiki</span></a></li>
+			<li><a href=""><span>team</span></a></li>
+		</ul>
+	</div><!--menu-page-->		
+		
+</div>
+
+<!--// ENDS HEADER -->
+
+
+
+<div id="content">
+	
+	
+	<div id="main">
+				<div class="main-box padding">
+				<h1>About Us Moo</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis iaculis velit. Nullam ultrices elementum vestibulum. Vivamus orci erat, rutrum eget viverra non, tincidunt et tortor. Etiam sed mi nec libero tristique pharetra viverra eu magna. Morbi porttitor gravida facilisis. Praesent metus diam, pulvinar a ultricies eget, accumsan in metus. Curabitur diam tortor, tincidunt iaculis ornare in, scelerisque nec neque. Mauris iaculis orci eu velit consectetur bibendum ornare dui congue. Cras convallis facilisis nisl at venenatis. Aenean convallis, risus pretium venenatis mattis, ipsum urna rhoncus tellus, eget commodo massa ipsum et purus. Pellentesque nec enim nisi, nec molestie lacus. Maecenas in malesuada mauris. Maecenas nec augue id dui pharetra dapibus sed in tortor. Nulla facilisi. Integer mollis quam eget nulla rhoncus sed tempor quam pretium. Aliquam id est id ipsum facilisis condimentum. Morbi nulla sem, molestie ut mattis vitae, feugiat mattis odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non pulvinar lorem. Vivamus ultricies vehicula convallis. </p>					
+				<p>Deget viverra non, tincidunt et tortor. Etiam sed mi nec libero tristique pharetra viverra eu magna. Morbi porttitor gravida facilisis. Praesent metus diam, pulvinar a ultricies eget, accumsan in metus. Curabitur diam tortor, tincidunt iaculis ornare in, scelerisque nec neque. Mauris iaculis orci eu velit consectetur bibendum ornare dui congue. Cras convallis facilisis nisl at venenatis. Aenean convallis, risus pretium venenatis mattis, ipsum urna rhoncus tellus, eget commodo massa ipsum et purus. Pellentesque nec enim nisi, nec molestie lacus. Maecenas in malesuada mauris. Maecenas nec augue id dui pharetra dapibus sed in tortor. Nulla facilisi. Integer mollis quam eget nulla rhoncus sed tempor quam pretium. Aliquam id est id ipsum facilisis condimentum. Morbi nulla sem, molestie ut mattis vitae, feugiat mattis odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non pulvinar lorem. Vivamus ultricies vehicula convallis. </p>					
+      	
+				
+				
+      	</div><!--main-box-->
+
+      	<div class="main-right padding">
+
+      	<h1>LATEST HAPPENINGS</h1>
+      	<p><a href="">SBT prototype for Lift 2.1-SNAPSHOT available</a><br />
+				Download tarball and zip versions</p>
+				
+				<p><a href="">Lift 2.0 Released! </a><br />
+				2010/06/30 -- Lift 2.0 is generally available today </p>
+				
+				<p><a href="">Lift's David Pollak interviewed on Twit.tv FLOSS channel </a></p>
+				
+				<p><a href="">Novell Pulse - Lift at heart</a></p>
+				
+				<p><a href="">Lift 2.0 Milestone 5 available </a><br />
+				2010/05/05 - Lift is evolving toward its 2.0 release (currently schedule for July, 2010.) Check out the latest milestone release, M5. And, yes, it's production ready.
+				</p>
+				
+				<p><a href="">Foursquare Checks in on Lift</a></p>
+
+				<p><a href="">Xerox uses Scala and Lift 
+				Lift 1.0 Released! </a><br />
+				2009/02/26 - After months of development, we're proud to announce the release of Lift 1.0.
+				</p>
+				
+				<p><a href="">Jump right in! </a><br />
+				Ramp up quickly with our Getting Started Guide 
+				</p>
+				
+				<p><a href="">Lift Book </a><br />
+				New! If you're looking for a deeper dive, have a look at the The Definitive guide to Lift book from APress. 
+				</p>
+			
+      	</div><!--main-right-->
+	</div><!--main-->
+	
+
+	
+
+</div><!--content-->
+
+
+</div><!--// ENDS CONTAINER-BG -->
+<div id="footer">
+	<div class="ftr-links">
+  <a href="">Home </a> | 
+  <a href="">Getting Started</a> | 
+  <a href="">Download  API</a> | 
+  <a href="">Documentation</a> | 
+  <a href="">Community</a> | 
+  <a href="">Wiki</a> | <a href="">Team</a>
+	</div>
+
+	<div class="ftr-copy">Copyright &copy; 2010 Lift WebFramework
+	</div>
+	Design by <a href="http://www.joyreyes.com" target="_blank">Joy Reyes</a>
+
+</div><!--footer-->
+</div><!--wrapper-->
+
+
+
+
+
+</body>
+
+</html>
+</content>
+</cms>

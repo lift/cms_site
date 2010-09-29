@@ -1,0 +1,8 @@
+<cms path="/style/style-ie7.css" serve="true" type="css" host="liftweb.net">
+<content>
+<![CDATA[
+#home #content {margin-top:30px;}
+#back #content {margin-top:10px;}
+]]>
+</content>
+</cms>

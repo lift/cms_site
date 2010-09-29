@@ -1,0 +1,117 @@
+<cms path="/20_ga" serve="true" type="html" locale="en_US" 
+     valid_from="2010/06/30" host="liftweb.net">
+<tag name="sub" value="happening">
+  <b>Lift 2.0</b> Ships!
+</tag>
+<tag name="desc">
+  2010/06/30 The Lift team is proud to announce version 2.0 of the Lift Web
+  Framework
+</tag>
+<content>
+  <lift:surround with="default" at="content" >
+    <head>
+      <title>Lift Web Framework :: 2.0 GA</title>
+    </head>
+
+    
+    <div id="left">
+      <div>
+	    <h1>Announcing Lift 2.0</h1>
+	    <p>June 30th, 2010<br />
+	    </p>
+	    <p>The <a href="http://liftweb.net">Lift</a> team and the <a href="http://groups.google.com/group/liftweb">Lift community</a> are proud to announce the availability of <a href="http://liftweb.net/download.html">Lift 2.0</a><br />
+	    </p>
+	    
+	    <p>
+	      <blockquote>"Lift is the kind of web framework that enables you as a developer to
+		concentrate on the big picture. Strong, expressive typing and
+		higher-level features like the built-in Comet support allow you to
+		focus on innovating instead of the plumbing. Building a rich, real-time
+		web application like Novell Pulse requires a framework with the power
+		of Lift under the covers."
+	      </blockquote>
+	      <span style="margin-left: 80px">- David LaPalomento, Developer, Novell</span>
+	    </p>
+
+	    <p>
+	      <blockquote>
+		"Foursquare switched over to Scala &amp; Lift last September and
+		we've been thrilled with the results.  The ease of developing complex
+		interactive ajax web pages enabled a very rapid port from our previous
+		platform.  In addition, the support we've gotten from David Pollak and
+		the rest of the Lift team has been invaluable. It's clear they are
+		very committed to making sure that production Lift deployments get all
+		the attention they need to succeed."
+	      </blockquote>
+	      <span style="margin-left: 80px">- @harryh, Foursquare Engineering Tech Lead</span>
+	    </p>
+	    
+	    <p>Lift is an elegant, expressive web framework that allows any size
+	      team build and maintain secure, highly interactive, scalable web
+	      applicationsquickly and efficiently.&nbsp; Lift is built on the  <a href="http://scala-lang.org">Scala</a> and compiles
+	      to JVM byte-code.&nbsp; Lift applications deploy as WAR files on
+	      popular application servers and web cotainers including Jetty,
+	      Glassfish and Tomcat.&nbsp; Lift applications can be monitored and
+	      managed with the same proven infrastructure used to manage and monitor
+	      any Java web application.&nbsp; Lift is open source licensed under an Apache 2.0 license.<br />
+	    </p>
+	    <h2>Lift features include:<br />
+	    </h2>
+	    <ul>
+	      <li>Community... the Lift community is 2,000 members strong, super-active and always there to help with questions</li>
+	      <li>Best Comet (server-push) support that allows the creation of dynamic application such as <a href="http://www.novell.com/products/pulse/">Novell Pulse</a></li>
+	      <li>Super simple Ajax for creating highly interactive web applications without worrying about HTTP plumbing<br />
+	      </li>
+	      <li>Secure by default... Lift apps are resistant to the OWASP top 10 vulnerabilities including XSS, XSRF, and parameter tampering<br />
+	      </li>
+	      <li>Concise and Maintainable... Lift apps typically contain fewer
+		lines of code than corresponding Rails apps, yet are type safe so that
+		many errors are flagged by the compiler<br />
+	      </li>
+	      <li>Scalable... Lift apps scale to millions of users across many servers, yet are highly efficient for single-box implementations</li>
+	      <li>Compatible... Lift apps can take advantage of any Java library as well as the growing collection of Scala libraries<br />
+	      </li>
+	    </ul>
+	    <h2>Lift 2.0's new features include:</h2>
+	    <ul>
+	      <li>NoSQL support including built-in support for MongoDB and CouchDB</li>
+	      <li>High performance JSON support including an elegant JSON DSL and bidirectional JSON &lt;-&gt; Class conversion</li>
+	      <li>Powerful, concise REST support<br />
+	      </li>
+	      <li>Support for enterprise infrastructure including JTA and LDAP</li>
+	      <li>Declarative systems for single <a href="https://liftweb.assembla.com/wiki/show/liftweb/Lift%27s_Screen">Screen</a> input and validation as well as multiple screen Wizards</li>
+	      <li>Radically
+		improved development experience including much better error messages
+		and support for dynamically changing system configuration</li>
+	      <li>Support for running Lift apps outside of a J/EE Servlet containers</li>
+	      <li>Improved Comet support including modern browser detection and better connection starvation detection</li>
+	      <li>Improved support for testing including super-concise dependency injection and run-mode detection</li>
+	      <li>Support for <a href="http://code.google.com/p/simple-build-tool/">Simple Build Tool</a></li>
+	      <li>Performance improvements</li>
+	    </ul>
+	    <h2>Lift-powered sites include:</h2>
+	    <ul>
+	      <li><a href="http://foursquare.com">Foursquare</a> -- the multi-million
+		user location based service that will soon surpass 1M+ checkins a day
+		on their Lift-powered system
+	      </li>
+	      <li><a href="http://www.novell.com/products/pulse/">Novell</a> <a href="http://www.vimeo.com/7443817">Pulse</a> -- enterprise collaboration software platform based on Google Wave<br />
+	      </li>
+	      <li><a href="http://www.xmpie.com">Xerox/XMPie</a> -- the leading provider of software for cross-media, variable data one-to-one marketing<br />
+	      </li>
+	      <li><a href="http://snapsort.com/">Snapsort</a> -- Compare and decide on cameras</li>
+	      <li><a href="http://nofouls.com/">No Fouls</a> -- Find pickup basketball games<br />
+	      </li>
+	    </ul>
+	    Please join the Lift community and help use grow Lift.&nbsp; And a
+	    super-big thanks to the 30+ Lift committers who have grown the Lift
+	    community and code-base to what it is today... and what it will be in
+	    the future!<br />
+	    <br />
+	    <br />
+	    
+      </div>
+    </div><!--left-->
+  </lift:surround>
+</content>
+</cms>

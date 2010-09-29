@@ -1,0 +1,320 @@
+<cms path="/style/style.css" serve="true" type="css" host="liftweb.net">
+<content>
+<![CDATA[
+/* BASIC STRUCTURE
+*******************************************************************************/
+body, html {
+	height: 100%;
+	}
+
+body code {
+  font-size: 14px;
+  font-family: courier, monospace;
+}
+
+body { background: #0c1943; margin: 0; padding: 0; color:#ebedf4; line-height:18px; font-size:75%; font-family: Arial, Helvetica, sans-serif; 
+/* text-align:justify;  */
+ }
+
+#container-bg { margin: 0 auto; width: 995px; }
+
+/* LINKS - DEFAULT COLORS ARE SET IN BASE.CSS, CHANGE THESE COLORS AS NEEDED.
+*******************************************************************************/
+a:link, a:visited { color: #fff; text-decoration:none; font-weight:bold; }
+a:hover { color: #ebedf4; text-decoration:underline; }
+a:focus, a:active
+{
+-moz-outline-style: none;
+outline: none;
+
+}
+
+
+/* HEADER
+*******************************************************************************/
+#home #header { margin: 0px auto; padding: 0px; height: 263px; }
+#back #header { margin: 0px auto; padding: 0px; height: 95px; }
+
+#header #hdr { float: left;  width: 185px; height:99px; margin-left:20px; }
+#header #hdr-2 {float:left; width: 975px; height:162px; background:#d8dbe0; 
+	color: #0c1943;
+		padding: 10px;
+		/* For WebKit (Safari, Google Chrome etc) */
+		background: -webkit-gradient(linear, left top, left bottom, from(#d1d5da), to(#ebecee));
+		/* For Mozilla/Gecko (Firefox etc) */
+		background: -moz-linear-gradient(top, #d1d5da, #ebecee);
+		/* For Internet Explorer 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d1d5da, endColorstr=#ebecee);
+		/* For Internet Explorer 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d1d5da, endColorstr=#ebecee)";
+	}	
+	
+	
+#hdr-2 .center {float:left; width:860px; padding:10px 25px 15px 15px; font-family:  'Myriad Pro', Arial, Verdana; color:#4b62ad; font-weight:bold; font-size:130%; line-height:120%; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: normal; 
+	line-height: normal; 
+	font-size-adjust: none; 
+	font-stretch: normal; 
+	-x-system-font: none; 
+	}
+	#hdr-2 .center h1 {color:#0c1943; font-size:110%; line-height:140%; font-weight:normal;         text-align:justify;
+ }
+#hdr-2 .left, #hdr-2 .right {float:left; width:30px; font-family:  Georgia, Arial, Verdana; color:#a0aac1; font-size:600%; margin-top:30px;}
+#hdr-2 .right {margin-top:140px; }
+	
+.header-home { display:block; background: url(http://static.liftweb.com/logo.jpg) no-repeat; height: 89px; width: 185px;}
+.header-home h1 {
+	padding-left: 30px;
+	text-indent: -9999px;
+	float:left;
+	display: inline;
+}	
+
+.header-home h1 a{
+	display: block;
+	height: 89px; width: 185px;
+}
+
+.top-btn {
+	width: 104px; 
+	float:right;
+	margin-top:20px;
+        margin-left: 10px;
+	}
+.top-btn a {
+	float:left; 
+	width:98px;
+	text-align:center;
+	color:#ebe9eb; font-weight:normal; 
+	letter-spacing:1px;
+	background:#24356d;
+	border:1px solid #485990;
+	color:#fff; 
+	font-family: 'Myriad Pro', Arial; 
+	-moz-border-radius: 8px; 
+	border-radius: 8px;
+	padding:2px; 
+	}
+
+
+/*MAIN MENU TOP
+*********************************************************************************/
+#main-menu-page {
+	float:right;
+	width:750px;
+	height:30px;
+	background:#24356d;
+	border:1px solid #485990;
+	margin-top:20px;
+}
+#main-menu-page ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+#main-menu-page li {float: left; list-style: none;  margin: 0px; padding: 5px 0 0 15px; }
+	#main-menu-page li.active a {display:block;  }
+	
+	#main-menu-page a, #main-menu-page a:link, #main-menu-page a:visited {color: #d7d9e0; font-family:'Myriad Pro', Arial; font-size:140%; text-decoration:none; font-weight:normal; }
+	#main-menu-page a:hover { color: #fff; }
+
+/* CONTENT AREA
+*******************************************************************************/
+#content {
+	float:left;
+	margin:10px auto;
+	width:962px;
+	padding:10px 10px 20px 23px;
+	background:#4b62ad;
+}
+
+
+.box-gradient {float:left; width: 208px; height:65px; margin-right:10px; 
+		background:#8296d8; border:1px solid #9bace1;
+		color: #050d29;
+		padding: 10px;
+		/* For WebKit (Safari, Google Chrome etc) */
+		background: -webkit-gradient(linear, left top, left bottom, from(#6b81c4), to(#8c9fe0));
+		/* For Mozilla/Gecko (Firefox etc) */
+		background: -moz-linear-gradient(top, #6b81c4, #8c9fe0);
+		/* For Internet Explorer 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6b81c4, endColorstr=#8c9fe0);
+		/* For Internet Explorer 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#6b81c4, endColorstr=#8c9fe0)";
+	}	
+.box-gradient h1 {
+		color: #050d29;
+		text-shadow: 1px 1px 0 #abb7e0;
+		margin-top:0px;
+		margin-bottom:2px;
+		font-size:180%;
+}
+#left {
+	float:left;
+	width: 66%;
+	margin-right:30px;
+	padding-bottom:20px;
+	
+}
+#right {
+	float:left;
+	width: 25%;
+	padding-bottom:20px;
+}
+
+.cols {
+	float:left;
+	width:96%;
+	margin-right:10px;
+	background:#7788bf;
+	padding:5px 10px 10px 10px;
+}
+.cols2 {
+	float:left;
+        width: 96%;
+	margin-right:15px;
+	background:#3d539c;
+	padding:10px;
+	text-align:left;
+}
+#main {
+	float:left;
+	width: 96%;
+	padding:0 20px;
+	
+}
+
+#back .main-box {float:left; width:620px; margin-right:30px; }
+#back .main-right {float:left;
+	width:220px;
+	margin-right:15px;
+	background:#3d539c;
+	padding:10px;
+	text-align:left; 
+	}
+.padding {padding:15px 10px 0px 10px; }
+
+/*FORM ELEMENTS
+**********************************************************************************/
+.form-container { width:620px; text-align:left; margin:20px auto; }
+
+
+label {
+	display:block;
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:3px;
+	padding-right:12px;
+	float:left;
+	font-size:140%;
+	font-family:Calibri;
+}
+
+.post-form-row2, .post-form-row3 {
+	margin:0px;
+	padding:8px
+}
+.post-form-row2 {
+	float:left;
+	
+}
+.post-form-row3 {
+	float:left;
+	
+}
+.post-form-row2 label, .post-form-row3 label  {
+	display:block;
+	float:left;
+	width:120px; 
+	
+}
+.post-form-row2 .inputBox3, .post-form-row3 .inputBox3 { float:left; background-color:#FFFFFF !important;	border:1px solid #ccc; color:#333;	letter-spacing:0px;	font-family:Arial,sans-serif;
+	font-size:12px;	width:380px;	padding: 8px 10px 5px 10px;	
+	height:24px;
+	margin-right:10px; -moz-border-radius:14px;
+-webkit-border-radius:11px;
+border-radius:14px;
+}
+.post-form-row2 textarea.inputBox3, .post-form-row3 textarea.inputBox3 { float:left; background-color:#FFFFFF !important;	border:1px solid #ccc; color:#333;	letter-spacing:0px;	font-family:Arial,sans-serif;
+	font-size:12px;	width:380px;	padding: 8px 10px 5px 10px;	margin-right:10px; 
+	height:64px;
+	margin-right:10px; -moz-border-radius:14px;
+-webkit-border-radius:11px;
+border-radius:14px;
+}
+
+.submit-btn {
+	margin-top: 20px;
+	float:right;	
+	border:none;
+	background:#0c152f;
+		/* For WebKit (Safari, Google Chrome etc) */
+		background: -webkit-gradient(linear, left top, left bottom, from(#0d17312), to(#040a1b));
+		/* For Mozilla/Gecko (Firefox etc) */
+		background: -moz-linear-gradient(top, #0d1731, #040a1b);
+		/* For Internet Explorer 5.5 - 7 */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0d1731, endColorstr=#040a1b);
+		/* For Internet Explorer 8 */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#0d1731, endColorstr=#040a1b)"; 
+	color:#edeeef; 
+	font-family: 'Myriad Pro', Arial; 
+	-moz-border-radius: 8px; 
+	border-radius: 8px;
+	margin-right:10px;
+	padding:8px 10px;
+	width:140px;
+	text-align:center;
+	text-transform: uppercase;
+	font-size:140%;
+	}
+.submit-btn a, .submit-btn a:hover {
+	color:#edeeef;
+}
+
+/* USER LOGOS
+*******************************************************************************/
+#logo-container {float:left; background:#374e97; border:1px solid #8a9bd5; width: 948px; display: block; text-align:center; padding:10px 0px; margin:0px 0px 10px 0px; }
+#logo-container .logo {float:left; width:208px; margin-right: 20px; margin-left: 10px; text-align:center; }
+
+    
+/* FOOTER
+*******************************************************************************/
+#footer{ float:left; margin: 5px auto 0;	width: 100%; height:80px; text-align:center;  }
+
+.ftr-links {line-height: 18px; color:#c7d2dc; font-size:0.9em; }
+.ftr-links a, .ftr-links a:visited, .ftr-copy a {color:#c7d2dc; }
+.ftr-links a:hover {color:#fff; text-decoration:underline;}
+.ftr-copy { text-align:center; color:#fff;}
+
+/* HEADINGS
+******************************************************************************/
+h1 { font-size: 180%; color:#fff; font-family: 'Myriad Pro', Arial, Verdana; line-height:100%;  text-align:left; }
+h2 { font-size: 160%; color:#d4d7dc; font-family:  'Myriad Pro', Arial, Verdana; padding-bottom:2px; margin-bottom:2px;  text-align:left;}
+h3 { font-size: 140%; color:#1f3476; font-family:  Arial, Verdana; padding-bottom:2px; margin-bottom:2px; }
+h4 { font-size: 140%; color:#000; }
+h5 { font-size: 100%; }
+h6 { font-size: 80%; }
+
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+	}
+img, img a {border:0px; }
+img.border {border:3px solid #fff;}
+.floatleft {float:left; margin-right:10px; }
+.floatright {float:right; margin-left:10px; }
+.clear {clear:both; height:20px; }
+.padding {padding:5px 0px 10px 10px;}
+.red {font-weight:bold; font-size:140%; color:red}
+
+
+]]>
+</content>
+</cms>

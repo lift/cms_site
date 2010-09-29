@@ -1,0 +1,23 @@
+<cms path="/api_docs" serve="true" type="html" locale="en_US" host="liftweb.net">
+  <tag name="name" value="api_docs"/>
+  <tag name="menu" value="API Docs"/>
+  <tag name="order" value="4"/>
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+	<title>Lift Web Framework :: API Documentation</title>
+      </head>
+      
+      <div id="left">
+	<h1>Lift API Docs</h1>
+	<p><a href="http://main.scala-tools.org/mvnsites/liftweb-2.1/framework/scaladocs/index.html">Lift 2.1 API documentation</a> (Note the Scala 2.7.7 docs cover all the 2.8 APIs and VScalaDoc is not yet available for Scala 2.8)</p>
+
+	<p><a href="http://scala-tools.org/mvnsites/liftweb-2.1.tar.bz2">Lift 2.1 API doc tarball</a> (Note unified ScalaDocs are coming very soon)</p>
+	
+	<p><a href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/index.html">Lift 2.0 API documentation</a></p>
+
+	<p><a href="http://scala-tools.org/mvnsites/liftweb-1.0.2/lift-webkit/scaladocs/index.html">Lift 1.0.2 WebKit API documentation</a></p>
+      </div> <!-- left -->
+    </lift:surround>
+  </content>
+</cms>
