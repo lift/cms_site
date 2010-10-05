@@ -1,0 +1,14 @@
+<cms path="/dpp_philly_lambda" serve="true" type="html" locale="en_US" 
+     valid_from="2010/10/05" host="liftweb.net">
+  <tag name="redirect" value="http://trevmex.com/post/1246130128/scala-lift"/>
+  <tag name="sub" value="happening">
+    DPP Presents at Phase/Philly Lambda
+  </tag>
+  <tag name="desc">
+    David Pollak presented Lift and Scala
+    at a combined Phase/Philly Lambda meeting.
+    A good time was had for all.
+  </tag>
+  <content>
+  </content>
+</cms>
