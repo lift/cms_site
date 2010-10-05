@@ -79,7 +79,7 @@ padding: 5px;
 	  method which we got by mixing in the ListenerManager trait.</p>
 	<p>lowPriority is just one of three methods (lowPriority,
 	  mediumPriority, hightPriority) you can override to process the
-	  messages. As the names may suggest the three methods lets you
+	  messages. As the names may suggest the three methods let you
 	  prioritize your messages.</p>
 	<pre><code>class Chat extends CometActor with CometListener {</code></pre>
 	<p>Here we're defining our chat component that knows how to push
@@ -172,7 +172,7 @@ padding: 5px;
 	<p>Start by adding the following imports to your <em>src/main/scala/code/comet/Chat.scala</em>
 	  file:</p>
 
-	<pre><code>import js._<br />import JsCmds._<br />import js.jquery.JqJsCmds.{AppendHtml, FadeOut, Hide, FadeIn}<br />import java.util.Date<br />import scala.xml._</code></pre>
+	<pre><code>import js._<br />import JsCmds._<br />import js.jquery.JqJsCmds.{AppendHtml, FadeOut, Hide, FadeIn}<br />import java.util.Date<br />import scala.xml._<br />import util.Helpers<br/>import util.Helpers._</code></pre>
 	<p>Now that we've got the right classes imported lets start looking at
 	  the actual code, again in your <em>src/main/scala/code/comet/Chat.scala</em>
 	  file add the following:</p>
@@ -301,7 +301,7 @@ padding: 5px;
 	  Next we're creating a local variable <em>deleted</em> that we'll use
 	  to store the guid of all the messages that should be deleted. We find
 	  all the deleted messages by using a for comprehension. We're yielding
-	  the guild of all the objects in msgs (our local list of messages) by
+	  the guid of all the objects in msgs (our local list of messages) by
 	  using the RemoveMessage extractor (which I explained earlier) in our
 	  for-comprehension. The for-comprehension returns a List so if we pass
 	  it to Set(..) we'll get a Set with Lists instead of a Set of String. To
