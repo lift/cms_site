@@ -1,0 +1,13 @@
+<cms path="/dpp_intro_scala" serve="true" type="html" locale="en_US" 
+     valid_from="2010/10/12" host="liftweb.net">
+  <tag name="redirect" value="http://blip.tv/file/4243180"/>
+  <tag name="sub" value="happening">
+    DPP introduces Scala
+  </tag>
+  <tag name="desc">
+    David Pollak gives and introduction to Scala
+    to the Bay Area Scala Enthusiasts
+  </tag>
+  <content>
+  </content>
+</cms>
