@@ -1,0 +1,14 @@
+<cms path="/exploring_lift_new_site" serve="true" type="html" locale="en_US" 
+     valid_from="2010/10/14" host="liftweb.net">
+  <tag name="redirect" value="http://exploring.liftweb.net/"/>
+  <tag name="sub" value="happening">
+    Exploring Lift has a New Site!
+  </tag>
+  <tag name="desc">
+    The <span style="font-style:italic">Exploring Lift</span>
+    book has a new website where you can find an online version
+    as well as downloadable PDF and HTML versions.
+  </tag>
+  <content>
+  </content>
+</cms>
