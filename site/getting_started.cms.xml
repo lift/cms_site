@@ -51,8 +51,8 @@ padding: 5px;
 	  one will show how to separate the two):</p>
 	<pre><code>package code.comet<br/> <br/>import net.liftweb._<br/>import http._<br/>import actor._<br/> <br/>object ChatServer extends LiftActor with ListenerManager {<br/> <br/> private var messages = List("Welcome")<br/> <br/> def createUpdate = messages<br/> <br/> override def lowPriority = {<br/> case s: String =&gt; messages ::= s ; updateListeners()<br/> }<br/>}<br/> <br/>class Chat extends CometActor with CometListener { <br/> <br/> private var msgs: List[String] = Nil <br/> <br/> def registerWith = ChatServer <br/> <br/> override def lowPriority = {<br/> case m: List[String] =&gt; msgs = m; reRender(false) <br/> } <br/> <br/> def render = { <br/> &lt;div&gt;<br/> &lt;ul&gt;<br/> {<br /> msgs.reverse.map(m =&gt; &lt;li&gt;{m}&lt;/li&gt;)<br /> }<br /> &lt;/ul&gt;<br /> &lt;lift:form&gt;<br /> {<br /> SHtml.text("", s =&gt; ChatServer ! s)<br /> }<br /> &lt;input type="submit" value="Chat"/&gt;<br /> &lt;/lift:form&gt;<br /> &lt;/div&gt;<br /> }<br />}</code></pre>
 
-	<p>In your <em>src/main/webapp/index.html</em> file, put the tag: <code>&lt;lift:comet
-	    type="Chat"/&gt;</code> and run the app by typing the following in your
+	<p>Add the tag: <code>&lt;lift:comet
+	    type="Chat"/&gt;</code> to the existing <em>src/main/webapp/index.html</em> file and run the app by typing the following in your
 	  console:</p>
 	<pre><code>sbt ~jetty-run</code></pre>
 	Now browse to <em>http://localhost:8080</em> with multiple browsers
