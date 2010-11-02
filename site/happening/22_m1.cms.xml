@@ -72,6 +72,7 @@
 	      rendering</a> including the HTML pipeline</li>
 	  <li>Separation of CRUDify and ProtoUser from Mapper so they can be
 	    used with any backing store</li>
+	  <li>Improved support for ObjectId and Date in lift-mongodb via CustomSerializers</li>
 	  <li><a
 		 href="http://www.assembla.com/wiki/show/liftweb/MVC_%28if_you_really_want_it%29">Support
 	      for MVC-style development</a><br />
