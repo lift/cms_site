@@ -13,8 +13,18 @@
 	<p>
 	  Install <a href="http://code.google.com/p/simple-build-tool/">
 	    Simple Build Tool
-	  </a> and download a <a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a> or 
-	  <a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a> of a simple Lift project.
+	  </a> and download:
+	  <ul>
+	    <li>Lift 2.2-M1 (the latest Milestone release -- generally stable)
+	      <a href="https://github.com/lift/lift_22_sbt/tarball/2.2-M1">Tar</a> or
+	      <a href="https://github.com/lift/lift_22_sbt/zipball/2.2-M1">Zip</a>.
+	    </li>
+	    <li>
+	      Lift 2.1 release <a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a> or 
+	  <a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a>
+	    </li>
+          </ul>
+	  
 	  Expand the project and cd into the newly created
 	  directory.  Then type <pre><code>sbt update ~jetty-run</code></pre>
 	  and you should be able to browse to 
