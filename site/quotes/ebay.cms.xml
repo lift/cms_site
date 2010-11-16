@@ -1,5 +1,6 @@
 <cms path="/quotes/ebay" type="html" locale="en_US" host="liftweb.net">
 <content>
+<span>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -7,6 +8,6 @@
     </h1>
     Michael Galpin, Developer, eBay
   </div>
-  <div class="right">&rdquo;</div>
+</span>
 </content>
 </cms>

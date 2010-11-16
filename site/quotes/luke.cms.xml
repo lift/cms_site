@@ -1,5 +1,6 @@
 <cms path="/quotes/luke" type="html" locale="en_US" host="liftweb.net">
 <content>
+<span>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -8,5 +9,6 @@ When I decided to put Innovation Games® online, I knew that I couldn't afford a
     Luke Hohmann, CEO Enthiosys 
   </div>
   <div class="right">&rdquo;</div>
+</span>
 </content>
 </cms>

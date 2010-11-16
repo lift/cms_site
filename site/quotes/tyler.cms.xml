@@ -1,5 +1,6 @@
 <cms path="/quotes/tyler" type="html" locale="en_US" host="liftweb.net">
 <content>
+<span>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -10,5 +11,6 @@
     Tyler Weir, author The Definitive Guide to Lift
   </div>
   <div class="right">&rdquo;</div>
+</span>
 </content>
 </cms>

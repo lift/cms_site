@@ -1,5 +1,6 @@
 <cms path="/quotes/lukasz" type="html" locale="en_US" host="liftweb.net">
 <content>
+<span>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -8,5 +9,6 @@
     Lukasz Kuczera, Lift Community Member
   </div>
   <div class="right">&rdquo;</div>
+</span>
 </content>
 </cms>
