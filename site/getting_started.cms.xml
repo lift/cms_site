@@ -5,7 +5,7 @@
   <content>
     <lift:surround with="default" at="content">
       <head>
-	<title>Lift Web Framework :: Getting Started</title>
+	<title>Lift :: Getting Started</title>
 
       </head>
 

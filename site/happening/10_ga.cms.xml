@@ -9,7 +9,7 @@
   <content>
     <lift:surround with="default" at="content" >
       <head>
-	<title>Lift Web Framework :: 1.0 Release</title>
+	<title>Lift :: 1.0 Release</title>
       </head>
       
       <div id="left">

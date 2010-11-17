@@ -4,13 +4,12 @@
   <b>Lift 2.2-M1</b> Ships!
 </tag>
 <tag name="desc">
-  2010/11/03 The Lift team is proud to announce version 2.2-M1 of the Lift Web
-  Framework
+  2010/11/03 The Lift team is proud to announce version 2.2-M1 of Lift
 </tag>
 <content>
   <lift:surround with="default" at="content" >
     <head>
-      <title>Lift Web Framework :: 2.2-M1</title>
+      <title>Lift :: 2.2-M1</title>
     </head>
 
     
@@ -24,7 +23,7 @@
 	  proud to announce the availability of <a
 						   href="http://liftweb.net/download.html">Lift 2.2-M1</a><br />
 	</p>
-	<p>Lift is an elegant, expressive web framework that allows any size
+	<p>Lift is an elegant, expressive framework that allows any size
 	  team build and maintain secure, highly interactive, scalable web
 	  applications quickly and efficiently.&nbsp; Lift is built on the <a
 									     href="http://scala-lang.org">Scala</a> and compiles to JVM

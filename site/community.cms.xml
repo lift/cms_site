@@ -5,7 +5,7 @@
   <content>
     <lift:surround with="default" at="content">
       <head>
-	<title>Lift Web Framework :: Community</title>
+	<title>Lift :: Community</title>
       </head>
       
       <div id="left">

@@ -6,7 +6,7 @@
   <content>
     <lift:surround with="default" at="content">
       <head>
-	<title>Lift Web Framework :: Wiki</title>
+	<title>Lift :: Wiki</title>
       </head>
       
       <div id="left">

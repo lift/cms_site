@@ -5,7 +5,7 @@
   <content>
     <lift:surround with="default" at="content">
       <head>
-	<title>Lift Web Framework :: Team</title>
+	<title>Lift :: Team</title>
       </head>
       
       <div id="left">
@@ -22,7 +22,7 @@
             of CMP Media, David oversaw the first large-scale deployment of WebLogic. 
             David was CTO and VPE at Cenzic, a web application security company. David 
             has also developed numerous commercial projects in Ruby on Rails. 
-            In 2007, David founded the Lift Web Framework open source project.</p>
+            In 2007, David founded the Lift Framework open source project.</p>
         </div>
         <div >
           <h2>Marius Danciu</h2>

@@ -5,7 +5,7 @@
   <content>
     <lift:surround with="default" at="content">
       <head>
-	<title>Lift Web Framework :: API Documentation</title>
+	<title>Lift :: API Documentation</title>
       </head>
       
       <div id="left">

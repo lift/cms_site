@@ -3,7 +3,7 @@
 <content>
   <lift:surround with="default" at="content">
     <head>
-      <title>Lift Web Framework :: Lift Overview</title>
+      <title>Lift :: Lift Overview</title>
     </head>
     
     <div id="left">

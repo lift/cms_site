@@ -4,7 +4,7 @@
 <content>
   <lift:surround with="default" at="content" quotes="true">
     <head>
-      <title>Lift Web Framework :: Home</title>
+      <title>Lift :: Home</title>
     </head>
 
     <div class="box-gradient">

@@ -5,7 +5,7 @@
   <content>
     <lift:surround with="default" at="content">
       <head>
-	<title>Lift Web Framework :: Download</title>
+	<title>Lift :: Download</title>
       </head>
       
       <div id="left">

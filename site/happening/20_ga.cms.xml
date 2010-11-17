@@ -4,13 +4,13 @@
   <b>Lift 2.0</b> Ships!
 </tag>
 <tag name="desc">
-  2010/06/30 The Lift team is proud to announce version 2.0 of the Lift Web
+  2010/06/30 The Lift team is proud to announce version 2.0 of the Lift
   Framework
 </tag>
 <content>
   <lift:surround with="default" at="content" >
     <head>
-      <title>Lift Web Framework :: 2.0 GA</title>
+      <title>Lift :: 2.0 GA</title>
     </head>
 
     
