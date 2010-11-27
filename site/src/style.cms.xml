@@ -314,6 +314,7 @@ img.border {border:3px solid #fff;}
 .padding {padding:5px 0px 10px 10px;}
 .red {font-weight:bold; font-size:140%; color:red}
 
+.syntaxhighlighter { padding: 10px 0px;}
 
 ]]>
 </content>
