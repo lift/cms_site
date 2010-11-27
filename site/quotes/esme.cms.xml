@@ -1,6 +1,6 @@
 <cms path="/quotes/esme" type="html" locale="en_US" host="liftweb.net">
 <content>
-<span>
+<div>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -9,6 +9,6 @@ Lift's excellent 'Comet made easy' philosophy made it an absolute no-brainer as 
     Darren Hague. SAP Mentor, ESME team lead
   </div>
   <div class="right">&rdquo;</div>
-</span>
+</div>
 </content>
 </cms>

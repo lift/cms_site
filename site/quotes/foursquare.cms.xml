@@ -1,6 +1,6 @@
 <cms path="/quotes/foursquare" type="html" locale="en_US" host="liftweb.net">
 <content>
-<span>
+<div>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -9,6 +9,6 @@ Foursquare switched over to Scala &amp; Lift last September and we've been thril
     @harryh, Foursquare Engineering Tech Lead
   </div>
   <div class="right">&rdquo;</div>
-</span>
+</div>
 </content>
 </cms>

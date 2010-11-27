@@ -1,6 +1,6 @@
 <cms path="/quotes/pongr" type="html" locale="en_US" host="liftweb.net">
 <content>
-<span>
+<div>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -13,6 +13,6 @@
     Zach Cox, Chief Software Architect, Pongr
   </div>
   <div class="right">&rdquo;</div>
-</span>
+</div>
 </content>
 </cms>

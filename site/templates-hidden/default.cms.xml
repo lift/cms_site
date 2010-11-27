@@ -25,7 +25,7 @@
     <div id="container-bg">
       <div id="header">
  	
-	<div id="hdr"><a href="/" class="header-home"><h1>Lift</h1></a></div>
+	<div id="hdr"><a href="/" class="header-home"><span>Lift</span></a></div>
 	<div class="top-btn"><a href="http://demo.liftweb.net">Demo</a></div>
 	<!--menu-page-->	
 	<div id="main-menu-page">

@@ -1,6 +1,6 @@
 <cms path="/quotes/novell" type="html" locale="en_US" host="liftweb.net">
 <content>
-<span>
+<div>
   <div class="left">&ldquo;</div>
   <div class="center">
     <h1>
@@ -11,6 +11,6 @@
     David LaPalomento, Developer, Novell
   </div>
   <div class="right">&rdquo;</div>
-</span>
+</div>
 </content>
 </cms>

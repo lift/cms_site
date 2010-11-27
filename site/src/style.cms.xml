@@ -65,14 +65,14 @@ outline: none;
 #hdr-2 .right {margin-top:140px; }
 	
 .header-home { display:block; background: url(http://static.liftweb.com/logo.jpg) no-repeat; height: 89px; width: 185px;}
-.header-home h1 {
+.header-home span {
 	padding-left: 30px;
 	text-indent: -9999px;
 	float:left;
 	display: inline;
 }	
 
-.header-home h1 a{
+.header-home span a{
 	display: block;
 	height: 89px; width: 185px;
 }
