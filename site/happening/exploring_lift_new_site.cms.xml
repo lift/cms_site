@@ -1,13 +1,11 @@
-<cms path="/exploring_lift_new_site" serve="true" type="html" locale="en_US" 
-     valid_from="2010/10/14" host="liftweb.net">
-  <tag name="redirect" value="http://exploring.liftweb.net/"/>
+<cms path="/simply_lift" serve="true" type="html" locale="en_US" 
+     valid_from="2010/12/05" host="liftweb.net">
+  <tag name="redirect" value="http://simply.liftweb.net/"/>
   <tag name="sub" value="happening">
-    Exploring Lift has a New Site!
+    DPP announces <i>Simply Lift</i>
   </tag>
   <tag name="desc">
-    The <span style="font-style:italic">Exploring Lift</span>
-    book has a new website where you can find an online version
-    as well as downloadable PDF and HTML versions.
+    David Pollak has started a new book, <i>Simply Lift</i>.
   </tag>
   <content><div/>
   </content>

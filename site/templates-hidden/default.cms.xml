@@ -49,6 +49,7 @@
 	      <lift:embed what="/quotes/tyler"/>
 	      <lift:embed what="/quotes/foursquare"/>
 	      <lift:embed what="/quotes/pongr"/>
+	      <lift:embed what="/quotes/dale"/>
 	    </lift:choose>
 	  </div><!--hdr-2-->
 	</lift:if>
