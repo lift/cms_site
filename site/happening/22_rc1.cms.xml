@@ -22,7 +22,7 @@
 	  December 8, 2010
 	</h2> 
 	<div class="Unindented"> 
-	  The <a class="URL" href="http://liftweb.net/">Lift</a>Lift team is pleased to announce <a class="URL" href="http://liftweb.net/download.html">Lift 2.2-RC1</a>. In the month since the 2.2-M1 release, the team has closed 53 tickets and made significant improvements to Lift based on <a class="URL" href="http://groups.google.com/group/liftweb">community</a> feedback.
+	  The <a class="URL" href="http://liftweb.net/">Lift</a> team is pleased to announce <a class="URL" href="http://liftweb.net/download.html">Lift 2.2-RC1</a>. In the month since the 2.2-M1 release, the team has closed 53 tickets and made significant improvements to Lift based on <a class="URL" href="http://groups.google.com/group/liftweb">community</a> feedback.
 	</div> 
 	<div class="Indented"> 
 	  Lift is an elegant, expressive framework that allows any size team build and maintain secure, highly interactive, scalable web applications quickly and efficiently. Lift is built on <a class="URL" href="http://scala-lang.org">Scala</a> and compiles to JVM byte-code. Lift applications deploy as WAR files on popular application servers and web containers including Jetty, Glassfish and Tomcat. Lift applications can be monitored and managed with the same proven infrastructure used to manage and monitor any Java web application. Lift is open source licensed under an Apache 2.0 license.
