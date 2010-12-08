@@ -15,6 +15,10 @@
 	    Simple Build Tool
 	  </a> and download:
 	  <ul>
+	    <li>Lift 2.2-RC1 
+	      <a href="https://github.com/lift/lift_22_sbt/tarball/2.2-RC1">Tar</a> or
+	      <a href="https://github.com/lift/lift_22_sbt/zipball/2.2-RC1">Zip</a>.
+	    </li>
 	    <li>Lift 2.2-M1 (the latest Milestone release -- generally stable)
 	      <a href="https://github.com/lift/lift_22_sbt/tarball/2.2-M1">Tar</a> or
 	      <a href="https://github.com/lift/lift_22_sbt/zipball/2.2-M1">Zip</a>.
