@@ -1,0 +1,32 @@
+<cms path="/22_rc3" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2010/12/17">
+<tag name="sub" value="happening">
+  <b>Lift 2.2-RC3</b> Ships!
+</tag>
+<tag name="desc">
+  2010/12/17 The Lift team is proud to announce version 2.2-RC3 of Lift
+</tag>
+<content>
+  <lift:surround with="default" at="content" >
+    <head>
+      <title>Lift :: 2.2-RC3</title>
+    </head>
+
+    
+    <div id="left">
+      <div>
+	<h1>
+	  Lift 2.2-RC3
+	</h1> 
+	<h2 class="Date"> 
+	  December 17, 2010
+	</h2> 
+
+<div class="Unindented">The <a href="http://liftweb.net/" class="URL">Lift</a> team is pleased to announce <a href="http://liftweb.net/download.html" class="URL">Lift 2.2-RC3</a> with <a href="https://www.assembla.com/spaces/liftweb/milestones/327759">one ticket</a> closed since <a href="http://lift.la/announcing-lift-22-rc2">Lift 2.2-RC2</a>.</div> <br /> This is the third release candidate in the 2.2-RC* series following up on <a href="http://lift.la/lift-22-rc1">Lift 2.2-RC1</a> and <a href="http://lift.la/announcing-lift-22-rc2">Lift 2.2-RC2</a>.<p />  We are getting close! Please test this and help us <a href="http://ticket.liftweb.net/">identify bugs</a> so that we can make Lift 2.2 awesome!<p />  Thank you, have fun!<br /> - The Lift team
+
+      </div>
+      
+    </div><!--left-->
+  </lift:surround>
+</content>
+</cms>
