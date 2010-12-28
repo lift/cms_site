@@ -1,0 +1,45 @@
+<cms path="/lift_basics" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2010/12/28">
+<tag name="sub" value="happening">
+  DPP presents Lift Basics
+</tag>
+<tag name="desc">
+  David Pollak presents the Lift Basics
+  online course on Jan 4th, 2011 at 9am PST
+</tag>
+<content>
+  <lift:surround with="default" at="content" >
+    <head>
+      <title>Lift Basics online course</title>
+    </head>
+
+    
+    <div id="left">
+      <p>David Pollak is the founder and BDFL of the Lift Framework open source project.</p>
+
+      <p>Join David for a 4 hour introductory session to Lift. David will cover:
+	<ul>
+	  <li>Lift's View First and Design Friendly templates to mock up the UI of your application</li>
+	  <li>Associate the UI with application behavior via Lift's snippets</li>
+	  <li>Explore Lift's Ajax and Comet features by adding interactive features to your app</li>
+	  
+	  <li>Expose your app data via JSON using Lift's REST helpers</li>
+	</ul>
+      </p>
+
+      <p>The class is open for up to 12 participants.</p>
+
+      <p>The price is $99 per participant.  You can pay via PayPal or company check.</p>
+
+      <p>All participants must have Java 6 installed on their machine.</p>
+
+      <p>Please join David for 4 hours of fun, learning and exploration.</p>
+
+      <p>Please register for Lift Basics on Tuesday, January 4, 2011 9:00 AM - 1:00 PM PST at:<br/>
+
+	<a href="https://student.gototraining.com/9j4r6/register/3723981343245802752">https://student.gototraining.com/9j4r6/register/3723981343245802752</a>
+      </p>
+    </div><!--left-->
+  </lift:surround>
+</content>
+</cms>
