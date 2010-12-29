@@ -12,9 +12,9 @@
 	<h1>Lift API Docs</h1>
 	
 	<p>
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.2-RC4/framework/scaladocs/index.html">Lift 2.2-RC4 documentation</a> | 
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.2-RC4.tar.bz2">Doc tarball</a> |
-	  <a href="http://vscaladoc.alchim31.net/navigator/api/lift_2.8.1/2.2-RC1">Lift 2.2-RC1 (Scala 2.8) docs</a> (note: there were no material API changes between Lift 2.2-RC1 and Lift 2.2-RC4)
+	  <a href="http://scala-tools.org/mvnsites/liftweb-2.2-RC5/framework/scaladocs/index.html">Lift 2.2-RC5 documentation</a> | 
+	  <a href="http://scala-tools.org/mvnsites/liftweb-2.2-RC5.tar.bz2">Doc tarball</a> |
+	  <a href="http://vscaladoc.alchim31.net/navigator/api/lift_2.8.1/2.2-RC1">Lift 2.2-RC1 (Scala 2.8) docs</a> (note: there were no material API changes between Lift 2.2-RC1 and Lift 2.2-RC5)
 	</p>
 
 	<p><a href="http://main.scala-tools.org/mvnsites/liftweb-2.1/framework/scaladocs/index.html">Lift 2.1 API documentation</a> (Note the Scala 2.7.7 docs cover all the 2.8 APIs and VScalaDoc is not yet available for Scala 2.8)</p>
