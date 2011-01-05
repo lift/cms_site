@@ -34,8 +34,8 @@
 	  another request is made. The idea is to give the impression that the
 	  server is notifying the client of changes on the server.</p>
 	<p>To get started download the <a
-					href="https://github.com/lift/lift_22_sbt/tarball/2.2-RC5">TAR</a>
-	  or <a href="https://github.com/lift/lift_22_sbt/zipball/2.2-RC5">Zip</a>
+					href="https://github.com/lift/lift_22_sbt/tarball/2.2">TAR</a>
+	  or <a href="https://github.com/lift/lift_22_sbt/zipball/2.2">Zip</a>
 	  of the default Lift project and un-tar or un-zip the file.</p>
 
 	<p>Now <em>cd</em> into the new folder and type <code>sbt update</code>
@@ -189,139 +189,110 @@ class Chat extends CometActor with CometListener {
 	  <li>It should be possible to delete messages</li>
 	  <li>When a message is deleted/added it should fade out/in</li>
 	</ul>
-	<p>To achieve this lets start editing the view (<em>src/main/webapp/index.html</em>)
-	  so it looks like this:</p>
-	<pre class="brush: xhtml;">&lt;lift:comet type="Chat"&gt;
-  &lt;ul id="ul_dude"&gt;
-    &lt;chat:line&gt;
-      &lt;li&gt;&lt;chat:msg/&gt; &lt;chat:btn/&gt;&lt;/li&gt;
-    &lt;/chat:line&gt;
-  &lt;/ul&gt;
-  &lt;lift:form&gt;
-    &lt;chat:input/&gt;
-    &lt;input type="submit" value="chat"/&gt;
-  &lt;/lift:form&gt;
-&lt;/lift:comet&gt;</pre>
 
-	<p>Not a whole lot change in the view, we simply added a new tag <code>&lt;chat:btn/&gt;</code>
-	  and added an id attribute to the <code>&lt;ul&gt;</code> tag. So lets
-	  fast forward to the exciting part. Changing the <em>ChatServer</em>
-	  and <em>Chat</em>.</p>
 	<p>Start by adding the following imports to your <em>src/main/scala/code/comet/Chat.scala</em>
 	  file:</p>
 
-	<pre class="brush: scala;">import js._
-import JsCmds._
-import js.jquery.JqJsCmds.{AppendHtml, FadeOut, Hide, FadeIn}
+	<pre class="brush: scala;">import js.jquery.JqJsCmds.{AppendHtml, FadeOut, Hide, FadeIn}
 import java.util.Date
-import scala.xml._
-import util.Helpers
-import util.Helpers._</pre>
+import scala.xml.{Text, NodeSeq}</pre>
+
 	<p>Now that we've got the right classes imported lets start looking at
 	  the actual code, again in your <em>src/main/scala/code/comet/Chat.scala</em>
 	  file add the following:</p>
-	<pre class="brush: scala;">sealed trait ChatCmd
+	<pre class="brush: scala;">final case class Message(msg: String, when: Date = new Date(), 
+                         guid: String = nextFuncName)
+final case class Remove(guid: String)</pre>
 
-object ChatCmd {
-  implicit def strToMsg(msg: String): ChatCmd =
-  new AddMessage(Helpers.nextFuncName, msg, new Date)
-}
-
-final case class AddMessage(guid: String, msg: String, date: Date) extends ChatCmd
-final case class RemoveMessage(guid: String) extends ChatCmd</pre>
-
-	<p>In the two last lines we're creating two case classes (the final
+	<p>
+	  We're creating two case classes (the final
 	  keyword means you can't subclass them). We're going to send instances
 	  of these classes between the client and server instead of strings as we
-	  did earlier. We're also creating an object named ChatCmd which has an
-	  implicit conversion from string to AddMessage as this will simplify the
-	  code in Chat as we'll be able to send the string the user entered in
-	  the input field and let the implicit conversion do the work of
-	  instantiating an instance of AddMessage.</p>
-	<p>The <code>Helpers.nextFuncName</code> simply creates a unique
-	  string based on the current time and a random String generation. We use
-	  it here as a unique id for both AddMessage and RemoveMessage.</p>
-	<p>Now lets take a look how we need to change the ChatServer:</p>
-	<pre class="brush: scala;">object ChatServer extends LiftActor with ListenerManager {
+	  did earlier.
+	</p>
+	
+	<p>The <code>nextFuncName</code> simply creates a unique
+	  string for the message. We use
+	  it here as a unique id.
+	</p>
 
-  private var messages: List[ChatCmd] = List("Welcome")
-  
+	<p>
+	  Now lets take a look how we need to change the ChatServer:
+	</p>
+	<pre class="brush: scala;">object ChatServer extends LiftActor with ListenerManager {
+  private var messages = Vector(Message("Welcome"))
+
   def createUpdate = messages
-  
+
   override def lowPriority = {
-    case s: String =&gt; messages ::= s ; updateListeners()
-    case d: RemoveMessage =&gt; messages ::= d ; updateListeners()
+    case s: String => {
+      val m = Message(s)
+      messages :+= m
+      updateListeners(m -> messages)
+    }
+
+    case r @ Remove(guid) => {
+      messages = messages.filterNot(_.guid == guid)
+      updateListeners(r -> messages)
+    }
   }
 }</pre>
 
-	<p>Instead of using a list of strings to store our messages we're using
-	  a list of ChatCmd (both AddMessage and RemoveMessage are subclasses of
-	  ChatCmd). The lowPriority message has also changed a bit. We're pattern
-	  matching against the message and if it's a string we simply add it to
-	  the list of ChatCmd ... but wait ... String isn't a subclass of ChatCmd
-	  so surely this doesn't compile. Oh, but it does, this is where our
-	  implicit conversion from String to AddMessage comes in handy. The
-	  compiler does notice that String isn't a subclass of ChatCmd but before
-	  it starts complaining it checks if there is any implicit conversion in
-	  scope that might be able to solve the type problem and in this case
-	  there is.</p>
+	<p>
+	  Instead of using a list of strings to store our messages we're using
+	  a list of Message.
+	  The lowPriority message has also changed a bit.
+	  We're handling Strings and converting them to Messages
+	  and we're handling Remove messages as well.
+	</p>
+
 	<p>Finally lets take a look at the Chat. Replace the following
 	  implementation of Chat with the one currently in your file:</p>
-	<pre class="brush: scala;">class Chat extends CometActor with CometListener { 
-  private var msgs: List[ChatCmd] = Nil 
-  private var bindLine: NodeSeq = Nil
-  
-  def registerWith = ChatServer 
-  
+	<pre class="brush: scala;">class Chat extends CometActor with CometListener {
+  private var msgs: Vector[Message] = Vector()
+
+  def registerWith = ChatServer
+
   override def lowPriority = {
-    case m: List[ChatCmd] =&gt; {
-      val delta = m diff msgs
-      msgs = m
-      updateDeltas(delta)
+    case (Remove(guid), v: Vector[Message]) => {
+      msgs = v
+      partialUpdate(
+        FadeOut(guid,TimeSpan(0),TimeSpan(500)) &amp;
+        After(TimeSpan(500),Replace(guid, NodeSeq.Empty)))
     }
-  } 
-  
-  def updateDeltas(what: List[ChatCmd]) {
-    partialUpdate(what.foldRight(Noop) {
-      case (m: AddMessage , x) =&gt;
-        x &amp; AppendHtml("ul_dude", doLine(m)) &amp;
-        Hide(m.guid) &amp; FadeIn(m.guid, TimeSpan(0),TimeSpan(500))
-      case (RemoveMessage(guid), x) =&gt;
-        x &amp; FadeOut(guid,TimeSpan(0),TimeSpan(500)) &amp;
-        After(TimeSpan(500),Replace(guid, NodeSeq.Empty))
-    })
+
+    case (m: Message, v: Vector[Message]) => {
+      msgs = v
+      partialUpdate(
+        AppendHtml("ul_dude", doLine(m)(("li ^^" #> "^^")(defaultXml))) &amp;
+        Hide(m.guid) &amp; FadeIn(m.guid, TimeSpan(0),TimeSpan(500)))
+    }
+
+    case v: Vector[Message] => msgs = v; reRender()
   }
-  
-  def render =
-    bind("chat", // the namespace for binding
-      "line" -&gt; lines _, // bind the function lines
-      "input" -&gt; SHtml.text("", s =&gt; ChatServer ! s)) // the input
-  
-  private def lines(xml: NodeSeq): NodeSeq = {
-    bindLine = xml
-    val deleted = Set((for {
-      RemoveMessage(guid) &lt;- msgs
-    } yield guid) :_*)
-  
-    for {
-      m @ AddMessage(guid, msg, date) &lt;- msgs.reverse if !deleted.contains(guid)
-      node &lt;- doLine(m) 
-    } yield node
+
+  def render = "ul [id]" #> "ul_dude" &amp; "li" #> msgs.map(doLine)
+
+  private def doLine(m: Message)(node: NodeSeq) = {
+    ("li [id]" #> m.guid &amp; // set GUID
+     // set body
+     "li *" #> (Text(m.msg+" ") ++
+                SHtml.ajaxButton("delete", () => {
+                  ChatServer ! Remove(m.guid)
+                  Noop
+                })))(node)
   }
-  
-  private def doLine(m: AddMessage): NodeSeq =
-    bind("chat", addId(bindLine, m.guid),
-      "msg" -&gt; m.msg,
-      "btn" -&gt; SHtml.ajaxButton("delete", 
-        () =&gt; {
-          ChatServer ! 
-          RemoveMessage(m.guid)
-          Noop}))
-  
-  
-  private def addId(in: NodeSeq, id: String): NodeSeq = in map {
-    case e: Elem =&gt; e % ("id" -&gt; id)
-    case x =&gt; x
+
+  override def fixedRender = {
+    &lt;lift:form>
+    {
+      SHtml.text("", s => {
+        ChatServer ! s
+        SetValById("chat_box", "")
+      }, "id" -> "chat_box")
+    }
+    &lt;input type="submit" value="Chat"/>
+    &lt;/lift:form>
   }
 }</pre>
 
@@ -330,173 +301,95 @@ final case class RemoveMessage(guid: String) extends ChatCmd</pre>
 	  chat application with fancy fading messages and the ability to delete
 	  old messages. I hope this is enough to keep your motivated as we walk
 	  through the code. Lets take it from the top:</p>
-	<pre class="brush: scala;">class Chat extends CometActor with CometListener { 
-  private var msgs: List[ChatCmd] = Nil 
-  private var bindLine: NodeSeq = Nil
-  
+	<pre class="brush: scala;">class Chat extends CometActor with CometListener {
+  private var msgs: Vector[Message] = Vector()
+
   def registerWith = ChatServer</pre>
-	<p>We're declaring a list of ChatCmd which we'll use as our local state
-	  (ChatCmd instead of String) and a NodeSeq called bindLine which I'll
-	  talk about later when we're using it. We're still registering with
+	<p>We're declaring a list of Message which we'll use as our local state
+	  (Message instead of String). We're still registering with
 	  ChatServer.</p>
-	<pre class="brush: scala;">override def lowPriority = {
- case m: List[ChatCmd] =&gt; {
-   val delta = m diff msgs
-   msgs = m
-   updateDeltas(delta)
- }
-}</pre>
+	<pre class="brush: scala;">  override def lowPriority = {
+    case (Remove(guid), v: Vector[Message]) => {
+      msgs = v
+      partialUpdate(
+        FadeOut(guid,TimeSpan(0),TimeSpan(500)) &amp;
+        After(TimeSpan(500),Replace(guid, NodeSeq.Empty)))
+    }
+
+    case (m: Message, v: Vector[Message]) => {
+      msgs = v
+      partialUpdate(
+        AppendHtml("ul_dude", doLine(m)(("li ^^" #> "^^")(defaultXml))) &amp;
+        Hide(m.guid) &amp; FadeIn(m.guid, TimeSpan(0),TimeSpan(500)))
+    }
+
+    case v: Vector[Message] => msgs = v; reRender()
+  }</pre>
 
 	<p>Again, the lowPriority method is the one that deals with the
-	  messages sent from the ChatServer. We're pattern matching against the
-	  messages and if it's a list of ChatCmd we're calculating the difference
-	  between the new list and our local state using the diff method on List
-	  and store the result in the variable delta. Then we're replacing our
-	  local state with the new list and finally we call updateDeltas with
-	  delta. Now lets take a look at what updateDeltas actually does:</p>
-	<pre class="brush: scala;">def updateDeltas(what: List[ChatCmd]) {
-  partialUpdate(what.foldRight(Noop) {
-    case (m: AddMessage , x) =&gt;
-      x &amp; AppendHtml("ul_dude", doLine(m)) &amp;
-      Hide(m.guid) &amp; FadeIn(m.guid, TimeSpan(0),TimeSpan(500))
-    case (RemoveMessage(guid), x) =&gt;
-      x &amp; FadeOut(guid,TimeSpan(0),TimeSpan(500)) &amp;
-      After(TimeSpan(500),Replace(guid, NodeSeq.Empty))
-  })
-}</pre>
-
+	  messages sent from the ChatServer. 
+	  If we get a Remove message, do a partialUpdate
+	  which sends the JavaScript to the browser
+	  to update the list of messages (removing the <tt>&lt;li></tt>
+	  with the <tt>id</tt> equal to the guid of the removed message).
+	  We also update the current state... all the messages
+	  in the list.
+	  We do the same thing for new messages, except
+	  add them to the display.</p>
+	
 	<p>We're calling partialUpdate which is declared in CometActor and
 	  takes a <a
 		     href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/js/JsCmd.html"
 		     target="_blank">JsCmd</a> as it's only argument. As the name may
 	  suggest partialUpdate is used to do partial updates of your comet
-	  component. The exciting part of updateDeltas is how we convert a
-	  List[ChatCmd] into a JsCmd. Lets take a look.</p>
-	<p>We declared <em>what</em> as an argument of updateDeltas. We're
-	  calling foldRight on <em>what</em> which is a method on List that has
-	  the following method signature <code>foldRight [B](z : B)(f : (A, B)
-	    =&gt; B) : B</code>. Unless you're used to reading Scala code this
-	  doesn't help you much, so here's the explanation of foldRight from the
-	  Scala Library Documentation: <q>Combines the elements of this list
-	    together using the binary function f, from right to left, and starting
-	    with the value z</q>.</p>
+	  component.
+	</p>
 
-	<p>In our case we're currying it with Noop which extends JsCmd and
-	  basically is an empty javascript statement. In the binary function
-	  we're pattern matching against the arguments which is the current
-	  element from the list starting from the right-most element and the
-	  cumulated value of foldRight so far.</p>
-	<p>If the element is an instance of AddMessage we're doing a couple of
-	  things, first off we're chaining javascripts calls using the &amp;
-	  method (okay, you can call it an operator, but it's a method with a
-	  symbolic name). The left-most argument well be invoked before the
-	  right-most one. We're also using the AppendHtml object declared in <a
-										href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/js/jquery/JqJsCmds$object.html"
-										target="_blank">JqJsCmds</a> which has an apply method <code>def
-	    apply(uid: String, content: NodeSeq): JsCmd</code> that takes the id of
-	  the node to append html to, in this case it's our UL tag with the id <em>ul_dude</em>.
-	  The second argument is the NodeSeq to append. In this case we're
-	  calling the doLine method with our instance of AddMessage. Well go
-	  through that method in due time don't worry. For the second argument of
-	  the first CmdPair we're chaining together another CmdPair where we're
-	  hiding the html we've just created using the <a
-							  href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/js/jquery/JqJsCmds/Hide.html"
-							  target="_blank">Hide</a> class and then we're using the <a
-														     href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/js/jquery/JqJsCmds/FadeIn.html"
-														     target="_blank">FadeIn</a> object to fade in the message. Had this not
-	  been a demo I would probably have added a css class to the newly
-	  created messages with the display property set to none and then simply
-	  fade in the messages ones added.</p>
+	<p>
+	  The render method sets the <tt>id</tt> of the <tt>&lt;ul></tt>
+	  so that we have a known place to insert the chat lines.
+	  We also use a more complex method for generating 
+	  the lines.  We're creating a function that returns a 
+	  <code>NodeSeq => NodeSeq</code> for each line
+	  in the chat.
+	</p>
+	
+	<pre class="brush: scala;">  def render = "ul [id]" #> "ul_dude" &amp; "li" #> msgs.map(doLine)</pre>
 
-	<p>In the second match statement we're using Scala Extractors to fetch
-	  the value guid of RemoveMessage. For more information about extractors
-	  read <a href="http://www.scala-lang.org/node/112" target="_blank">this</a>.
-	  If the unapply method on RemoveMessage was successful (i.e. returned
-	  Some) we're using CmdPair once more. First we're fading out the message
-	  using <a
-		   href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/js/jquery/JqJsCmds/FadeOut.html"
-		   target="_blank">FadeOut</a> and then we're creating an instance of <a
-											 href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/js/JsCmds/After.html"
-											 target="_blank">After</a> which allows us to invoke a JsCmd after
-	  waiting for the amount of time specified in the instantiation of After.
-	  The JsCmd we're handing to After is an instance of <a
-								href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/js/JsCmds/Replace.html"
-								target="_blank">Replace</a> which we use to replace the node with id
-	  guid with NodeSeq.Empty (i.e. nothing).</p>
-	<p>In each case we're using the &amp; method to combine the new JsCmd
-	  with the cumulated JsCmd which means that the entire foldRight method
-	  wil results in a JsCmd that will remove all unwanted messages and add
-	  all the new ones on the fly with Javascript. Neat!</p>
+	<p>The big change is how we create the lines:</p>
+	<pre class="brush: scala;">  private def doLine(m: Message)(node: NodeSeq) = {
+    ("li [id]" #> m.guid &amp; // set GUID
+     // set body
+     "li *" #> (Text(m.msg+" ") ++
+                SHtml.ajaxButton("delete", () => {
+                  ChatServer ! Remove(m.guid)
+                  Noop
+                })))(node)
+  }</pre>
 
-	<p>The render method hasn't changed so we can skip that. The lines
-	  method however has, so lets take a look at it:</p>
-	<pre class="brush: scala;">private def lines(xml: NodeSeq): NodeSeq = {
-  bindLine = xml
-  val deleted = Set((for {
-    RemoveMessage(guid) &lt;- msgs
-  } yield guid) :_*)
+	<p>
+	  We sset the <tt>id</tt> of the line and insert the 
+	  message and an Ajax button into each line that
+	  will allow us to delete the message.
+	</p>
 
-  for {
-    m @ AddMessage(guid, msg, date) &lt;- msgs.reverse if !deleted.contains(guid)
-    node &lt;- doLine(m) 
-  } yield node
-}</pre>
 
-	<p>The first thing we're doing is storing the xml in the private
-	  variable bindLine (the one I mentioned earlier). We're storing it
-	  because we need to use it in the doLine method that I'll explain next.
-	  Next we're creating a local variable <em>deleted</em> that we'll use
-	  to store the guid of all the messages that should be deleted. We find
-	  all the deleted messages by using a for comprehension. We're yielding
-	  the guid of all the objects in msgs (our local list of messages) by
-	  using the RemoveMessage extractor (which I explained earlier) in our
-	  for-comprehension. The for-comprehension returns a List so if we pass
-	  it to Set(..) we'll get a Set with Lists instead of a Set of String. To
-	  avoid this we're using :_* which tells scala to pass each element of
-	  the list to Set as a separate argument.</p>
-	<p>Next we're using yet another for-comprehension. This time we want to
-	  do something with all the instances in msgs (reversed) that isn't part
-	  of set of deleted messages. In the second line we're storing the result
-	  of invoking doLine with the message. Again we're yielding the result of
-	  the for-comprehension so the result of the for-comprehension will be
-	  NodeSeq.</p>
-	<p>Finally it's time to take a look at doLine:</p>
-	<pre class="brush: scala;">private def doLine(m: AddMessage): NodeSeq =
-  bind("chat", addId(bindLine, m.guid),
-    "msg" -&gt; m.msg,
-    "btn" -&gt; SHtml.ajaxButton("delete", 
-      () =&gt; {
-        ChatServer ! 
-        RemoveMessage(m.guid)
-        Noop}))</pre>
+	<p>
+	  Hopefully, this page gives you an idea of Lift's
+	  Comet and Ajax power.  You can learn more about
+	  Lift by reading 
+	  <a href="http://simply.liftweb.net"><i>Simply Lift</i></a>
+	  and 
+	  <a href="http://exploring.liftweb.net"><i>Exploring Lift</i></a>.
+	  <i>Simply Lift</i> is more focused on the Lift web framework
+	  and <i>Exploring Lift</i> gives a broader over-view including
+	  many different persistence options.
+	</p>
 
-	<p>We're using the bind message to bind content to nodes with the
-	  prefix chat in the NodeSeq returned by calling addId with bindLine and
-	  the guid of the AddMessage passed to doLine. We'll look at addId next.
-	  The new thing in this bind statement is the invocation of
-	  SHtml.ajaxButton(...). The AjaxButton of the <a
-							  href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/SHtml$object.html"
-							  target="_blank">SHtml object</a> takes two arguments, the text of the
-	  button and a function that takes zero arguments and returns a JsCmd
-	  that will get invoked when the button is clicked. In this case we're
-	  setting the value of the button to delete and the function sends a
-	  RemoveMessage with the guid of the current message to the ChatServer
-	  followed by Noop.</p>
-	<p>Now lets take a look at the very last method:</p>
-	<pre class="brush: scala;">private def addId(in: NodeSeq, id: String): NodeSeq = in map {
-  case e: Elem =&gt; e % ("id" -&gt; id)
-  case x =&gt; x
-}</pre>
+	<p>
+	  The source for this project is <a href="https://github.com/dpp/starting_point/tree/lift_22_example">available on GitHub</a>.
+	</p>
 
-	<p>It takes a NodeSeq and a String. It simply matches against the
-	  NodeSeq: If it's an Elem (scala.xml.Elem) it simply adds the attribute
-	  id with the value of the argument id. If it's anything else (well it
-	  has to be NodeSeq or a subclass of NodeSeq or else the compiler would
-	  have complained) it just returns that.</p>
-	<p>And thats it! I hope this have given you some taste of what Lift is
-	  able to do. If you have any feedback please don't hesitate to
-	  communicate it to the <a href="http://groups.google.com/group/liftweb"
-				   target="_blank">community</a>.</p>
 
       </div> <!-- left -->
     </lift:surround>

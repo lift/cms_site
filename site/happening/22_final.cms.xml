@@ -1,0 +1,145 @@
+<cms path="/22_final" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2011/01/05">
+<tag name="sub" value="happening">
+  <b>Lift 2.2 final</b> Ships!
+</tag>
+<tag name="desc">
+  2011/01.05 The Lift team is proud to announce version 2.2 of Lift
+</tag>
+<content>
+  <lift:surround with="default" at="content" >
+    <head>
+      <title>Lift :: 2.2</title>
+    </head>
+
+    
+    <div id="left">
+      <h1>
+	 Lift 2.2
+      </h1>
+      <h2 class="Date">
+	January 5, 2011
+      </h2>
+      <div class="Standard">
+	
+	The <a class="URL" href="http://liftweb.net/">Lift</a> team is pleased to announce <a class="URL" href="http://liftweb.net/download.html">Lift 2.2</a>. In the three months since the 2.1 release, the team has closed over 100 tickets and made significant improvements to Lift based on <a class="URL" href="http://groups.google.com/group/liftweb">community</a> feedback.
+      </div>
+      <div class="Standard">
+	Lift is an elegant, expressive framework that allows any size team build and maintain secure, highly interactive, scalable web applications quickly and efficiently. Lift is built on <a class="URL" href="http://scala-lang.org">Scala</a> and compiles to JVM byte-code. Lift applications deploy as WAR files on popular application servers and web containers including Jetty, Glassfish and Tomcat. Lift applications can be monitored and managed with the same proven infrastructure used to manage and monitor any Java web application. Lift is open source licensed under an Apache 2.0 license.
+      </div>
+      <h3 class="Subsection-">
+	
+	<a class="toc" name="toc-Subsection--4"></a>Lift features include:
+      </h3>
+      <ul>
+	<li>
+	  Community... the Lift community is 2,400 members strong, super-active and always there to help with questions
+	</li>
+	<li>
+	  Best Comet (server-push) support that allows the creation of dynamic application such as <a class="URL" href="http://vibe.novell.com">Novell Vibe</a>
+	</li>
+	<li>
+	  Super simple Ajax for creating highly interactive web applications without worrying about HTTP plumbing
+	</li>
+	<li>
+	  Secure by default... Lift apps are resistant to the OWASP top 10 vulnerabilities including XSS, XSRF, and parameter tampering
+	</li>
+	
+	<li>
+	  Concise and Maintainable... Lift apps typically contain fewer lines of code than corresponding Rails apps, yet are type safe so that many errors are flagged by the compiler
+	</li>
+	<li>
+	  Scalable... Lift apps scale to millions of users across many servers, yet are highly efficient for single-box implementations
+	</li>
+	<li>
+	  Compatible... Lift apps can take advantage of any Java library as well as the growing collection of Scala libraries
+	</li>
+	
+      </ul>
+      <h3 class="Subsection-">
+	<a class="toc" name="toc-Subsection--5"></a>Lift 2.2 improvements include:
+      </h3>
+      <ul>
+	<li>
+	  HTML5 Support: Lift supports parsing HTML5 input files and rendering HTML5 to the browser in addition to Lift’s XHTML support
+	  
+	</li>
+	<li>
+	  <a class="URL" href="http://demo.liftweb.net/invoice_wiring">Wiring</a>: Spreadsheets meet web application yielding an automatic mechanism for updating dependent elements on a page, making it even easier to build dynamic apps with Lift
+	</li>
+	<li>
+	  Wizard and Screen Improvements: Build complex screens more easily with new helper methods for creating form elements and improved life-cycle callbacks
+	</li>
+	<li>
+	  <a class="URL" href="http://stable.simply.liftweb.net/#sec:CSS-Selector-Transforms">CSS Selector Transforms</a> Improvements: including appending attributes, multiple selectors applying to a single element, and element lifting
+	</li>
+	<li>
+	  Support for migratory sessions: <tt>ContainerVars</tt> provide type-safe, guaranteed serializable session variables that can migrate across application servers in a cluster
+	  
+	</li>
+	<li>
+	  Improved i18n: including per-page localization strings and localization strings and HTML stored in templates rather than Java resource files which makes editing much easier
+	</li>
+	<li>
+	  Security Improvements: including creation of new sessions on login
+	</li>
+	<li>
+	  MongoDB Improvements: performance improvements as well as new features
+	</li>
+	<li>
+	  Support for Scala 2.8.1 as well as 2.8.0 and 2.7.7
+	</li>
+	<li>
+	  ProtoUser support for Record: Lift’s <tt>ProtoUser</tt> and <tt>CRUDify</tt> can be used on Record-based persistence classes as well as Mapper-based persistence classes
+	  
+	</li>
+	<li>
+	  Squeryl integration improvements: Lift is updated to use the latest version of Squeryl
+	</li>
+	<li>
+	  <a class="URL" href="http://www.assembla.com/wiki/show/liftweb/Designer_Friendly_Templates">Designer-friendly templates</a>
+	</li>
+	<li>
+	  <a class="URL" href="http://www.assembla.com/wiki/show/liftweb/Stateless_Requests">Stateless rendering</a>including the HTML pipeline
+	</li>
+	<li>
+	  <a class="URL" href="http://www.assembla.com/wiki/show/liftweb/MVC_%28if_you_really_want_it%29">Support for MVC-style development</a>
+	</li>
+	
+      </ul>
+      <h3 class="Subsection-">
+	<a class="toc" name="toc-Subsection--6"></a>Lift-powered sites include:
+      </h3>
+      <ul>
+	<li>
+	  <a class="URL" href="http://foursquare.com/">Foursquare</a>: the multi-million user location based service that services millions of check-ins a day on their Lift-powered system
+	</li>
+	<li>
+	  <a class="URL" href="http://vibe.novell.com">Novell Vibe</a>: enterprise collaboration software platform based on Google Wave
+	</li>
+	<li>
+	  <a class="URL" href="http://innovationgames.com/">Innovation Games</a>: The fun way to do serious business — seriously
+	</li>
+	
+	<li>
+	  <a class="URL" href="http://www.xmpie.com/">Xerox/XMPie</a>: the leading provider of software for cross-media, variable data one-to-one marketing
+	</li>
+	<li>
+	  <a class="URL" href="http://exchango.com/">Exchango</a>: The easy and convenient way to give and get free stuff.
+	</li>
+	<li>
+	  <a class="URL" href="http://snapsort.com/">Snapsort</a>: Compare and decide on cameras
+	</li>
+	<li>
+	  <a class="URL" href="http://nofouls.com/">No Fouls</a>: Find pickup basketball games
+	</li>
+	
+      </ul>
+      <div class="Standard">
+	Please join the Lift community and help use grow Lift. And a super-big thanks to the 30+ Lift committers who have grown the Lift community and code-base to what it is today... and what it will be in the future!
+      </div>
+      
+    </div><!--left-->
+  </lift:surround>
+</content>
+</cms>
