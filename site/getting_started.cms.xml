@@ -88,15 +88,15 @@ class Chat extends CometActor with CometListener {
 
 }</pre>
 
-	<p>Add the tag:     <pre>
-      &lt;<span class="function-name">div</span> <span class="variable-name">class</span>=<span class="string">"lift:comet?type=Chat"</span>&gt;
-        &lt;<span class="function-name">ul</span>&gt;
-          &lt;<span class="function-name">li</span>&gt;line&lt;/<span class="function-name">li</span>&gt;
-        &lt;/<span class="function-name">ul</span>&gt;
-      &lt;/<span class="function-name">div</span>&gt;
-</pre> to the existing <em>src/main/webapp/index.html</em> file and run the app by typing the following in your
+	<p>Add the tag:     
+		<pre class="brush: xhtml;">&lt;div class="lift:comet?type=Chat"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;line&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre> 
+	to the existing <em>src/main/webapp/index.html</em> file and run the app by typing the following in your
 	  console:</p>
-	<pre><code>sbt ~jetty-run</code></pre>
+	<pre class="brush: xhtml;">sbt ~jetty-run</pre>
 	Now browse to <em>http://localhost:8080</em> with multiple browsers
 	and you have your chat app. Pretty cool huh? Lets walk through the code
 	to figure out how it all fits together.
