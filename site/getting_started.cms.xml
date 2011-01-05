@@ -33,77 +33,80 @@
 	  has something interesting to response. As soon as the server responses
 	  another request is made. The idea is to give the impression that the
 	  server is notifying the client of changes on the server.</p>
-	<p>To get started install the <a
-					 href="http://code.google.com/p/simple-build-tool/">Simple Build Tool</a>
-	  (aka sbt) and download the <a
-					href="http://github.com/lift/lift_sbt_prototype/tarball/Lift_20">TAR</a>
-	  or <a href="http://github.com/lift/lift_sbt_prototype/zipball/Lift_20">Zip</a>
+	<p>To get started download the <a
+					href="https://github.com/lift/lift_22_sbt/tarball/2.2-RC5">TAR</a>
+	  or <a href="https://github.com/lift/lift_22_sbt/zipball/2.2-RC5">Zip</a>
 	  of the default Lift project and un-tar or un-zip the file.</p>
 
 	<p>Now <em>cd</em> into the new folder and type <code>sbt update</code>
 	  to grab the dependencies.</p>
 	<p>Next, spark up your editor of choice and create the <em>src/main/scala/code/comet/Chat.scala</em>
-	  file. Put the following code into Chat.scala (before you get all
-	  cranky-like that we're mixing mark-up and logic, the step after this
-	  one will show how to separate the two):</p>
-	<pre class="brush: scala;">package code.comet
+	  file. Put the following code into Chat.scala:</p>
+	<pre class="brush: scala;">package code
+package comet
 
 import net.liftweb._
 import http._
 import actor._
+import util.Helpers._
+import js._
+import JsCmds._
+import JE._
 
 object ChatServer extends LiftActor with ListenerManager {
-  private var messages = List("Welcome")
+  private var messages = Vector("Welcome")
 
   def createUpdate = messages
 
   override def lowPriority = {
-    case s: String =&gt; messages ::= s ; updateListeners()
- }
+    case s: String => messages :+= s; updateListeners()
+  }
 }
 
-class Chat extends CometActor with CometListener { 
+class Chat extends CometActor with CometListener {
+  private var msgs: Vector[String] = Vector()
 
-  private var msgs: List[String] = Nil 
-
-  def registerWith = ChatServer 
+  def registerWith = ChatServer
 
   override def lowPriority = {
-    case m: List[String] =&gt; msgs = m; reRender(false) 
-  } 
-
-  def render = { 
-    &lt;div&gt;
-    &lt;ul&gt;
-    {
-      msgs.reverse.map(m =&gt; &lt;li&gt;{m}&lt;/li&gt;)
-    }
-    &lt;/ul&gt;
-    &lt;lift:form&gt;
-    {
-      SHtml.text("", s =&gt; ChatServer ! s)
-    }
-    &lt;input type="submit" value="Chat"/&gt;
-    &lt;/lift:form&gt;
-    &lt;/div&gt;
+    case v: Vector[String] => msgs = v; reRender()
   }
+
+  def render = "li *" #> msgs
+
+  override def fixedRender = {
+    &lt;lift:form>
+    {
+      SHtml.text("", s => {
+        ChatServer ! s
+        SetValById("chat_box", "")
+      }, "id" -> "chat_box")
+    }
+    &lt;input type="submit" value="Chat"/>
+    &lt;/lift:form>
+  }
+
 }</pre>
 
-	<p>Add the tag: <code>&lt;lift:comet
-	    type="Chat"/&gt;</code> to the existing <em>src/main/webapp/index.html</em> file and run the app by typing the following in your
+	<p>Add the tag:     <pre>
+      &lt;<span class="function-name">div</span> <span class="variable-name">class</span>=<span class="string">"lift:comet?type=Chat"</span>&gt;
+        &lt;<span class="function-name">ul</span>&gt;
+          &lt;<span class="function-name">li</span>&gt;line&lt;/<span class="function-name">li</span>&gt;
+        &lt;/<span class="function-name">ul</span>&gt;
+      &lt;/<span class="function-name">div</span>&gt;
+</pre> to the existing <em>src/main/webapp/index.html</em> file and run the app by typing the following in your
 	  console:</p>
 	<pre><code>sbt ~jetty-run</code></pre>
 	Now browse to <em>http://localhost:8080</em> with multiple browsers
 	and you have your chat app. Pretty cool huh? Lets walk through the code
 	to figure out how it all fits together.
 	<pre class="brush: scala;">object ChatServer extends LiftActor with ListenerManager {
+  private var messages = Vector("Welcome")
 
-  private var messages = List("Welcome")
-  
   def createUpdate = messages
-  
+
   override def lowPriority = {
-    case s: String =&gt; messages ::= s ; updateListeners()
+    case s: String => messages :+= s; updateListeners()
   }
 }</pre>
 
@@ -132,114 +135,55 @@ class Chat extends CometActor with CometListener {
 	<p>Here we're defining our chat component that knows how to push
 	  updates to the browser and interact with the ChatServer.</p>
 
-	<pre class="brush: scala;">private var msgs: List[String] = Nil</pre>
+	<pre class="brush: scala;">private var msgs: Vector[String] = Vector()</pre>
 	<p>This is where we'll store our local state.</p>
 	<pre class="brush: scala;">def registerWith = ChatServer</pre>
 	<p>Here the component is registrering itself with the ChatSever so it
 	  will get notified of any changes. </p>
 	<pre class="brush: scala;">override def lowPriority = {
-  case m: List[String] =&gt; msgs = m; reRender(false)
+  case v: Vector[String] =&gt; msgs = v; reRender()
 }</pre>
 	<p>This is where we implement how our component will handle the
 	  messages from our ChatServer. We're simply updating our local state
-	  (msgs) and invoking reRender(false). false tells Lift that we don't
-	  want to rerender the entire page but just the comet component.</p>
+	  (msgs) and invoking reRender().</p>
 
-	<pre class="brush: scala;">def render = {
-  &lt;div&gt;
-  &lt;ul&gt;
-  {
-    msgs.reverse.map(m =&gt; &lt;li&gt;{m}&lt;/li&gt;)
-  }
-  &lt;/ul&gt;
-  &lt;lift:form&gt;
-  {
-    // a &lt;lift:form&gt; is an Ajax form. Define our
-    // input box that sends the message to the chat server
-    SHtml.text("", s =&gt; ChatServer ! s)
-  }
-  &lt;input type="submit" value="Chat"/&gt;
-  &lt;/lift:form&gt;
-  &lt;/div&gt;
-}</pre>
+	<pre class="brush: scala;">  def render = "li *" #> msgs</pre>
 
-	<p>Here we're telling the component how to render itself. But, <strong>OMG</strong>...
-	  we've mixed view logic with our Scala code, gaaakkk... sputter... barf.
-	  Yes, Lift allows you to mix view into your business logic, but it's a
-	  choice. Here's how we can break the code out to separate the view from
-	  the logic. The critical thing to keep in mind is that we did not change
-	  our logic at all in order to achieve the separation.</p>
-	<p>First, let's update our view (<em>src/main/webapp/index.html</em>)
-	  to:</p>
-	<pre class="brush: xhtml;">&lt;lift:comet type="Chat"&gt;
-  &lt;ul&gt;
-    &lt;chat:line&gt;
-      &lt;li&gt;&lt;chat:msg/&gt;&lt;/li&gt;
-    &lt;/chat:line&gt;
-  &lt;/ul&gt;
-  &lt;lift:form&gt;
-    &lt;chat:input/&gt;
-    &lt;input type="submit" value="chat"/&gt;
-  &lt;/lift:form&gt;
-&lt;/lift:comet&gt;</pre>
+	<p>Here we're telling the component how to render itself by creating
+	  an <tt>li</tt> for each of our messages.</p>
 
-	<p>The view now contains the definition of the layout with "bind
-	  points" where dynamic content will be inserted.</p>
-	<p>Next, let's update our Chat component's render method. Replace the
-	  def render = line through the end of the file (except the closing
-	  brace) with:</p>
-	<pre class="brush: scala;">// import NodeSeq... yes, this can be done inside any scope in Scala
-import scala.xml.NodeSeq
+	<p>
+	  Finally, let's look at the input area that's fixed (it's
+	  not redrawn on each reRender update):
+	</p>
 
-def render =
-  bind("chat", // the namespace for binding
-  "line" -&gt; lines _, // bind the function lines
-  "input" -&gt; SHtml.text("", s =&gt; ChatServer ! s))
+	<pre class="brush: scala">  override def fixedRender = {
+    &lt;lift:form>
+    {
+      SHtml.text("", s => {
+        ChatServer ! s
+        SetValById("chat_box", "")
+      }, "id" -> "chat_box")
+    }
+    &lt;input type="submit" value="Chat"/>
+    &lt;/lift:form>
+  }</pre>
 
-private def lines(xml: NodeSeq): NodeSeq =
-  msgs.reverse.flatMap(m =&gt; bind("chat", xml, "msg" -&gt; m))</pre>
-
-	<p>Instead of using inline xhtml we're using the bind method. You'll
-	  find the bind method in the <a
-					 href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/util/BindHelpers$object.html"
-					 target="_blank">BindHelpers</a> trait and it is used to bind real
-	  content to the binding points of your templates.</p>
-	<p>In this code we're binding content to tags with the namespace <em>chat</em>.
-	  The last argument of bind is repeatable and accepts <a
-								 href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/util/BindHelpers.BindParam.html"
-								 target="_blank">BindParam</a>. So the second and third line of the
-	  bind statement are really instances of BindParam and should be read:
-	  "replace the tag <code>&lt;chat:line&gt;</code> with the return value
-	  of invoking lines" and "replace the tag <code>&lt;chat:input&gt;</code>
-	  with the return value of invoking the text method on the SHtml object".
-	  <br />
-
-	  You might notice that we aren't specifying which xml to bind to in our
-	  bind statements like we've done previously. This is because the markup
-	  passed to the comet component when it is instantiated (i.e. every child
-	  node of <code>&lt;lift:comet type="Chat"&gt;</code>) is kept around
-	  and that's what we're binding against.</p>
-	<p>The method <span style="font-family: monospace;">lines</span>
-	  simply takes a NodeSeq and returns a NodeSeq. It reverses the list of
-	  messages so the newest message will be at the end of the list and
-	  flatMaps the list of messages into the proper xhtml by using the bind
-	  method. Note that we have to use flatMap instead of map, because map
-	  would result in a Seq[NodeSeq] instead of the expeced NodeSeq
-	  (Seq[Node]).</p>
-	<p>The text method of the <a
-				     href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/net/liftweb/http/SHtml$object.html"
-				     target="_blank">SHtml</a> object returns an input field. The method
-	  takes two normal arguments and a repeatable one. The first is the
-	  initial value of the input field and the second is a function that
-	  takes a string and returns Any (<em>(String) =&gt; Any</em>). This
-	  function will be invoked when the form is submitted. Our function takes
-	  a string s and sends that string to our ChatServer using the bang (!)
-	  method.</p>
-
+	<p>
+	  This code inserts an Ajax form into the page with an
+	  input field.  When the form is submitted, the input
+	  is sent to the <tt>ChatServer</tt> and JavaScript is
+	  sent back to the browser that sets the input field to
+	  blank.
+	</p>
+	
 	<p>I hope this has helped you gain a better understanding of what the
 	  code does. Now, it would be quite dull if all I did was recite the demo
 	  that David has done numerous times - Lets see if I can't spice the demo
 	  application up a bit to provide some extra functionality.</p>
+	
+	<hr/>
+	
 	<p>Lets add the following to our application</p>
 	<ul>
 	  <li>It should be possible to delete messages</li>
