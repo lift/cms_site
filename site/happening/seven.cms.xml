@@ -1,0 +1,13 @@
+<cms path="/7things" serve="true" type="html" locale="en_US" 
+     valid_from="2011/01/21" host="liftweb.net">
+  <tag name="redirect" value="http://seventhings.liftweb.net"/>
+  <tag name="sub" value="happening">
+    Seven Things...
+  </tag>
+  <tag name="desc">
+    that demonstrate how Lift is different
+    from and superior to other web frameworks
+  </tag>
+  <content><div />
+  </content>
+</cms>
