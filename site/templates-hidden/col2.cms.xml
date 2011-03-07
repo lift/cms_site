@@ -17,6 +17,12 @@
       <h1>
         Lift Books
       </h1>
+		
+		  <p>
+		<a href="http://www.shaker.de/de/content/catalogue/index.asp?lang=de&amp;ID=8&amp;ISBN=978-3-8322-9824-1" target="_blank">Entwicklung von Web-Applikationen mit Lift und Scala</a>
+		by Thomas Fiedler and Christoph Knabe.
+		  </p>
+		
       <p>
 	<a href="http://exploring.liftweb.net/">Exploring Lift</a>,
         by Derek Chen-Becker, Tyler Weir, and Marius
@@ -29,6 +35,7 @@
 	by Tim Perrett
 	is available via the Manning Early Access Program.
       </p>
+	
 
       
       <h1>What is Scala?</h1>
