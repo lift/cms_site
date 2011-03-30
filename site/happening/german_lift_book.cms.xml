@@ -1,0 +1,14 @@
+<cms path="/Entwicklung_von_Web-Applikationen_mit_Lift" serve="true" type="html" locale="en_US" 
+     valid_from="2011/03/15" host="liftweb.net">
+  <tag name="redirect" value="http://www.shaker.de/de/content/catalogue/index.asp?lang=de&amp;ID=8&amp;ISBN=978-3-8322-9824-1"/>
+  <tag name="sub" value="happening">
+    New Lift Book: <i>Entwicklung von Web-Applikationen mit Lift</i>
+  </tag>
+  <tag name="desc">
+    <i>Entwicklung von Web-Applikationen mit Lift und Scala</i>
+    the first Lift book in German 
+	by Thomas Fiedler and Christoph Knabe.
+  </tag>
+  <content><div/>
+  </content>
+</cms>

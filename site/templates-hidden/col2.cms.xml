@@ -18,10 +18,17 @@
         Lift Books
       </h1>
 		
-		  <p>
-		<a href="http://www.shaker.de/de/content/catalogue/index.asp?lang=de&amp;ID=8&amp;ISBN=978-3-8322-9824-1" target="_blank">Entwicklung von Web-Applikationen mit Lift und Scala</a>
-		by Thomas Fiedler and Christoph Knabe.
-		  </p>
+      <p>
+	<a href="http://www.shaker.de/de/content/catalogue/index.asp?lang=de&amp;ID=8&amp;ISBN=978-3-8322-9824-1" target="_blank">Entwicklung von Web-Applikationen mit Lift und Scala</a>
+	by Thomas Fiedler and Christoph Knabe.
+      </p>
+
+      <p>
+	<a href="http://simply.liftweb.net/">Simply Lift</a>,
+        by David Pollak is an open source book, available for free in
+        both PDF and HTML versions at <a href="http://simply.liftweb.net/">http://simply.liftweb.net/</a>.
+      </p>
+
 		
       <p>
 	<a href="http://exploring.liftweb.net/">Exploring Lift</a>,
@@ -35,17 +42,13 @@
 	by Tim Perrett
 	is available via the Manning Early Access Program.
       </p>
-	
 
-      
-      <h1>What is Scala?</h1>
-      <p>Scala is a general purpose programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages. It is also fully interoperable with Java. </p>
-      
-      <p><a href="http://scala-lang.org">Learn more about Scala</a></p>
-      
-      <p>Because Lift applications are written in Scala, an elegant JVM language, you can still use your favorite Java libraries and deploy to your favorite Servlet Container. Use the code you've already written and deploy to the container you've already configured!</p>
-      
-      
+      <hr/>
+
+      <p>
+	<a class="FlattrButton" style="display:none;" href="http://liftweb.net"></a>
+      </p>
+
     </div><!--right-->
 
   </content>

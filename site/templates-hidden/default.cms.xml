@@ -18,6 +18,19 @@
 
 <script type="text/javascript" src="http://www.google-analytics.com/ga.js">
 </script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */
+</script>
+
 </head>
 
 <body id="back">
@@ -26,7 +39,9 @@
       <div id="header">
  	
 	<div id="hdr"><a href="/" class="header-home"><span>Lift</span></a></div>
-	<div class="top-btn"><a href="http://demo.liftweb.net">Demo</a></div>
+
+	<div class="top-btn"><a href="http://demo.liftweb.net">Demo</a>
+	</div>
 	<!--menu-page-->	
 	<div id="main-menu-page">
 	  <ul>
