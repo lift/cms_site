@@ -1,0 +1,13 @@
+<cms path="/23_rc5" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2011/03/31">
+  <tag name="sub" value="happening">
+    <b>Lift 2.3-RC5</b> Ships!
+  </tag>
+  <tag name="redirect" value="http://lift.la/announcing-lift-23-rc5"/>
+
+<tag name="desc">
+  2011/03/31 The Lift team is proud to announce version 2.3-RC5 of Lift.
+  Please help us make sure that RC5 is the last RC!
+</tag>
+<content><div/></content>
+</cms>
