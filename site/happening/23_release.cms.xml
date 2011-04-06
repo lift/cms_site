@@ -1,0 +1,12 @@
+<cms path="/23_release" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2011/04/05">
+  <tag name="sub" value="happening">
+    <b>Lift 2.3</b> Ships!
+  </tag>
+  <tag name="redirect" value="http://lift.la/lift-23-released"/>
+
+<tag name="desc">
+  2011/04/06 The Lift team is proud to announce version 2.3 of Lift.
+</tag>
+<content><div/></content>
+</cms>

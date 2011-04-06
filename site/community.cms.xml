@@ -68,6 +68,14 @@
 	  and sumerizing the answer into a wiki post on the other hand will earn you faster and more detailed
 	  answers in the future.
 	</p>
+
+	<p>
+	  Please also read <a href="http://lift.la/the-loyal-opposition">The Loyal Opposition</a>.
+	  Before opening a ticket, please discuss it on the Lift Google Group.  For more information,
+	  <a href="https://www.assembla.com/wiki/show/liftweb/Creating_tickets">Creating Tickets</a>
+	  outlines the rules for opening tickets.  We have this policy to keep Lift-related discussions
+	  in the open and available to every community member.
+	</p>
       </div> <!-- left -->
     </lift:surround>
   </content>

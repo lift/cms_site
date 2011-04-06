@@ -7,14 +7,26 @@
       <head>
 	<title>Lift :: Download</title>
       </head>
-      
+
       <div id="left">
-        <h1>DOWNLOAD and run using SBT</h1>
+        <h1>DOWNLOAD and run using the Simply Build Tool (sbt)</h1>
 	<p>
 	  Install <a href="http://code.google.com/p/simple-build-tool/">
 	    Simple Build Tool
 	  </a> and download:
 	  <ul>
+	    <li>Lift 2.3 release:
+	    <a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a> or
+	    <a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>.
+	    <br/>
+	    Expand the project and cd into the directory and the "lift_basic" subdirectory.
+	    Then type <pre><code>sbt update ~jetty-run</code></pre>
+	    and you should be able to browse to 
+	    <code>http://localhost:8080</code> and see your running
+	    Lift app.
+	    <hr/>
+	    </li>
+
 	    <li>Lift 2.2 release 
 	      <a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a> or
 	      <a href="https://github.com/lift/lift_22_sbt/zipball/2.2">Zip</a>.
@@ -32,7 +44,7 @@
 	  <code>http://localhost:8080</code> and see your running
 	  Lift app.
 	</p>
-	
+	<!--
         <h1>DOWNLOAD and run using Maven</h1>
 	
         <p>If you already have <a href="http://maven.apache.org/download.html">Apache Maven 2.2.0+</a> 
@@ -52,9 +64,10 @@
           <h2>Linux</h2>
           <p>For linux, we recommend that you use your native package management system to install
             maven. If you are unsure how to do this, please refer to your OS documentation.</p>
+	    -->
           <p>If you are having problems getting started on Linux, head over to 
             the <a href="http://groups.google.com/group/liftweb">mailing list.</a></p>
-        </div>
+      <!-- </div> -->
       </div> <!-- left -->
     </lift:surround>
   </content>
