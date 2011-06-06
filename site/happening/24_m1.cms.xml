@@ -1,0 +1,67 @@
+<cms path="/24_m1" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2011/06/06">
+<tag name="sub" value="happening">
+  <b>Lift 2.4-M1</b> Ships!
+</tag>
+<tag name="desc">
+  2011/06/06 The Lift team is proud to announce version 24-M1 of Lift
+</tag>
+<content>
+  <lift:surround with="default" at="content" >
+    <head>
+      <title>Lift :: 2.4-M1</title>
+    </head>
+
+    
+    <div id="left">
+      <div>
+	<h1>Announcing Lift 2.2-M1</h1>
+	<p>June 6, 2011<br />
+	</p>
+<p>Lift is the most powerful, most secure web framework available
+today. There are <a href="http://seventhings.liftweb.net/"
+target="_blank">Seven Things</a> that distinguish Lift from other web
+frameworks. Lift applications are: </p>
+<ul>
+<li>Secure -- Lift apps are resistant to common vulnerabilities
+including many of the OWASP Top 10</li>
+<li>Developer centeric -- Lift apps are fast to build, concise and
+easy to maintain</li>
+<li>Scalable -- Lift apps are high performance and scale in the real
+world to handle insane traffic levels</li>
+<li>Interactive like a desktop app -- Lift's Comet support is
+unparalled and Lift's ajax support is super-easy and very secure</li>
+</ul>
+Sites powered by Lift include <a href="http://foursquare.com/"
+target="_blank">Foursquare</a>, Novell <a
+href="https://vibe.novell.com/" target="_blank">Vibe</a>, the <a
+href="http://www.guardian.co.uk/" target="_blank">UK Guardian</a>, and
+<a href="http://openstudy.com/" target="_blank">Open Study</a>.<br />
+<br />
+The Lift team is excited to announce the <a
+href="http://liftweb.net/download" target="_blank">availability</a> of
+Lift 2.4-M1 (Milestone 1).<br />
+<br />
+Lift 2.4-M1 supports Scala 2.9.0 and 2.9.0-1.<br />
+<br />
+The Lift team added over <a
+href="https://www.assembla.com/spaces/a-L5GeVBGr3RE_eJe5aVNr/tickets/report?report%5Bmilestone_id_cond%5D=0&amp;report%5Bmilestone_id_val%5D%5B%5D=367456&amp;report%5Bticket_status_id_cond%5D=0&amp;report%5Bticket_status_id_val%5D%5B%5D=all_closed&amp;report%5Btitle%5D=Closed+Tickets"
+target="_blank">45 enhancements</a> or bug fixes since Lift 2.3.&nbsp;
+Notably:<br />
+<ul>
+<li>Improvements to MongoDB support</li>
+<li>Improvements to the already awesome lift-json package</li>
+<li>Enhancements to tools for building complex forms</li>
+</ul>
+Lift's JSON, Util, Actor, and Common packages can be used independently
+from the Lift Web Framework.<br />
+<br />
+Please join the <a
+href="https://groups.google.com/forum/#%21forum/liftweb"
+target="_blank">Lift community</a> and enjoy the benefits of coding
+with Lift.
+      </div>
+    </div><!--left-->
+  </lift:surround>
+</content>
+</cms>

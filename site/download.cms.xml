@@ -11,10 +11,19 @@
       <div id="left">
         <h1>DOWNLOAD and run using the Simply Build Tool (sbt)</h1>
 	<p>
-	  Install <a href="http://code.google.com/p/simple-build-tool/">
-	    Simple Build Tool
-	  </a> and download:
+	  <div>Download</div>
 	  <ul>
+	    <li>Lift 2.4-M1 release:
+	    <a href="https://github.com/lift/lift_24_sbt/tarball/master">TAR</a> or
+	    <a href="https://github.com/lift/lift_24_sbt/zipball/master">Zip</a>.
+	    <br/>
+	    Expand the project and cd into the directory and the "scala_28/lift_basic" subdirectory.
+	    Then type <pre><code>sbt update ~jetty-run</code></pre>
+	    and you should be able to browse to 
+	    <code>http://localhost:8080</code> and see your running
+	    Lift app.
+	    <hr/>
+	    </li>
 	    <li>Lift 2.3 release:
 	    <a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a> or
 	    <a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>.
