@@ -1,0 +1,65 @@
+<cms path="/24_m1" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2011/06/06">
+<tag name="sub" value="happening">
+  <b>Lift 2.4-M3</b> Ships!
+</tag>
+<tag name="desc">
+  2011/06/06 The Lift team is proud to announce version 24-M1 of Lift
+</tag>
+<content>
+  <lift:surround with="default" at="content" >
+    <head>
+      <title>Lift :: 2.4-M3</title>
+    </head>
+
+    
+    <div id="left">
+      <div>
+	<h1>Announcing Lift 2.4-M3</h1>
+	<p>July 21, 2011<br />
+	</p>
+<p>Lift is the most powerful, most secure web framework available
+today. There are <a href="http://seventhings.liftweb.net/"
+target="_blank">Seven Things</a> that distinguish Lift from other web
+frameworks. Lift applications are: </p>
+<ul>
+<li>Secure -- Lift apps are resistant to common vulnerabilities
+including many of the OWASP Top 10</li>
+<li>Developer centeric -- Lift apps are fast to build, concise and
+easy to maintain</li>
+<li>Scalable -- Lift apps are high performance and scale in the real
+world to handle insane traffic levels</li>
+<li>Interactive like a desktop app -- Lift's Comet support is
+unparalled and Lift's ajax support is super-easy and very secure</li>
+</ul>
+Sites powered by Lift include <a href="http://foursquare.com/"
+target="_blank">Foursquare</a>, Novell <a
+href="https://vibe.novell.com/" target="_blank">Vibe</a>, the <a
+href="http://www.guardian.co.uk/" target="_blank">UK Guardian</a>, and
+<a href="http://openstudy.com/" target="_blank">Open Study</a>.<br />
+<br />
+The Lift team is excited to announce the <a
+href="http://liftweb.net/download" target="_blank">availability</a> of
+Lift 2.4-M3 (Milestone 3).<br />
+<br />
+Lift 2.4-M3 supports Scala 2.8.x as well as 2.9.x.<br />
+<br />
+The Lift team added over <a
+href="http://www.assembla.com/spaces/liftweb/milestones/387120"
+target="_blank">20 enhancements</a> or bug fixes since Lift 2.4-M2.
+<br />
+<em>Noteworthy breaking change:</em><br />
+As announced earlier, JavaMail dependency has been upgraded to 1.4.4 which is formally available from Java.net Maven 2 repository (and not from Maven central). As a result, existing applications would need to add the repository in the SBT project file as so:<br />
+<blockquote>
+<code>lazy val JavaNet = "Java.net Maven2 Repository" at "http://download.java.net/maven/2/"</code>
+</blockquote>
+
+<br />
+Please join the <a href="http://groups.google.com/group/liftweb/browse_thread/thread/5a525d2962a96cc1">3000-member</a> strong 
+<a href="http://groups.google.com/group/liftweb" target="_blank">Lift community</a> and enjoy the benefits of coding
+with Lift.
+      </div>
+    </div><!--left-->
+  </lift:surround>
+</content>
+</cms>
