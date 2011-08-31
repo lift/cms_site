@@ -1,0 +1,14 @@
+<cms path="/scalalol_2011" serve="true" type="html" locale="en_US" 
+     valid_from="2011/08/31" host="liftweb.net">
+  <tag name="redirect" value="http://skillsmatter.com/event/scala/scala-lift-off-london-2011/js-2615"/>
+  <tag name="sub" value="happening">
+    Scala Lift Off London 2011
+  </tag>
+  <tag name="desc">
+    Join the European Scala and Lift communities
+    for 2 days of open spaces excellence, fun,
+    and putting faces to names!
+  </tag>
+  <content><div/>
+  </content>
+</cms>

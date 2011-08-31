@@ -29,6 +29,11 @@
  	
 	<div id="hdr"><a href="/" class="header-home"><span>Lift</span></a></div>
 
+	<lift:choose>
+	<div style="text-align:right"><a href="http://skillsmatter.com/course/scala/david-pollak-lift-basics/js-2615"><img src="http://static.liftweb.com/dppcoursebanner.gif" alt="dpp"/></a></div>
+	<div style="text-align:right"><a href="http://skillsmatter.com/event/scala/scala-lift-off-london-2011/js-2615"><img src="http://static.liftweb.com/scalaliftofflondondppbanner.gif" alt="scalalol"/></a></div>
+	</lift:choose>
+
 	<div class="top-btn"><a href="http://demo.liftweb.net">Demo</a>
 	</div>
 	<!--menu-page-->	
@@ -79,7 +84,7 @@
 	</lift:xmenu>
       </div>
       
-      <div class="ftr-copy">Copyright &copy; 2010 WorldWide Conferencing, LLC</div>
+      <div class="ftr-copy">Copyright &copy; 2010-2011 WorldWide Conferencing, LLC</div>
       Lift performance and tuning is courtesy of <a href="http://yourkit.com">YourKit. </a><br />
 
       Design by <a href="http://www.joyreyes.com" target="_blank">Joy Reyes</a><br />

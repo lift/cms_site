@@ -1,0 +1,12 @@
+<cms path="/scala_291" serve="true" type="html" locale="en_US" 
+     valid_from="2011/08/29" host="liftweb.net">
+  <tag name="redirect" value="https://groups.google.com/d/topic/liftweb/vNxz59z2QJ0/discussion"/>
+  <tag name="sub" value="happening">
+    Scala 2.9.1 support in Lift
+  </tag>
+  <tag name="desc">
+    We are in process of building Lift against Scala 2.9.1
+  </tag>
+  <content><div/>
+  </content>
+</cms>
