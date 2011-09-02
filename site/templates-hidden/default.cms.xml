@@ -32,6 +32,7 @@
 	<lift:choose>
 	<div style="text-align:right"><a href="http://skillsmatter.com/course/scala/david-pollak-lift-basics/js-2615"><img src="http://static.liftweb.com/dppcoursebanner.gif" alt="dpp"/></a></div>
 	<div style="text-align:right"><a href="http://skillsmatter.com/event/scala/scala-lift-off-london-2011/js-2615"><img src="http://static.liftweb.com/scalaliftofflondondppbanner.gif" alt="scalalol"/></a></div>
+	<div style="text-align:right"><a href="http://skillsmatter.com/course/scala/david-pollaks-lift-essentials-workshop/js-2621"><img src="http://static.liftweb.com/dppliftessentialsbanner.gif" alt="dpp course"/></a></div>
 	</lift:choose>
 
 	<div class="top-btn"><a href="http://demo.liftweb.net">Demo</a>
