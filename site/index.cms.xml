@@ -47,14 +47,13 @@
     
     <div id="logo-container">
       <lift:choose cnt="3">
-	<div class="logo"><a href="http://foursquare.com"><img src="http://static.liftweb.com/logo-foursquare.gif" alt="" /></a></div>
 	<div class="logo"><a href="http://snapsort.com"><img src="http://static.liftweb.com/logo-snapsort.gif" alt="" /></a></div>
 	<div class="logo"><a href="http://innovationgames.com"><img src="http://static.liftweb.com/logo-innovation.gif" alt="" /></a></div>
-	<div class="logo"><a href="http://exchango.com"><img src="http://static.liftweb.com/logo-exchango.gif" alt="" /></a></div>
+	<div class="logo"><a href="http://www.grabgrip.com"><img src="http://static.liftweb.com/t8-webware-logo.gif" alt="" /></a></div>
 	<div class="logo"><a href="http://untyped.com"><img src="http://static.liftweb.com/logo-untyped.gif" alt="" /></a></div>
 	<div class="logo"><a href="http://openstudy.com"><img height="50" src="http://static.liftweb.com/open_study.png" alt="" /></a></div>
       </lift:choose>
-      <div class="logo" style="margin-right: 0px;"><a href="http://vibe.novell.com"><img src="http://static.liftweb.com/logo-novell.gif" alt="" /></a></div>
+      <div class="logo"><a href="http://foursquare.com"><img src="http://static.liftweb.com/logo-foursquare.gif" alt="" /></a></div>
     </div><!--logo-container-->
     
     <div id="left">

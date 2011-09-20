@@ -53,7 +53,6 @@
 	      <lift:embed what="/quotes/luke"/>
 	      <lift:embed what="/quotes/lukasz"/>
 	      <lift:embed what="/quotes/ebay"/>
-	      <lift:embed what="/quotes/martin"/>
 	      <lift:embed what="/quotes/esme"/>
 	      <lift:embed what="/quotes/tyler"/>
 	      <lift:embed what="/quotes/foursquare"/>
