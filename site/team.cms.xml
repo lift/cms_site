@@ -15,7 +15,7 @@
         <hr />
         <h1 id="current-team">CURRENT TEAM</h1>
         <div >
-          <h2>David Pollak &ndash; Founder, BDFL</h2>
+          <h2>David Pollak &ndash; Founder</h2>
           <p>David Pollak has been writing commercial software since 1977. He wrote the 
             first real-time spreadsheet and the worlds highest performance spreadsheet 
             engine. Since 1996, David has been using and devising web development tools. As CTO 
@@ -23,15 +23,6 @@
             David was CTO and VPE at Cenzic, a web application security company. David 
             has also developed numerous commercial projects in Ruby on Rails. 
             In 2007, David founded the Lift Framework open source project.</p>
-        </div>
-        <div >
-          <h2>Marius Danciu</h2>
-          <p>Marius has been a committer for more than an year now contributing with design and development 
-            of new features as well as fixing defects. I discovered Scala about 2-3 years ago 
-            and coming from Java world it's needless to say how much that impressed me. 
-            For the past 6 years I've been architecting,designing and developing server 
-            side Java applications orbiting around synchronization technologies such as 
-            SyncML. Before that I've been doing C/C++ programming. </p>
         </div>
         
         <div >
@@ -65,16 +56,51 @@
         </div>
 
         <div >
-          <h2>James Strachan </h2>
-          <p>James founded the Groovy language project and many other
-	  open source projects include Scalate which he integrates with
-	  Lift.</p>
-        </div>
-
-        <div >
           <h2>Vassil Dichev</h2>
           <p>Vassil is a Lift user in the ESME project and
 	  contributes to Lift's TestKit.</p>
+        </div>
+
+	<div>
+	  <h2>Mads Hartmann Jensen</h2>
+	  <p>Mads is a energetic young developer from Copenhagen, Denmark. He's been a Lift committer since January 2010 and has been working on different parts of Lift. As part of his Google Summer of Code project in 2010 he created Lifty to make Lift developers more productive . When he's not caught up in various open source projects he's getting his bachelor in software development at the IT University of Copenhagen.</p>
+	</div>
+        
+        <div >
+          <h2>Andreas Joseph Krogh</h2>
+          <p>No description available.</p>
+        </div>
+
+        <div >
+          <h2>Torsten Uhlmann</h2>
+          <p>No description available.</p>
+        </div>
+
+        <div >
+          <h2>Dave Whittaker</h2>
+          <p>Dave maintains Lift's Squeryl-Record code.</p>
+        </div>
+
+        <div >
+          <h2>Ján Raška</h2>
+          <p>Ján contributes to Lift's Squeryl-Record code.</p>
+        </div>
+
+        <hr />
+        <h1 id="alumni-team">ALUMNI TEAM</h1>
+        
+        <p>As Lift has grown, the team has expanded and contracted over time. However, the work done by
+          team members that are not currently active also deserves credit, so they are listed
+          here as Alumni members.</p>
+
+        <div >
+          <h2>Marius Danciu</h2>
+          <p>Marius has been a committer for more than an year now contributing with design and development 
+            of new features as well as fixing defects. I discovered Scala about 2-3 years ago 
+            and coming from Java world it's needless to say how much that impressed me. 
+            For the past 6 years I've been architecting,designing and developing server 
+            side Java applications orbiting around synchronization technologies such as 
+            SyncML. Before that I've been doing C/C++ programming. </p>
         </div>
 
         <div >
@@ -133,37 +159,6 @@ Heiko Seeberger is an OSGi expert and Scala enthusiast. He is managing director 
 	  lot of code that makes hard-core real-world use of Lift.</p>
         </div>
         
-	<div>
-	  <h2>Mads Hartmann Jensen</h2>
-	  <p>Mads is a energetic young developer from Copenhagen, Denmark. He's been a Lift committer since January 2010 and has been working on different parts of Lift. As part of his Google Summer of Code project in 2010 he created Lifty to make Lift developers more productive . When he's not caught up in various open source projects he's getting his bachelor in software development at the IT University of Copenhagen.</p>
-	</div>
-        
-        <div >
-          <h2>Andreas Joseph Krogh</h2>
-          <p>No description available.</p>
-        </div>
-
-        <div >
-          <h2>Torsten Uhlmann</h2>
-          <p>No description available.</p>
-        </div>
-
-        <div >
-          <h2>Dave Whittaker</h2>
-          <p>Dave maintains Lift's Squeryl-Record code.</p>
-        </div>
-
-        <div >
-          <h2>Ján Raška</h2>
-          <p>Ján contributes to Lift's Squeryl-Record code.</p>
-        </div>
-
-        <hr />
-        <h1 id="alumni-team">ALUMNI TEAM</h1>
-        
-        <p>As Lift has grown, the team has expanded and contracted over time. However, the work done by
-          team members that are not currently active also deserves credit, so they are listed
-          here as Alumni members.</p>
 
         
         <div >
