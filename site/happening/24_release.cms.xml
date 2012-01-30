@@ -1,0 +1,12 @@
+<cms path="/24_release" serve="true" type="html" locale="en_US" 
+     host="liftweb.net" valid_from="2012/01/12">
+  <tag name="sub" value="happening">
+    <b>Lift 2.4</b> Ships!
+  </tag>
+  <tag name="redirect" value="http://lift.la/announcing-lift-24-final"/>
+
+<tag name="desc">
+  2012/01/12 The Lift team is proud to announce version 2.4 of Lift.
+</tag>
+<content><div/></content>
+</cms>
