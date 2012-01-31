@@ -1,12 +1,73 @@
-<cms path="/24_release" serve="true" type="html" locale="en_US" 
+<cms path="/24_release" serve="true" type="html" locale="en_US"
      host="liftweb.net" valid_from="2012/01/12">
   <tag name="sub" value="happening">
     <b>Lift 2.4</b> Ships!
   </tag>
-  <tag name="redirect" value="http://lift.la/announcing-lift-24-final"/>
 
-<tag name="desc">
-  2012/01/12 The Lift team is proud to announce version 2.4 of Lift.
-</tag>
-<content><div/></content>
+  <tag name="desc">
+    2012/01/12 The Lift team is proud to announce version 2.4 of Lift.
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: 2.4</title>
+      </head>
+      <div id="left">
+        <div>
+          <h1>Announcing Lift 2.4</h1>
+          <em>January 12, 2012</em>
+
+          <p>The Lift team proudly announces the <a href="/download">availability</a>
+            of the final release of Lift version 2.4.
+          </p>
+          <p>Lift is a powerful, secure and most matured web framework available today. There are
+            <a href="http://seventhings.liftweb.net/" target="_blank">Seven Things</a>
+            that distinguish Lift from other web frameworks.
+          </p>
+
+          <p>Lift applications are:</p>
+          <ul>
+            <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
+            <li>Developer centeric -- Lift apps are fast to build, concise and easy to maintain</li>
+            <li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
+            <li>Interactive like a desktop app -- Lift's Comet support is unparalled and Lift's ajax support is super-easy and very secure</li>
+          </ul>
+
+          <p>Read an <a href="/overview">overview</a> of how Lift achieves these important goals.</p>
+
+          <p>Lift open source software licensed under an Apache 2.0 license.</p>
+
+          <p>Lift 2.4 includes the following new features and enhancements:</p>
+          <ul>
+            <li>Lots of enhancements to JSON support</li>
+            <li>Record improvments</li>
+            <li>Squeryl/Record support for Crudify</li>
+            <li>Singificant enhancement to MongoDB support (including better support for reference records and binary fields)</li>
+            <li>Support for BsonDSL (BSON types to JsonDSL)</li>
+            <li>Significant enhancements to Mailer functionality</li>
+            <li>Significant enhancements to the CSS Selector transformers</li>
+            <li>Enhancements to Snippet resolution like sub-packages based resolution, Loc-based snippet resolution of Screen and Wizard, etc.</li>
+            <li>Significant improvement to REST support including stateless Async/Continuations on Jetty 7, Jetty 8 and Tomcat/Glassfish</li>
+            <li>Ability to get html5 compliant templates using data-lift attribute</li>
+            <li>Numerous localization modules</li>
+          </ul>
+
+          <p>A complete list of changes for all the milestones leading up to 2.4 final:</p>
+          <ul>
+            <li>http://www.assembla.com/spaces/liftweb/milestones/367456</li>
+            <li>http://www.assembla.com/spaces/liftweb/milestones/387120</li>
+            <li>http://www.assembla.com/spaces/liftweb/milestones/431058</li>
+            <li>http://www.assembla.com/spaces/liftweb/milestones/525891</li>
+            <li>http://www.assembla.com/spaces/liftweb/milestones/387136</li>
+          </ul>
+
+          <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
+            and enjoy building awesome apps with Lift.</p>
+
+        </div>
+      </div>
+      <!--left-->
+    </lift:surround>
+  </content>
 </cms>
