@@ -44,7 +44,7 @@
 	<lift:if toTest="quotes">
 	  <div id="hdr-2">
 	    <lift:choose>
-	      <lift:embed what="/quotes/novell"/>
+	      <!-- <lift:embed what="/quotes/novell"/> -->
 	      <lift:embed what="/quotes/luke"/>
 	      <lift:embed what="/quotes/lukasz"/>
 	      <lift:embed what="/quotes/ebay"/>

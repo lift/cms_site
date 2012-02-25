@@ -1,0 +1,160 @@
+<cms path="/5th_anniversary" serve="true" type="html" locale="en_US"
+     host="liftweb.net" valid_from="2012/02/25">
+  <tag name="sub" value="happening">
+    <b>Lift turns 5</b>
+  </tag>
+
+  <tag name="desc">
+    The Lift Web Framework was founded on February
+    26th, 2007.  Happy Birthday!
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: Happy 5th Birthday</title>
+      </head>
+      <div id="left">
+
+<h2>Happy 5th Anniversary Lift</h2>
+
+<p>It was five years ago that I founded the Lift Web Framework project.</p>
+
+<p>At that time, the Scala community was very small and academically focused.
+Lift was one of the first external libraries for Scala and Lift is now the
+venerable, longest-lived external library in the Scala ecosystem.</p>
+
+<p>The Lift community has grown to over 3,000 people and more than 50 committers.  There
+are multiple books on Lift and hundreds of sites built on Lift.</p>
+
+<p>Lift has demonstrated the power of community and a different approach to web frameworks.
+Lift-powered apps scale.  Lift-powered apps are secure.  Lift-powered apps don&rsquo;t make
+the news because they just work and this frees the developers to add features to
+the sites.</p>
+
+<p>Most importantly, though, is the Lift community.  It&rsquo;s a community full of helpful,
+engaging people who help each other and help grow the quality of Lift as a whole.</p>
+
+<p>Five years is an excellent milestone and it&rsquo;s a great starting place for the next
+phase of Lift.</p>
+
+<p>Some of Lift&rsquo;s <em>differences</em> include:</p>
+
+<ul>
+<li>DOM manipulation rather than String manipulation.  This means that Lift apps are
+secure because DOM elements can be properly escaped and
+the internal representation can be converted to the appropriate output format including
+XHTML and Html5.  DOM manipulation means true separation between markup
+and business logic as well as support for designer friendly templates.</li>
+<li>Snippets are DOM transformers.  Lift templating isolates the dynamic rendering
+of a web page in snippets that transform incoming DOM to outgoing DOM. This
+functional approach to templating is composable, easier to maintain, and
+easier to build complex sites.</li>
+<li>Stateful. Interactive Lift apps are secure and the developer can focus on business
+logic rather than serializing state.  <a href="http://lift.la/lift-state-and-scaling">Lift&rsquo;s statefulness</a>
+leads to more scalable and easily managed sites.  Lift also allows stateless
+sites.  But with Lift, the developer controls the line between state and
+interactivity.</li>
+<li>Comet/server push. Lift pioneered Comet/Server push in web frameworks.  Lift&rsquo;s comet
+continues to be radically superior to what other web frameworks offer.  Lift
+supports many Comet components per page, all multiplexed through a single connection.
+Lift&rsquo;s Comet components support Lift&rsquo;s DOM manipulation so you don&rsquo;t get cross-site
+scripting vulnerabilities in Comet.  Lift&rsquo;s Comet supports versioned push so that
+if there are multiple incremental changes to a component while the client is disconnected
+(e.g., mobile broadband on a train), the changes will be delivered in order
+when the client re-connects.</li>
+</ul>
+
+
+<p>Bottom line, Lift does <a href="http://seventhings.liftweb.net/">Seven Things</a> better than
+any other web framework.</p>
+
+<h2>The road to 1.0</h2>
+
+<p>It took 2 years from the time Lift was launched until we launched version 1.0 of the
+framework.  We spent those two years exploring concepts and getting the APIs to
+a state where they could exist over a long term without significant breakage or
+deprecation.</p>
+
+<p>Many apps and sites were built with Lift pre-1.0.  Many developers used Lift&rsquo;s
+master/SNAPSHOT releases and they were (and continue to be) stable enough
+to run real, production sites on.</p>
+
+<p>When we launched Lift 1.0 on February 26th 2009, Lift was mature, stable and
+well-used.  Lift lived up to its billing as secure, scalable, and developer friendly.</p>
+
+<p>In the last few years, Lift has only gotten better.</p>
+
+<h2>Shifting to Html5, Designer Friendly, and RestHelper</h2>
+
+<p>In 2010, Lift shifted from XHTML-based to supporting Html5.  Lift received a bunch of other
+enhancements to help it mature and grow:</p>
+
+<ul>
+<li>Support for Html5 while retaining the core concepts of DOM manipulation such that
+the way that Lift apps manipulated the DOM did not make a difference.  Snippets
+still transformed incoming DOM to outgoing DOM.  The DOM retained the same representation.
+The change to support Html5 was the template to DOM parser and the DOM to bytes
+renderer.  In fact, XHTML templates can be sent out as Html5.</li>
+<li>Lift&rsquo;s templates became &ldquo;Designer Friendly&rdquo; where every single template
+in a Lift app can be valid XHTML or Html5, viewed in a browser and
+shared between designers and app developers in the same source code
+repository without &ldquo;shredding&rdquo; or non-valid markup.</li>
+<li>DOM transformation got much easier and more designer-oriented with
+Lift&rsquo;s CSS Selector Transforms.  The CSS Selector Transforms
+are functions that transform DOM => DOM and are completely
+in keeping with Lift&rsquo;s snippet/view first philosophy.</li>
+<li>Lift&rsquo;s RestHelper makes building secure, high performance
+web services as simple and flexible as Scala&rsquo;s pattern matching.</li>
+</ul>
+
+
+<p>The above changes are a core part of Lift, but other projects and
+modules built on top of Lift&rsquo;s powerful core continue to distinguish
+Lift.  For example <a href="http://www.reactive-web.co.cc/">Reactive Web</a>
+is the first set of functional-reactive tools for a mainstream
+web framework.  Lift&rsquo;s abstractions also allowed a developer
+to make Lift usable from <a href="https://github.com/jrwest/lift-and-netty-examples">Netty</a>
+with one day&rsquo;s worth of effort.</p>
+
+<h2>Committer team maturing</h2>
+
+<p>In addition to Lift&rsquo;s codebase maturing, Lift&rsquo;s committer team has also
+matured.  There are over 50 Lift committers.  In 2011, David Pollak
+who founded Lift, stepped down as Lift&rsquo;s Benevolent Dictator for Life.
+David continues to commit to Lift and is still the most active member
+of the Lift mailing list, but as the committer team has grown, it was
+time for David to become a person among excellent peers, rather than
+a dictator.</p>
+
+<h2>Lift Co.</h2>
+
+<p>On the 5th anniversary of the Lift project comes the birth of
+<a href="http://liftweb.com">Lift Co.</a></p>
+
+<p>Lift Co., founded by two Lift committers,
+David Whittaker and Andreas Joseph Krogh, provides Lift support with response
+time SLA, Lift Training, and consulting.  Lift Co. provides
+geographic diversity with folks from the United States, Europe and India
+on the team.  Lift Co. consultants include Lift committers David Pollak and
+Indrajit Raychaudhuri.</p>
+
+<p>David and Andreas founded Lift Co. to help grow the whole Lift ecosystem
+and welcome partnerships with other Lift consultancies so that
+large-scale Lift adopters have a range of services and service providers
+to choose from.</p>
+
+<h2>Looking forward</h2>
+
+<p>Lift has grown far beyond what David Pollak expected when he founded the
+project five years ago.  Lift continues to grow and gets better based
+on the ideas, feedback, and contributions from the whole Lift community.
+Lift will continue to develop as the best platform to build interactive and
+secure web applications.  Lift will get better, and perhaps slimmer,
+based on the evolving needs of the whole Lift community.</p>
+      
+      </div>
+      <!--left-->
+    </lift:surround>
+  </content>
+</cms>
