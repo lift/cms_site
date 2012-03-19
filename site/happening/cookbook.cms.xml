@@ -1,0 +1,12 @@
+<cms path="/Lift_Cookbook" serve="true" type="html" locale="en_US" 
+     valid_from="2012/03/19" host="liftweb.net">
+  <tag name="redirect" value="http://cookbook.liftweb.net"/>
+  <tag name="sub" value="happening">
+   Lift Cookbook
+  </tag>
+  <tag name="desc">
+  	The <i>Lift Cookbook</i> is a new and growing resource for Lift developers, presenting programming solutions to a range of specific questions. 
+  </tag>
+  <content><div/>
+  </content>
+</cms>
