@@ -26,15 +26,6 @@
         </div>
         
         <div >
-          <h2>Timothy Perrett</h2>
-          <p>Technical Architect / Geek / Open source junkie - specializes in 
-            systems integration for manufacturing and workflow systems. Has been working
-            with Scala since the end of 07' and before that was working with Java, Ruby
-            and Objective-C extensively for a number of years. Also a repentant Rails convert. 
-            Whilst not working on Lift I work for an Israeli startup designing systems 
-            for techno-marketing and on-demand publishing.</p>
-        </div>
-        <div >
           <h2>Tyler Weir</h2>
           <p>Currently a co-founder of Roboboogie Studios.  In my former jobs I 
             worked on compilers, desktop business apps and web applications. 
@@ -102,6 +93,16 @@
         <p>As Lift has grown, the team has expanded and contracted over time. However, the work done by
           team members that are not currently active also deserves credit, so they are listed
           here as Alumni members.</p>
+
+        <div >
+          <h2>Timothy Perrett</h2>
+          <p>Technical Architect / Geek / Open source junkie - specializes in 
+            systems integration for manufacturing and workflow systems. Has been working
+            with Scala since the end of 07' and before that was working with Java, Ruby
+            and Objective-C extensively for a number of years. Also a repentant Rails convert. 
+            Whilst not working on Lift I work for an Israeli startup designing systems 
+            for techno-marketing and on-demand publishing.</p>
+        </div>
 
         <div >
           <h2>Marius Danciu</h2>
