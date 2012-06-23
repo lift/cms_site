@@ -1,0 +1,14 @@
+<cms path="/quotes/sgrouples" type="html" locale="en_US" host="liftweb.net">
+<content>
+<div>
+  <div class="left">&ldquo;</div>
+  <div class="center">
+    <h1>
+Sgrouples is a social platform with a new approach to privacy and security on the web. Our team pushed Sgrouples from conceptual ideas to a publicly available release in just nine months. Some reasons we chose the Lift framework are its security-driven design and its stellar Ajax and Comet support. Lift paves the way for a secure, responsive real time application that is fun to use and even greater fun to develop.
+    </h1>
+    @sgrouples, The Sgrouples Developers
+  </div>
+  <div class="right">&rdquo;</div>
+</div>
+</content>
+</cms>
