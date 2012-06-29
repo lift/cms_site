@@ -43,7 +43,7 @@
 	
 	<lift:if toTest="quotes">
 	  <div id="hdr-2">
-	    <lift:choose>
+	    <lift:choose refresh="7">
 	      <!-- <lift:embed what="/quotes/novell"/> -->
 	      <lift:embed what="/quotes/luke"/>
 	      <lift:embed what="/quotes/lukasz"/>
@@ -84,6 +84,7 @@
 
       Design by <a href="http://www.joyreyes.com" target="_blank">Joy Reyes</a><br />
       Powered by <a href="http://liftweb.net">Lift</a>
+      Hosted by <a href="https://telegr.am">Telegram</a>
       
     </div><!--footer-->
   </div><!--wrapper-->
