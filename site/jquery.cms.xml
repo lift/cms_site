@@ -21,7 +21,8 @@
         </p>
         <h3>Use a CDN</h3>
         <p>Instead of downloading jQuery to your project, you just reference jQuery in your tempalte like this:
-          <pre><code>&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" id="jquery"&gt;
+          <pre><code>&lt;script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" id="jquery"&gt;
             &lt;/script&gt;</code></pre>
         </p>
         <h3>Use the lift-jquery-module module</h3>
