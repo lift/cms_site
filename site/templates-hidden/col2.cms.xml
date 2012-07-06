@@ -1,6 +1,11 @@
 <cms path="/col2" type="html" locale="en_US" host="liftweb.net">
   <content>
-    <div id="right">
+  
+          <div class="row-fluid" style="border: 1px green red;">
+            <div class="span12" style="border: 1px green red;">  
+  
+    <!--  <div id="rightwrapper"> -->
+  
       <h1>Latest Happenings</h1>
       
       <div class="cols2">
@@ -10,7 +15,8 @@
 	  <hr/>
 	</lift:subs>
 	
-      </div><!--cols2-->
+      </div>
+      <!--cols2-->
       
       <div class="clear"></div>
 
@@ -49,8 +55,11 @@
       </p>
 
       <hr/>
-
-    </div><!--right-->
-
+      <!-- </div>  -->
+      <!--right-->
+      
+      </div>
+      </div>
+      
   </content>
 </cms>

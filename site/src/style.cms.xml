@@ -16,7 +16,7 @@ body { background: #0c1943; margin: 0; padding: 0; color:#ebedf4; line-height:18
 /* text-align:justify;  */
  }
 
-#container-bg { margin: 0 auto; width: 995px; }
+#container-bg { margin: 0 auto; max-width: 995px; }
 
 /* LINKS - DEFAULT COLORS ARE SET IN BASE.CSS, CHANGE THESE COLORS AS NEEDED.
 *******************************************************************************/
@@ -35,10 +35,10 @@ outline: none;
 #home #header { margin: 0px auto; padding: 0px; height: 263px; }
 #back #header { margin: 0px auto; padding: 0px; height: 95px; }
 
-#header #hdr { float: left;  width: 185px; height:99px; margin-left:20px; }
-#header #hdr-2 {float:left; width: 975px; height:162px; background:#d8dbe0; 
+div#header div#hdr { float: left;  max-width: 185px; height:99px; margin-left:20px; }
+div#header div#hdr-2 {display: block;float:left; width:100%; min-height:162px;
+    background:#d8dbe0; 
 	color: #0c1943;
-		padding: 10px;
 		/* For WebKit (Safari, Google Chrome etc) */
 		background: -webkit-gradient(linear, left top, left bottom, from(#d1d5da), to(#ebecee));
 		/* For Mozilla/Gecko (Firefox etc) */
@@ -48,9 +48,13 @@ outline: none;
 		/* For Internet Explorer 8 */
 		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d1d5da, endColorstr=#ebecee)";
 	}	
+div#header div#hdr-2 > div {display: inline-block;margin:24px 0px 10px 0px;}	
 	
 	
-#hdr-2 .center {float:left; width:860px; padding:10px 25px 15px 15px; font-family:  'Myriad Pro', Arial, Verdana; color:#4b62ad; font-weight:bold; font-size:130%; line-height:120%; 
+div#hdr-2 div.center {
+    padding:0px 30px 20px; 110px;
+    font-family:  'Myriad Pro', Arial, Verdana; color:#4b62ad; 
+    font-weight:bold; font-size:130%; line-height:120%; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: normal; 
@@ -59,11 +63,13 @@ outline: none;
 	font-stretch: normal; 
 	-x-system-font: none; 
 	}
-	#hdr-2 .center h1 {color:#0c1943; font-size:110%; line-height:140%; font-weight:normal;         text-align:justify;
- }
-#hdr-2 .left, #hdr-2 .right {float:left; width:30px; font-family:  Georgia, Arial, Verdana; color:#a0aac1; font-size:600%; margin-top:30px;}
-#hdr-2 .right {margin-top:140px; }
+	div#hdr-2 div.center h1 {color:#0c1943; font-size:110%; line-height:140%; font-weight:normal; 
+	                         text-align:justify;}
 	
+#hdr-2 .left  {float:left; }
+#hdr-2 .right {float:right;}
+#hdr-2 .left,#hdr-2 .right {font-family:  Georgia, Arial, Verdana; color:#a0aac1; font-size:600%; }
+ 	
 .header-home { display:block; background: url(http://static.liftweb.com/logo.jpg) no-repeat; height: 89px; width: 185px;}
 .header-home span {
 	padding-left: 30px;
@@ -103,11 +109,12 @@ outline: none;
 *********************************************************************************/
 #main-menu-page {
 	float:right;
-	width:750px;
-	height:30px;
+	max-width:750px;
+	min-height:30px;
 	background:#24356d;
 	border:1px solid #485990;
 	margin-top:20px;
+	padding-right:10px;
 }
 #main-menu-page ul {
 	list-style:none;
@@ -125,14 +132,24 @@ outline: none;
 *******************************************************************************/
 #content {
 	float:left;
+	display:inline-block;
 	margin:10px auto;
-	width:962px;
-	padding:10px 10px 20px 23px;
+	max-width:950px;
+	padding:10px 23px 20px 23px;
 	background:#4b62ad;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	#content {padding:3px 10px;}
+}
+@media (max-width: 480px) {
+	#content {padding:3px 5px;}
+}
+@media (max-width: 767px) {
+	#content {padding:3px 5px;}
 }
 
 
-.box-gradient {float:left; width: 208px; height:65px; margin-right:10px; 
+.box-gradient {float:left; width:100%; max-width: 203px; height:70px; margin-right:10px; margin-top:4px; 
 		background:#8296d8; border:1px solid #9bace1;
 		color: #050d29;
 		padding: 10px;
@@ -174,8 +191,8 @@ outline: none;
 }
 .cols2 {
 	float:left;
-        width: 96%;
-	margin-right:15px;
+    /*width: 100%;*//*96%;*/
+	/*margin-right:15px;*/
 	background:#3d539c;
 	padding:10px;
 	text-align:left;
@@ -187,9 +204,9 @@ outline: none;
 	
 }
 
-#back .main-box {float:left; width:620px; margin-right:30px; }
+#back .main-box {float:left; max-width:620px; margin-right:30px; }
 #back .main-right {float:left;
-	width:220px;
+	max-width:220px;
 	margin-right:15px;
 	background:#3d539c;
 	padding:10px;
@@ -199,7 +216,7 @@ outline: none;
 
 /*FORM ELEMENTS
 **********************************************************************************/
-.form-container { width:620px; text-align:left; margin:20px auto; }
+.form-container { max-width:620px; text-align:left; margin:20px auto; }
 
 
 label {
@@ -228,18 +245,18 @@ label {
 .post-form-row2 label, .post-form-row3 label  {
 	display:block;
 	float:left;
-	width:120px; 
+	max-width:120px; 
 	
 }
 .post-form-row2 .inputBox3, .post-form-row3 .inputBox3 { float:left; background-color:#FFFFFF !important;	border:1px solid #ccc; color:#333;	letter-spacing:0px;	font-family:Arial,sans-serif;
-	font-size:12px;	width:380px;	padding: 8px 10px 5px 10px;	
+	font-size:12px;	max-width:380px;	padding: 8px 10px 5px 10px;	
 	height:24px;
 	margin-right:10px; -moz-border-radius:14px;
 -webkit-border-radius:11px;
 border-radius:14px;
 }
 .post-form-row2 textarea.inputBox3, .post-form-row3 textarea.inputBox3 { float:left; background-color:#FFFFFF !important;	border:1px solid #ccc; color:#333;	letter-spacing:0px;	font-family:Arial,sans-serif;
-	font-size:12px;	width:380px;	padding: 8px 10px 5px 10px;	margin-right:10px; 
+	font-size:12px;	max-width:380px;	padding: 8px 10px 5px 10px;	margin-right:10px; 
 	height:64px;
 	margin-right:10px; -moz-border-radius:14px;
 -webkit-border-radius:11px;
@@ -265,7 +282,7 @@ border-radius:14px;
 	border-radius: 8px;
 	margin-right:10px;
 	padding:8px 10px;
-	width:140px;
+	max-width:140px;
 	text-align:center;
 	text-transform: uppercase;
 	font-size:140%;
@@ -276,13 +293,14 @@ border-radius:14px;
 
 /* USER LOGOS
 *******************************************************************************/
-#logo-container {float:left; background:#374e97; border:1px solid #8a9bd5; width: 948px; display: block; text-align:center; padding:10px 0px; margin:0px 0px 10px 0px; }
+#logo-container {display: block;float:left;width:100%; background:#374e97; border:1px solid #8a9bd5;  
+ text-align:center; padding:10px 0px; margin:5px 0px 5px 0px; }
 #logo-container .logo {float:left; width:208px; margin-right: 20px; margin-left: 10px; text-align:center; }
 
     
 /* FOOTER
 *******************************************************************************/
-#footer{ float:left; margin: 5px auto 0;	width: 100%; height:80px; text-align:center;  }
+#footer{ float:left; margin: 5px auto 0;	width: 100%; height:auto; text-align:center;  }
 
 .ftr-links {line-height: 18px; color:#c7d2dc; font-size:0.9em; }
 .ftr-links a, .ftr-links a:visited, .ftr-copy a {color:#c7d2dc; }
@@ -291,7 +309,7 @@ border-radius:14px;
 
 /* HEADINGS
 ******************************************************************************/
-h1 { font-size: 180%; color:#fff; font-family: 'Myriad Pro', Arial, Verdana; line-height:100%;  text-align:left; }
+h1 { font-size: 180%; color:#fff; font-family: 'Myriad Pro', Arial, Verdana; line-height:100%;  text-align:left; margin:5px 0px 2px 0px;}
 h2 { font-size: 160%; color:#d4d7dc; font-family:  'Myriad Pro', Arial, Verdana; padding-bottom:2px; margin-bottom:2px;  text-align:left;}
 h3 { font-size: 140%; color:#1f3476; font-family:  Arial, Verdana; padding-bottom:2px; margin-bottom:2px; }
 h4 { font-size: 140%; color:#000; }
