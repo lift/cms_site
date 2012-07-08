@@ -8,7 +8,13 @@
 	<title>Lift :: Download</title>
       </head>
 
-      <div id="left">
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span8">  
+            
+      <!-- <div id="left">  -->
         <h1>DOWNLOAD and run using the Simply Build Tool (sbt)</h1>
 	<p>
 	  <div>Download</div>
@@ -77,7 +83,14 @@
           <p>If you are having problems getting started on Linux, head over to 
             the <a href="http://groups.google.com/group/liftweb">mailing list.</a></p>
       <!-- </div> -->
-      </div> <!-- left -->
+      <!--  </div>--> <!-- left -->
+          </div>      
+	        <div class="span4">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div>  
     </lift:surround>
   </content>
 </cms>

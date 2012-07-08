@@ -8,7 +8,12 @@
 	<title>Lift :: Team</title>
       </head>
       
-      <div id="left">
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span8">         
+     <!--  <div id="left"> --> 
         <p>An awful lot of time and effort has gone into making lift the great 
           bit of software it is today - so, to honor this effort, we felt it only
           right to honor those who have generously donated time to the project.</p>
@@ -86,6 +91,11 @@
           <h2>Franz Bettag</h2>
           <p>Black Belt DevOp, CEO and Developer located in Nuremberg, Germany. Franz has written some excellent examples for Lift and gave an awesome presentation about Lift and Akka at the Scala Lift Off London 2011. He's been active in the Community for quite some time and became Lift committer in January 2012.</p>
         </div>
+        
+        <div >
+          <h2>Diego Medina</h2>
+          <p>Diego is a super helpful, super excellent, super nice, and super skilled member of the Lift community. He's been active in the Community for quite some time and became Lift committer in Mars 2012.</p>
+        </div>        
 
         <hr />
         <h1 id="alumni-team">ALUMNI TEAM</h1>
@@ -244,7 +254,15 @@ Heiko Seeberger is an OSGi expert and Scala enthusiast. He is managing director 
           <p>No description available..</p>
         </div>
         
-      </div> <!-- left -->
+      <!--  </div> --><!-- left -->
+          </div>      
+	        <div class="span4">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>    
+ 
+      </div>
+    </div> 
     </lift:surround>
   </content>
 </cms>

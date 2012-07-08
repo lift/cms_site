@@ -13,7 +13,13 @@
     </head>
 
     
-    <div id="left">
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span8">  
+            
+      <!-- <div id="left">  -->
       <div>
 	<h1>Announcing Lift 2.4-M1</h1>
 	<p>June 6, 2011<br />
@@ -61,7 +67,14 @@ href="https://groups.google.com/forum/#%21forum/liftweb"
 target="_blank">Lift community</a> and enjoy the benefits of coding
 with Lift.
       </div>
-    </div><!--left-->
+      <!--  </div>--> <!-- left -->
+          </div>      
+	        <div class="span4">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div> 
   </lift:surround>
 </content>
 </cms>
