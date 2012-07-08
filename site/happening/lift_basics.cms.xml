@@ -20,7 +20,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
       <p>David Pollak is the founder and BDFL of the Lift Framework open source project.</p>
 
       <p>Join David for a 4 hour introductory session to Lift. David will cover:
@@ -45,7 +44,6 @@
 
 	<a href="https://student.gototraining.com/9j4r6/register/3723981343245802752">https://student.gototraining.com/9j4r6/register/3723981343245802752</a>
       </p>
-      <!--  </div>--> <!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

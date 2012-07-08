@@ -19,7 +19,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
       <h1>
 	 Lift 2.2
       </h1>
@@ -144,8 +143,6 @@
       <div class="Standard">
 	Please join the Lift community and help use grow Lift. And a super-big thanks to the 30+ Lift committers who have grown the Lift community and code-base to what it is today... and what it will be in the future!
       </div>
-      
-      <!--  </div>--> <!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

@@ -14,7 +14,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
         <h1>Including jQuery in your project</h1>
         <p>Up until Lift 2.4, we included two versions of jQuery, 1.3 and 1.4. But both are very old versions by now. After some discussions on the
           mailing list we decided that the best solution moving forward was to require users include their own version of jQuery.</p>
@@ -40,7 +39,7 @@
         </p>
         <p>Please refer to the <a href="https://github.com/karma4u101/lift-jquery-module">README.md</a> file for instructions on using this module</p>
         <p>If you are having problems getting started, head over to the <a href="http://groups.google.com/group/liftweb">mailing list.</a></p>
-      <!--  </div>--> <!-- left -->
+
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

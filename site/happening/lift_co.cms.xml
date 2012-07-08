@@ -20,8 +20,6 @@
 
         <div class="row-fluid">
           <div class="span8">  
-            
-      <!-- <div id="left">  -->
 
 <h2>Lift Co. Commercial Support for Lift</h2>
 
@@ -96,7 +94,6 @@
     </div>
   </div>
       
-      <!--  </div>--> <!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

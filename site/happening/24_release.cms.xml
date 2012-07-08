@@ -19,7 +19,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
         <div>
           <h1>Announcing Lift 2.4</h1>
           <em>January 12, 2012</em>
@@ -72,7 +71,6 @@
             and enjoy building awesome apps with Lift.</p>
 
         </div>
-      <!--  </div>--> <!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

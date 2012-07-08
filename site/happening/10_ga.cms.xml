@@ -18,7 +18,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
 	<p>
 	  <b>Hey
 	    Web Developer – Need a Lift
@@ -171,7 +170,7 @@
 	  Odersky, ACM Fellow, and father of Scala.</p>
 	<p><br /><br />
 	</p>
-      <!--  </div>--> <!-- left -->
+     
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

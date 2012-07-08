@@ -14,7 +14,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
         <h1>DOWNLOAD and run using the Simply Build Tool (sbt)</h1>
 	<p>
 	  <h2>*Note about jQuery and <a href="/jquery">Lift 2.5</a></h2>
@@ -84,7 +83,7 @@
           <p>If you are having problems getting started on Linux, head over to 
             the <a href="http://groups.google.com/group/liftweb">mailing list.</a></p>
       <!-- </div> -->
-      <!--  </div>--> <!-- left -->
+
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

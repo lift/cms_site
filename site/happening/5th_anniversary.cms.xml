@@ -21,7 +21,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
 
 <h2>Happy 5th Anniversary Lift</h2>
 
@@ -160,7 +159,6 @@ Lift will continue to develop as the best platform to build interactive and
 secure web applications.  Lift will get better, and perhaps slimmer,
 based on the evolving needs of the whole Lift community.</p>
       
-      <!--  </div>--> <!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

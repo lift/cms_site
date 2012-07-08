@@ -13,7 +13,7 @@
 
         <div class="row-fluid">
           <div class="span8">         
-     <!--  <div id="left"> --> 
+
         <p>An awful lot of time and effort has gone into making lift the great 
           bit of software it is today - so, to honor this effort, we felt it only
           right to honor those who have generously donated time to the project.</p>
@@ -254,7 +254,6 @@ Heiko Seeberger is an OSGi expert and Scala enthusiast. He is managing director 
           <p>No description available..</p>
         </div>
         
-      <!--  </div> --><!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

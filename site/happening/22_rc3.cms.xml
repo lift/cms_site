@@ -18,8 +18,6 @@
 
         <div class="row-fluid">
           <div class="span8">  
-            
-      <!-- <div id="left">  -->
       <div>
 	<h1>
 	  Lift 2.2-RC3
@@ -31,8 +29,7 @@
 <div class="Unindented">The <a href="http://liftweb.net/" class="URL">Lift</a> team is pleased to announce <a href="http://liftweb.net/download.html" class="URL">Lift 2.2-RC3</a> with <a href="https://www.assembla.com/spaces/liftweb/milestones/327759">one ticket</a> closed since <a href="http://lift.la/announcing-lift-22-rc2">Lift 2.2-RC2</a>.</div> <br /> This is the third release candidate in the 2.2-RC* series following up on <a href="http://lift.la/lift-22-rc1">Lift 2.2-RC1</a> and <a href="http://lift.la/announcing-lift-22-rc2">Lift 2.2-RC2</a>.<p />  We are getting close! Please test this and help us <a href="http://ticket.liftweb.net/">identify bugs</a> so that we can make Lift 2.2 awesome!<p />  Thank you, have fun!<br /> - The Lift team
 
       </div>
-      
-      <!--  </div>--> <!-- left -->
+ 
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

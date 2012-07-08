@@ -14,7 +14,7 @@
     
         <div class="row-fluid">
           <div class="span8">        
-            <!-- <div id="leftwrapper">  -->
+            
               <h1>What is Lift?</h1>
               <p>Lift is the most powerful, most secure web framework available today.  
 	             There are <a href="http://seventhings.liftweb.net">Seven Things</a>
@@ -35,11 +35,6 @@
               <p><a href="http://demo.liftweb.net">See a Demo</a></p>
       
               <p>Because Lift applications are written in Scala, an elegant JVM language, you can still use your favorite Java libraries and deploy to your favorite Servlet Container and app server. Use the code you've already written and deploy to the container you've already configured!</p>
-      
-              <!--  <div class="clear"></div>-->
-  
-            <!--  </div> -->
-            <!--left-->
                 
           </div>      
 	        <div class="span4">  

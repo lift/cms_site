@@ -19,7 +19,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
       <div>
 	    <h1>Announcing Lift 2.1</h1>
 	    <p>September 24th, 2010<br />
@@ -85,7 +84,6 @@
 	    <br />
 	    
       </div>
-      <!--  </div>--> <!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 

@@ -12,7 +12,6 @@
         <div class="row-fluid">
           <div class="span8">  
             
-      <!-- <div id="left">  -->
             <div class="post-text"><p>Lift's Comet Architecture which was selected by Novell to power their Pulse product after they evaluated a number of different technologies.</p>
 
 <p>Lift's Comet implementation uses a single HTTP connection to poll for changes to an arbitrary number of components on the page.  Each component has a version number.  The long poll includes the version number and the component GUID.  On the server side, a listener is attached to all of the GUIDs listed in the long poll requests.  If any of the components has a higher version number (or the version number increases during the period of the long poll), the deltas (a set of JavaScript describing the change from each version) is sent to the client.  The deltas are applied and the version number on the client is set to the highest version number for the change set.</p>
@@ -64,7 +63,6 @@
 
 <p>And to insert this into a page: <code>&lt;lift:comet type="Chat"/&gt;</code></p>
 </div>
-      <!--  </div>--> <!-- left -->
           </div>      
 	        <div class="span4">  
 	          <lift:embed what="col2"/> 
