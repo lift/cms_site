@@ -1,0 +1,38 @@
+<cms path="/jquery" serve="true" type="html" locale="en_US" host="liftweb.net">
+  <tag name="name" value="jQuery"/>
+  <!--<tag name="menu" value="Download"/>-->
+  <!--<tag name="order" value="3"/>-->
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+	      <title>Lift :: Using jQuery</title>
+      </head>
+
+      <div id="left">
+        <h1>Including jQuery in your project</h1>
+        <p>Up until Lift 2.4, we included two versions of jQuery, 1.3 and 1.4. But both are very old versions by now. After some discussions on the
+          mailing list we decided that the best solution moving forward was to require users include their own version of jQuery.</p>
+        <h2>Options:</h2>
+        <h3>Host your own</h3>
+        <p>You can download jQuery and include it on your projects webapp/js folder (you may have to create the js folder).
+          Then you reference this jQuery file in your template by using:
+          <pre><code>&lt;script type="text/javascript" src="/js/jquery-1.7.2.min.js" id="jquery"&gt;
+            &lt;/script&gt;</code></pre>
+        </p>
+        <h3>Use a CDN</h3>
+        <p>Instead of downloading jQuery to your project, you just reference jQuery in your tempalte like this:
+          <pre><code>&lt;script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" id="jquery"&gt;
+            &lt;/script&gt;</code></pre>
+        </p>
+        <h3>Use the lift-jquery-module module</h3>
+        <p>This is a module written by one of the Lift committers, Peter Petersson. The idea behind this module is that it will provide a min version of the jQuery
+          file in production mode, while providing the regular version during development.<br></br>
+          This is a separate module to allow rapid release cycles to keep up with jQuery upstream.
+        </p>
+        <p>Please refer to the <a href="https://github.com/karma4u101/lift-jquery-module">README.md</a> file for instructions on using this module</p>
+        <p>If you are having problems getting started, head over to the <a href="http://groups.google.com/group/liftweb">mailing list.</a></p>
+      </div> <!-- left -->
+    </lift:surround>
+  </content>
+</cms>

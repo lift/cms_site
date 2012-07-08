@@ -17,6 +17,7 @@
       <!-- <div id="left">  -->
         <h1>DOWNLOAD and run using the Simply Build Tool (sbt)</h1>
 	<p>
+	  <h2>*Note about jQuery and <a href="/jquery">Lift 2.5</a></h2>
 	  <div>Download</div>
 	  <ul>
 	    <li>Lift 2.4 release:
