@@ -36,7 +36,7 @@ outline: none;
 #back #header { margin: 0px auto; padding: 0px; height: 95px; }
 
 div#header div#hdr { float: left;  max-width: 185px; height:99px; margin-left:20px; }
-div#header div#hdr-2 {display: block;float:left; width:100%; min-height:162px;
+div#header div#hdr-2 {display: block;float:left; width:100%; min-height:220px;
     background:#d8dbe0; 
 	color: #0c1943;
 		/* For WebKit (Safari, Google Chrome etc) */
