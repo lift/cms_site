@@ -327,7 +327,7 @@ img.border {border:3px solid #fff;}
 
 @media (min-width: 768px) and (max-width: 979px) {
     body {
-        font-size: 90%;
+        font-size: 80%;
         line-height: 18px;
     }
 	#content {padding:3px 10px;}
@@ -335,7 +335,7 @@ img.border {border:3px solid #fff;}
 }
 @media (max-width: 767px) {
     body {
-        font-size: 100%;
+        font-size: 90%;
         line-height: 18px;
     }
 	#content {padding:3px 5px;}
@@ -345,7 +345,7 @@ img.border {border:3px solid #fff;}
 }
 @media (max-width: 480px) {
     body {
-        font-size: 110%;
+        font-size: 100%;
         line-height: 18px;
     }
 	#content {padding:3px 5px;}
