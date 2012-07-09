@@ -12,31 +12,31 @@
 						<h1>
 							<lift:a name="getting_started">Taking Off</lift:a>
 						</h1>
-						Get started with Lift. Build
+						<span>Get started with Lift. Build
 						your first interactive Lift-powered
-						app.
+						app.</span>
 					</div>
 
 					<div class="box-gradient">
 						<h1>
 							<lift:a name="community">Flying in Formation</lift:a>
 						</h1>
-						Join the warm, welcoming Lift community, ask questions,
-						suggest features, have fun!
+						<span>Join the warm, welcoming Lift community, ask questions,
+						suggest features, have fun!</span>
 					</div>
 
 					<div class="box-gradient">
 						<h1>
 							<a href="http://liftweb.com">Flying Commercial</a>
 						</h1>
-						Get Lift support and consulting from the Lift committers
+						<span>Get Lift support and consulting from the Lift committers.</span>
 					</div>
 
 					<div class="box-gradient">
 						<h1>
 							<lift:a name="team">Team</lift:a>
 						</h1>
-						Learn about the Lift team
+						<span>Learn about the Lift team.</span>
 					</div>
 
 					<!-- <div class="box-gradient"> <h1><lift:a name="stunts">Stunt Flying</lift:a></h1> 
