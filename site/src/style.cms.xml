@@ -36,7 +36,7 @@ outline: none;
 #back #header { margin: 0px auto; padding: 0px; height: 95px; }
 
 div#header div#hdr { float: left;  max-width: 185px; height:99px; margin-left:20px; }
-div#header div#hdr-2 {display: block;float:left; width:100%; min-height:162px;
+  div#header div#hdr-2 {display: block;float:left; width:100%; min-height:220px;
     background:#d8dbe0; 
 	color: #0c1943;
 		/* For WebKit (Safari, Google Chrome etc) */
@@ -140,7 +140,8 @@ div#hdr-2 div.center {
 }
 
 
-.box-gradient {float:left; width:100%; max-width: 203px;height:70px; margin-right:10px; margin-top:4px; 
+.box-gradient {display: inline-block;float:left; width:100%; max-width: 205px;
+               height:70px; margin-right:10px; margin-top:4px; 
 		background:#8296d8; border:1px solid #9bace1;
 		color: #050d29;
 		padding: 10px;
@@ -328,15 +329,17 @@ img.border {border:3px solid #fff;}
 @media (min-width: 768px) and (max-width: 979px) {
     body {
         font-size: 80%;
-        line-height: 18px;
+        line-height: 16px;
     }
 	#content {padding:3px 10px;}
-    .box-gradient h1 {font-size:130%;}	
+	div#header div#hdr-2 {min-height:280px;}
+    .box-gradient h1 {font-size:120%;}	
+    .box-gradient span {font-size:90%;}	
 }
 @media (max-width: 767px) {
     body {
         font-size: 90%;
-        line-height: 18px;
+        line-height: 16px;
     }
 	#content {padding:3px 5px;}
 	div#header div#hdr-2 {min-height:280px;}
@@ -346,7 +349,7 @@ img.border {border:3px solid #fff;}
 @media (max-width: 480px) {
     body {
         font-size: 100%;
-        line-height: 18px;
+        line-height: 16px;
     }
 	#content {padding:3px 5px;}
 	div#header div#hdr-2 {min-height:380px;}
