@@ -6,7 +6,8 @@
             <div class="span12">
 
 			 <div class="row-fluid" style="/*border: 1px solid red;*/">
-				<div class="span12" style="/*border: 1px dotted red;*/">
+			   <div class="span12" style="/*border: 1px dotted red;*/">
+				<!--  <div class="span6" style="width:50%;min-width: 450px;margin:0px; border: 1px dotted red;">-->
 
 					<div class="box-gradient">
 						<h1>
@@ -24,7 +25,10 @@
 						<span>Join the warm, welcoming Lift community, ask questions,
 						suggest features, have fun!</span>
 					</div>
-
+					
+					<!-- </div>  -->
+                   <!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; border: 1px dotted red;"> --> 
+                    
 					<div class="box-gradient">
 						<h1>
 							<a href="http://liftweb.com">Flying Commercial</a>
