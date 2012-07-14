@@ -122,8 +122,9 @@ div#hdr-2 div.center {
 	margin:0;
 }
 
-#main-menu-page li {float: left; list-style: none;  margin: 0px; padding: 5px 0 0 15px; }
+#main-menu-page li {float: left; list-style: none;  margin: 0px; padding: 5px 0 0 12px; /*border-right:1px solid #d7d9e0;*/}
 	#main-menu-page li.active a {display:block;  }
+#main-menu-page li span {padding-right:3px;}	
 	
 	#main-menu-page a, #main-menu-page a:link, #main-menu-page a:visited {color: #d7d9e0; font-family:'Myriad Pro', Arial; font-size:140%; text-decoration:none; font-weight:normal; }
 	#main-menu-page a:hover { color: #fff; }
@@ -139,7 +140,7 @@ div#hdr-2 div.center {
 	background:#4b62ad;
 }
 
-.box-gradient {display: inline-block;float:left; width:100%; max-width: 199px;
+.box-gradient {display: inline-block;float:left; width:100%; max-width: 204px;
                height:70px; margin-right:10px; margin-top:4px; 
 		background:#8296d8; border:1px solid #9bace1;
 		color: #050d29;
@@ -325,14 +326,22 @@ img.border {border:3px solid #fff;}
 
 .syntaxhighlighter { padding: 10px 0px;}
 
+@media (max-width: 1040px) {
+   .box-gradient {max-width: 46%;}
+   .box-gradient h1 {font-size:180%;}
+   #logo-container .logo { width:44%;} 
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
     body {font-size: 80%; line-height: 16px;}
 	#content {padding:3px 10px;}
-    .box-gradient h1 {font-size:120%;}	
-    .box-gradient span {font-size:90%;}	
-    .box-gradient {max-width: 199px;}
-    #logo-container .logo { width:199px;}    
-    div#header div#hdr-2 {min-height:240px;}
+    .box-gradient h1 {font-size:130%;}	
+    .box-gradient span {font-size:100%;}	
+    /*.box-gradient {max-width: 172px;}*/
+    .box-gradient {max-width: 270px;}
+    .box-gradient {max-width: 45%;}
+    #logo-container .logo { width:44%;}    
+    div#header div#hdr-2 {min-height:260px;}
     div#hdr-2 div.center h1 {font-size:110%; line-height:130%;}
 }
 @media (max-width: 767px) {
@@ -340,9 +349,9 @@ img.border {border:3px solid #fff;}
 	#content {padding:3px 5px;}
 	.box-gradient h1 {font-size:120%;}	
 	.box-gradient span {font-size:90%;}
-	.box-gradient {max-width: 199px;}
-	#logo-container .logo { width:199px;}  
-	div#header div#hdr-2 {min-height:260px;}	
+	.box-gradient {max-width:43%;}
+	#logo-container .logo { width:43%;}  
+	div#header div#hdr-2 {min-height:360px;}	
 	div#hdr-2 div.center h1 {font-size:100%; line-height:120%;}
 }
 @media (max-width: 480px) {
@@ -350,10 +359,10 @@ img.border {border:3px solid #fff;}
 	#content {padding:3px 5px;}
 	.box-gradient h1 {font-size:120%;}
 	.box-gradient span {font-size:70%;}	
-	.box-gradient {max-width: 195px;}	
-	#logo-container .logo { width:195px;}  
-	div#header div#hdr-2 {min-height:320px;}	
-	div#hdr-2 div.center h1 {font-size:100%; line-height:120%;}
+	.box-gradient {max-width: 95%;}	
+	#logo-container .logo { width:95%;}  
+	div#header div#hdr-2 {min-height:400px;}	
+	div#hdr-2 div.center h1 {font-size:90%; line-height:110%;}
 }
 
 ]]>
