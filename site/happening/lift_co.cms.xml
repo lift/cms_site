@@ -1,106 +1,107 @@
-<cms path="/lift_co" serve="true" type="html" locale="en_US"
-     host="liftweb.net" valid_from="2012/02/25">
-  <tag name="sub" value="happening">
-    <b>Lift Co -- Commercial Support</b>
-  </tag>
+<cms path="/lift_co" serve="true" type="html" locale="en_US" host="liftweb.net"
+	valid_from="2012/02/25">
+	<tag name="sub" value="happening">
+		<b>Lift Co -- Commercial Support</b>
+	</tag>
 
-  <tag name="desc">
-    Commercial Support including SLAs
-    available for Lift.
-  </tag>
+	<tag name="desc">
+		Commercial Support including SLAs
+		available for Lift.
+	</tag>
 
-  <content>
-    <lift:surround with="default" at="content">
-      <head>
-        <title>Lift :: Commercial Support for Lift</title>
-      </head>
-      
-    <div class="row-fluid">
-      <div class="span12">
-
-        <div class="row-fluid">
-          <div class="span9">  
-
-<h2>Lift Co. Commercial Support for Lift</h2>
-
-<div id="services" class="row">
-    <div id="support" class="service span3">
-      <div class="icon"></div>
-      <h2>SLA Backed Support</h2>
-      <p>
-        You've built your business's web site on Lift.  Lift Co. has your back.
-        With Lift Co.'s SLA-backed support, you know that a Lift committer
-        will respond to your question or bug report within 1 business day.
-        You also have the peace of mind that David Pollak, Lift's founder,
-        is part of the response team and the response team spans 13 time
-        zones from GMT+5 through GMT-8.
-      </p>
-      <p>
-        Get the peace of mind that comes with Lift SLA-backed support.
-      </p>
-      <a href="http://liftweb.com">Find out more ></a>
-    </div>
-    <div id="training" class="service span3">
-      <div class="icon"></div>
-      <h2>Training</h2>
-      <p>
-        Learn Lift from the people who write Lift.
-        Lift Co. offers
-        <i>David Pollak's Lift Basics</i> and more.
-        A Lift committer will come onsite at your company
-        or provide Lift training at many locations worldwide
-        including London, New York, and San Francisco.
-
-      </p>
-      <p>
-        Learn to use
-        the best of Lift to make your team more productive.
-      </p>
-      <a href="http://liftweb.com">Find out more ></a>
-    </div>
-    <div id="consulting" class="service span3">
-      <div class="icon"></div>
-      <h2>Consulting</h2>
-      <p>
-        Lift Co. provides a variety of Lift and Scala
-        consulting services.  Do you need a few weeks of
-        "hit squad" consulting to get past a deadline
-        or need an entire Lift-based project built
-        to your requirements, Lift Co. can deliver
-        the right consulting services.
-      </p>
-      <p>
-        With Lift Co. consulting, you save time and get the most out of Lift.
-      </p>
-      <a href="http://liftweb.com">Find out more ></a>
-    </div>
-    <div id="onsite" class="service span3">
-      <div class="icon"></div>
-      <h2>On-site Consulting</h2>
-      <p>
-        Lift Co. can provide onsite consulting.
-        If you need a Lift committer to come onsite
-        to help your team get the most out of Lift,
-        build examples or parts of your Lift-powered
-        site, and transfer Lift and Scala skills
-        to your team, Lift Co. can provide
-        the right consultant at your location.
-      </p>
-      <p>
-        Lift committers at your company's offices.
-        Saves time and makes your team more productive.
-      </p>
-      <a href="http://liftweb.com">Find out more ></a>
-    </div>
-  </div>
-      
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>     
-        </div>  
-      </div> 
-    </lift:surround>
-  </content>
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Commercial Support for Lift</title>
+			</head>
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="row-fluid">
+						<div class="span8">
+							<h2>Lift Co. Commercial Support for Lift</h2>
+							<div class="row-fluid">
+								<div class="span6">
+									<div class="icon"></div>
+									<h2>SLA Backed Support</h2>
+									<p>
+										You've built your business's web site on Lift. Lift Co. has your
+										back.
+										With Lift Co.'s SLA-backed support, you know that a Lift committer
+										will respond to your question or bug report within 1 business
+										day.
+										You also have the peace of mind that David Pollak, Lift's
+										founder,
+										is part of the response team and the response team spans 13 time
+										zones from GMT+5 through GMT-8.
+									</p>
+									<p>
+										Get the peace of mind that comes with Lift SLA-backed support.
+									</p>
+									<a href="http://liftweb.com">Find out more ></a>
+								</div>
+								<div class="span6">
+									<div class="icon"></div>
+									<h2>Training</h2>
+									<p>
+										Learn Lift from the people who write Lift.
+										Lift Co. offers
+										<i>David Pollak's Lift Basics</i>
+										and more.
+										A Lift committer will come onsite at your company
+										or provide Lift training at many locations worldwide
+										including London, New York, and San Francisco.
+									</p>
+									<p>
+										Learn to use
+										the best of Lift to make your team more productive.
+									</p>
+									<a href="http://liftweb.com">Find out more ></a>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span6">
+									<div class="icon"></div>
+									<h2>Consulting</h2>
+									<p>
+										Lift Co. provides a variety of Lift and Scala
+										consulting services. Do you need a few weeks of
+										"hit squad" consulting to get past a deadline
+										or need an entire Lift-based project built
+										to your requirements, Lift Co. can deliver
+										the right consulting services.
+									</p>
+									<p>
+										With Lift Co. consulting, you save time and get the most out of
+										Lift.
+									</p>
+									<a href="http://liftweb.com">Find out more ></a>
+								</div>
+								<div class="span6">
+									<div class="icon"></div>
+									<h2>On-site Consulting</h2>
+									<p>
+										Lift Co. can provide onsite consulting.
+										If you need a Lift committer to come onsite
+										to help your team get the most out of Lift,
+										build examples or parts of your Lift-powered
+										site, and transfer Lift and Scala skills
+										to your team, Lift Co. can provide
+										the right consultant at your location.
+									</p>
+									<p>
+										Lift committers at your company's offices.
+										Saves time and makes your team more productive.
+									</p>
+									<a href="http://liftweb.com">Find out more ></a>
+								</div>
+							</div>
+						</div>
+						<div class="span4">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>
