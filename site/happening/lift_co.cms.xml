@@ -19,12 +19,12 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span8">  
+          <div class="span9">  
 
 <h2>Lift Co. Commercial Support for Lift</h2>
 
 <div id="services" class="row">
-    <div id="support" class="service span4">
+    <div id="support" class="service span3">
       <div class="icon"></div>
       <h2>SLA Backed Support</h2>
       <p>
@@ -40,7 +40,7 @@
       </p>
       <a href="http://liftweb.com">Find out more ></a>
     </div>
-    <div id="training" class="service span4">
+    <div id="training" class="service span3">
       <div class="icon"></div>
       <h2>Training</h2>
       <p>
@@ -58,7 +58,7 @@
       </p>
       <a href="http://liftweb.com">Find out more ></a>
     </div>
-    <div id="consulting" class="service span4">
+    <div id="consulting" class="service span3">
       <div class="icon"></div>
       <h2>Consulting</h2>
       <p>
@@ -74,7 +74,7 @@
       </p>
       <a href="http://liftweb.com">Find out more ></a>
     </div>
-    <div id="onsite" class="service span4">
+    <div id="onsite" class="service span3">
       <div class="icon"></div>
       <h2>On-site Consulting</h2>
       <p>
@@ -95,7 +95,7 @@
   </div>
       
           </div>      
-	        <div class="span4">  
+	        <div class="span3">  
 	          <lift:embed what="col2"/> 
             </div>
         </div>     

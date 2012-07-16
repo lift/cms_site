@@ -219,7 +219,7 @@ a:hover {
   width: 700px;
 }
 
-.span8 {
+.span9 {
   width: 620px;
 }
 
@@ -235,7 +235,7 @@ a:hover {
   width: 380px;
 }
 
-.span4 {
+.span3 {
   width: 300px;
 }
 
@@ -351,7 +351,7 @@ a:hover {
   *width: 74.4148936096383%;
 }
 
-.row-fluid .span8 {
+.row-fluid .span9 {
   width: 65.95744680199999%;
   *width: 65.90425531263828%;
 }
@@ -371,7 +371,7 @@ a:hover {
   *width: 40.3723404216383%;
 }
 
-.row-fluid .span4 {
+.row-fluid .span3 {
   width: 31.914893614%;
   *width: 31.8617021246383%;
 }
@@ -1024,9 +1024,9 @@ textarea.span9,
   width: 690px;
 }
 
-input.span8,
-textarea.span8,
-.uneditable-input.span8 {
+input.span9,
+textarea.span9,
+.uneditable-input.span9 {
   width: 610px;
 }
 
@@ -1048,9 +1048,9 @@ textarea.span5,
   width: 370px;
 }
 
-input.span4,
-textarea.span4,
-.uneditable-input.span4 {
+input.span3,
+textarea.span3,
+.uneditable-input.span3 {
   width: 290px;
 }
 
@@ -1647,7 +1647,7 @@ table .span3 {
   margin-left: 0;
 }
 
-table .span4 {
+table .span3 {
   float: none;
   width: 284px;
   margin-left: 0;
@@ -1671,7 +1671,7 @@ table .span7 {
   margin-left: 0;
 }
 
-table .span8 {
+table .span9 {
   float: none;
   width: 604px;
   margin-left: 0;

@@ -10,7 +10,7 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span8">  
+          <div class="span9">  
             
 <div class="post-text">
 
@@ -88,7 +88,7 @@ ajaxButton("Reject", () =&gt; {request.reject.save;
 
 </div>
           </div>      
-	        <div class="span4">  
+	        <div class="span3">  
 	          <lift:embed what="col2"/> 
             </div>
         </div>     

@@ -13,7 +13,7 @@
         <lift:embed what="logocontainer"/> 
     
         <div class="row-fluid">
-          <div class="span8">        
+          <div class="span9">        
             
               <h1>What is Lift?</h1>
               <p>Lift is the most powerful, most secure web framework available today.  
@@ -37,7 +37,7 @@
               <p>Because Lift applications are written in Scala, an elegant JVM language, you can still use your favorite Java libraries and deploy to your favorite Servlet Container and app server. Use the code you've already written and deploy to the container you've already configured!</p>
                 
           </div>      
-	        <div class="span4">  
+	        <div class="span3">  
 	          <lift:embed what="col2"/> 
             </div>
         </div>

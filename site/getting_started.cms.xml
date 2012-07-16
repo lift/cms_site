@@ -12,7 +12,7 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span8">    
+          <div class="span9">    
 	<h1>Getting Started</h1>
 	<p>
 	  It's easy to <a href="http://simply.liftweb.net/index-Chapter-2.html#toc-Chapter-2">Get Started</a> with Lift.
@@ -20,14 +20,14 @@
 	  features are accessed.
 	</p>
 	
-	<h1>From an MVC background</h1>
+	<h2>From an MVC background</h2>
 	<p>
 	  If you're coming from an MVC background (like Rails, Struts, etc.), there's a
 	  <a href="http://simply.liftweb.net/index-Chapter-13.html#toc-Chapter-13">Chapter for you</a>.
 	  The code examples are included and you can run them yourself.
 	</p>
 
-	<h1>Some Videos</h1>
+	<h2>Some Videos</h2>
 	<p>
 	  <ul>
 	    <li>Mar 2011 <a href="http://skillsmatter.com/podcast/scala/talk-by-david-pollak-creator-of-lift "> Lift: Transforming Web Development</a> by David Pollak</li>
@@ -40,7 +40,7 @@
 	</p>
 
           </div>      
-	        <div class="span4">  
+	        <div class="span3">  
 	          <lift:embed what="col2"/> 
             </div>
         </div>      

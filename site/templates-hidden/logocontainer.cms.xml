@@ -10,18 +10,18 @@
 				<!--  <div class="span6" style="width:50%;min-width: 450px;margin:0px; border: 1px dotted red;">-->
 
 					<div class="box-gradient">
-						<h1>
+						<h2>
 							<lift:a name="getting_started">Taking Off</lift:a>
-						</h1>
+						</h2>
 						<span>Get started with Lift. Build
 						your first interactive Lift-powered
 						app.</span>
 					</div>
 
 					<div class="box-gradient">
-						<h1>
+						<h2>
 							<lift:a name="community">Flying in Formation</lift:a>
-						</h1>
+						</h2>
 						<span>Join the warm, welcoming Lift community, ask questions,
 						suggest features, have fun!</span>
 					</div>
@@ -30,16 +30,16 @@
                    <!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; border: 1px dotted red;"> --> 
                     
 					<div class="box-gradient">
-						<h1>
+						<h2>
 							<a href="http://liftweb.com">Flying Commercial</a>
-						</h1>
+						</h2>
 						<span>Get Lift support and consulting from the Lift committers.</span>
 					</div>
 
 					<div class="box-gradient">
-						<h1>
+						<h2>
 							<lift:a name="team">Team</lift:a>
-						</h1>
+						</h2>
 						<span>Learn about the Lift team.</span>
 					</div>
 

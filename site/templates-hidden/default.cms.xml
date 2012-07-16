@@ -10,7 +10,7 @@
 <link href="/style/bootstrap/2.0.4/bootstrap.css" rel="stylesheet"/>
 <link href="/style/bootstrap/2.0.4/bootstrap-responsive.css" rel="stylesheet"/>
 
-<link rel="stylesheet" href="/style/style.css" type="text/css" media="screen" />
+<!-- <link rel="stylesheet" href="/style/style.css" type="text/css" media="screen" /> -->
 <!--[if lte IE 6]>
 
     <link rel="stylesheet" type="text/css" href="/style/style-ie6.css" />
@@ -50,20 +50,19 @@
 	        <!--end menu-page-->		
 	     
 	        <lift:if toTest="quotes">
-	        <div id="hdr-2">
+<!-- 	        <div class="hero-unit"> -->
 	          <lift:choose refresh="7" class="hello">
-	            <!-- <lift:embed what="/quotes/novell"/> -->
-	            <lift:embed what="/quotes/luke"/>
-	            <lift:embed what="/quotes/lukasz"/>
-	            <lift:embed what="/quotes/ebay"/>
+<!-- 	            <lift:embed what="/quotes/luke"/> -->
+<!-- 	            <lift:embed what="/quotes/lukasz"/> -->
+<!-- 	            <lift:embed what="/quotes/ebay"/> -->
 	            <lift:embed what="/quotes/esme"/>
-	            <lift:embed what="/quotes/tyler"/>
-	            <lift:embed what="/quotes/foursquare"/>
-	            <lift:embed what="/quotes/pongr"/>
-	            <lift:embed what="/quotes/dale"/>
-	            <lift:embed what="/quotes/sgrouples"/>
+<!-- 	            <lift:embed what="/quotes/tyler"/> -->
+<!-- 	            <lift:embed what="/quotes/foursquare"/> -->
+<!-- 	            <lift:embed what="/quotes/pongr"/> -->
+<!-- 	            <lift:embed what="/quotes/dale"/> -->
+<!-- 	            <lift:embed what="/quotes/sgrouples"/> -->
 	          </lift:choose>
-	        </div>
+<!-- 	        </div> -->
 	        </lift:if>
           </div>
           <!--// ENDS HEADER -->

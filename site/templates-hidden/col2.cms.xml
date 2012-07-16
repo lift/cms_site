@@ -4,25 +4,22 @@
           <div class="row-fluid" style="border: 1px green red;">
             <div class="span12" style="border: 1px green red;">  
   
-    <!--  <div id="rightwrapper"> -->
-  
-      <h1>Latest Happenings</h1>
+      <h2>Latest Happenings</h2>
       
       <div class="cols2">
 	<lift:subs type="happening">
-	  <h2><a sub:href="/"><sub:title/></a></h2>
+	  <h3><a sub:href="/"><sub:title/></a></h3>
 	  <p><sub:desc/></p>
 	  <hr/>
 	</lift:subs>
 	
       </div>
-      <!--cols2-->
       
-      <div class="clear"></div>
+<!--       <div class="clear"></div> -->
 
-      <h1>
+      <h2>
         Lift Books
-      </h1>
+      </h2>
 		
       <p>
 	<a href="http://www.shaker.de/de/content/catalogue/index.asp?lang=de&amp;ID=8&amp;ISBN=978-3-8322-9824-1" target="_blank">Entwicklung von Web-Applikationen mit Lift und Scala</a>
@@ -55,8 +52,6 @@
       </p>
 
       <hr/>
-      <!-- </div>  -->
-      <!--right-->
       
       </div>
       </div>

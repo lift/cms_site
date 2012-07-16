@@ -10,7 +10,7 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span8">  
+          <div class="span9">  
             
             <div class="post-text"><p>Lift's Comet Architecture which was selected by Novell to power their Pulse product after they evaluated a number of different technologies.</p>
 
@@ -64,7 +64,7 @@
 <p>And to insert this into a page: <code>&lt;lift:comet type="Chat"/&gt;</code></p>
 </div>
           </div>      
-	        <div class="span4">  
+	        <div class="span3">  
 	          <lift:embed what="col2"/> 
             </div>
         </div>     

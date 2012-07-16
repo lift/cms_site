@@ -17,7 +17,7 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span8">  
+          <div class="span9">  
             
       <div>
 	<h1>Announcing Lift 2.4-M3</h1>
@@ -65,7 +65,7 @@ Please join the <a href="http://groups.google.com/group/liftweb/browse_thread/th
 with Lift.
       </div>
           </div>      
-	        <div class="span4">  
+	        <div class="span3">  
 	          <lift:embed what="col2"/> 
             </div>
         </div>     
