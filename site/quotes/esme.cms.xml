@@ -1,17 +1,18 @@
 <cms path="/quotes/esme" type="html" locale="en_US" host="liftweb.net">
-<content>
-<div class="hero-unit">
-<!--     <blockquote class="pull-right"> -->
-      <h2>Comet made easy!</h2>
-      <p>
-       &ldquo;Lift's excellent 'Comet made easy' philosophy made it an absolute no-brainer 
-       as the choice of framework for the Apache ESME project. Additionally, the fact 
-       that Lift-based applications run unchanged on the SAP's NetWeaver CE Java 
-       application server makes this an intriguing approach for enterprise applications 
-       in the SAP world.&ldquo;
-       </p>
-       Darren Hague. SAP Mentor, ESME team lead
-<!--     </blockquote> -->
-</div>
-</content>
+	<content>
+		<div id="lh-quote" class="well">
+			<blockquote class="pull-left">
+				<h2>Comet made easy!</h2>
+				<p class="lead">
+					Lift's excellent 'Comet made easy' philosophy 
+					made it an absoluteno-brainer as the choice of framework for the 
+					Apache ESME project. Additionally, the fact that Lift-based 
+					applications run unchangedon the SAP's NetWeaver CE Java 
+					application server makes this an intriguing approach for enterprise 
+					applications in the SAP world.
+				</p>
+				<small>Darren Hague. SAP Mentor, ESME team lead</small>
+			</blockquote>
+		</div>
+	</content>
 </cms>

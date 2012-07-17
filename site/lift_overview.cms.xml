@@ -1,99 +1,242 @@
-<cms path="/lift_overview" serve="true" type="html" locale="en_US" host="liftweb.net">
-  <tag name="name" value="lift_overview"/>
-<content>
-  <lift:surround with="default" at="content">
-    <head>
-      <title>Lift :: Lift Overview</title>
-    </head>
-    
-     <div class="row-fluid">
-      <div class="span12">
+<cms path="/lift_overview" serve="true" type="html" locale="en_US"
+	host="liftweb.net">
+	<tag name="name" value="lift_overview" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Lift Overview</title>
+			</head>
 
-        <div class="row-fluid">
-          <div class="span9">  
-            
-<div class="post-text">
+			<div class="row-fluid">
+				<div class="span12">
 
-<p>Lift is composed on discrete elements.  Lift support the likes of JNDI, JTA, JPA, etc.  The fact that you're not forced to uses these elements of J/EE is a strong indication of Lift's modular design.</p>
+					<div class="row-fluid">
+						<div class="span9">
 
-<ul>
-<li>Lift's view philosophy is "let the developer decide."  Lift offers a templating mechanism that does not allow any logic code in the view, a view mechanism based on executing Scala code and Scala's XML literals, and a view mechanism based on Scalate (see <a href="http://scalate.fusesource.org/">http://scalate.fusesource.org/</a> ).  If you choose the XML templating mechanism, then you choose how much, if any, mark-up belongs in your business logic. You cannot express any business logic in Lift's XML templates.</li>
-<li>Lift's Object &lt;-> Persistence philosophy is "let the developer decide."  Lift has Mapper which is an ActiveRecord style object relational mapper.  It gets the job done for small projects.  Lift support JPA.  Lift has a Record abstraction that supports shuttling objects into and out of relational databases, into and out of NoSQL stores (Lift includes native support for CouchDB and MongoDB, but the adapter layers are a few hundred lines of code, so if you want Cassandra or something else, it's not a lot of work to get it.)  Basically, Lift the Web Framework has no dependence on how objects are materialized into a session.  Further, the session and request cycles are open such that inserting transaction hooks into the request/response cycle is simple.</li>
-<li>Lift's philosophy is "the server team needs to know one language, not multiple languages."  This means that configuration is done via Scala.  This means that we didn't have to implement 40% of Java's language constructs in XML syntax to create flexible configuration options.  It means that the compiler syntax and type-checks the configuration data so you don't get any weird XML parsing or incorrect data at runtime.  In means that you don't have to have IDEs that understand the particulars of the annotations that you're using based on the library that you're using.</li>
-</ul>
+							<div class="post-text">
 
-<p>I wrote this: <a href="http://blog.lostlake.org/index.php?/archives/16-Web-Framework-Manifesto.html">http://blog.lostlake.org/index.php?/archives/16-Web-Framework-Manifesto.html</a> before I started writing Lift.  To a great degree, and to a greater degree than is true for any other web framework that I know of, Lift meets these goals.</p>
+								<p>Lift is composed on discrete elements. Lift support the likes
+									of JNDI, JTA, JPA, etc. The fact that you're not forced to uses
+									these elements of J/EE is a strong indication of Lift's modular
+									design.</p>
 
-<p>Lift at its core seeks to abstract away the HTTP request/response cycle rather than placing object wrappers around the HTTP Request.  At the practical level, this means that most any action that a user can take (submitting form elements, doing Ajax, etc.) is represented by a GUID in the browser and a function on the server.  When the GUID is presented as part of the an HTTP request, the function is applied (called) with the supplied parameters.  Because the GUIDs are hard to predict and session-specific, replay attacks and many parameter tampering attacks are far more difficult with Lift than most other web frameworks, including Spring.  It also means that developers are more productive because they are focusing on user actions and the business logic associated with user actions rather than the plumbing of packing and unpacking an HTTP request.  For example, code for accepting or rejecting a Foursquare friend request:</p>
+								<ul>
+									<li>
+										Lift's view philosophy is "let the developer decide." Lift
+										offers a templating mechanism that does not allow any logic
+										code in the view, a view mechanism based on executing Scala
+										code and Scala's XML literals, and a view mechanism based on
+										Scalate (see
+										<a href="http://scalate.fusesource.org/">http://scalate.fusesource.org/</a>
+										). If you choose the XML templating mechanism, then you choose
+										how much, if any, mark-up belongs in your business logic. You
+										cannot express any business logic in Lift's XML templates.
+									</li>
+									<li>Lift's Object &lt;-> Persistence philosophy is "let the
+										developer decide." Lift has Mapper which is an ActiveRecord
+										style object relational mapper. It gets the job done for small
+										projects. Lift support JPA. Lift has a Record abstraction that
+										supports shuttling objects into and out of relational
+										databases, into and out of NoSQL stores (Lift includes native
+										support for CouchDB and MongoDB, but the adapter layers are a
+										few hundred lines of code, so if you want Cassandra or
+										something else, it's not a lot of work to get it.) Basically,
+										Lift the Web Framework has no dependence on how objects are
+										materialized into a session. Further, the session and request
+										cycles are open such that inserting transaction hooks into the
+										request/response cycle is simple.</li>
+									<li>Lift's philosophy is "the server team needs to know one
+										language, not multiple languages." This means that
+										configuration is done via Scala. This means that we didn't
+										have to implement 40% of Java's language constructs in XML
+										syntax to create flexible configuration options. It means that
+										the compiler syntax and type-checks the configuration data so
+										you don't get any weird XML parsing or incorrect data at
+										runtime. In means that you don't have to have IDEs that
+										understand the particulars of the annotations that you're
+										using based on the library that you're using.</li>
+								</ul>
 
-<pre><code>ajaxButton("Accept", () =&gt; {request.accept.save; 
-                            SetHtml("acceptrejectspan", &lt;span/&gt;}) ++ 
-ajaxButton("Reject", () =&gt; {request.reject.save; 
-                            SetHtml("acceptrejectspan", &lt;span/&gt;})
+								<p>
+									I wrote this:
+									<a
+										href="http://blog.lostlake.org/index.php?/archives/16-Web-Framework-Manifesto.html">http://blog.lostlake.org/index.php?/archives/16-Web-Framework-Manifesto.html
+									</a>
+									before I started writing Lift. To a great degree, and to a
+									greater degree than is true for any other web framework that I
+									know of, Lift meets these goals.
+								</p>
 
-</code></pre>
+								<p>Lift at its core seeks to abstract away the HTTP
+									request/response cycle rather than placing object wrappers
+									around the HTTP Request. At the practical level, this means
+									that most any action that a user can take (submitting form
+									elements, doing Ajax, etc.) is represented by a GUID in the
+									browser and a function on the server. When the GUID is
+									presented as part of the an HTTP request, the function is
+									applied (called) with the supplied parameters. Because the
+									GUIDs are hard to predict and session-specific, replay attacks
+									and many parameter tampering attacks are far more difficult
+									with Lift than most other web frameworks, including Spring. It
+									also means that developers are more productive because they are
+									focusing on user actions and the business logic associated with
+									user actions rather than the plumbing of packing and unpacking
+									an HTTP request. For example, code for accepting or rejecting a
+									Foursquare friend request:</p>
 
-<p>It's that simple.  Because the friendRequest is in the scope when the function is created, the function closes over the scope... there's no need to expose the primary key of the friend request or do anything else... just define the text of the button (it can be localized or it can be pulled from an XHTML template or it can be pulled from a localized template) and the function to execute when the button is pushed.  Lift takes care of assigning the GUID, setting up the Ajax call (via jQuery or YUI, and yes, you can add your own favorite JavaScript library), doing automatic retries with back-offs, avoiding connection starvation by queuing Ajax requests, etc.</p>
+								<pre>
+									<code>ajaxButton("Accept", () =&gt; {request.accept.save;
+										SetHtml("acceptrejectspan", &lt;span/&gt;}) ++
+										ajaxButton("Reject", () =&gt; {request.reject.save;
+										SetHtml("acceptrejectspan", &lt;span/&gt;})
 
-<p>Lift's philosophy of GUID associated with function has the dual benefit of much better security and much better developer productivity.  The GUID -> Function association has proven very durable... the same construct works for normal forms, ajax, comet, multi-page wizards, etc.</p>
+									</code>
+								</pre>
 
-<p>The next core piece of Lift is keeping the high level abstractions around for as long as possible.  On the page generation side, that means building the page as XHTML elements and keeping the page as XHTML until just before streaming the response.  The benefits are resistance to cross site scripting errors, the ability to move CSS tags to the head and scripts to the bottom of the page after the page has been composed, and the ability to rewrite the page based on the target browser.  On the input side, URLs can be re-written to extract parameters (both query and path parameters) in a type-safe manner, high level, security checked data is available for processing very early in the request cycle.  For example, here's how to define servicing of a REST request:</p>
+								<p>It's that simple. Because the friendRequest is in the scope
+									when the function is created, the function closes over the
+									scope... there's no need to expose the primary key of the
+									friend request or do anything else... just define the text of
+									the button (it can be localized or it can be pulled from an
+									XHTML template or it can be pulled from a localized template)
+									and the function to execute when the button is pushed. Lift
+									takes care of assigning the GUID, setting up the Ajax call (via
+									jQuery or YUI, and yes, you can add your own favorite
+									JavaScript library), doing automatic retries with back-offs,
+									avoiding connection starvation by queuing Ajax requests, etc.
+								</p>
 
-<pre><code>  serve {
-    case "api" :: "user" :: AsUser(user) :: _ XmlGet _ =&gt; &lt;b&gt;{user.name}&lt;/b&gt;
+								<p>Lift's philosophy of GUID associated with function has the
+									dual benefit of much better security and much better developer
+									productivity. The GUID -> Function association has proven very
+									durable... the same construct works for normal forms, ajax,
+									comet, multi-page wizards, etc.</p>
 
-    case "api" :: "user" :: AsUser(user) :: _ JsonGet _ =&gt; JStr(user.name)
-  }
-</code></pre>
+								<p>The next core piece of Lift is keeping the high level
+									abstractions around for as long as possible. On the page
+									generation side, that means building the page as XHTML elements
+									and keeping the page as XHTML until just before streaming the
+									response. The benefits are resistance to cross site scripting
+									errors, the ability to move CSS tags to the head and scripts to
+									the bottom of the page after the page has been composed, and
+									the ability to rewrite the page based on the target browser. On
+									the input side, URLs can be re-written to extract parameters
+									(both query and path parameters) in a type-safe manner, high
+									level, security checked data is available for processing very
+									early in the request cycle. For example, here's how to define
+									servicing of a REST request:</p>
 
-<p>Using Scala's built-in pattern matching, we match an incoming request, extract the third part of the path and get the User that corresponds to that value, and even apply access control checks (does the current session or request have permissions to access the given User record).  So, by the time the User instance hits the application logic, it's vetted.</p>
+								<pre>
+									<code> serve {
+										case "api" :: "user" :: AsUser(user) :: _ XmlGet _ =&gt;
+										&lt;b&gt;{user.name}&lt;/b&gt;
 
-<p>With these two core pieces, Lift has a tremendous advantage in terms of security.  To give you an idea of the magnitude of Lift's security that doesn't get in the way of features, Rasmus Lerdorg ( <a href="http://en.wikipedia.org/wiki/Rasmus_Lerdorf">http://en.wikipedia.org/wiki/Rasmus_Lerdorf</a> ) who did security for Yahoo! had this to say about FourSquare (one of the Lift poster-child sites):</p>
+										case "api" :: "user" :: AsUser(user) :: _ JsonGet _ =&gt;
+										JStr(user.name)
+										}
+									</code>
+								</pre>
 
-<blockquote>
-  <p>Four stars to @foursquare - 1st site
-  in a while I have taken a good look at
-  that didn't have a single security
-  issue (that I could find)</p>
+								<p>Using Scala's built-in pattern matching, we match an incoming
+									request, extract the third part of the path and get the User
+									that corresponds to that value, and even apply access control
+									checks (does the current session or request have permissions to
+									access the given User record). So, by the time the User
+									instance hits the application logic, it's vetted.</p>
 
-</blockquote>
+								<p>
+									With these two core pieces, Lift has a tremendous advantage in
+									terms of security. To give you an idea of the magnitude of
+									Lift's security that doesn't get in the way of features, Rasmus
+									Lerdorg (
+									<a href="http://en.wikipedia.org/wiki/Rasmus_Lerdorf">http://en.wikipedia.org/wiki/Rasmus_Lerdorf</a>
+									) who did security for Yahoo! had this to say about FourSquare
+									(one of the Lift poster-child sites):
+								</p>
 
-<p><a href="http://twitter.com/rasmus/status/5929904263">http://twitter.com/rasmus/status/5929904263</a></p>
+								<blockquote>
+									<p>Four stars to @foursquare - 1st site
+										in a while I have taken a good look at
+										that didn't have a single security
+										issue (that I could find)
+									</p>
 
-<p>At the time, Foursquare had one engineer working on the code (not that @harryh isn't a super-genius) and his main focus was re-writing the PHP version of Foursquare while coping with weekly traffic doubling.</p>
+								</blockquote>
 
-<p>The last part of Lift's security focus is SiteMap.  It's a unified access control, site navigation, and menu system.  The developer defines the access control rules for each page using Scala code (e.g. <code>If(User.loggedIn _)</code> or <code>If(User.superUser _)</code>) and those access control rules are applied before any page rendering starts.  This is much like Spring Security, except that it's baked in from the beginning of the project and the access control rules are unified with the rest of the application so you don't have to have process for updating the security rules in XML when the URLs change or the methods that calculate the access control change.</p>
+								<p>
+									<a href="http://twitter.com/rasmus/status/5929904263">http://twitter.com/rasmus/status/5929904263</a>
+								</p>
 
-<p>To summarize so far, Lift's design philosophy gives you the benefits of baked in access control, resistance to the OWASP top 10 security vulnerabilities, much better Ajax support and much higher developer productivity.</p>
+								<p>At the time, Foursquare had one engineer working on the code
+									(not that @harryh isn't a super-genius) and his main focus was
+									re-writing the PHP version of Foursquare while coping with
+									weekly traffic doubling.</p>
 
-<p>But Lift also gives you the best Comet support of any web framework around.  That's why Novell chose Lift to power their Pulse product ( <a href="http://www.novell.com/products/pulse/">http://www.novell.com/products/pulse/</a> ) and here's what Novell has to say about Lift:</p>
+								<p>
+									The last part of Lift's security focus is SiteMap. It's a
+									unified access control, site navigation, and menu system. The
+									developer defines the access control rules for each page using
+									Scala code (e.g.
+									<code>If(User.loggedIn _)</code>
+									or
+									<code>If(User.superUser _)</code>
+									) and those access control rules are applied before any page
+									rendering starts. This is much like Spring Security, except
+									that it's baked in from the beginning of the project and the
+									access control rules are unified with the rest of the
+									application so you don't have to have process for updating the
+									security rules in XML when the URLs change or the methods that
+									calculate the access control change.
+								</p>
 
-<blockquote>
-  <p>Lift is the kind of web framework that
-  enables you as a developer to
-  concentrate on the big picture.
-  Strong, expressive typing and
-  higher-level features like the
-  built-in Comet support allow you to
-  focus on innovating instead of the
-  plumbing. Building a rich, real-time
-  web application like Novell Pulse
-  requires a framework with the power of
-  Lift under the covers.</p>
-</blockquote>
+								<p>To summarize so far, Lift's design philosophy gives you the
+									benefits of baked in access control, resistance to the OWASP
+									top 10 security vulnerabilities, much better Ajax support and
+									much higher developer productivity.</p>
 
-<p>So, Lift is not just another me-too MVC framework.  It's a framework that's got some core design principals behind it that have matured very well.  It's a framework that gives the dual advantages of security and developer productivity.  Lift is a framework that's built in layers and gives the developer the right choices based on their needs... choices for view generation, choices for persistence, etc.</p>
+								<p>
+									But Lift also gives you the best Comet support of any web
+									framework around. That's why Novell chose Lift to power their
+									Pulse product (
+									<a href="http://www.novell.com/products/pulse/">http://www.novell.com/products/pulse/</a>
+									) and here's what Novell has to say about Lift:
+								</p>
 
-<p>Scala and Lift give developers a much better experience than the melange of XML, annotations, and other idioms that make up Spring.</p>
+								<blockquote>
+									<p>Lift is the kind of web framework that
+										enables you as a developer to
+										concentrate on the big picture.
+										Strong, expressive typing and
+										higher-level features like the
+										built-in Comet support allow you to
+										focus on innovating instead of the
+										plumbing. Building a rich, real-time
+										web application like Novell Pulse
+										requires a framework with the power of
+										Lift under the covers.
+									</p>
+								</blockquote>
 
-</div>
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>     
-        </div>  
-      </div>
-  </lift:surround>
-</content>
+								<p>So, Lift is not just another me-too MVC framework. It's a
+									framework that's got some core design principals behind it that
+									have matured very well. It's a framework that gives the dual
+									advantages of security and developer productivity. Lift is a
+									framework that's built in layers and gives the developer the
+									right choices based on their needs... choices for view
+									generation, choices for persistence, etc.</p>
+
+								<p>Scala and Lift give developers a much better experience than
+									the melange of XML, annotations, and other idioms that make up
+									Spring.</p>
+
+							</div>
+						</div>
+						<div class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>

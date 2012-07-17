@@ -1,75 +1,130 @@
-<cms path="/lift_vs_spring" serve="true" type="html" locale="en_US" host="liftweb.net">
-  <tag name="name" value="lift_vs_spring"/>
-<content>
-  <lift:surround with="default" at="content">
-    <head>
-      <title>Lift :: Lift vs. Spring</title>
-    </head>
-    
-     <div class="row-fluid">
-      <div class="span12">
+<cms path="/lift_vs_spring" serve="true" type="html" locale="en_US"
+	host="liftweb.net">
+	<tag name="name" value="lift_vs_spring" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Lift vs. Spring</title>
+			</head>
 
-        <div class="row-fluid">
-          <div class="span9">  
-            
-            <div class="post-text"><p>Lift's Comet Architecture which was selected by Novell to power their Pulse product after they evaluated a number of different technologies.</p>
+			<div class="row-fluid">
+				<div class="span12">
 
-<p>Lift's Comet implementation uses a single HTTP connection to poll for changes to an arbitrary number of components on the page.  Each component has a version number.  The long poll includes the version number and the component GUID.  On the server side, a listener is attached to all of the GUIDs listed in the long poll requests.  If any of the components has a higher version number (or the version number increases during the period of the long poll), the deltas (a set of JavaScript describing the change from each version) is sent to the client.  The deltas are applied and the version number on the client is set to the highest version number for the change set.</p>
+					<div class="row-fluid">
+						<div class="span9">
 
-<p>Lift integrates long polling with session management so that if a request comes into the same URL during a long poll that would cause connection starvation, the long poll is terminated to avoid connection starvation (some browsers have a maximum of 2 HTTP connections per named server, others have a max of 6).  Lift also supports DNS wild-carded servers for long poll requests such that each tab in the browser can do long polling against a different DNS wildcarded server.  This avoids the connection starvation issues.</p>
+							<div class="post-text">
+								<p>Lift's Comet Architecture which was selected by Novell to
+									power their Pulse product after they evaluated a number of
+									different technologies.</p>
 
-<p>Lift dynamically detects the container the Servlet is running in and on Jetty 6 &amp; 7 and (soon) Glassfish, Lift will use the platform's "continuations" implementation to avoid using a thread during the long poll.</p>
+								<p>Lift's Comet implementation uses a single HTTP connection to
+									poll for changes to an arbitrary number of components on the
+									page. Each component has a version number. The long poll
+									includes the version number and the component GUID. On the
+									server side, a listener is attached to all of the GUIDs listed
+									in the long poll requests. If any of the components has a
+									higher version number (or the version number increases during
+									the period of the long poll), the deltas (a set of JavaScript
+									describing the change from each version) is sent to the client.
+									The deltas are applied and the version number on the client is
+									set to the highest version number for the change set.</p>
 
-<p>Lift's JavaScript can sit on top of jQuery and YUI (and could sit on top of Prototype/Scriptaculous as well.)  The actual polling code includes back-off on connection failures and other "graceful" ways of dealing with transient connection failures.</p>
+								<p>Lift integrates long polling with session management so that
+									if a request comes into the same URL during a long poll that
+									would cause connection starvation, the long poll is terminated
+									to avoid connection starvation (some browsers have a maximum of
+									2 HTTP connections per named server, others have a max of 6).
+									Lift also supports DNS wild-carded servers for long poll
+									requests such that each tab in the browser can do long polling
+									against a different DNS wildcarded server. This avoids the
+									connection starvation issues.</p>
 
-<p>I've looked at Atmosphere, CometD, Akka (all JVM-oriented Comet technologies).  None had (at the time I evaluated them) support for multiple components per page or connection starvation avoidance.</p>
+								<p>Lift dynamically detects the container the Servlet is running
+									in and on Jetty 6 &amp; 7 and (soon) Glassfish, Lift will use
+									the platform's "continuations" implementation to avoid using a
+									thread during the long poll.</p>
 
-<p>Novell started from scratch and chose Lift to power Pulse for some very good reasons.</p>
+								<p>Lift's JavaScript can sit on top of jQuery and YUI (and could
+									sit on top of Prototype/Scriptaculous as well.) The actual
+									polling code includes back-off on connection failures and other
+									"graceful" ways of dealing with transient connection failures.
+								</p>
 
-<p>In terms of security, Lift beats Spring + Spring Security hands down.  See <a href="http://www.mail-archive.com/liftweb@googlegroups.com/msg13020.html" rel="nofollow">http://www.mail-archive.com/liftweb@googlegroups.com/msg13020.html</a></p>
+								<p>I've looked at Atmosphere, CometD, Akka (all JVM-oriented
+									Comet technologies). None had (at the time I evaluated them)
+									support for multiple components per page or connection
+									starvation avoidance.</p>
 
-<p>Basically, Lift's security is baked into your application.  Lift apps are resistant to common problems (cross site scripting, replay attacks, cross site request forgeries) by default.  Lift apps are resistant to parameter tampering by default.  Lift's sitemap defines site navigation and access control rules.  This means you never have a link that someone can't click on.  You don't need to have an external filter (e.g., Spring Security) that you have to configure independently from you app (whoops... moved a page, but forgot to make sure the Spring Security XML file was updated.)</p>
+								<p>Novell started from scratch and chose Lift to power Pulse for
+									some very good reasons.</p>
 
-<p>Oh... and if you don't want to use a templating language, here's a complete Lift Comet chat component:</p>
+								<p>
+									In terms of security, Lift beats Spring + Spring Security hands
+									down. See
+									<a
+										href="http://www.mail-archive.com/liftweb@googlegroups.com/msg13020.html"
+										rel="nofollow">http://www.mail-archive.com/liftweb@googlegroups.com/msg13020.html
+									</a>
+								</p>
 
-<pre><code>class Chat extends CometActor with CometListener {
-  private var msgs: List[String] = Nil
+								<p>Basically, Lift's security is baked into your application.
+									Lift apps are resistant to common problems (cross site
+									scripting, replay attacks, cross site request forgeries) by
+									default. Lift apps are resistant to parameter tampering by
+									default. Lift's sitemap defines site navigation and access
+									control rules. This means you never have a link that someone
+									can't click on. You don't need to have an external filter
+									(e.g., Spring Security) that you have to configure
+									independently from you app (whoops... moved a page, but forgot
+									to make sure the Spring Security XML file was updated.)</p>
 
-  def registerWith = ChatServer
+								<p>Oh... and if you don't want to use a templating language,
+									here's a complete Lift Comet chat component:</p>
 
-  override def lowPriority = {
-    case m: List[String] =&gt; msgs = m; reRender(false)
-  }
+								<pre>
+									<code>class Chat extends CometActor with CometListener {
+										private var msgs: List[String] = Nil
 
-  def render = {
-    &lt;div&gt;
-    &lt;ul&gt;
-    {
-      msgs.reverse.map(m =&gt; &lt;li&gt;{m}&lt;/li&gt;)
-    }
-    &lt;/ul&gt;
+										def registerWith = ChatServer
 
-    &lt;lift:form&gt;
-    {
-      SHtml.text("", s =&gt; ChatServer ! s)
-    }
-    &lt;input type="submit" value="Chat"/&gt;
-    &lt;/lift:form&gt;
-    &lt;/div&gt;
-  }
-}
+										override def lowPriority = {
+										case m: List[String] =&gt; msgs = m; reRender(false)
+										}
 
-</code></pre>
+										def render = {
+										&lt;div&gt;
+										&lt;ul&gt;
+										{
+										msgs.reverse.map(m =&gt; &lt;li&gt;{m}&lt;/li&gt;)
+										}
+										&lt;/ul&gt;
 
-<p>And to insert this into a page: <code>&lt;lift:comet type="Chat"/&gt;</code></p>
-</div>
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>     
-        </div>  
-      </div>
-  </lift:surround>
-</content>
+										&lt;lift:form&gt;
+										{
+										SHtml.text("", s =&gt; ChatServer ! s)
+										}
+										&lt;input type="submit" value="Chat"/&gt;
+										&lt;/lift:form&gt;
+										&lt;/div&gt;
+										}
+										}
+
+									</code>
+								</pre>
+
+								<p>
+									And to insert this into a page:
+									<code>&lt;lift:comet type="Chat"/&gt;</code>
+								</p>
+							</div>
+						</div>
+						<div class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>

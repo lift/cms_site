@@ -1,53 +1,78 @@
 <cms path="/api_docs" serve="true" type="html" locale="en_US" host="liftweb.net">
-  <tag name="name" value="api_docs"/>
-  <tag name="menu" value="API Docs"/>
-  <tag name="order" value="4"/>
-  <content>
-    <lift:surround with="default" at="content">
-      <head>
-	<title>Lift :: API Documentation</title>
-      </head>
-      
-   <div class="row-fluid">
-      <div class="span12">
+	<tag name="name" value="api_docs" />
+	<tag name="menu" value="API Docs" />
+	<tag name="order" value="4" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: API Documentation</title>
+			</head>
 
-        <div class="row-fluid">
-          <div class="span9">          
-      
-	<h1>Lift API Docs</h1>
+			<div class="row-fluid">
+				<div class="span12">
 
-	<p>
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.4/">Lift 2.4 API documentation</a> and the
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.4.tar.bz2">tarball</a>.
-	</p>
-	
-	<p>
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.3/">Lift 2.3 API documentation</a> and the
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.3.tar.bz2">tarball</a>.
-	</p>
-	
-	<p>
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.2/framework/scaladocs/index.html">Lift 2.2 documentation</a> | 
-	  <a href="http://scala-tools.org/mvnsites/liftweb-2.2.tar.bz2">Doc tarball</a> |
-	  <a href="http://vscaladoc.alchim31.net/navigator/api/lift_2.8.1/2.2-RC1">Lift 2.2-RC1 (Scala 2.8) docs</a> (note: there were no material API changes between Lift 2.2-RC1 and Lift 2.2, we will update this link when DavidB rebuilds the VScalaDoc2-based documentation)
-	</p>
+					<div class="row-fluid">
+						<div class="span9">
 
-	<p><a href="http://main.scala-tools.org/mvnsites/liftweb-2.1/framework/scaladocs/index.html">Lift 2.1 API documentation</a> (Note the Scala 2.7.7 docs cover all the 2.8 APIs and VScalaDoc is not yet available for Scala 2.8)</p>
+							<h1>Lift API Docs</h1>
 
-	<p><a href="http://scala-tools.org/mvnsites/liftweb-2.1.tar.bz2">Lift 2.1 API doc tarball</a> (Note unified ScalaDocs are coming very soon)</p>
-	
-	<p><a href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/index.html">Lift 2.0 API documentation</a></p>
+							<p>
+								<a href="http://scala-tools.org/mvnsites/liftweb-2.4/">Lift 2.4 API documentation</a>
+								and the
+								<a href="http://scala-tools.org/mvnsites/liftweb-2.4.tar.bz2">tarball</a>
+								.
+							</p>
 
-	<p><a href="http://scala-tools.org/mvnsites/liftweb-1.0.2/lift-webkit/scaladocs/index.html">Lift 1.0.2 WebKit API documentation</a></p>
+							<p>
+								<a href="http://scala-tools.org/mvnsites/liftweb-2.3/">Lift 2.3 API documentation</a>
+								and the
+								<a href="http://scala-tools.org/mvnsites/liftweb-2.3.tar.bz2">tarball</a>
+								.
+							</p>
 
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>    
- 
-      </div>
-    </div>      
-    </lift:surround>
-  </content>
+							<p>
+								<a
+									href="http://scala-tools.org/mvnsites/liftweb-2.2/framework/scaladocs/index.html">Lift 2.2 documentation</a>
+								|
+								<a href="http://scala-tools.org/mvnsites/liftweb-2.2.tar.bz2">Doc tarball</a>
+								|
+								<a
+									href="http://vscaladoc.alchim31.net/navigator/api/lift_2.8.1/2.2-RC1">Lift 2.2-RC1 (Scala 2.8) docs</a>
+								(note: there were no material API changes between Lift 2.2-RC1
+								and Lift 2.2, we will update this link when DavidB rebuilds the
+								VScalaDoc2-based documentation)
+							</p>
+
+							<p>
+								<a
+									href="http://main.scala-tools.org/mvnsites/liftweb-2.1/framework/scaladocs/index.html">Lift 2.1 API documentation</a>
+								(Note the Scala 2.7.7 docs cover all the 2.8 APIs and VScalaDoc
+								is not yet available for Scala 2.8)
+							</p>
+
+							<p>
+								<a href="http://scala-tools.org/mvnsites/liftweb-2.1.tar.bz2">Lift 2.1 API doc tarball</a>
+								(Note unified ScalaDocs are coming very soon)
+							</p>
+
+							<p>
+								<a
+									href="http://main.scala-tools.org/mvnsites/liftweb-2.0/framework/scaladocs/index.html">Lift 2.0 API documentation</a>
+							</p>
+
+							<p>
+								<a
+									href="http://scala-tools.org/mvnsites/liftweb-1.0.2/lift-webkit/scaladocs/index.html">Lift 1.0.2 WebKit API documentation</a>
+							</p>
+
+						</div>
+						<div class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>

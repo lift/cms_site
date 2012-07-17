@@ -2,119 +2,117 @@
 	<content>
 		<div id="logowrapper">
 
-          <div class="row-fluid">
-            <div class="span12">
+			<div class="row-fluid">
+				<div class="span12">
 
-			 <div class="row-fluid" style="/*border: 1px solid red;*/">
-			   <div class="span12" style="/*border: 1px dotted red;*/">
-				<!--  <div class="span6" style="width:50%;min-width: 450px;margin:0px; border: 1px dotted red;">-->
+					<div class="row-fluid" style="/*border: 1px solid red;*/">
+						<div class="span12" style="/*border: 1px dotted red;*/">
+							<!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; 
+								border: 1px dotted red;"> -->
 
-					<div class="box-gradient">
-						<h2>
-							<lift:a name="getting_started">Taking Off</lift:a>
-						</h2>
-						<span>Get started with Lift. Build
-						your first interactive Lift-powered
-						app.</span>
-					</div>
+							<div class="gradient-panel">
+								<h3>
+									<lift:a name="getting_started">Taking Off</lift:a>
+								</h3>
+								<p>Get started with Lift. Build
+									your first interactive Lift-powered
+									app.
+								</p>
+							</div>
 
-					<div class="box-gradient">
-						<h2>
-							<lift:a name="community">Flying in Formation</lift:a>
-						</h2>
-						<span>Join the warm, welcoming Lift community, ask questions,
-						suggest features, have fun!</span>
-					</div>
-					
-					<!-- </div>  -->
-                   <!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; border: 1px dotted red;"> --> 
-                    
-					<div class="box-gradient">
-						<h2>
-							<a href="http://liftweb.com">Flying Commercial</a>
-						</h2>
-						<span>Get Lift support and consulting from the Lift committers.</span>
-					</div>
+							<div class="gradient-panel">
+								<h3>
+									<lift:a name="community">Flying in Formation</lift:a>
+								</h3>
+								<p>Join the warm, welcoming Lift community, ask questions,
+									suggest features, have fun!
+								</p>
+							</div>
 
-					<div class="box-gradient">
-						<h2>
-							<lift:a name="team">Team</lift:a>
-						</h2>
-						<span>Learn about the Lift team.</span>
-					</div>
+							<!-- </div> -->
+							<!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; 
+								border: 1px dotted red;"> -->
 
-					<!-- <div class="box-gradient"> <h1><lift:a name="stunts">Stunt Flying</lift:a></h1> 
-						FIXME </div> <div class="box-gradient"> <h1><lift:a name="commercial">Flying 
-						Commercial</lift:a></h1> Get commercial support for you Lift development 
-						to keep your Lift project on track. </div> -->
+							<div class="gradient-panel">
+								<h3>
+									<a href="http://liftweb.com">Flying Commercial</a>
+								</h3>
+								<p>Get Lift support and consulting from the Lift committers.</p>
+							</div>
 
-				</div>
-			</div>
-			 
-			
-			 <div class="row-fluid" style="/*border: 1px solid green;*/">
-				<div class="span12" style="/*border: 1px dotted green;*/">
-					<!--logo-container -->
-					<div id="logo-container">
-						<lift:choose cnt="3">
-							<div class="logo">
-								<a href="http://snapsort.com">
-									<img src="http://static.liftweb.com/logo-snapsort.gif" alt="" />
-								</a>
+							<div class="gradient-panel">
+								<h3>
+									<lift:a name="team">Team</lift:a>
+								</h3>
+								<p>Learn about the Lift team.</p>
 							</div>
-							<div class="logo">
-								<a href="http://innovationgames.com">
-									<img src="http://static.liftweb.com/logo-innovation.gif"
-										alt="" />
-								</a>
-							</div>
-							<div class="logo">
-								<a href="http://www.grabgrip.com">
-									<img src="http://static.liftweb.com/t8-webware-logo.gif"
-										alt="" />
-								</a>
-							</div>
-							<div class="logo">
-								<a href="http://untyped.com">
-									<img src="http://static.liftweb.com/logo-untyped.gif" alt="" />
-								</a>
-							</div>
-							<div class="logo">
-								<a href="http://stackmob.com">
-									<img src="http://static.liftweb.com/stackmob_logo_lift.png"
-										alt="" />
-								</a>
-							</div>
-							<div class="logo">
-								<a href="http://openstudy.com">
-									<img height="50" src="http://static.liftweb.com/open_study.png"
-										alt="" />
-								</a>
-							</div>
-							<div class="logo">
-								<a href="http://sgrouples.com">
-									<img height="50"
-										src="http://sgrouples.com/img/logos/sgrouples_logo_lift.png"
-										alt="" />
-								</a>
-							</div>
-						</lift:choose>
-						<div class="logo" style="margin-right: 0px;">
-							<a href="http://foursquare.com">
-								<img src="http://static.liftweb.com/logo-foursquare.gif"
-									alt="" />
-							</a>
+
 						</div>
 					</div>
-					<!--logo-container -->
 
+					<div class="row-fluid" style="/*border: 1px solid green;*/">
+						<div class="span12" style="/*border: 1px dotted green;*/">
+							<!--logo-container -->
+							<div id="logo-container">
+								<lift:choose cnt="3">
+									<div class="logo">
+										<a href="http://snapsort.com">
+											<img src="http://static.liftweb.com/logo-snapsort.gif"
+												alt="" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://innovationgames.com">
+											<img src="http://static.liftweb.com/logo-innovation.gif"
+												alt="" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://www.grabgrip.com">
+											<img src="http://static.liftweb.com/t8-webware-logo.gif"
+												alt="" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://untyped.com">
+											<img src="http://static.liftweb.com/logo-untyped.gif"
+												alt="" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://stackmob.com">
+											<img src="http://static.liftweb.com/stackmob_logo_lift.png"
+												alt="" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://openstudy.com">
+											<img height="50" src="http://static.liftweb.com/open_study.png"
+												alt="" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://sgrouples.com">
+											<img height="50"
+												src="http://sgrouples.com/img/logos/sgrouples_logo_lift.png"
+												alt="" />
+										</a>
+									</div>
+								</lift:choose>
+								<div class="logo" style="margin-right: 0px;">
+									<a href="http://foursquare.com">
+										<img src="http://static.liftweb.com/logo-foursquare.gif"
+											alt="" />
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
 
 				</div>
 			</div>
 			
-            </div> 
-          </div>
-        <!-- end wrapper -->   			
 		</div>
 	</content>
 </cms>

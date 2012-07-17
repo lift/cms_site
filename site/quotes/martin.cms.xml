@@ -1,14 +1,15 @@
 <cms path="/quotes/martin" type="html" locale="en_US" host="liftweb.net">
-<content>
-<div>
-  <div class="left">&ldquo;</div>
-  <div class="center">
-    <h1>
-      The interest and excitement about Scala continues to grow. It's great to see Lift reaching the 1.0 milestone as this is a proof point for the maturity of Scala as a software platform.
-    </h1>
-    Martin Odersky, ACM Fellow, Father of Scala
-  </div>
-  <div class="right">&rdquo;</div>
-</div>
-</content>
+	<content>
+		<div id="lh-quote" class="well">
+			<blockquote class="pull-right">
+				<h2>Maturity of Scala as a software platform!</h2>
+				<p class="lead">
+					The interest and excitement about Scala continues to grow. It's great
+					to see Lift reaching the 1.0 milestone as this is a proof point for
+					the maturity of Scala as a software platform.
+				</p>
+				<small>Martin Odersky, ACM Fellow, Father of Scala</small>
+			</blockquote>
+		</div>
+	</content>
 </cms>

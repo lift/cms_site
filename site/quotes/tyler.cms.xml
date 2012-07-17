@@ -1,16 +1,15 @@
 <cms path="/quotes/tyler" type="html" locale="en_US" host="liftweb.net">
-<content>
-  <div>
-    <div class="left">&ldquo;</div>
-    <div class="center">
-      <h1>
-	Just thanks for Lift.
-	It's just so darn good.
-	I'm one-manning this giant app and I couldn't do it with anything but Lift.
-      </h1>
-      Tyler Weir, author The Definitive Guide to Lift
-    </div>
-    <div class="right">&rdquo;</div>
-  </div>
-</content>
+	<content>
+		<div id="lh-quote" class="well">
+			<blockquote class="pull-right">
+				<h2>It's just so darn good!</h2>
+				<p class="lead">
+					Just thanks for Lift. It's just so darn good.
+					I'm one-manning this giant app and I couldn't do it with anything but
+					Lift.
+				</p>
+				<small>Tyler Weir, author The Definitive Guide to Lift</small>
+			</blockquote>
+		</div>
+	</content>
 </cms>

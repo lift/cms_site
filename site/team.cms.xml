@@ -1,267 +1,350 @@
 <cms path="/team" serve="true" type="html" locale="en_US" host="liftweb.net">
-  <tag name="name" value="team"/>
-  <tag name="menu" value="Team"/>
-  <tag name="order" value="7"/>
-  <content>
-    <lift:surround with="default" at="content">
-      <head>
-	<title>Lift :: Team</title>
-      </head>
-      
-    <div class="row-fluid">
-      <div class="span12">
+	<tag name="name" value="team" />
+	<tag name="menu" value="Team" />
+	<tag name="order" value="7" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Team</title>
+			</head>
 
-        <div class="row-fluid">
-          <div class="span9">         
+			<div class="row-fluid">
+				<div class="span12">
 
-        <p>An awful lot of time and effort has gone into making lift the great 
-          bit of software it is today - so, to honor this effort, we felt it only
-          right to honor those who have generously donated time to the project.</p>
-        <hr />
-        <h1 id="current-team">CURRENT TEAM</h1>
-        <div >
-          <h2>David Pollak &ndash; Founder</h2>
-          <p>David Pollak has been writing commercial software since 1977. He wrote the 
-            first real-time spreadsheet and the worlds highest performance spreadsheet 
-            engine. Since 1996, David has been using and devising web development tools. As CTO 
-            of CMP Media, David oversaw the first large-scale deployment of WebLogic. 
-            David was CTO and VPE at Cenzic, a web application security company. David 
-            has also developed numerous commercial projects in Ruby on Rails. 
-            In 2007, David founded the Lift Framework open source project.</p>
-        </div>
-        
-        <div >
-          <h2>Tyler Weir</h2>
-          <p>Currently a co-founder of Roboboogie Studios.  In my former jobs I 
-            worked on compilers, desktop business apps and web applications. 
-            Along with Derek and Marius, I'm a co-author of the upcoming Lift 
-            book.</p>
-        </div>
-        <div >
-          <h2>Derek Chen-Becker</h2>
-          <p>A senior network engineer for a large company. I've been doing software 
-            development for over 14 years, with 12 years of Java experience. I started 
-            working with Scala 2 years ago and I've been working heavily with Lift since 
-            version 0.2 came out.</p>
-        </div>
+					<div class="row-fluid">
+						<div class="span9">
 
-        <div >
-          <h2>Indrajit Raychaudhuri</h2>
-          <p>Indrajit manages Lift's builds and build environment
-	  including some serious mastery of both Maven and SBT.</p>
-        </div>
+							<div class="alert alert-info">An awful lot of time and effort has gone into
+								making lift the great
+								bit of software it is today - so, to honor this effort, we felt it
+								only
+								right to honor those who have generously donated time to the project.
+							</div>
+							<hr />
+							<h1 id="current-team">CURRENT TEAM</h1>
+							<div>
+								<h2>David
+									Pollak &ndash;
+									Founder
+								</h2>
+								<p>David Pollak has been writing commercial software since 1977.
+									He wrote the
+									first real-time spreadsheet and the worlds highest performance
+									spreadsheet
+									engine. Since 1996, David has been using and devising web development
+									tools. As CTO
+									of CMP Media, David oversaw the first large-scale deployment of
+									WebLogic.
+									David was CTO and VPE at Cenzic, a web application security company.
+									David
+									has also developed numerous commercial projects in Ruby on Rails.
+									In 2007, David founded the Lift Framework open source project.
+								</p>
+							</div>
 
-        <div >
-          <h2>Vassil Dichev</h2>
-          <p>Vassil is a Lift user in the ESME project and
-	  contributes to Lift's TestKit.</p>
-        </div>
+							<div>
+								<h2>Tyler Weir</h2>
+								<p>Currently a co-founder of Roboboogie Studios. In my former
+									jobs I
+									worked on compilers, desktop business apps and web applications.
+									Along with Derek and Marius, I'm a co-author of the upcoming
+									Lift
+									book.
+								</p>
+							</div>
+							<div>
+								<h2>Derek Chen-Becker</h2>
+								<p>A senior network engineer for a large company. I've been
+									doing software
+									development for over 14 years, with 12 years of Java experience. I started
+									working with Scala 2 years ago and I've been working heavily
+									with Lift since
+									version 0.2 came out.
+								</p>
+							</div>
 
-	<div>
-	  <h2>Mads Hartmann Jensen</h2>
-	  <p>Mads is a energetic young developer from Copenhagen, Denmark. He's been a Lift committer since January 2010 and has been working on different parts of Lift. As part of his Google Summer of Code project in 2010 he created Lifty to make Lift developers more productive . When he's not caught up in various open source projects he's getting his bachelor in software development at the IT University of Copenhagen.</p>
-	</div>
-        
-	<div>
-	  <h2>Jeppe Nejsum Madsen</h2>
-	  <p>Co-founder and CTO of FleetZone, a company that builds a SaaS platform for fleet management (based on Lift of course!).</p>
-	</div>
-        
-        <div >
-          <h2>Andreas Joseph Krogh</h2>
-          <p>No description available.</p>
-        </div>
+							<div>
+								<h2>Indrajit Raychaudhuri</h2>
+								<p>Indrajit manages Lift's builds and build environment
+									including some serious mastery of both Maven and SBT.
+								</p>
+							</div>
 
-        <div >
-          <h2>Torsten Uhlmann</h2>
-          <p>No description available.</p>
-        </div>
+							<div>
+								<h2>Vassil Dichev</h2>
+								<p>Vassil is a Lift user in the ESME project and
+									contributes to Lift's TestKit.
+								</p>
+							</div>
 
-        <div >
-          <h2>Dave Whittaker</h2>
-          <p>Dave maintains Lift's Squeryl-Record code.</p>
-        </div>
+							<div>
+								<h2>Mads Hartmann Jensen</h2>
+								<p>Mads is a energetic young developer from Copenhagen, Denmark.
+									He's been a Lift committer since January 2010 and has been
+									working on different parts of Lift. As part of his Google
+									Summer of Code project in 2010 he created Lifty to make Lift
+									developers more productive . When he's not caught up in various
+									open source projects he's getting his bachelor in software
+									development at the IT University of Copenhagen.</p>
+							</div>
 
-        <div >
-          <h2>Ján Raška</h2>
-          <p>Ján contributes to Lift's Squeryl-Record code.</p>
-        </div>
+							<div>
+								<h2>Jeppe Nejsum Madsen</h2>
+								<p>Co-founder and CTO of FleetZone, a company that builds a SaaS
+									platform for fleet management (based on Lift of course!).</p>
+							</div>
 
-        <div >
-          <h2>Franz Bettag</h2>
-          <p>Black Belt DevOp, CEO and Developer located in Nuremberg, Germany. Franz has written some excellent examples for Lift and gave an awesome presentation about Lift and Akka at the Scala Lift Off London 2011. He's been active in the Community for quite some time and became Lift committer in January 2012.</p>
-        </div>
-        
-        <div >
-          <h2>Diego Medina</h2>
-          <p>Diego is a super helpful, super excellent, super nice, and super skilled member of the Lift community. He's been active in the Community for quite some time and became Lift committer in Mars 2012.</p>
-        </div>        
+							<div>
+								<h2>Andreas Joseph Krogh</h2>
+								<p>No description available.</p>
+							</div>
 
-        <hr />
-        <h1 id="alumni-team">ALUMNI TEAM</h1>
-        
-        <p>As Lift has grown, the team has expanded and contracted over time. However, the work done by
-          team members that are not currently active also deserves credit, so they are listed
-          here as Alumni members.</p>
+							<div>
+								<h2>Torsten Uhlmann</h2>
+								<p>No description available.</p>
+							</div>
 
-        <div >
-          <h2>Timothy Perrett</h2>
-          <p>Technical Architect / Geek / Open source junkie - specializes in 
-            systems integration for manufacturing and workflow systems. Has been working
-            with Scala since the end of 07' and before that was working with Java, Ruby
-            and Objective-C extensively for a number of years. Also a repentant Rails convert. 
-            Whilst not working on Lift I work for an Israeli startup designing systems 
-            for techno-marketing and on-demand publishing.</p>
-        </div>
+							<div>
+								<h2>Dave Whittaker</h2>
+								<p>Dave maintains Lift's Squeryl-Record code.</p>
+							</div>
 
-        <div >
-          <h2>Marius Danciu</h2>
-          <p>Marius has been a committer for more than an year now contributing with design and development 
-            of new features as well as fixing defects. I discovered Scala about 2-3 years ago 
-            and coming from Java world it's needless to say how much that impressed me. 
-            For the past 6 years I've been architecting,designing and developing server 
-            side Java applications orbiting around synchronization technologies such as 
-            SyncML. Before that I've been doing C/C++ programming. </p>
-        </div>
+							<div>
+								<h2>Ján Raška</h2>
+								<p>Ján contributes to Lift's Squeryl-Record code.</p>
+							</div>
 
-        <div >
-          <h2>Jonathan Hoffman</h2>
-          <p>Jon crontributed Lift's image management library
-	    and puts Lift to the test every day.</p>
-        </div>
+							<div>
+								<h2>Franz Bettag</h2>
+								<p>Black Belt DevOp, CEO and Developer located in Nuremberg,
+									Germany. Franz has written some excellent examples for Lift and
+									gave an awesome presentation about Lift and Akka at the Scala
+									Lift Off London 2011. He's been active in the Community for
+									quite some time and became Lift committer in January 2012.</p>
+							</div>
 
-        <div >
-          <h2>Debby Meredith</h2>
-          <p>I'm a currently an engineering management consultant and a venture partner at JAFCO 
-            Ventures. I work hands-on with company founders, helping to assemble world class teams, 
-            architect software products and roadmaps, and establish operational processes to 
-            build success from the beginning.  Previously, I was a venture partner at Mohr Davidow 
-            Ventures, VP Eng at Netscape, VP Eng at Collabra Software, VP Eng at Slate Software, 
-            and had key technical positions at Metaphor Computer Systems, Logitech, and Bell Laboratories.</p>
-        </div>
-        <div >
-          <h2>Heiko Seeberger</h2>
-          <p>
-Heiko Seeberger is an OSGi expert and Scala enthusiast. He is managing director of WeigleWilczek, a German consulting company specializing in Scala and other cool technologies. Heiko is also an active open source committer, e.g. to Lift, Akka and ScalaModules.
-	  </p>
-        </div>
-        <div >
-          <h2>Jonas Bonér</h2>
-          <p>Jonas Bonér is a programmer, mentor, speaker and author who spends
-            most of his time consulting, hacking Scala as well as lecturing and
-            speaking at developer conferences world-wide. He has worked at
-            Terracotta, the JRockit JVM at BEA and is an active contributor to the
-            Open Source community; most notably created the AspectWerkz
-            Aspect-Oriented Programming (AOP) framework, committer to the
-            Terracotta JVM clustering technology and been part of the Eclipse
-            AspectJ team. He is a passionate Scala and FP enthusiast and a
-            programming languages geek in general.</p>
-        </div>
-        
-        <div >
-          <h2>Jorge Ortiz</h2>
-          <p>Jorge Ortiz has programmed in C/C++, Java, Ruby, and Python before settling on Scala as his language of choice. He presented Scala and Lift at JavaOne 2008's ScriptBowl. He has taught a class on Scala at Stanford University and one on Lift with David Pollak.</p>
-        </div>
-        <div >
-          <h2>Eric Torreborre</h2>
-          <p>Eric runs the 
-	    <a href="http://code.google.com/p/specs/">Specs</a> project 
-	  and contributes to Lift's test suite and testing methodology.</p>
-        </div>
+							<div>
+								<h2>Diego Medina</h2>
+								<p>Diego is a super helpful, super excellent, super nice, and
+									super skilled member of the Lift community. He's been active in
+									the Community for quite some time and became Lift committer in
+									Mars 2012.</p>
+							</div>
 
-        <div >
-          <h2>Ross Mellgren</h2>
-          <p>Ross writes and maintains much of Lift's Record NoSQL code.</p>
-        </div>
-        
-        <div >
-          <h2>Harry Heymann</h2>
-          <p>Harry contributed Lift's OAuth module and writes a
-	  lot of code that makes hard-core real-world use of Lift.</p>
-        </div>
-        
+							<hr />
+							<h1 id="alumni-team">ALUMNI TEAM</h1>
 
-        
-        <div >
-          <h2>David Bernard</h2>
-          <p>No description available.</p>
-        </div>
-        <div >
-          <h2>Kris Nuttycombe</h2>
-          <p>No description available.</p>
-        </div>
+							<p>As Lift has grown, the team has expanded and contracted over
+								time. However, the work done by
+								team members that are not currently active also deserves credit, so
+								they are listed
+								here as Alumni members.
+							</p>
 
-        
-        <div >
-          <h2>Steve Jenson</h2>
-          <p>Steve added the XMPP and AMQP components of Lift. He currently
-            lives in San Francisco with his wife and cats and works at Twitter, Inc.</p>
-        </div>
-        <div >
-          <h2>Daniel Green</h2>
-          <p>Daniel Green is a FLOSS advocate and musician from the Boston area.</p>
-        </div>
-        
-        <div >
-          <h2>Alex Boisvert</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Alex Payne</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Burak Emir</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Carsten</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Philipp Schmidt</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Maciek Starzyk</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Julien Wetterwald</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Stepan Koltsov</h2>
-          <p>No description available..</p>
-        </div>
-	
-        <div >
-          <h2>Viktor Klang</h2>
-          <p>A Senior Systems Analyst / Architect / Project Manager / Developer / whatnot at a large company. I've been doing enterprise-level software development the past 7 years, I've 
-            gone through quite a few programming languages but for the past 9 years it's been Java, and the past 2 years I've been into Scala adventures.</p>
-        </div>
-	
-        <div >
-          <h2>Chris Wilkes</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Al Thompson</h2>
-          <p>No description available..</p>
-        </div>
-        <div >
-          <h2>Francois Bertrand</h2>
-          <p>No description available..</p>
-        </div>
-        
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>    
- 
-      </div>
-    </div> 
-    </lift:surround>
-  </content>
+							<div>
+								<h2>Timothy Perrett</h2>
+								<p>Technical Architect / Geek / Open source junkie - specializes
+									in
+									systems integration for manufacturing and workflow systems. Has been
+									working
+									with Scala since the end of 07' and before that was working with
+									Java, Ruby
+									and Objective-C extensively for a number of years. Also a
+									repentant Rails convert.
+									Whilst not working on Lift I work for an Israeli startup designing
+									systems
+									for techno-marketing and on-demand publishing.
+								</p>
+							</div>
+
+							<div>
+								<h2>Marius Danciu</h2>
+								<p>Marius has been a committer for more than an year now
+									contributing with design and development
+									of new features as well as fixing defects. I discovered Scala
+									about 2-3 years ago
+									and coming from Java world it's needless to say how much that
+									impressed me.
+									For the past 6 years I've been architecting,designing and
+									developing server
+									side Java applications orbiting around synchronization technologies
+									such as
+									SyncML. Before that I've been doing C/C++ programming.
+								</p>
+							</div>
+
+							<div>
+								<h2>Jonathan Hoffman</h2>
+								<p>Jon crontributed Lift's image management library
+									and puts Lift to the test every day.
+								</p>
+							</div>
+
+							<div>
+								<h2>Debby Meredith</h2>
+								<p>I'm a currently an engineering management consultant and a
+									venture partner at JAFCO
+									Ventures. I work hands-on with company founders, helping to assemble
+									world class teams,
+									architect software products and roadmaps, and establish operational
+									processes to
+									build success from the beginning. Previously, I was a venture
+									partner at Mohr Davidow
+									Ventures, VP Eng at Netscape, VP Eng at Collabra Software, VP Eng at
+									Slate Software,
+									and had key technical positions at Metaphor Computer Systems,
+									Logitech, and Bell Laboratories.
+								</p>
+							</div>
+							<div>
+								<h2>Heiko Seeberger</h2>
+								<p>
+									Heiko Seeberger is an OSGi expert and Scala enthusiast. He is
+									managing director of WeigleWilczek, a German consulting company
+									specializing in Scala and other cool technologies. Heiko is
+									also an active open source committer, e.g. to Lift, Akka and
+									ScalaModules.
+								</p>
+							</div>
+							<div>
+								<h2>Jonas Bonér</h2>
+								<p>Jonas Bonér is a programmer, mentor, speaker and author who
+									spends
+									most of his time consulting, hacking Scala as well as lecturing and
+									speaking at developer conferences world-wide. He has worked at
+									Terracotta, the JRockit JVM at BEA and is an active contributor
+									to the
+									Open Source community; most notably created the AspectWerkz
+									Aspect-Oriented Programming (AOP) framework, committer to the
+									Terracotta JVM clustering technology and been part of the
+									Eclipse
+									AspectJ team. He is a passionate Scala and FP enthusiast and a
+									programming languages geek in general.
+								</p>
+							</div>
+
+							<div>
+								<h2>Jorge Ortiz</h2>
+								<p>Jorge Ortiz has programmed in C/C++, Java, Ruby, and Python
+									before settling on Scala as his language of choice. He
+									presented Scala and Lift at JavaOne 2008's ScriptBowl. He has
+									taught a class on Scala at Stanford University and one on Lift
+									with David Pollak.</p>
+							</div>
+							<div>
+								<h2>Eric Torreborre</h2>
+								<p>
+									Eric runs the
+									<a href="http://code.google.com/p/specs/">Specs</a>
+									project
+									and contributes to Lift's test suite and testing methodology.
+								</p>
+							</div>
+
+							<div>
+								<h2>Ross Mellgren</h2>
+								<p>Ross writes and maintains much of Lift's Record NoSQL code.
+								</p>
+							</div>
+
+							<div>
+								<h2>Harry Heymann</h2>
+								<p>Harry contributed Lift's OAuth module and writes a
+									lot of code that makes hard-core real-world use of Lift.
+								</p>
+							</div>
+
+
+
+							<div>
+								<h2>David Bernard</h2>
+								<p>No description available.</p>
+							</div>
+							<div>
+								<h2>Kris Nuttycombe</h2>
+								<p>No description available.</p>
+							</div>
+
+
+							<div>
+								<h2>Steve Jenson</h2>
+								<p>Steve added the XMPP and AMQP components of Lift. He
+									currently
+									lives in San Francisco with his wife and cats and works at Twitter,
+									Inc.
+								</p>
+							</div>
+							<div>
+								<h2>Daniel Green</h2>
+								<p>Daniel Green is a FLOSS advocate and musician from the Boston
+									area.</p>
+							</div>
+
+							<div>
+								<h2>Alex Boisvert</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Alex Payne</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Burak Emir</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Carsten</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Philipp Schmidt</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Maciek Starzyk</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Julien Wetterwald</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Stepan Koltsov</h2>
+								<p>No description available..</p>
+							</div>
+
+							<div>
+								<h2>Viktor Klang</h2>
+								<p>A Senior Systems Analyst / Architect / Project Manager /
+									Developer / whatnot at a large company. I've been doing
+									enterprise-level software development the past 7 years, I've
+									gone through quite a few programming languages but for the past
+									9 years it's been Java, and the past 2 years I've been into
+									Scala adventures.
+								</p>
+							</div>
+
+							<div>
+								<h2>Chris Wilkes</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Al Thompson</h2>
+								<p>No description available..</p>
+							</div>
+							<div>
+								<h2>Francois Bertrand</h2>
+								<p>No description available..</p>
+							</div>
+
+						</div>
+						<div class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>

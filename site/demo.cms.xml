@@ -1,0 +1,20 @@
+<cms path="/wiki" serve="true" type="html" locale="en_US" host="liftweb.net">
+	<tag name="redirect" value="http://demo.liftweb.net" />
+	<tag name="name" value="demo" />
+	<tag name="menu" value="Demo" />
+	<tag name="order" value="10" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Demo</title>
+			</head>
+
+			<script>
+				// <![CDATA[
+             window.location = "http://demo.liftweb.net";
+          // ]]>
+			</script>
+
+		</lift:surround>
+	</content>
+</cms>

@@ -1,17 +1,17 @@
 <cms path="/quotes/dale" type="html" locale="en_US" host="liftweb.net">
-<content>
-  <div>
-    <div class="left">&ldquo;</div>
-    <div class="center">
-      <h1>
-	Thanks to its design, Lift encourages us to write concise, secure and performant web
-	applications very rapidly. We're finding that Lift steps out of the way and
-	allows us to concentrate on developing a great experience for the end user,
-	more than any other web framework we've used.
-      </h1>
-      Graham Tackley, UK Guardian
-    </div>
-    <div class="right">&rdquo;</div>
-  </div>
-</content>
+	<content>
+		<div id="lh-quote" class="well">
+			<blockquote class="pull-right">
+				<h2>Lift encourages us and steps out of the way!</h2>
+				<p class="lead">
+					Thanks to its design, Lift encourages us to write
+					concise, secure and performant web applications very rapidly.
+					We're finding that Lift steps out of the way and
+					allows us to concentrate on developing a great experience for the
+					end user, more than any other web framework we've used.
+				</p>
+				<small>Graham Tackley, UK Guardian</small>
+			</blockquote>
+		</div>
+	</content>
 </cms>

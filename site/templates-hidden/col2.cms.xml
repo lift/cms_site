@@ -1,60 +1,71 @@
 <cms path="/col2" type="html" locale="en_US" host="liftweb.net">
-  <content>
-  
-          <div class="row-fluid" style="border: 1px green red;">
-            <div class="span12" style="border: 1px green red;">  
-  
-      <h2>Latest Happenings</h2>
-      
-      <div class="cols2">
-	<lift:subs type="happening">
-	  <h3><a sub:href="/"><sub:title/></a></h3>
-	  <p><sub:desc/></p>
-	  <hr/>
-	</lift:subs>
-	
-      </div>
-      
-<!--       <div class="clear"></div> -->
+	<content>
 
-      <h2>
-        Lift Books
-      </h2>
-		
-      <p>
-	<a href="http://www.shaker.de/de/content/catalogue/index.asp?lang=de&amp;ID=8&amp;ISBN=978-3-8322-9824-1" target="_blank">Entwicklung von Web-Applikationen mit Lift und Scala</a>
-	by Thomas Fiedler and Christoph Knabe.
-      </p>
+		<div class="row-fluid" style="border: 1px green red;">
+			<div class="span12" style="border: 1px green red;">
 
-      <p>
-	<a href="http://simply.liftweb.net/">Simply Lift</a>,
-        by David Pollak is an open source book, available for free in
-        both PDF and HTML versions at <a href="http://simply.liftweb.net/">http://simply.liftweb.net/</a>.
-      </p>
+				<h2>Latest Happenings</h2>
 
-		
-      <p>
-	<a href="http://exploring.liftweb.net/">Exploring Lift</a>,
-        by Derek Chen-Becker, Tyler Weir, and Marius
-	Danciu is an open source book, available for free in
-        both PDF and HTML versions at <a href="http://exploring.liftweb.net/">http://exploring.liftweb.net/</a>.
-      </p>
+				<div class="cols2">
+					<lift:subs type="happening">
+						<h3>
+							<a sub:href="/">
+								<sub:title />
+							</a>
+						</h3>
+						<p>
+							<sub:desc />
+						</p>
+						<hr />
+					</lift:subs>
+				</div>
 
-      <p>
-	<a href="http://www.manning.com/perrett/">Lift In Action</a>
-	by Tim Perrett
-	is available in print and eBook format.
-      </p>
+				<h2>
+					Lift Books
+				</h2>
 
-      <p>
-        <a href="http://cookbook.liftweb.net">Lift Cookbook</a>
-        A community question and answers book, free at <a href="http://cookbook.liftweb.net">cookbook.liftweb.net</a>
-      </p>
+				<p>
+					<a
+						href="http://www.shaker.de/de/content/catalogue/index.asp?lang=de&amp;ID=8&amp;ISBN=978-3-8322-9824-1"
+						target="_blank">Entwicklung von Web-Applikationen mit Lift und Scala</a>
+					by Thomas Fiedler and Christoph Knabe.
+				</p>
 
-      <hr/>
-      
-      </div>
-      </div>
-      
-  </content>
+				<p>
+					<a href="http://simply.liftweb.net/">Simply Lift</a>
+					,
+					by David Pollak is an open source book, available for free in
+					both PDF and HTML versions at
+					<a href="http://simply.liftweb.net/">http://simply.liftweb.net/</a>
+					.
+				</p>
+
+				<p>
+					<a href="http://exploring.liftweb.net/">Exploring Lift</a>
+					,
+					by Derek Chen-Becker, Tyler Weir, and Marius
+					Danciu is an open source book, available for free in
+					both PDF and HTML versions at
+					<a href="http://exploring.liftweb.net/">http://exploring.liftweb.net/</a>
+					.
+				</p>
+
+				<p>
+					<a href="http://www.manning.com/perrett/">Lift In Action</a>
+					by Tim Perrett
+					is available in print and eBook format.
+				</p>
+
+				<p>
+					<a href="http://cookbook.liftweb.net">Lift Cookbook</a>
+					A community question and answers book, free at
+					<a href="http://cookbook.liftweb.net">cookbook.liftweb.net</a>
+				</p>
+
+				<hr />
+
+			</div>
+		</div>
+
+	</content>
 </cms>

@@ -1,53 +1,78 @@
-<cms path="/getting_started" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2010/09/01">
-  <tag name="name" value="getting_started"/>
-  <tag name="menu" value="Getting Started"/>
-  <tag name="order" value="2"/>
-  <content>
-    <lift:surround with="default" at="content">
-      <head>
-	<title>Lift :: Getting Started</title>
-      </head>
+<cms path="/getting_started" serve="true" type="html" locale="en_US"
+	host="liftweb.net" valid_from="2010/09/01">
+	<tag name="name" value="getting_started" />
+	<tag name="menu" value="Getting Started" />
+	<tag name="order" value="2" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Getting Started</title>
+			</head>
 
-    <div class="row-fluid">
-      <div class="span12">
+			<div class="row-fluid">
+				<div class="span12">
 
-        <div class="row-fluid">
-          <div class="span9">    
-	<h1>Getting Started</h1>
-	<p>
-	  It's easy to <a href="http://simply.liftweb.net/index-Chapter-2.html#toc-Chapter-2">Get Started</a> with Lift.
-	  The Chat app that you build demonstrates a bunch of Lift's advanced features and how easy those
-	  features are accessed.
-	</p>
-	
-	<h2>From an MVC background</h2>
-	<p>
-	  If you're coming from an MVC background (like Rails, Struts, etc.), there's a
-	  <a href="http://simply.liftweb.net/index-Chapter-13.html#toc-Chapter-13">Chapter for you</a>.
-	  The code examples are included and you can run them yourself.
-	</p>
+					<div class="row-fluid">
+						<div class="span9">
+							<h1>Getting Started</h1>
+							<p>
+								It's easy to
+								<a
+									href="http://simply.liftweb.net/index-Chapter-2.html#toc-Chapter-2">Get Started</a>
+								with Lift.
+								The Chat app that you build demonstrates a bunch of Lift's advanced
+								features and how easy those
+								features are accessed.
+							</p>
 
-	<h2>Some Videos</h2>
-	<p>
-	  <ul>
-	    <li>Mar 2011 <a href="http://skillsmatter.com/podcast/scala/talk-by-david-pollak-creator-of-lift "> Lift: Transforming Web Development</a> by David Pollak</li>
+							<h2>From an MVC background</h2>
+							<p>
+								If you're coming from an MVC background (like Rails, Struts,
+								etc.), there's a
+								<a
+									href="http://simply.liftweb.net/index-Chapter-13.html#toc-Chapter-13">Chapter for you</a>
+								.
+								The code examples are included and you can run them yourself.
+							</p>
 
-	    <li>Mar 2011 <a href="http://skillsmatter.com/podcast/scala/lift-framework-qa "> Q&amp;A on the Lift Framework</a> by David Pollak</li>
-	    <li>Jan 2011 <a href="http://tunaforcats.com/2011-01-04_Lift_Basics.wmv "> Basic #Lift training session video (unedited, WMV format)</a> by David Pollak, also available <a href="http://vimeo.com/18496998 "> on Vimeo</a></li>
+							<h2>Some Videos</h2>
+							<p>
+								<ul>
+									<li>
+										Mar 2011
+										<a
+											href="http://skillsmatter.com/podcast/scala/talk-by-david-pollak-creator-of-lift "> Lift: Transforming Web Development</a>
+										by David Pollak
+									</li>
 
-	    <li><a href="http://liftweb.blip.tv/ "> Lift on Blip.TV</a></li>
-	  </ul>
-	</p>
+									<li>
+										Mar 2011
+										<a href="http://skillsmatter.com/podcast/scala/lift-framework-qa "> Q&amp;A on the Lift Framework</a>
+										by David Pollak
+									</li>
+									<li>
+										Jan 2011
+										<a href="http://tunaforcats.com/2011-01-04_Lift_Basics.wmv "> Basic #Lift training session video (unedited, WMV
+											format)</a>
+										by David Pollak, also available
+										<a href="http://vimeo.com/18496998 "> on Vimeo</a>
+									</li>
 
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>      
-      
-      
-      </div>
-    </div>      
-    </lift:surround>
-  </content>
+									<li>
+										<a href="http://liftweb.blip.tv/ "> Lift on Blip.TV</a>
+									</li>
+								</ul>
+							</p>
+
+						</div>
+						<div class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>
