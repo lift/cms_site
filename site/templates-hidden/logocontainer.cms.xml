@@ -14,9 +14,9 @@
 								<h3>
 									<lift:a name="getting_started">Taking Off</lift:a>
 								</h3>
-								<p>Get started with Lift. Build
+								<p><strong>Get started with Lift. Build
 									your first interactive Lift-powered
-									app.
+									app.</strong>
 								</p>
 							</div>
 
@@ -24,8 +24,8 @@
 								<h3>
 									<lift:a name="community">Flying in Formation</lift:a>
 								</h3>
-								<p>Join the warm, welcoming Lift community, ask questions,
-									suggest features, have fun!
+								<p><strong>Join the warm, welcoming Lift community, ask questions,
+									suggest features, have fun!</strong>
 								</p>
 							</div>
 
@@ -37,14 +37,14 @@
 								<h3>
 									<a href="http://liftweb.com">Flying Commercial</a>
 								</h3>
-								<p>Get Lift support and consulting from the Lift committers.</p>
+								<p><strong>Get Lift support and consulting from the Lift committers.</strong></p>
 							</div>
 
 							<div class="gradient-panel">
 								<h3>
 									<lift:a name="team">Team</lift:a>
 								</h3>
-								<p>Learn about the Lift team.</p>
+								<p><strong>Learn about the Lift team.</strong></p>
 							</div>
 
 						</div>
