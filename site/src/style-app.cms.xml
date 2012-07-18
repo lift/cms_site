@@ -71,20 +71,21 @@ div#header div#hdr { float: left;  max-width: 185px; height:99px; margin-left:20
 
 /* MAIN QUOTE AREA 
 *************************************************************************/
-#lh-quote.well { overflow: hidden;min-height:240px;}
-#lh-quote > blockquote > p.lead:after {
+.well { overflow: hidden;min-height:240px;}
+blockquote > p.lead:after {
     bottom: 3px;
     content: "”";
     right: -10px;
     text-align: right;
 }
-#lh-quote > blockquote > p.lead:before {
+blockquote > p.lead:before {
     content: "“";
     left: -10px;
     top: -11px;   
 }
-#lh-quote > blockquote > p.lead:after,
-#lh-quote > blockquote > p.lead:before { 
+
+blockquote > p.lead:after,
+blockquote > p.lead:before { 
     font-family: Georgia,Serif;
     color:#ccc;
     font-size: 36px;
@@ -162,7 +163,7 @@ div.gradient-panel {
 @media (max-width: 1040px) {
    div.gradient-panel {width: 49%;min-height:70px;}
    div.gradient-panel h1 {font-size:180%;}
-   #lh-quote.well {min-height:250px;}
+   .well {min-height:250px;}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -172,7 +173,7 @@ div.gradient-panel {
     div.gradient-panel p {font-size:100%;}	
     #logo-container .logo { width:44%;}    
     .lh-top-btn { width:90px;}
-    #lh-quote.well {min-height:300px;}
+    .well {min-height:300px;}
 }
 @media (max-width: 767px) {
     body {font-size: 90%;line-height: 16px; padding-top:0px;}
@@ -181,7 +182,7 @@ div.gradient-panel {
 	div.gradient-panel {width:100%;min-height:70px;}
 	.lh-top-btn { width:70px;}
 	#logo-container .logo { width:44%;}  
-	#lh-quote.well {min-height:400px;}
+	.well {min-height:400px;}
 }
 @media (max-width: 480px) {
     body {font-size: 100%;line-height: 16px;padding-top:0px;}
@@ -191,7 +192,7 @@ div.gradient-panel {
 	div.box-gradient span {font-size:70%;}	
 	.lh-top-btn { width:90px;}	
 	#logo-container .logo { width:95%;}  
-    #lh-quote.well {min-height:550px;}
+    .well {min-height:550px;}
 }
 
 /* 
