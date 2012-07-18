@@ -5,8 +5,8 @@
 			<div class="row-fluid">
 				<div class="span12">
 
-					<div class="row-fluid" style="/*border: 1px solid red;*/">
-						<div class="span12" style="/*border: 1px dotted red;*/">
+					<div class="row-fluid" >
+						<div class="span12">
 							<!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; 
 								border: 1px dotted red;"> -->
 
