@@ -85,7 +85,7 @@
 										</div>
 										<a class="lh-top-btn btn  btn-primary" href="http://demo.liftweb.net">Lift Demo</a>
 										<div class="alert alert-error" style="float:left;margin-left:3px;max-width:60%;">
-											<strong>This is a demo site for a alternative Lift Home.
+											<strong>This is a demo site for a alternative <a href="http://liftweb.net/">Lift Home</a>.
 												The LOGO images IS NOT REPLACED and should be UPDATED to blend
 												in better on a production site.
 											</strong>
@@ -150,9 +150,9 @@
 									<a href="http://yourkit.com">YourKit. </a>
 									<br />
 									Design by
-									<a href="http://www.media4u101.se" target="_blank">Peter Petersson</a>
-									and
 									<a href="http://www.joyreyes.com" target="_blank">Joy Reyes</a>
+									and
+									<a href="http://www.media4u101.se" target="_blank">Peter Petersson</a>
 									<br />
 									Powered by
 									<a href="http://liftweb.net">Lift</a>
