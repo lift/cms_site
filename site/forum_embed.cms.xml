@@ -6,19 +6,18 @@
 	<content>
 		<lift:surround with="default" at="content">
 			<head>
-				<title>Lift :: Getting Started</title>
+				<title>Lift :: Forum</title>
 			</head>
 
 			<div class="row-fluid">
 				<div class="span12">
-
 <center>												
 <iframe id="forum_embed"
   src="javascript:void(0)"
   scrolling="no"
   frameborder="0"
-  width="950"
-  height="1000">
+  width="100%"
+  height="1200">
 </iframe>
 <script type="text/javascript">
 // <![CDATA[
@@ -27,8 +26,6 @@
 // ]]>     
 </script>
 </center>
-				
-
 				</div>
 			</div>
 		</lift:surround>
