@@ -1,5 +1,5 @@
-<cms path="/forum" serve="true" type="html" locale="en_US"
-	host="liftweb.net" valid_from="2010/09/01">
+<cms path="/forum" serve="true" type="html" locale="en_US" host="liftweb.net"
+	valid_from="2010/09/01">
 	<tag name="name" value="forum_embed" />
 	<tag name="menu" value="Forum" />
 	<tag name="order" value="11" />
@@ -11,21 +11,29 @@
 
 			<div class="row-fluid">
 				<div class="span12">
-<center>												
-<iframe id="forum_embed"
-  src="javascript:void(0)"
-  scrolling="no"
-  frameborder="0"
-  width="100%"
-  height="1200">
-</iframe>
-<script type="text/javascript">
-// <![CDATA[
+				
+					<div class="row-fluid">
+						<div class="span9">
+									
+					<center>
+						<iframe id="forum_embed" src="javascript:void(0)"
+							scrolling="no" frameborder="0" width="100%" height="1200">
+						</iframe>
+						<script type="text/javascript">
+							// <![CDATA[
+
   document.getElementById('forum_embed').src ='https://groups.google.com/forum/embed/?place=forum/liftweb&showsearch=true&showpopout=true&showtabs=false';
-  
-// ]]>     
-</script>
-</center>
+
+							  
+// ]]>
+						</script>
+					</center>
+					
+						</div>
+						<div class="span3">
+							<lift:embed what="col2" />
+						</div>					
+					</div>
 				</div>
 			</div>
 		</lift:surround>
