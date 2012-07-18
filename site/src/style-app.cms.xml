@@ -22,6 +22,28 @@ h1, h2, h3 {
     text-shadow: 2px 2px 2px #CCCCCC;
 }
 
+/* NAVBAR
+*******************************************************************************/
+
+.navbar .brand {
+    color: #111;
+    font-family: Orbitron,Helvetica,Verdana,sans-serif;
+    font-weight: bold;
+    padding: 12px 20px 8px;
+    text-shadow: 2px 4px 5px #555555;
+}
+.navbar-inner {
+    background-color: #222;
+    background-image: -moz-linear-gradient(center top , #425655, #222222);
+}
+div.navbar > div.navbar-inner > div.container > div.nav-collapse > ul.nav > li > a {
+  color:#ccc;
+}
+.navbar a:hover, .navbar .brand:hover, div.navbar > div.navbar-inner > div.container > div.nav-collapse > ul.nav > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    text-decoration: none;
+}
 /* HEADER
 *************************************************************************/
 
