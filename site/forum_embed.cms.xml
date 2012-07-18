@@ -21,11 +21,8 @@
 								</iframe>
 								<script type="text/javascript">
 									// <![CDATA[
-
-  document.getElementById('forum_embed').src ='https://groups.google.com/forum/embed/?place=forum/liftweb&showsearch=true&showpopout=true&showtabs=false';
-
-							  
-// ]]>
+                                     document.getElementById('forum_embed').src ='https://groups.google.com/forum/embed/?place=forum/liftweb&showsearch=true&showpopout=true&showtabs=false';
+                                   // ]]>
 								</script>
 							</center>
 
