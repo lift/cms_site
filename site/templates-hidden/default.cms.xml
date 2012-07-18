@@ -75,16 +75,13 @@
 					<div class="row-fluid">
 						<div class="span12">
 
+
+
 							<div class="row-fluid">
-								<div class="span12">
+								<div class="span12">								
 									<div id="header">
-										<div id="hdr">
-											<a href="/" class="header-home">
-												<span>Lift</span>
-											</a>
-										</div>
-										<a class="lh-top-btn btn  btn-primary" href="http://demo.liftweb.net">Lift Demo</a>
-										<div class="alert alert-error" style="float:left;margin-left:3px;max-width:60%;">
+									
+										<div class="alert alert-error" style="float:left;margin-left:3px;max-width:100%;">
 											<strong>This is a demo site for a alternative <a href="http://liftweb.net/">Lift Home</a>.
 												The LOGO images IS NOT REPLACED and should be UPDATED to blend
 												in better on a production site.
@@ -99,7 +96,14 @@
 												href="https://groups.google.com/forum/?fromgroups#!topic/liftweb/VDb7v-ZRBz8"
 												target="_blank">Tell me Peter Petersson (karma4u101) what you think!
 											</a>
+										</div>																		
+										<div id="hdr">
+											<a href="/" class="header-home">
+												<span>Lift</span>
+											</a>
 										</div>
+										<a class="lh-top-btn btn  btn-primary" href="http://demo.liftweb.net">Lift Demo</a>
+
 									</div>
 								</div>
 							</div>
