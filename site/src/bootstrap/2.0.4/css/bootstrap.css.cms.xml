@@ -1,5 +1,6 @@
-<cms path="/style/bootstrap/2.0.4/bootstrap.css" serve="true" type="css" host="liftweb.net">
-<content>
+<cms path="/style/bootstrap/2.0.4/bootstrap.css" serve="true" type="css"
+	host="liftweb.net">
+	<content>
 <![CDATA[
 /*!
  * Bootstrap v2.0.4 (no less)
@@ -1781,7 +1782,8 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("../style/bootstrap/2.0.4/img/glyphicons-halflings.png");
+  /*background-image: url("../img/glyphicons-halflings.png");*/
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -4985,5 +4987,5 @@ a.badge:hover {
   visibility: hidden;
 }
 ]]>
-</content>
+	</content>
 </cms>

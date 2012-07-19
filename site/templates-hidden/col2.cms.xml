@@ -4,7 +4,7 @@
 		<div class="row-fluid" style="border: 1px green red;">
 			<div class="span12" style="border: 1px green red;">
 
-				<h2>Latest Happenings</h2>
+				<h2><i class="icon-road"></i>Latest Happenings</h2>
 
 				<div class="cols2">
 					<lift:subs type="happening">
