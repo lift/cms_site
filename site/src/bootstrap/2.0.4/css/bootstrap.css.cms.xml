@@ -1782,8 +1782,8 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../style/bootstrap/2.0.4/img/glyphicons-halflings.png");
-  /*background-image: url("../img/glyphicons-halflings.png");*/
+  background-image: url("/src/bootstrap/2.0.4/img/glyphicons-halflings.png");
+ /*background-image: url("../img/glyphicons-halflings.png");*/
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
