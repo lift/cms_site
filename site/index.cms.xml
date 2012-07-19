@@ -22,19 +22,23 @@
 								There are
 								<a href="http://seventhings.liftweb.net">Seven Things</a>
 								that distinguish Lift from other web frameworks.
-								Lift applications are:
+								
 							</p>
-							<ul>
-								<li>Secure -- Lift apps are resistant to common vulnerabilities
-									including many of the OWASP Top 10</li>
-								<li>Developer centeric -- Lift apps are fast to build, concise
-									and easy to maintain</li>
-								<li>Scalable -- Lift apps are high performance and scale in the
-									real world to handle insane traffic levels</li>
-								<li>Interactive like a desktop app -- Lift's Comet support is
+							<dl>
+							   <dt>Lift applications are:</dt>
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Secure</strong> -- Lift apps are resistant to common vulnerabilities
+									including many of the OWASP Top 10</dd>
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Developer centeric</strong> -- Lift apps are fast to build, concise
+									and easy to maintain</dd>
+	                            <dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Designer friendly</strong> -- Lift apps can be developed in a totally designer friendly way</dd>
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Scalable</strong> -- Lift apps are high performance and scale in the
+									real world to handle insane traffic levels</dd>
+	                            <dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Modular</strong> -- Lift apps can benefit from, easy to integrate, pre built modules</dd>									
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Interactive like a desktop app</strong> -- Lift's Comet support is
 									unparalled and Lift's ajax support is super-easy and very
-									secure</li>
-							</ul>
+									secure</dd>
+									
+							</dl>
 
 							<p>
 								Read an
