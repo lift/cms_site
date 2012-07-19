@@ -31,22 +31,23 @@
 							</p>
 
 							<p>
-								The following are not ways to get support for Lift:
-								<ul>
-									<li>Personal email to one of the committers (unless you have a
-										relationship with that committer)</li>
-									<li>Personal IM with the committers (unless you know them very
-										well)</li>
-									<li>Twitter... the Lift committers don't monitor Twitter for
-										Lift support requests</li>
-									<li>GitHub... don't use GitHub messages.
+								
+								<dl>
+								    <dt>The following are not ways to get support for Lift:</dt>
+									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> Personal email to one of the committers (unless you have a
+										relationship with that committer)</dd>
+									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> Personal IM with the committers (unless you know them very
+										well)</dd>
+									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> Twitter... the Lift committers don't monitor Twitter for
+										Lift support requests</dd>
+									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> GitHub... don't use GitHub messages.
 										None of the Lift committer will pull from your repository.
 										The Lift IP is clean which means that unless you are a committer
 										and you have written the code yourself,
 										it doesn't get into Lift. This allows businesses to use Lift
 										knowing what the provenance of the code is.
-									</li>
-								</ul>
+									</dd>
+								</dl>
 							</p>
 
 							<p>
@@ -68,17 +69,18 @@
 								feedback and we try to foster a community in which feedback is
 								encouraged. But this
 								implies certain ground rules:
-								<ul>
-									<li>You can disagree with a person's opinion, but please
-										continue to respect the person</li>
-									<li>Using words like "nightmare", "sucks", and other similar
+								<dl>
+								    <dt>Ground rules:</dt>
+									<dd><i class="icon-thumbs-up" style="vertical-align: midle;"></i> You can disagree with a person's opinion, but please
+										continue to respect the person</dd>
+									<dd><i class="icon-thumbs-up" style="vertical-align: midle;"></i> Using words like "nightmare", "sucks", and other similar
 										words will not help your cause.
 										Please spend time working on the positives of your position rather
 										than focusing on the
 										negatives of other peoples' positions.
-									</li>
-									<li>You may have to agree to disagree</li>
-								</ul>
+									</dd>
+									<dd><i class="icon-thumbs-up" style="vertical-align: midle;"></i> You may have to agree to disagree</dd>
+								</dl>
 							</p>
 
 							<p>
@@ -102,7 +104,7 @@
 							</p>
 
 							<p>
-								Please also read
+								<span class="label label-info">Please also read!</span> 
 								<a href="http://lift.la/the-loyal-opposition">The Loyal Opposition</a>
 								.
 								Before opening a ticket, please discuss it on the Lift Google Group.
