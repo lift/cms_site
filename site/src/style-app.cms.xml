@@ -13,6 +13,18 @@ body {
     position: relative;
 }
 
+/* Fixing bootstrap icon viewing in telegr.am
+*************************************************************************/
+
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url("/src/bootstrap/2.0.4/img/glyphicons-halflings.png");
+}
+.icon-white {
+  background-image: url("/src/bootstrap/2.0.4/img/glyphicons-halflings-white.png");
+}
+
+
 /* HEDINGS FONTS
 *************************************************************************/
 h1, h2, h3 {
