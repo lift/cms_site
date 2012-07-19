@@ -20,16 +20,18 @@
 							</h1>
 							<p>
 								<div class="alert alert-info">
-									*Note about jQuery and
-									<a href="/jquery">Lift 2.5</a>
+									<strong>
+										<i class="icon-star" style="vertical-align: midle;"></i>
+										Note about jQuery and
+										<a href="/jquery">Lift 2.5</a>
+									</strong>
 								</div>
 
-								<div>
-									<span class="label label-info">Download</span>
-								</div>
-								<ul>
-									<li>
-										Lift 2.4 release:
+								<dl>
+									<dt>Download:</dt>
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<span class="label label-info">Lift 2.4 release:</span>
 										<a href="https://github.com/lift/lift_24_sbt/tarball/master">TAR</a>
 										or
 										<a href="https://github.com/lift/lift_24_sbt/zipball/master">Zip</a>
@@ -46,13 +48,14 @@
 										and see your running
 										Lift app.
 										<hr />
-									</li>
-									<li>
-										Lift 2.3 release:
+									</dd>
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<span class="label label-info">Lift 2.3 release:</span>
 										<a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a>
 										or
 										<a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>
-										.
+
 										<br />
 										Expand the project and cd into the directory and the
 										"lift_basic" subdirectory.
@@ -65,33 +68,48 @@
 										and see your running
 										Lift app.
 										<hr />
-									</li>
+									</dd>
 
-									<li>
-										Lift 2.2 release
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<span class="label label-info">Lift 2.2 release:</span>
 										<a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a>
 										or
 										<a href="https://github.com/lift/lift_22_sbt/zipball/2.2">Zip</a>
-										.
-									</li>
+										<br />
+										Expand the project and cd into the newly created
+										directory. Then type
+										<pre>
+											<code>sbt update ~jetty-run</code>
+										</pre>
+										and you should be able to browse to
+										<code>http://localhost:8080</code>
+										and see your running
+										Lift app.
 
-									<li>
-										Lift 2.1 release
+										<hr />
+									</dd>
+
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<span class="label label-info">Lift 2.1 release:</span>
 										<a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a>
 										or
 										<a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a>
-									</li>
-								</ul>
+										br />
+										Expand the project and cd into the newly created
+										directory. Then type
+										<pre>
+											<code>sbt update ~jetty-run</code>
+										</pre>
+										and you should be able to browse to
+										<code>http://localhost:8080</code>
+										and see your running
+										Lift app.
+									</dd>
+								</dl>
 
-								Expand the project and cd into the newly created
-								directory. Then type
-								<pre>
-									<code>sbt update ~jetty-run</code>
-								</pre>
-								and you should be able to browse to
-								<code>http://localhost:8080</code>
-								and see your running
-								Lift app.
+
 							</p>
 							<!-- <h1>DOWNLOAD and run using Maven</h1> <p>If you already have 
 								<a href="http://maven.apache.org/download.html">Apache Maven 2.2.0+</a> or 
