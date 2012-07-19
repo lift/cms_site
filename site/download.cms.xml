@@ -50,12 +50,11 @@
 										<hr />
 									</dd>
 									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
 										<span class="label label-info">Lift 2.3 release:</span>
 										<a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a>
 										or
 										<a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>
-
 										<br />
 										Expand the project and cd into the directory and the
 										"lift_basic" subdirectory.
@@ -71,7 +70,7 @@
 									</dd>
 
 									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
 										<span class="label label-info">Lift 2.2 release:</span>
 										<a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a>
 										or
@@ -86,17 +85,16 @@
 										<code>http://localhost:8080</code>
 										and see your running
 										Lift app.
-
 										<hr />
 									</dd>
 
 									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
 										<span class="label label-info">Lift 2.1 release:</span>
 										<a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a>
 										or
 										<a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a>
-										br />
+										<br />
 										Expand the project and cd into the newly created
 										directory. Then type
 										<pre>
@@ -128,7 +126,6 @@
 								the
 								<a href="http://groups.google.com/group/liftweb">mailing list.</a>
 							</p>
-							<!-- </div> -->
 
 						</div>
 						<div class="span3">
