@@ -80,12 +80,12 @@
 							<div class="row-fluid">
 								<div class="span12">
 									<div id="header">
-										<!-- <div id="hdr"> -->
-										<!-- <a href="/" class="header-home"> -->
-										<!-- <span>Lift</span> -->
-										<!-- </a> -->
-										<!-- </div> -->
-										<img src="/images/liftweb-logo-single-small.png" alt="Smiley face"></img>
+										<div id="hdr">
+										<a href="/" class="header-home">
+										<span>Lift</span>
+										</a>
+										</div>
+<!-- 										<img src="/images/liftweb-logo-single-small.png" alt="Smiley face"></img> -->
 										<a class="lh-top-btn btn  btn-primary" href="http://demo.liftweb.net">Lift Demo</a>
 
 									</div>

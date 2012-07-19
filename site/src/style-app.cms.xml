@@ -49,7 +49,8 @@ div.navbar > div.navbar-inner > div.container > div.nav-collapse > ul.nav > li >
 
 div#header div#hdr { float: left;  max-width: 185px; height:99px; margin-left:20px; }
 
-.header-home { display:block; background: url('http://static.liftweb.com/logo.jpg') no-repeat; height: 89px; width: 185px;}
+.header-home { display:block; background: url('/images/liftweb-logo-single-small.png') no-repeat; height: 89px; width: 185px;}
+/*.header-home { display:block; background: url('http://static.liftweb.com/logo.jpg') no-repeat; height: 89px; width: 185px;}*/
 .header-home span {
 	padding-left: 30px;
 	text-indent: -9999px;
