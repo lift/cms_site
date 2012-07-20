@@ -2,7 +2,9 @@
 	<tag name="redirect" value="http://demo.liftweb.net" />
 	<tag name="name" value="demo" />
 	<tag name="menu" value="Demo" />
-	<tag name="order" value="10" />
+	<tag name="menu-locgroup" value="locgroup1" />
+    <tag name="order" value="3"/>
+<!-- 	<tag name="order" value="10" /> -->
 	<content>
 		<lift:surround with="default" at="content">
 			<head>

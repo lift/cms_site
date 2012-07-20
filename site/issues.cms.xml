@@ -2,7 +2,9 @@
   <tag name="redirect" value="http://ticket.liftweb.net"/>
   <tag name="name" value="tickets"/>
   <tag name="menu" value="Tickets"/>
-  <tag name="order" value="9"/>
+  <tag name="menu-locgroup" value="locgroup1" />
+  <tag name="order" value="1"/>  
+<!--   <tag name="order" value="9"/> -->
   <content>
     <lift:surround with="default" at="content">
       <head>
