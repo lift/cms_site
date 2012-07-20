@@ -54,8 +54,8 @@
             <li><a href="/download"><span><i class="icon-download icon-white"></i> Download</span></a></li>
             <li><a href="/api_docs"><span><i class="icon-book icon-white"></i> API Docs</span></a></li>
             <li><a href="/community"><span><i class="icon-download icon-white"></i> Community</span></a></li>
-            <li><a href="/team"><span><span><i class="icon-user icon-white"></i> Team</span></a></li>
-            <li><a href="/forum"> <span><i class="icon-list icon-white"></i> Forum</span></a></li>
+            <li><a href="/team"><span><i class="icon-user icon-white"></i> Team</span></a></li>
+            <li><a href="/forum"><span><i class="icon-list icon-white"></i> Forum</span></a></li>
             <li class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <span><i class="icon-bookmark icon-white"></i> Resources</span><b class="caret"></b>
