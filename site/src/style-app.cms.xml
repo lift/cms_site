@@ -95,7 +95,11 @@ blockquote > p.lead:before {
     left: -10px;
     top: -11px;   
 }
-
+blockquote > p.lead{  
+  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+  font-style: italic;
+  font-weight: normal;
+}
 blockquote > p.lead:after,
 blockquote > p.lead:before { 
     font-family: Georgia,Serif;
