@@ -3,6 +3,7 @@
 	<tag name="name" value="demo" />
 	<tag name="menu" value="Demo" />
 	<tag name="menu-locgroup" value="locgroup1" />
+	<tag name="menu-icon" value="icon-cog" />
     <tag name="order" value="3"/>
 <!-- 	<tag name="order" value="10" /> -->
 	<content>

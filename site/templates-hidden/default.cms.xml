@@ -69,10 +69,10 @@
                   </li>
                 </lift:xmenu>                
               
-				<li><a href="http://github.com/lift/framework"><span><i class="icon-list-alt"></i> Source</span></a></li>
-				<li><a href="http://ticket.liftweb.net"> <span><i class="icon-tags"></i> Tickets</span></a></li>
-                <li class="divider"></li><!-- styled hr -->
-				<li><a href="http://demo.liftweb.net"> <span><i class="icon-cog"></i> Demo </span></a></li>              
+<!-- 				<li><a href="http://github.com/lift/framework"><span><i class="icon-list-alt"></i> Source</span></a></li> -->
+<!-- 				<li><a href="http://ticket.liftweb.net"> <span><i class="icon-tags"></i> Tickets</span></a></li> -->
+<!--                 <li class="divider"></li> -->
+<!-- 				<li><a href="http://demo.liftweb.net"> <span><i class="icon-cog"></i> Demo </span></a></li>               -->
               </ul>
             </li>
             </ul>
