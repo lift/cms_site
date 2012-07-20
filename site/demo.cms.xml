@@ -1,7 +1,7 @@
 <cms path="/wiki" serve="true" type="html" locale="en_US" host="liftweb.net">
 	<tag name="redirect" value="http://demo.liftweb.net" />
 	<tag name="name" value="demo" />
-	<tag name="menu" value="Demo" />
+	<tag name="menu" value=" Demo" />
 	<tag name="menu-locgroup" value="locgroup1" />
 	<tag name="menu-icon" value="icon-cog" />
     <tag name="order" value="3"/>

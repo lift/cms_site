@@ -1,7 +1,7 @@
 <cms path="/tickets" serve="true" type="html" locale="en_US" host="liftweb.net">
   <tag name="redirect" value="http://ticket.liftweb.net"/>
   <tag name="name" value="tickets"/>
-  <tag name="menu" value="Tickets"/>
+  <tag name="menu" value=" Tickets"/>
   <tag name="menu-locgroup" value="locgroup1" />
   <tag name="menu-icon" value="icon-tags" />
   <tag name="menu-icon-placement" value="left" />
