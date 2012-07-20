@@ -93,9 +93,13 @@
 									</div>
 									<div class="logo">
 										<a href="http://sgrouples.com">
+<!-- 											<img height="50" -->
+<!-- 												src="http://sgrouples.com/img/logos/sgrouples_logo_lift.png" -->
+<!-- 												alt="" /> -->
 											<img height="50"
-												src="http://sgrouples.com/img/logos/sgrouples_logo_lift.png"
+												src="/images/sgrouples_logo_lift-alpha.png"
 												alt="" />
+
 										</a>
 									</div>
 								</lift:choose>
