@@ -74,10 +74,14 @@
 										</a>
 									</div>
 									<div class="logo">
+<!-- 										<a href="http://untyped.com"> -->
+<!-- 											<img src="http://static.liftweb.com/logo-untyped.gif" -->
+<!-- 												alt="" /> -->
+<!-- 										</a> -->
 										<a href="http://untyped.com">
-											<img src="http://static.liftweb.com/logo-untyped.gif"
+											<img src="/images/logo-untyped-alpha.png"
 												alt="" />
-										</a>
+										</a>										
 									</div>
 									<div class="logo">
 										<a href="http://stackmob.com">
