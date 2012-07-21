@@ -2,6 +2,7 @@
 	<tag name="name" value="download" />
 	<tag name="menu" value=" Download" />
 	<tag name="menu-icon" value="icon-download-alt icon-white" />
+
 	<tag name="order" value="3" />
 	<content>
 		<lift:surround with="default" at="content">
