@@ -18,6 +18,9 @@
 				<link href="/style/bootstrap/2.0.4/bootstrap.css" rel="stylesheet" />
 				<link href="/style/bootstrap/2.0.4/bootstrap-responsive.css"
 					rel="stylesheet" />
+					
+				<link href="/style/google-code/prettify.css" rel="stylesheet" />		
+<!-- 				<link href="/style/google-code/sunburst.css" rel="stylesheet" />	 -->
 
 				<link rel="stylesheet" href="/style/style-app.css" type="text/css"
 					media="screen" />
@@ -35,7 +38,7 @@
 
 			</head>
 
-			<body id="back" data-spy="scroll" data-target=".subnav"
+			<body onload="prettyPrint()" id="back" data-spy="scroll" data-target=".subnav"
 				data-offset="50">
 
   <div class="navbar navbar-fixed-top">
@@ -228,7 +231,10 @@
       try { var pageTracker = _gat._getTracker("UA-334500-19"); pageTracker._trackPageview(); } catch(err) {}
     //]]>
 				</script>
+				<script type="text/javascript" src="/javascript/google-code/prettify.js"></script>
+				<script type="text/javascript" src="/javascript/google-code/lang-scala.js"></script>				
 				<script type="text/javascript" src="/javascript/bootstrap/2.0.4/bootstrap.js"></script>
+
 			</body>
 
 		</html>
