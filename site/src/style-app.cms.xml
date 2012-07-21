@@ -243,7 +243,7 @@ hr {
 	div.gradient-panel {width:100%;min-height:70px;}
 	.lh-top-btn { width:70px;}
 	#logo-container .logo { width:44%;}  
-	.well {min-height:660px;}
+	.well {min-height:670px;}
     .lh-top-btn {width:120px;margin:5px 0px 20px 3px;}	
     .header-home {height: 55px; width: 160px;}
     div#header div#hdr { margin-left:3px; }
@@ -257,7 +257,7 @@ hr {
 	div.box-gradient span {font-size:70%;}	
 	.lh-top-btn { width:90px;}	
 	#logo-container .logo { width:95%;}  
-    .well {min-height:760px;}
+    .well {min-height:770px;}
     .lh-top-btn {width:120px;margin:5px 0px 20px 3px;}
     .header-home {height: 55px; width: 160px;}
     div#header div#hdr { margin-left:3px; }
