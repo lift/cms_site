@@ -233,7 +233,7 @@ hr {
     div.gradient-panel p {font-size:100%;}	
     #logo-container .logo { width:44%;}    
     .lh-top-btn { width:90px;}
-    .well {min-height:300px;}
+    .well {min-height:350px;}
 }
 @media (max-width: 767px) {
 
