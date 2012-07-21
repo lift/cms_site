@@ -14,9 +14,9 @@
 
 					<div class="row-fluid">
 						<div class="span9">
-
+                            <div class="page-header">
 							<h1>Lift API Docs</h1>
-
+                            </div>
 							<p>
 								<a href="http://scala-tools.org/mvnsites/liftweb-2.4/">Lift 2.4 API documentation</a>
 								and the

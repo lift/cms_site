@@ -15,7 +15,9 @@
 
 					<div class="row-fluid">
 						<div class="span9">
+						    <div class="page-header">
 							<h1>Getting Started</h1>
+							</div>
 							<p>
 								It's easy to
 								<a

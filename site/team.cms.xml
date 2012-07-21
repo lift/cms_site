@@ -14,7 +14,9 @@
 
 					<div class="row-fluid">
 						<div class="span9">
-
+                            <div class="page-header">
+                            <h1 id="current-team">CURRENT TEAM</h1>
+                            </div>
 							<div class="alert alert-info">An awful lot of time and effort has gone into
 								making lift the great
 								bit of software it is today - so, to honor this effort, we felt it
@@ -22,7 +24,7 @@
 								right to honor those who have generously donated time to the project.
 							</div>
 							<hr />
-							<h1 id="current-team">CURRENT TEAM</h1>
+							
 							
 							<div>
 								<h3>David

@@ -20,7 +20,9 @@
           <div class="span9">  
             
         <div>
+          <div class="page-header">
           <h1>Announcing Lift 2.4</h1>
+          </div>
           <em>January 12, 2012</em>
 
           <p>The Lift team proudly announces the <a href="/download">availability</a>

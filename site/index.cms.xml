@@ -15,8 +15,9 @@
 
 					<div class="row-fluid">
 						<div class="span9">
-
+                            <div class="page-header">
 						   	<h1>What is Lift?</h1>
+						   	</div>
 							<p>
 								Lift is the most powerful, most secure web framework available
 								today.
