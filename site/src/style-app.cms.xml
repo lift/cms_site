@@ -122,12 +122,12 @@ blockquote > p.lead:before {
 *******************************************************************************/
 
 /*playing around with gradient just coment this out if you whant the plainer look bellow */
-div.gradient-panel {
+/*div.gradient-panel {
   background-image: -moz-radial-gradient(orange,#ccc);
   background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(orange), to(#ccc)); 
   background-image: -webkit-radial-gradient(orange, #ccc); 
   background-image: radial-gradient(orange, #ccc);
-  }
+  }*/
 /*plain look*/	
 div.gradient-panel {
    overflow: hidden;
