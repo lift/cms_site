@@ -244,6 +244,10 @@ hr {
 	.lh-top-btn { width:70px;}
 	#logo-container .logo { width:44%;}  
 	.well {min-height:550px;}
+    .lh-top-btn {width:120px;margin:5px 0px 20px 3px;}	
+    .header-home {height: 55px; width: 160px;}
+    div#header div#hdr { margin-left:3px; }
+    
 }
 
 @media (max-width: 480px) {
@@ -254,6 +258,11 @@ hr {
 	.lh-top-btn { width:90px;}	
 	#logo-container .logo { width:95%;}  
     .well {min-height:650px;}
+    .lh-top-btn {width:120px;margin:5px 0px 20px 3px;}
+    .header-home span {padding-left: 3px;}
+    .header-home {height: 55px; width: 160px;}
+    div#header div#hdr { margin-left:3px; }
+    
 }
 
 /* 
