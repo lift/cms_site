@@ -1,7 +1,8 @@
 <cms path="/getting_started" serve="true" type="html" locale="en_US"
 	host="liftweb.net" valid_from="2010/09/01">
 	<tag name="name" value="getting_started" />
-	<tag name="menu" value="Getting Started" />
+	<tag name="menu" value=" Getting Started" />
+	<tag name="menu-icon" value="icon-road icon-white" />
 	<tag name="order" value="2" />
 	<content>
 		<lift:surround with="default" at="content">

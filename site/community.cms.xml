@@ -1,6 +1,7 @@
 <cms path="/community" serve="true" type="html" locale="en_US" host="liftweb.net">
 	<tag name="name" value="community" />
-	<tag name="menu" value="Community" />
+	<tag name="menu" value=" Community" />
+	<tag name="menu-icon" value="icon-heart icon-white" />
 	<tag name="order" value="5" />
 	<content>
 		<lift:surround with="default" at="content">
