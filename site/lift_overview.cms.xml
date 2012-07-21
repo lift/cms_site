@@ -12,9 +12,8 @@
 
 					<div class="row-fluid">
 						<div class="span9">
-
+                            <h1>Overview</h1>
 							<div class="post-text">
-
 								<p>Lift is composed on discrete elements. Lift support the likes
 									of JNDI, JTA, JPA, etc. The fact that you're not forced to uses
 									these elements of J/EE is a strong indication of Lift's modular
@@ -84,13 +83,11 @@
 									an HTTP request. For example, code for accepting or rejecting a
 									Foursquare friend request:</p>
 
-								<pre>
-									<code>ajaxButton("Accept", () =&gt; {request.accept.save;
-										SetHtml("acceptrejectspan", &lt;span/&gt;}) ++
-										ajaxButton("Reject", () =&gt; {request.reject.save;
-										SetHtml("acceptrejectspan", &lt;span/&gt;})
-
-									</code>
+								<pre class="prettyprint linenums lang-scala">
+ ajaxButton("Accept", () =&gt; {request.accept.save;
+ SetHtml("acceptrejectspan", &lt;span/&gt;}) ++
+ ajaxButton("Reject", () =&gt; {request.reject.save;
+ SetHtml("acceptrejectspan", &lt;span/&gt;})
 								</pre>
 
 								<p>It's that simple. Because the friendRequest is in the scope
@@ -126,15 +123,14 @@
 									early in the request cycle. For example, here's how to define
 									servicing of a REST request:</p>
 
-								<pre>
-									<code> serve {
-										case "api" :: "user" :: AsUser(user) :: _ XmlGet _ =&gt;
-										&lt;b&gt;{user.name}&lt;/b&gt;
+                                <pre class="prettyprint linenums lang-scala">
+ serve {
+   case "api" :: "user" :: AsUser(user) :: _ XmlGet _ =&gt;
+   &lt;b&gt;{user.name}&lt;/b&gt;
 
-										case "api" :: "user" :: AsUser(user) :: _ JsonGet _ =&gt;
-										JStr(user.name)
-										}
-									</code>
+   case "api" :: "user" :: AsUser(user) :: _ JsonGet _ =&gt;
+   JStr(user.name)
+  }									
 								</pre>
 
 								<p>Using Scala's built-in pattern matching, we match an incoming
