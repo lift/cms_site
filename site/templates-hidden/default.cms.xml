@@ -18,8 +18,8 @@
 				<link href="/style/bootstrap/2.0.4/bootstrap.css" rel="stylesheet" />
 				<link href="/style/bootstrap/2.0.4/bootstrap-responsive.css"
 					rel="stylesheet" />
-					
-				<link href="/style/google-code/prettify.css" rel="stylesheet" />		
+
+				<link href="/style/google-code/prettify.css" rel="stylesheet" />
 
 				<link rel="stylesheet" href="/style/style-app.css" type="text/css"
 					media="screen" />
@@ -37,115 +37,73 @@
 
 			</head>
 
-			<body onload="prettyPrint()" id="back" data-spy="scroll" data-target=".subnav"
-				data-offset="50">
+			<body onload="prettyPrint()" id="back" data-spy="scroll"
+				data-target=".subnav" data-offset="50">
 
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-		<a class="brand" href="#">Lift</a>
-        <div class="nav-collapse"> 
-          <ul class="nav">
-            <lift:xmenu active_class="active">
-              <li menu:class="active">
-                <a menu:href="index">
-                    <span><menu:item /></span> <!-- default menu stuff with no locgroup-->
-                </a>
-              </li>
-            </lift:xmenu>           
-<!--             <li><a href="/index"><span><i class="icon-home icon-white"></i> Home</span></a></li> -->
-<!--             <li><a href="/getting_started"><span><i class="icon-road icon-white"></i> Getting Started</span></a></li> -->
-<!--             <li><a href="/download"><span><i class="icon-download-alt icon-white"></i> Download</span></a></li> -->
-<!--             <li><a href="/api_docs"><span><i class="icon-book icon-white"></i> API Docs</span></a></li> -->
-<!--             <li><a href="/community"><span><i class="icon-heart icon-white"></i> Community</span></a></li> -->
-<!--             <li><a href="/team"><span><i class="icon-user icon-white"></i> Team</span></a></li> -->
-<!--             <li><a href="/forum"><span><i class="icon-list icon-white"></i> Forum</span></a></li> -->
-            <li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <span><i class="icon-bookmark icon-white"></i> Resources</span><b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <lift:xmenu locgroup="locgroup1" active_class="active"> <!--locgroup1 residing in a bootstrap dropdown-menu -->
-                  <li menu:class="active">
-                    <a menu:href="index">
-                      <span><menu:item /></span>
-                    </a>
-                  </li>
-                </lift:xmenu>                
-              
-<!-- 				<li><a href="http://github.com/lift/framework"><span><i class="icon-list-alt"></i> Source</span></a></li> -->
-<!-- 				<li><a href="http://ticket.liftweb.net"> <span><i class="icon-tags"></i> Tickets</span></a></li> -->
-<!--                 <li class="divider"></li> -->
-<!-- 				<li><a href="http://demo.liftweb.net"> <span><i class="icon-cog"></i> Demo </span></a></li>               -->
-              </ul>
-            </li>
-            </ul>
-<!--             <ul class="nav pull-right"> -->
-<!--                 <li><a href="/help"><span>Help <i class="icon-question-sign icon-white"></i></span></a></li> -->
-<!--             </ul> -->
-        </div>
-      </div>
-    </div>
-  </div>
+				<div class="navbar navbar-fixed-top">
+					<div class="navbar-inner">
+						<div class="container">
+							<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</a>
+							<a class="brand" href="#">Lift</a>
+							<div class="nav-collapse">
+								<ul class="nav">
+									<lift:xmenu active_class="active">
+										<li menu:class="active">
+											<a menu:href="index">
+												<span>
+													<menu:item />
+												</span> <!-- default menu stuff with no locgroup -->
+											</a>
+										</li>
+									</lift:xmenu>
+									<li class="dropdown">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+											<span>
+												<i class="icon-bookmark icon-white"></i>
+												Resources
+											</span>
+											<b class="caret"></b>
+										</a>
+										<ul class="dropdown-menu">
+											<lift:xmenu locgroup="locgroup1" active_class="active"> <!--locgroup1 residing in a bootstrap dropdown-menu -->
+												<li menu:class="active">
+													<a menu:href="index">
+														<span>
+															<menu:item />
+														</span>
+													</a>
+												</li>
+											</lift:xmenu>
+										</ul>
+									</li>
+								</ul>
+								<!-- <ul class="nav pull-right"> -->
+								<!-- <li><a href="/help"><span>Help <i class="icon-question-sign 
+									icon-white"></i></span></a></li> -->
+								<!-- </ul> -->
+							</div>
+						</div>
+					</div>
+				</div>
 
-
-<!-- 				<div class="navbar navbar-fixed-top"> -->
-<!-- 					<div class="navbar-inner"> -->
-<!-- 						<div class="container"> -->
-
-							<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-<!-- 							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> -->
-<!-- 								<span class="icon-bar"></span> -->
-<!-- 								<span class="icon-bar"></span> -->
-<!-- 								<span class="icon-bar"></span> -->
-<!-- 							</a> -->
-
-							<!-- Be sure to leave the brand out there if you want it shown -->
-<!-- 							<a class="brand" href="/index">Lift <i class="icon-home  icon-white"></i></a> -->
-
-							<!-- Everything you want hidden at 940px or less, place within here -->
-<!-- 							<div class="nav-collapse"> -->
-<!-- 								.nav, .navbar-search, .navbar-form, etc -->
-<!-- 								<ul class="nav"> -->
-<!-- 									<lift:xmenu active_class="active"> -->
-<!-- 										<li menu:class="active"> -->
-<!-- 											<a menu:href="index"> -->
-<!-- 												<span> -->
-<!-- 													<menu:item /> -->
-<!-- 												</span> -->
-<!-- 											</a> -->
-<!-- 										</li> -->
-<!-- 									</lift:xmenu> -->
-<!-- 								</ul> -->
-<!-- 							</div> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-				
-				
 
 				<div id="container-bg" class="container-fluid">
 					<div class="row-fluid">
 						<div class="span12">
 
-
-
 							<div class="row-fluid">
 								<div class="span12">
 									<div id="header">
 										<div id="hdr">
-										<a href="/" class="header-home">
-										<span>Lift</span>
-										</a>
+											<a href="/" class="header-home">
+												<span>Lift</span>
+											</a>
 										</div>
-<!-- 										<img src="/images/liftweb-logo-single-small.png" alt="Smiley face"></img> -->
 										<a class="lh-top-btn btn  btn-primary" href="http://demo.liftweb.net">Lift Demo</a>
-
 									</div>
 								</div>
 							</div>
@@ -167,8 +125,6 @@
 									</div>
 								</div>
 							</lift:if>
-
-
 
 							<div id="content">
 								<lift:bind name="content" />
@@ -211,7 +167,8 @@
 									in better on a production site.
 								</strong>
 								The goal has been to keep things clean and simple with a
-								minimum of application specific styling
+								minimum
+								of application specific styling
 								but
 								<i>of course</i>
 								have it fluid and mobile scalable.
@@ -231,7 +188,7 @@
     //]]>
 				</script>
 				<script type="text/javascript" src="/javascript/google-code/prettify.js"></script>
-				<script type="text/javascript" src="/javascript/google-code/lang-scala.js"></script>				
+				<script type="text/javascript" src="/javascript/google-code/lang-scala.js"></script>
 				<script type="text/javascript" src="/javascript/bootstrap/2.0.4/bootstrap.js"></script>
 
 			</body>
