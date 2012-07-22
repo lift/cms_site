@@ -1,4 +1,4 @@
-<cms path="/templates-hidden/default" serve="false" type="html"
+<cms path="/templates-hidden/default" serve="true" type="html"
 	locale="en_US" host="liftweb.net">
 	<content>
 		<html xmlns="http://www.w3.org/1999/xhtml">
