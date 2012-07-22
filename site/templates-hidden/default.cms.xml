@@ -33,64 +33,18 @@
 
 				<script type="text/javascript" src="http://www.google-analytics.com/ga.js">
 				</script>
-
-
 			</head>
 
 			<body onload="prettyPrint()" id="back" data-spy="scroll"
 				data-target=".subnav" data-offset="50">
-
-				<div class="navbar navbar-fixed-top">
-					<div class="navbar-inner">
-						<div class="container">
-							<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</a>
-							<a class="brand" href="#">Lift</a>
-							<div class="nav-collapse">
-								<ul class="nav">
-									<lift:xmenu active_class="active">
-										<li menu:class="active">
-											<a menu:href="index">
-												<span>
-													<menu:item />
-												</span> <!-- default menu stuff with no locgroup -->
-											</a>
-										</li>
-									</lift:xmenu>
-									<li class="dropdown">
-										<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-											<span>
-												<i class="icon-bookmark icon-white"></i>
-												Resources
-											</span>
-											<b class="caret"></b>
-										</a>
-										<ul class="dropdown-menu">
-											<lift:xmenu locgroup="locgroup1" active_class="active"> <!--locgroup1 residing in a bootstrap dropdown-menu -->
-												<li menu:class="active">
-													<a menu:href="index">
-														<span>
-															<menu:item />
-														</span>
-													</a>
-												</li>
-											</lift:xmenu>
-										</ul>
-									</li>
-								</ul>
-								<!-- <ul class="nav pull-right"> -->
-								<!-- <li><a href="/help"><span>Help <i class="icon-question-sign 
-									icon-white"></i></span></a></li> -->
-								<!-- </ul> -->
-							</div>
-						</div>
-					</div>
-				</div>
-
-
+				
+               <!-- if you want page specific navbars surround with lift:if test -->                
+               <!-- for more info look at how this is done for quotes -->
+<!--           <lift:if toTest="mainNavbar"> -->
+                  <!-- The overall site menu --> 
+                  <lift:embed what="mainNavbar" />
+<!--            </lift:if>  -->
+                
 				<div id="container-bg" class="container-fluid">
 					<div class="row-fluid">
 						<div class="span12">

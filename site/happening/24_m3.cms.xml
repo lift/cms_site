@@ -1,5 +1,5 @@
 <cms path="/24_m1" serve="false" type="html" locale="en_US" 
-     host="liftweb.net" valid_from="2011/06/06">
+     host="liftweb.net" valid_from="2011/06/06" valid_to="2012/06/06">
 <tag name="sub" value="happening">
   <b>Lift 2.4-M3</b> Ships!
 </tag>
