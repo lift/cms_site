@@ -1,7 +1,8 @@
 <cms path="/api_docs" serve="true" type="html" locale="en_US" host="liftweb.net">
 	<tag name="name" value="api_docs" />
 	<tag name="menu" value=" API Docs" />
-	<tag name="menu-icon" value="icon-book icon-white" />
+	<tag name="menu-locgroup" value="locgroup1" />
+    <tag name="menu-icon" value="icon-book" />
 	<tag name="order" value="4" />
 	<content>
 		<lift:surround with="default" at="content">

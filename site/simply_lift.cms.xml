@@ -3,8 +3,8 @@
   <tag name="name" value="simply_lift"/>
   <tag name="menu" value=" Simply Lift"/>
   <tag name="menu-locgroup" value="locgroup1" />
-  <tag name="menu-icon" value="icon-cog" />
-  <tag name="order" value="2"/>
+  <tag name="menu-icon" value="icon-book" />
+  <tag name="order" value="3"/>
   <content>
     <lift:surround with="default" at="content">
       <head>

@@ -5,7 +5,7 @@
   <tag name="menu-locgroup" value="locgroup2" />
   <tag name="menu-icon" value="icon-tags" />
   <tag name="menu-icon-placement" value="left" />
-  <tag name="order" value="3"/>  
+  <tag name="order" value="4"/>  
   <content>
     <lift:surround with="default" at="content">
       <head>

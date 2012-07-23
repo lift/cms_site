@@ -5,7 +5,8 @@
   <tag name="menu" value=" Lift Cookbook" />  
   <tag name="menu-locgroup" value="locgroup1" />
   <tag name="menu-icon" value="icon-pencil" />
-  <tag name="order" value="3"/>  
+  <tag name="order" value="2"/>  
   <content><div/>
   </content>
 </cms>
+

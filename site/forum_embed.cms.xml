@@ -4,7 +4,7 @@
 	<tag name="menu" value=" Forum" />
 	<tag name="menu-locgroup" value="locgroup2" />
 	<tag name="menu-icon" value="icon-list" />
-	<tag name="order" value="4" />	
+	<tag name="order" value="2" />	
 <!-- 	<tag name="order" value="11" /> -->
 	<content>
 		<lift:surround with="default" at="content">
