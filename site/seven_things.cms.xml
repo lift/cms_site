@@ -1,5 +1,5 @@
 <cms path="/seven_things" serve="true" type="html" locale="en_US" host="liftweb.net">
-  <tag name="redirect" value="http://http://seventhings.liftweb.net/"/>
+  <tag name="redirect" value="http://seventhings.liftweb.net/"/>
   <tag name="name" value="seven_things"/>
   <tag name="menu" value=" Seven Things"/>
   <tag name="menu-locgroup" value="locgroup1" />
