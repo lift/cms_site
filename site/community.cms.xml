@@ -36,13 +36,13 @@
 								
 								<dl>
 								    <dt>The following are not ways to get support for Lift:</dt>
-									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> Personal email to one of the committers (unless you have a
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> Personal email to one of the committers (unless you have a
 										relationship with that committer)</dd>
-									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> Personal IM with the committers (unless you know them very
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> Personal IM with the committers (unless you know them very
 										well)</dd>
-									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> Twitter... the Lift committers don't monitor Twitter for
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> Twitter... the Lift committers don't monitor Twitter for
 										Lift support requests</dd>
-									<dd><i class="icon-thumbs-down" style="vertical-align: midle;"></i> GitHub... don't use GitHub messages.
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> GitHub... don't use GitHub messages.
 										None of the Lift committer will pull from your repository.
 										The Lift IP is clean which means that unless you are a committer
 										and you have written the code yourself,
