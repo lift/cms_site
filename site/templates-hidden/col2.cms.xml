@@ -1,8 +1,8 @@
 <cms path="/col2" type="html" locale="en_US" host="liftweb.net">
 	<content>
 
-		<div class="row-fluid" style="border: 1px green red;">
-			<div class="span12" style="border: 1px green red;">
+		<div class="row-fluid" >
+			<div class="span12" >
 
                 <div id="sideCol" class="page-header">
 				<h2><i class="icon-road" style="vertical-align: middle;"></i> Latest Happenings</h2>
@@ -34,22 +34,18 @@
 				</p>
 
 				<p>
-					<a href="http://simply.liftweb.net/">Simply Lift</a>
-					,
+					<a href="http://simply.liftweb.net/">Simply Lift</a>,
 					by David Pollak is an open source book, available for free in
 					both PDF and HTML versions at
-					<a href="http://simply.liftweb.net/">http://simply.liftweb.net/</a>
-					.
+					<a href="http://simply.liftweb.net/">http://simply.liftweb.net/</a>.
 				</p>
 
 				<p>
-					<a href="http://exploring.liftweb.net/">Exploring Lift</a>
-					,
+					<a href="http://exploring.liftweb.net/">Exploring Lift</a>,
 					by Derek Chen-Becker, Tyler Weir, and Marius
 					Danciu is an open source book, available for free in
 					both PDF and HTML versions at
-					<a href="http://exploring.liftweb.net/">http://exploring.liftweb.net/</a>
-					.
+					<a href="http://exploring.liftweb.net/">http://exploring.liftweb.net/</a>.
 				</p>
 
 				<p>

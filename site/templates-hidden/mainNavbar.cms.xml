@@ -23,6 +23,26 @@
 									<li class="dropdown">
 										<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 											<span>
+												<i class="icon-heart icon-white"></i>
+												Community
+											</span>
+											<b class="caret"></b>
+										</a>
+										<ul class="dropdown-menu">
+											<lift:xmenu locgroup="locgroup2" active_class="active"> <!--locgroup2 residing in a bootstrap dropdown-menu -->
+												<li menu:class="active">
+													<a menu:href="index">
+														<span>
+															<menu:item />
+														</span>
+													</a>
+												</li>
+											</lift:xmenu>
+										</ul>
+									</li>									
+									<li class="dropdown">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+											<span>
 												<i class="icon-bookmark icon-white"></i>
 												Resources
 											</span>
