@@ -23,11 +23,8 @@
 							</div>
 							<p>
 								<div class="alert alert-info">
-									<strong>
-										<i class="icon-star" style="vertical-align: midle;"></i>
-										Note about jQuery and
-										<a href="/jquery">Lift 2.5</a>
-									</strong>
+										<i class="icon-hand-right" style="vertical-align: midle;"></i>
+										<strong>Heads up!</strong> Note about <a href="/jquery" style="text-decoration: underline;">jQuery and upcoming Lift 2.5</a>
 								</div>
 
 								<dl>
