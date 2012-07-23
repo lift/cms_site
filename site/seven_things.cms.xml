@@ -1,0 +1,23 @@
+<cms path="/seven_things" serve="true" type="html" locale="en_US" host="liftweb.net">
+  <tag name="redirect" value="http://http://seventhings.liftweb.net/"/>
+  <tag name="name" value="seven_things"/>
+  <tag name="menu" value=" Seven Things"/>
+  <tag name="menu-locgroup" value="locgroup1" />
+  <tag name="menu-icon" value="icon-cog"/>
+  <tag name="order" value="5"/>
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+	<title>Lift :: Seven Things</title>
+      </head>
+      
+      <div id="left">
+	<script>
+	  // <![CDATA[
+             window.location = "http://seventhings.liftweb.net/";
+          // ]]>
+	</script>
+      </div> <!-- left -->
+    </lift:surround>
+  </content>
+</cms>
