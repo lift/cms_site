@@ -48,7 +48,7 @@ h1, h2, h3 {
     color: #111;
     font-family: Orbitron,Helvetica,Verdana,sans-serif;
     font-weight: bold;
-    padding: 12px 20px 8px;
+    padding: 10px 10px 10px 10px;
     text-shadow: 2px 4px 5px #777;
 }
 .navbar-inner {
@@ -234,7 +234,7 @@ hr {
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-    body {font-size: 80%; line-height: 16px; padding-top:0px; padding-left: 10px;padding-right: 10px;}
+    body {font-size: 80%; line-height: 16px; padding-top:0px; }
 	div.gradient-panel {width: 49%;min-height:70px;}
     div.gradient-panel h1 {font-size:130%;}	
     div.gradient-panel p {font-size:100%;}	
@@ -243,8 +243,7 @@ hr {
     .well {min-height:350px;}
 }
 @media (max-width: 767px) {
-
-    body {font-size: 90%;line-height: 16px; padding-top:0px; padding-left: 2px;padding-right: 5px;}
+    body {font-size: 90%;line-height: 16px; padding-top:0px; }
 	div.gradient-panel h1 {font-size:120%;}	
 	div.gradient-panel p {font-size:90%;}
 	div.gradient-panel {width:100%;min-height:70px;}
@@ -258,7 +257,7 @@ hr {
 }
 
 @media (max-width: 480px) {
-    body {font-size: 90%;line-height: 16px;padding-top:0px; padding-left: 2px;padding-right: 5px;}
+    body {font-size: 90%;line-height: 16px;padding-top:0px;}
 	div.box-gradient {width: 100%;min-height:90px; }
 	div.box-gradient h1 {font-size:120%;}
 	div.box-gradient span {font-size:70%;}	
