@@ -9,17 +9,15 @@
 			<head>
 				<title>Lift :: Forum</title>
 			</head>
-
 			<div class="row-fluid">
 				<div class="span12">
 					<center>
-						<iframe id="forum_embed" src="javascript:void(0)"
-							scrolling="no" frameborder="0" width="100%" height="1400">
+						<iframe id="forum_embed" src="javascript:void(0)" scrolling="no" frameborder="0" width="100%" height="1500px">
 						</iframe>
 						<script type="text/javascript">
 							// <![CDATA[
-                                     document.getElementById('forum_embed').src ='https://groups.google.com/forum/embed/?place=forum/liftweb&showsearch=true&showpopout=true&showtabs=false';
-                                   // ]]>
+							         document.getElementById("forum_embed").src ="https://groups.google.com/forum/embed/?place=forum/liftweb&theme=default&showsearch=true&showpopout=true&parenturl=http://liftweb.net/forum/";
+                        // ]]>
 						</script>
 					</center>
 				</div>
