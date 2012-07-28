@@ -12,7 +12,6 @@
 							<div class="nav-collapse">
 								<ul class="nav">
 									<lift:xmenu active_class="active">
-									    <menu:divider />
 										<li menu:class="active">
 											<a menu:href="index">
 												<span>
@@ -20,6 +19,7 @@
 												</span> <!-- default menu stuff with no locgroup -->
 											</a>
 										</li>
+										<menu:divider />
 									</lift:xmenu>
 									<li class="dropdown">
 										<a data-toggle="dropdown" class="dropdown-toggle" href="#">

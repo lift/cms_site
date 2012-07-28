@@ -2,6 +2,7 @@
 	<tag name="name" value="team" />
 	<tag name="menu" value=" Team" />
 	<tag name="menu-icon" value="icon-user icon-white" />
+	<tag name="menu-divider" value="vdivider" />
 	<tag name="order" value="7" />
 	<content>
 		<lift:surround with="default" at="content">

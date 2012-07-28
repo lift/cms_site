@@ -64,12 +64,17 @@ div.navbar > div.navbar-inner > div.container > div.nav-collapse > ul.nav > li >
     text-decoration: none;
 }
 
-/*.vdivider {} */
+li.vdivider {
+  display: inline-block;
+  width:4px;
+  height:100%;
+  padding-top: 40px;
+  background: transparent url('../images/tbdivider.png') top right no-repeat;
+}
 li.hdivider {
   height: 1px;
   margin: 2px 3px;
   overflow: hidden;
-  /*background-color: #0b3143;*/ 
   border-bottom: 1px solid #ccc;
 }
 /* HEADER
