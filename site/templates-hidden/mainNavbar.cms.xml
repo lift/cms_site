@@ -12,6 +12,7 @@
 							<div class="nav-collapse">
 								<ul class="nav">
 									<lift:xmenu active_class="active">
+									    <menu:divider />
 										<li menu:class="active">
 											<a menu:href="index">
 												<span>
@@ -30,6 +31,7 @@
 										</a>
 										<ul class="dropdown-menu">
 											<lift:xmenu locgroup="locgroup2" active_class="active"> <!--locgroup2 residing in a bootstrap dropdown-menu -->
+												<menu:divider />
 												<li menu:class="active">
 													<a menu:href="index">
 														<span>
@@ -50,6 +52,7 @@
 										</a>
 										<ul class="dropdown-menu">
 											<lift:xmenu locgroup="locgroup1" active_class="active"> <!--locgroup1 residing in a bootstrap dropdown-menu -->
+                                                <menu:divider />
 												<li menu:class="active">
 													<a menu:href="index">
 														<span>

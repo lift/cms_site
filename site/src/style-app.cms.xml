@@ -63,6 +63,15 @@ div.navbar > div.navbar-inner > div.container > div.nav-collapse > ul.nav > li >
     color: #fff;
     text-decoration: none;
 }
+
+/*.vdivider {} */
+li.hdivider {
+  height: 1px;
+  margin: 2px 3px;
+  overflow: hidden;
+  /*background-color: #0b3143;*/ 
+  border-bottom: 1px solid #ccc;
+}
 /* HEADER
 *************************************************************************/
 

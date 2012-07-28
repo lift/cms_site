@@ -4,7 +4,7 @@
   <tag name="menu" value=" Simply Lift"/>
   <tag name="menu-locgroup" value="locgroup1" />
   <tag name="menu-icon" value="icon-book" />
-  <tag name="order" value="3"/>
+  <tag name="order" value="1"/>
   <content>
     <lift:surround with="default" at="content">
       <head>
