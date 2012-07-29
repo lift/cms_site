@@ -1,5 +1,4 @@
-<cms path="/templates-hidden/default" type="html"
-	locale="en_US" host="liftweb.net">
+<cms path="/templates-hidden/default" serve="false" type="html" locale="en_US" host="liftweb.net">
 	<content>
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
@@ -36,15 +35,13 @@
 				</script>
 			</head>
 
-			<body onload="prettyPrint()" id="back" data-spy="scroll"
-				data-target=".subnav" data-offset="50">
+			<body onload="prettyPrint()" id="back" data-spy="scroll" data-target=".subnav" data-offset="50">
 				
                <!-- if you want page specific navbars surround with lift:if test -->                
                <!-- for more info look at how this is done for quotes -->
-<!--           <lift:if toTest="mainNavbar"> -->
                   <!-- The overall site menu --> 
                   <lift:embed what="mainNavbar" />
-<!--            </lift:if>  -->
+
                 
 				<div id="container-bg" class="container-fluid">
 					<div class="row-fluid">
