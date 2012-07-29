@@ -1,6 +1,6 @@
 <cms path="/community" serve="true" type="html" locale="en_US" host="liftweb.net">
 	<tag name="name" value="community" />
-	<tag name="menu" value=" Expected Behavior" />
+	<tag name="menu" value=" The Lift Community" />
 	<tag name="menu-locgroup" value="locgroup2" />
 	<tag name="menu-icon" value="icon-heart" />
 	<tag name="order" value="1" />
@@ -98,10 +98,10 @@
 								Lift is an open source project done entirely by volunteers. The Lift
 								documentation is not professional.
 								If you would like improvements to the documentation, please write
-								wiki articles. Posting complaints
+								wiki articles or add a <a href="http://cookbook.liftweb.net/How+to+add+a+new+recipe+to+this+Cookbook.html">recipe</a> to <a href="http://cookbook.liftweb.net/">Lift Cookbook</a>. Posting complaints
 								about the documentation on the mailing list does not help it appear
 								faster. Posting questions
-								and summarizing the answer into a wiki post on the other hand will
+								and summarizing the answer into a cookbok recipe or a wiki post on the other hand will
 								earn you faster and more detailed
 								answers in the future.
 							</p>
