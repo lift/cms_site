@@ -39,7 +39,7 @@
                            // ]]>
                            
                            </script> 							
-							<div class="well"><p>
+							<div class="well">
 							<dl>
 							   <dt>Lift applications are:</dt>
 								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Secure</strong> -- Lift apps are resistant to common vulnerabilities
@@ -54,7 +54,7 @@
 									unparalled and Lift's ajax support is super-easy and very
 									secure</dd>
 							</dl>
-                            </p></div>
+                            </div>
 							<p>
 								Read an
 								<lift:a name="lift_overview">overview</lift:a>
