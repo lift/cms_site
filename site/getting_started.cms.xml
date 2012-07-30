@@ -18,7 +18,8 @@
 						    <div class="page-header">
 							<h1>Getting Started</h1>
 							</div>
-							<p>
+							<div class="well">
+                             <p>
 								It's easy to
 								<a
 									href="http://simply.liftweb.net/index-Chapter-2.html#toc-Chapter-2">Get Started</a>
@@ -27,6 +28,7 @@
 								features and how easy those
 								features are accessed.
 							</p>
+							</div>
 
 							<h2>From an MVC background</h2>
 							<p>
