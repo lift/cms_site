@@ -1,6 +1,7 @@
 <cms path="/quotes/esme" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+	  
+		<div class="well">
 			<blockquote class="pull-left">
 				<h2>Comet made easy!</h2>
 				<p class="lead">
@@ -14,5 +15,6 @@
 				<small>Darren Hague. SAP Mentor, ESME team lead</small>
 			</blockquote>
 		</div>
+		
 	</content>
 </cms>

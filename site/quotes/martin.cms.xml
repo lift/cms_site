@@ -1,6 +1,6 @@
 <cms path="/quotes/martin" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+		<div class="well">
 			<blockquote class="pull-right">
 				<h2>Maturity of Scala as a software platform!</h2>
 				<p class="lead">

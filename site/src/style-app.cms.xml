@@ -115,7 +115,7 @@ div#header div#hdr { float: left;  max-width: 185px; height:60px; margin-left:20
   color:#ccc;
 }*/
 
-.well { overflow: hidden;min-height:240px;}
+#lh-quote div.well  { overflow: hidden;min-height:240px;}
 blockquote > p.lead:after {
     bottom: 3px;
     content: "”";
@@ -245,7 +245,7 @@ hr {
 @media (max-width: 1040px) {
    div.gradient-panel {width: 49%;min-height:70px;}
    div.gradient-panel h1 {font-size:180%;}
-   .well {min-height:250px;}
+   #lh-quote div.well {min-height:250px;}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -257,7 +257,7 @@ hr {
     div.gradient-panel p {font-size:100%;}	
     #logo-container .logo { width:44%;}    
     .lh-top-btn { width:90px;}
-    .well {min-height:350px;}
+    #lh-quote div.well {min-height:350px;}
 }
 @media (max-width: 767px) {
     body {font-size: 90%;line-height: 16px; padding-top:0px; padding-left:5px;padding-right:5px; }
@@ -268,7 +268,7 @@ hr {
 	div.gradient-panel {width:100%;min-height:70px;}
 	.lh-top-btn { width:70px;}
 	#logo-container .logo { width:44%;}  
-	.well {min-height:670px;}
+	#lh-quote div.well {min-height:670px;}
     .lh-top-btn {width:120px;margin:5px 0px 20px 3px;}	
     .header-home {height: 55px; width: 160px;}
     div#header div#hdr { margin-left:3px; }
@@ -284,7 +284,7 @@ hr {
 	div.box-gradient span {font-size:70%;}	
 	.lh-top-btn { width:90px;}	
 	#logo-container .logo { width:95%;}  
-    .well {min-height:770px;}
+    #lh-quote div.well {min-height:770px;}
     .lh-top-btn {width:120px;margin:5px 0px 20px 3px;}
     .header-home {height: 55px; width: 160px;}
     div#header div#hdr { margin-left:3px; }

@@ -1,6 +1,7 @@
 <cms path="/quotes/ebay" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+	   
+		<div class="well">
 			<blockquote class="pull-left">
 				<h2>State of the art!</h2>
 				<p class="lead">
@@ -14,5 +15,6 @@
 				<small>Michael Galpin, Developer, eBay</small>
 			</blockquote>
 		</div>
+		
 	</content>
 </cms>

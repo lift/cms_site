@@ -1,6 +1,7 @@
 <cms path="/quotes/lukasz" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+	    
+		<div class="well">
 			<blockquote class="pull-right">
 				<h2>Lift just rocks !</h2>
 				<p class="lead">
@@ -9,5 +10,6 @@
 				<small>Lukasz Kuczera, Lift Community Member</small>
 			</blockquote>
 		</div>
+	
 	</content>
 </cms>

@@ -1,6 +1,6 @@
 <cms path="/quotes/dale" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+		<div class="well">
 			<blockquote class="pull-right">
 				<h2>Lift encourages us and steps out of the way!</h2>
 				<p class="lead">

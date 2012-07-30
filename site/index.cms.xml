@@ -39,7 +39,7 @@
                            // ]]>
                            
                            </script> 							
-							
+							<div class="well"><p>
 							<dl>
 							   <dt>Lift applications are:</dt>
 								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Secure</strong> -- Lift apps are resistant to common vulnerabilities
@@ -53,9 +53,8 @@
 								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Interactive like a desktop app</strong> -- Lift's Comet support is
 									unparalled and Lift's ajax support is super-easy and very
 									secure</dd>
-									
 							</dl>
-
+                            </p></div>
 							<p>
 								Read an
 								<lift:a name="lift_overview">overview</lift:a>

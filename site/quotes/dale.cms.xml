@@ -1,6 +1,7 @@
 <cms path="/quotes/dale" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+	    
+		<div class="well">
 			<blockquote class="pull-right">
 				<h2>It's easier than you think!</h2>
 				<p class="lead">
@@ -12,5 +13,6 @@
 				<small>Paul Dale</small>
 			</blockquote>
 		</div>
+		
 	</content>
 </cms>

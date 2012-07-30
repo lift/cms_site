@@ -1,6 +1,7 @@
 <cms path="/quotes/luke" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+	   
+		<div class="well">
 			<blockquote class="pull-right">
 				<h2>Realize the developer efficiency!</h2>
 				<p class="lead">
@@ -16,5 +17,6 @@
 				<small>Luke Hohmann, CEO Enthiosys</small>
 			</blockquote>
 		</div>
+		
 	</content>
 </cms>

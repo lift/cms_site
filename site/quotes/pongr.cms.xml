@@ -1,6 +1,6 @@
 <cms path="/quotes/pongr" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+		<div  class="well">
 			<blockquote class="pull-right">
 				<h2>Continues to blow my mind every day!</h2>
 				<p class="lead">

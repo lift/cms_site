@@ -1,6 +1,7 @@
 <cms path="/quotes/foursquare" type="html" locale="en_US" host="liftweb.net">
 	<content>
-		<div id="lh-quote" class="well">
+	  
+		<div class="well">
 			<blockquote class="pull-left">
 				<h2>The ease of developing!</h2>
 				<p class="lead">
@@ -15,5 +16,6 @@
 				<small>@harryh, Foursquare Engineering Tech Lead</small>
 			</blockquote>
 		</div>
+		
 	</content>
 </cms>
