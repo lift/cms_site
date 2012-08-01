@@ -55,12 +55,12 @@
 							<!--logo-container -->
 							<div id="logo-container">
 								<lift:choose cnt="3">
-<!-- 									<div class="logo"> -->
-<!-- 										<a href="http://www.elemica.com/"> -->
-<!-- 											<img height="50" src="/images/elemica.png" -->
-<!-- 												alt="" /> -->
-<!-- 										</a> -->
-<!-- 									</div>								 -->
+									<div class="logo">
+										<a href="http://www.elemica.com/">
+											<img height="50" src="/images/elemica.png"
+												alt="" />
+										</a>
+									</div>								
 								
 									<div class="logo">
 										<a href="http://snapsort.com">
