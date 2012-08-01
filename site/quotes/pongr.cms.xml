@@ -2,13 +2,13 @@
 	<content>
 		<div  class="well">
 			<blockquote class="pull-right">
-				<h2>Continues to blow my mind every day!</h2>
+<!-- 				<h2>Continues to blow my mind every day!</h2> -->
 				<p class="lead">
 					<a href="http://pongr.com">Pongr</a>
 					launched our new product earlier this week
 					As you know, we use (and love) Lift, and I just wanted to thank you
-					for creating such an incredible framework. It continues to blow my
-					mind every day!
+					for creating such an incredible framework. It <strong>continues to blow my
+					mind every day!</strong>
 				</p>
 				<small>Zach Cox, Chief Software Architect, Pongr</small>
 			</blockquote>

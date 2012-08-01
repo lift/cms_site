@@ -2,9 +2,9 @@
 	<content>
 		<div class="well">
 			<blockquote class="pull-right">
-				<h2>It's just so darn good!</h2>
+<!-- 				<h2>It's just so darn good!</h2> -->
 				<p class="lead">
-					Just thanks for Lift. It's just so darn good.
+					Just thanks for Lift. <strong>It's just so darn good.</strong>
 					I'm one-manning this giant app and I couldn't do it with anything but
 					Lift.
 				</p>

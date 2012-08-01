@@ -2,11 +2,11 @@
 	<content>
 		<div class="well">
 			<blockquote class="pull-right">
-				<h2>Lift encourages us and steps out of the way!</h2>
+<!-- 				<h2>Lift encourages us and steps out of the way!</h2> -->
 				<p class="lead">
 					Thanks to its design, Lift encourages us to write
 					concise, secure and performant web applications very rapidly.
-					We're finding that Lift steps out of the way and
+					We're finding that <strong>Lift steps out of the way</strong> and
 					allows us to concentrate on developing a great experience for the
 					end user, more than any other web framework we've used.
 				</p>

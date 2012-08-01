@@ -3,9 +3,9 @@
 	    
 		<div class="well">
 			<blockquote class="pull-right">
-				<h2>It's easier than you think!</h2>
+<!-- 				<h2>It's easier than you think!</h2> -->
 				<p class="lead">
-					The first rule of Lift is: It's easier than you think.
+					The first rule of Lift is: <strong>It's easier than you think.</strong>
 					The deeper I get the more I think that the cognitive barrier to
 					understanding Lift is that one expects things to be so much more
 					work than it actually is.

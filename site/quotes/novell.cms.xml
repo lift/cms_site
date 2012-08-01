@@ -2,12 +2,12 @@
 	<content>
 		<div class="well">
 			<blockquote class="pull-right">
-				<h2>Allow's you to focus on innovating!</h2>
+<!-- 				<h2>Allow's you to focus on innovating!</h2> -->
 				<p class="lead">
 					Lift is the kind of web framework that enables you as a developer to
 					concentrate on the big picture. Strong, expressive typing and
-					higher-level features like the built-in Comet support allow you to
-					focus on innovating instead of the
+					higher-level features like the built-in Comet support <strong>allow you to
+					focus on innovating</strong> instead of the
 					plumbing. Building a rich, real-time web application like Novell Pulse
 					requires a framework with the power of Lift
 					under the covers.
