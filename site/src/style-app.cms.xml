@@ -131,7 +131,7 @@ div#header div#hdr { float: left;  max-width: 185px; height:60px; margin-left:20
   color:#ccc;
 }*/
 
-#lh-quote div.well > blockquote > p.lead > strong {font-size:200%;}
+#lh-quote div.well > blockquote > p.lead > strong {font-size:170%;}
 
 #lh-quote div.well  { overflow: hidden;min-height:240px;}
 
