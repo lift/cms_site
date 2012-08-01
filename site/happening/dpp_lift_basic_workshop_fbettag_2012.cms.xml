@@ -1,0 +1,14 @@
+<cms path="/dpp_lift_basic_workshop_fbettag_2012" serve="true" type="html" locale="en_US" 
+     valid_from="2012/08/1" host="liftweb.net">
+  <tag name="redirect" value="http://skillsmatter.com/course/scala/david-pollak-lift-basics/ps-1353"/>
+  <tag name="sub" value="happening">
+    David Pollak's Lift Basics
+  </tag>
+  <tag name="desc">
+    In this workshop you will learn how to create dynamic, interactive,
+    secure web sites using Lift. Courses are being held at SkillsMatter
+    in London, UK, on October 15th and December 3rd 2012.
+  </tag>
+  <content><div/>
+  </content>
+</cms>
