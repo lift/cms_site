@@ -17,7 +17,7 @@ body {
 #container-bg {  
     background-color: #f8f8f8;/*#f0f0f0;*/
 	margin:-10px auto 40px auto;
-	max-width:1280px;
+	max-width:980px;
 	display:block;
 	border-top:none;
     -webkit-box-shadow: 0px 2px 2px 2px #C1C4BA;
@@ -29,9 +29,9 @@ body {
     padding-top:20px;
 }
 
-/* Fixing bootstrap icon viewing in telegr.am
+/* Overridng som bootstrap 
 *************************************************************************/
-
+/*icon viewing in telegr.am*/
 [class^="icon-"],
 [class*=" icon-"] {
   background-image: url("/src/bootstrap/2.0.4/img/glyphicons-halflings.png");
@@ -40,6 +40,10 @@ body {
   background-image: url("/src/bootstrap/2.0.4/img/glyphicons-halflings-white.png");
 }
 
+/* overriding width default for the fluid right column to make it a bit wider using a id */
+.row-fluid > #col2.span3 {
+    width: 31.0%;
+}
 
 /* PAGE HEADER AND HEDINGS FONTS
 *************************************************************************/
@@ -242,8 +246,8 @@ div.gradient-panel {
 .ftr-links a:hover {text-decoration:underline;}
 .ftr-copy { text-align:center; color:#000;}  
 
-#fotter hr {
-  margin: 2px 0;
+hr.tight {
+  margin: 4px 0;
 }
 
 /* Nice HR
@@ -261,6 +265,7 @@ hr {
     background:      -o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
     background:         linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
 }
+
 
 /* MEDIA stuff 
 *************************************************************************/

@@ -119,7 +119,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="span3">
+						<div id="col2" class="span3">
 							<lift:embed what="col2" />
 						</div>
 					</div>

@@ -89,7 +89,7 @@
 								</div>
 
 								<div id="footer">
-								    <hr/>
+								    
 									<div class="ftr-links">
 										<lift:xmenu active_class="active">
 											<a menu:href="index">
@@ -97,7 +97,7 @@
 											</a> &nbsp;
 										</lift:xmenu>
 									</div>
-
+                                    <hr class="tight"/>
 									<div class="ftr-copy">Copyright &copy;
 										2010-2011 WorldWide Conferencing, LLC
 									</div>
@@ -121,10 +121,7 @@
 								<div class="alert alert-error" style="float:left;margin-left:3px;max-width:100%;">
 									<strong>
 										This is a demo site for a alternative
-										<a href="http://liftweb.net/">Lift Home</a>
-										.
-										The LOGO images IS NOT REPLACED and should be UPDATED to blend
-										in better on a production site.
+										<a href="http://liftweb.net/">Lift Home</a>.
 									</strong>
 									The goal has been to keep things clean and simple with a
 									minimum
@@ -132,7 +129,6 @@
 									but
 									<i>of course</i>
 									have it fluid and mobile scalable.
-									<br />
 									<a
 										href="https://groups.google.com/forum/?fromgroups#!topic/liftweb/whDSE37ltsw"
 										target="_blank">Tell me Peter Petersson (karma4u101) what you think!
