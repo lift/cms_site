@@ -3,9 +3,9 @@
 	  
 		<div class="well">
 			<blockquote class="pull-left">
-				<h2>Comet made easy!</h2>
+<!-- 				<h2>Comet made easy!</h2> -->
 				<p class="lead">
-					Lift's excellent 'Comet made easy' philosophy 
+					Lift's excellent <strong>'Comet made easy'</strong> philosophy 
 					made it an absoluteno-brainer as the choice of framework for the 
 					Apache ESME project. Additionally, the fact that Lift-based 
 					applications run unchangedon the SAP's NetWeaver CE Java 

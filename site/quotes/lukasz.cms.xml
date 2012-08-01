@@ -3,11 +3,11 @@
 	    
 		<div class="well">
 			<blockquote class="pull-right">
-				<h2>Lift just rocks !</h2>
+<!-- 				<h2>Lift just rocks !</h2> -->
 				<p class="lead">
-					... Lift just rocks !
+					<strong>... Lift just rocks !</strong>
 				</p>
-				<small>Lukasz Kuczera, Lift Community Member</small>
+				<small>Lukasz Kuczera, Lift Community Member and thenceforth Committer</small>
 			</blockquote>
 		</div>
 	

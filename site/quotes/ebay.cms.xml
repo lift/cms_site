@@ -3,12 +3,12 @@
 	   
 		<div class="well">
 			<blockquote class="pull-left">
-				<h2>State of the art!</h2>
+<!-- 				<h2>State of the art!</h2> -->
 				<p class="lead">
 					Lift is the only new framework in the last four
 					years to offer fresh and innovative approaches to web development.
 					It's not just some incremental improvements over the status quo,
-					it redefines the state of the art. If you are a web developer,
+					it redefines the <strong>state of the art</strong>. If you are a web developer,
 					you should learn Lift. Even if you don't wind up using it everyday,
 					it will change the way you approach web applications.
 				</p>

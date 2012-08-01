@@ -3,10 +3,10 @@
 	  
 		<div class="well">
 			<blockquote class="pull-left">
-				<h2>The ease of developing!</h2>
+<!-- 				<h2>The ease of developing!</h2> -->
 				<p class="lead">
 					Foursquare switched over to Scala &amp; Lift last September and we've been
-					thrilled with the results. The ease of developing complex
+					thrilled with the results. <strong>The ease of developing</strong> complex
 					interactive ajax web pages enabled a very rapid port from our
 					previous platform. In addition, the support we've gotten from David
 					Pollak and the rest of the Lift team has been invaluable. It's
