@@ -12,8 +12,8 @@
 						rel="shortcut icon" />
 
 					<!-- Including font from Google's Font Directory -->
-					<link rel="stylesheet" type="text/css"
-						href="http://fonts.googleapis.com/css?family=Crushed|Gruppo|Orbitron:bold" />
+<!-- 					<link rel="stylesheet" type="text/css" -->
+<!-- 						href="http://fonts.googleapis.com/css?family=Crushed|Gruppo|Orbitron:bold" /> -->
 					<link rel="stylesheet" type="text/css"
 						href="http://fonts.googleapis.com/css?family=Lobster" />
 

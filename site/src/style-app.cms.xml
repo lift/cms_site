@@ -49,7 +49,7 @@ body {
 *************************************************************************/
 h1, h2, h3 {
     color: #000000;
-    font-family: Orbitron,Helvetica,Verdana,sans-serif;
+    /* font-family: Orbitron,Helvetica,Verdana,sans-serif; */
     font-weight: normal;
     text-shadow: 1px 1px 1px #EEE; /*2px 2px 2px #CCCCCC;*/
 }
@@ -111,9 +111,9 @@ li.hdivider {
 /* HEADER
 *************************************************************************/
 
-div#header div#hdr { float: left;  max-width: 185px; height:60px; margin-left:20px; }
-/*.header-home { display:block; background: url('http://static.liftweb.com/logo.jpg') no-repeat; height: 89px; width: 185px;}*/
-.header-home { display:block; background: url('/images/liftweb-logo-single-small2.png') no-repeat; height: 60px; width: 185px;}
+div#header div#hdr { float: left;  max-width: 180px; height:61px; margin-left:20px; margin-bottom:10px; }
+
+.header-home { display:block; background: url('/images/liftweb-logo-single-small2.png') no-repeat; height: 61px; width: 180px;}
 
 .header-home span {
 	padding-left: 30px;
@@ -145,7 +145,7 @@ div#header div#hdr { float: left;  max-width: 185px; height:60px; margin-left:20
   color:#ccc;
 }*/
 
-#lh-quote div.well > blockquote > p.lead > strong {font-size:170%;}
+#lh-quote div.well > blockquote > p.lead > strong {font-size:150%;}
 
 #lh-quote div.well  { overflow: hidden;min-height:240px;}
 
@@ -290,7 +290,7 @@ hr {
     body {font-size: 80%; line-height: 16px; padding-top:0px; padding-left:0px;padding-right:0px;}
     li.vdivider {display: none !important;}
     #container-bg {    
-    background-color: #ffe;
+    background-color: #E0E9F0;
 	margin:-20px auto 40px auto;
 	max-width:1024px;
 	display:block;
@@ -317,7 +317,7 @@ hr {
     li.vdivider {display: none !important;}
     .row-fluid > #col2.span3 {width: 98.0%;}
     #container-bg {    
-    background-color: #ffe;
+    background-color: #E0E9F0;
 	margin:-18px auto 40px auto;
 	max-width:1024px;
 	display:block;
@@ -348,7 +348,7 @@ hr {
     body {font-size: 90%;line-height: 16px;padding-top:0px; padding-left:0px;padding-right:0px;}
     li.vdivider {display: none !important;}
     #container-bg {    
-    background-color: #eee;
+    background-color: #E0E9F0;
 	margin:-18px auto 5px auto;
 	max-width:1024px;
 	display:block;
