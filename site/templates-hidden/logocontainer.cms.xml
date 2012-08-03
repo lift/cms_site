@@ -57,36 +57,41 @@
 								<lift:choose cnt="3">
 									<div class="logo">
 										<a href="http://www.elemica.com/">
-											<img height="50" src="/images/elemica.png"
+											<img height="50" 
+											    src="/images/comp-logo/elemica.png"
 												alt="" />
 										</a>
 									</div>								
 								
 									<div class="logo">
 										<a href="http://snapsort.com">
+<!-- 										    src="http://static.liftweb.com/logo-snapsort.gif" -->
 											<img height="50" 
-											    src="http://static.liftweb.com/logo-snapsort.gif"
+											    src="/images/comp-logo/snapsort.png"
 												alt="" />
 										</a>
 									</div>
 									<div class="logo">
+<!-- 									src="http://static.liftweb.com/logo-innovation.gif" -->
 										<a href="http://innovationgames.com">
 											<img height="50" 
-											    src="http://static.liftweb.com/logo-innovation.gif"
+											    src="/images/comp-logo/innovation_games.png"
 												alt="" />
 										</a>
 									</div>
 									<div class="logo">
+<!-- 									src="http://static.liftweb.com/t8-webware-logo.gif" -->
 										<a href="http://www.grabgrip.com">
 											<img height="50"  
-											    src="http://static.liftweb.com/t8-webware-logo.gif"
+											    src="/images/comp-logo/banno.png"
 												alt="" />
 										</a>
 									</div>
 									<div class="logo">
+<!-- 									src="http://static.liftweb.com/logo-untyped.gif" -->
 										<a href="http://untyped.com">
 											<img height="50" 
-											    src="http://static.liftweb.com/logo-untyped.gif"
+											    src="/images/comp-logo/untyped.png"
 												alt="" />
 										</a>
 <!-- 										<a href="http://untyped.com"> -->
@@ -95,22 +100,26 @@
 <!-- 										</a>										 -->
 									</div>
 									<div class="logo">
+<!-- 									src="http://static.liftweb.com/stackmob_logo_lift.png" -->
 										<a href="http://stackmob.com">
 											<img height="50" 
-											   src="http://static.liftweb.com/stackmob_logo_lift.png"
+											    src="/images/comp-logo/stackmob.png"
 												alt="" />
 										</a>
 									</div>
 									<div class="logo">
+<!-- 									 src="http://static.liftweb.com/open_study.png" -->
 										<a href="http://openstudy.com">
-											<img height="50" src="http://static.liftweb.com/open_study.png"
+											<img height="50" 
+											    src="/images/comp-logo/open_study.png"
 												alt="" />
 										</a>
 									</div>
 									<div class="logo">
+<!-- 									src="http://sgrouples.com/img/logos/sgrouples_logo_lift.png" -->
 										<a href="http://sgrouples.com">
 											<img height="50"
-												src="http://sgrouples.com/img/logos/sgrouples_logo_lift.png"
+												src="/images/comp-logo/sgrouples.png"
 												alt="" />
 										</a>		
 <!-- 										<a href="http://sgrouples.com"> -->
@@ -121,8 +130,9 @@
 									</div>
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
+<!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
 									<a href="http://foursquare.com">
-										<img src="http://static.liftweb.com/logo-foursquare.gif"
+										<img src="/images/comp-logo/foursquare.png"
 											alt="" />
 									</a>
 								</div>
