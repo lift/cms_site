@@ -298,7 +298,7 @@ hr {
     body {font-size: 80%; line-height: 16px; padding-top:0px; padding-left:0px;padding-right:0px;}
     li.vdivider {display: none !important;}
     #container-bg {    
-    background-color: #E0E9F0;
+    background-color: #f8f8f8;
 	margin:-20px auto 40px auto;
 	max-width:1024px;
 	display:block;
@@ -325,7 +325,7 @@ hr {
     li.vdivider {display: none !important;}
     .row-fluid > #col2.span3 {width: 98.0%;}
     #container-bg {    
-    background-color: #E0E9F0;
+    background-color: #f8f8f8;
 	margin:-18px auto 40px auto;
 	max-width:1024px;
 	display:block;
@@ -336,7 +336,7 @@ hr {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px ;
     border-radius: 0px ;
-    padding:10px 2px;
+    padding:10px 5px;
     }    
     .navbar-fixed-top, .navbar-fixed-bottom {margin-left: 0;margin-right: 0;}
     .navbar .container { padding: 0 10px;}
@@ -358,7 +358,7 @@ hr {
     body {font-size: 90%;line-height: 16px;padding-top:0px; padding-left:0px;padding-right:0px;}
     li.vdivider {display: none !important;}
     #container-bg {    
-    background-color: #E0E9F0;
+    background-color: #f8f8f8;
 	margin:-18px auto 5px auto;
 	max-width:1024px;
 	display:block;
@@ -369,7 +369,7 @@ hr {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px ;
     border-radius: 0px ;
-    padding:10px 2px;
+    padding:10px 5px;
     }    
     .navbar .container { padding: 0 10px;}
     .navbar-fixed-top, .navbar-fixed-bottom {margin-left: 0;margin-right: 0;}
