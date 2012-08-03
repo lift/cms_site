@@ -1,0 +1,23 @@
+<cms path="/lift_co" serve="true" type="html" locale="en_US" host="liftweb.net">
+  <tag name="redirect" value="http://liftweb.com/"/>
+  <tag name="name" value="lift_co"/>
+  <tag name="menu" value=" Lift Co."/>
+  <tag name="menu-locgroup" value="locgroup1" />
+  <tag name="menu-icon" value="icon-briefcase" />
+  <tag name="order" value="7"/>
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+	<title>Lift :: Co.</title>
+      </head>
+      
+      <div id="left">
+	<script>
+	  // <![CDATA[
+             window.location = "http://liftweb.com/";
+          // ]]>
+	</script>
+      </div> <!-- left -->
+    </lift:surround>
+  </content>
+</cms>

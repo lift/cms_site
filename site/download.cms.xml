@@ -1,96 +1,139 @@
 <cms path="/download" serve="true" type="html" locale="en_US" host="liftweb.net">
-  <tag name="name" value="download"/>
-  <tag name="menu" value="Download"/>
-  <tag name="order" value="3"/>
-  <content>
-    <lift:surround with="default" at="content">
-      <head>
-	<title>Lift :: Download</title>
-      </head>
+	<tag name="name" value="download" />
+	<tag name="menu" value=" Download" />
+	<tag name="menu-icon" value="icon-download-alt icon-white" />
 
-    <div class="row-fluid">
-      <div class="span12">
+	<tag name="order" value="3" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Download</title>
+			</head>
 
-        <div class="row-fluid">
-          <div class="span8">  
-            
-        <h1>DOWNLOAD and run using the Simply Build Tool (sbt)</h1>
-	<p>
-	  <h2>*Note about jQuery and <a href="/jquery">Lift 2.5</a></h2>
-	  <div>Download</div>
-	  <ul>
-	    <li>Lift 2.4 release:
-	    <a href="https://github.com/lift/lift_24_sbt/tarball/master">TAR</a> or
-	    <a href="https://github.com/lift/lift_24_sbt/zipball/master">Zip</a>.
-	    <br/>
-	    Expand the project and cd into the directory and the "scala_28/lift_basic" subdirectory.
-	    Then type <pre><code>sbt update ~jetty-run</code></pre>
-	    and you should be able to browse to 
-	    <code>http://localhost:8080</code> and see your running
-	    Lift app.
-	    <hr/>
-	    </li>
-	    <li>Lift 2.3 release:
-	    <a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a> or
-	    <a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>.
-	    <br/>
-	    Expand the project and cd into the directory and the "lift_basic" subdirectory.
-	    Then type <pre><code>sbt update ~jetty-run</code></pre>
-	    and you should be able to browse to 
-	    <code>http://localhost:8080</code> and see your running
-	    Lift app.
-	    <hr/>
-	    </li>
+			<div class="row-fluid">
+				<div class="span12">
 
-	    <li>Lift 2.2 release 
-	      <a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a> or
-	      <a href="https://github.com/lift/lift_22_sbt/zipball/2.2">Zip</a>.
-	    </li>
+					<div class="row-fluid">
+						<div class="span9">
+                            <div class="page-header">
+							<h1>
+								Download
+								<small>and run using the Simple Build Tool (sbt)</small>
+							</h1>
+							</div>
+							<p>
+								<div class="alert alert-info">
+										<i class="icon-hand-right" style="vertical-align: midle;"></i>
+										<strong>Heads up!</strong> Note about <a href="/jquery" style="text-decoration: underline;">jQuery and upcoming Lift 2.5</a>
+								</div>
 
-	    <li>
-	      Lift 2.1 release <a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a> or 
-	  <a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a>
-	    </li>
-          </ul>
-	  
-	  Expand the project and cd into the newly created
-	  directory.  Then type <pre><code>sbt update ~jetty-run</code></pre>
-	  and you should be able to browse to 
-	  <code>http://localhost:8080</code> and see your running
-	  Lift app.
-	</p>
-	<!--
-        <h1>DOWNLOAD and run using Maven</h1>
-	
-        <p>If you already have <a href="http://maven.apache.org/download.html">Apache Maven 2.2.0+</a> 
-          or later installed and configured on your system, you already have everything you need to get started.
-          If you currently don't have Maven installed, you can either install Maven manually using
-          <a href="http://maven.apache.org/download.html">these instructions</a>. Alternatively, you can use
-          one of our installers below:</p>
-        <div id="macosx">
-          <h2>Mac OSX (10.4+)</h2>
-          <p>Download the installer <a href="http://scala-tools.org/lift_installer.dmg">here</a></p>
-        </div>
-        <div id="windows">
-          <h2>Windows</h2>
-          <p>Download the installer <a href="http://scala-tools.org/lift_installer.exe">here</a></p>
-        </div>
-        <div id="linux">
-          <h2>Linux</h2>
-          <p>For linux, we recommend that you use your native package management system to install
-            maven. If you are unsure how to do this, please refer to your OS documentation.</p>
-	    -->
-          <p>If you are having problems getting started on Linux, head over to 
-            the <a href="http://groups.google.com/group/liftweb">mailing list.</a></p>
-      <!-- </div> -->
+								<dl>
+									<dt>Download:</dt>
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
+										<span class="label label-info">Lift 2.4 release:</span>
+										<a href="https://github.com/lift/lift_24_sbt/tarball/master">TAR</a>
+										or
+										<a href="https://github.com/lift/lift_24_sbt/zipball/master">Zip</a>
+										.
+										<br />
+										Expand the project and cd into the directory and the
+										"scala_28/lift_basic" subdirectory.
+										Then type
+										<pre class="prettyprint lang-scala">
+ sbt update ~jetty-run		
+                                        </pre>
+										and you should be able to browse to
+										<code>http://localhost:8080</code>
+										and see your running
+										Lift app.
+										<hr />
+									</dd>
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
+										<span class="label label-info">Lift 2.3 release:</span>
+										<a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a>
+										or
+										<a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>
+										<br />
+										Expand the project and cd into the directory and the
+										"lift_basic" subdirectory.
+										Then type
+										<pre class="prettyprint lang-scala">
+ sbt update ~jetty-run
+										</pre>
+										and you should be able to browse to
+										<code>http://localhost:8080</code>
+										and see your running
+										Lift app.
+										<hr />
+									</dd>
 
-          </div>      
-	        <div class="span4">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>     
-        </div>  
-      </div>  
-    </lift:surround>
-  </content>
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
+										<span class="label label-info">Lift 2.2 release:</span>
+										<a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a>
+										or
+										<a href="https://github.com/lift/lift_22_sbt/zipball/2.2">Zip</a>
+										<br />
+										Expand the project and cd into the newly created
+										directory. Then type
+										<pre class="prettyprint lang-scala">
+ sbt update ~jetty-run
+										</pre>
+										and you should be able to browse to
+										<code>http://localhost:8080</code>
+										and see your running
+										Lift app.
+										<hr />
+									</dd>
+
+									<dd>
+										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
+										<span class="label label-info">Lift 2.1 release:</span>
+										<a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a>
+										or
+										<a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a>
+										<br />
+										Expand the project and cd into the newly created
+										directory. Then type
+										<pre class="prettyprint lang-scala">
+ sbt update ~jetty-run
+										</pre>
+										and you should be able to browse to
+										<code>http://localhost:8080</code>
+										and see your running
+										Lift app.
+									</dd>
+								</dl>
+
+
+							</p>
+							<!-- <h1>DOWNLOAD and run using Maven</h1> <p>If you already have 
+								<a href="http://maven.apache.org/download.html">Apache Maven 2.2.0+</a> or 
+								later installed and configured on your system, you already have everything 
+								you need to get started. If you currently don't have Maven installed, you 
+								can either install Maven manually using <a href="http://maven.apache.org/download.html">these 
+								instructions</a>. Alternatively, you can use one of our installers below:</p> 
+								<div id="macosx"> <h2>Mac OSX (10.4+)</h2> <p>Download the installer <a href="http://scala-tools.org/lift_installer.dmg">here</a></p> 
+								</div> <div id="windows"> <h2>Windows</h2> <p>Download the installer <a href="http://scala-tools.org/lift_installer.exe">here</a></p> 
+								</div> <div id="linux"> <h2>Linux</h2> <p>For linux, we recommend that you 
+								use your native package management system to install maven. If you are unsure 
+								how to do this, please refer to your OS documentation.</p> -->
+							<p>
+								If you are having problems getting started on Linux, head over
+								to
+								the
+								<a href="http://groups.google.com/group/liftweb">mailing list.</a>
+							</p>
+
+						</div>
+						<div id="col2" class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>

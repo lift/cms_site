@@ -1,5 +1,5 @@
 <cms path="/23_rc4" serve="true" type="html" locale="en_US" 
-     host="liftweb.net" valid_from="2011/03/28">
+     host="liftweb.net" valid_from="2011/03/28" valid_to="2012/06/06">
   <tag name="sub" value="happening">
     <b>Lift 2.3-RC4</b> Ships!
   </tag>

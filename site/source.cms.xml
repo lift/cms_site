@@ -1,8 +1,12 @@
 <cms path="/source" serve="true" type="html" locale="en_US" host="liftweb.net">
   <tag name="redirect" value="http://github.com/lift/framework"/>
   <tag name="name" value="source"/>
-  <tag name="menu" value="Source"/>
-  <tag name="order" value="8"/>
+  <tag name="menu" value=" Source"/>
+  <tag name="menu-locgroup" value="locgroup1" />
+  <tag name="menu-icon" value="icon-list-alt" />
+  <tag name="menu-divider" value="hdivider" />
+  <tag name="order" value="5"/>
+<!--   <tag name="order" value="8"/> -->
   <content>
     <lift:surround with="default" at="content">
       <head>

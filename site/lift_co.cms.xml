@@ -1,0 +1,23 @@
+<cms path="/lift_blog" serve="true" type="html" locale="en_US" host="liftweb.net">
+  <tag name="redirect" value="http://lift.la/"/>
+  <tag name="name" value="lift_blog"/>
+  <tag name="menu" value=" The Official Lift Blog"/>
+  <tag name="menu-locgroup" value="locgroup2" />
+  <tag name="menu-icon" value="icon-pencil" />
+  <tag name="order" value="5"/>
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+	<title>Lift :: Blog</title>
+      </head>
+      
+      <div id="left">
+	<script>
+	  // <![CDATA[
+             window.location = "http://lift.la/";
+          // ]]>
+	</script>
+      </div> <!-- left -->
+    </lift:surround>
+  </content>
+</cms>

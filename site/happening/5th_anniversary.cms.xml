@@ -5,7 +5,7 @@
   </tag>
 
   <tag name="desc">
-    The Lift Web Framework was founded on February
+    <i class="icon-glass" style="vertical-align: midle;"></i> The Lift Web Framework was founded on February
     26th, 2007.  Happy Birthday!
   </tag>
 
@@ -19,10 +19,11 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span8">  
+          <div class="span9">  
             
-
+<div class="page-header">
 <h2>Happy 5th Anniversary Lift</h2>
+</div>
 
 <p>It was five years ago that I founded the Lift Web Framework project.</p>
 
@@ -160,7 +161,7 @@ secure web applications.  Lift will get better, and perhaps slimmer,
 based on the evolving needs of the whole Lift community.</p>
       
           </div>      
-	        <div class="span4">  
+	        <div class="span3">  
 	          <lift:embed what="col2"/> 
             </div>
         </div>     

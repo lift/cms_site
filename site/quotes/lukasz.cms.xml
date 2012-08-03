@@ -1,14 +1,15 @@
 <cms path="/quotes/lukasz" type="html" locale="en_US" host="liftweb.net">
-<content>
-<div>
-  <div class="left">&ldquo;</div>
-  <div class="center">
-    <h1>
-      Lift just rocks !
-    </h1>
-    Lukasz Kuczera, Lift Community Member
-  </div>
-  <div class="right">&rdquo;</div>
-</div>
-</content>
+	<content>
+	    
+		<div class="well">
+			<blockquote class="pull-right">
+<!-- 				<h2>Lift just rocks !</h2> -->
+				<p class="lead">
+					<strong>... Lift just rocks !</strong>
+				</p>
+				<small>Lukasz Kuczera, Sgrouples</small>
+			</blockquote>
+		</div>
+	
+	</content>
 </cms>

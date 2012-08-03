@@ -1,95 +1,133 @@
 <cms path="/community" serve="true" type="html" locale="en_US" host="liftweb.net">
-  <tag name="name" value="community"/>
-  <tag name="menu" value="Community"/>
-  <tag name="order" value="5"/>
-  <content>
-    <lift:surround with="default" at="content">
-      <head>
-	<title>Lift :: Community</title>
-      </head>
-      
-   <div class="row-fluid">
-      <div class="span12">
+	<tag name="name" value="community" />
+	<tag name="menu" value=" The Lift Community" />
+	<tag name="menu-locgroup" value="locgroup2" />
+	<tag name="menu-icon" value="icon-heart" />
+	<tag name="order" value="1" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Community</title>
+			</head>
 
-        <div class="row-fluid">
-          <div class="span8">         
+			<div class="row-fluid">
+				<div class="span12">
 
-	<h1>The Lift Community</h1>
-	<p>
-	  The Lift community strives to be a warm and welcoming place to newbies and seasoned users alike.
-	  If you've got a question, the community will try to provide a substantive answer (not RTFM.)
-	</p>
+					<div class="row-fluid">
+						<div class="span9">
+                            <div class="page-header">
+							<h1>The Lift Community <small>and Expected Behavior</small></h1>
+							</div>
+							<p>
+								The Lift community strives to be a warm and welcoming place to
+								newbies and seasoned users alike.
+								If you've got a question, the community will try to provide a
+								substantive answer (not RTFM.)
+							</p>
 
-	<p>
-	  The <a href="http://groups.google.com/group/liftweb">Lift mailing list</a> is the official support channel for Lift.
-	  The IRC channel is a popular, but unofficial, support channel for Lift.
-	</p>
-	
-	<p>
-	  The following are not ways to get support for Lift:
-	  <ul>
-	    <li>Personal email to one of the committers (unless you have a relationship with that committer)</li>
-	    <li>Personal IM with the committers (unless you know them very well)</li>
-	    <li>Twitter... the Lift committers don't monitor Twitter for Lift support requests</li>
-	    <li>GitHub... don't use GitHub messages.  
-	      None of the Lift committer will pull from your repository.  
-	      The Lift IP is clean which means that unless you are a committer and you have written the code yourself, 
-	      it doesn't get into Lift.  This allows businesses to use Lift knowing what the provenance of the code is.
-	    </li>
-	  </ul>
-	</p>
+							<p>
+								The
+								<a href="http://groups.google.com/group/liftweb">Lift mailing list</a>
+								is the official support channel for Lift.
+								The IRC channel is a popular, but unofficial, support channel for
+								Lift.
+							</p>
 
-	<p>
-	  Please be polite on the Lift mailing list.  Please say "please" and "thank you."
-	  The community tries to be timely with answers, but very often a question may not get an
-	  answer for a few days.  Being a squeaky wheel about getting an answer will not make it
-	  happen any faster.  There are people on the Lift list who are consultants.  If you need
-	  support in a timely manner and are willing to pay, please make that offer.
-	</p>
+							
+							<div class="well">
+								<dl>
+								    <dt>The following are not ways to get support for Lift:</dt>
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> Personal email to one of the committers (unless you have a
+										relationship with that committer)</dd>
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> Personal IM with the committers (unless you know them very
+										well)</dd>
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> Twitter... the Lift committers don't monitor Twitter for
+										Lift support requests</dd>
+									<dd><i class="icon-hand-right" style="vertical-align: midle;"></i> GitHub... don't use GitHub messages.
+										None of the Lift committer will pull from your repository.
+										The Lift IP is clean which means that unless you are a committer
+										and you have written the code yourself,
+										it doesn't get into Lift. This allows businesses to use Lift
+										knowing what the provenance of the code is.
+									</dd>
+								</dl>
+							</div>
+							
 
-	<p>
-	  Disagreements... there are plenty of ways to approach technical issues.  Lift was built from user 
-	  feedback and we try to foster a community in which feedback is encouraged.  But this
-	  implies certain ground rules:
-	  <ul>
-	    <li>You can disagree with a person's opinion, but please continue to respect the person</li>
-	    <li>Using words like "nightmare", "sucks", and other similar words will not help your cause.
-	    Please spend time working on the positives of your position rather than focusing on the
-	    negatives of other peoples' positions.</li>
-	    <li>You may have to agree to disagree</li>
-	  </ul>
-	</p>
+							<p>
+								Please be polite on the Lift mailing list. Please say "please" and
+								"thank you."
+								The community tries to be timely with answers, but very often a
+								question may not get an
+								answer for a few days. Being a squeaky wheel about getting an answer
+								will not make it
+								happen any faster. There are people on the Lift list who are
+								consultants. If you need
+								support in a timely manner and are willing to pay, please make that
+								offer.
+							</p>
 
-	<p>
-	  New member of the group are moderated (this radically reduces spam).  You may have to wait
-	  2 to 24 hours for a post to be moderated.  Please do not repost the same question if you don't
-	  see it show up immediately.
-	</p>
-	
-	<p>
-	  Lift is an open source project done entirely by volunteers.  The Lift documentation is not professional.
-	  If you would like improvements to the documentation, please write wiki articles.  Posting complaints
-	  about the documentation on the mailing list does not help it appear faster.  Posting questions
-	  and summarizing the answer into a wiki post on the other hand will earn you faster and more detailed
-	  answers in the future.
-	</p>
+							<p>
+								Disagreements... there are plenty of ways to approach technical
+								issues. Lift was built from user
+								feedback and we try to foster a community in which feedback is
+								encouraged. But this
+								implies certain ground rules:
+							  <div class="well">
+								<dl>
+								    <dt>Ground rules:</dt>
+									<dd><i class="icon-thumbs-up" style="vertical-align: midle;"></i> You can disagree with a person's opinion, but please
+										continue to respect the person</dd>
+									<dd><i class="icon-thumbs-up" style="vertical-align: midle;"></i> Using words like "nightmare", "sucks", and other similar
+										words will not help your cause.
+										Please spend time working on the positives of your position rather
+										than focusing on the
+										negatives of other peoples' positions.
+									</dd>
+									<dd><i class="icon-thumbs-up" style="vertical-align: midle;"></i> You may have to agree to disagree</dd>
+								</dl>
+							  </div>
+							</p>
 
-	<p>
-	  Please also read <a href="http://lift.la/the-loyal-opposition">The Loyal Opposition</a>.
-	  Before opening a ticket, please discuss it on the Lift Google Group.  For more information,
-	  <a href="https://www.assembla.com/wiki/show/liftweb/Creating_tickets">Creating Tickets</a>
-	  outlines the rules for opening tickets.  We have this policy to keep Lift-related discussions
-	  in the open and available to every community member.
-	</p>
+							<p>
+								New member of the group are moderated (this radically reduces
+								spam). You may have to wait
+								2 to 24 hours for a post to be moderated. Please do not repost
+								the same question if you don't
+								see it show up immediately.
+							</p>
 
-          </div>      
-	        <div class="span4">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>    
- 
-      </div>
-    </div> 
-    </lift:surround>
-  </content>
+							<p>
+								Lift is an open source project done entirely by volunteers. The Lift
+								documentation is not professional.
+								If you would like improvements to the documentation, please write
+								wiki articles or add a <a href="http://cookbook.liftweb.net/How+to+add+a+new+recipe+to+this+Cookbook.html">recipe</a> to <a href="http://cookbook.liftweb.net/">Lift Cookbook</a>. Posting complaints
+								about the documentation on the mailing list does not help it appear
+								faster. Posting questions
+								and summarizing the answer into a cookbok recipe or a wiki post on the other hand will
+								earn you faster and more detailed
+								answers in the future.
+							</p>
+
+							<p>
+								<span class="label label-info">Please also read!</span> 
+								<a href="http://lift.la/the-loyal-opposition">The Loyal Opposition</a>.
+								Before opening a ticket, please discuss it on the Lift Google Group.
+								For more information,
+								<a href="https://www.assembla.com/wiki/show/liftweb/Creating_tickets">Creating Tickets</a>
+								outlines the rules for opening tickets. We have this policy to
+								keep Lift-related discussions
+								in the open and available to every community member.
+							</p>
+
+						</div>
+						<div id="col2" class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>
