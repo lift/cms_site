@@ -235,7 +235,7 @@
   .span9 {
     width: 538px;
   }
-  .span8 {
+  .span9 {
     width: 476px;
   }
   .span7 {
@@ -247,7 +247,7 @@
   .span5 {
     width: 290px;
   }
-  .span4 {
+  .span3 {
     width: 228px;
   }
   .span3 {
@@ -338,7 +338,7 @@
     width: 74.30939226%;
     *width: 74.25620077063829%;
   }
-  .row-fluid .span8 {
+  .row-fluid .span9 {
     width: 65.74585634900001%;
     *width: 65.6926648596383%;
   }
@@ -354,7 +354,7 @@
     width: 40.055248616%;
     *width: 40.0020571266383%;
   }
-  .row-fluid .span4 {
+  .row-fluid .span3 {
     width: 31.491712705%;
     *width: 31.4385212156383%;
   }
@@ -395,9 +395,9 @@
   .uneditable-input.span9 {
     width: 528px;
   }
-  input.span8,
-  textarea.span8,
-  .uneditable-input.span8 {
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
     width: 466px;
   }
   input.span7,
@@ -415,9 +415,9 @@
   .uneditable-input.span5 {
     width: 280px;
   }
-  input.span4,
-  textarea.span4,
-  .uneditable-input.span4 {
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
     width: 218px;
   }
   input.span3,
@@ -471,7 +471,7 @@
   .span9 {
     width: 870px;
   }
-  .span8 {
+  .span9 {
     width: 770px;
   }
   .span7 {
@@ -483,7 +483,7 @@
   .span5 {
     width: 470px;
   }
-  .span4 {
+  .span3 {
     width: 370px;
   }
   .span3 {
@@ -574,7 +574,7 @@
     width: 74.358974359%;
     *width: 74.30578286963829%;
   }
-  .row-fluid .span8 {
+  .row-fluid .span9 {
     width: 65.81196581200001%;
     *width: 65.7587743226383%;
   }
@@ -590,7 +590,7 @@
     width: 40.170940171000005%;
     *width: 40.117748681638304%;
   }
-  .row-fluid .span4 {
+  .row-fluid .span3 {
     width: 31.623931624%;
     *width: 31.5707401346383%;
   }
@@ -631,9 +631,9 @@
   .uneditable-input.span9 {
     width: 860px;
   }
-  input.span8,
-  textarea.span8,
-  .uneditable-input.span8 {
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
     width: 760px;
   }
   input.span7,
@@ -651,9 +651,9 @@
   .uneditable-input.span5 {
     width: 460px;
   }
-  input.span4,
-  textarea.span4,
-  .uneditable-input.span4 {
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
     width: 360px;
   }
   input.span3,

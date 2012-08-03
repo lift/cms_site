@@ -1,14 +1,19 @@
 <cms path="/quotes/sgrouples" type="html" locale="en_US" host="liftweb.net">
-<content>
-<div>
-  <div class="left">&ldquo;</div>
-  <div class="center">
-    <h1>
-Sgrouples is a social platform with a new approach to privacy and security on the web. Our team pushed Sgrouples from conceptual ideas to a publicly available release in just nine months. Some reasons we chose the Lift framework are its security-driven design and its stellar Ajax and Comet support. Lift paves the way for a secure, responsive real time application that is fun to use and even greater fun to develop.
-    </h1>
-    Torsten Uhlmann, Sgrouples
-  </div>
-  <div class="right">&rdquo;</div>
-</div>
-</content>
+	<content>
+		<div class="well">
+			<blockquote class="pull-right">
+<!-- 				<h2>Security-driven design, with stellar Ajax and Comet support!</h2> -->
+				<p class="lead">
+					Sgrouples is a social platform with a new approach to privacy and security
+					on the web. Our team pushed Sgrouples from conceptual ideas to a
+					publicly available release in just nine months. Some reasons we
+					chose the Lift framework are its <strong>security-driven design</strong> and its
+					<strong>stellar Ajax and Comet support</strong>. Lift paves the way for a secure,
+					responsive real time application that is fun to use and even
+					greater fun to develop.
+				</p>
+				<small>Torsten Uhlmann, Sgrouples</small>
+			</blockquote>
+		</div>
+	</content>
 </cms>

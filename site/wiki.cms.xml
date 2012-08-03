@@ -1,8 +1,10 @@
 <cms path="/wiki" serve="true" type="html" locale="en_US" host="liftweb.net">
   <tag name="redirect" value="http://www.assembla.com/wiki/show/liftweb"/>
   <tag name="name" value="wiki"/>
-  <tag name="menu" value="Wiki"/>
-  <tag name="order" value="6"/>
+  <tag name="menu" value=" Wiki"/>
+  <tag name="menu-locgroup" value="locgroup2" />
+  <tag name="menu-icon" value="icon-pencil" />
+  <tag name="order" value="4"/>
   <content>
     <lift:surround with="default" at="content">
       <head>

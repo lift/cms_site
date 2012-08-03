@@ -1,18 +1,17 @@
 <cms path="/quotes/pongr" type="html" locale="en_US" host="liftweb.net">
-<content>
-<div>
-  <div class="left">&ldquo;</div>
-  <div class="center">
-    <h1>
-      <a href="http://pongr.com">Pongr</a> launched our new product earlier this
-      week
-      As you know, we use (and love) Lift, and I just wanted to thank you
-      for creating such an incredible framework.  It continues to blow my
-      mind every day!
-    </h1>
-    Zach Cox, Chief Software Architect, Pongr
-  </div>
-  <div class="right">&rdquo;</div>
-</div>
-</content>
+	<content>
+		<div  class="well">
+			<blockquote class="pull-right">
+<!-- 				<h2>Continues to blow my mind every day!</h2> -->
+				<p class="lead">
+					<a href="http://pongr.com">Pongr</a>
+					launched our new product earlier this week
+					As you know, we use (and love) Lift, and I just wanted to thank you
+					for creating such an incredible framework. It <strong>continues to blow my
+					mind every day!</strong>
+				</p>
+				<small>Zach Cox, Chief Software Architect, Pongr</small>
+			</blockquote>
+		</div>
+	</content>
 </cms>

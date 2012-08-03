@@ -1,51 +1,89 @@
 <cms path="/index" serve="true" type="html" locale="en_US" host="liftweb.net">
-<tag name="menu" value="Home"/>
-<tag name="order" value="1"/>
-<content>
-  <lift:surround with="default" at="content" quotes="true">
-    <head>
-      <title>Lift :: Home</title>
-    </head>
-   
-    <div class="row-fluid">
-      <div class="span12">
-           
-        <lift:embed what="logocontainer"/> 
-    
-        <div class="row-fluid">
-          <div class="span8">        
-            
-              <h1>What is Lift?</h1>
-              <p>Lift is the most powerful, most secure web framework available today.  
-	             There are <a href="http://seventhings.liftweb.net">Seven Things</a>
-	             that distinguish Lift from other web frameworks.
-	             Lift applications are:
-              </p>
-              <ul>
-	            <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
-	            <li>Developer centeric -- Lift apps are fast to build, concise and easy to maintain</li>
-	            <li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
-	            <li>Interactive like a desktop app -- Lift's Comet support is unparalled and Lift's ajax support is super-easy and very secure</li>
-              </ul>
+	<tag name="menu" value=" Home" />
+	<tag name="menu-icon" value="icon-home icon-white" />
+	<tag name="order" value="1" />
+	<content>
+		<lift:surround with="default" at="content" quotes="true">
+			<head>
+				<title>Lift :: Home</title>
+			</head>
 
-              <p>Read an <lift:a name="lift_overview">overview</lift:a> of how Lift achieves these important goals.</p>
-      
-              <p>Lift open source software licensed under an Apache 2.0 license.</p>
-      
-              <p><a href="http://demo.liftweb.net">See a Demo</a></p>
-      
-              <p>Because Lift applications are written in Scala, an elegant JVM language, you can still use your favorite Java libraries and deploy to your favorite Servlet Container and app server. Use the code you've already written and deploy to the container you've already configured!</p>
-                
-          </div>      
-	        <div class="span4">  
-	          <lift:embed what="col2"/> 
-            </div>
-        </div>
-	        
-      
-      </div>
-    </div>
-          
-  </lift:surround>
-</content>
+			<div class="row-fluid">
+				<div class="span12">
+
+					<lift:embed what="logocontainer" />
+
+					<div class="row-fluid">
+						<div class="span9">
+                            <div class="page-header">
+						   	<h1>
+						   	   <span title="Lift is the most powerful, most secure web framework available today. It simply rocks!" id="lift-tt">
+						    	What is Lift?
+						    	</span>
+						   	</h1>
+						   	</div>
+							<p>
+								Lift is the most powerful, most secure web framework available
+								today.
+								There are
+								<a id="lift-7tt" title="Lift has 7 things that are hard or impossible in other web frameworks. Click to find out more..." href="http://seventhings.liftweb.net">
+								Seven Things
+								</a>
+								that distinguish Lift from other web frameworks.
+								
+							</p>
+						    <script type="text/javascript">
+                           // <![CDATA[
+                              $(function () { $('#lift-tt').tooltip({placement:'right'}); }); 
+                              $(function () { $('#lift-7tt').tooltip({}); }); 
+                           // ]]>
+                           
+                           </script> 							
+							<div class="well">
+							<dl>
+							   <dt>Lift applications are:</dt>
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Secure</strong> -- Lift apps are resistant to common vulnerabilities
+									including many of the OWASP Top 10</dd>
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Developer centric</strong> -- Lift apps are fast to build, concise
+									and easy to maintain</dd>
+	                            <dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Designer friendly</strong> -- Lift apps can be developed in a totally designer friendly way</dd>
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Scalable</strong> -- Lift apps are high performance and scale in the
+									real world to handle insane traffic levels</dd>
+	                            <dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Modular</strong> -- Lift apps can benefit from, easy to integrate, pre built modules</dd>									
+								<dd><i class="icon-star-empty" style="vertical-align: midle;"></i> <strong>Interactive like a desktop app</strong> -- Lift's Comet support is
+									unparalled and Lift's ajax support is super-easy and very
+									secure</dd>
+							</dl>
+                            </div>
+							<p>
+								Read an
+								<lift:a name="lift_overview">overview</lift:a>
+								of how Lift achieves these important goals.
+							</p>
+
+							<p>Lift open source software licensed under an Apache 2.0
+								license.</p>
+
+							<p>
+								<a href="http://demo.liftweb.net">See a Demo</a>
+							</p>
+
+							<p>Because Lift applications are written in Scala, an elegant JVM
+								language, you can still use your favorite Java libraries and
+								deploy to your favorite Servlet Container and app server. Use
+								the code you've already written and deploy to the container
+								you've already configured!</p>
+
+						</div>
+						<div id="col2" class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</lift:surround>
+	</content>
 </cms>
