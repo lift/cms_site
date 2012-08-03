@@ -117,23 +117,7 @@
 										<a href="https://telegr.am">Telegram</a>
 									</p>
 								</div>
-								<!--footer -->
-								<div class="alert alert-error" style="float:left;margin-left:3px;max-width:100%;">
-									<strong>
-										This is a demo site for a alternative
-										<a href="http://liftweb.net/">Lift Home</a>.
-									</strong>
-									The goal has been to keep things clean and simple with a
-									minimum
-									of application specific styling
-									but
-									<i>of course</i>
-									have it fluid and mobile scalable.
-									<a
-										href="https://groups.google.com/forum/?fromgroups#!topic/liftweb/whDSE37ltsw"
-										target="_blank">Tell me Peter Petersson (karma4u101) what you think!
-									</a>
-								</div>
+								
 							</div>
 						</div>
 					</div>
