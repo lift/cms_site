@@ -179,13 +179,14 @@ blockquote > p.lead:before {
 
 /*playing around with gradient just coment this out if you whant the plainer look bellow */
 /*div.gradient-panel {
-  background-image: -moz-radial-gradient(orange,#ccc);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(orange), to(#ccc)); 
-  background-image: -webkit-radial-gradient(orange, #ccc); 
-  background-image: radial-gradient(orange, #ccc);
+  background-image: -moz-radial-gradient(#9eccf0,#E0E9F0);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#9eccf0), to(#E0E9F0)); 
+  background-image: -webkit-radial-gradient(#9eccf0, #E0E9F0); 
+  background-image: radial-gradient(#9eccf0, #E0E9F0);
   }*/
 /*plain look*/	
 div.gradient-panel {
+   background: #E0E9F0;
    overflow: hidden;
    display: inline-block;
    float:left;
@@ -213,8 +214,7 @@ div.gradient-panel {
   display: block;
   float:left;
   width:100%; 
-  background:#7891E4; /*#E0E9F0;*/ /*#4861b4;*/ /*#374e97;*/ 
-  /*border:1px solid #8a9bd5; */
+  background:#9eccf0; /*#b6d7f0;*/ /* #7891E4;*/ /*#E0E9F0;*/ /*#4861b4;*/ /*#374e97;*/ 
   text-align:center;
   padding:10px 0px; 
   margin:5px 0px 25px 0px; 
@@ -231,17 +231,14 @@ div.gradient-panel {
   border-radius: 20px;  
   }
 
-/*If we have img with transparant bg we could try out some gradients on the box*/
 
 #logo-container {
-  background-image: -moz-radial-gradient(#7891E4,#E0E9F0);
-  /*background: -webkit-gradient(radial, center center, 0, from(#7891E4), to(#E0E9F0));*/
-  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#7891E4), to(#E0E9F0)); 
-  background-image: -webkit-radial-gradient(#7891E4, #E0E9F0); 
-  background-image: radial-gradient(#7891E4, #E0E9F0);
-  
+  background-image: -moz-radial-gradient(#9eccf0,#E0E9F0);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#9eccf0), to(#E0E9F0)); 
+  background-image: -webkit-radial-gradient(#9eccf0, #E0E9F0); 
+  background-image: radial-gradient(#9eccf0, #E0E9F0);
   } 
-
+ 
   
 #logo-container .logo {
   float:left; 
