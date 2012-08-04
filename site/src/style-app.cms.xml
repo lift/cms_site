@@ -235,9 +235,9 @@ div.gradient-panel {
 
 #logo-container {
   background-image: -moz-radial-gradient(#7891E4,#E0E9F0);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(orange), to(red)); 
-  background-image: -webkit-radial-gradient(orange, red); 
-  background-image: radial-gradient(orange, red);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#7891E4), to(#E0E9F0)); 
+  background-image: -webkit-radial-gradient(#E0E9F0, #E0E9F0); 
+  background-image: radial-gradient(#E0E9F0, #E0E9F0);
   } 
 
   
