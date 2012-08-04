@@ -74,12 +74,12 @@ h1, h2, h3 {
     margin-left: 10px;
 }
 .navbar-inner {
-   /* background-color: #222;
-    background-image: -moz-linear-gradient(center top , #425655, #222222);*/
     background-color: #006699;
-    background-image: -moz-linear-gradient(center top , #003366, #006699);
+    background-image: -moz-linear-gradient(center top , #003366, #006699); 
+    background: -webkit-gradient(linear, left top, left bottom, from(#003366), to(#006699));
     background-repeat: repeat-x;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;  
+     
     
 }
 div.navbar > div.navbar-inner > div.container > div.nav-collapse > ul.nav > li > a {
@@ -235,9 +235,11 @@ div.gradient-panel {
 
 #logo-container {
   background-image: -moz-radial-gradient(#7891E4,#E0E9F0);
+  /*background: -webkit-gradient(radial, center center, 0, from(#7891E4), to(#E0E9F0));*/
   background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#7891E4), to(#E0E9F0)); 
-  background-image: -webkit-radial-gradient(#E0E9F0, #E0E9F0); 
-  background-image: radial-gradient(#E0E9F0, #E0E9F0);
+  background-image: -webkit-radial-gradient(#7891E4, #E0E9F0); 
+  background-image: radial-gradient(#7891E4, #E0E9F0);
+  
   } 
 
   
