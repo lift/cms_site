@@ -191,7 +191,7 @@ div.gradient-panel {
    display: inline-block;
    float:left;
    width:24%; min-width:204px;
-   min-height:90px;
+   min-height:105px;
 	border: none;  
 	padding: 10px 5px 5px 10px;
 	margin: 0px 0.5% 15px 0.5%;
