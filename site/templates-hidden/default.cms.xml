@@ -68,7 +68,7 @@
 									<div class="row-fluid">
 										<div class="span12">
 										    <div id="lh-quote">
-											<lift:choose refresh="14" class="hello">
+											<lift:choose refresh="17" class="hello">
 												<lift:embed what="/quotes/luke" />
 <!-- 												<lift:embed what="/quotes/lukasz" /> -->
                                                 <lift:embed what="/quotes/lukasz-tyler" />
