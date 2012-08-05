@@ -1,14 +1,22 @@
-<cms path="/quotes/tyler" type="html" locale="en_US" host="liftweb.net">
+<cms path="/quotes/lukasz" type="html" locale="en_US" host="liftweb.net">
 	<content>
+	    
 		<div class="well">
-			<blockquote class="pull-right">
+			<blockquote class="pull-left">
 				<p class="lead">
 					Just thanks for Lift. <strong>It's just so darn good.</strong>
 					I'm one-manning this giant app and I couldn't do it with anything but
 					Lift.
 				</p>
 				<small>Tyler Weir, author The Definitive Guide to Lift</small>
-			</blockquote>
+			</blockquote>	
+			<blockquote class="pull-right">
+				<p class="lead">
+					<strong>... Lift just rocks !</strong>
+				</p>
+				<small>Lukasz Kuczera, Sgrouples</small>
+			</blockquote>					
 		</div>
+	
 	</content>
 </cms>
