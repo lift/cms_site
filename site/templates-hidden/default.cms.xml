@@ -65,21 +65,42 @@
 								</div>
 
 								<lift:if toTest="quotes">
+									<script>
+								      $(document).ready(function(){
+                                        $('#lh-quote').carousel({
+                                          interval: 17000
+                                        });       
+								      });
+								    </script>
 									<div class="row-fluid">
 										<div class="span12">
-										    <div id="lh-quote">
+										    <div id="lh-quote" class="carousel slide">
+									          <div class="carousel-inner">
+										    	<div class="active item"><lift:embed what="/quotes/luke" /></div>
+										    	<div class="item"><lift:embed what="/quotes/lukasz-tyler" /></div>
+										    	<div class="item"><lift:embed what="/quotes/ebay" /></div>
+										    	<div class="item"><lift:embed what="/quotes/esme" /></div>
+										    	<div class="item"><lift:embed what="/quotes/foursquare" /></div>
+										    	<div class="item"><lift:embed what="/quotes/pongr" /></div>
+										    	<div class="item"><lift:embed what="/quotes/dale" /></div>
+										    	<div class="item"><lift:embed what="/quotes/sgrouples" /></div>
+										      </div>
+   						                    <!-- Carousel nav -->
+                                            <!-- <a class="carousel-control left" href="#hero-carousel" data-slide="prev">&lsaquo;</a> -->
+                                            <!-- <a class="carousel-control right" href="#hero-carousel" data-slide="next">&rsaquo;</a> -->
+
+										    <!--
 											<lift:choose refresh="17" class="hello">
 												<lift:embed what="/quotes/luke" />
-<!-- 												<lift:embed what="/quotes/lukasz" /> -->
                                                 <lift:embed what="/quotes/lukasz-tyler" />
 												<lift:embed what="/quotes/ebay" />
 												<lift:embed what="/quotes/esme" />
-<!-- 												<lift:embed what="/quotes/tyler" /> -->
 												<lift:embed what="/quotes/foursquare" />
 												<lift:embed what="/quotes/pongr" />
 												<lift:embed what="/quotes/dale" />
 												<lift:embed what="/quotes/sgrouples" />
 											</lift:choose>
+										-->
 											</div>
 										</div>
 									</div>
