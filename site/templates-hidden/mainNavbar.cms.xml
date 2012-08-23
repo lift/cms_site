@@ -8,7 +8,7 @@
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</a>
-							<a class="brand" href="#">Lift</a>
+							<a class="brand" href="index">Lift</a>
 							<div class="nav-collapse">
 								<ul class="nav">
 									<lift:xmenu active_class="active">
