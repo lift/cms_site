@@ -41,7 +41,7 @@
             <li>Interactive like a desktop app -- Lift's Comet support is unparalled and Lift's ajax support is super-easy and very secure</li>
           </ul>
 
-          <p>Read an <a href="/overview">overview</a> of how Lift achieves these important goals.</p>
+          <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
 
           <p>Lift open source software licensed under an Apache 2.0 license.</p>
 
