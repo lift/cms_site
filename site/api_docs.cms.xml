@@ -18,6 +18,12 @@
                             <div class="page-header">
 							<h1>Lift API Docs</h1>
                             </div>
+                                                     <p>
+                                                                <a href="/api/25-M1/api/scala/">Lift 2.5-M1 API documentation</a>
+                                                                and the
+                                                                <a href="/api/25-M1/liftweb-2.5-M1.tar.gz">tarball</a>
+                                                                .
+                                                        </p>
 							<p>
 								<a href="http://scala-tools.org/mvnsites/liftweb-2.4/">Lift 2.4 API documentation</a>
 								and the
