@@ -52,7 +52,7 @@
             <li>Lots of improvements to the Comet support</li>
             <li>LiftScreen now supports very flexible CSS styling</li>
             <li>Lift now uses specs2</li>
-            <li>The Lift modules were moved to a new <a href="https://github.com/organizations/liftmodules">repository</a> and organization, allowing external contributions</li>
+            <li>The Lift modules were moved to a new <a href="https://github.com/liftmodules">repository</a> and organization, allowing external contributions</li>
             <li>Updated Lift <a href="https://github.com/lift/lift_25_sbt">templates</a></li>
             <li>jar files built against Scala 2.9.2</li>
           </ul>
