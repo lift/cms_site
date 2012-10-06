@@ -29,6 +29,30 @@
 
 								<dl>
 									<dt>Download:</dt>
+<dd>
+                                                                                <i class="icon-download-alt" style="vertical-align: midle;"></i>
+                                                                                <span class="label label-info">Lift 2.5-M1:</span>
+                                                                                <a href="https://github.com/lift/lift_25_sbt/tarball/master">TAR</a>
+                                                                                or
+                                                                                <a href="https://github.com/lift/lift_25_sbt/zipball/master">Zip</a>
+                                                                                .
+                                                                                <br />
+                                                                                Expand the project, cd into the directory and then into
+                                                                                "scala_29/lift_basic" subdirectory.
+                                                                                Then type
+                                                                                <pre class="prettyprint lang-scala">
+ ./sbt
+>   container:start
+                                        </pre>
+                                                                                and you should be able to browse to
+                                                                                <code>http://localhost:8080</code>
+                                                                                and see your running
+                                                                                Lift app.
+                                                                                <hr />
+                                                                        </dd>
+
+
+
 									<dd>
 										<i class="icon-download-alt" style="vertical-align: midle;"></i>
 										<span class="label label-info">Lift 2.4 release:</span>
