@@ -32,7 +32,7 @@
             that distinguish Lift from other web frameworks.
           </p>
 
-          <p>Lift applications are:</p>
+          <h3>Lift applications are:</h3>
           <ul>
             <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
             <li>Developer centric -- Lift apps are fast to build, concise and easy to maintain</li>

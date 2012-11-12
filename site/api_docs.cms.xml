@@ -19,6 +19,13 @@
 							<h1>Lift API Docs</h1>
                             </div>
                                                      <p>
+                                                                <a href="/api/25-M3/api/scala/">Lift 2.5-M3 API documentation</a>
+                                                                and the
+                                                                <a href="/api/25-M3/liftweb-2.5-M3.tar.gz">tarball</a>
+                                                                .
+                                                        </p>
+
+                                                     <p>
                                                                 <a href="/api/25-M2/api/scala/">Lift 2.5-M2 API documentation</a>
                                                                 and the
                                                                 <a href="/api/25-M2/liftweb-2.5-M2.tar.gz">tarball</a>
