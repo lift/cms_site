@@ -12,33 +12,37 @@
 
 			<div class="row-fluid">
 				<div class="span12">
-
 					<div class="row-fluid">
 						<div class="span9">
-                            <div class="page-header">
-							<h1>Lift API Docs</h1>
-                            </div>
-                                                     <p>
-                                                                <a href="/api/25-M3/api/scala/">Lift 2.5-M3 API documentation</a>
-                                                                and the
-                                                                <a href="/api/25-M3/liftweb-2.5-M3.tar.gz">tarball</a>
-                                                                .
-                                                        </p>
+              <div class="page-header">
+	  						<h1>Lift API Docs</h1>
+              </div>
+              <p>
+                <a href="/api/25-M4/api/scala/">Lift 2.5-M4 API documentation</a>
+                and the
+                <a href="/api/25-M4/liftweb-2.5-M4.tar.gz">tarball</a>
+                .
+              </p>
+              <p>
+                <a href="/api/25-M3/api/scala/">Lift 2.5-M3 API documentation</a>
+                and the
+                <a href="/api/25-M3/liftweb-2.5-M3.tar.gz">tarball</a>
+                .
+              </p>
+              <p>
+                <a href="/api/25-M2/api/scala/">Lift 2.5-M2 API documentation</a>
+                and the
+                <a href="/api/25-M2/liftweb-2.5-M2.tar.gz">tarball</a>
+                .
+              </p>
 
-                                                     <p>
-                                                                <a href="/api/25-M2/api/scala/">Lift 2.5-M2 API documentation</a>
-                                                                and the
-                                                                <a href="/api/25-M2/liftweb-2.5-M2.tar.gz">tarball</a>
-                                                                .
-                                                        </p>
-
-                                                     <p>
-                                                                <a href="/api/25-M1/api/scala/">Lift 2.5-M1 API documentation</a>
-                                                                and the
-                                                                <a href="/api/25-M1/liftweb-2.5-M1.tar.gz">tarball</a>
-                                                                .
-                                                        </p>
-							<p>
+              <p>
+                <a href="/api/25-M1/api/scala/">Lift 2.5-M1 API documentation</a>
+                and the
+                <a href="/api/25-M1/liftweb-2.5-M1.tar.gz">tarball</a>
+                .
+              </p>
+              <p>
 								<a href="http://scala-tools.org/mvnsites/liftweb-2.4/">Lift 2.4 API documentation</a>
 								and the
 								<a href="http://scala-tools.org/mvnsites/liftweb-2.4.tar.bz2">tarball</a>

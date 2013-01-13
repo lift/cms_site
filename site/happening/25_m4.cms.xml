@@ -1,0 +1,90 @@
+<cms path="/25_m4" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/01/12">
+  <tag name="sub" value="happening">
+    <b>Lift 2.5-M4</b> Ships!
+  </tag>
+
+  <tag name="desc">
+    2013/01/12 The Lift team is proud to announce version 2.5-M4 of Lift.
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: 2.5-M4</title>
+      </head>
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span9">  
+            
+        <div>
+          <div class="page-header">
+          <h1>Announcing Lift 2.5-M4</h1>
+          </div>
+          <em>January 12, 2013</em>
+
+          <p>The Lift team proudly announces the <a href="/download">availability</a>
+            of the Milestone 4 release of Lift version 2.5.
+          </p>
+          <p>Lift is the most powerful, secure and mature web framework available today. There are
+            <a href="http://seventhings.liftweb.net/" target="_blank">Seven Things</a>
+            that distinguish Lift from other web frameworks.
+          </p>
+
+          <p>Lift applications are:</p>
+          <ul>
+            <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
+            <li>Developer centric -- Lift apps are fast to build, concise and easy to maintain</li>
+            <li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
+            <li>Interactive like a desktop app -- Lift's Comet support is unparalleled and Lift's ajax support is super-easy and very secure</li>
+          </ul>
+          <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
+          <p>Lift open source software licensed under an Apache 2.0 license.</p>
+          <h3>Highlights of this release</h3>
+          <ul>
+            <li><a href="https://github.com/lift/framework/pull/1393">Lift version 2.5-M4 has been built for Scala 2.10!</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1383">Couchdb-record is now a separate module.</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1379">Memoize the value of a resource lookup for the duration of the request.</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1375">LiftResponses now preserve all the headers.</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1386">Upgraded Squeryl to version 0.9.5-6.</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1373">Upgraded mongo-java-driver to version 2.10.0.</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1366">Reprocess failed ajax requests.</a></li>
+          </ul>
+          <p>There are a lot more changes that went into 2.5-M4. A complete list of changes can be found at:</p>
+          <ul>
+            <li><a href="https://github.com/lift/framework/issues?milestone=45&amp;page=1&amp;state=closed">Tickets on github</a></li>
+          </ul>
+
+          <h3>Breaking changes</h3>
+          <a href="https://github.com/lift/framework/issues/1383">Couchdb-record was moved to an external module</a>
+          <span>This means that you will have to modify your dependencies to:</span>
+          <pre><code>
+               GroupId: net.liftmodules
+            ArtifactId: lift-couchdb
+               version: 2.5-M4-1.1 //Note that the 2.5-M4 means the version of Lift that the module was built for.
+          </code></pre>
+          <span>You will also have to rename your imports. Replace <pre><code>import net.liftweb.couchdb</code></pre> for
+            <pre><code>import net.liftmodules.couchdb</code></pre>
+          </span>
+          <a href="https://github.com/lift/framework/issues/1343">Ensure equals method works properly with all Fields</a>
+          <span>This was in 2.5-M3, but was not included in the braking changes.</span>
+          <span>The problem is that before when there was no value set, Mongodb received defaultValue.
+            Now problem is that it gets JNull if no value is set.
+            Loading next time you get exception because Lift tries to parse JNull into something meaningfull</span>
+          <span>If you application broke after this change, one solution is to use <pre><code>override def optional_? = true</code></pre></span>
+
+          <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
+            and enjoy building awesome apps with Lift.</p>
+
+        </div>
+          </div>      
+	        <div class="span3">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div> 
+    </lift:surround>
+  </content>
+</cms>
