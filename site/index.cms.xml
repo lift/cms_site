@@ -2,7 +2,7 @@
 	<tag name="menu" value=" Home" />
 	<tag name="menu-icon" value="icon-home icon-white" />
 	<tag name="order" value="1" />
-	<tag name="exclude_dir_from_rendering" value="/api"/>
+	<tag name="exclude_dir_from_rendering" value="/api/"/>
 	<content>
 		<lift:surround with="default" at="content" quotes="true">
 			<head>
