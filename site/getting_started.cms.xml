@@ -29,6 +29,17 @@
 								features are accessed.
 							</p>
 							</div>
+							
+							<h2>How to Install and Setup</h2>
+							<p>
+								The <a href="http://cookbook.liftweb.net/">Lift Cookbook</a>
+								is the most up-to-date resource to learn how to use Lift.
+								First off, you should learn how to
+								<a href="http://cookbook.liftweb.net/#DownloadAndRun">Download and Run</a> Lift.
+								Then, if you use an IDE, you can learn how to use them with Lift:
+								you can set up <a href="http://cookbook.liftweb.net/#idea">IntelliJ IDEA</a> or
+								<a href="http://cookbook.liftweb.net/#eclipse">Eclipse</a>.
+							</p>
 
 							<h2>From an MVC background</h2>
 							<p>
