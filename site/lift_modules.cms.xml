@@ -1,0 +1,23 @@
+<cms path="/lift_modules" serve="true" type="html" locale="en_US" host="liftweb.net">
+  <tag name="redirect" value="https://github.com/liftmodules/"/>
+  <tag name="name" value="lift_modules"/>
+  <tag name="menu" value=" Lift Modules"/>
+  <tag name="menu-locgroup" value="locgroup1" />
+  <tag name="menu-icon" value="icon-wrench"/>
+  <tag name="order" value="1"/>
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+	<title>Lift :: Lift Modules</title>
+      </head>
+      
+      <div id="left">
+	<script>
+	  // <![CDATA[
+             window.location = "https://github.com/liftmodules/";
+          // ]]>
+	</script>
+      </div> <!-- left -->
+    </lift:surround>
+  </content>
+</cms>
