@@ -5,7 +5,7 @@
   <tag name="menu-locgroup" value="locgroup1" />
   <tag name="menu-icon" value="icon-list-alt" />
   <tag name="menu-divider" value="hdivider" />
-  <tag name="order" value="5"/>
+  <tag name="order" value="6"/>
 <!--   <tag name="order" value="8"/> -->
   <content>
     <lift:surround with="default" at="content">
