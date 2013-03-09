@@ -1,4 +1,4 @@
-<cms path="/25_rc1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/02/22">
+<cms path="/25_rc2" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/02/22">
   <tag name="sub" value="happening">
     <b>Lift 2.5-RC2</b> Ships!
   </tag>
