@@ -1,16 +1,16 @@
 <cms path="/25_rc1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/02/22">
   <tag name="sub" value="happening">
-    <b>Lift 2.5-RC1</b> Ships!
+    <b>Lift 2.5-RC2</b> Ships!
   </tag>
 
   <tag name="desc">
-    2013/02/22 The Lift team is proud to announce version 2.5-RC1 of Lift.
+    2013/03/08 The Lift team is proud to announce version 2.5-RC2 of Lift.
   </tag>
 
   <content>
     <lift:surround with="default" at="content">
       <head>
-        <title>Lift :: 2.5-RC1</title>
+        <title>Lift :: 2.5-RC2</title>
       </head>
     <div class="row-fluid">
       <div class="span12">
@@ -20,12 +20,12 @@
             
         <div>
           <div class="page-header">
-          <h1>Announcing Lift 2.5-RC1</h1>
+          <h1>Announcing Lift 2.5-RC2</h1>
           </div>
-          <em>February 22, 2013</em>
+          <em>March 08, 2013</em>
 
           <p>The Lift team proudly announces the <a href="/download">availability</a>
-            of the Release Candidate 1 of Lift version 2.5.
+            of the Release Candidate 2 of Lift version 2.5.
           </p>
           <p>Lift is the most powerful, secure and mature web framework available today. There are
             <a href="http://seventhings.liftweb.net/" target="_blank">Seven Things</a>
@@ -43,9 +43,10 @@
           </ul>
           <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
           <p>Lift open source software licensed under an Apache 2.0 license.</p>
-          <h3>A complete list of changes that made it into 2.5-RC1 can be found at:</h3>
+          <h3>Changes included in RC2</h3>
           <ul>
-            <li><a href="https://github.com/lift/framework/issues?milestone=47&amp;state=closed">Tickets on github</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1416">Mapper should use bcrypt</a></li>
+            <li><a href="https://github.com/lift/framework/issues/1415">A couple of LiftScreen fixes</a></li>
           </ul>
          
           <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
