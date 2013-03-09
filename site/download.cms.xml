@@ -29,7 +29,7 @@
 									<dt>Download:</dt>
                   <dd>
                     <i class="icon-download-alt" style="vertical-align: midle;"></i>
-                    <span class="label label-info">Lift 2.5-M4:</span>
+                    <span class="label label-info">Lift 2.5-RC2:</span>
                     <a href="https://github.com/lift/lift_25_sbt/tarball/master">TAR</a>
                     or
                     <a href="https://github.com/lift/lift_25_sbt/zipball/master">Zip</a>
@@ -57,7 +57,7 @@
 										"scala_28/lift_basic" subdirectory.
 										Then type
 										<pre class="prettyprint lang-scala">
- sbt update ~jetty-run		
+ sbt update ~jetty-run
                                         </pre>
 										and you should be able to browse to
 										<code>http://localhost:8080</code>
@@ -66,7 +66,7 @@
 										<hr />
 									</dd>
 									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
 										<span class="label label-info">Lift 2.3 release:</span>
 										<a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a>
 										or
@@ -86,7 +86,7 @@
 									</dd>
 
 									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
 										<span class="label label-info">Lift 2.2 release:</span>
 										<a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a>
 										or
@@ -105,7 +105,7 @@
 									</dd>
 
 									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i> 
+										<i class="icon-download-alt" style="vertical-align: midle;"></i>
 										<span class="label label-info">Lift 2.1 release:</span>
 										<a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a>
 										or
