@@ -29,7 +29,7 @@
 									<dt>Download:</dt>
                   <dd>
                     <i class="icon-download-alt" style="vertical-align: midle;"></i>
-                    <span class="label label-info">Lift 2.5-RC2:</span>
+                    <span class="label label-info">Lift 2.5-RC3:</span>
                     <a href="https://github.com/lift/lift_25_sbt/tarball/master">TAR</a>
                     or
                     <a href="https://github.com/lift/lift_25_sbt/zipball/master">Zip</a>
