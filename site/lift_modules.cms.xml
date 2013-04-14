@@ -5,19 +5,296 @@
   <tag name="menu-locgroup" value="locgroup1" />
   <tag name="menu-icon" value="icon-wrench"/>
   <tag name="order" value="1"/>
-  <content>
-    <lift:surround with="default" at="content">
-      <head>
-	<title>Lift :: Lift Modules</title>
-      </head>
-      
-      <div id="left">
-	<script>
-	  // <![CDATA[
-             window.location = "https://github.com/liftmodules/";
-          // ]]>
-	</script>
-      </div> <!-- left -->
-    </lift:surround>
-  </content>
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift :: Modules</title>
+			</head>
+
+			<div class="row-fluid">
+				<div class="span12">
+
+					<div class="row-fluid">
+						<div class="span9">
+							<div class="page-header">
+								<h1>
+									Modules
+								</h1>
+							</div>
+							<p>
+								Lift has supported modules from the first version of the project
+								in 2007. Lift&#8217;s entire handling
+								of the HTTP request/response cycle is open to hooks. Further,
+								Lift&#8217;s templating mechanism where
+								resulting HTML pages are composed by transforming page content via
+								snippets
+								(See
+								<a title="Snippets"
+									href="https://www.assembla.com/spaces/liftweb/wiki/Snippets">Snippets</a>
+								)
+								which are simply functions that take HTML and return HTML:
+								<code>NodeSeq =&gt; NodeSeq</code>.
+								Because Lift&#8217;s snippet resolution mechanism is open and any code
+								referenced in Boot,
+								any code can be a Lift "module&#8217;&#8217; by virtue of
+								registering its snippets and other resources in
+								<a title="LiftRules"
+									href="https://www.assembla.com/spaces/liftweb/wiki/LiftRules">LiftRules</a>.
+							</p>
+
+							<p>
+								Information on this page is taken from
+								<a title="Lift's introductory page on Modules"
+									href="https://www.assembla.com/spaces/liftweb/wiki/Modules">Lift's introductory page on Modules</a>
+								so if you are interested in more than a short introduction on
+								Lift Modules or if the module you are looking
+								for is not listed in the table bellow visit the
+								<a title="Lift Wiki" href="https://www.assembla.com/spaces/liftweb/wiki/">Lift Wiki</a> <a title="Modules"
+									href="https://www.assembla.com/spaces/liftweb/wiki/Modules">Modules page</a> 
+								for more information, it may be more up to date.
+							</p>
+
+								<h3>
+									Modules List
+								</h3>
+							<table  class="table table-bordered">
+							   <thead>
+								<tr style="background-color: #D9EDF7">
+									<th style="width: 20%;">Name               </th>
+									<th>Description </th>
+								</tr>
+							    </thead>
+							    <tbody>
+								<tr>
+									<td> Mongo Auth           </td>
+									<td>
+										<a href="https://github.com/eltimn/lift-mongoauth">https://github.com/eltimn/lift-mongoauth</a>
+										<br />
+										Authentication and Authorization module for Lift Mongo DB
+										Record.
+									</td>
+								</tr>
+								<tr>
+									<td> Extras                     </td>
+									<td>
+										<a href="https://github.com/eltimn/lift-extras">https://github.com/eltimn/lift-extras</a>
+										<br />
+										Some utils for developing Lift webapps: notices, bootstrap
+										alerts,
+										Knockout JS, Snippet helper&#8230;.. See also:
+										<a href="http://www.eltimn.com">http://www.eltimn.com</a>
+									</td>
+								</tr>
+								<tr>
+									<td> Omni Auth            </td>
+									<td>
+										<a href="https://github.com/ghostm/lift-omniauth">https://github.com/ghostm/lift-omniauth</a>
+										<br />
+										Authenticates using Facebook, Twitter, Github
+									</td>
+								</tr>
+								<tr>
+									<td> Couch DB            </td>
+									<td>
+										<a href="https://github.com/liftmodules/couchdb">https://github.com/liftmodules/couchdb</a>
+										<br />
+										Lift Module providing Lift Record implementation for
+										<a title="CouchDB" href="https://www.assembla.com/spaces/liftweb/wiki/show/liftweb/CouchDB">CouchDB</a>
+										persistence
+									</td>
+								</tr>
+								<tr>
+									<td> Textile                  </td>
+									<td>
+										<a href="https://github.com/liftmodules/textile">https://github.com/liftmodules/textile</a>
+										<br />
+										Lift module adding support for Textile markup format
+									</td>
+								</tr>
+								<tr>
+									<td> Pay Pal               </td>
+									<td>
+										<a href="https://github.com/liftmodules/paypal">https://github.com/liftmodules/paypal</a>
+										<br />
+										Lift module integrating with
+										<a title="PayPal" href="https://www.assembla.com/spaces/liftweb/wiki/show/liftweb/PayPal">PayPal</a>
+										IPN and PDT
+									</td>
+								</tr>
+								<tr>
+									<td> AMQP                 </td>
+									<td>
+										<a href="https://github.com/liftmodules/amqp">https://github.com/liftmodules/amqp</a>
+										<br />
+										Advanced Message Queuing Protocol (AMQP) support
+									</td>
+								</tr>
+								<tr>
+									<td> Imaging </td>
+									<td>
+										<a href="https://github.com/liftmodules/imaging">https://github.com/liftmodules/imaging</a>
+										<br />
+										Lift module providing image processing utilities
+									</td>
+								</tr>
+								<tr>
+									<td> Widgets </td>
+									<td>
+										<a href="https://github.com/liftmodules/widgets">https://github.com/liftmodules/widgets</a>
+										<br />
+										A collection of useful widgets for use with Lift
+									</td>
+								</tr>
+								<tr>
+									<td> Oauth                                      </td>
+									<td>
+										<a href="https://github.com/liftmodules/oauth">https://github.com/liftmodules/oauth</a>
+										<br />
+										Code to allow you to build an OAuth server
+									</td>
+								</tr>
+								<tr>
+									<td> Oauth Mapper                         </td>
+									<td>
+										<a href="https://github.com/liftmodules/oauth-mapper">https://github.com/liftmodules/oauth-mapper</a>
+										<br />
+										Mapper-based extension to the Lift OAuth module.
+									</td>
+								</tr>
+								<tr>
+									<td> Open ID                        </td>
+									<td>
+										<a href="https://github.com/liftmodules/openid">https://github.com/liftmodules/openid</a>
+										<br />
+										<a title="OpenID" href="https://www.assembla.com/spaces/liftweb/wiki/show/liftweb/OpenID">OpenID</a>
+										integration for Lift.
+									</td>
+								</tr>
+								<tr>
+									<td> Facebook             </td>
+									<td>
+										<a href="https://github.com/liftmodules/facebook">https://github.com/liftmodules/facebook</a>
+										<br />
+										Lift integration with Facebook
+									</td>
+								</tr>
+								<tr>
+									<td> JTA                      </td>
+									<td>
+										<a href="https://github.com/liftmodules/jta">https://github.com/liftmodules/jta</a>
+										<br />
+										Lift Java Transaction API integration
+									</td>
+								</tr>
+								<tr>
+									<td> Machine              </td>
+									<td>
+										<a href="https://github.com/liftmodules/machine">https://github.com/liftmodules/machine</a>
+										<br />
+										A mapper-based state machine
+									</td>
+								</tr>
+								<tr>
+									<td> Scalate              </td>
+									<td>
+										<a href="https://github.com/liftmodules/scalate">https://github.com/liftmodules/scalate</a>
+										<br />
+										Lift integration with Scalate
+									</td>
+								</tr>
+								<tr>
+									<td> XMPP               </td>
+									<td>
+										<a href="https://github.com/liftmodules/xmpp">https://github.com/liftmodules/xmpp</a>
+										<br />
+										This module provides support for XMLL (eXtensible Messaging
+										and
+										Presence
+										Protocol, a.k.a Jabber) in Lift
+									</td>
+								</tr>
+								<tr>
+									<td> Google Analytics </td>
+									<td>
+										<a href="https://github.com/d6y/liftmodules-googleanalytics">https://github.com/d6y/liftmodules-googleanalytics
+										</a>
+										<br />
+										Inserts the Google Analytics async tracking code into a Lift
+										application.
+										That is, if you supply a Google Analytics tracking ID,
+										the head of
+										all pages will have the Google tracking Javascript code
+										automatically added.
+									</td>
+								</tr>
+								<tr>
+									<td> IMAP IDLE          </td>
+									<td>
+										<a href="https://github.com/d6y/liftmodules-imap-idle">https://github.com/d6y/liftmodules-imap-idle</a>
+										<br />
+										Provides push-like email: your Lift web application can be
+										notified
+										when
+										email arrives, via the IMAP IDLE feature.
+									</td>
+								</tr>
+								<tr>
+									<td> Jq Plot                 </td>
+									<td>
+										<a href="https://github.com/jonoabroad/liftmodules-jqplot">https://github.com/jonoabroad/liftmodules-jqplot</a>
+										<br />
+										Add graphs via
+										<a title="JqPlot" href="https://www.assembla.com/spaces/liftweb/wiki/show/liftweb/JqPlot">JqPlot</a>
+										into a Lift application.
+									</td>
+								</tr>
+								<tr>
+									<td> AWS SNS          </td>
+									<td>
+										<a href="https://github.com/SpiralArm/liftmodules-aws-sns">https://github.com/SpiralArm/liftmodules-aws-sns</a>
+										<br />
+										Lift module to plug AWS SNS (Simple Notification Service) into
+										your
+										Lift
+										application.
+									</td>
+								</tr>
+								<tr>
+									<td> JQuery                </td>
+									<td>
+										<a href="https://github.com/karma4u101/lift-jquery-module">https://github.com/karma4u101/lift-jquery-module</a>
+										<br />
+										Lift JQurey module, that aomatically give you minified files
+										in
+										production. The module also simultaneous provides several JQuery
+										versions.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										FoBo
+									</td>
+									<td>
+										<a href="https://github.com/karma4u101/FoBo">https://github.com/karma4u101/FoBo</a>
+										<br />
+										A Generic Front-End Toolkit Module for Lift. The module
+										comprises of
+										several sub modules that let&#8217;s you plug in Twitter Bootstrap, Font Awesome, 
+										AngularJS, ...and more into your Lift application&#8230; See also:
+										<a href="http://www.media4u101.se/fobo-lift-template-demo/">FoBo live demo.</a>
+									</td>
+								</tr>
+								</tbody>	
+							</table>
+
+                        </div>
+						<div id="col2" class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</lift:surround>
+	</content>
 </cms>
