@@ -263,9 +263,8 @@
 									<td>
 										<a href="https://github.com/karma4u101/lift-jquery-module">https://github.com/karma4u101/lift-jquery-module</a>
 										<br />
-										Lift JQurey module, that aomatically give you minified files
-										in
-										production. The module also simultaneous provides several JQuery
+										Lift JQurey module, that automatically give you minified files
+										in production. The module also simultaneous provides several JQuery
 										versions.
 									</td>
 								</tr>
