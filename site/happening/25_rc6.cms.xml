@@ -16,8 +16,8 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span9">  
-            
+          <div class="span9">
+
         <div>
           <div class="page-header">
           <h1>Announcing Lift 2.5-RC6</h1>
@@ -43,19 +43,19 @@
           </ul>
           <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
           <p>Lift open source software licensed under an Apache 2.0 license.</p>
-          <h3>Changes included in RC5 can be found on <a href="https://github.com/lift/framework/issues?milestone=52&amp;state=closed">Github</a></h3>
+          <h3>Changes included in RC6 can be found on <a href="https://github.com/lift/framework/issues?milestone=52&amp;state=closed">Github</a></h3>
 
           <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
             and enjoy building awesome apps with Lift.</p>
 
         </div>
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
+          </div>
+	        <div class="span3">
+	          <lift:embed what="col2"/>
             </div>
-        </div>     
-        </div>  
-      </div> 
+        </div>
+        </div>
+      </div>
     </lift:surround>
   </content>
 </cms>

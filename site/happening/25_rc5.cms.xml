@@ -1,4 +1,4 @@
-<cms path="/25_rc5" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/04/017">
+<cms path="/25_rc5" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/04/17">
   <tag name="sub" value="happening">
     <b>Lift 2.5-RC5</b> Ships!
   </tag>
@@ -16,8 +16,8 @@
       <div class="span12">
 
         <div class="row-fluid">
-          <div class="span9">  
-            
+          <div class="span9">
+
         <div>
           <div class="page-header">
           <h1>Announcing Lift 2.5-RC5</h1>
@@ -49,13 +49,13 @@
             and enjoy building awesome apps with Lift.</p>
 
         </div>
-          </div>      
-	        <div class="span3">  
-	          <lift:embed what="col2"/> 
+          </div>
+	        <div class="span3">
+	          <lift:embed what="col2"/>
             </div>
-        </div>     
-        </div>  
-      </div> 
+        </div>
+        </div>
+      </div>
     </lift:surround>
   </content>
 </cms>
