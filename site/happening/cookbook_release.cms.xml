@@ -1,0 +1,53 @@
+<cms path="/cookbook-print" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/06/28">
+  <tag name="sub" value="happening">
+    Lift Cookbook in Print
+  </tag>
+
+  <tag name="desc">
+    2013/06/28 The Lift Cookbook is now available from O'Reilly.
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: Cookbook</title>
+      </head>
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span9">
+
+          <div class="page-header">
+            <h1>Lift Cookbook Goes to Press</h1>
+          </div>
+          <em>June 28, 2013</em>
+
+          <p>
+            <a href="http://shop.oreilly.com/product/0636920029151.do">
+              <img
+              src="http://akamaicovers.oreilly.com/images/0636920029151/cat.gif"
+              alt="Lift Cookbook cover" width="180" height="236" />
+            </a>
+          </p>
+
+          <p>
+           This book of "recipes from the community for building web applications with Scala" is now <a href="http://shop.oreilly.com/product/0636920029151.do">available from O'Reilly</a> in print, Kindle, EPUB and other electronic formats.
+           Don't forget you can also access the cookbook online at: <a href="http://cookbook.liftweb.net/">http://cookbook.liftweb.net/</a>.
+          </p>
+
+          <p>
+            The recipes focus on Lift 2.5.x with SBT, and all the author royalties are
+            donated to <a href="http://www.alzheimers.org.uk/">the Alzheimer's Society</a> charity.
+          </p>
+
+          </div>
+	        <div class="span3">
+	          <lift:embed what="col2"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    </lift:surround>
+  </content>
+</cms>
