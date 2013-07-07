@@ -1,0 +1,170 @@
+<cms path="/lift_25_noteworthy" serve="true" type="html" locale="en_US"
+	host="liftweb.net">
+	<tag name="name" value="Noteworthy" />
+	<content>
+		<lift:surround with="default" at="content">
+			<head>
+				<title>Lift 2.5 :: New and Noteworthy</title>
+			</head>
+
+			<div class="row-fluid">
+				<div class="span12">
+
+					<div class="row-fluid">
+						<div class="span9">
+							<div class="page-header">
+								<h1>Lift 2.5: New and Noteworthy</h1>
+							</div>
+
+							<div class="alert alert-warning alert-block">
+								<h4>Community work in progress!</h4>
+								<p>
+									This page is a ongoing community work to collect, format and list
+									new
+									and noteworthy features in the recently released 2.5.x Lift
+									release.
+									When the work is done this "Community work in progress" note will
+									be
+									removed and the page will be properly referenced.
+								</p>
+							</div>
+
+							<p>
+								The following is a community effort to collect Lift 2.5 new and
+								noteworthy.
+								This work is originating from the lift community list tread
+								<a
+									href="http://grokbase.com/t/gg/liftweb/136xz2sx3k/lift-list-of-lift-2-5-main-new-features">List of lift 2.5 main new features</a>.
+							</p>
+							<h2>Lift 2.5 Changes</h2>
+							<p>
+								Lift 2.5 is the first Lift with 2.10 support - has been for
+								all of this year, but now it's final. 2.5 is keeping 2.9 as well.
+								Named actors and a lot of other improvements to the
+								<a href="http://blog.fmpwizard.com/blog/comet-actors-presentation">Comet support</a>.
+								Improved jsonCall methods based on the powerful lift-json library.
+							</p>
+							<dl>
+								<dt>Opening up of the code base:</dt>
+								<dd>
+									<a href="lift_modules">Modules</a>
+									opened up. The Lift modules were moved to a new repository and
+									organization, allowing external contributions
+								</dd>
+								<dd>
+									<a href="https://github.com/lift/framework#pull-requests">Core lift</a>
+									for small changes.
+								</dd>
+							</dl>
+
+
+							<ul>
+								<li>
+									Comet improvements (named actors), library upgrades, way jQuery
+									bundled, features
+									around browser-to-Lift JSON processing.
+								</li>
+								<li>
+									Improved css selector transformations using typeclasses
+								</li>
+								<li>
+									Upgraded Squeryl to version 0.9.5
+								</li>
+								<li>
+									Unified resource lookup (i18n), giving you the option to override
+									Lift's core messages
+								</li>
+								<li>
+									Lots of improvements to the Comet support
+								</li>
+								<li>
+									LiftScreen now supports very flexible CSS styling
+								</li>
+								<li>
+									Lift now uses specs2
+								</li>
+								<li>
+									Updated Lift templates
+								</li>
+								<li>
+									Update Scalaz library to Scalaz 7
+								</li>
+								<li>
+									jar files built against Scala 2.9.2
+								</li>
+								<li>
+									<a href="https://github.com/lift/framework/issues/1192">appendGLobalJs</a>
+								</li>
+								<li>
+									<a href="https://github.com/lift/framework/pull/1352">FlexMenuBuilder</a>
+									- allows you to build very flexible sitemaps
+								</li>
+							</ul>
+
+							<h3>Milestone's and Release candidate's</h3>
+							<p>
+								The following is a reference list to all new Lift 2.5 features and
+								bug fixes.
+							</p>
+							<dl>
+								<dt>Milestone's</dt>
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=20&amp;state=closed">2.5-M1</a>
+								</dd>
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=43&amp;state=closed">2.5-M2</a>
+								</dd>
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=44&amp;state=closed">2.5-M3</a>
+								</dd>
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=45&amp;state=closed">2.5-M4</a>
+								</dd>
+								<dt>Release candidate's</dt>
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=47&amp;state=closed">2.5-RC1</a>
+								</dd>
+
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=49&amp;state=closed">2.5-RC2</a>
+								</dd>
+
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=50&amp;state=closed">2.5-RC3</a>
+								</dd>
+								<dd>
+									<a href="">2.5-RC4</a>
+								</dd>
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=51&amp;state=closed">2.5-RC5</a>
+								</dd>
+								<dd>
+									<a
+										href="https://github.com/lift/framework/issues?milestone=52&amp;state=closed">2.5-RC6</a>
+								</dd>
+							</dl>
+
+							<h3>Future</h3>
+							<p>
+								Lift 2.6/3.0 around the time of Scala 2.11.
+							</p>
+
+
+						</div>
+						<div id="col2" class="span3">
+							<lift:embed what="col2" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</lift:surround>
+	</content>
+</cms>
