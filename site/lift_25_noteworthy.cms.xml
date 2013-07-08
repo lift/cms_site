@@ -31,44 +31,51 @@
 
 							<p>
 								The following is a community effort to collect Lift 2.5 new and
-								noteworthy.
-								This work is originating from the lift community list tread
+								noteworthy changes.
+								This work is originating from the lift community list thread
 								<a
 									href="http://grokbase.com/t/gg/liftweb/136xz2sx3k/lift-list-of-lift-2-5-main-new-features">List of lift 2.5 main new features</a>.
 							</p>
 							<h2>Lift 2.5 Changes</h2>
-							<p>
-								Lift 2.5 is the first Lift with 2.10 support - has been for
-								all of this year, but now it's final. 2.5 is keeping 2.9 as well.
-								Named actors and a lot of other improvements to the
-								<a href="http://blog.fmpwizard.com/blog/comet-actors-presentation">Comet support</a>.
-								Improved jsonCall methods based on the powerful lift-json library.
-							</p>
+							
+							<h3>High Level Changes</h3>
+
 							<dl>
-								<dt>Opening up of the code base:</dt>
+								<dt>Scala 2.10</dt>
 								<dd>
-									<a href="lift_modules">Modules</a>
-									opened up. The Lift modules were moved to a new repository and
-									organization, allowing external contributions
+									This is the first version of Lift with Scala 2.10 support. 
 								</dd>
 								<dd>
-									<a href="https://github.com/lift/framework#pull-requests">Core lift</a>
-									for small changes.
+									Lift 2.5 is also available for Scala 2.9.
+								</dd>
+							</dl>
+
+		
+							<dl>
+								<dt>Opening up of the code base</dt>
+								<dd>
+									The <a href="lift_modules">Lift Modules</a> have been 
+									opened up. Previously part of the Lift core build and release, these libraries have been moved to a new repository and
+									organization, allowing external contributions and an independent release cycle.
+								</dd>
+								<dd>
+									The core of Lift now accepts <a href="https://github.com/lift/framework#pull-requests">pull requests for small code changes</a>.
 								</dd>
 							</dl>
 
 
+							<h3>Detailed Changes</h3>
+
 							<ul>
 								<li>
-									Comet improvements (named actors), library upgrades, way jQuery
-									bundled, features
+									Comet improvements (named actors),  features
 									around browser-to-Lift JSON processing.
 								</li>
 								<li>
-									Improved css selector transformations using typeclasses
+									Improved CSS selector transformations using typeclasses.
 								</li>
 								<li>
-									Upgraded Squeryl to version 0.9.5
+									jQuery bundling changes. Either include jQuery yourself, or use the Lift jQuery module to do it for you. The details of this change <a href="http://liftweb.net/jquery">have their own page</a>, but in summary, we decided not bundle jQuery with Lift directly. 
 								</li>
 								<li>
 									Unified resource lookup (i18n), giving you the option to override
@@ -81,16 +88,7 @@
 									LiftScreen now supports very flexible CSS styling
 								</li>
 								<li>
-									Lift now uses specs2
-								</li>
-								<li>
 									Updated Lift templates
-								</li>
-								<li>
-									Update Scalaz library to Scalaz 7
-								</li>
-								<li>
-									jar files built against Scala 2.9.2
 								</li>
 								<li>
 									<a href="https://github.com/lift/framework/issues/1192">appendGLobalJs</a>
@@ -99,15 +97,35 @@
 									<a href="https://github.com/lift/framework/pull/1352">FlexMenuBuilder</a>
 									- allows you to build very flexible sitemaps
 								</li>
+								<li>
+									JAR files built against Scala 2.9.2
+								</li>
 							</ul>
 
-							<h3>Milestone's and Release candidate's</h3>
+							<h3>Library Upgrades</h3>
+
+							<ul>
+								<li>
+									Mongo Java driver was updated to version 2.10 which adds support for Mongo 2.4.
+								</li>
+								<li> 
+									Upgraded Squeryl to version 0.9.5, which adds support life cycle callbacks. You can now add "afterUpdate" and similar in your Schema. Check out their <a href="http://squeryl.org/release-notes.html">release notes</a> for other changes.
+								</li>
+								<li>
+									Lift now uses specs2 for tests.
+								</li>
+								<li>
+									Update Scalaz library to Scalaz 7.
+								</li>
+							</ul>
+
+							<h3>Milestone and Release Candidates</h3>
 							<p>
 								The following is a reference list to all new Lift 2.5 features and
 								bug fixes.
 							</p>
 							<dl>
-								<dt>Milestone's</dt>
+								<dt>Milestones</dt>
 								<dd>
 									<a
 										href="https://github.com/lift/framework/issues?milestone=20&amp;state=closed">2.5-M1</a>
@@ -124,7 +142,7 @@
 									<a
 										href="https://github.com/lift/framework/issues?milestone=45&amp;state=closed">2.5-M4</a>
 								</dd>
-								<dt>Release candidate's</dt>
+								<dt>Release candidates</dt>
 								<dd>
 									<a
 										href="https://github.com/lift/framework/issues?milestone=47&amp;state=closed">2.5-RC1</a>
