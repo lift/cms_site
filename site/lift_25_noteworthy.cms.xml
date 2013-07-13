@@ -85,6 +85,9 @@
 									Lots of improvements to the Comet support
 								</li>
 								<li>
+								Occasional deadlock with Jetty fixed: there's now finer-grained synchronization added to LiftSession to resolve this.
+								</li>
+								<li>
 									LiftScreen now supports very flexible CSS styling
 								</li>
 								<li>
