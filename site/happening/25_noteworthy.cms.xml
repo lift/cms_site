@@ -1,0 +1,12 @@
+<cms path="/25_noteworthy" serve="true" type="html" locale="en_US" 
+     valid_from="2013/07/15" host="liftweb.net">
+  <tag name="redirect" value="/lift_25_noteworthy"/>
+  <tag name="sub" value="happening">
+    Lift 2.5 New and Noteworthy
+  </tag>
+  <tag name="desc">
+    2013/07/15 A list of things new and noteworthy in Lift 2.5
+  </tag>
+  <content><div/>
+  </content>
+</cms>
