@@ -1,0 +1,15 @@
+<cms path="/quotes/twisp" type="html" locale="en_US" host="liftweb.net">
+	<content>
+		<div class="well">
+			<blockquote class="pull-right">
+        <p class="lead">
+          At twisp, we selected Lift as our development framework not only for its proven scalability 
+          and security, but also for Comet and superb Ajax support.
+          Right from initial development through the launch of twisp, 
+          Lift continues to exceed expectations.
+				</p>
+				<small>V. Tipnis, Founder, twisp.me</small>
+			</blockquote>
+		</div>
+	</content>
+</cms>

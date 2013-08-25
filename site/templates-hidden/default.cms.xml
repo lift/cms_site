@@ -79,6 +79,7 @@
 										    	<div class="item"><lift:embed what="/quotes/pongr" /></div>
 										    	<div class="item"><lift:embed what="/quotes/dale" /></div>
 										    	<div class="item"><lift:embed what="/quotes/sgrouples" /></div>
+										    	<div class="item"><lift:embed what="/quotes/twisp" /></div>
 										      </div>
    						                    <!-- Carousel nav -->
                                             <!-- <a class="carousel-control left" href="#hero-carousel" data-slide="prev">&lsaquo;</a> -->
