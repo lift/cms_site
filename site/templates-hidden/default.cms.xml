@@ -117,11 +117,13 @@
 									</div>
                                     <hr class="tight"/>
 									<div class="ftr-copy">Copyright &copy;
-										2010-2012 WorldWide Conferencing, LLC
+										2010-2013 WorldWide Conferencing, LLC
 									</div>
 									<p>
 										Lift performance and tuning is courtesy of
 										<a href="http://yourkit.com">YourKit. </a>
+										<br />
+										IntelliJ IDEA license supplied by <a href="http://www.jetbrains.com/idea/features/index.html">JetBrains</a>.
 										<br />
 										Design by
 										<a href="http://www.joyreyes.com" target="_blank">Joy Reyes</a>
