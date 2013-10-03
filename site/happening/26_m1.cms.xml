@@ -1,0 +1,144 @@
+<cms path="/26_m1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/10/01">
+  <tag name="sub" value="happening">
+    <b>Lift 2.6 M1</b>
+  </tag>
+
+  <tag name="desc">
+    2013/10/01 The Lift team is proud to announce Milestone 1 of Lift 2.6.
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: 2.6 M1</title>
+      </head>
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span9">  
+            
+        <div>
+          <div class="page-header">
+          <h1>Announcing Lift 2.6 M1</h1>
+          </div>
+          <em>Oct 01, 2013</em>
+
+          <p>The Lift team proudly announces the <a href="/download">availability</a>
+            of Milestone 1 of Lift version 2.6.
+          </p>
+          <p>Lift is the most powerful, secure and mature web framework available today. There are
+            <a href="http://seventhings.liftweb.net/" target="_blank">Seven Things</a>
+            that distinguish Lift from other web frameworks.
+          </p>
+
+          <p>Lift applications are:</p>
+          <ul>
+            <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
+            <li>Developer centric -- Lift apps are fast to build, concise and easy to maintain</li>
+            <li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
+            <li>Interactive like a desktop app -- Lift's Comet support is unparalleled and Lift's ajax support is super-easy and very secure</li>
+            <li>Modular -- Lift apps can benefit from, easy to integrate, pre built modules</li>
+            <li>Designer friendly -- Lift apps can be developed in a totally designer friendly way</li>
+          </ul>
+          <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
+          <p>Lift open source software licensed under an Apache 2.0 license.</p>
+          
+          <!-- **** START OF CHANGES PASTED FROM GITHUB RELEASE NOTES *********************** -->
+
+			  <div class="markdown-body">
+      <h1>New Features &amp; Enhancements</h1>
+
+<p><a href="https://github.com/lift/framework/issues/1462">Markdown parser included</a>: the Actuarius Markdown parser is now part of Lift. Thanks to <a href="https://github.com/chenkelmann" class="user-mention">@chenkelmann</a> and <a href="https://github.com/dpp" class="user-mention">@dpp</a>.  There's an example in <a href="https://github.com/tuhlmann/lift-3-demo/blob/master/src/main/scala/code/snippet/Markdown.scala">Torsten's Lift 3 demo source</a>.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1478">Add support for X-Frame-Options</a>: Lift now sets the "SAMEORIGIN" <a href="https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options?redirectlocale=en-US&amp;redirectslug=The_X-FRAME-OPTIONS_response_header">X-Frame-Options header</a>.  Thanks to <a href="https://github.com/dpp" class="user-mention">@dpp</a> and <a href="https://github.com/fmpwizard" class="user-mention">@fmpwizard</a>.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1471">Improved LAFutures</a>: The improvements to <code>LAFuture</code> in Lift 3.0 have been back-ported to 2.6.  This brings <code>map</code>, <code>flatMap</code>, <code>filter</code>, <code>withFilter</code>, <code>onSuccess</code>, <code>onFail</code>, and <code>onComplete</code>. Thanks to <a href="https://github.com/dpp" class="user-mention">@dpp</a> and <a href="https://github.com/fmpwizard" class="user-mention">@fmpwizard</a>.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1475">CSS Selector for first match</a>: You can now use <code>"^ [href]"</code> as a CSS selector, and it will only apply a transformation to the first match on your NodeSeq.  Thanks to <a href="https://github.com/dpp" class="user-mention">@dpp</a> and <a href="https://github.com/fmpwizard" class="user-mention">@fmpwizard</a>.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1466/files">Run-mode auto-detection</a>: when <code>run.mode</code> isn't set, you can now supply a function to determine the run mode to use by setting <code>Props.autDetectRuModeFn</code> before referencing <code>run.mode</code>. Thanks to <a href="https://github.com/japgolly" class="user-mention">@japgolly</a> for this.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1457">Make LiftRules use the html5 parser by default</a>: you no longer need to set the parser in your <code>Boot.scala</code> file.  Thanks <a href="https://github.com/fmpwizard" class="user-mention">@fmpwizard</a>. </p>
+
+<p><a href="https://github.com/lift/framework/pull/1472">No more warnings in JValue in for comprehensions</a>: <code>withFilter</code> has been implemented on <code>JValue</code>. Thanks @hedefalk.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1467">Mock Lift Actor for better unit tests</a>: The details and example are in the pull request. Thanks to @farmdawgnation.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1457">Lift now defaults to the HTML5 parser</a>: You don't need to specify HTML5 anymore in your <code>Boot.scala</code>. Thanks @fmpwizard.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1414">Addition of <code>ajaxOnSubmit</code> to <code>SHtml</code></a>: Use <code>ajaxOnSubmit</code> to bind a <code>() =&gt; JsCmd</code> submit handling function to an <code>&lt;input&gt;</code> or <code>&lt;button&gt;</code>. This allows you to retain the entire element content, except for the onclick attribute, without resorting to a hidden field.  Thanks to @Shadowfiend. </p>
+
+<p><a href="https://github.com/lift/framework/pull/1450">Conditional onEvent</a>: A convenience for prompting the user before carrying out an action. For example: <code>SHtml.onEventIf("Are you sure you want to do that?", s =&gt; deleteUser())</code>. Thanks to @farmdawgnation </p>
+
+<p><a href="https://github.com/lift/framework/pull/1188">Support for <code>form=ajax</code> as a snippet attribute</a>: You can now invoke a snippet with a <code>?form=ajax</code> parameter and Lft will do the right thing and convert it into an Ajax form.  Prior to this, you had to enclose your form with an extra div and call <code>data-lift="form.ajax"</code>. Thanks to @fmpwizard.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1427">Logging not found GUIDs</a>: Lift now logs POST or GET requests that contain no callback functions, but look like they should.  You can control this behaviour with <code>LiftRules.handleUnmappedParameter</code>. Thanks to @Shadowfiend and @serioga.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1469">Easier testing and customization of Mailer</a>: Mailer's inner class is now a trait, which allows any class extending the trait to accept <code>From()</code>, <code>To()</code> etc.  Thanks to @japgolly.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1487">Custom handling of Menu Param failing to match</a>: Normally a <code>Menu.param</code> 404s if the current value is <code>Empty</code>. You can now change the behaviour via <code>Loc.MatchWithoutCurrentValue</code>. There's an example of using this in <a href="https://github.com/lift/framework/pull/1487/files#diff-606c53226890e8146c8ac304bca152a4L739">the ScalaDoc</a>.  Thank you @farmdawgnation.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1433">Scheme-relative URLs now supported</a>: Scheme relative URLs (e.g., those starting <code>//</code>) no longer have the context path pre-pended. Thanks to @serveace.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1348">Lifecycle callbacks added to MongoMetaRecord.update</a>: there's now support for <code>beforeUpdate</code> and <code>afterUpdate</code> on Mongo records. Thanks to @eltimn.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1349">Mongo Record creation date</a>: a document creation date is now available via <code>createdAt</code>.  This uses the timestamp from Mongo's <code>ObjectId</code>. Thanks to @eltimn.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1400">Joda Time support for Mongo Record</a>: you can now use Joda's <code>DateTime</code> via <code>JodaTimeField</code>. Thanks to @eltimn.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1411">Dirty check on Record</a>: use <code>myrecord.dirty_?</code> to test if a record has been modified since being loaded. Thanks to @eltimn  </p>
+
+<p><a href="https://github.com/lift/framework/issues/1470">Maven archetypes updated</a>: thanks to @ldeck.</p>
+
+<h1>Bug fixes, Compatibility and Performance Gains</h1>
+
+<p><a href="https://github.com/lift/framework/pull/1481">Remove ActorWatcher</a>: <em>BREAKING CHANGE</em> <code>ActorWatcher</code> has been removed, as it referenced the old deprecated Scala Actor code. Thanks @fmpwizard. </p>
+
+<p><a href="https://github.com/lift/framework/pull/1465">Workaround for Scala regression SI-7612</a>: Annotate type of primaryKeyField in Mapper to avoid a StackOverflow (will be fixed in 2.10.3 or 2.11). Thanks to @retronym and @fmpwizard. </p>
+
+<p><a href="https://github.com/lift/framework/pull/1453">LAFuture.collect IndexOutOfBoundsException fix</a>: it was possible for LAFuture to throw an IndexOutOfBoundsException for futures resolved in a particular order.  This has been resolved, thanks to @tuhlmann.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1452">Jetty 9 null safety checks</a>: Under Jetty 9 it's possible for a request to say it has a header, but when you ask for the header you get null. We now protect against this, and you won't get a null header value. Thanks to @dpp.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1492">JSON parser fix for handing  scientific notation</a>: The parser was fine with e and e-, but now can handle e+ (e.g., 1.23e+1). Thank you @kluyg. </p>
+
+<p><a href="https://github.com/lift/framework/commit/538e6944a2feccb91f8f22812ace138070cd3fb2">CSS parser robustness improvements</a>: Including allowing the # character in URLs. Thanks @pbrant.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1479">Menu.item swallowed surrounding Elem</a>. From @dpp and @hedefalk.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1157"><code>Helpers.toBoolean("on")</code> now returns <code>true</code></a>: it didn't before! Thanks @fmpwizard and Denis Nevmerzhitsky.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1477">S.ieMode is misleading and so deprecated</a>:  This flag is used for a specific XML handling issue, and is not a general IE detection check. To avoid this confusion, isMode is deprecated and will probably be removed in Lift 3.  This improvement from @farmdawgnation.</p>
+
+<p><a href="https://github.com/lift/framework/issues/1429">Spelling fixes for Vendor</a> and <a href="">supplimentalKidMenuItems</a>: there have been a number of fixes to spelling mistakes in functions. Incorrect spellings have been deprecated.  Thanks to @farmdawgnation and @nafg</p>
+
+<p><a href="https://github.com/Tmr/framework/commit/bfe464a3da12c02f3b801fe79c86f829f237d156">ScalaDoc improvement to <code>ListenerManager</code></a>, thanks to @Timr.</p>
+
+<p><a href="https://github.com/lift/framework/commit/ee08fbd77219a6c688288c8b90ca22d5776434dc">Typos in the source</a>: fixed by @pbrant.</p>
+
+<p><a href="https://github.com/lift/framework/pull/1488">Out of date references to Can removed</a> by @Shadowfiend.</p>
+
+<h1>...and thanks to everyone who contributed on the mailing list, writing code, reviewing code, supplying feedback!</h1>
+    </div>
+
+
+
+
+          <!-- **** END ********************************************************************* -->
+
+
+          <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
+            and enjoy building awesome apps with Lift.</p>
+
+        </div>
+          </div>      
+	        <div class="span3">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div> 
+    </lift:surround>
+  </content>
+</cms>
