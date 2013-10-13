@@ -1,32 +1,28 @@
 <cms path="/download" serve="true" type="html" locale="en_US" host="liftweb.net">
-	<tag name="name" value="download" />
-	<tag name="menu" value=" Download" />
-	<tag name="menu-icon" value="icon-download-alt icon-white" />
+  <tag name="name" value="download" />
+  <tag name="menu" value=" Download" />
+  <tag name="menu-icon" value="icon-download-alt icon-white" />
+  <tag name="order" value="3" />
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: Download</title>
+      </head>
 
-	<tag name="order" value="3" />
-	<content>
-		<lift:surround with="default" at="content">
-			<head>
-				<title>Lift :: Download</title>
-			</head>
-
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="row-fluid">
-						<div class="span9">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid">
+            <div class="span9">
               <div class="page-header">
-                <h1>
-                  Download
-                  <small>and run using the Simple Build Tool (sbt)</small>
-                </h1>
-							</div>
-							<p>
-								<div class="alert alert-info">
-										<i class="icon-hand-right" style="vertical-align: midle;"></i>
-										<strong>Heads up!</strong> Note about <a href="/jquery" style="text-decoration: underline;">jQuery and upcoming Lift 2.5</a>
-								</div>
-								<dl>
-									<dt>Download:</dt>
+                <h1>Download <small>and run using the Simple Build Tool (sbt)</small></h1>
+              </div>
+              <p>
+                <div class="alert alert-info">
+                  <i class="icon-hand-right" style="vertical-align: midle;"></i>
+                  <strong>Heads up!</strong> Note about <a href="/jquery" style="text-decoration: underline;">jQuery and upcoming Lift 2.5</a>
+                </div>
+                <dl>
+                  <dt>Download:</dt>
                   <dd>
                     <i class="icon-download-alt" style="vertical-align: midle;"></i>
                     <span class="label label-info">Lift 2.5:</span>
@@ -39,101 +35,97 @@
                     "scala_29/lift_basic" subdirectory.
                     Then type
                     <pre class="prettyprint lang-scala">
- ./sbt
->   container:start
+                    ./sbt
+                    >   container:start
                     </pre>
                     and you should be able to browse to <code>http://localhost:8080</code> and see your running Lift app.
                     <hr />
                   </dd>
-									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i>
-										<span class="label label-info">Lift 2.4 release:</span>
-										<a href="https://github.com/lift/lift_24_sbt/tarball/master">TAR</a>
-										or
-										<a href="https://github.com/lift/lift_24_sbt/zipball/master">Zip</a>
-										.
-										<br />
-										Expand the project and cd into the directory and the
-										"scala_28/lift_basic" subdirectory.
-										Then type
-										<pre class="prettyprint lang-scala">
- sbt update ~jetty-run
-                                        </pre>
-										and you should be able to browse to
-										<code>http://localhost:8080</code>
-										and see your running
-										Lift app.
-										<hr />
-									</dd>
-									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i>
-										<span class="label label-info">Lift 2.3 release:</span>
-										<a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a>
-										or
-										<a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>
-										<br />
-										Expand the project and cd into the directory and the
-										"lift_basic" subdirectory.
-										Then type
-										<pre class="prettyprint lang-scala">
- sbt update ~jetty-run
-										</pre>
-										and you should be able to browse to
-										<code>http://localhost:8080</code>
-										and see your running
-										Lift app.
-										<hr />
-									</dd>
-
-									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i>
-										<span class="label label-info">Lift 2.2 release:</span>
-										<a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a>
-										or
-										<a href="https://github.com/lift/lift_22_sbt/zipball/2.2">Zip</a>
-										<br />
-										Expand the project and cd into the newly created
-										directory. Then type
-										<pre class="prettyprint lang-scala">
- sbt update ~jetty-run
-										</pre>
-										and you should be able to browse to
-										<code>http://localhost:8080</code>
-										and see your running
-										Lift app.
-										<hr />
-									</dd>
-
-									<dd>
-										<i class="icon-download-alt" style="vertical-align: midle;"></i>
-										<span class="label label-info">Lift 2.1 release:</span>
-										<a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a>
-										or
-										<a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a>
-										<br />
-										Expand the project and cd into the newly created
-										directory. Then type
-										<pre class="prettyprint lang-scala">
- sbt update ~jetty-run
-										</pre>
-										and you should be able to browse to
-										<code>http://localhost:8080</code>
-										and see your running
-										Lift app.
-									</dd>
-								</dl>
-							</p>
-							<p>
-								If you are having problems getting started on Linux, head over to the
-								<a href="http://groups.google.com/group/liftweb">mailing list.</a>
-							</p>
-						</div>
-						<div id="col2" class="span3">
-							<lift:embed what="col2" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</lift:surround>
-	</content>
+                  <dd>
+                    <i class="icon-download-alt" style="vertical-align: midle;"></i>
+                    <span class="label label-info">Lift 2.4 release:</span>
+                    <a href="https://github.com/lift/lift_24_sbt/tarball/master">TAR</a>
+                    or
+                    <a href="https://github.com/lift/lift_24_sbt/zipball/master">Zip</a>
+                    .
+                    <br />
+                    Expand the project and cd into the directory and the
+                    "scala_28/lift_basic" subdirectory.
+                    Then type
+                    <pre class="prettyprint lang-scala">
+                    sbt update ~jetty-run
+                                    </pre>
+                    and you should be able to browse to
+                    <code>http://localhost:8080</code>
+                    and see your running
+                    Lift app.
+                    <hr />
+                  </dd>
+                  <dd>
+                    <i class="icon-download-alt" style="vertical-align: midle;"></i>
+                    <span class="label label-info">Lift 2.3 release:</span>
+                    <a href="https://github.com/lift/lift_23_sbt/tarball/master">TAR</a>
+                    or
+                    <a href="https://github.com/lift/lift_23_sbt/zipball/master">Zip</a>
+                    <br />
+                    Expand the project and cd into the directory and the
+                    "lift_basic" subdirectory.
+                    Then type
+                    <pre class="prettyprint lang-scala">
+                    sbt update ~jetty-run
+                    </pre>
+                    and you should be able to browse to
+                    <code>http://localhost:8080</code>
+                    and see your running
+                    Lift app.
+                    <hr />
+                  </dd>
+                  <dd>
+                    <i class="icon-download-alt" style="vertical-align: midle;"></i>
+                    <span class="label label-info">Lift 2.2 release:</span>
+                    <a href="https://github.com/lift/lift_22_sbt/tarball/2.2">Tar</a>
+                    or
+                    <a href="https://github.com/lift/lift_22_sbt/zipball/2.2">Zip</a>
+                    <br />
+                    Expand the project and cd into the newly created
+                    directory. Then type
+                    <pre class="prettyprint lang-scala">
+                    sbt update ~jetty-run
+                    </pre>
+                    and you should be able to browse to
+                    <code>http://localhost:8080</code>
+                    and see your running
+                    Lift app.
+                    <hr />
+                  </dd>
+                  <dd>
+                    <i class="icon-download-alt" style="vertical-align: midle;"></i>
+                    <span class="label label-info">Lift 2.1 release:</span>
+                    <a href="http://github.com/lift/lift_21_sbt/tarball/Lift_21">Tar</a>
+                    or
+                    <a href="http://github.com/lift/lift_21_sbt/zipball/Lift_21">Zip</a>
+                    <br />
+                    Expand the project and cd into the newly created
+                    directory. Then type
+                    <pre class="prettyprint lang-scala">
+                    sbt update ~jetty-run
+                    </pre>
+                    and you should be able to browse to
+                    <code>http://localhost:8080</code>
+                    and see your running
+                    Lift app.
+                  </dd>
+                </dl>
+              </p>
+              <p>If you are having problems getting started on Linux, head over to the
+              <a href="http://groups.google.com/group/liftweb">mailing list.</a></p>
+            </div>
+            <div id="col2" class="span3">
+              <lift:embed what="col2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </lift:surround>
+  </content>
 </cms>
