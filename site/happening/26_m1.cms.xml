@@ -65,8 +65,6 @@
 
 <p><a href="https://github.com/lift/framework/pull/1467">Mock Lift Actor for better unit tests</a>: The details and example are in the pull request. Thanks to @farmdawgnation.</p>
 
-<p><a href="https://github.com/lift/framework/pull/1457">Lift now defaults to the HTML5 parser</a>: You don't need to specify HTML5 anymore in your <code>Boot.scala</code>. Thanks @fmpwizard.</p>
-
 <p><a href="https://github.com/lift/framework/pull/1414">Addition of <code>ajaxOnSubmit</code> to <code>SHtml</code></a>: Use <code>ajaxOnSubmit</code> to bind a <code>() =&gt; JsCmd</code> submit handling function to an <code>&lt;input&gt;</code> or <code>&lt;button&gt;</code>. This allows you to retain the entire element content, except for the onclick attribute, without resorting to a hidden field.  Thanks to @Shadowfiend. </p>
 
 <p><a href="https://github.com/lift/framework/pull/1450">Conditional onEvent</a>: A convenience for prompting the user before carrying out an action. For example: <code>SHtml.onEventIf("Are you sure you want to do that?", s =&gt; deleteUser())</code>. Thanks to @farmdawgnation </p>
