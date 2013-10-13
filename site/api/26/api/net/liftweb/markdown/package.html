@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>net.liftweb.markdown</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a></p>
+        <h1>markdown</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">markdown</span>
+      </span>
+      </h4>
+      
+      <div class="fullcommenttop" id="comment"></div>
+    
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="net.liftweb.markdown.ActuariusTransformer" data-isabs="false">
+      <a id="ActuariusTransformer:ActuariusTransformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ActuariusTransformer.html"><span class="name">ActuariusTransformer</span></a><span class="result"> extends Transformer</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Simple Standalone Markdown transformer.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.AtxHeaderLine" data-isabs="false">
+      <a id="AtxHeaderLine:AtxHeaderLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AtxHeaderLine.html"><span class="name">AtxHeaderLine</span></a><span class="params">(<span name="pre">pre: String</span>, <span name="pay">pay: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">An atx style header line.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.BaseParsers" data-isabs="true">
+      <a id="BaseParsers:BaseParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BaseParsers.html"><span class="name">BaseParsers</span></a><span class="result"> extends RegexParsers</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Basic parsers for Markdown Source.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.BlockParsers" data-isabs="true">
+      <a id="BlockParsers:BlockParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BlockParsers.html"><span class="name">BlockParsers</span></a><span class="result"> extends Parsers</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A parser for the markdown language.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.BlockQuoteLine" data-isabs="false">
+      <a id="BlockQuoteLine:BlockQuoteLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BlockQuoteLine.html"><span class="name">BlockQuoteLine</span></a><span class="params">(<span name="pre">pre: String</span>, <span name="pay">pay: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A line indicating a block quote (starts with &quot;&gt; &quot;)
+</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.CodeLine" data-isabs="false">
+      <a id="CodeLine:CodeLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CodeLine.html"><span class="name">CodeLine</span></a><span class="params">(<span name="pre">pre: String</span>, <span name="pay">pay: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A line in verbatim code or the continuation of a list item
+</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.Decorator" data-isabs="true">
+      <a id="Decorator:Decorator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Decorator.html"><span class="name">Decorator</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This trait influences the behavior of the Markdown output of inline and block parsers
+and the complete transformer.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.EmptyLine" data-isabs="false">
+      <a id="EmptyLine:EmptyLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EmptyLine.html"><span class="name">EmptyLine</span></a><span class="params">(<span name="content">content: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A line consisting only of whitespace.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.ExtendedFencedCode" data-isabs="false">
+      <a id="ExtendedFencedCode:ExtendedFencedCode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtendedFencedCode.html"><span class="name">ExtendedFencedCode</span></a><span class="params">(<span name="pre">pre: String</span>, <span name="pay">pay: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Starting line of a fenced code block: three backticks followed by an optional
+language token
+</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.FencedCode" data-isabs="false">
+      <a id="FencedCode:FencedCode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FencedCode.html"><span class="name">FencedCode</span></a><span class="params">(<span name="pre">pre: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Ending line of a fenced code block: three backticks followed by optional whitespace
+</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.InlineParsers" data-isabs="true">
+      <a id="InlineParsers:InlineParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InlineParsers.html"><span class="name">InlineParsers</span></a><span class="result"> extends BaseParsers</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A parser for inline markdown, markdown escapes and XML escapes.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.LineParsers" data-isabs="true">
+      <a id="LineParsers:LineParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LineParsers.html"><span class="name">LineParsers</span></a><span class="result"> extends InlineParsers</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Parses single lines into tokens.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.LineReader" data-isabs="false">
+      <a id="LineReader:LineReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LineReader.html"><span class="name">LineReader</span></a><span class="params">(<span name="lines">lines: Seq[String]</span>, <span name="lineCount">lineCount: Int</span>)</span><span class="result"> extends Reader[String] with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A Reader for reading whole Strings as tokens.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer" data-isabs="false">
+      <a id="LineTokenizer:LineTokenizer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LineTokenizer.html"><span class="name">LineTokenizer</span></a><span class="result"> extends Parsers</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Chops the input into lines and turns those lines into line tokens.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.LinkDefinition" data-isabs="false">
+      <a id="LinkDefinition:LinkDefinition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LinkDefinition.html"><span class="name">LinkDefinition</span></a><span class="params">(<span name="id">id: String</span>, <span name="url">url: String</span>, <span name="title">title: Option[String]</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Definition of a link or url that can be referenced by id.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.LinkDefinitionStart" data-isabs="false">
+      <a id="LinkDefinitionStart:LinkDefinitionStart"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LinkDefinitionStart.html"><span class="name">LinkDefinitionStart</span></a><span class="params">(<span name="id">id: String</span>, <span name="url">url: String</span>)</span><span class="result"> extends Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Stub class that is an intermediate result when parsing link definitions.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.MarkdownLine" data-isabs="true">
+      <a id="MarkdownLine:MarkdownLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MarkdownLine.html"><span class="name">MarkdownLine</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents a line of markdown.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.MarkdownLineReader" data-isabs="false">
+      <a id="MarkdownLineReader:MarkdownLineReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MarkdownLineReader.html"><span class="name">MarkdownLineReader</span></a><span class="params">(<span name="lines">lines: Seq[MarkdownLine]</span>, <span name="lookup">lookup: Map[String, LinkDefinition]</span>, <span name="lineCount">lineCount: Int</span>)</span><span class="result"> extends Reader[MarkdownLine] with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This class allows us to reference a map with link definitions resulting from the line parsing during block parsing.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.OItemStartLine" data-isabs="false">
+      <a id="OItemStartLine:OItemStartLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OItemStartLine.html"><span class="name">OItemStartLine</span></a><span class="params">(<span name="pre">pre: String</span>, <span name="pay">pay: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A line indicating the start of an ordered list item (starts with &quot;   [NUMBER].</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.OtherLine" data-isabs="false">
+      <a id="OtherLine:OtherLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OtherLine.html"><span class="name">OtherLine</span></a><span class="params">(<span name="content">content: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Any other line.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.RulerLine" data-isabs="false">
+      <a id="RulerLine:RulerLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RulerLine.html"><span class="name">RulerLine</span></a><span class="params">(<span name="content">content: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A horizontal ruler line.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.SetExtHeaderLine" data-isabs="false">
+      <a id="SetExtHeaderLine:SetExtHeaderLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SetExtHeaderLine.html"><span class="name">SetExtHeaderLine</span></a><span class="params">(<span name="content">content: String</span>, <span name="headerLevel">headerLevel: Int</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents the underline for a setext style header
+</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.SingleThreadedTransformer" data-isabs="false">
+      <a id="SingleThreadedTransformer:SingleThreadedTransformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleThreadedTransformer.html"><span class="name">SingleThreadedTransformer</span></a><span class="result"> extends Transformer</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" name="net.liftweb.markdown.TimedTransformer" data-isabs="true">
+      <a id="TimedTransformer:TimedTransformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TimedTransformer.html"><span class="name">TimedTransformer</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Quick and dirty test for measuring the time of this Parser.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.Transformer" data-isabs="true">
+      <a id="Transformer:Transformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Transformer.html"><span class="name">Transformer</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      <p class="comment cmt">This is the Transformer that uses the other parsers to transform markdown into xhtml.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.UItemStartLine" data-isabs="false">
+      <a id="UItemStartLine:UItemStartLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UItemStartLine.html"><span class="name">UItemStartLine</span></a><span class="params">(<span name="pre">pre: String</span>, <span name="pay">pay: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">A line indicating the start of an unordered list item (starts with &quot;   *  &quot;)
+</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.XmlChunk" data-isabs="false">
+      <a id="XmlChunk:XmlChunk"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="XmlChunk.html"><span class="name">XmlChunk</span></a><span class="params">(<span name="content">content: String</span>)</span><span class="result"> extends MarkdownLine with Product with Serializable</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Represents lines of verbatim xml.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="net.liftweb.markdown.ActuariusApp" data-isabs="false">
+      <a id="ActuariusApp:ActuariusApp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ActuariusApp$.html"><span class="name">ActuariusApp</span></a><span class="result"> extends Transformer</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Contains a main methdod that simply reads everything from stdin, parses it as markdown and
+prints the result to stdout.</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.Decorator" data-isabs="false">
+      <a id="Decorator:Decorator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Decorator$.html"><span class="name">Decorator</span></a><span class="result"> extends Decorator</span>
+      </span>
+      </h4>
+      <p class="comment cmt">Default instance of Decorator with the standard Markdown behavior
+</p>
+    </li><li visbl="pub" name="net.liftweb.markdown.TimeTest" data-isabs="false">
+      <a id="TimeTest:TimeTest"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TimeTest$.html"><span class="name">TimeTest</span></a><span class="result"> extends AnyRef</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
