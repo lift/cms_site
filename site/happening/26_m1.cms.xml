@@ -1,10 +1,10 @@
-<cms path="/26_m1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/10/01">
+<cms path="/26_m1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/10/11">
   <tag name="sub" value="happening">
     <b>Lift 2.6 M1</b>
   </tag>
 
   <tag name="desc">
-    2013/10/01 The Lift team is proud to announce Milestone 1 of Lift 2.6.
+    2013/10/11 The Lift team is proud to announce Milestone 1 of Lift 2.6.
   </tag>
 
   <content>
@@ -22,7 +22,7 @@
           <div class="page-header">
           <h1>Announcing Lift 2.6 M1</h1>
           </div>
-          <em>Oct 01, 2013</em>
+          <em>Oct 11, 2013</em>
 
           <p>The Lift team proudly announces the <a href="/download">availability</a>
             of Milestone 1 of Lift version 2.6.
