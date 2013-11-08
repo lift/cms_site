@@ -48,14 +48,14 @@
 
 			  <div class="markdown-body">
     
-<h1>Bug fixes, Compatibility and Performance Gains</h1>
+<h2>Bug fixes, Compatibility and Performance Gains</h2>
 
 <p><a href="https://github.com/lift/framework/pull/1499">override JObject#hashCode</a>Thanks @xuwei_k. </p>
 
 <p>Lift 2.6-M1 was built using java 7, this causes issues for those using Mac and Java 6. Lift 2.6-M2 is built using java 6, Thanks @fmpwizard. </p>
 
 
-<h1>...and thanks to everyone who contributed on the mailing list, writing code, reviewing code, supplying feedback!</h1>
+<h2>...and thanks to everyone who contributed on the mailing list, writing code, reviewing code, supplying feedback!</h2>
     </div>
 
 
