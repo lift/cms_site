@@ -1,0 +1,78 @@
+<cms path="/lift_and_breach.html" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2013/11/20">
+  <tag name="sub" value="happening">
+    <b>Lift and BREACH</b>
+  </tag>
+
+  <tag name="desc">
+    2013/11/20 Lift and BREACH: How Lift protects you, and how you can protect yourself
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: Lift and BREACH</title>
+      </head>
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span9">  
+            
+        <div>
+          <div class="page-header">
+        <h1 id="liftandbreachhowliftprotectsyouandhowyoucanprotectyourself">Lift and BREACH: How Lift protects you, and how you can protect yourself</h1>
+        </div>
+
+<p><em>November 20, 2013</em></p>
+
+<p>In August, an attack on TLS was announced called <a href="http://breachattack.com/resources/BREACH%20-%20SSL,%20gone%20in%2030%20seconds.pdf">BREACH</a>. It targets sites that use gzip compression on HTTP responses served over SSL, and allows discovering secrets in these supposedly secure sites. At the time, a flurry of activity came up on the Lift mailing list to see if we could mitigate its effects at a framework level; however, we chose to let things settle down and get a hold of the actual paper describing the attack before taking any specific actions.</p>
+
+<p>I took a deeper look at the paper and how Lift interacts with the attack as described, with an eye to figuring out what if any aspects of the attack Lift already mitigates, and what further precautions a user of Lift could take to avoid having to disable gzip compression altogether.</p>
+
+<h2 id="attacksonliftcsrfhttpswwwowasporgindexphptop_10_2010a5crosssite_request_forgery_28csrf29protections">Attacks on Lift <a href="https://www.owasp.org/index.php/Top_10_2010-A5-Cross-Site_Request_Forgery_%28CSRF%29">CSRF</a> Protections</h2>
+
+<p>The canonical example provided in the BREACH attack paper is an attack used to extract the CSRF token from Microsoft's Outlook Web Access system. By passing a parameter to a page that mirrors the beginning of the CSRF token followed by some guess, BREACH can find out, based on the size of the response, when its guess has the same starting characters as the actual CSRF token.</p>
+
+<p>This could apply beyond simply Microsoft OWA, since many frameworks use or used a session-long CSRF token. However, Lift's CSRF protection comes from the fact that all form fields receive cryptographically secure random unique names when the page renders. This results in a couple of benefits over the traditional approach when dealing with a BREACH attack:
+ - Even if you get a decent guess at one of the unique field names, you can't know by reloading the page with an adjusted guess, since the new id will be different. You are effectively shooting blind, as the secret is different every time the page loads.
+ - You are no longer trying to guess one secret; instead, to successfully fake a form submission, you need to guess all of the unique field names, including the name of the submit button that is bound to the final submission function in the server.</p>
+
+<p>Verdict: if you use Lift's default form binding strategies, you should not be vulnerable to BREACH attacks on your forms. See the section on further precautions to see what you may be vulnerable to if you're not using Lift's default form binding tools.</p>
+
+<h2 id="attacksonliftsessions">Attacks on Lift Sessions</h2>
+
+<p>Arguably the most important secret in Lift is the session cookie, since session state is (at least by default) stored in the server and associated with that cookie id. SSL won't protect you if an attacker manages to impersonate a user's session.</p>
+
+<p>The session cookie is typically managed by the container, and is often named <code>JSESSIONID</code>. Because BREACH targets HTTP <em>response</em> compression, it cannot reveal the <code>JSESSIONID</code> unless you are separately putting it on the page itself (which you should more or less never, under any circumstances, do: <code>JSESSIONID</code> is a cookie you should never handle yourself). The precursor to BREACH, CRIME, <em>did</em> target the HTTP headers where the session cookie was communicated; however, it relied on TLS compression, and the issue has since been addressed by disabling TLS compression in browsers and servers.</p>
+
+<p>Verdict: since BREACH cannot target HTTP headers, Lift sessions are safe from hijacking unless you intentionally emit the container session cookie into the page, which you should never do.</p>
+
+<h2 id="attacksonotherliftsecrets">Attacks on Other Lift Secrets</h2>
+
+<p>The remaining two secrets that I've been able to spot in Lift applications are the page id, which, as its name would imply, varies by page load, and ids for comets.</p>
+
+<p>Currently, the id of a comet that is used over multiple pages <em>does</em> remain the same. That is to say, if you use, for example, a <code>ChatComet</code>, and you don't give it a unique name on every page load, then you reuse a single instance of <code>ChatComet</code>. In these cases, the same comet id will be emitted into the page as a value for <code>lift_toWatch</code>. The version associated with it will vary from page load to page load; however, that means that, if a user can pass a parameter to the page whose value is then placed in the page contents, then the comet id is discoverable using BREACH.</p>
+
+<p>Strictly speaking, having the comet id without the session id is not useful. If you are making cross-site requests, there is no parameter you can submit to the comet, even with the comet id, that will be reflected in the comet response regardless of its value (you can submit the comet version, but an invalid version will result in server-side fireworks, not in a reflected value). Since the communication is cross-site, you won't be able to access the comet's response data (though a man in the middle could—to avoid that, make sure you configure HTTPS properly with HTTP Strict Transport Security so that responses are never served over plain HTTP—the BREACH attack itself assumes you're taking this type of precaution, otherwise simply requesting the page over regular HTTP would be enough to extract secrets). So, comet communications contents shouldn't be exposed. And, a request to a comet with no additional secrets cannot make any changes on the server.</p>
+
+<p>Verdict: comet ids for comets that don't get a different instance per page are probably vulnerable to BREACH; however, what you can do once you have the comet id is negligible. Page ids are unique per-load, so they should not be vulnerable.</p>
+
+<h2 id="furtherprecautions">Further Precautions</h2>
+
+<p>These are the main <em>framework</em> secrets that Lift exposes. However, applications have secrets, too. For example, an unknown user's email address could easily be considered a secret when that user is interacting with your application over HTTPS. To protect these secrets in general against BREACH, the best move is never to put a value passed by an unprotected request parameter onto a page that also has secrets, period. This will ensure that an attacker won't be able to request a page that contains both the secret and an attacker-specified guess of what the secret is.</p>
+
+<h2 id="feedback">Feedback</h2>
+
+<p>If any of these characterizations don't seem accurate, or if you suspect there are any other security issues, related or unrelated, with the Lift framework, please let us know by emailing security@liftweb.net.</p>
+
+        </div>
+          </div>      
+	        <div class="span3">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div> 
+    </lift:surround>
+  </content>
+</cms>
