@@ -132,6 +132,13 @@
 												alt="" />
 										</a>		
 									</div>
+									<div class="logo">
+										<a href="http://dbschools.com/music-gradebook/">
+											<img height="50"
+												src="/images/comp-logo/dbschools-music-gradebook.png"
+												alt="DBSchools Music Gradebook" />
+										</a>		
+									</div>
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
 <!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
