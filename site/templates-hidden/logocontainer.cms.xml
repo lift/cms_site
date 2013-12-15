@@ -139,6 +139,13 @@
 												alt="DBSchools Music Gradebook" />
 										</a>		
 									</div>
+									<div class="logo">
+										<a href="http://anchortab.com">
+											<img height="50"
+												src="/images/comp-logo/anchortab.png"
+												alt="Anchor Tab" />
+										</a>
+									</div>
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
 <!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
