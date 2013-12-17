@@ -154,6 +154,13 @@
 												alt="Anchor Tab" />
 										</a>
 									</div>
+									<div class="logo">
+										<a href="http://7scales.com">
+											<img height="50"
+												src="/images/comp-logo/sketchboard.png"
+												alt="Sketchboard" />
+										</a>
+									</div>
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
 <!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
