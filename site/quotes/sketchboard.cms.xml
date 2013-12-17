@@ -1,0 +1,13 @@
+<cms path="/quotes/sketchboard" type="html" locale="en_US" host="liftweb.net">
+	<content>
+	    
+		<div class="well">
+			<blockquote class="pull-right">
+				<p class="lead">
+					Lift is something special and should get as much attention as possible. <strong>It just works so well.</strong> It also thinks about the future like possibility to integrate AngularJS extremely easily and safe way.
+				</p>
+				<small>Saiki Tanabe, Sketchboard.Me Confluence Plugin</small>
+			</blockquote>
+		</div>
+	</content>
+</cms>
