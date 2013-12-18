@@ -168,6 +168,13 @@
                 								  alt="Fashionbase" />
                      								</a>
 							                </div>
+                                    <div class="logo">
+                                        <a href="http://sheeprice.com">
+                                            <img height="50"
+                                                 src="/images/comp-logo/sheeprice.png"
+                                                 alt="Sheeprice" />
+                                        </a>
+                                    </div>
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
 <!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
