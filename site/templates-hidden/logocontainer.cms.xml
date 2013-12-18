@@ -161,6 +161,13 @@
 												alt="Sketchboard" />
 										</a>
 									</div>
+									<div class="logo">
+                     							  	<a href="http://fashionbase.com">
+                       								<img height="50"
+                								  src="/images/comp-logo/fashionbase.png"
+                								  alt="Fashionbase" />
+                     								</a>
+							                </div>
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
 <!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
