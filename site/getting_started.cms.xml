@@ -40,6 +40,9 @@
 								you can set up <a href="http://cookbook.liftweb.net/#idea">IntelliJ IDEA</a> or
 								<a href="http://cookbook.liftweb.net/#eclipse">Eclipse</a>.
 							</p>
+              <h2>Step by step instructions on the terminal.</h2>
+							<p><iframe src="http://showterm.io/99b90c9b85069e2b42c60" width="640" height="480"></iframe></p>
+
 
 							<h2>From an MVC background</h2>
 							<p>
