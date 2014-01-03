@@ -175,6 +175,14 @@
                                                  alt="Sheeprice" />
                                         </a>
                                     </div>
+                                    <div class="logo">
+                                        <a href="http://www.tagtrail.com">
+                                            <img height="50"
+                                                 src="/images/comp-logo/tagtrail.png"
+                                                 alt="Tagtrail - NFC management" />
+                                        </a>
+                                    </div>
+
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
 <!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
