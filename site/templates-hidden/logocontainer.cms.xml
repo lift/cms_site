@@ -182,6 +182,13 @@
                                                  alt="Tagtrail - NFC management" />
                                         </a>
                                     </div>
+                                    <div class="logo">
+                                        <a href="http://www.home-artist.org">
+                                            <img height="50"
+                                                 src="/images/comp-logo.png"
+                                                 alt="home-artist.org: Artists for your private events" />
+                                        </a>
+                                    </div>
 
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
