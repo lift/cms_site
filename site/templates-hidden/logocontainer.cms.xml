@@ -162,33 +162,41 @@
 										</a>
 									</div>
 									<div class="logo">
-                     							  	<a href="http://fashionbase.com">
-                       								<img height="50"
-                								  src="/images/comp-logo/fashionbase.png"
-                								  alt="Fashionbase" />
-                     								</a>
-							                </div>
-                                    <div class="logo">
-                                        <a href="http://sheeprice.com">
-                                            <img height="50"
-                                                 src="/images/comp-logo/sheeprice.png"
-                                                 alt="Sheeprice" />
-                                        </a>
-                                    </div>
-                                    <div class="logo">
-                                        <a href="http://www.tagtrail.com">
-                                            <img height="50"
-                                                 src="/images/comp-logo/tagtrail.png"
-                                                 alt="Tagtrail - NFC management" />
-                                        </a>
-                                    </div>
-                                    <div class="logo">
-                                        <a href="http://www.home-artist.org">
-                                            <img height="50"
-                                                 src="/images/comp-logo/home_artist_org.png"
-                                                 alt="home-artist.org: Artists for your private events" />
-                                        </a>
-                                    </div>
+  							  	<a href="http://fashionbase.com">
+      								<img height="50"
+       								  src="/images/comp-logo/fashionbase.png"
+       								  alt="Fashionbase" />
+     								</a>
+		              </div>
+                  <div class="logo">
+                    <a href="http://sheeprice.com">
+                      <img height="50"
+                        src="/images/comp-logo/sheeprice.png"
+                        alt="Sheeprice" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="http://www.tagtrail.com">
+                      <img height="50"
+                        src="/images/comp-logo/tagtrail.png"
+                        alt="Tagtrail - NFC management" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="http://www.home-artist.org">
+                      <img height="50"
+                        src="/images/comp-logo/home_artist_org.png"
+                        alt="home-artist.org: Artists for your private events" />
+                    </a>
+                  </div>
+                  <div class="logo">
+                    <a href="http://www.ascendantcompliance.com/acm/">
+                      <img height="50"
+                        src="/images/comp-logo/acm.png"
+                        alt="Ascendant - Compliance Services" />
+                    </a>
+                  </div>
+
 
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
