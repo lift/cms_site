@@ -196,6 +196,13 @@
                         alt="Ascendant - Compliance Services" />
                     </a>
                   </div>
+                  <div class="logo">
+										<a href="http://openbankproject.com">
+											<img height="50"
+			 									src="/images/comp-logo/open-bank-project.png"
+			 									alt="Open Bank Project - Open Source API for Banks" />
+		 								</a>
+									</div>
 
 
 								</lift:choose>
