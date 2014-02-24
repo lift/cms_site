@@ -7,7 +7,7 @@
 
 					<div class="row-fluid" >
 						<div class="span12">
-							<!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; 
+							<!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px;
 								border: 1px dotted red;"> -->
 
 							<div class="gradient-panel">
@@ -27,7 +27,7 @@
 							</div>
 
 							<!-- </div> -->
-							<!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px; 
+							<!-- <div class="span6" style="width:50%;min-width: 450px;margin:0px;
 								border: 1px dotted red;"> -->
 
 							<div class="gradient-panel">
@@ -54,49 +54,49 @@
 								<lift:choose cnt="3">
 									<div class="logo">
 										<a href="http://www.audaxhealth.com/">
-											<img height="50" 
-											    src="/images/comp-logo/audax.png"
+											<img height="50"
+													src="/images/comp-logo/audax.png"
 												alt="Audax Health" />
 										</a>
-									</div>								
+									</div>
 
 									<div class="logo">
 										<a href="http://www.elemica.com/">
-											<img height="50" 
-											    src="/images/comp-logo/elemica.png"
+											<img height="50"
+													src="/images/comp-logo/elemica.png"
 												alt="Elemica" />
 										</a>
-									</div>								
-								
+									</div>
+
 									<div class="logo">
 										<a href="http://snapsort.com">
-<!-- 										    src="http://static.liftweb.com/logo-snapsort.gif" -->
-											<img height="50" 
-											    src="/images/comp-logo/snapsort.png"
+<!-- 												src="http://static.liftweb.com/logo-snapsort.gif" -->
+											<img height="50"
+													src="/images/comp-logo/snapsort.png"
 												alt="Snapsort" />
 										</a>
 									</div>
 									<div class="logo">
 <!-- 									src="http://static.liftweb.com/logo-innovation.gif" -->
 										<a href="http://innovationgames.com">
-											<img height="50" 
-											    src="/images/comp-logo/innovation_games.png"
+											<img height="50"
+													src="/images/comp-logo/innovation_games.png"
 												alt="Innovation Games" />
 										</a>
 									</div>
 									<div class="logo">
 <!-- 									src="http://static.liftweb.com/t8-webware-logo.gif" -->
 										<a href="http://www.grabgrip.com">
-											<img height="50"  
-											    src="/images/comp-logo/banno.png"
+											<img height="50"
+													src="/images/comp-logo/banno.png"
 												alt="Banno" />
 										</a>
 									</div>
 									<div class="logo">
 <!-- 									src="http://static.liftweb.com/logo-untyped.gif" -->
 										<a href="http://untyped.com">
-											<img height="50" 
-											    src="/images/comp-logo/untyped.png"
+											<img height="50"
+													src="/images/comp-logo/untyped.png"
 												alt="Untyped" />
 										</a>
 <!-- 										<a href="http://untyped.com"> -->
@@ -107,16 +107,16 @@
 									<div class="logo">
 <!-- 									src="http://static.liftweb.com/stackmob_logo_lift.png" -->
 										<a href="http://stackmob.com">
-											<img height="50" 
-											    src="/images/comp-logo/stackmob.png"
+											<img height="50"
+													src="/images/comp-logo/stackmob.png"
 												alt="StackMob" />
 										</a>
 									</div>
 									<div class="logo">
 <!-- 									 src="http://static.liftweb.com/open_study.png" -->
 										<a href="http://openstudy.com">
-											<img height="50" 
-											    src="/images/comp-logo/open_study.png"
+											<img height="50"
+													src="/images/comp-logo/open_study.png"
 												alt="Open Study" />
 										</a>
 									</div>
@@ -126,7 +126,7 @@
 											<img height="50"
 												src="/images/comp-logo/sgrouples.png"
 												alt="Sgrouples" />
-										</a>		
+										</a>
 <!-- 										<a href="http://sgrouples.com"> -->
 <!-- 											<img height="50" -->
 <!-- 												src="/images/sgrouples_logo_lift-alpha.png" -->
@@ -138,14 +138,14 @@
 											<img height="50"
 												src="/images/comp-logo/twisp.png"
 												alt="twisp" />
-										</a>		
+										</a>
 									</div>
 									<div class="logo">
 										<a href="http://dbschools.com/music-gradebook/">
 											<img height="50"
 												src="/images/comp-logo/dbschools-music-gradebook.png"
 												alt="DBSchools Music Gradebook" />
-										</a>		
+										</a>
 									</div>
 									<div class="logo">
 										<a href="http://anchortab.com">
@@ -162,45 +162,51 @@
 										</a>
 									</div>
 									<div class="logo">
-  							  	<a href="http://fashionbase.com">
-      								<img height="50"
-       								  src="/images/comp-logo/fashionbase.png"
-       								  alt="Fashionbase" />
-     								</a>
-		              </div>
-                  <div class="logo">
-                    <a href="http://sheeprice.com">
-                      <img height="50"
-                        src="/images/comp-logo/sheeprice.png"
-                        alt="Sheeprice" />
-                    </a>
-                  </div>
-                  <div class="logo">
-                    <a href="http://www.tagtrail.com">
-                      <img height="50"
-                        src="/images/comp-logo/tagtrail.png"
-                        alt="Tagtrail - NFC management" />
-                    </a>
-                  </div>
-                  <div class="logo">
-                    <a href="http://www.home-artist.org">
-                      <img height="50"
-                        src="/images/comp-logo/home_artist_org.png"
-                        alt="home-artist.org: Artists for your private events" />
-                    </a>
-                  </div>
-                  <div class="logo">
-                    <a href="http://www.ascendantcompliance.com/acm/">
-                      <img height="50"
-                        src="/images/comp-logo/acm.png"
-                        alt="Ascendant - Compliance Services" />
-                    </a>
-                  </div>
-
+										<a href="http://fashionbase.com">
+											<img height="50"
+			 									src="/images/comp-logo/fashionbase.png"
+			 									alt="Fashionbase" />
+		 								</a>
+									</div>
+									<div class="logo">
+										<a href="http://sheeprice.com">
+											<img height="50"
+												src="/images/comp-logo/sheeprice.png"
+												alt="Sheeprice" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://www.tagtrail.com">
+											<img height="50"
+												src="/images/comp-logo/tagtrail.png"
+												alt="Tagtrail - NFC management" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://www.home-artist.org">
+											<img height="50"
+												src="/images/comp-logo/home_artist_org.png"
+												alt="home-artist.org: Artists for your private events" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://www.ascendantcompliance.com/acm/">
+											<img height="50"
+												src="/images/comp-logo/acm.png"
+												alt="Ascendant - Compliance Services" />
+										</a>
+									</div>
+									<div class="logo">
+										<a href="http://openbankproject.com">
+											<img height="50"
+			 									src="/images/comp-logo/open-bank-project.png"
+			 									alt="Open Bank Project - Open Source API for Banks" />
+		 								</a>
+									</div>
 
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
-<!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
+<!-- 										src="http://static.liftweb.com/logo-foursquare.gif" -->
 									<a href="http://foursquare.com">
 										<img src="/images/comp-logo/foursquare.png"
 											alt="Foursquare" />
@@ -213,7 +219,7 @@
 
 				</div>
 			</div>
-			
+
 		</div>
 	</content>
 </cms>
