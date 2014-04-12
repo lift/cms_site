@@ -2,51 +2,78 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.util.ControlHelpers</title>
+          <title>ControlHelpers - Lift Framework 2.6-M3 - net.liftweb.util.ControlHelpers</title>
+          <meta name="description" content="ControlHelpers - Lift Framework 2.6 - M3 - net.liftweb.util.ControlHelpers" />
+          <meta name="keywords" content="ControlHelpers Lift Framework 2.6 M3 net.liftweb.util.ControlHelpers" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.util.ControlHelpers$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
-        <a title="Go to companion" href="ControlHelpers.html"><img src="../../../lib/object_to_trait_big.png" /></a>
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.util" class="extype" href="package.html">util</a></p>
-        <h1><a title="Go to companion" href="ControlHelpers.html">ControlHelpers</a></h1>
+        <a href="ControlHelpers.html" title="Go to companion"><img src="../../../lib/object_to_trait_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.util">util</a></p>
+        <h1><a href="ControlHelpers.html" title="Go to companion">ControlHelpers</a></h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">ControlHelpers</span><span class="result"> extends <a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a> with <a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></span>
+        <span class="name">ControlHelpers</span><span class="result"> extends <a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a> with <a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a>, <a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a>, <a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.util.ControlHelpers" class="in"><span>ControlHelpers</span></li><li name="net.liftweb.util.ControlHelpers" class="in"><span>ControlHelpers</span></li><li name="net.liftweb.util.ClassHelpers" class="in"><span>ClassHelpers</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.util.ControlHelpers"><span>ControlHelpers</span></li><li class="in" name="net.liftweb.util.ControlHelpers"><span>ControlHelpers</span></li><li class="in" name="net.liftweb.util.ClassHelpers"><span>ClassHelpers</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -61,9 +88,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -71,11 +99,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -83,11 +112,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -95,11 +125,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -107,11 +138,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -119,11 +151,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#^" data-isabs="false">
+    </li><li name="net.liftweb.util.ClassHelpers#^" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="^[T](i:T*):List[T]"></a>
       <a id="^[T](T*):List[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -131,12 +164,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $up">^</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="i">i: T*</span>)</span><span class="result">: List[T]</span>
+        <span title="gt4s: $up" class="name">^</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="i">i: <span class="extype" name="net.liftweb.util.ClassHelpers.^.T">T</span>*</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.^.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">This operator transforms its arguments into a List</p><div class="fullcomment"><div class="comment cmt"><p>This operator transforms its arguments into a List</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the list of arguments passed as varargs
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -144,11 +178,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#callableMethod_?" data-isabs="false">
+    </li><li name="net.liftweb.util.ClassHelpers#callableMethod_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="callableMethod_?(meth:java.lang.reflect.Method):Boolean"></a>
       <a id="callableMethod_?(Method):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -156,12 +191,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: callableMethod_$qmark">callableMethod_?</span><span class="params">(<span name="meth">meth: <span name="java.lang.reflect.Method" class="extype">Method</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: callableMethod_$qmark" class="name">callableMethod_?</span><span class="params">(<span name="meth">meth: <span class="extype" name="java.lang.reflect.Method">Method</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if the method is public and has no parameters
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#classHasControllerMethod" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#classHasControllerMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="classHasControllerMethod(clz:Class[_],name:String):Boolean"></a>
       <a id="classHasControllerMethod(Class[_],String):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -169,15 +205,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">classHasControllerMethod</span><span class="params">(<span name="clz">clz: Class[_]</span>, <span name="name">name: String</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">classHasControllerMethod</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Check that the method 'name' is callable for class 'clz'
 </p><div class="fullcomment"><div class="comment cmt"><p>Check that the method 'name' is callable for class 'clz'
 </p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>the class supposed to own the method</p></dd><dt class="param">name</dt><dd class="cmt"><p>name of the method to test
 </p></dd><dt>returns</dt><dd class="cmt"><p>true if the method exists on the class and is callable
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#classHierarchy" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#classHierarchy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="classHierarchy(in:Class[_]):List[Class[_]]"></a>
       <a id="classHierarchy(Class[_]):List[Class[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -185,11 +222,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">classHierarchy</span><span class="params">(<span name="in">in: Class[_]</span>)</span><span class="result">: List[Class[_]]</span>
+        <span class="name">classHierarchy</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -197,14 +235,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#containsClass" data-isabs="false">
+    </li><li name="net.liftweb.util.ClassHelpers#containsClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="containsClass[C](clz:Class[C],toMatch:List[Class[_]]):Boolean"></a>
       <a id="containsClass[C](Class[C],List[Class[_]]):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -212,23 +251,24 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">containsClass</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: Class[C]</span>, <span name="toMatch">toMatch: List[Class[_]]</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">containsClass</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.containsClass.C">C</span>]</span>, <span name="toMatch">toMatch: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Is the clz an instance of (assignable from) any of the classes in the list
 </p><div class="fullcomment"><div class="comment cmt"><p>Is the clz an instance of (assignable from) any of the classes in the list
 </p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>the class to test</p></dd><dt class="param">toMatch</dt><dd class="cmt"><p>the list of classes to match against
 </p></dd><dt>returns</dt><dd class="cmt"><p>true if clz is assignable from any of the matching classes
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#createInvoker" data-isabs="false">
-      <a id="createInvoker[C&lt;:AnyRef](String,C):Box[() ⇒ Box[Any]]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#createInvoker" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createInvoker[C&lt;:AnyRef](name:String,on:C):net.liftweb.common.Box[()=&gt;net.liftweb.common.Box[Any]]"></a>
+      <a id="createInvoker[C&lt;:AnyRef](String,C):Box[()⇒Box[Any]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createInvoker</span><span class="tparams">[<span name="C">C &lt;: AnyRef</span>]</span><span class="params">(<span name="name">name: String</span>, <span name="on">on: C</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[() ⇒ <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Any" class="extype">Any</span>]]</span>
+        <span class="name">createInvoker</span><span class="tparams">[<span name="C">C &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="on">on: <span class="extype" name="net.liftweb.util.ClassHelpers.createInvoker.C">C</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[() ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Any">Any</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a function (the 'invoker') which will trigger any public, parameterless method
@@ -237,8 +277,9 @@ That function will throw the cause exception if the method can't be invoked
 That function will throw the cause exception if the method can't be invoked
 </p></div><dl class="paramcmts block"><dt class="param">on</dt><dd class="cmt"><p>instance whose method must be invoked
 </p></dd><dt>returns</dt><dd class="cmt"><p>Empty if instance is null or Full(invoker)
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -246,11 +287,12 @@ That function will throw the cause exception if the method can't be invoked
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -258,11 +300,12 @@ That function will throw the cause exception if the method can't be invoked
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -270,22 +313,23 @@ That function will throw the cause exception if the method can't be invoked
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findClass" data-isabs="false">
-      <a id="findClass(List[(String, List[String])]):Box[Class[AnyRef]]"></a>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass(where:List[(String,List[String])]):net.liftweb.common.Box[Class[AnyRef]]"></a>
+      <a id="findClass(List[(String,List[String])]):Box[Class[AnyRef]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findClass</span><span class="params">(<span name="where">where: List[(String, List[String])]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[AnyRef]]</span>
+        <span class="name">findClass</span><span class="params">(<span name="where">where: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Find a class given a list of possible names and corresponding packages, turning underscored
@@ -293,8 +337,9 @@ names to CamelCase if necessary
 </p><div class="fullcomment"><div class="comment cmt"><p>Find a class given a list of possible names and corresponding packages, turning underscored
 names to CamelCase if necessary
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findClass" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass(name:String,where:List[String]):net.liftweb.common.Box[Class[AnyRef]]"></a>
       <a id="findClass(String,List[String]):Box[Class[AnyRef]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -302,15 +347,16 @@ names to CamelCase if necessary
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findClass</span><span class="params">(<span name="name">name: String</span>, <span name="where">where: List[String]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[AnyRef]]</span>
+        <span class="name">findClass</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Find a class given its name and a list of packages, turning underscored names to CamelCase if
 necessary.</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its name and a list of packages, turning underscored names to CamelCase if
 necessary.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findClass" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass[C&lt;:AnyRef](name:String,where:List[String],targetType:Class[C]):net.liftweb.common.Box[Class[C]]"></a>
       <a id="findClass[C&lt;:AnyRef](String,List[String],Class[C]):Box[Class[C]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -318,23 +364,24 @@ necessary.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findClass</span><span class="tparams">[<span name="C">C &lt;: AnyRef</span>]</span><span class="params">(<span name="name">name: String</span>, <span name="where">where: List[String]</span>, <span name="targetType">targetType: Class[C]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[C]]</span>
+        <span class="name">findClass</span><span class="tparams">[<span name="C">C &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="targetType">targetType: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Find a class given its name and a list of packages, turning underscored names to
 CamelCase if necessary.</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its name and a list of packages, turning underscored names to
 CamelCase if necessary.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findClass" data-isabs="false">
-      <a id="findClass(String,List[String],List[(String) ⇒ String]):Box[Class[AnyRef]]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass(name:String,where:List[String],modifiers:List[String=&gt;String]):net.liftweb.common.Box[Class[AnyRef]]"></a>
+      <a id="findClass(String,List[String],List[(String)⇒String]):Box[Class[AnyRef]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findClass</span><span class="params">(<span name="name">name: String</span>, <span name="where">where: List[String]</span>, <span name="modifiers">modifiers: List[(String) ⇒ String]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[AnyRef]]</span>
+        <span class="name">findClass</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="modifiers">modifiers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">General method to in find a class according to its name, a list of possible packages and a
@@ -342,16 +389,17 @@ list of functions modifying the given name create a target name to look for (e.<
 list of functions modifying the given name create a target name to look for (e.g: 'name' is
 hello_world and the target name may be 'HelloWorld').
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findClass" data-isabs="false">
-      <a id="findClass[C&lt;:AnyRef](String,List[String],List[(String) ⇒ String],Class[C]):Box[Class[C]]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass[C&lt;:AnyRef](name:String,where:List[String],modifiers:List[String=&gt;String],targetType:Class[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findClass[C&lt;:AnyRef](String,List[String],List[(String)⇒String],Class[C]):Box[Class[C]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findClass</span><span class="tparams">[<span name="C">C &lt;: AnyRef</span>]</span><span class="params">(<span name="name">name: String</span>, <span name="where">where: List[String]</span>, <span name="modifiers">modifiers: List[(String) ⇒ String]</span>, <span name="targetType">targetType: Class[C]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[C]]</span>
+        <span class="name">findClass</span><span class="tparams">[<span name="C">C &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="modifiers">modifiers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="targetType">targetType: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">General method to in find a class according to its name, a list of possible packages,
@@ -360,16 +408,17 @@ a list of functions modifying the given name create a target name to look for
 a list of functions modifying the given name create a target name to look for
 (e.g: 'name' is hello_world and the target name may be 'HelloWorld').
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findType" data-isabs="false">
-      <a id="findType[C&lt;:AnyRef](List[(String, List[String])])(Manifest[C]):Box[Class[C]]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findType[C&lt;:AnyRef](where:List[(String,List[String])])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findType[C&lt;:AnyRef](List[(String,List[String])])(Manifest[C]):Box[Class[C]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: AnyRef</span>]</span><span class="params">(<span name="where">where: List[(String, List[String])]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span name="scala.reflect.Manifest" class="extype">Manifest</span>[C]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[C]]</span>
+        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="where">where: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Find a class given its type, a list of possible names and corresponding packages, turning
@@ -377,8 +426,9 @@ underscored names to CamelCase if necessary
 </p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its type, a list of possible names and corresponding packages, turning
 underscored names to CamelCase if necessary
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findType" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findType[C&lt;:AnyRef](name:String,where:List[String])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]"></a>
       <a id="findType[C&lt;:AnyRef](String,List[String])(Manifest[C]):Box[Class[C]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -386,23 +436,24 @@ underscored names to CamelCase if necessary
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: AnyRef</span>]</span><span class="params">(<span name="name">name: String</span>, <span name="where">where: List[String]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span name="scala.reflect.Manifest" class="extype">Manifest</span>[C]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[C]]</span>
+        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Find a class given its type, its name and a list of packages, turning underscored names to
 CamelCase if necessary.</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its type, its name and a list of packages, turning underscored names to
 CamelCase if necessary.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#findType" data-isabs="false">
-      <a id="findType[C&lt;:AnyRef](String,List[String],List[(String) ⇒ String])(Manifest[C]):Box[Class[C]]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findType[C&lt;:AnyRef](name:String,where:List[String],modifiers:List[String=&gt;String])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findType[C&lt;:AnyRef](String,List[String],List[(String)⇒String])(Manifest[C]):Box[Class[C]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: AnyRef</span>]</span><span class="params">(<span name="name">name: String</span>, <span name="where">where: List[String]</span>, <span name="modifiers">modifiers: List[(String) ⇒ String]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span name="scala.reflect.Manifest" class="extype">Manifest</span>[C]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[Class[C]]</span>
+        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="modifiers">modifiers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">General method to in find a class according to its type, its name, a list of possible
@@ -411,20 +462,22 @@ packages and a list of functions modifying the given name create a target name t
 packages and a list of functions modifying the given name create a target name to look for
 (e.g: 'name' is hello_world and the target name may be 'HelloWorld').
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -432,11 +485,12 @@ packages and a list of functions modifying the given name create a target name t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#instantiate" data-isabs="false">
+    </li><li name="net.liftweb.util.ClassHelpers#instantiate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="instantiate[C](clz:Class[C]):net.liftweb.common.Box[C]"></a>
       <a id="instantiate[C](Class[C]):Box[C]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -444,14 +498,15 @@ packages and a list of functions modifying the given name create a target name t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">instantiate</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: Class[C]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[C]</span>
+        <span class="name">instantiate</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.instantiate.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ClassHelpers.instantiate.C">C</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Create a new instance of a class
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a new instance of a class
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Full can with the instance or a Failure if the instance can't be created
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#invokeControllerMethod" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeControllerMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeControllerMethod(clz:Class[_],meth:String):Any"></a>
       <a id="invokeControllerMethod(Class[_],String):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -459,14 +514,15 @@ packages and a list of functions modifying the given name create a target name t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">invokeControllerMethod</span><span class="params">(<span name="clz">clz: Class[_]</span>, <span name="meth">meth: String</span>)</span><span class="result">: <span name="scala.Any" class="extype">Any</span></span>
+        <span class="name">invokeControllerMethod</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Invoke a controller method (parameterless, public) on a class
 </p><div class="fullcomment"><div class="comment cmt"><p>Invoke a controller method (parameterless, public) on a class
 </p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>the class owning the method</p></dd><dt>returns</dt><dd class="cmt"><p>the result of the method invocation or throws the root exception causing an error
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#invokeMethod" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String,params:Array[AnyRef],ptypes:Array[Class[_]]):net.liftweb.common.Box[Any]"></a>
       <a id="invokeMethod[C](Class[C],AnyRef,String,Array[AnyRef],Array[Class[_]]):Box[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -474,7 +530,7 @@ packages and a list of functions modifying the given name create a target name t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: Class[C]</span>, <span name="inst">inst: AnyRef</span>, <span name="meth">meth: String</span>, <span name="params">params: <span name="scala.Array" class="extype">Array</span>[AnyRef]</span>, <span name="ptypes">ptypes: <span name="scala.Array" class="extype">Array</span>[Class[_]]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.invokeMethod.C">C</span>]</span>, <span name="inst">inst: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>, <span name="ptypes">ptypes: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Invoke the given method for the given class, with some parameters and their types
@@ -485,8 +541,9 @@ Tries the method name, then the method as a CamelCased name and the method as a 
 The class is not instanciated if the method is static, otherwise the passed instance is used
 </p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>class whose method should be invoked</p></dd><dt class="param">inst</dt><dd class="cmt"><p>instance of the class who method should be invoked, if the method is not static</p></dd><dt class="param">meth</dt><dd class="cmt"><p>method to invoke</p></dd><dt class="param">params</dt><dd class="cmt"><p>parameters to pass to the method</p></dd><dt class="param">ptypes</dt><dd class="cmt"><p>list of types of the parameters
 </p></dd><dt>returns</dt><dd class="cmt"><p>a Box containing the value returned by the method
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#invokeMethod" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String,params:Array[AnyRef]):net.liftweb.common.Box[Any]"></a>
       <a id="invokeMethod[C](Class[C],AnyRef,String,Array[AnyRef]):Box[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -494,7 +551,7 @@ The class is not instanciated if the method is static, otherwise the passed inst
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: Class[C]</span>, <span name="inst">inst: AnyRef</span>, <span name="meth">meth: String</span>, <span name="params">params: <span name="scala.Array" class="extype">Array</span>[AnyRef]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.invokeMethod.C">C</span>]</span>, <span name="inst">inst: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Invoke the given method for the given class, with some parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Invoke the given method for the given class, with some parameters.
@@ -502,8 +559,9 @@ Tries the method name, then the method as a CamelCased name and the method as a 
 The class is not instanciated if the method is static, otherwise the passed instance is used
 </p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>class whose method should be invoked</p></dd><dt class="param">inst</dt><dd class="cmt"><p>instance of the class who method should be invoked, if the method is not static</p></dd><dt class="param">meth</dt><dd class="cmt"><p>method to invoke</p></dd><dt class="param">params</dt><dd class="cmt"><p>parameters to pass to the method
 </p></dd><dt>returns</dt><dd class="cmt"><p>a Box containing the value returned by the method
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#invokeMethod" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String):net.liftweb.common.Box[Any]"></a>
       <a id="invokeMethod[C](Class[C],AnyRef,String):Box[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -511,15 +569,16 @@ The class is not instanciated if the method is static, otherwise the passed inst
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: Class[C]</span>, <span name="inst">inst: AnyRef</span>, <span name="meth">meth: String</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.invokeMethod.C">C</span>]</span>, <span name="inst">inst: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Invoke the given method for the given class, with no params.</p><div class="fullcomment"><div class="comment cmt"><p>Invoke the given method for the given class, with no params.
 The class is not instanciated if the method is static, otherwise the passed instance is used
 </p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>class whose method should be invoked</p></dd><dt class="param">inst</dt><dd class="cmt"><p>instance of the class who method should be invoked, if the method is not static</p></dd><dt class="param">meth</dt><dd class="cmt"><p>method to invoke
 </p></dd><dt>returns</dt><dd class="cmt"><p>a Box containing the value returned by the method
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -527,11 +586,12 @@ The class is not instanciated if the method is static, otherwise the passed inst
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -539,11 +599,12 @@ The class is not instanciated if the method is static, otherwise the passed inst
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -551,11 +612,12 @@ The class is not instanciated if the method is static, otherwise the passed inst
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -563,23 +625,25 @@ The class is not instanciated if the method is static, otherwise the passed inst
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -587,100 +651,101 @@ The class is not instanciated if the method is static, otherwise the passed inst
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ControlHelpers#tryo" data-isabs="false">
-      <a id="tryo[T](Class[_])(⇒ T):Box[T]"></a>
+    </li><li name="net.liftweb.util.ControlHelpers#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](ignore:Class[_])(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](Class[_])(⇒T):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: Class[_]</span>)</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f. Takes only one Class of exception to ignore</p></div><dl class="paramcmts block"><dt class="param">ignore</dt><dd class="cmt"><p>- a single exception classes to ignore. A thrown exception will be ignored if it is assignable from this class.</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate
-@return</p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ControlHelpers#tryo" data-isabs="false">
-      <a id="tryo[T](List[Class[_]])(⇒ T):Box[T]"></a>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f. Takes only one Class of exception to ignore</p></div><dl class="paramcmts block"><dt class="param">ignore</dt><dd class="cmt"><p>- a single exception classes to ignore. A thrown exception will be ignored if it is assignable from this class.</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ControlHelpers#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](ignore:List[Class[_]])(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](List[Class[_]])(⇒T):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: List[Class[_]]</span>)</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f</p></div><dl class="paramcmts block"><dt class="param">ignore</dt><dd class="cmt"><p>- a list of exception classes to ignore. A thrown exception will be ignored if it is assignable from one of
-the exception classes in the list</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate
-@return</p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ControlHelpers#tryo" data-isabs="false">
-      <a id="tryo[T]((Throwable) ⇒ Unit)(⇒ T):Box[T]"></a>
+the exception classes in the list</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ControlHelpers#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](onError:Throwable=&gt;Unit)(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T]((Throwable)⇒Unit)(⇒T):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="onError">onError: (Throwable) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="onError">onError: (<span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f and trigger a callback function if an exception is thrown</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f and trigger a callback function if an exception is thrown</p></div><dl class="paramcmts block"><dt class="param">onError</dt><dd class="cmt"><p>- an optional callback function that will use the thrown exception as a parameter</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate
-@return</p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ControlHelpers#tryo" data-isabs="false">
-      <a id="tryo[T](⇒ T):Box[T]"></a>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f and trigger a callback function if an exception is thrown</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f and trigger a callback function if an exception is thrown</p></div><dl class="paramcmts block"><dt class="param">onError</dt><dd class="cmt"><p>- an optional callback function that will use the thrown exception as a parameter</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ControlHelpers#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](⇒T):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate
-@return</p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ControlHelpers#tryo" data-isabs="false">
-      <a id="tryo[T](PartialFunction[Throwable, T],⇒ T):Box[T]"></a>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ControlHelpers#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](handler:PartialFunction[Throwable,T],f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](PartialFunction[Throwable,T],⇒T):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="handler">handler: <span name="scala.PartialFunction" class="extype">PartialFunction</span>[Throwable, T]</span>, <span name="f">f: ⇒ T</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="handler">handler: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Throwable">Throwable</span>, <span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span>]</span>, <span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f. If f throws
 an exception that is in the domain of the handler PF,
 the handler will be invoked on the exception. Otherwise
 the exception is wrapped into a Failure.
-</p></div><dl class="paramcmts block"><dt class="param">handler</dt><dd class="cmt"><p>- A partial function that handles exceptions</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate
-@return</p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception
-</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a></dd><dt>See also</dt><dd><span class="cmt"><p>net.liftweb.common.Failure
+</p></div><dl class="paramcmts block"><dt class="param">handler</dt><dd class="cmt"><p>- A partial function that handles exceptions</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception
+</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></dd><dt>See also</dt><dd><span class="cmt"><p>net.liftweb.common.Failure
 </p></span></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ControlHelpers#tryo" data-isabs="false">
-      <a id="tryo[T](List[Class[_]],Box[(Throwable) ⇒ Unit])(⇒ T):Box[T]"></a>
+    </li><li name="net.liftweb.util.ControlHelpers#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](ignore:List[Class[_]],onError:net.liftweb.common.Box[Throwable=&gt;Unit])(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](List[Class[_]],Box[(Throwable)⇒Unit])(⇒T):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: List[Class[_]]</span>, <span name="onError">onError: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[(Throwable) ⇒ <span name="scala.Unit" class="extype">Unit</span>]</span>)</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>, <span name="onError">onError: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ControlHelpers.tryo.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f. If f throws
 an exception with its class in the 'ignore' list or if 'ignore' is
 null or an empty list, ignore the exception and return None.
 </p></div><dl class="paramcmts block"><dt class="param">ignore</dt><dd class="cmt"><p>- a list of exception classes to ignore. A thrown exception will be ignored if it is assignable from one of
-the exception classes in the list</p></dd><dt class="param">onError</dt><dd class="cmt"><p>- an optional callback function that will use the thrown exception as a parameter</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate
-@return</p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+the exception classes in the list</p></dd><dt class="param">onError</dt><dd class="cmt"><p>- an optional callback function that will use the thrown exception as a parameter</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -688,14 +753,15 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -703,14 +769,15 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -718,7 +785,7 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -728,9 +795,12 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        
+
+        <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.util.ClassHelpers#camelCase" data-isabs="false">
+              <ol><li name="net.liftweb.util.ClassHelpers#camelCase" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="camelCase(name:String):String"></a>
       <a id="camelCase(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -738,14 +808,15 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.3) Use StringHelpers.camelify">camelCase</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: String</span>
+        <span class="name deprecated" title="Deprecated: (Since version 2.3) Use StringHelpers.camelify">camelCase</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.3)</i> Use StringHelpers.camelify</p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#camelCaseMethod" data-isabs="false">
+    </li><li name="net.liftweb.util.ClassHelpers#camelCaseMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="camelCaseMethod(name:String):String"></a>
       <a id="camelCaseMethod(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -753,14 +824,15 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.3) Use StringHelpers.camelifyMethod">camelCaseMethod</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: String</span>
+        <span class="name deprecated" title="Deprecated: (Since version 2.3) Use StringHelpers.camelifyMethod">camelCaseMethod</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.3)</i> Use StringHelpers.camelifyMethod</p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.ClassHelpers#unCamelCase" data-isabs="false">
+    </li><li name="net.liftweb.util.ClassHelpers#unCamelCase" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unCamelCase(name:String):String"></a>
       <a id="unCamelCase(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -768,10 +840,10 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.3) Use StringHelpers.snakify">unCamelCase</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name deprecated" title="Deprecated: (Since version 2.3) Use StringHelpers.snakify">unCamelCase</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.3)</i> Use StringHelpers.snakify</p></dd></dl></div>
@@ -780,14 +852,22 @@ the exception classes in the list</p></dd><dt class="param">onError</dt><dd clas
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.util.ControlHelpers" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.ControlHelpers" class="extype" href="ControlHelpers.html">ControlHelpers</a></h3>
-            </div><div name="net.liftweb.util.ClassHelpers" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.ClassHelpers" class="extype" href="ClassHelpers.html">ClassHelpers</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.util.ControlHelpers">
+              <h3>Inherited from <a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ClassHelpers">
+              <h3>Inherited from <a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

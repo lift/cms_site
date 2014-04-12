@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.db</title>
+          <title>db - Lift Framework 2.6-M3 - net.liftweb.db</title>
+          <meta name="description" content="db - Lift Framework 2.6 - M3 - net.liftweb.db" />
+          <meta name="keywords" content="db Lift Framework 2.6 M3 net.liftweb.db" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.db.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
         <h1>db</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.db.BasePostgreSQLDriver" data-isabs="true">
+              <ol><li name="net.liftweb.db.BasePostgreSQLDriver" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BasePostgreSQLDriverextendsDriverType"></a>
       <a id="BasePostgreSQLDriver:BasePostgreSQLDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,11 +72,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="BasePostgreSQLDriver.html"><span class="name">BasePostgreSQLDriver</span></a><span class="result"> extends DriverType</span>
+        <a href="BasePostgreSQLDriver.html"><span class="name">BasePostgreSQLDriver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       <p class="comment cmt">Provides some base definitions for PostgreSql databases.</p>
-    </li><li visbl="pub" name="net.liftweb.db.ConnectionIdentifier" data-isabs="true">
+    </li><li name="net.liftweb.db.ConnectionIdentifier" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConnectionIdentifierextendsObject"></a>
       <a id="ConnectionIdentifier:ConnectionIdentifier"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,11 +85,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ConnectionIdentifier.html"><span class="name">ConnectionIdentifier</span></a><span class="result"> extends AnyRef</span>
+        <a href="ConnectionIdentifier.html"><span class="name">ConnectionIdentifier</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.ConnectionManager" data-isabs="true">
+    </li><li name="net.liftweb.db.ConnectionManager" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ConnectionManagerextendsObject"></a>
       <a id="ConnectionManager:ConnectionManager"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,12 +98,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ConnectionManager.html"><span class="name">ConnectionManager</span></a><span class="result"> extends AnyRef</span>
+        <a href="ConnectionManager.html"><span class="name">ConnectionManager</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Vend JDBC connections
 </p>
-    </li><li visbl="pub" name="net.liftweb.db.DB" data-isabs="true">
+    </li><li name="net.liftweb.db.DB" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DBextendsLoggable"></a>
       <a id="DB:DB"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,11 +112,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DB.html"><span class="name">DB</span></a><span class="result"> extends Loggable</span>
+        <a href="DB.html"><span class="name">DB</span></a><span class="result"> extends <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DB1" data-isabs="true">
+    </li><li name="net.liftweb.db.DB1" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DB1extendsObject"></a>
       <a id="DB1:DB1"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -105,11 +125,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DB1.html"><span class="name">DB1</span></a><span class="result"> extends AnyRef</span>
+        <a href="DB1.html"><span class="name">DB1</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DBLog" data-isabs="true">
+    </li><li name="net.liftweb.db.DBLog" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DBLogextendsObject"></a>
       <a id="DBLog:DBLog"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -117,11 +138,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DBLog.html"><span class="name">DBLog</span></a><span class="result"> extends AnyRef</span>
+        <a href="DBLog.html"><span class="name">DBLog</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">This trait is applied to JDBC statements and similar constructs that can log operations.</p>
-    </li><li visbl="pub" name="net.liftweb.db.DBLogEntry" data-isabs="true">
+    </li><li name="net.liftweb.db.DBLogEntry" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DBLogEntryextendsObject"></a>
       <a id="DBLogEntry:DBLogEntry"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -129,11 +151,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DBLogEntry.html"><span class="name">DBLogEntry</span></a><span class="result"> extends AnyRef</span>
+        <a href="DBLogEntry.html"><span class="name">DBLogEntry</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DBMetaEntry" data-isabs="false">
+    </li><li name="net.liftweb.db.DBMetaEntry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DBMetaEntryextendsDBLogEntrywithProductwithSerializable"></a>
       <a id="DBMetaEntry:DBMetaEntry"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -141,11 +164,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="DBMetaEntry.html"><span class="name">DBMetaEntry</span></a><span class="params">(<span name="statement">statement: String</span>, <span name="duration">duration: Long</span>)</span><span class="result"> extends DBLogEntry with Product with Serializable</span>
+        <a href="DBMetaEntry.html"><span class="name">DBMetaEntry</span></a><span class="params">(<span name="statement">statement: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="duration">duration: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="DBLogEntry.html" class="extype" name="net.liftweb.db.DBLogEntry">DBLogEntry</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DBStatementEntry" data-isabs="false">
+    </li><li name="net.liftweb.db.DBStatementEntry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DBStatementEntryextendsDBLogEntrywithProductwithSerializable"></a>
       <a id="DBStatementEntry:DBStatementEntry"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -153,11 +177,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="DBStatementEntry.html"><span class="name">DBStatementEntry</span></a><span class="params">(<span name="statement">statement: String</span>, <span name="duration">duration: Long</span>)</span><span class="result"> extends DBLogEntry with Product with Serializable</span>
+        <a href="DBStatementEntry.html"><span class="name">DBStatementEntry</span></a><span class="params">(<span name="statement">statement: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="duration">duration: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result"> extends <a href="DBLogEntry.html" class="extype" name="net.liftweb.db.DBLogEntry">DBLogEntry</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DriverType" data-isabs="true">
+    </li><li name="net.liftweb.db.DriverType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DriverTypeextendsObject"></a>
       <a id="DriverType:DriverType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -165,11 +190,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DriverType.html"><span class="name">DriverType</span></a><span class="result"> extends AnyRef</span>
+        <a href="DriverType.html"><span class="name">DriverType</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">JDBC Driver Abstraction base class.</p>
-    </li><li visbl="pub" name="net.liftweb.db.ProtoDBVendor" data-isabs="true">
+    </li><li name="net.liftweb.db.ProtoDBVendor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ProtoDBVendorextendsConnectionManager"></a>
       <a id="ProtoDBVendor:ProtoDBVendor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -177,11 +203,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ProtoDBVendor.html"><span class="name">ProtoDBVendor</span></a><span class="result"> extends ConnectionManager</span>
+        <a href="ProtoDBVendor.html"><span class="name">ProtoDBVendor</span></a><span class="result"> extends <a href="ConnectionManager.html" class="extype" name="net.liftweb.db.ConnectionManager">ConnectionManager</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.SqlServerBaseDriver" data-isabs="true">
+    </li><li name="net.liftweb.db.SqlServerBaseDriver" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SqlServerBaseDriverextendsDriverType"></a>
       <a id="SqlServerBaseDriver:SqlServerBaseDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -189,11 +216,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SqlServerBaseDriver.html"><span class="name">SqlServerBaseDriver</span></a><span class="result"> extends DriverType</span>
+        <a href="SqlServerBaseDriver.html"><span class="name">SqlServerBaseDriver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.StandardDBVendor" data-isabs="false">
+    </li><li name="net.liftweb.db.StandardDBVendor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StandardDBVendorextendsProtoDBVendor"></a>
       <a id="StandardDBVendor:StandardDBVendor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -201,11 +229,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="StandardDBVendor.html"><span class="name">StandardDBVendor</span></a><span class="result"> extends ProtoDBVendor</span>
+        <a href="StandardDBVendor.html"><span class="name">StandardDBVendor</span></a><span class="result"> extends <a href="ProtoDBVendor.html" class="extype" name="net.liftweb.db.ProtoDBVendor">ProtoDBVendor</a></span>
       </span>
       </h4>
       <p class="comment cmt">The standard DB vendor.</p>
-    </li><li visbl="pub" name="net.liftweb.db.SuperConnection" data-isabs="false">
+    </li><li name="net.liftweb.db.SuperConnection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SuperConnectionextendsObject"></a>
       <a id="SuperConnection:SuperConnection"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -213,7 +242,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SuperConnection.html"><span class="name">SuperConnection</span></a><span class="result"> extends AnyRef</span>
+        <a href="SuperConnection.html"><span class="name">SuperConnection</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
@@ -222,9 +251,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.db.DB" data-isabs="false">
+              <ol><li name="net.liftweb.db.DB" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DB"></a>
       <a id="DB:DB"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -232,11 +262,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DB$.html"><span class="name">DB</span></a><span class="result"> extends DB1</span>
+        <a href="DB$.html"><span class="name">DB</span></a><span class="result"> extends <a href="DB1.html" class="extype" name="net.liftweb.db.DB1">DB1</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DB1" data-isabs="false">
+    </li><li name="net.liftweb.db.DB1" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DB1"></a>
       <a id="DB1:DB1"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -244,11 +275,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DB1$.html"><span class="name">DB1</span></a><span class="result"> extends AnyRef</span>
+        <a href="DB1$.html"><span class="name">DB1</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DB2Driver" data-isabs="false">
+    </li><li name="net.liftweb.db.DB2Driver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DB2Driver"></a>
       <a id="DB2Driver:DB2Driver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -256,11 +288,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DB2Driver$.html"><span class="name">DB2Driver</span></a><span class="result"> extends DriverType</span>
+        <a href="DB2Driver$.html"><span class="name">DB2Driver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DBLog" data-isabs="false">
+    </li><li name="net.liftweb.db.DBLog" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DBLog"></a>
       <a id="DBLog:DBLog"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -268,11 +301,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DBLog$.html"><span class="name">DBLog</span></a><span class="result"> extends AnyRef</span>
+        <a href="DBLog$.html"><span class="name">DBLog</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DBLogEntry" data-isabs="false">
+    </li><li name="net.liftweb.db.DBLogEntry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DBLogEntry"></a>
       <a id="DBLogEntry:DBLogEntry"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -280,11 +314,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DBLogEntry$.html"><span class="name">DBLogEntry</span></a><span class="result"> extends AnyRef</span>
+        <a href="DBLogEntry$.html"><span class="name">DBLogEntry</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DefaultConnectionIdentifier" data-isabs="false">
+    </li><li name="net.liftweb.db.DefaultConnectionIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultConnectionIdentifier"></a>
       <a id="DefaultConnectionIdentifier:DefaultConnectionIdentifier"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -292,11 +327,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DefaultConnectionIdentifier$.html"><span class="name">DefaultConnectionIdentifier</span></a><span class="result"> extends ConnectionIdentifier with Product with Serializable</span>
+        <a href="DefaultConnectionIdentifier$.html"><span class="name">DefaultConnectionIdentifier</span></a><span class="result"> extends <a href="ConnectionIdentifier.html" class="extype" name="net.liftweb.db.ConnectionIdentifier">ConnectionIdentifier</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DerbyDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.DerbyDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DerbyDriver"></a>
       <a id="DerbyDriver:DerbyDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -304,11 +340,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DerbyDriver$.html"><span class="name">DerbyDriver</span></a><span class="result"> extends DriverType</span>
+        <a href="DerbyDriver$.html"><span class="name">DerbyDriver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.DriverType" data-isabs="false">
+    </li><li name="net.liftweb.db.DriverType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DriverType"></a>
       <a id="DriverType:DriverType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -316,11 +353,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DriverType$.html"><span class="name">DriverType</span></a><span class="result"> extends AnyRef</span>
+        <a href="DriverType$.html"><span class="name">DriverType</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.H2Driver" data-isabs="false">
+    </li><li name="net.liftweb.db.H2Driver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="H2Driver"></a>
       <a id="H2Driver:H2Driver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -328,11 +366,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="H2Driver$.html"><span class="name">H2Driver</span></a><span class="result"> extends DriverType</span>
+        <a href="H2Driver$.html"><span class="name">H2Driver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.MaxDbDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.MaxDbDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MaxDbDriver"></a>
       <a id="MaxDbDriver:MaxDbDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -340,11 +379,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MaxDbDriver$.html"><span class="name">MaxDbDriver</span></a><span class="result"> extends DriverType</span>
+        <a href="MaxDbDriver$.html"><span class="name">MaxDbDriver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.MySqlDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.MySqlDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MySqlDriver"></a>
       <a id="MySqlDriver:MySqlDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -352,11 +392,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MySqlDriver$.html"><span class="name">MySqlDriver</span></a><span class="result"> extends DriverType</span>
+        <a href="MySqlDriver$.html"><span class="name">MySqlDriver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.OracleDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.OracleDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OracleDriver"></a>
       <a id="OracleDriver:OracleDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -364,11 +405,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="OracleDriver$.html"><span class="name">OracleDriver</span></a><span class="result"> extends DriverType</span>
+        <a href="OracleDriver$.html"><span class="name">OracleDriver</span></a><span class="result"> extends <a href="DriverType.html" class="extype" name="net.liftweb.db.DriverType">DriverType</a></span>
       </span>
       </h4>
       <p class="comment cmt">Driver for Oracle databases.</p>
-    </li><li visbl="pub" name="net.liftweb.db.PostgreSqlDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.PostgreSqlDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PostgreSqlDriver"></a>
       <a id="PostgreSqlDriver:PostgreSqlDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -376,11 +418,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="PostgreSqlDriver$.html"><span class="name">PostgreSqlDriver</span></a><span class="result"> extends BasePostgreSQLDriver</span>
+        <a href="PostgreSqlDriver$.html"><span class="name">PostgreSqlDriver</span></a><span class="result"> extends <a href="BasePostgreSQLDriver.html" class="extype" name="net.liftweb.db.BasePostgreSQLDriver">BasePostgreSQLDriver</a></span>
       </span>
       </h4>
       <p class="comment cmt">PostgreSql driver for versions 8.</p>
-    </li><li visbl="pub" name="net.liftweb.db.PostgreSqlOldDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.PostgreSqlOldDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PostgreSqlOldDriver"></a>
       <a id="PostgreSqlOldDriver:PostgreSqlOldDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -388,11 +431,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="PostgreSqlOldDriver$.html"><span class="name">PostgreSqlOldDriver</span></a><span class="result"> extends BasePostgreSQLDriver</span>
+        <a href="PostgreSqlOldDriver$.html"><span class="name">PostgreSqlOldDriver</span></a><span class="result"> extends <a href="BasePostgreSQLDriver.html" class="extype" name="net.liftweb.db.BasePostgreSQLDriver">BasePostgreSQLDriver</a></span>
       </span>
       </h4>
       <p class="comment cmt">PostgreSql driver for versions 8.</p>
-    </li><li visbl="pub" name="net.liftweb.db.SqlServerDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.SqlServerDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SqlServerDriver"></a>
       <a id="SqlServerDriver:SqlServerDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -400,11 +444,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="SqlServerDriver$.html"><span class="name">SqlServerDriver</span></a><span class="result"> extends SqlServerBaseDriver</span>
+        <a href="SqlServerDriver$.html"><span class="name">SqlServerDriver</span></a><span class="result"> extends <a href="SqlServerBaseDriver.html" class="extype" name="net.liftweb.db.SqlServerBaseDriver">SqlServerBaseDriver</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.SqlServerPre2005Driver" data-isabs="false">
+    </li><li name="net.liftweb.db.SqlServerPre2005Driver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SqlServerPre2005Driver"></a>
       <a id="SqlServerPre2005Driver:SqlServerPre2005Driver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -412,12 +457,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="SqlServerPre2005Driver$.html"><span class="name">SqlServerPre2005Driver</span></a><span class="result"> extends SqlServerBaseDriver</span>
+        <a href="SqlServerPre2005Driver$.html"><span class="name">SqlServerPre2005Driver</span></a><span class="result"> extends <a href="SqlServerBaseDriver.html" class="extype" name="net.liftweb.db.SqlServerBaseDriver">SqlServerBaseDriver</a></span>
       </span>
       </h4>
       <p class="comment cmt">Microsoft SQL Server driver for versions 2000 and below
 </p>
-    </li><li visbl="pub" name="net.liftweb.db.StatementConstantDescriptions" data-isabs="false">
+    </li><li name="net.liftweb.db.StatementConstantDescriptions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StatementConstantDescriptions"></a>
       <a id="StatementConstantDescriptions:StatementConstantDescriptions"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -425,13 +471,14 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="StatementConstantDescriptions$.html"><span class="name">StatementConstantDescriptions</span></a><span class="result"> extends AnyRef</span>
+        <a href="StatementConstantDescriptions$.html"><span class="name">StatementConstantDescriptions</span></a>
       </span>
       </h4>
       <p class="comment cmt">This object defines some conversions from Int JDBC constants to
 descriptive strings
 </p>
-    </li><li visbl="pub" name="net.liftweb.db.SuperConnection" data-isabs="false">
+    </li><li name="net.liftweb.db.SuperConnection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SuperConnection"></a>
       <a id="SuperConnection:SuperConnection"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -439,11 +486,12 @@ descriptive strings
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="SuperConnection$.html"><span class="name">SuperConnection</span></a><span class="result"> extends AnyRef</span>
+        <a href="SuperConnection$.html"><span class="name">SuperConnection</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db.SybaseASEDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.SybaseASEDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SybaseASEDriver"></a>
       <a id="SybaseASEDriver:SybaseASEDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -451,11 +499,12 @@ descriptive strings
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="SybaseASEDriver$.html"><span class="name">SybaseASEDriver</span></a><span class="result"> extends SqlServerBaseDriver</span>
+        <a href="SybaseASEDriver$.html"><span class="name">SybaseASEDriver</span></a><span class="result"> extends <a href="SqlServerBaseDriver.html" class="extype" name="net.liftweb.db.SqlServerBaseDriver">SqlServerBaseDriver</a></span>
       </span>
       </h4>
       <p class="comment cmt">Sybase ASE Driver.</p>
-    </li><li visbl="pub" name="net.liftweb.db.SybaseSQLAnywhereDriver" data-isabs="false">
+    </li><li name="net.liftweb.db.SybaseSQLAnywhereDriver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SybaseSQLAnywhereDriver"></a>
       <a id="SybaseSQLAnywhereDriver:SybaseSQLAnywhereDriver"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -463,7 +512,7 @@ descriptive strings
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="SybaseSQLAnywhereDriver$.html"><span class="name">SybaseSQLAnywhereDriver</span></a><span class="result"> extends SqlServerBaseDriver</span>
+        <a href="SybaseSQLAnywhereDriver$.html"><span class="name">SybaseSQLAnywhereDriver</span></a><span class="result"> extends <a href="SqlServerBaseDriver.html" class="extype" name="net.liftweb.db.SqlServerBaseDriver">SqlServerBaseDriver</a></span>
       </span>
       </h4>
       <p class="comment cmt">Sybase SQL Anywhere Driver.</p>
@@ -471,10 +520,20 @@ descriptive strings
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

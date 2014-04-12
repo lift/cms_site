@@ -2,53 +2,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mocks.MockHttpServletResponse</title>
+          <title>MockHttpServletResponse - Lift Framework 2.6-M3 - net.liftweb.mocks.MockHttpServletResponse</title>
+          <meta name="description" content="MockHttpServletResponse - Lift Framework 2.6 - M3 - net.liftweb.mocks.MockHttpServletResponse" />
+          <meta name="keywords" content="MockHttpServletResponse Lift Framework 2.6 M3 net.liftweb.mocks.MockHttpServletResponse" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.mocks.MockHttpServletResponse';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../../lib/class_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.mocks" class="extype" href="package.html">mocks</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.mocks">mocks</a></p>
         <h1>MockHttpServletResponse</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">MockHttpServletResponse</span><span class="result"> extends <span name="javax.servlet.http.HttpServletResponse" class="extype">HttpServletResponse</span></span>
+        <span class="name">MockHttpServletResponse</span><span class="result"> extends <span class="extype" name="javax.servlet.http.HttpServletResponse">HttpServletResponse</span></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>A Mock HttpServletResponse. Take a peek at it's writer or
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A Mock HttpServletResponse. Take a peek at it's writer or
 outputStream to see what lift has written in response to your request
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span name="javax.servlet.http.HttpServletResponse" class="extype">HttpServletResponse</span>, <span name="javax.servlet.ServletResponse" class="extype">ServletResponse</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="javax.servlet.http.HttpServletResponse">HttpServletResponse</span>, <span class="extype" name="javax.servlet.ServletResponse">ServletResponse</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.mocks.MockHttpServletResponse" class="in"><span>MockHttpServletResponse</span></li><li name="javax.servlet.http.HttpServletResponse" class="in"><span>HttpServletResponse</span></li><li name="javax.servlet.ServletResponse" class="in"><span>ServletResponse</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.mocks.MockHttpServletResponse"><span>MockHttpServletResponse</span></li><li class="in" name="javax.servlet.http.HttpServletResponse"><span>HttpServletResponse</span></li><li class="in" name="javax.servlet.ServletResponse"><span>ServletResponse</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -57,17 +84,18 @@ outputStream to see what lift has written in response to your request
 
       <div id="template">
         <div id="allMembers">
-        <div class="members" id="constructors">
+        <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#this" data-isabs="false">
-      <a id="this:MockHttpServletResponse"></a>
+              <ol><li name="net.liftweb.mocks.MockHttpServletResponse#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(writer:java.io.PrintWriter,outputStream:javax.servlet.ServletOutputStream):net.liftweb.mocks.MockHttpServletResponse"></a>
+      <a id="&lt;init&gt;:MockHttpServletResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">MockHttpServletResponse</span><span class="params">(<span name="writer">writer: <span name="java.io.PrintWriter" class="extype">PrintWriter</span></span>, <span name="outputStream">outputStream: <span name="javax.servlet.ServletOutputStream" class="extype">ServletOutputStream</span></span>)</span>
+        <span class="name">MockHttpServletResponse</span><span class="params">(<span name="writer">writer: <span class="extype" name="java.io.PrintWriter">PrintWriter</span></span>, <span name="outputStream">outputStream: <span class="extype" name="javax.servlet.ServletOutputStream">ServletOutputStream</span></span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">writer</dt><dd class="cmt"><p>a PrintWriter that the response will be written with</p></dd><dt class="param">outputStream</dt><dd class="cmt"><p>an OutputStream that the response will be written to.
@@ -79,9 +107,10 @@ outputStream to see what lift has written in response to your request
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -89,11 +118,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -101,11 +131,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -113,11 +144,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -125,11 +157,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -137,11 +170,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#addCookie" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#addCookie" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addCookie(cookie:javax.servlet.http.Cookie):Unit"></a>
       <a id="addCookie(Cookie):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -149,11 +183,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addCookie</span><span class="params">(<span name="cookie">cookie: <span name="javax.servlet.http.Cookie" class="extype">Cookie</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">addCookie</span><span class="params">(<span name="cookie">cookie: <span class="extype" name="javax.servlet.http.Cookie">Cookie</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#addDateHeader" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#addDateHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addDateHeader(s:String,l:Long):Unit"></a>
       <a id="addDateHeader(String,Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -161,11 +196,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addDateHeader</span><span class="params">(<span name="s">s: String</span>, <span name="l">l: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">addDateHeader</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="l">l: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#addHeader" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#addHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addHeader(s1:String,s2:String):Unit"></a>
       <a id="addHeader(String,String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -173,11 +209,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addHeader</span><span class="params">(<span name="s1">s1: String</span>, <span name="s2">s2: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">addHeader</span><span class="params">(<span name="s1">s1: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="s2">s2: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#addIntHeader" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#addIntHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addIntHeader(s:String,i:Int):Unit"></a>
       <a id="addIntHeader(String,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -185,11 +222,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addIntHeader</span><span class="params">(<span name="s">s: String</span>, <span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">addIntHeader</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -197,11 +235,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#bufferSize" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#bufferSize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bufferSize:Int"></a>
       <a id="bufferSize:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -209,11 +248,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">bufferSize</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">bufferSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#charEncoding" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#charEncoding" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="charEncoding:String"></a>
       <a id="charEncoding:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -221,11 +261,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">charEncoding</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">charEncoding</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -233,14 +274,15 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#containsHeader" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#containsHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="containsHeader(header:String):Boolean"></a>
       <a id="containsHeader(String):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -248,11 +290,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">containsHeader</span><span class="params">(<span name="header">header: String</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">containsHeader</span><span class="params">(<span name="header">header: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#contentLength" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#contentLength" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="contentLength:Int"></a>
       <a id="contentLength:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -260,11 +303,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">contentLength</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">contentLength</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#contentType" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#contentType" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="contentType:String"></a>
       <a id="contentType:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -272,11 +316,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">contentType</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">contentType</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#cookies" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#cookies" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cookies:List[javax.servlet.http.Cookie]"></a>
       <a id="cookies:List[Cookie]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -284,11 +329,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">cookies</span><span class="result">: List[<span name="javax.servlet.http.Cookie" class="extype">Cookie</span>]</span>
+        <span class="name">cookies</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="javax.servlet.http.Cookie">Cookie</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#encodeRedirectURL" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#encodeRedirectURL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encodeRedirectURL(url:String):String"></a>
       <a id="encodeRedirectURL(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -296,11 +342,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encodeRedirectURL</span><span class="params">(<span name="url">url: String</span>)</span><span class="result">: String</span>
+        <span class="name">encodeRedirectURL</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#encodeRedirectUrl" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#encodeRedirectUrl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encodeRedirectUrl(url:String):String"></a>
       <a id="encodeRedirectUrl(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -308,11 +355,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encodeRedirectUrl</span><span class="params">(<span name="url">url: String</span>)</span><span class="result">: String</span>
+        <span class="name">encodeRedirectUrl</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#encodeURL" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#encodeURL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encodeURL(url:String):String"></a>
       <a id="encodeURL(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -320,11 +368,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encodeURL</span><span class="params">(<span name="url">url: String</span>)</span><span class="result">: String</span>
+        <span class="name">encodeURL</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#encodeUrl" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#encodeUrl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encodeUrl(url:String):String"></a>
       <a id="encodeUrl(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -332,11 +381,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">encodeUrl</span><span class="params">(<span name="url">url: String</span>)</span><span class="result">: String</span>
+        <span class="name">encodeUrl</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -344,11 +394,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -356,11 +407,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -368,14 +420,15 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#flushBuffer" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#flushBuffer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="flushBuffer():Unit"></a>
       <a id="flushBuffer():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -383,11 +436,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">flushBuffer</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">flushBuffer</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#getBufferSize" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#getBufferSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getBufferSize():Int"></a>
       <a id="getBufferSize():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -395,11 +449,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getBufferSize</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">getBufferSize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#getCharacterEncoding" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#getCharacterEncoding" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getCharacterEncoding():String"></a>
       <a id="getCharacterEncoding():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -407,23 +462,25 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getCharacterEncoding</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">getCharacterEncoding</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#getContentType" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#getContentType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getContentType():String"></a>
       <a id="getContentType():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -431,11 +488,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getContentType</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">getContentType</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#getLocale" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#getLocale" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLocale():java.util.Locale"></a>
       <a id="getLocale():Locale"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -443,11 +501,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getLocale</span><span class="params">()</span><span class="result">: <span name="java.util.Locale" class="extype">Locale</span></span>
+        <span class="name">getLocale</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Locale">Locale</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#getOutputStream" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#getOutputStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getOutputStream():javax.servlet.ServletOutputStream"></a>
       <a id="getOutputStream():ServletOutputStream"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -455,11 +514,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getOutputStream</span><span class="params">()</span><span class="result">: <span name="javax.servlet.ServletOutputStream" class="extype">ServletOutputStream</span></span>
+        <span class="name">getOutputStream</span><span class="params">()</span><span class="result">: <span class="extype" name="javax.servlet.ServletOutputStream">ServletOutputStream</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#getWriter" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#getWriter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getWriter():java.io.PrintWriter"></a>
       <a id="getWriter():PrintWriter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -467,11 +527,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getWriter</span><span class="params">()</span><span class="result">: <span name="java.io.PrintWriter" class="extype">PrintWriter</span></span>
+        <span class="name">getWriter</span><span class="params">()</span><span class="result">: <span class="extype" name="java.io.PrintWriter">PrintWriter</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -479,23 +540,25 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#headers" data-isabs="false">
-      <a id="headers:Map[String, List[String]]"></a>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#headers" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="headers:Map[String,List[String]]"></a>
+      <a id="headers:Map[String,List[String]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">headers</span><span class="result">: Map[String, List[String]]</span>
+        <span class="name">headers</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#isCommitted" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#isCommitted" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isCommitted():Boolean"></a>
       <a id="isCommitted():Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -503,11 +566,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isCommitted</span><span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isCommitted</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -515,11 +579,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#locale" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#locale" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="locale:java.util.Locale"></a>
       <a id="locale:Locale"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -527,11 +592,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">locale</span><span class="result">: <span name="java.util.Locale" class="extype">Locale</span></span>
+        <span class="name">locale</span><span class="result">: <span class="extype" name="java.util.Locale">Locale</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -539,11 +605,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -551,11 +618,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -563,11 +631,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#outputStream" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#outputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="outputStream:javax.servlet.ServletOutputStream"></a>
       <a id="outputStream:ServletOutputStream"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -575,11 +644,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">outputStream</span><span class="result">: <span name="javax.servlet.ServletOutputStream" class="extype">ServletOutputStream</span></span>
+        <span class="name">outputStream</span><span class="result">: <span class="extype" name="javax.servlet.ServletOutputStream">ServletOutputStream</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">an OutputStream that the response will be written to.</p>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#reset" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#reset" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reset():Unit"></a>
       <a id="reset():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -587,11 +657,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">reset</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">reset</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#resetBuffer" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#resetBuffer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resetBuffer():Unit"></a>
       <a id="resetBuffer():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -599,11 +670,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resetBuffer</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">resetBuffer</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#sendError" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#sendError" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendError(code:Int,s:String):Unit"></a>
       <a id="sendError(Int,String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -611,11 +683,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendError</span><span class="params">(<span name="code">code: <span name="scala.Int" class="extype">Int</span></span>, <span name="s">s: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">sendError</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Int">Int</span></span>, <span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#sendError" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#sendError" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendError(code:Int):Unit"></a>
       <a id="sendError(Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -623,11 +696,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendError</span><span class="params">(<span name="code">code: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">sendError</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#sendRedirect" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#sendRedirect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendRedirect(uri:String):Unit"></a>
       <a id="sendRedirect(String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -635,11 +709,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendRedirect</span><span class="params">(<span name="uri">uri: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">sendRedirect</span><span class="params">(<span name="uri">uri: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setBufferSize" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setBufferSize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setBufferSize(i:Int):Unit"></a>
       <a id="setBufferSize(Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -647,11 +722,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setBufferSize</span><span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setBufferSize</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setCharacterEncoding" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setCharacterEncoding" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setCharacterEncoding(e:String):Unit"></a>
       <a id="setCharacterEncoding(String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -659,11 +735,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setCharacterEncoding</span><span class="params">(<span name="e">e: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setCharacterEncoding</span><span class="params">(<span name="e">e: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setContentLength" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setContentLength" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setContentLength(l:Int):Unit"></a>
       <a id="setContentLength(Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -671,11 +748,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setContentLength</span><span class="params">(<span name="l">l: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setContentLength</span><span class="params">(<span name="l">l: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setContentType" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setContentType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setContentType(t:String):Unit"></a>
       <a id="setContentType(String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -683,11 +761,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setContentType</span><span class="params">(<span name="t">t: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setContentType</span><span class="params">(<span name="t">t: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setDateHeader" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setDateHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setDateHeader(s:String,l:Long):Unit"></a>
       <a id="setDateHeader(String,Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -695,11 +774,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setDateHeader</span><span class="params">(<span name="s">s: String</span>, <span name="l">l: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setDateHeader</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="l">l: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setHeader" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setHeader(s1:String,s2:String):Unit"></a>
       <a id="setHeader(String,String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -707,11 +787,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setHeader</span><span class="params">(<span name="s1">s1: String</span>, <span name="s2">s2: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setHeader</span><span class="params">(<span name="s1">s1: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="s2">s2: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setIntHeader" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setIntHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setIntHeader(s:String,i:Int):Unit"></a>
       <a id="setIntHeader(String,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -719,11 +800,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setIntHeader</span><span class="params">(<span name="s">s: String</span>, <span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setIntHeader</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setLocale" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setLocale" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setLocale(l:java.util.Locale):Unit"></a>
       <a id="setLocale(Locale):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -731,11 +813,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setLocale</span><span class="params">(<span name="l">l: <span name="java.util.Locale" class="extype">Locale</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setLocale</span><span class="params">(<span name="l">l: <span class="extype" name="java.util.Locale">Locale</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setStatus" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → ServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setStatus" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setStatus(i:Int):Unit"></a>
       <a id="setStatus(Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -743,11 +826,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setStatus</span><span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setStatus</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#setStatus" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#setStatus" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setStatus(i:Int,s:String):Unit"></a>
       <a id="setStatus(Int,String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -755,11 +839,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setStatus</span><span class="params">(<span name="i">i: <span name="scala.Int" class="extype">Int</span></span>, <span name="s">s: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setStatus</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mocks.MockHttpServletResponse" class="extype" href="">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#statusCode" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletResponse">MockHttpServletResponse</a> → HttpServletResponse</dd></dl></div>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#statusCode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="statusCode:Int"></a>
       <a id="statusCode:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -767,11 +852,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">statusCode</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">statusCode</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.mocks.MockHttpServletResponse#statusString" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#statusString" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="statusString:String"></a>
       <a id="statusString:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -779,23 +865,25 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">statusString</span><span class="result">: String</span>
+        <span class="name">statusString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -803,11 +891,12 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -815,14 +904,15 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -830,14 +920,15 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -845,14 +936,15 @@ outputStream to see what lift has written in response to your request
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mocks.MockHttpServletResponse#writer" data-isabs="false">
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse#writer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="writer:java.io.PrintWriter"></a>
       <a id="writer:PrintWriter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -860,7 +952,7 @@ outputStream to see what lift has written in response to your request
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">writer</span><span class="result">: <span name="java.io.PrintWriter" class="extype">PrintWriter</span></span>
+        <span class="name">writer</span><span class="result">: <span class="extype" name="java.io.PrintWriter">PrintWriter</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">a PrintWriter that the response will be written with</p>
@@ -868,17 +960,27 @@ outputStream to see what lift has written in response to your request
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
-        <div name="javax.servlet.http.HttpServletResponse" class="parent">
-              <h3>Inherited from <span name="javax.servlet.http.HttpServletResponse" class="extype">HttpServletResponse</span></h3>
-            </div><div name="javax.servlet.ServletResponse" class="parent">
-              <h3>Inherited from <span name="javax.servlet.ServletResponse" class="extype">ServletResponse</span></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="javax.servlet.http.HttpServletResponse">
+              <h3>Inherited from <span class="extype" name="javax.servlet.http.HttpServletResponse">HttpServletResponse</span></h3>
+            </div><div class="parent" name="javax.servlet.ServletResponse">
+              <h3>Inherited from <span class="extype" name="javax.servlet.ServletResponse">ServletResponse</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

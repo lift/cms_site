@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mapper.view</title>
+          <title>view - Lift Framework 2.6-M3 - net.liftweb.mapper.view</title>
+          <meta name="description" content="view - Lift Framework 2.6 - M3 - net.liftweb.mapper.view" />
+          <meta name="keywords" content="view Lift Framework 2.6 M3 net.liftweb.mapper.view" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.mapper.view.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../../package.html">liftweb</a>.<a name="net.liftweb.mapper" class="extype" href="../package.html">mapper</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.mapper">mapper</a></p>
         <h1>view</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mapper.view.FormProcessor" data-isabs="true">
+              <ol><li name="net.liftweb.mapper.view.FormProcessor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FormProcessorextendsObject"></a>
       <a id="FormProcessor:FormProcessor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,131 +72,141 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FormProcessor.html"><span class="name">FormProcessor</span></a><span class="result"> extends AnyRef</span>
+        <a href="FormProcessor.html"><span class="name">FormProcessor</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">This class can be used to act on all submitted values in one block of code.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.ItemsList" data-isabs="true">
-      <a id="ItemsList:ItemsList[T]"></a>
+    </li><li name="net.liftweb.mapper.view.ItemsList" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ItemsList[T&lt;:net.liftweb.mapper.Mapper[T]]extendsObject"></a>
+      <a id="ItemsList[T&lt;:Mapper[T]]:ItemsList[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ItemsList.html"><span class="name">ItemsList</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="ItemsList.html"><span class="name">ItemsList</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.ItemsList.T">T</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Keeps track of pending adds to and removes from a list of mappers.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.ItemsListEditor" data-isabs="true">
-      <a id="ItemsListEditor:ItemsListEditor[T]"></a>
+    </li><li name="net.liftweb.mapper.view.ItemsListEditor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ItemsListEditor[T&lt;:net.liftweb.mapper.Mapper[T]]extendsObject"></a>
+      <a id="ItemsListEditor[T&lt;:Mapper[T]]:ItemsListEditor[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ItemsListEditor.html"><span class="name">ItemsListEditor</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="ItemsListEditor.html"><span class="name">ItemsListEditor</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.ItemsListEditor.T">T</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">General trait to edit an ItemsList.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.MapperPaginator" data-isabs="false">
-      <a id="MapperPaginator:MapperPaginator[T]"></a>
+    </li><li name="net.liftweb.mapper.view.MapperPaginator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapperPaginator[T&lt;:net.liftweb.mapper.Mapper[T]]extendsPaginator[T]"></a>
+      <a id="MapperPaginator[T&lt;:Mapper[T]]:MapperPaginator[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MapperPaginator.html"><span class="name">MapperPaginator</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends Paginator[T]</span>
+        <a href="MapperPaginator.html"><span class="name">MapperPaginator</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</span>]</span><span class="result"> extends <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">Paginate mapper instances by supplying the model you
 wish to paginate and Paginator will run your query for you etc.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.MapperPaginatorSnippet" data-isabs="false">
-      <a id="MapperPaginatorSnippet:MapperPaginatorSnippet[T]"></a>
+    </li><li name="net.liftweb.mapper.view.MapperPaginatorSnippet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MapperPaginatorSnippet[T&lt;:net.liftweb.mapper.Mapper[T]]extendsMapperPaginator[T]withPaginatorSnippet[T]"></a>
+      <a id="MapperPaginatorSnippet[T&lt;:Mapper[T]]:MapperPaginatorSnippet[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MapperPaginatorSnippet.html"><span class="name">MapperPaginatorSnippet</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends MapperPaginator[T] with PaginatorSnippet[T]</span>
+        <a href="MapperPaginatorSnippet.html"><span class="name">MapperPaginatorSnippet</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</span>]</span><span class="result"> extends <a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>] with <a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">Convenience class that combines MapperPaginator with PaginatorSnippet</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.ModelSnippet" data-isabs="true">
-      <a id="ModelSnippet:ModelSnippet[T]"></a>
+    </li><li name="net.liftweb.mapper.view.ModelSnippet" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ModelSnippet[T&lt;:net.liftweb.mapper.Mapper[T]]extendsStatefulSnippet"></a>
+      <a id="ModelSnippet[T&lt;:Mapper[T]]:ModelSnippet[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ModelSnippet.html"><span class="name">ModelSnippet</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends StatefulSnippet</span>
+        <a href="ModelSnippet.html"><span class="name">ModelSnippet</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.ModelSnippet.T">T</span>]</span>]</span><span class="result"> extends <a href="../../http/StatefulSnippet.html" class="extype" name="net.liftweb.http.StatefulSnippet">StatefulSnippet</a></span>
       </span>
       </h4>
       <p class="comment cmt">A snippet that can list and edit items of a particular Mapper class
 This trait can help reduce boilerplate in the common scenario where
 you want a snippet class to provide list and edit snippets for a
 specific Mapper class.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.ModelView" data-isabs="false">
-      <a id="ModelView:ModelView[T]"></a>
+    </li><li name="net.liftweb.mapper.view.ModelView" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ModelView[T&lt;:net.liftweb.mapper.Mapper[T]]extendsObject"></a>
+      <a id="ModelView[T&lt;:Mapper[T]]:ModelView[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ModelView.html"><span class="name">ModelView</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="ModelView.html"><span class="name">ModelView</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.ModelView.T">T</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A wrapper around a Mapper that provides view-related utilities.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.PaginatedModelSnippet" data-isabs="true">
-      <a id="PaginatedModelSnippet:PaginatedModelSnippet[T]"></a>
+    </li><li name="net.liftweb.mapper.view.PaginatedModelSnippet" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PaginatedModelSnippet[T&lt;:net.liftweb.mapper.Mapper[T]]extendsModelSnippet[T]"></a>
+      <a id="PaginatedModelSnippet[T&lt;:Mapper[T]]:PaginatedModelSnippet[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="PaginatedModelSnippet.html"><span class="name">PaginatedModelSnippet</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends ModelSnippet[T]</span>
+        <a href="PaginatedModelSnippet.html"><span class="name">PaginatedModelSnippet</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.PaginatedModelSnippet.T">T</span>]</span>]</span><span class="result"> extends <a href="ModelSnippet.html" class="extype" name="net.liftweb.mapper.view.ModelSnippet">ModelSnippet</a>[<span class="extype" name="net.liftweb.mapper.view.PaginatedModelSnippet.T">T</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">Helper for when using paginators with a ModelSnippet.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.SortedMapperPaginator" data-isabs="false">
-      <a id="SortedMapperPaginator:SortedMapperPaginator[T]"></a>
+    </li><li name="net.liftweb.mapper.view.SortedMapperPaginator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SortedMapperPaginator[T&lt;:net.liftweb.mapper.Mapper[T]]extendsMapperPaginator[T]withSortedPaginator[T,net.liftweb.mapper.MappedField[_,T]]"></a>
+      <a id="SortedMapperPaginator[T&lt;:Mapper[T]]:SortedMapperPaginator[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SortedMapperPaginator.html"><span class="name">SortedMapperPaginator</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends MapperPaginator[T] with SortedPaginator[T, net.liftweb.mapper.MappedField[_, T]]</span>
+        <a href="SortedMapperPaginator.html"><span class="name">SortedMapperPaginator</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginator.T">T</span>]</span>]</span><span class="result"> extends <a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a>[<span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginator.T">T</span>] with <a href="../../http/SortedPaginator.html" class="extype" name="net.liftweb.http.SortedPaginator">SortedPaginator</a>[<span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginator.T">T</span>, <a href="../MappedField.html" class="extype" name="net.liftweb.mapper.MappedField">MappedField</a>[_, <span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginator.T">T</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">Implements MapperPaginator and SortedPaginator.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet" data-isabs="false">
-      <a id="SortedMapperPaginatorSnippet:SortedMapperPaginatorSnippet[T]"></a>
+    </li><li name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SortedMapperPaginatorSnippet[T&lt;:net.liftweb.mapper.Mapper[T]]extendsSortedMapperPaginator[T]withSortedPaginatorSnippet[T,net.liftweb.mapper.MappedField[_,T]]"></a>
+      <a id="SortedMapperPaginatorSnippet[T&lt;:Mapper[T]]:SortedMapperPaginatorSnippet[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SortedMapperPaginatorSnippet.html"><span class="name">SortedMapperPaginatorSnippet</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends SortedMapperPaginator[T] with SortedPaginatorSnippet[T, net.liftweb.mapper.MappedField[_, T]]</span>
+        <a href="SortedMapperPaginatorSnippet.html"><span class="name">SortedMapperPaginatorSnippet</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet.T">T</span>]</span>]</span><span class="result"> extends <a href="SortedMapperPaginator.html" class="extype" name="net.liftweb.mapper.view.SortedMapperPaginator">SortedMapperPaginator</a>[<span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet.T">T</span>] with <a href="../../http/SortedPaginatorSnippet.html" class="extype" name="net.liftweb.http.SortedPaginatorSnippet">SortedPaginatorSnippet</a>[<span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet.T">T</span>, <a href="../MappedField.html" class="extype" name="net.liftweb.mapper.MappedField">MappedField</a>[_, <span class="extype" name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet.T">T</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">Convenience class that combines SortedMapperPaginator and SortedPaginatorSnippet.</p>
-    </li><li visbl="prt" name="net.liftweb.mapper.view.TableEditorImpl" data-isabs="false">
-      <a id="TableEditorImpl:TableEditorImpl[T]"></a>
+    </li><li name="net.liftweb.mapper.view.TableEditorImpl" visbl="prt" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TableEditorImpl[T&lt;:net.liftweb.mapper.Mapper[T]]extendsItemsListEditor[T]"></a>
+      <a id="TableEditorImpl[T&lt;:Mapper[T]]:TableEditorImpl[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="TableEditorImpl.html"><span class="name">TableEditorImpl</span></a><span class="tparams">[<span name="T">T &lt;: Mapper[T]</span>]</span><span class="result"> extends ItemsListEditor[T]</span>
+        <a href="TableEditorImpl.html"><span class="name">TableEditorImpl</span></a><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.TableEditorImpl.T">T</span>]</span>]</span><span class="result"> extends <a href="ItemsListEditor.html" class="extype" name="net.liftweb.mapper.view.ItemsListEditor">ItemsListEditor</a>[<span class="extype" name="net.liftweb.mapper.view.TableEditorImpl.T">T</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">This class does the actual view binding against a ItemsList.</p>
@@ -189,9 +215,10 @@ specific Mapper class.</p>
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mapper.view.TableEditor" data-isabs="false">
+              <ol><li name="net.liftweb.mapper.view.TableEditor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TableEditor"></a>
       <a id="TableEditor:TableEditor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -199,12 +226,13 @@ specific Mapper class.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="TableEditor$.html"><span class="name">TableEditor</span></a><span class="result"> extends AnyRef</span>
+        <a href="TableEditor$.html"><span class="name">TableEditor</span></a>
       </span>
       </h4>
       <p class="comment cmt">Holds a registry of TableEditor delegates
 Call TableEditor.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.Util" data-isabs="false">
+    </li><li name="net.liftweb.mapper.view.Util" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Util"></a>
       <a id="Util:Util"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -212,12 +240,13 @@ Call TableEditor.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Util$.html"><span class="name">Util</span></a><span class="result"> extends AnyRef</span>
+        <a href="Util$.html"><span class="name">Util</span></a>
       </span>
       </h4>
       <p class="comment cmt">Provides a number of methods that make complex Mapper-based view snippets
 easier to build.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.snippet" data-isabs="false">
+    </li><li name="net.liftweb.mapper.view.snippet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="snippet"></a>
       <a id="snippet:snippet"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -233,10 +262,20 @@ easier to build.</p>
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

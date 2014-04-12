@@ -2,52 +2,79 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.http.LiftSession</title>
+          <title>LiftSession - Lift Framework 2.6-M3 - net.liftweb.http.LiftSession</title>
+          <meta name="description" content="LiftSession - Lift Framework 2.6 - M3 - net.liftweb.http.LiftSession" />
+          <meta name="keywords" content="LiftSession Lift Framework 2.6 M3 net.liftweb.http.LiftSession" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.http.LiftSession';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
-        <a title="Go to companion" href="LiftSession$.html"><img src="../../../lib/class_to_object_big.png" /></a>
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.http" class="extype" href="package.html">http</a></p>
-        <h1><a title="Go to companion" href="LiftSession$.html">LiftSession</a></h1>
+        <a href="LiftSession$.html" title="Go to companion"><img src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
+        <h1><a href="LiftSession$.html" title="Go to companion">LiftSession</a></h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">LiftSession</span><span class="result"> extends <span name="net.liftweb.http.LiftMerge" class="extype">LiftMerge</span> with <a name="net.liftweb.common.Loggable" class="extype" href="../common/Loggable.html">Loggable</a> with <a name="net.liftweb.http.HowStateful" class="extype" href="HowStateful.html">HowStateful</a></span>
+        <span class="name">LiftSession</span><span class="result"> extends <span class="extype" name="net.liftweb.http.LiftMerge">LiftMerge</span> with <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a> with <a href="HowStateful.html" class="extype" name="net.liftweb.http.HowStateful">HowStateful</a></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>The LiftSession class containg the session state information
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The LiftSession class containg the session state information
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.http.HowStateful" class="extype" href="HowStateful.html">HowStateful</a>, <a name="net.liftweb.common.Loggable" class="extype" href="../common/Loggable.html">Loggable</a>, <span name="net.liftweb.http.LiftMerge" class="extype">LiftMerge</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="HowStateful.html" class="extype" name="net.liftweb.http.HowStateful">HowStateful</a>, <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a>, <span class="extype" name="net.liftweb.http.LiftMerge">LiftMerge</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.http.LiftSession" class="in"><span>LiftSession</span></li><li name="net.liftweb.http.HowStateful" class="in"><span>HowStateful</span></li><li name="net.liftweb.common.Loggable" class="in"><span>Loggable</span></li><li name="net.liftweb.http.LiftMerge" class="in"><span>LiftMerge</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.http.LiftSession"><span>LiftSession</span></li><li class="in" name="net.liftweb.http.HowStateful"><span>HowStateful</span></li><li class="in" name="net.liftweb.common.Loggable"><span>Loggable</span></li><li class="in" name="net.liftweb.http.LiftMerge"><span>LiftMerge</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -56,17 +83,18 @@
 
       <div id="template">
         <div id="allMembers">
-        <div class="members" id="constructors">
+        <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li visbl="pub" name="net.liftweb.http.LiftSession#this" data-isabs="false">
-      <a id="this:LiftSession"></a>
+              <ol><li name="net.liftweb.http.LiftSession#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(_contextPath:String,uniqueId:String,httpSession:net.liftweb.common.Box[net.liftweb.http.provider.HTTPSession]):net.liftweb.http.LiftSession"></a>
+      <a id="&lt;init&gt;:LiftSession"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">LiftSession</span><span class="params">(<span name="_contextPath">_contextPath: String</span>, <span name="uniqueId">uniqueId: String</span>, <span name="httpSession">httpSession: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<a name="net.liftweb.http.provider.HTTPSession" class="extype" href="provider/HTTPSession.html">HTTPSession</a>]</span>)</span>
+        <span class="name">LiftSession</span><span class="params">(<span name="_contextPath">_contextPath: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uniqueId">uniqueId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpSession">httpSession: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="provider/HTTPSession.html" class="extype" name="net.liftweb.http.provider.HTTPSession">HTTPSession</a>]</span>)</span>
       </span>
       </h4>
       
@@ -77,9 +105,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -87,11 +116,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -99,11 +129,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -111,11 +142,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -123,11 +155,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -135,19 +168,20 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#addPostPageJavaScript" data-isabs="false">
-      <a id="addPostPageJavaScript(() ⇒ JsCmd):Unit"></a>
+    </li><li name="net.liftweb.http.LiftSession#addPostPageJavaScript" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addPostPageJavaScript(func:()=&gt;net.liftweb.http.js.JsCmd):Unit"></a>
+      <a id="addPostPageJavaScript(()⇒JsCmd):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addPostPageJavaScript</span><span class="params">(<span name="func">func: () ⇒ <a name="net.liftweb.http.js.JsCmd" class="extype" href="js/JsCmd.html">JsCmd</a></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">addPostPageJavaScript</span><span class="params">(<span name="func">func: () ⇒ <a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Associate a function that renders JavaScript with the current page.</p><div class="fullcomment"><div class="comment cmt"><p>Associate a function that renders JavaScript with the current page.
@@ -157,20 +191,22 @@ Ajax calls, and even Comet calls for this page.
 </p></div><dl class="paramcmts block"><dt class="param">func</dt><dd class="cmt"><p>-- the function that returns JavaScript to be appended to
 responses associated with this page
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#addSessionCleanup" data-isabs="false">
-      <a id="addSessionCleanup((LiftSession) ⇒ Unit):Unit"></a>
+    </li><li name="net.liftweb.http.LiftSession#addSessionCleanup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addSessionCleanup(f:net.liftweb.http.LiftSession=&gt;Unit):Unit"></a>
+      <a id="addSessionCleanup((LiftSession)⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addSessionCleanup</span><span class="params">(<span name="f">f: (<a name="net.liftweb.http.LiftSession" class="extype" href="">LiftSession</a>) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">addSessionCleanup</span><span class="params">(<span name="f">f: (<a href="" class="extype" name="net.liftweb.http.LiftSession">LiftSession</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Adds a cleanup function that will be executed when session is terminated
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.HowStateful#allowContainerState_?" data-isabs="false">
+    </li><li name="net.liftweb.http.HowStateful#allowContainerState_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allowContainerState_?:Boolean"></a>
       <a id="allowContainerState_?:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -178,14 +214,15 @@ responses associated with this page
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: allowContainerState_$qmark">allowContainerState_?</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: allowContainerState_$qmark" class="name">allowContainerState_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">There may be cases when you are allowed container state (e.</p><div class="fullcomment"><div class="comment cmt"><p>There may be cases when you are allowed container state (e.g.,
 migratory session, but you're not allowed to write Lift
 non-migratory state, return true here.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.HowStateful" class="extype" href="HowStateful.html">HowStateful</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="HowStateful.html" class="extype" name="net.liftweb.http.HowStateful">HowStateful</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -193,19 +230,20 @@ non-migratory state, return true here.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#buildDeferredFunction" data-isabs="false">
-      <a id="buildDeferredFunction[T](() ⇒ T):() ⇒ T"></a>
+    </li><li name="net.liftweb.http.LiftSession#buildDeferredFunction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="buildDeferredFunction[T](f:()=&gt;T):()=&gt;T"></a>
+      <a id="buildDeferredFunction[T](()⇒T):()⇒T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">buildDeferredFunction</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: () ⇒ T</span>)</span><span class="result">: () ⇒ T</span>
+        <span class="name">buildDeferredFunction</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: () ⇒ <span class="extype" name="net.liftweb.http.LiftSession.buildDeferredFunction.T">T</span></span>)</span><span class="result">: () ⇒ <span class="extype" name="net.liftweb.http.LiftSession.buildDeferredFunction.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">During the HTTP request/response cycle or in a CometActor,
@@ -221,7 +259,8 @@ This allows you to farm work out to separate threads, but make
 it look to those threads as if the scope was the same as if it
 had been executed on the thread that created the function.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#cleanupUnseenFuncs" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#cleanupUnseenFuncs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cleanupUnseenFuncs():Unit"></a>
       <a id="cleanupUnseenFuncs():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -229,11 +268,12 @@ had been executed on the thread that created the function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cleanupUnseenFuncs</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">cleanupUnseenFuncs</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#clearPostPageJavaScriptForThisPage" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#clearPostPageJavaScriptForThisPage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clearPostPageJavaScriptForThisPage():Unit"></a>
       <a id="clearPostPageJavaScriptForThisPage():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -241,14 +281,15 @@ had been executed on the thread that created the function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clearPostPageJavaScriptForThisPage</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">clearPostPageJavaScriptForThisPage</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Clear the PostPage JavaScript functions for the current page.</p><div class="fullcomment"><div class="comment cmt"><p>Clear the PostPage JavaScript functions for the current page.
 This is used by CometActor to remove the PostPage JavaScript
 functions from the given component during redraw.
 </p></div></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -256,26 +297,28 @@ functions from the given component during redraw.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#cometForHost" data-isabs="false">
-      <a id="cometForHost(String):(List[(LiftActor, Req)], List[(LiftActor, Req)])"></a>
+    </li><li name="net.liftweb.http.LiftSession#cometForHost" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cometForHost(hostAndPath:String):(List[(net.liftweb.actor.LiftActor,net.liftweb.http.Req)],List[(net.liftweb.actor.LiftActor,net.liftweb.http.Req)])"></a>
+      <a id="cometForHost(String):(List[(LiftActor,Req)],List[(LiftActor,Req)])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cometForHost</span><span class="params">(<span name="hostAndPath">hostAndPath: String</span>)</span><span class="result">: (List[(<a name="net.liftweb.actor.LiftActor" class="extype" href="../actor/LiftActor.html">LiftActor</a>, <a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a>)], List[(<a name="net.liftweb.actor.LiftActor" class="extype" href="../actor/LiftActor.html">LiftActor</a>, <a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a>)])</span>
+        <span class="name">cometForHost</span><span class="params">(<span name="hostAndPath">hostAndPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.List">List</span>[(<a href="../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a>, <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>)], <span class="extype" name="scala.List">List</span>[(<a href="../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a>, <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>)])</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#contextPath" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#contextPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="contextPath:String"></a>
       <a id="contextPath:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -283,13 +326,14 @@ functions from the given component during redraw.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">contextPath</span><span class="result">: String</span>
+        <span class="name">contextPath</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Define the context path for this session.</p><div class="fullcomment"><div class="comment cmt"><p>Define the context path for this session.  This allows different
 sessions to have different context paths.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#destroySession" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#destroySession" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="destroySession():Unit"></a>
       <a id="destroySession():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -297,19 +341,20 @@ sessions to have different context paths.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">destroySession</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">destroySession</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Destroy this session and the underlying container session.</p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#destroySessionAndContinueInNewSession" data-isabs="false">
-      <a id="destroySessionAndContinueInNewSession(() ⇒ Nothing):Nothing"></a>
+    </li><li name="net.liftweb.http.LiftSession#destroySessionAndContinueInNewSession" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="destroySessionAndContinueInNewSession(continuation:()=&gt;Nothing):Nothing"></a>
+      <a id="destroySessionAndContinueInNewSession(()⇒Nothing):Nothing"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">destroySessionAndContinueInNewSession</span><span class="params">(<span name="continuation">continuation: () ⇒ <span name="scala.Nothing" class="extype">Nothing</span></span>)</span><span class="result">: <span name="scala.Nothing" class="extype">Nothing</span></span>
+        <span class="name">destroySessionAndContinueInNewSession</span><span class="params">(<span name="continuation">continuation: () ⇒ <span class="extype" name="scala.Nothing">Nothing</span></span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Destroy the current session, then create a new session and
@@ -319,15 +364,16 @@ must return Nothing (it must throw an exception... this is typically
 done by calling S.redirectTo(...)).  This method is
 useful for changing sessions on login.  Issue #727.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.HowStateful#doAsStateless" data-isabs="false">
-      <a id="doAsStateless[A](⇒ A):A"></a>
+    </li><li name="net.liftweb.http.HowStateful#doAsStateless" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doAsStateless[A](f:=&gt;A):A"></a>
+      <a id="doAsStateless[A](⇒A):A"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doAsStateless</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: ⇒ A</span>)</span><span class="result">: A</span>
+        <span class="name">doAsStateless</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.http.HowStateful.doAsStateless.A">A</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.HowStateful.doAsStateless.A">A</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Within the scope of the call, this session is forced into
@@ -335,8 +381,9 @@ statelessness.</p><div class="fullcomment"><div class="comment cmt"><p>Within th
 statelessness.  This allows for certain URLs in on the site
 to be stateless and not generate a session, but if a valid
 session is presented, they have the scope of that session/User
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.HowStateful" class="extype" href="HowStateful.html">HowStateful</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#doCometActorCleanup" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="HowStateful.html" class="extype" name="net.liftweb.http.HowStateful">HowStateful</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftSession#doCometActorCleanup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="doCometActorCleanup():Unit"></a>
       <a id="doCometActorCleanup():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -344,11 +391,12 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doCometActorCleanup</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">doCometActorCleanup</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -356,11 +404,12 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -368,23 +417,25 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#executeInScope" data-isabs="false">
-      <a id="executeInScope[T](Box[Req],String)(⇒ T):T"></a>
+    </li><li name="net.liftweb.http.LiftSession#executeInScope" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="executeInScope[T](req:net.liftweb.common.Box[net.liftweb.http.Req],renderVersion:String)(f:=&gt;T):T"></a>
+      <a id="executeInScope[T](Box[Req],String)(⇒T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">executeInScope</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="req">req: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a>]</span>, <span name="renderVersion">renderVersion: String</span>)</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: T</span>
+        <span class="name">executeInScope</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="req">req: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>]</span>, <span name="renderVersion">renderVersion: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.http.LiftSession.executeInScope.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.LiftSession.executeInScope.T">T</span></span>
       </span>
       </h4>
       
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -392,14 +443,15 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#findAndProcessTemplate" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#findAndProcessTemplate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findAndProcessTemplate(name:List[String]):net.liftweb.common.Box[scala.xml.Elem]"></a>
       <a id="findAndProcessTemplate(List[String]):Box[Elem]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -407,12 +459,13 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findAndProcessTemplate</span><span class="params">(<span name="name">name: List[String]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.xml.Elem" class="extype">Elem</span>]</span>
+        <span class="name">findAndProcessTemplate</span><span class="params">(<span name="name">name: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Finds a template named name and then runs it throught the Lift processing engine
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#findComet" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#findComet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findComet(theType:String,name:net.liftweb.common.Box[String]):net.liftweb.common.Box[net.liftweb.http.LiftCometActor]"></a>
       <a id="findComet(String,Box[String]):Box[LiftCometActor]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -420,12 +473,13 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findComet</span><span class="params">(<span name="theType">theType: String</span>, <span name="name">name: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[String]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<a name="net.liftweb.http.LiftCometActor" class="extype" href="LiftCometActor.html">LiftCometActor</a>]</span>
+        <span class="name">findComet</span><span class="params">(<span name="theType">theType: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Find the comet actor by type and name
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#findComet" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#findComet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findComet(theType:String):List[net.liftweb.http.LiftCometActor]"></a>
       <a id="findComet(String):List[LiftCometActor]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -433,12 +487,13 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findComet</span><span class="params">(<span name="theType">theType: String</span>)</span><span class="result">: List[<a name="net.liftweb.http.LiftCometActor" class="extype" href="LiftCometActor.html">LiftCometActor</a>]</span>
+        <span class="name">findComet</span><span class="params">(<span name="theType">theType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Finds all Comet actors by type
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#findFunc" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#findFunc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findFunc(funcName:String):Option[net.liftweb.http.S.AFuncHolder]"></a>
       <a id="findFunc(String):Option[AFuncHolder]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -446,13 +501,14 @@ session is presented, they have the scope of that session/User
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findFunc</span><span class="params">(<span name="funcName">funcName: String</span>)</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<a name="net.liftweb.http.S.AFuncHolder" class="extype" href="S$$AFuncHolder.html">AFuncHolder</a>]</span>
+        <span class="name">findFunc</span><span class="params">(<span name="funcName">funcName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="S$$AFuncHolder.html" class="extype" name="net.liftweb.http.S.AFuncHolder">AFuncHolder</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Find a function in the function lookup table.</p><div class="fullcomment"><div class="comment cmt"><p>Find a function in the function lookup table.  You probably never need to do this, but
 well, you can look them up.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#fixHtml" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#fixHtml" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fixHtml(in:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
       <a id="fixHtml(NodeSeq):NodeSeq"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -460,11 +516,12 @@ well, you can look them up.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fixHtml</span><span class="params">(<span name="in">in: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>)</span><span class="result">: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>
+        <span class="name">fixHtml</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Apply HTML specific corrections such as adding the context path etc.</p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#fixSessionTime" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#fixSessionTime" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fixSessionTime():Unit"></a>
       <a id="fixSessionTime():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -472,11 +529,12 @@ well, you can look them up.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fixSessionTime</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">fixSessionTime</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#getAsyncComponent" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#getAsyncComponent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getAsyncComponent(id:String):net.liftweb.common.Box[net.liftweb.http.LiftCometActor]"></a>
       <a id="getAsyncComponent(String):Box[LiftCometActor]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -484,24 +542,26 @@ well, you can look them up.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getAsyncComponent</span><span class="params">(<span name="id">id: String</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<a name="net.liftweb.http.LiftCometActor" class="extype" href="LiftCometActor.html">LiftCometActor</a>]</span>
+        <span class="name">getAsyncComponent</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Finds a Comet actor by ID
 </p>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -509,11 +569,12 @@ well, you can look them up.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#httpSession" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#httpSession" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="httpSession:net.liftweb.common.Box[net.liftweb.http.provider.HTTPSession]"></a>
       <a id="httpSession:Box[HTTPSession]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -521,11 +582,12 @@ well, you can look them up.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">httpSession</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<a name="net.liftweb.http.provider.HTTPSession" class="extype" href="provider/HTTPSession.html">HTTPSession</a>]</span>
+        <span class="name">httpSession</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="provider/HTTPSession.html" class="extype" name="net.liftweb.http.provider.HTTPSession">HTTPSession</a>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -533,11 +595,12 @@ well, you can look them up.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession.legacyIeCompatibilityMode" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession.legacyIeCompatibilityMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="legacyIeCompatibilityMode"></a>
       <a id="legacyIeCompatibilityMode:legacyIeCompatibilityMode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -545,11 +608,12 @@ well, you can look them up.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LiftSession$legacyIeCompatibilityMode$.html"><span class="name">legacyIeCompatibilityMode</span></a><span class="result"> extends SessionVar[Boolean]</span>
+        <a href="LiftSession$legacyIeCompatibilityMode$.html"><span class="name">legacyIeCompatibilityMode</span></a><span class="result"> extends <a href="SessionVar.html" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#liftTagProcessing" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#liftTagProcessing" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftTagProcessing:List[net.liftweb.http.LiftRules.LiftTagPF]"></a>
       <a id="liftTagProcessing:List[LiftTagPF]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -557,14 +621,15 @@ well, you can look them up.
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">liftTagProcessing</span><span class="result">: List[LiftTagPF]</span>
+        <span class="name">liftTagProcessing</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="LiftRules$.html#LiftTagPF=PartialFunction[(String,scala.xml.Elem,scala.xml.MetaData,scala.xml.NodeSeq,String),scala.xml.NodeSeq]" class="extmbr" name="net.liftweb.http.LiftRules.LiftTagPF">LiftTagPF</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The partial function that defines how lift tags are processed for this session.</p><div class="fullcomment"><div class="comment cmt"><p>The partial function that defines how lift tags are processed for this session.  Initially composed
 of LiftRules.liftTagProcessing orElse the default lift tag processing.  If you need to change the
 way a particular session handles lift tags, alter this partial function.
 </p></div></div>
-    </li><li visbl="prt" name="net.liftweb.common.Loggable#logger" data-isabs="false">
+    </li><li name="net.liftweb.common.Loggable#logger" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:net.liftweb.common.Logger"></a>
       <a id="logger:Logger"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -572,11 +637,12 @@ way a particular session handles lift tags, alter this partial function.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">logger</span><span class="result">: <a name="net.liftweb.common.Logger" class="extype" href="../common/Logger.html">Logger</a></span>
+        <span class="name">logger</span><span class="result">: <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.common.Loggable" class="extype" href="../common/Loggable.html">Loggable</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftMerge#merge" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftMerge#merge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="merge(xhtml:scala.xml.NodeSeq,req:net.liftweb.http.Req):scala.xml.Node"></a>
       <a id="merge(NodeSeq,Req):Node"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -584,13 +650,14 @@ way a particular session handles lift tags, alter this partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">merge</span><span class="params">(<span name="xhtml">xhtml: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>, <span name="req">req: <a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a></span>)</span><span class="result">: <span name="scala.xml.Node" class="extype">Node</span></span>
+        <span class="name">merge</span><span class="params">(<span name="xhtml">xhtml: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="req">req: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>)</span><span class="result">: <span class="extype" name="scala.xml.Node">Node</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Manages the merge phase of the rendering pipeline
 </p><div class="fullcomment"><div class="comment cmt"><p>Manages the merge phase of the rendering pipeline
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>LiftMerge</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -598,11 +665,12 @@ way a particular session handles lift tags, alter this partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -610,11 +678,12 @@ way a particular session handles lift tags, alter this partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -622,11 +691,12 @@ way a particular session handles lift tags, alter this partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#performHeadMerge" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#performHeadMerge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="performHeadMerge(in:scala.xml.NodeSeq,req:net.liftweb.http.Req):scala.xml.Node"></a>
       <a id="performHeadMerge(NodeSeq,Req):Node"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -634,12 +704,13 @@ way a particular session handles lift tags, alter this partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">performHeadMerge</span><span class="params">(<span name="in">in: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>, <span name="req">req: <a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a></span>)</span><span class="result">: <span name="scala.xml.Node" class="extype">Node</span></span>
+        <span class="name">performHeadMerge</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="req">req: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>)</span><span class="result">: <span class="extype" name="scala.xml.Node">Node</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Merge all the head elements into the main head element and move tail stuff to the end of the
 page.</p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#postPageJavaScript" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#postPageJavaScript" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="postPageJavaScript():List[net.liftweb.http.js.JsCmd]"></a>
       <a id="postPageJavaScript():List[JsCmd]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -647,12 +718,13 @@ page.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">postPageJavaScript</span><span class="params">()</span><span class="result">: List[<a name="net.liftweb.http.js.JsCmd" class="extype" href="js/JsCmd.html">JsCmd</a>]</span>
+        <span class="name">postPageJavaScript</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get the JavaScript to execute as part of the current page
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#postPageJavaScript" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#postPageJavaScript" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postPageJavaScript(pageIds:Seq[String]):List[net.liftweb.http.js.JsCmd]"></a>
       <a id="postPageJavaScript(Seq[String]):List[JsCmd]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -660,14 +732,15 @@ page.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">postPageJavaScript</span><span class="params">(<span name="pageIds">pageIds: Seq[String]</span>)</span><span class="result">: List[<a name="net.liftweb.http.js.JsCmd" class="extype" href="js/JsCmd.html">JsCmd</a>]</span>
+        <span class="name">postPageJavaScript</span><span class="params">(<span name="pageIds">pageIds: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get the post-page JavaScript functions for a sequence of page IDs.</p><div class="fullcomment"><div class="comment cmt"><p>Get the post-page JavaScript functions for a sequence of page IDs.
 This is used by the CometActor to get the post-page JavaScript functions
 for the comet actor and for the page the the comet actor is associated with
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#postPageJavaScript" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#postPageJavaScript" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="postPageJavaScript(rv:String):List[net.liftweb.http.js.JsCmd]"></a>
       <a id="postPageJavaScript(String):List[JsCmd]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -675,11 +748,12 @@ for the comet actor and for the page the the comet actor is associated with
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">postPageJavaScript</span><span class="params">(<span name="rv">rv: String</span>)</span><span class="result">: List[<a name="net.liftweb.http.js.JsCmd" class="extype" href="js/JsCmd.html">JsCmd</a>]</span>
+        <span class="name">postPageJavaScript</span><span class="params">(<span name="rv">rv: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#processSurroundAndInclude" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#processSurroundAndInclude" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processSurroundAndInclude(page:String,in:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
       <a id="processSurroundAndInclude(String,NodeSeq):NodeSeq"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -687,14 +761,15 @@ for the comet actor and for the page the the comet actor is associated with
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">processSurroundAndInclude</span><span class="params">(<span name="page">page: String</span>, <span name="in">in: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>)</span><span class="result">: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>
+        <span class="name">processSurroundAndInclude</span><span class="params">(<span name="page">page: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Processes the surround tag and other lift tags
 </p><div class="fullcomment"><div class="comment cmt"><p>Processes the surround tag and other lift tags
 </p></div><dl class="paramcmts block"><dt class="param">page</dt><dd class="cmt"><p>the name of the page currently being processed</p></dd><dt class="param">in</dt><dd class="cmt"><p>the DOM to process
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#processTemplate" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#processTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processTemplate(template:net.liftweb.common.Box[scala.xml.NodeSeq],request:net.liftweb.http.Req,path:net.liftweb.http.ParsePath,code:Int):net.liftweb.common.Box[net.liftweb.http.LiftResponse]"></a>
       <a id="processTemplate(Box[NodeSeq],Req,ParsePath,Int):Box[LiftResponse]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -702,7 +777,7 @@ for the comet actor and for the page the the comet actor is associated with
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">processTemplate</span><span class="params">(<span name="template">template: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.xml.NodeSeq" class="extype">NodeSeq</span>]</span>, <span name="request">request: <a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a></span>, <span name="path">path: <a name="net.liftweb.http.ParsePath" class="extype" href="ParsePath.html">ParsePath</a></span>, <span name="code">code: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<a name="net.liftweb.http.LiftResponse" class="extype" href="LiftResponse.html">LiftResponse</a>]</span>
+        <span class="name">processTemplate</span><span class="params">(<span name="template">template: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>, <span name="request">request: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>, <span name="path">path: <a href="ParsePath.html" class="extype" name="net.liftweb.http.ParsePath">ParsePath</a></span>, <span name="code">code: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Convert a template into a Lift Response.</p><div class="fullcomment"><div class="comment cmt"><p>Convert a template into a Lift Response.
@@ -710,15 +785,16 @@ for the comet actor and for the page the the comet actor is associated with
 will be located via findVisibleTemplate</p></dd><dt class="param">request</dt><dd class="cmt"><p>-- the Req the led to this rendering</p></dd><dt class="param">path</dt><dd class="cmt"><p>-- the ParsePath that led to this page</p></dd><dt class="param">code</dt><dd class="cmt"><p>-- the HTTP response code (usually 200)
 </p></dd><dt>returns</dt><dd class="cmt"><p>a Box of LiftResponse with all the proper page rewriting
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#progressListener" data-isabs="false">
-      <a id="progressListener:Box[(Long, Long, Int) ⇒ Unit]"></a>
+    </li><li name="net.liftweb.http.LiftSession#progressListener" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="progressListener:net.liftweb.common.Box[(Long,Long,Int)=&gt;Unit]"></a>
+      <a id="progressListener:Box[(Long,Long,Int)⇒Unit]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">progressListener</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[(<span name="scala.Long" class="extype">Long</span>, <span name="scala.Long" class="extype">Long</span>, <span name="scala.Int" class="extype">Int</span>) ⇒ <span name="scala.Unit" class="extype">Unit</span>]</span>
+        <span class="name">progressListener</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<span class="extype" name="scala.Long">Long</span>, <span class="extype" name="scala.Long">Long</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Set your session-specific progress listener for mime uploads
@@ -727,7 +803,8 @@ will be located via findVisibleTemplate</p></dd><dt class="param">request</dt><d
    pContentLength - The total number of bytes, which are being read. May be -1, if this number is unknown.
    pItems - The number of the field, which is currently being read. (0 = no item so far, 1 = first item is being read, ...)
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#removeFunction" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#removeFunction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeFunction(name:String):net.liftweb.http.S.AFuncHolder"></a>
       <a id="removeFunction(String):AFuncHolder"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -735,11 +812,12 @@ will be located via findVisibleTemplate</p></dd><dt class="param">request</dt><d
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeFunction</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <a name="net.liftweb.http.S.AFuncHolder" class="extype" href="S$$AFuncHolder.html">AFuncHolder</a></span>
+        <span class="name">removeFunction</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="S$$AFuncHolder.html" class="extype" name="net.liftweb.http.S.AFuncHolder">AFuncHolder</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#requestHtmlProperties" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#requestHtmlProperties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="requestHtmlProperties:net.liftweb.http.TransientRequestVar[net.liftweb.http.HtmlProperties]"></a>
       <a id="requestHtmlProperties:TransientRequestVar[HtmlProperties]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -747,11 +825,12 @@ will be located via findVisibleTemplate</p></dd><dt class="param">request</dt><d
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">requestHtmlProperties</span><span class="result">: <a name="net.liftweb.http.TransientRequestVar" class="extype" href="TransientRequestVar.html">TransientRequestVar</a>[<a name="net.liftweb.http.HtmlProperties" class="extype" href="HtmlProperties.html">HtmlProperties</a>]</span>
+        <span class="name">requestHtmlProperties</span><span class="result">: <a href="TransientRequestVar.html" class="extype" name="net.liftweb.http.TransientRequestVar">TransientRequestVar</a>[<a href="HtmlProperties.html" class="extype" name="net.liftweb.http.HtmlProperties">HtmlProperties</a>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#runParams" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#runParams" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="runParams(state:net.liftweb.http.Req):List[Any]"></a>
       <a id="runParams(Req):List[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -759,12 +838,13 @@ will be located via findVisibleTemplate</p></dd><dt class="param">request</dt><d
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runParams</span><span class="params">(<span name="state">state: <a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a></span>)</span><span class="result">: List[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span class="name">runParams</span><span class="params">(<span name="state">state: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Executes the user's functions based on the query parameters
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#runTemplate" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#runTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runTemplate(pageName:String,template:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
       <a id="runTemplate(String,NodeSeq):NodeSeq"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -772,14 +852,15 @@ will be located via findVisibleTemplate</p></dd><dt class="param">request</dt><d
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runTemplate</span><span class="params">(<span name="pageName">pageName: String</span>, <span name="template">template: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>)</span><span class="result">: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>
+        <span class="name">runTemplate</span><span class="params">(<span name="pageName">pageName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="template">template: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">A nicely named proxy for processSurroundAndInclude.</p><div class="fullcomment"><div class="comment cmt"><p>A nicely named proxy for processSurroundAndInclude.  This method processes
 a Lift template
 </p></div><dl class="paramcmts block"><dt class="param">pageName</dt><dd class="cmt"><p>-- the name of the page being processed (for error reporting)</p></dd><dt class="param">template</dt><dd class="cmt"><p>-- the template to process using Lift's templating engine
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#running_?" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#running_?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="running_?:Boolean"></a>
       <a id="running_?:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -787,11 +868,12 @@ a Lift template
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: running_$qmark">running_?</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: running_$qmark" class="name">running_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#sendCometActorMessage" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#sendCometActorMessage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendCometActorMessage(theType:String,name:net.liftweb.common.Box[String],msg:Any):Unit"></a>
       <a id="sendCometActorMessage(String,Box[String],Any):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -799,7 +881,7 @@ a Lift template
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sendCometActorMessage</span><span class="params">(<span name="theType">theType: String</span>, <span name="name">name: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[String]</span>, <span name="msg">msg: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">sendCometActorMessage</span><span class="params">(<span name="theType">theType: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">This method will send a message to a CometActor, whether or not
@@ -811,19 +893,21 @@ as part of setup (@see setupComet) if it is created as part
 of the current HTTP request/response cycle.
 </p></div><dl class="paramcmts block"><dt class="param">theType</dt><dd class="cmt"><p>the type of the CometActor</p></dd><dt class="param">name</dt><dd class="cmt"><p>the optional name of the CometActor</p></dd><dt class="param">msg</dt><dd class="cmt"><p>the message to send to the CometActor
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#sessionHtmlProperties" data-isabs="false">
-      <a id="sessionHtmlProperties:(Req) ⇒ HtmlProperties"></a>
+    </li><li name="net.liftweb.http.LiftSession#sessionHtmlProperties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sessionHtmlProperties:net.liftweb.http.Req=&gt;net.liftweb.http.HtmlProperties"></a>
+      <a id="sessionHtmlProperties:(Req)⇒HtmlProperties"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sessionHtmlProperties</span><span class="result">: (<a name="net.liftweb.http.Req" class="extype" href="Req.html">Req</a>) ⇒ <a name="net.liftweb.http.HtmlProperties" class="extype" href="HtmlProperties.html">HtmlProperties</a></span>
+        <span class="name">sessionHtmlProperties</span><span class="result">: (<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>) ⇒ <a href="HtmlProperties.html" class="extype" name="net.liftweb.http.HtmlProperties">HtmlProperties</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#setupComet" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#setupComet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setupComet(theType:String,name:net.liftweb.common.Box[String],msg:Any):Unit"></a>
       <a id="setupComet(String,Box[String],Any):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -831,12 +915,13 @@ of the current HTTP request/response cycle.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setupComet</span><span class="params">(<span name="theType">theType: String</span>, <span name="name">name: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[String]</span>, <span name="msg">msg: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setupComet</span><span class="params">(<span name="theType">theType: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Allows you to send messages to a CometActor that may or may not be set up yet
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.HowStateful#stateful_?" data-isabs="false">
+    </li><li name="net.liftweb.http.HowStateful#stateful_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stateful_?:Boolean"></a>
       <a id="stateful_?:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -844,24 +929,26 @@ of the current HTTP request/response cycle.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: stateful_$qmark">stateful_?</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: stateful_$qmark" class="name">stateful_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Test the statefulness of this session.</p><div class="fullcomment"><div class="comment cmt"><p>Test the statefulness of this session.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.HowStateful" class="extype" href="HowStateful.html">HowStateful</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="HowStateful.html" class="extype" name="net.liftweb.http.HowStateful">HowStateful</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#terminateHint" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#terminateHint" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="terminateHint:Unit"></a>
       <a id="terminateHint:Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -869,25 +956,27 @@ of the current HTTP request/response cycle.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">terminateHint</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">terminateHint</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#testStatefulFeature" data-isabs="false">
-      <a id="testStatefulFeature[T](⇒ T):T"></a>
+    </li><li name="net.liftweb.http.LiftSession#testStatefulFeature" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="testStatefulFeature[T](f:=&gt;T):T"></a>
+      <a id="testStatefulFeature[T](⇒T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">testStatefulFeature</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: T</span>
+        <span class="name">testStatefulFeature</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.http.LiftSession.testStatefulFeature.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.LiftSession.testStatefulFeature.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Run the code, but if the session is not stateful, then
 throw a StateInStatelessException
 </p>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -895,11 +984,12 @@ throw a StateInStatelessException
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#uniqueId" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftSession#uniqueId" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="uniqueId:String"></a>
       <a id="uniqueId:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -907,24 +997,26 @@ throw a StateInStatelessException
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">uniqueId</span><span class="result">: String</span>
+        <span class="name">uniqueId</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftSession#updateFunctionMap" data-isabs="false">
-      <a id="updateFunctionMap(Map[String, AFuncHolder],String,Long):Unit"></a>
+    </li><li name="net.liftweb.http.LiftSession#updateFunctionMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updateFunctionMap(funcs:Map[String,net.liftweb.http.S.AFuncHolder],uniqueId:String,when:Long):Unit"></a>
+      <a id="updateFunctionMap(Map[String,AFuncHolder],String,Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">updateFunctionMap</span><span class="params">(<span name="funcs">funcs: Map[String, <a name="net.liftweb.http.S.AFuncHolder" class="extype" href="S$$AFuncHolder.html">AFuncHolder</a>]</span>, <span name="uniqueId">uniqueId: String</span>, <span name="when">when: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">updateFunctionMap</span><span class="params">(<span name="funcs">funcs: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="S$$AFuncHolder.html" class="extype" name="net.liftweb.http.S.AFuncHolder">AFuncHolder</a>]</span>, <span name="uniqueId">uniqueId: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="when">when: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Updates the internal functions mapping
 </p>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -932,14 +1024,15 @@ throw a StateInStatelessException
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -947,14 +1040,15 @@ throw a StateInStatelessException
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -962,7 +1056,7 @@ throw a StateInStatelessException
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -972,17 +1066,20 @@ throw a StateInStatelessException
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        
+
+        <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.http.LiftSession#ieMode" data-isabs="false">
+              <ol><li name="net.liftweb.http.LiftSession#ieMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ieMode:LiftSession.this.legacyIeCompatibilityMode.type"></a>
+      <a id="ieMode:legacyIeCompatibilityMode.type"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.6) Use legacyIeCompatibilityMode for legacy IE detection instead. This will be removed in Lift 3.0.">ieMode</span><span class="result">: LiftSession.this.legacyIeCompatibilityMode.type</span>
+        <span class="name deprecated" title="Deprecated: (Since version 2.6) Use legacyIeCompatibilityMode for legacy IE detection instead. This will be removed in Lift 3.0.">ieMode</span><span class="result">: <a href="LiftSession$legacyIeCompatibilityMode$.html" class="extype" name="net.liftweb.http.LiftSession.legacyIeCompatibilityMode">legacyIeCompatibilityMode</a>.type</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
@@ -994,16 +1091,24 @@ throw a StateInStatelessException
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.http.HowStateful" class="parent">
-              <h3>Inherited from <a name="net.liftweb.http.HowStateful" class="extype" href="HowStateful.html">HowStateful</a></h3>
-            </div><div name="net.liftweb.common.Loggable" class="parent">
-              <h3>Inherited from <a name="net.liftweb.common.Loggable" class="extype" href="../common/Loggable.html">Loggable</a></h3>
-            </div><div name="net.liftweb.http.LiftMerge" class="parent">
-              <h3>Inherited from <span name="net.liftweb.http.LiftMerge" class="extype">LiftMerge</span></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.http.HowStateful">
+              <h3>Inherited from <a href="HowStateful.html" class="extype" name="net.liftweb.http.HowStateful">HowStateful</a></h3>
+            </div><div class="parent" name="net.liftweb.common.Loggable">
+              <h3>Inherited from <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></h3>
+            </div><div class="parent" name="net.liftweb.http.LiftMerge">
+              <h3>Inherited from <span class="extype" name="net.liftweb.http.LiftMerge">LiftMerge</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

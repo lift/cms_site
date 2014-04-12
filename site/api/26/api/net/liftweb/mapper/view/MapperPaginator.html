@@ -2,56 +2,83 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mapper.view.MapperPaginator</title>
+          <title>MapperPaginator - Lift Framework 2.6-M3 - net.liftweb.mapper.view.MapperPaginator</title>
+          <meta name="description" content="MapperPaginator - Lift Framework 2.6 - M3 - net.liftweb.mapper.view.MapperPaginator" />
+          <meta name="keywords" content="MapperPaginator Lift Framework 2.6 M3 net.liftweb.mapper.view.MapperPaginator" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.mapper.view.MapperPaginator';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../../../lib/class_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../../package.html">liftweb</a>.<a name="net.liftweb.mapper" class="extype" href="../package.html">mapper</a>.<a name="net.liftweb.mapper.view" class="extype" href="package.html">view</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.mapper">mapper</a>.<a href="package.html" class="extype" name="net.liftweb.mapper.view">view</a></p>
         <h1>MapperPaginator</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">MapperPaginator</span><span class="tparams">[<span name="T">T &lt;: <a name="net.liftweb.mapper.Mapper" class="extype" href="../Mapper.html">Mapper</a>[T]</span>]</span><span class="result"> extends <a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a>[T]</span>
+        <span class="name">MapperPaginator</span><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</span>]</span><span class="result"> extends <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Paginate mapper instances by supplying the model you
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Paginate mapper instances by supplying the model you
 wish to paginate and Paginator will run your query for you etc.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a>[T], <a name="net.liftweb.common.Loggable" class="extype" href="../../common/Loggable.html">Loggable</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>], <a href="../../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="net.liftweb.mapper.view.MapperPaginatorSnippet" class="extype" href="MapperPaginatorSnippet.html">MapperPaginatorSnippet</a>, <a name="net.liftweb.mapper.view.SortedMapperPaginator" class="extype" href="SortedMapperPaginator.html">SortedMapperPaginator</a>, <a name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet" class="extype" href="SortedMapperPaginatorSnippet.html">SortedMapperPaginatorSnippet</a></div>
+          <div class="subClasses hiddenContent"><a href="MapperPaginatorSnippet.html" class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet">MapperPaginatorSnippet</a>, <a href="SortedMapperPaginator.html" class="extype" name="net.liftweb.mapper.view.SortedMapperPaginator">SortedMapperPaginator</a>, <a href="SortedMapperPaginatorSnippet.html" class="extype" name="net.liftweb.mapper.view.SortedMapperPaginatorSnippet">SortedMapperPaginatorSnippet</a></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.mapper.view.MapperPaginator" class="in"><span>MapperPaginator</span></li><li name="net.liftweb.http.Paginator" class="in"><span>Paginator</span></li><li name="net.liftweb.common.Loggable" class="in"><span>Loggable</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.mapper.view.MapperPaginator"><span>MapperPaginator</span></li><li class="in" name="net.liftweb.http.Paginator"><span>Paginator</span></li><li class="in" name="net.liftweb.common.Loggable"><span>Loggable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -60,17 +87,18 @@ wish to paginate and Paginator will run your query for you etc.
 
       <div id="template">
         <div id="allMembers">
-        <div class="members" id="constructors">
+        <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li visbl="pub" name="net.liftweb.mapper.view.MapperPaginator#this" data-isabs="false">
-      <a id="this:MapperPaginator[T]"></a>
+              <ol><li name="net.liftweb.mapper.view.MapperPaginator#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(meta:net.liftweb.mapper.MetaMapper[T]):net.liftweb.mapper.view.MapperPaginator[T]"></a>
+      <a id="&lt;init&gt;:MapperPaginator[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">MapperPaginator</span><span class="params">(<span name="meta">meta: <a name="net.liftweb.mapper.MetaMapper" class="extype" href="../MetaMapper.html">MetaMapper</a>[T]</span>)</span>
+        <span class="name">MapperPaginator</span><span class="params">(<span name="meta">meta: <a href="../MetaMapper.html" class="extype" name="net.liftweb.mapper.MetaMapper">MetaMapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</span>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">meta</dt><dd class="cmt"><p>The singleton of the Mapper class you're paginating</p></dd></dl></div>
@@ -81,9 +109,10 @@ wish to paginate and Paginator will run your query for you etc.
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -91,11 +120,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -103,11 +133,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -115,11 +146,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -127,11 +159,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -139,11 +172,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -151,11 +185,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -163,14 +198,15 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.MapperPaginator#constantParams" data-isabs="false">
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#constantParams" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="constantParams:Seq[net.liftweb.mapper.QueryParam[T]]"></a>
       <a id="constantParams:Seq[QueryParam[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -178,12 +214,13 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">constantParams</span><span class="result">: Seq[<a name="net.liftweb.mapper.QueryParam" class="extype" href="../QueryParam.html">QueryParam</a>[T]]</span>
+        <span class="name">constantParams</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../QueryParam.html" class="extype" name="net.liftweb.mapper.QueryParam">QueryParam</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">QueryParams to use always
 </p>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.MapperPaginator#count" data-isabs="false">
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#count" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="count:Long"></a>
       <a id="count:Long"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -191,13 +228,14 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">count</span><span class="result">: <span name="scala.Long" class="extype">Long</span></span>
+        <span class="name">count</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">The total number of items
 </p><div class="fullcomment"><div class="comment cmt"><p>The total number of items
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.view.MapperPaginator" class="extype" href="">MapperPaginator</a> → <a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.Paginator#curPage" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a> → <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Paginator#curPage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="curPage:Int"></a>
       <a id="curPage:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -205,12 +243,13 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">curPage</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">curPage</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Calculates the current page number, based on the value of 'first.</p><div class="fullcomment"><div class="comment cmt"><p>Calculates the current page number, based on the value of 'first.'
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -218,11 +257,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -230,11 +270,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -242,14 +283,15 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.Paginator#first" data-isabs="false">
+    </li><li name="net.liftweb.http.Paginator#first" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="first:Long"></a>
       <a id="first:Long"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -257,24 +299,26 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">first</span><span class="result">: <span name="scala.Long" class="extype">Long</span></span>
+        <span class="name">first</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">The record number this page starts at.</p><div class="fullcomment"><div class="comment cmt"><p>The record number this page starts at. Zero-based.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -282,11 +326,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -294,11 +339,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.Paginator#itemsPerPage" data-isabs="false">
+    </li><li name="net.liftweb.http.Paginator#itemsPerPage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="itemsPerPage:Int"></a>
       <a id="itemsPerPage:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -306,13 +352,14 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">itemsPerPage</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">itemsPerPage</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">How many items to put on each page
 </p><div class="fullcomment"><div class="comment cmt"><p>How many items to put on each page
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a></dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.common.Loggable#logger" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Loggable#logger" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:net.liftweb.common.Logger"></a>
       <a id="logger:Logger"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -320,11 +367,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">logger</span><span class="result">: <a name="net.liftweb.common.Logger" class="extype" href="../../common/Logger.html">Logger</a></span>
+        <span class="name">logger</span><span class="result">: <a href="../../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.common.Loggable" class="extype" href="../../common/Loggable.html">Loggable</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.MapperPaginator#meta" data-isabs="false">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#meta" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="meta:net.liftweb.mapper.MetaMapper[T]"></a>
       <a id="meta:MetaMapper[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -332,11 +380,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">meta</span><span class="result">: <a name="net.liftweb.mapper.MetaMapper" class="extype" href="../MetaMapper.html">MetaMapper</a>[T]</span>
+        <span class="name">meta</span><span class="result">: <a href="../MetaMapper.html" class="extype" name="net.liftweb.mapper.MetaMapper">MetaMapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The singleton of the Mapper class you're paginating</p>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -344,11 +393,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -356,11 +406,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -368,11 +419,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.Paginator#numPages" data-isabs="false">
+    </li><li name="net.liftweb.http.Paginator#numPages" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numPages:Int"></a>
       <a id="numPages:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -380,13 +432,14 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">numPages</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">numPages</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Calculates the number of pages the items will be spread across
 </p><div class="fullcomment"><div class="comment cmt"><p>Calculates the number of pages the items will be spread across
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.view.MapperPaginator#page" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#page" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="page:List[T]"></a>
       <a id="page:List[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -394,25 +447,27 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">page</span><span class="result">: List[T]</span>
+        <span class="name">page</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The items displayed on the current page
 </p><div class="fullcomment"><div class="comment cmt"><p>The items displayed on the current page
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.view.MapperPaginator" class="extype" href="">MapperPaginator</a> → <a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a> → <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -420,11 +475,12 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -432,14 +488,15 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -447,14 +504,15 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -462,14 +520,15 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.Paginator#zoomedPages" data-isabs="false">
+    </li><li name="net.liftweb.http.Paginator#zoomedPages" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="zoomedPages:List[Int]"></a>
       <a id="zoomedPages:List[Int]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -477,27 +536,37 @@ wish to paginate and Paginator will run your query for you etc.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">zoomedPages</span><span class="result">: <span name="scala.collection.immutable.List" class="extype">List</span>[<span name="scala.Int" class="extype">Int</span>]</span>
+        <span class="name">zoomedPages</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a list of page numbers to be displayed in 'zoomed' mode, i.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list of page numbers to be displayed in 'zoomed' mode, i.e.,
 as the page numbers get further from the current page, they are more sparse.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
     </li></ol>
             </div>
+
+        
 
         
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.http.Paginator" class="parent">
-              <h3>Inherited from <a name="net.liftweb.http.Paginator" class="extype" href="../../http/Paginator.html">Paginator</a>[T]</h3>
-            </div><div name="net.liftweb.common.Loggable" class="parent">
-              <h3>Inherited from <a name="net.liftweb.common.Loggable" class="extype" href="../../common/Loggable.html">Loggable</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.http.Paginator">
+              <h3>Inherited from <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginator.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.common.Loggable">
+              <h3>Inherited from <a href="../../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

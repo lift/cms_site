@@ -2,54 +2,81 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.http.LiftCometActor</title>
+          <title>LiftCometActor - Lift Framework 2.6-M3 - net.liftweb.http.LiftCometActor</title>
+          <meta name="description" content="LiftCometActor - Lift Framework 2.6 - M3 - net.liftweb.http.LiftCometActor" />
+          <meta name="keywords" content="LiftCometActor Lift Framework 2.6 M3 net.liftweb.http.LiftCometActor" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.http.LiftCometActor';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.http" class="extype" href="package.html">http</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
         <h1>LiftCometActor</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">LiftCometActor</span><span class="result"> extends <a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a>[<span name="scala.Any" class="extype">Any</span>, <span name="scala.Any" class="extype">Any</span>] with <a name="net.liftweb.common.ForwardableActor" class="extype" href="../common/ForwardableActor.html">ForwardableActor</a>[<span name="scala.Any" class="extype">Any</span>, <span name="scala.Any" class="extype">Any</span>] with <a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></span>
+        <span class="name">LiftCometActor</span><span class="result"> extends <a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>] with <a href="../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>] with <a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a>, <a name="net.liftweb.common.ForwardableActor" class="extype" href="../common/ForwardableActor.html">ForwardableActor</a>[<span name="scala.Any" class="extype">Any</span>, <span name="scala.Any" class="extype">Any</span>], <a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a>[<span name="scala.Any" class="extype">Any</span>, <span name="scala.Any" class="extype">Any</span>], <a name="net.liftweb.common.SimpleActor" class="extype" href="../common/SimpleActor.html">SimpleActor</a>[<span name="scala.Any" class="extype">Any</span>], AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a>, <a href="../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>], <a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>], <a href="../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<span class="extype" name="scala.Any">Any</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="net.liftweb.builtin.snippet.AsyncRenderComet" class="extype" href="../builtin/snippet/AsyncRenderComet.html">AsyncRenderComet</a>, <a name="net.liftweb.http.CometActor" class="extype" href="CometActor.html">CometActor</a>, <a name="net.liftweb.http.CometActorJ" class="extype" href="CometActorJ.html">CometActorJ</a>, <a name="net.liftweb.http.CometActorJWithCometListener" class="extype" href="CometActorJWithCometListener.html">CometActorJWithCometListener</a>, <a name="net.liftweb.http.CometListenee" class="extype" href="CometListenee.html">CometListenee</a>, <a name="net.liftweb.http.CometListener" class="extype" href="CometListener.html">CometListener</a>, <a name="net.liftweb.http.NamedCometActorTrait" class="extype" href="NamedCometActorTrait.html">NamedCometActorTrait</a>, <a name="net.liftweb.http.StatefulComet" class="extype" href="StatefulComet.html">StatefulComet</a></div>
+          <div class="subClasses hiddenContent"><a href="../builtin/snippet/AsyncRenderComet.html" class="extype" name="net.liftweb.builtin.snippet.AsyncRenderComet">AsyncRenderComet</a>, <a href="CometActor.html" class="extype" name="net.liftweb.http.CometActor">CometActor</a>, <a href="CometActorJ.html" class="extype" name="net.liftweb.http.CometActorJ">CometActorJ</a>, <a href="CometActorJWithCometListener.html" class="extype" name="net.liftweb.http.CometActorJWithCometListener">CometActorJWithCometListener</a>, <a href="CometListenee.html" class="extype" name="net.liftweb.http.CometListenee">CometListenee</a>, <a href="CometListener.html" class="extype" name="net.liftweb.http.CometListener">CometListener</a>, <a href="NamedCometActorTrait.html" class="extype" name="net.liftweb.http.NamedCometActorTrait">NamedCometActorTrait</a>, <a href="StatefulComet.html" class="extype" name="net.liftweb.http.StatefulComet">StatefulComet</a></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.http.LiftCometActor" class="in"><span>LiftCometActor</span></li><li name="net.liftweb.util.Dependent" class="in"><span>Dependent</span></li><li name="net.liftweb.common.ForwardableActor" class="in"><span>ForwardableActor</span></li><li name="net.liftweb.common.TypedActor" class="in"><span>TypedActor</span></li><li name="net.liftweb.common.SimpleActor" class="in"><span>SimpleActor</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.http.LiftCometActor"><span>LiftCometActor</span></li><li class="in" name="net.liftweb.util.Dependent"><span>Dependent</span></li><li class="in" name="net.liftweb.common.ForwardableActor"><span>ForwardableActor</span></li><li class="in" name="net.liftweb.common.TypedActor"><span>TypedActor</span></li><li class="in" name="net.liftweb.common.SimpleActor"><span>SimpleActor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -62,9 +89,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.common.SimpleActor#!" data-isabs="true">
+              <ol><li name="net.liftweb.common.SimpleActor#!" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="!(param:T):Unit"></a>
       <a id="!(Any):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -72,14 +100,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang">!</span><span class="params">(<span name="param">param: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span title="gt4s: $bang" class="name">!</span><span class="params">(<span name="param">param: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Send a message to the Actor
 </p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor
 </p></div><dl class="paramcmts block"><dt class="param">param</dt><dd class="cmt"><p>the message to send
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.SimpleActor" class="extype" href="../common/SimpleActor.html">SimpleActor</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.TypedActor#!!" data-isabs="true">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a></dd></dl></div>
+    </li><li name="net.liftweb.common.TypedActor#!!" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="!!(message:T,timeout:Long):net.liftweb.common.Box[R]"></a>
       <a id="!!(Any,Long):Box[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -87,14 +116,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$bang">!!</span><span class="params">(<span name="message">message: <span name="scala.Any" class="extype">Any</span></span>, <span name="timeout">timeout: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span title="gt4s: $bang$bang" class="name">!!</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>, <span name="timeout">timeout: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Asynchronous message send.</p><div class="fullcomment"><div class="comment cmt"><p>Asynchronous message send. Send-and-receive eventually. Waits on a Future for the reply message.
 If recevied within timout interval that is specified then it returns Some(result) and if a timeout
 has occured None.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.TypedActor#!!" data-isabs="true">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="net.liftweb.common.TypedActor#!!" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="!!(message:T):net.liftweb.common.Box[R]"></a>
       <a id="!!(Any):Box[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -102,14 +132,15 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$bang">!!</span><span class="params">(<span name="message">message: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span title="gt4s: $bang$bang" class="name">!!</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Asynchronous message send.</p><div class="fullcomment"><div class="comment cmt"><p>Asynchronous message send. Send-and-receive eventually. Waits on a Future for the reply message.
 If recevied within the Actor default timeout interval then it returns Some(result) and if a timeout
 has occured None.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.TypedActor#!?" data-isabs="true">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="net.liftweb.common.TypedActor#!?" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="!?(timeout:Long,message:Any):net.liftweb.common.Box[R]"></a>
       <a id="!?(Long,Any):Box[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -117,13 +148,14 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$qmark">!?</span><span class="params">(<span name="timeout">timeout: <span name="scala.Long" class="extype">Long</span></span>, <span name="message">message: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span title="gt4s: $bang$qmark" class="name">!?</span><span class="params">(<span name="timeout">timeout: <span class="extype" name="scala.Long">Long</span></span>, <span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Compatible with Scala Actors' !? method
 </p><div class="fullcomment"><div class="comment cmt"><p>Compatible with Scala Actors' !? method
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.TypedActor#!?" data-isabs="true">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="net.liftweb.common.TypedActor#!?" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="!?(param:T):R"></a>
       <a id="!?(Any):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -131,11 +163,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$qmark">!?</span><span class="params">(<span name="param">param: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Any" class="extype">Any</span></span>
+        <span title="gt4s: $bang$qmark" class="name">!?</span><span class="params">(<span name="param">param: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#buildSpan" data-isabs="true">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#buildSpan" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="buildSpan(time:Long,xml:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
       <a id="buildSpan(Long,NodeSeq):NodeSeq"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -143,23 +176,25 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">buildSpan</span><span class="params">(<span name="time">time: <span name="scala.Long" class="extype">Long</span></span>, <span name="xml">xml: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>)</span><span class="result">: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>
+        <span class="name">buildSpan</span><span class="params">(<span name="time">time: <span class="extype" name="scala.Long">Long</span></span>, <span name="xml">xml: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
       </h4>
       
-    </li><li visbl="prt" name="net.liftweb.common.ForwardableActor#forwardMessageTo" data-isabs="true">
-      <a id="forwardMessageTo(Any,TypedActor[Any, Any]):Unit"></a>
+    </li><li name="net.liftweb.common.ForwardableActor#forwardMessageTo" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="forwardMessageTo(msg:From,forwardTo:net.liftweb.common.TypedActor[From,To]):Unit"></a>
+      <a id="forwardMessageTo(Any,TypedActor[Any,Any]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">forwardMessageTo</span><span class="params">(<span name="msg">msg: <span name="scala.Any" class="extype">Any</span></span>, <span name="forwardTo">forwardTo: <a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a>[<span name="scala.Any" class="extype">Any</span>, <span name="scala.Any" class="extype">Any</span>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">forwardMessageTo</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>, <span name="forwardTo">forwardTo: <a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.common.ForwardableActor" class="extype" href="../common/ForwardableActor.html">ForwardableActor</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#hasOuter" data-isabs="true">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#hasOuter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="hasOuter:Boolean"></a>
       <a id="hasOuter:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -167,23 +202,25 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hasOuter</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">hasOuter</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
-    </li><li visbl="prt" name="net.liftweb.http.LiftCometActor#initCometActor" data-isabs="true">
-      <a id="initCometActor(LiftSession,Box[String],Box[String],NodeSeq,Map[String, String]):Unit"></a>
+    </li><li name="net.liftweb.http.LiftCometActor#initCometActor" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="initCometActor(theSession:net.liftweb.http.LiftSession,theType:net.liftweb.common.Box[String],name:net.liftweb.common.Box[String],defaultHtml:scala.xml.NodeSeq,attributes:Map[String,String]):Unit"></a>
+      <a id="initCometActor(LiftSession,Box[String],Box[String],NodeSeq,Map[String,String]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">initCometActor</span><span class="params">(<span name="theSession">theSession: <a name="net.liftweb.http.LiftSession" class="extype" href="LiftSession.html">LiftSession</a></span>, <span name="theType">theType: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[String]</span>, <span name="name">name: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[String]</span>, <span name="defaultHtml">defaultHtml: <span name="scala.xml.NodeSeq" class="extype">NodeSeq</span></span>, <span name="attributes">attributes: Map[String, String]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">initCometActor</span><span class="params">(<span name="theSession">theSession: <a href="LiftSession.html" class="extype" name="net.liftweb.http.LiftSession">LiftSession</a></span>, <span name="theType">theType: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="name">name: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="defaultHtml">defaultHtml: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="attributes">attributes: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#jsonCall" data-isabs="true">
+    </li><li name="net.liftweb.http.LiftCometActor#jsonCall" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="jsonCall:net.liftweb.http.js.JsonCall"></a>
       <a id="jsonCall:JsonCall"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -191,11 +228,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jsonCall</span><span class="result">: <a name="net.liftweb.http.js.JsonCall" class="extype" href="js/JsonCall.html">JsonCall</a></span>
+        <span class="name">jsonCall</span><span class="result">: <a href="js/JsonCall.html" class="extype" name="net.liftweb.http.js.JsonCall">JsonCall</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#name" data-isabs="true">
+    </li><li name="net.liftweb.http.LiftCometActor#name" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="name:net.liftweb.common.Box[String]"></a>
       <a id="name:Box[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -203,11 +241,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">name</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[String]</span>
+        <span class="name">name</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#parentTag" data-isabs="true">
+    </li><li name="net.liftweb.http.LiftCometActor#parentTag" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="parentTag:scala.xml.Elem"></a>
       <a id="parentTag:Elem"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -215,11 +254,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parentTag</span><span class="result">: <span name="scala.xml.Elem" class="extype">Elem</span></span>
+        <span class="name">parentTag</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
       </h4>
       
-    </li><li visbl="prt" name="net.liftweb.common.ForwardableActor#reply" data-isabs="true">
+    </li><li name="net.liftweb.common.ForwardableActor#reply" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="reply(msg:To):Unit"></a>
       <a id="reply(Any):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -227,11 +267,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">reply</span><span class="params">(<span name="msg">msg: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">reply</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.common.ForwardableActor" class="extype" href="../common/ForwardableActor.html">ForwardableActor</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#theType" data-isabs="true">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#theType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="theType:net.liftweb.common.Box[String]"></a>
       <a id="theType:Box[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -239,11 +280,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">theType</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[String]</span>
+        <span class="name">theType</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#uniqueId" data-isabs="true">
+    </li><li name="net.liftweb.http.LiftCometActor#uniqueId" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="uniqueId:String"></a>
       <a id="uniqueId:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -251,16 +293,17 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">uniqueId</span><span class="result">: String</span>
+        <span class="name">uniqueId</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -268,11 +311,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -280,11 +324,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -292,11 +337,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -304,11 +350,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -316,11 +363,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -328,11 +376,12 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -340,14 +389,15 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#cometActorLocale" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftCometActor#cometActorLocale" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cometActorLocale:java.util.Locale"></a>
       <a id="cometActorLocale:Locale"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -355,12 +405,13 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cometActorLocale</span><span class="result">: <span name="java.util.Locale" class="extype">Locale</span></span>
+        <span class="name">cometActorLocale</span><span class="result">: <span class="extype" name="java.util.Locale">Locale</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">The locale for the session that created the CometActor
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#cometProcessingTimeout" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftCometActor#cometProcessingTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cometProcessingTimeout:Long"></a>
       <a id="cometProcessingTimeout:Long"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -368,12 +419,13 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cometProcessingTimeout</span><span class="result">: <span name="scala.Long" class="extype">Long</span></span>
+        <span class="name">cometProcessingTimeout</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Override in sub-class to customise timeout for AJAX-requests to the comet-component for the specific comet
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#cometProcessingTimeoutHandler" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftCometActor#cometProcessingTimeoutHandler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometProcessingTimeoutHandler():net.liftweb.http.js.JsCmd"></a>
       <a id="cometProcessingTimeoutHandler():JsCmd"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -381,7 +433,7 @@ has occured None.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cometProcessingTimeoutHandler</span><span class="params">()</span><span class="result">: <a name="net.liftweb.http.js.JsCmd" class="extype" href="js/JsCmd.html">JsCmd</a></span>
+        <span class="name">cometProcessingTimeoutHandler</span><span class="params">()</span><span class="result">: <a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">This is to react to comet-requests timing out.</p><div class="fullcomment"><div class="comment cmt"><p>This is to react to comet-requests timing out.
@@ -393,7 +445,8 @@ this to send a message to the user informing of the timeout.</p><p>Do NOT manipu
 }
 </pre>
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#cometRenderTimeout" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftCometActor#cometRenderTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cometRenderTimeout:Long"></a>
       <a id="cometRenderTimeout:Long"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -401,12 +454,13 @@ this to send a message to the user informing of the timeout.</p><p>Do NOT manipu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cometRenderTimeout</span><span class="result">: <span name="scala.Long" class="extype">Long</span></span>
+        <span class="name">cometRenderTimeout</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Override in sub-class to customise timeout for the render()-method for the specific comet
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#cometRenderTimeoutHandler" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftCometActor#cometRenderTimeoutHandler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometRenderTimeoutHandler():net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
       <a id="cometRenderTimeoutHandler():Box[NodeSeq]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -414,7 +468,7 @@ this to send a message to the user informing of the timeout.</p><p>Do NOT manipu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cometRenderTimeoutHandler</span><span class="params">()</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.xml.NodeSeq" class="extype">NodeSeq</span>]</span>
+        <span class="name">cometRenderTimeoutHandler</span><span class="params">()</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">This is to react to comet-actors timing out while initial rendering, calls to render().</p><div class="fullcomment"><div class="comment cmt"><p>This is to react to comet-actors timing out while initial rendering, calls to render().
@@ -426,7 +480,8 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
 }
 </pre>
 </p></div></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -434,11 +489,12 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -446,11 +502,12 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -458,26 +515,28 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -485,11 +544,12 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -497,11 +557,12 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -509,11 +570,12 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -521,11 +583,12 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -533,11 +596,12 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#poke" data-isabs="false">
+    </li><li name="net.liftweb.http.LiftCometActor#poke" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="poke():Unit"></a>
       <a id="poke():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -545,7 +609,7 @@ this to customise the output.</p><p>Do NOT manipulate actor-state here. If you w
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">poke</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">poke</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Poke the CometActor and cause it to do a partial update Noop which
@@ -556,21 +620,23 @@ Wiring elements on the component.
 This method is Actor-safe and may be called from any thread, not
 just the Actor's message handler thread.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#predicateChanged" data-isabs="false">
-      <a id="predicateChanged(net.liftweb.util.Cell[_]):Unit"></a>
+    </li><li name="net.liftweb.http.LiftCometActor#predicateChanged" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predicateChanged(which:net.liftweb.util.Cell[_]):Unit"></a>
+      <a id="predicateChanged(Cell[_]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">predicateChanged</span><span class="params">(<span name="which">which: net.liftweb.util.Cell[_]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">predicateChanged</span><span class="params">(<span name="which">which: <a href="../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">If the predicate cell changes, the Dependent will be notified
 </p><div class="fullcomment"><div class="comment cmt"><p>If the predicate cell changes, the Dependent will be notified
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.http.LiftCometActor" class="extype" href="">LiftCometActor</a> → <a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.http.LiftCometActor#sendInitialReq_?" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a> → <a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#sendInitialReq_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendInitialReq_?:Boolean"></a>
       <a id="sendInitialReq_?:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -578,7 +644,7 @@ just the Actor's message handler thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: sendInitialReq_$qmark">sendInitialReq_?</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: sendInitialReq_$qmark" class="name">sendInitialReq_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Is this CometActor going to capture the initial Req
@@ -593,19 +659,21 @@ HTTP request stream.  We don't want to do this unless we
 have to, so by default the Req is not snapshotted/sent.  But
 if you want it, you can have it.
 </p></div></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -613,11 +681,12 @@ if you want it, you can have it.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.Dependent#unregisterFromAllDependencies" data-isabs="false">
+    </li><li name="net.liftweb.util.Dependent#unregisterFromAllDependencies" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unregisterFromAllDependencies():Unit"></a>
       <a id="unregisterFromAllDependencies():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -625,13 +694,14 @@ if you want it, you can have it.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unregisterFromAllDependencies</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">unregisterFromAllDependencies</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Remove from all dependencies
 </p><div class="fullcomment"><div class="comment cmt"><p>Remove from all dependencies
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -639,14 +709,15 @@ if you want it, you can have it.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -654,14 +725,15 @@ if you want it, you can have it.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -669,61 +741,67 @@ if you want it, you can have it.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.Dependent#whoDoIDependOn" data-isabs="false">
+    </li><li name="net.liftweb.util.Dependent#whoDoIDependOn" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="whoDoIDependOn:Seq[net.liftweb.util.Cell[_]]"></a>
+      <a id="whoDoIDependOn:Seq[Cell[_]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">whoDoIDependOn</span><span class="result">: Seq[net.liftweb.util.Cell[_]]</span>
+        <span class="name">whoDoIDependOn</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get a list of all the cells this Dependency depends on
 </p><div class="fullcomment"><div class="comment cmt"><p>Get a list of all the cells this Dependency depends on
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.Dependent#youDependOnMe" data-isabs="false">
-      <a id="youDependOnMe(net.liftweb.util.Cell[_]):Unit"></a>
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Dependent#youDependOnMe" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="youDependOnMe(who:net.liftweb.util.Cell[_]):Unit"></a>
+      <a id="youDependOnMe(Cell[_]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">youDependOnMe</span><span class="params">(<span name="who">who: net.liftweb.util.Cell[_]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">youDependOnMe</span><span class="params">(<span name="who">who: <a href="../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">The Cell notifies the Dependent of the dependency
 </p><div class="fullcomment"><div class="comment cmt"><p>The Cell notifies the Dependent of the dependency
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.Dependent#youDontDependOnMe" data-isabs="false">
-      <a id="youDontDependOnMe(net.liftweb.util.Cell[_]):Unit"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Dependent#youDontDependOnMe" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="youDontDependOnMe(who:net.liftweb.util.Cell[_]):Unit"></a>
+      <a id="youDontDependOnMe(Cell[_]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">youDontDependOnMe</span><span class="params">(<span name="who">who: net.liftweb.util.Cell[_]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">youDontDependOnMe</span><span class="params">(<span name="who">who: <a href="../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">The Cell notifies the Dependent of the removed dependency
 </p><div class="fullcomment"><div class="comment cmt"><p>The Cell notifies the Dependent of the removed dependency
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></dd></dl></div>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        
+
+        <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
-              <ol><li visbl="prt" name="net.liftweb.util.Dependent#unregisterFromAllDepenencies" data-isabs="false">
+              <ol><li name="net.liftweb.util.Dependent#unregisterFromAllDepenencies" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unregisterFromAllDepenencies():Unit"></a>
       <a id="unregisterFromAllDepenencies():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -731,10 +809,10 @@ if you want it, you can have it.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.5) please used the correctly spelled unregisterFromAllDependencies">unregisterFromAllDepenencies</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: (Since version 2.5) please used the correctly spelled unregisterFromAllDependencies">unregisterFromAllDepenencies</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.5)</i> please used the correctly spelled unregisterFromAllDependencies</p></dd></dl></div>
@@ -743,18 +821,26 @@ if you want it, you can have it.
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.util.Dependent" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.Dependent" class="extype" href="../util/Dependent.html">Dependent</a></h3>
-            </div><div name="net.liftweb.common.ForwardableActor" class="parent">
-              <h3>Inherited from <a name="net.liftweb.common.ForwardableActor" class="extype" href="../common/ForwardableActor.html">ForwardableActor</a>[<span name="scala.Any" class="extype">Any</span>, <span name="scala.Any" class="extype">Any</span>]</h3>
-            </div><div name="net.liftweb.common.TypedActor" class="parent">
-              <h3>Inherited from <a name="net.liftweb.common.TypedActor" class="extype" href="../common/TypedActor.html">TypedActor</a>[<span name="scala.Any" class="extype">Any</span>, <span name="scala.Any" class="extype">Any</span>]</h3>
-            </div><div name="net.liftweb.common.SimpleActor" class="parent">
-              <h3>Inherited from <a name="net.liftweb.common.SimpleActor" class="extype" href="../common/SimpleActor.html">SimpleActor</a>[<span name="scala.Any" class="extype">Any</span>]</h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.util.Dependent">
+              <h3>Inherited from <a href="../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></h3>
+            </div><div class="parent" name="net.liftweb.common.ForwardableActor">
+              <h3>Inherited from <a href="../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>]</h3>
+            </div><div class="parent" name="net.liftweb.common.TypedActor">
+              <h3>Inherited from <a href="../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>]</h3>
+            </div><div class="parent" name="net.liftweb.common.SimpleActor">
+              <h3>Inherited from <a href="../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<span class="extype" name="scala.Any">Any</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

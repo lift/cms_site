@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mongodb.record.field</title>
+          <title>field - Lift Framework 2.6-M3 - net.liftweb.mongodb.record.field</title>
+          <meta name="description" content="field - Lift Framework 2.6 - M3 - net.liftweb.mongodb.record.field" />
+          <meta name="keywords" content="field Lift Framework 2.6 M3 net.liftweb.mongodb.record.field" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'net.liftweb.mongodb.record.field.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../../../package.html">liftweb</a>.<a name="net.liftweb.mongodb" class="extype" href="../../package.html">mongodb</a>.<a name="net.liftweb.mongodb.record" class="extype" href="../package.html">record</a></p>
+        <p id="owner"><a href="../../../../package.html" class="extype" name="net">net</a>.<a href="../../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../../package.html" class="extype" name="net.liftweb.mongodb">mongodb</a>.<a href="../package.html" class="extype" name="net.liftweb.mongodb.record">record</a></p>
         <h1>field</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,57 +61,62 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mongodb.record.field.BsonRecordField" data-isabs="false">
-      <a id="BsonRecordField:BsonRecordField[OwnerType, SubRecordType]"></a>
+              <ol><li name="net.liftweb.mongodb.record.field.BsonRecordField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BsonRecordField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],SubRecordType&lt;:net.liftweb.mongodb.record.BsonRecord[SubRecordType]]extendsField[SubRecordType,OwnerType]withMandatoryTypedField[SubRecordType]"></a>
+      <a id="BsonRecordField[OwnerType&lt;:BsonRecord[OwnerType],SubRecordType&lt;:BsonRecord[SubRecordType]]:BsonRecordField[OwnerType,SubRecordType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="BsonRecordField.html"><span class="name">BsonRecordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="SubRecordType">SubRecordType &lt;: BsonRecord[SubRecordType]</span>]</span><span class="result"> extends Field[SubRecordType, OwnerType] with MandatoryTypedField[SubRecordType]</span>
+        <a href="BsonRecordField.html"><span class="name">BsonRecordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordField.OwnerType">OwnerType</span>]</span>, <span name="SubRecordType">SubRecordType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordField.SubRecordType">SubRecordType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordField.SubRecordType">SubRecordType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordField.SubRecordType">SubRecordType</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">Field that contains an entire record represented as an inline object value.</p>
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.BsonRecordListField" data-isabs="false">
-      <a id="BsonRecordListField:BsonRecordListField[OwnerType, SubRecordType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.BsonRecordListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BsonRecordListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],SubRecordType&lt;:net.liftweb.mongodb.record.BsonRecord[SubRecordType]]extendsMongoListField[OwnerType,SubRecordType]"></a>
+      <a id="BsonRecordListField[OwnerType&lt;:BsonRecord[OwnerType],SubRecordType&lt;:BsonRecord[SubRecordType]]:BsonRecordListField[OwnerType,SubRecordType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="BsonRecordListField.html"><span class="name">BsonRecordListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="SubRecordType">SubRecordType &lt;: BsonRecord[SubRecordType]</span>]</span><span class="result"> extends MongoListField[OwnerType, SubRecordType]</span>
+        <a href="BsonRecordListField.html"><span class="name">BsonRecordListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordListField.OwnerType">OwnerType</span>]</span>, <span name="SubRecordType">SubRecordType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordListField.SubRecordType">SubRecordType</span>]</span>]</span><span class="result"> extends <a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.BsonRecordListField.SubRecordType">SubRecordType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.DBRefField" data-isabs="false">
-      <a id="DBRefField:DBRefField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.DBRefField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DBRefField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsField[com.mongodb.DBRef,OwnerType]withMandatoryTypedField[com.mongodb.DBRef]"></a>
+      <a id="DBRefField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:DBRefField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DBRefField.html"><span class="name">DBRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends Field[DBRef, OwnerType] with MandatoryTypedField[DBRef]</span>
+        <a href="DBRefField.html"><span class="name">DBRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.DBRefField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.DBRefField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="com.mongodb.DBRef">DBRef</span>, <span class="extype" name="net.liftweb.mongodb.record.field.DBRefField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="com.mongodb.DBRef">DBRef</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.DateField" data-isabs="false">
-      <a id="DateField:DateField[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.DateField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType]]extendsField[java.util.Date,OwnerType]withMandatoryTypedField[java.util.Date]withDateTypedField"></a>
+      <a id="DateField[OwnerType&lt;:BsonRecord[OwnerType]]:DateField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DateField.html"><span class="name">DateField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>]</span><span class="result"> extends Field[Date, OwnerType] with MandatoryTypedField[Date] with DateTypedField</span>
+        <a href="DateField.html"><span class="name">DateField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.DateField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="java.util.Date">Date</span>, <span class="extype" name="net.liftweb.mongodb.record.field.DateField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="java.util.Date">Date</span>] with <a href="DateTypedField.html" class="extype" name="net.liftweb.mongodb.record.field.DateTypedField">DateTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.DateTypedField" data-isabs="true">
+    </li><li name="net.liftweb.mongodb.record.field.DateTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DateTypedFieldextendsTypedField[java.util.Date]"></a>
       <a id="DateTypedField:DateTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -104,288 +124,312 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DateTypedField.html"><span class="name">DateTypedField</span></a><span class="result"> extends TypedField[Date]</span>
+        <a href="DateTypedField.html"><span class="name">DateTypedField</span></a><span class="result"> extends <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="java.util.Date">Date</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.IntPk" data-isabs="true">
-      <a id="IntPk:IntPk[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.IntPk" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IntPk[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsMongoPk[net.liftweb.record.field.IntField[OwnerType]]"></a>
+      <a id="IntPk[OwnerType&lt;:MongoRecord[OwnerType]]:IntPk[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="IntPk.html"><span class="name">IntPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: MongoRecord[OwnerType]</span>]</span><span class="result"> extends MongoPk[IntField[OwnerType]]</span>
+        <a href="IntPk.html"><span class="name">IntPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntPk.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="MongoPk.html" class="extype" name="net.liftweb.mongodb.record.field.MongoPk">MongoPk</a>[<a href="../../../record/field/IntField.html" class="extype" name="net.liftweb.record.field.IntField">IntField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntPk.OwnerType">OwnerType</span>]]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.IntRefField" data-isabs="false">
-      <a id="IntRefField:IntRefField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.IntRefField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntRefField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsIntField[OwnerType]withMongoRefField[RefType,Int]"></a>
+      <a id="IntRefField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:IntRefField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="IntRefField.html"><span class="name">IntRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends IntField[OwnerType] with MongoRefField[RefType, Int]</span>
+        <a href="IntRefField.html"><span class="name">IntRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntRefField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntRefField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="../../../record/field/IntField.html" class="extype" name="net.liftweb.record.field.IntField">IntField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntRefField.OwnerType">OwnerType</span>] with <a href="MongoRefField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefField">MongoRefField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntRefField.RefType">RefType</span>, <span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.IntRefListField" data-isabs="false">
-      <a id="IntRefListField:IntRefListField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.IntRefListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntRefListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsMongoRefListField[OwnerType,RefType,Int]"></a>
+      <a id="IntRefListField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:IntRefListField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="IntRefListField.html"><span class="name">IntRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends MongoRefListField[OwnerType, RefType, Int]</span>
+        <a href="IntRefListField.html"><span class="name">IntRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntRefListField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntRefListField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.IntRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.IntRefListField.RefType">RefType</span>, <span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.JObjectField" data-isabs="false">
-      <a id="JObjectField:JObjectField[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.JObjectField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JObjectField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType]]extendsField[net.liftweb.json.JObject,OwnerType]withMandatoryTypedField[net.liftweb.json.JObject]withMongoFieldFlavor[net.liftweb.json.JObject]"></a>
+      <a id="JObjectField[OwnerType&lt;:BsonRecord[OwnerType]]:JObjectField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="JObjectField.html"><span class="name">JObjectField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>]</span><span class="result"> extends Field[JObject, OwnerType] with MandatoryTypedField[JObject] with MongoFieldFlavor[JObject]</span>
+        <a href="JObjectField.html"><span class="name">JObjectField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.JObjectField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<a href="../../../json/package.html#JObject=net.liftweb.json.JsonAST.JObject" class="extmbr" name="net.liftweb.json.JObject">JObject</a>, <span class="extype" name="net.liftweb.mongodb.record.field.JObjectField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<a href="../../../json/package.html#JObject=net.liftweb.json.JsonAST.JObject" class="extmbr" name="net.liftweb.json.JObject">JObject</a>] with <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<a href="../../../json/package.html#JObject=net.liftweb.json.JsonAST.JObject" class="extmbr" name="net.liftweb.json.JObject">JObject</a>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.JsonObjectField" data-isabs="true">
-      <a id="JsonObjectField:JsonObjectField[OwnerType, JObjectType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.JsonObjectField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JsonObjectField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],JObjectType&lt;:net.liftweb.mongodb.JsonObject[JObjectType]]extendsField[JObjectType,OwnerType]withMandatoryTypedField[JObjectType]withMongoFieldFlavor[JObjectType]"></a>
+      <a id="JsonObjectField[OwnerType&lt;:BsonRecord[OwnerType],JObjectType&lt;:JsonObject[JObjectType]]:JsonObjectField[OwnerType,JObjectType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="JsonObjectField.html"><span class="name">JsonObjectField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="JObjectType">JObjectType &lt;: JsonObject[JObjectType]</span>]</span><span class="result"> extends Field[JObjectType, OwnerType] with MandatoryTypedField[JObjectType] with MongoFieldFlavor[JObjectType]</span>
+        <a href="JsonObjectField.html"><span class="name">JsonObjectField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.JsonObjectField.OwnerType">OwnerType</span>]</span>, <span name="JObjectType">JObjectType &lt;: <a href="../../JsonObject.html" class="extype" name="net.liftweb.mongodb.JsonObject">JsonObject</a>[<span class="extype" name="net.liftweb.mongodb.record.field.JsonObjectField.JObjectType">JObjectType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="net.liftweb.mongodb.record.field.JsonObjectField.JObjectType">JObjectType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.JsonObjectField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.JsonObjectField.JObjectType">JObjectType</span>] with <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<span class="extype" name="net.liftweb.mongodb.record.field.JsonObjectField.JObjectType">JObjectType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.LongPk" data-isabs="true">
-      <a id="LongPk:LongPk[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.LongPk" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LongPk[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsMongoPk[net.liftweb.record.field.LongField[OwnerType]]"></a>
+      <a id="LongPk[OwnerType&lt;:MongoRecord[OwnerType]]:LongPk[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LongPk.html"><span class="name">LongPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: MongoRecord[OwnerType]</span>]</span><span class="result"> extends MongoPk[LongField[OwnerType]]</span>
+        <a href="LongPk.html"><span class="name">LongPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongPk.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="MongoPk.html" class="extype" name="net.liftweb.mongodb.record.field.MongoPk">MongoPk</a>[<a href="../../../record/field/LongField.html" class="extype" name="net.liftweb.record.field.LongField">LongField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongPk.OwnerType">OwnerType</span>]]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.LongRefField" data-isabs="false">
-      <a id="LongRefField:LongRefField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.LongRefField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LongRefField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsLongField[OwnerType]withMongoRefField[RefType,Long]"></a>
+      <a id="LongRefField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:LongRefField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LongRefField.html"><span class="name">LongRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends LongField[OwnerType] with MongoRefField[RefType, Long]</span>
+        <a href="LongRefField.html"><span class="name">LongRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="../../../record/field/LongField.html" class="extype" name="net.liftweb.record.field.LongField">LongField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefField.OwnerType">OwnerType</span>] with <a href="MongoRefField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefField">MongoRefField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefField.RefType">RefType</span>, <span class="extype" name="scala.Long">Long</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.LongRefListField" data-isabs="false">
-      <a id="LongRefListField:LongRefListField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.LongRefListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LongRefListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsMongoRefListField[OwnerType,RefType,Long]"></a>
+      <a id="LongRefListField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:LongRefListField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LongRefListField.html"><span class="name">LongRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends MongoRefListField[OwnerType, RefType, Long]</span>
+        <a href="LongRefListField.html"><span class="name">LongRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>, <span class="extype" name="scala.Long">Long</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoCaseClassField" data-isabs="false">
-      <a id="MongoCaseClassField:MongoCaseClassField[OwnerType, CaseType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoCaseClassField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoCaseClassField[OwnerType&lt;:net.liftweb.record.Record[OwnerType],CaseType]extendsField[CaseType,OwnerType]withMandatoryTypedField[CaseType]withMongoFieldFlavor[CaseType]"></a>
+      <a id="MongoCaseClassField[OwnerType&lt;:Record[OwnerType],CaseType]:MongoCaseClassField[OwnerType,CaseType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoCaseClassField.html"><span class="name">MongoCaseClassField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>, <span name="CaseType">CaseType</span>]</span><span class="result"> extends Field[CaseType, OwnerType] with MandatoryTypedField[CaseType] with MongoFieldFlavor[CaseType]</span>
+        <a href="MongoCaseClassField.html"><span class="name">MongoCaseClassField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../../../record/Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassField.OwnerType">OwnerType</span>]</span>, <span name="CaseType">CaseType</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassField.CaseType">CaseType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassField.CaseType">CaseType</span>] with <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassField.CaseType">CaseType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoCaseClassListField" data-isabs="false">
-      <a id="MongoCaseClassListField:MongoCaseClassListField[OwnerType, CaseType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoCaseClassListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoCaseClassListField[OwnerType&lt;:net.liftweb.record.Record[OwnerType],CaseType]extendsField[List[CaseType],OwnerType]withMandatoryTypedField[List[CaseType]]withMongoFieldFlavor[List[CaseType]]"></a>
+      <a id="MongoCaseClassListField[OwnerType&lt;:Record[OwnerType],CaseType]:MongoCaseClassListField[OwnerType,CaseType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoCaseClassListField.html"><span class="name">MongoCaseClassListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>, <span name="CaseType">CaseType</span>]</span><span class="result"> extends Field[List[CaseType], OwnerType] with MandatoryTypedField[List[CaseType]] with MongoFieldFlavor[List[CaseType]]</span>
+        <a href="MongoCaseClassListField.html"><span class="name">MongoCaseClassListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../../../record/Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassListField.OwnerType">OwnerType</span>]</span>, <span name="CaseType">CaseType</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassListField.CaseType">CaseType</span>], <span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassListField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassListField.CaseType">CaseType</span>]] with <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoCaseClassListField.CaseType">CaseType</span>]]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoFieldFlavor" data-isabs="true">
-      <a id="MongoFieldFlavor:MongoFieldFlavor[MyType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoFieldFlavor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoFieldFlavor[MyType]extendsObject"></a>
+      <a id="MongoFieldFlavor[MyType]:MongoFieldFlavor[MyType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoFieldFlavor.html"><span class="name">MongoFieldFlavor</span></a><span class="tparams">[<span name="MyType">MyType</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="MongoFieldFlavor.html"><span class="name">MongoFieldFlavor</span></a><span class="tparams">[<span name="MyType">MyType</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Describes common aspects related to Mongo fields</p>
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoJsonObjectListField" data-isabs="false">
-      <a id="MongoJsonObjectListField:MongoJsonObjectListField[OwnerType, JObjectType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoJsonObjectListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoJsonObjectListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],JObjectType&lt;:net.liftweb.mongodb.JsonObject[JObjectType]]extendsMongoListField[OwnerType,JObjectType]"></a>
+      <a id="MongoJsonObjectListField[OwnerType&lt;:BsonRecord[OwnerType],JObjectType&lt;:JsonObject[JObjectType]]:MongoJsonObjectListField[OwnerType,JObjectType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoJsonObjectListField.html"><span class="name">MongoJsonObjectListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="JObjectType">JObjectType &lt;: JsonObject[JObjectType]</span>]</span><span class="result"> extends MongoListField[OwnerType, JObjectType]</span>
+        <a href="MongoJsonObjectListField.html"><span class="name">MongoJsonObjectListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoJsonObjectListField.OwnerType">OwnerType</span>]</span>, <span name="JObjectType">JObjectType &lt;: <a href="../../JsonObject.html" class="extype" name="net.liftweb.mongodb.JsonObject">JsonObject</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoJsonObjectListField.JObjectType">JObjectType</span>]</span>]</span><span class="result"> extends <a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoJsonObjectListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.MongoJsonObjectListField.JObjectType">JObjectType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoListField" data-isabs="false">
-      <a id="MongoListField:MongoListField[OwnerType, ListType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],ListType]extendsField[List[ListType],OwnerType]withMandatoryTypedField[List[ListType]]withMongoFieldFlavor[List[ListType]]"></a>
+      <a id="MongoListField[OwnerType&lt;:BsonRecord[OwnerType],ListType]:MongoListField[OwnerType,ListType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoListField.html"><span class="name">MongoListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="ListType">ListType</span>]</span><span class="result"> extends Field[List[ListType], OwnerType] with MandatoryTypedField[List[ListType]] with MongoFieldFlavor[List[ListType]]</span>
+        <a href="MongoListField.html"><span class="name">MongoListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoListField.OwnerType">OwnerType</span>]</span>, <span name="ListType">ListType</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoListField.ListType">ListType</span>], <span class="extype" name="net.liftweb.mongodb.record.field.MongoListField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoListField.ListType">ListType</span>]] with <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoListField.ListType">ListType</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">List field.</p>
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoMapField" data-isabs="false">
-      <a id="MongoMapField:MongoMapField[OwnerType, MapValueType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoMapField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoMapField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],MapValueType]extendsField[Map[String,MapValueType],OwnerType]withMandatoryTypedField[Map[String,MapValueType]]withMongoFieldFlavor[Map[String,MapValueType]]"></a>
+      <a id="MongoMapField[OwnerType&lt;:BsonRecord[OwnerType],MapValueType]:MongoMapField[OwnerType,MapValueType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoMapField.html"><span class="name">MongoMapField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="MapValueType">MapValueType</span>]</span><span class="result"> extends Field[Map[String, MapValueType], OwnerType] with MandatoryTypedField[Map[String, MapValueType]] with MongoFieldFlavor[Map[String, MapValueType]]</span>
+        <a href="MongoMapField.html"><span class="name">MongoMapField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoMapField.OwnerType">OwnerType</span>]</span>, <span name="MapValueType">MapValueType</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="net.liftweb.mongodb.record.field.MongoMapField.MapValueType">MapValueType</span>], <span class="extype" name="net.liftweb.mongodb.record.field.MongoMapField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="net.liftweb.mongodb.record.field.MongoMapField.MapValueType">MapValueType</span>]] with <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="net.liftweb.mongodb.record.field.MongoMapField.MapValueType">MapValueType</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">Note: setting optional_? = false will result in incorrect equals behavior when using setFromJValue
 </p>
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoPasswordField" data-isabs="false">
-      <a id="MongoPasswordField:MongoPasswordField[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoPasswordField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoPasswordField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType]]extendsJsonObjectField[OwnerType,net.liftweb.mongodb.record.field.Password]"></a>
+      <a id="MongoPasswordField[OwnerType&lt;:BsonRecord[OwnerType]]:MongoPasswordField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoPasswordField.html"><span class="name">MongoPasswordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>]</span><span class="result"> extends JsonObjectField[OwnerType, Password]</span>
+        <a href="MongoPasswordField.html"><span class="name">MongoPasswordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoPasswordField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="JsonObjectField.html" class="extype" name="net.liftweb.mongodb.record.field.JsonObjectField">JsonObjectField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoPasswordField.OwnerType">OwnerType</span>, <a href="Password.html" class="extype" name="net.liftweb.mongodb.record.field.Password">Password</a>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoPk" data-isabs="true">
-      <a id="MongoPk:MongoPk[PkType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoPk" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoPk[PkType]extendsObject"></a>
+      <a id="MongoPk[PkType]:MongoPk[PkType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoPk.html"><span class="name">MongoPk</span></a><span class="tparams">[<span name="PkType">PkType</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="MongoPk.html"><span class="name">MongoPk</span></a><span class="tparams">[<span name="PkType">PkType</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoRefField" data-isabs="true">
-      <a id="MongoRefField:MongoRefField[RefType, MyType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoRefField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoRefField[RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType],MyType]extendsTypedField[MyType]"></a>
+      <a id="MongoRefField[RefType&lt;:MongoRecord[RefType],MyType]:MongoRefField[RefType,MyType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoRefField.html"><span class="name">MongoRefField</span></a><span class="tparams">[<span name="RefType">RefType &lt;: MongoRecord[RefType]</span>, <span name="MyType">MyType</span>]</span><span class="result"> extends TypedField[MyType]</span>
+        <a href="MongoRefField.html"><span class="name">MongoRefField</span></a><span class="tparams">[<span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoRefField.RefType">RefType</span>]</span>, <span name="MyType">MyType</span>]</span><span class="result"> extends <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoRefField.MyType">MyType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoRefListField" data-isabs="true">
-      <a id="MongoRefListField:MongoRefListField[OwnerType, RefType, MyType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.MongoRefListField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoRefListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType],MyType]extendsMongoListField[OwnerType,MyType]"></a>
+      <a id="MongoRefListField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType],MyType]:MongoRefListField[OwnerType,RefType,MyType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoRefListField.html"><span class="name">MongoRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>, <span name="MyType">MyType</span>]</span><span class="result"> extends MongoListField[OwnerType, MyType]</span>
+        <a href="MongoRefListField.html"><span class="name">MongoRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField.RefType">RefType</span>]</span>, <span name="MyType">MyType</span>]</span><span class="result"> extends <a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField.MyType">MyType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.ObjectIdField" data-isabs="false">
-      <a id="ObjectIdField:ObjectIdField[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.ObjectIdField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ObjectIdField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType]]extendsField[org.bson.types.ObjectId,OwnerType]withMandatoryTypedField[org.bson.types.ObjectId]"></a>
+      <a id="ObjectIdField[OwnerType&lt;:BsonRecord[OwnerType]]:ObjectIdField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ObjectIdField.html"><span class="name">ObjectIdField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>]</span><span class="result"> extends Field[ObjectId, OwnerType] with MandatoryTypedField[ObjectId]</span>
+        <a href="ObjectIdField.html"><span class="name">ObjectIdField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="org.bson.types.ObjectId">ObjectId</span>, <span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="org.bson.types.ObjectId">ObjectId</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.ObjectIdPk" data-isabs="true">
-      <a id="ObjectIdPk:ObjectIdPk[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.ObjectIdPk" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ObjectIdPk[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsMongoPk[net.liftweb.mongodb.record.field.ObjectIdField[OwnerType]]"></a>
+      <a id="ObjectIdPk[OwnerType&lt;:MongoRecord[OwnerType]]:ObjectIdPk[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ObjectIdPk.html"><span class="name">ObjectIdPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: MongoRecord[OwnerType]</span>]</span><span class="result"> extends MongoPk[ObjectIdField[OwnerType]]</span>
+        <a href="ObjectIdPk.html"><span class="name">ObjectIdPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdPk.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="MongoPk.html" class="extype" name="net.liftweb.mongodb.record.field.MongoPk">MongoPk</a>[<a href="ObjectIdField.html" class="extype" name="net.liftweb.mongodb.record.field.ObjectIdField">ObjectIdField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdPk.OwnerType">OwnerType</span>]]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.ObjectIdRefField" data-isabs="false">
-      <a id="ObjectIdRefField:ObjectIdRefField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.ObjectIdRefField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ObjectIdRefField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsObjectIdField[OwnerType]withMongoRefField[RefType,org.bson.types.ObjectId]"></a>
+      <a id="ObjectIdRefField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:ObjectIdRefField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ObjectIdRefField.html"><span class="name">ObjectIdRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends ObjectIdField[OwnerType] with MongoRefField[RefType, ObjectId]</span>
+        <a href="ObjectIdRefField.html"><span class="name">ObjectIdRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="ObjectIdField.html" class="extype" name="net.liftweb.mongodb.record.field.ObjectIdField">ObjectIdField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefField.OwnerType">OwnerType</span>] with <a href="MongoRefField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefField">MongoRefField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefField.RefType">RefType</span>, <span class="extype" name="org.bson.types.ObjectId">ObjectId</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.ObjectIdRefListField" data-isabs="false">
-      <a id="ObjectIdRefListField:ObjectIdRefListField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.ObjectIdRefListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ObjectIdRefListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsMongoRefListField[OwnerType,RefType,org.bson.types.ObjectId]"></a>
+      <a id="ObjectIdRefListField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:ObjectIdRefListField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ObjectIdRefListField.html"><span class="name">ObjectIdRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends MongoRefListField[OwnerType, RefType, ObjectId]</span>
+        <a href="ObjectIdRefListField.html"><span class="name">ObjectIdRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefListField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefListField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.ObjectIdRefListField.RefType">RefType</span>, <span class="extype" name="org.bson.types.ObjectId">ObjectId</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.OptionalDateField" data-isabs="false">
-      <a id="OptionalDateField:OptionalDateField[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.OptionalDateField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalDateField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType]]extendsField[java.util.Date,OwnerType]withOptionalTypedField[java.util.Date]withDateTypedField"></a>
+      <a id="OptionalDateField[OwnerType&lt;:BsonRecord[OwnerType]]:OptionalDateField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalDateField.html"><span class="name">OptionalDateField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>]</span><span class="result"> extends Field[Date, OwnerType] with OptionalTypedField[Date] with DateTypedField</span>
+        <a href="OptionalDateField.html"><span class="name">OptionalDateField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.OptionalDateField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="java.util.Date">Date</span>, <span class="extype" name="net.liftweb.mongodb.record.field.OptionalDateField.OwnerType">OwnerType</span>] with <a href="../../../record/OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="java.util.Date">Date</span>] with <a href="DateTypedField.html" class="extype" name="net.liftweb.mongodb.record.field.DateTypedField">DateTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.Password" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.record.field.Password" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PasswordextendsJsonObject[net.liftweb.mongodb.record.field.Password]withProductwithSerializable"></a>
       <a id="Password:Password"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -393,103 +437,111 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Password.html"><span class="name">Password</span></a><span class="params">(<span name="pwd">pwd: String</span>, <span name="salt">salt: String</span>)</span><span class="result"> extends JsonObject[Password] with Product with Serializable</span>
+        <a href="Password.html"><span class="name">Password</span></a><span class="params">(<span name="pwd">pwd: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="salt">salt: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="../../JsonObject.html" class="extype" name="net.liftweb.mongodb.JsonObject">JsonObject</a>[<a href="Password.html" class="extype" name="net.liftweb.mongodb.record.field.Password">Password</a>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.PatternField" data-isabs="false">
-      <a id="PatternField:PatternField[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.PatternField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PatternField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType]]extendsField[java.util.regex.Pattern,OwnerType]withMandatoryTypedField[java.util.regex.Pattern]"></a>
+      <a id="PatternField[OwnerType&lt;:BsonRecord[OwnerType]]:PatternField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PatternField.html"><span class="name">PatternField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>]</span><span class="result"> extends Field[Pattern, OwnerType] with MandatoryTypedField[Pattern]</span>
+        <a href="PatternField.html"><span class="name">PatternField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.PatternField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="java.util.regex.Pattern">Pattern</span>, <span class="extype" name="net.liftweb.mongodb.record.field.PatternField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="java.util.regex.Pattern">Pattern</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.StringPk" data-isabs="true">
-      <a id="StringPk:StringPk[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.StringPk" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StringPk[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsMongoPk[net.liftweb.record.field.StringField[OwnerType]]"></a>
+      <a id="StringPk[OwnerType&lt;:MongoRecord[OwnerType]]:StringPk[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="StringPk.html"><span class="name">StringPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: MongoRecord[OwnerType]</span>]</span><span class="result"> extends MongoPk[StringField[OwnerType]]</span>
+        <a href="StringPk.html"><span class="name">StringPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringPk.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="MongoPk.html" class="extype" name="net.liftweb.mongodb.record.field.MongoPk">MongoPk</a>[<a href="../../../record/field/StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringPk.OwnerType">OwnerType</span>]]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.StringRefField" data-isabs="false">
-      <a id="StringRefField:StringRefField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.StringRefField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringRefField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsStringField[OwnerType]withMongoRefField[RefType,String]"></a>
+      <a id="StringRefField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:StringRefField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="StringRefField.html"><span class="name">StringRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends StringField[OwnerType] with MongoRefField[RefType, String]</span>
+        <a href="StringRefField.html"><span class="name">StringRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringRefField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringRefField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="../../../record/field/StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringRefField.OwnerType">OwnerType</span>] with <a href="MongoRefField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefField">MongoRefField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringRefField.RefType">RefType</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.StringRefListField" data-isabs="false">
-      <a id="StringRefListField:StringRefListField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.StringRefListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringRefListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsMongoRefListField[OwnerType,RefType,String]"></a>
+      <a id="StringRefListField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:StringRefListField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="StringRefListField.html"><span class="name">StringRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends MongoRefListField[OwnerType, RefType, String]</span>
+        <a href="StringRefListField.html"><span class="name">StringRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringRefListField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringRefListField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.StringRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.StringRefListField.RefType">RefType</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.UUIDField" data-isabs="false">
-      <a id="UUIDField:UUIDField[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.UUIDField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UUIDField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType]]extendsField[java.util.UUID,OwnerType]withMandatoryTypedField[java.util.UUID]"></a>
+      <a id="UUIDField[OwnerType&lt;:BsonRecord[OwnerType]]:UUIDField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UUIDField.html"><span class="name">UUIDField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>]</span><span class="result"> extends Field[UUID, OwnerType] with MandatoryTypedField[UUID]</span>
+        <a href="UUIDField.html"><span class="name">UUIDField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="java.util.UUID">UUID</span>, <span class="extype" name="net.liftweb.mongodb.record.field.UUIDField.OwnerType">OwnerType</span>] with <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="java.util.UUID">UUID</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.UUIDPk" data-isabs="true">
-      <a id="UUIDPk:UUIDPk[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.UUIDPk" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UUIDPk[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsMongoPk[net.liftweb.mongodb.record.field.UUIDField[OwnerType]]"></a>
+      <a id="UUIDPk[OwnerType&lt;:MongoRecord[OwnerType]]:UUIDPk[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="UUIDPk.html"><span class="name">UUIDPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: MongoRecord[OwnerType]</span>]</span><span class="result"> extends MongoPk[UUIDField[OwnerType]]</span>
+        <a href="UUIDPk.html"><span class="name">UUIDPk</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDPk.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="MongoPk.html" class="extype" name="net.liftweb.mongodb.record.field.MongoPk">MongoPk</a>[<a href="UUIDField.html" class="extype" name="net.liftweb.mongodb.record.field.UUIDField">UUIDField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDPk.OwnerType">OwnerType</span>]]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.UUIDRefField" data-isabs="false">
-      <a id="UUIDRefField:UUIDRefField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.UUIDRefField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UUIDRefField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsUUIDField[OwnerType]withMongoRefField[RefType,java.util.UUID]"></a>
+      <a id="UUIDRefField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:UUIDRefField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UUIDRefField.html"><span class="name">UUIDRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends UUIDField[OwnerType] with MongoRefField[RefType, UUID]</span>
+        <a href="UUIDRefField.html"><span class="name">UUIDRefField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="UUIDField.html" class="extype" name="net.liftweb.mongodb.record.field.UUIDField">UUIDField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefField.OwnerType">OwnerType</span>] with <a href="MongoRefField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefField">MongoRefField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefField.RefType">RefType</span>, <span class="extype" name="java.util.UUID">UUID</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.UUIDRefListField" data-isabs="false">
-      <a id="UUIDRefListField:UUIDRefListField[OwnerType, RefType]"></a>
+    </li><li name="net.liftweb.mongodb.record.field.UUIDRefListField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UUIDRefListField[OwnerType&lt;:net.liftweb.mongodb.record.BsonRecord[OwnerType],RefType&lt;:net.liftweb.mongodb.record.MongoRecord[RefType]]extendsMongoRefListField[OwnerType,RefType,java.util.UUID]"></a>
+      <a id="UUIDRefListField[OwnerType&lt;:BsonRecord[OwnerType],RefType&lt;:MongoRecord[RefType]]:UUIDRefListField[OwnerType,RefType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UUIDRefListField.html"><span class="name">UUIDRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: BsonRecord[OwnerType]</span>, <span name="RefType">RefType &lt;: MongoRecord[RefType]</span>]</span><span class="result"> extends MongoRefListField[OwnerType, RefType, UUID]</span>
+        <a href="UUIDRefListField.html"><span class="name">UUIDRefListField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefListField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefListField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.UUIDRefListField.RefType">RefType</span>, <span class="extype" name="java.util.UUID">UUID</span>]</span>
       </span>
       </h4>
       
@@ -498,9 +550,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mongodb.record.field.MongoPasswordField" data-isabs="false">
+              <ol><li name="net.liftweb.mongodb.record.field.MongoPasswordField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoPasswordField"></a>
       <a id="MongoPasswordField:MongoPasswordField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -508,11 +561,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MongoPasswordField$.html"><span class="name">MongoPasswordField</span></a><span class="result"> extends AnyRef</span>
+        <a href="MongoPasswordField$.html"><span class="name">MongoPasswordField</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.field.Password" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.record.field.Password" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Password"></a>
       <a id="Password:Password"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -520,7 +574,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Password$.html"><span class="name">Password</span></a><span class="result"> extends JsonObjectMeta[Password] with Serializable</span>
+        <a href="Password$.html"><span class="name">Password</span></a><span class="result"> extends <a href="../../JsonObjectMeta.html" class="extype" name="net.liftweb.mongodb.JsonObjectMeta">JsonObjectMeta</a>[<a href="Password.html" class="extype" name="net.liftweb.mongodb.record.field.Password">Password</a>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -528,10 +582,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

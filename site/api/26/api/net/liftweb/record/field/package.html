@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.record.field</title>
+          <title>field - Lift Framework 2.6-M3 - net.liftweb.record.field</title>
+          <meta name="description" content="field - Lift Framework 2.6 - M3 - net.liftweb.record.field" />
+          <meta name="keywords" content="field Lift Framework 2.6 M3 net.liftweb.record.field" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.record.field.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../../package.html">liftweb</a>.<a name="net.liftweb.record" class="extype" href="../package.html">record</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.record">record</a></p>
         <h1>field</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,21 +61,23 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.record.field.BinaryField" data-isabs="false">
-      <a id="BinaryField:BinaryField[OwnerType]"></a>
+              <ol><li name="net.liftweb.record.field.BinaryField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BinaryField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Array[Byte],OwnerType]withMandatoryTypedField[Array[Byte]]withBinaryTypedField"></a>
+      <a id="BinaryField[OwnerType&lt;:Record[OwnerType]]:BinaryField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="BinaryField.html"><span class="name">BinaryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Array[Byte], OwnerType] with MandatoryTypedField[Array[Byte]] with BinaryTypedField</span>
+        <a href="BinaryField.html"><span class="name">BinaryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.BinaryField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>], <span class="extype" name="net.liftweb.record.field.BinaryField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]] with <a href="BinaryTypedField.html" class="extype" name="net.liftweb.record.field.BinaryTypedField">BinaryTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.BinaryTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.BinaryTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BinaryTypedFieldextendsTypedField[Array[Byte]]"></a>
       <a id="BinaryTypedField:BinaryTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,23 +85,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="BinaryTypedField.html"><span class="name">BinaryTypedField</span></a><span class="result"> extends TypedField[Array[Byte]]</span>
+        <a href="BinaryTypedField.html"><span class="name">BinaryTypedField</span></a><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.BooleanField" data-isabs="false">
-      <a id="BooleanField:BooleanField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.BooleanField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BooleanField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Boolean,OwnerType]withMandatoryTypedField[Boolean]withBooleanTypedField"></a>
+      <a id="BooleanField[OwnerType&lt;:Record[OwnerType]]:BooleanField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="BooleanField.html"><span class="name">BooleanField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Boolean, OwnerType] with MandatoryTypedField[Boolean] with BooleanTypedField</span>
+        <a href="BooleanField.html"><span class="name">BooleanField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.BooleanField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Boolean">Boolean</span>, <span class="extype" name="net.liftweb.record.field.BooleanField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Boolean">Boolean</span>] with <a href="BooleanTypedField.html" class="extype" name="net.liftweb.record.field.BooleanTypedField">BooleanTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.BooleanTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.BooleanTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BooleanTypedFieldextendsTypedField[Boolean]"></a>
       <a id="BooleanTypedField:BooleanTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,35 +111,38 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="BooleanTypedField.html"><span class="name">BooleanTypedField</span></a><span class="result"> extends TypedField[Boolean]</span>
+        <a href="BooleanTypedField.html"><span class="name">BooleanTypedField</span></a><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.CountryField" data-isabs="false">
-      <a id="CountryField:CountryField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.CountryField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CountryField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsEnumField[OwnerType,net.liftweb.record.field.Countries.type]"></a>
+      <a id="CountryField[OwnerType&lt;:Record[OwnerType]]:CountryField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="CountryField.html"><span class="name">CountryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends EnumField[OwnerType, net.liftweb.record.field.Countries.type]</span>
+        <a href="CountryField.html"><span class="name">CountryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.CountryField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="EnumField.html" class="extype" name="net.liftweb.record.field.EnumField">EnumField</a>[<span class="extype" name="net.liftweb.record.field.CountryField.OwnerType">OwnerType</span>, <a href="Countries$.html" class="extype" name="net.liftweb.record.field.Countries">Countries</a>.type]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.DateTimeField" data-isabs="false">
-      <a id="DateTimeField:DateTimeField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.DateTimeField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateTimeField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[java.util.Calendar,OwnerType]withMandatoryTypedField[java.util.Calendar]withDateTimeTypedField"></a>
+      <a id="DateTimeField[OwnerType&lt;:Record[OwnerType]]:DateTimeField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DateTimeField.html"><span class="name">DateTimeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Calendar, OwnerType] with MandatoryTypedField[Calendar] with DateTimeTypedField</span>
+        <a href="DateTimeField.html"><span class="name">DateTimeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.DateTimeField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="java.util.Calendar">Calendar</span>, <span class="extype" name="net.liftweb.record.field.DateTimeField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="java.util.Calendar">Calendar</span>] with <a href="DateTimeTypedField.html" class="extype" name="net.liftweb.record.field.DateTimeTypedField">DateTimeTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.DateTimeTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.DateTimeTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DateTimeTypedFieldextendsTypedField[java.util.Calendar]"></a>
       <a id="DateTimeTypedField:DateTimeTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -128,23 +150,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DateTimeTypedField.html"><span class="name">DateTimeTypedField</span></a><span class="result"> extends TypedField[Calendar]</span>
+        <a href="DateTimeTypedField.html"><span class="name">DateTimeTypedField</span></a><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="java.util.Calendar">Calendar</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.DecimalField" data-isabs="false">
-      <a id="DecimalField:DecimalField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.DecimalField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DecimalField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[BigDecimal,OwnerType]withMandatoryTypedField[BigDecimal]withDecimalTypedField"></a>
+      <a id="DecimalField[OwnerType&lt;:Record[OwnerType]]:DecimalField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DecimalField.html"><span class="name">DecimalField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[BigDecimal, OwnerType] with MandatoryTypedField[BigDecimal] with DecimalTypedField</span>
+        <a href="DecimalField.html"><span class="name">DecimalField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.DecimalField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.BigDecimal">BigDecimal</span>, <span class="extype" name="net.liftweb.record.field.DecimalField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.BigDecimal">BigDecimal</span>] with <a href="DecimalTypedField.html" class="extype" name="net.liftweb.record.field.DecimalTypedField">DecimalTypedField</a></span>
       </span>
       </h4>
       <p class="comment cmt">A field that maps to a decimal value.</p>
-    </li><li visbl="pub" name="net.liftweb.record.field.DecimalTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.DecimalTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DecimalTypedFieldextendsNumericTypedField[BigDecimal]"></a>
       <a id="DecimalTypedField:DecimalTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -152,23 +176,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DecimalTypedField.html"><span class="name">DecimalTypedField</span></a><span class="result"> extends NumericTypedField[BigDecimal]</span>
+        <a href="DecimalTypedField.html"><span class="name">DecimalTypedField</span></a><span class="result"> extends <a href="NumericTypedField.html" class="extype" name="net.liftweb.record.field.NumericTypedField">NumericTypedField</a>[<span class="extype" name="scala.BigDecimal">BigDecimal</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.DoubleField" data-isabs="false">
-      <a id="DoubleField:DoubleField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.DoubleField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DoubleField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Double,OwnerType]withMandatoryTypedField[Double]withDoubleTypedField"></a>
+      <a id="DoubleField[OwnerType&lt;:Record[OwnerType]]:DoubleField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DoubleField.html"><span class="name">DoubleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Double, OwnerType] with MandatoryTypedField[Double] with DoubleTypedField</span>
+        <a href="DoubleField.html"><span class="name">DoubleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.DoubleField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="net.liftweb.record.field.DoubleField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Double">Double</span>] with <a href="DoubleTypedField.html" class="extype" name="net.liftweb.record.field.DoubleTypedField">DoubleTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.DoubleTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.DoubleTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DoubleTypedFieldextendsNumericTypedField[Double]"></a>
       <a id="DoubleTypedField:DoubleTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -176,23 +202,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="DoubleTypedField.html"><span class="name">DoubleTypedField</span></a><span class="result"> extends NumericTypedField[Double]</span>
+        <a href="DoubleTypedField.html"><span class="name">DoubleTypedField</span></a><span class="result"> extends <a href="NumericTypedField.html" class="extype" name="net.liftweb.record.field.NumericTypedField">NumericTypedField</a>[<span class="extype" name="scala.Double">Double</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.EmailField" data-isabs="false">
-      <a id="EmailField:EmailField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.EmailField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EmailField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsStringField[OwnerType]withEmailTypedField"></a>
+      <a id="EmailField[OwnerType&lt;:Record[OwnerType]]:EmailField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="EmailField.html"><span class="name">EmailField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends StringField[OwnerType] with EmailTypedField</span>
+        <a href="EmailField.html"><span class="name">EmailField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.EmailField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.record.field.EmailField.OwnerType">OwnerType</span>] with <a href="EmailTypedField.html" class="extype" name="net.liftweb.record.field.EmailTypedField">EmailTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.EmailTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.EmailTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EmailTypedFieldextendsTypedField[String]"></a>
       <a id="EmailTypedField:EmailTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -200,71 +228,77 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="EmailTypedField.html"><span class="name">EmailTypedField</span></a><span class="result"> extends TypedField[String]</span>
+        <a href="EmailTypedField.html"><span class="name">EmailTypedField</span></a><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.EnumField" data-isabs="false">
-      <a id="EnumField:EnumField[OwnerType, EnumType]"></a>
+    </li><li name="net.liftweb.record.field.EnumField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EnumField[OwnerType&lt;:net.liftweb.record.Record[OwnerType],EnumType&lt;:Enumeration]extendsField[EnumType#Value,OwnerType]withMandatoryTypedField[EnumType#Value]withEnumTypedField[EnumType]"></a>
+      <a id="EnumField[OwnerType&lt;:Record[OwnerType],EnumType&lt;:Enumeration]:EnumField[OwnerType,EnumType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="EnumField.html"><span class="name">EnumField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>, <span name="EnumType">EnumType &lt;: Enumeration</span>]</span><span class="result"> extends Field[Value, OwnerType] with MandatoryTypedField[Value] with EnumTypedField[EnumType]</span>
+        <a href="EnumField.html"><span class="name">EnumField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.EnumField.OwnerType">OwnerType</span>]</span>, <span name="EnumType">EnumType &lt;: <span class="extype" name="scala.Enumeration">Enumeration</span></span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Enumeration.Value">field.EnumField.EnumType.Value</span>, <span class="extype" name="net.liftweb.record.field.EnumField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Enumeration.Value">field.EnumField.EnumType.Value</span>] with <a href="EnumTypedField.html" class="extype" name="net.liftweb.record.field.EnumTypedField">EnumTypedField</a>[<span class="extype" name="net.liftweb.record.field.EnumField.EnumType">EnumType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.EnumNameField" data-isabs="false">
-      <a id="EnumNameField:EnumNameField[OwnerType, EnumType]"></a>
+    </li><li name="net.liftweb.record.field.EnumNameField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EnumNameField[OwnerType&lt;:net.liftweb.record.Record[OwnerType],EnumType&lt;:Enumeration]extendsField[EnumType#Value,OwnerType]withMandatoryTypedField[EnumType#Value]withEnumNameTypedField[EnumType]"></a>
+      <a id="EnumNameField[OwnerType&lt;:Record[OwnerType],EnumType&lt;:Enumeration]:EnumNameField[OwnerType,EnumType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="EnumNameField.html"><span class="name">EnumNameField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>, <span name="EnumType">EnumType &lt;: Enumeration</span>]</span><span class="result"> extends Field[Value, OwnerType] with MandatoryTypedField[Value] with EnumNameTypedField[EnumType]</span>
+        <a href="EnumNameField.html"><span class="name">EnumNameField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.EnumNameField.OwnerType">OwnerType</span>]</span>, <span name="EnumType">EnumType &lt;: <span class="extype" name="scala.Enumeration">Enumeration</span></span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Enumeration.Value">field.EnumNameField.EnumType.Value</span>, <span class="extype" name="net.liftweb.record.field.EnumNameField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Enumeration.Value">field.EnumNameField.EnumType.Value</span>] with <a href="EnumNameTypedField.html" class="extype" name="net.liftweb.record.field.EnumNameTypedField">EnumNameTypedField</a>[<span class="extype" name="net.liftweb.record.field.EnumNameField.EnumType">EnumType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.EnumNameTypedField" data-isabs="true">
-      <a id="EnumNameTypedField:EnumNameTypedField[EnumType]"></a>
+    </li><li name="net.liftweb.record.field.EnumNameTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EnumNameTypedField[EnumType&lt;:Enumeration]extendsTypedField[EnumType#Value]"></a>
+      <a id="EnumNameTypedField[EnumType&lt;:Enumeration]:EnumNameTypedField[EnumType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="EnumNameTypedField.html"><span class="name">EnumNameTypedField</span></a><span class="tparams">[<span name="EnumType">EnumType &lt;: Enumeration</span>]</span><span class="result"> extends TypedField[Value]</span>
+        <a href="EnumNameTypedField.html"><span class="name">EnumNameTypedField</span></a><span class="tparams">[<span name="EnumType">EnumType &lt;: <span class="extype" name="scala.Enumeration">Enumeration</span></span>]</span><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Enumeration.Value">field.EnumNameTypedField.EnumType.Value</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.EnumTypedField" data-isabs="true">
-      <a id="EnumTypedField:EnumTypedField[EnumType]"></a>
+    </li><li name="net.liftweb.record.field.EnumTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="EnumTypedField[EnumType&lt;:Enumeration]extendsTypedField[EnumType#Value]"></a>
+      <a id="EnumTypedField[EnumType&lt;:Enumeration]:EnumTypedField[EnumType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="EnumTypedField.html"><span class="name">EnumTypedField</span></a><span class="tparams">[<span name="EnumType">EnumType &lt;: Enumeration</span>]</span><span class="result"> extends TypedField[Value]</span>
+        <a href="EnumTypedField.html"><span class="name">EnumTypedField</span></a><span class="tparams">[<span name="EnumType">EnumType &lt;: <span class="extype" name="scala.Enumeration">Enumeration</span></span>]</span><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Enumeration.Value">field.EnumTypedField.EnumType.Value</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.IntField" data-isabs="false">
-      <a id="IntField:IntField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.IntField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Int,OwnerType]withMandatoryTypedField[Int]withIntTypedField"></a>
+      <a id="IntField[OwnerType&lt;:Record[OwnerType]]:IntField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="IntField.html"><span class="name">IntField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Int, OwnerType] with MandatoryTypedField[Int] with IntTypedField</span>
+        <a href="IntField.html"><span class="name">IntField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.IntField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="net.liftweb.record.field.IntField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Int">Int</span>] with <a href="IntTypedField.html" class="extype" name="net.liftweb.record.field.IntTypedField">IntTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.IntTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.IntTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="IntTypedFieldextendsNumericTypedField[Int]"></a>
       <a id="IntTypedField:IntTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -272,23 +306,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="IntTypedField.html"><span class="name">IntTypedField</span></a><span class="result"> extends NumericTypedField[Int]</span>
+        <a href="IntTypedField.html"><span class="name">IntTypedField</span></a><span class="result"> extends <a href="NumericTypedField.html" class="extype" name="net.liftweb.record.field.NumericTypedField">NumericTypedField</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.LocaleField" data-isabs="false">
-      <a id="LocaleField:LocaleField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.LocaleField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocaleField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsStringField[OwnerType]withLocaleTypedField"></a>
+      <a id="LocaleField[OwnerType&lt;:Record[OwnerType]]:LocaleField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LocaleField.html"><span class="name">LocaleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends StringField[OwnerType] with LocaleTypedField</span>
+        <a href="LocaleField.html"><span class="name">LocaleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.LocaleField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.record.field.LocaleField.OwnerType">OwnerType</span>] with <a href="LocaleTypedField.html" class="extype" name="net.liftweb.record.field.LocaleTypedField">LocaleTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.LocaleTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.LocaleTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LocaleTypedFieldextendsTypedField[String]"></a>
       <a id="LocaleTypedField:LocaleTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -296,23 +332,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LocaleTypedField.html"><span class="name">LocaleTypedField</span></a><span class="result"> extends TypedField[String]</span>
+        <a href="LocaleTypedField.html"><span class="name">LocaleTypedField</span></a><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.LongField" data-isabs="false">
-      <a id="LongField:LongField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.LongField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LongField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Long,OwnerType]withMandatoryTypedField[Long]withLongTypedField"></a>
+      <a id="LongField[OwnerType&lt;:Record[OwnerType]]:LongField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LongField.html"><span class="name">LongField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Long, OwnerType] with MandatoryTypedField[Long] with LongTypedField</span>
+        <a href="LongField.html"><span class="name">LongField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.LongField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Long">Long</span>, <span class="extype" name="net.liftweb.record.field.LongField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Long">Long</span>] with <a href="LongTypedField.html" class="extype" name="net.liftweb.record.field.LongTypedField">LongTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.LongTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.LongTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LongTypedFieldextendsNumericTypedField[Long]"></a>
       <a id="LongTypedField:LongTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -320,239 +358,259 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LongTypedField.html"><span class="name">LongTypedField</span></a><span class="result"> extends NumericTypedField[Long]</span>
+        <a href="LongTypedField.html"><span class="name">LongTypedField</span></a><span class="result"> extends <a href="NumericTypedField.html" class="extype" name="net.liftweb.record.field.NumericTypedField">NumericTypedField</a>[<span class="extype" name="scala.Long">Long</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.NumericTypedField" data-isabs="true">
-      <a id="NumericTypedField:NumericTypedField[MyType]"></a>
+    </li><li name="net.liftweb.record.field.NumericTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NumericTypedField[MyType]extendsTypedField[MyType]"></a>
+      <a id="NumericTypedField[MyType]:NumericTypedField[MyType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="NumericTypedField.html"><span class="name">NumericTypedField</span></a><span class="tparams">[<span name="MyType">MyType</span>]</span><span class="result"> extends TypedField[MyType]</span>
+        <a href="NumericTypedField.html"><span class="name">NumericTypedField</span></a><span class="tparams">[<span name="MyType">MyType</span>]</span><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="net.liftweb.record.field.NumericTypedField.MyType">MyType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalBinaryField" data-isabs="false">
-      <a id="OptionalBinaryField:OptionalBinaryField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalBinaryField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalBinaryField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Array[Byte],OwnerType]withOptionalTypedField[Array[Byte]]withBinaryTypedField"></a>
+      <a id="OptionalBinaryField[OwnerType&lt;:Record[OwnerType]]:OptionalBinaryField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalBinaryField.html"><span class="name">OptionalBinaryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Array[Byte], OwnerType] with OptionalTypedField[Array[Byte]] with BinaryTypedField</span>
+        <a href="OptionalBinaryField.html"><span class="name">OptionalBinaryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalBinaryField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>], <span class="extype" name="net.liftweb.record.field.OptionalBinaryField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]] with <a href="BinaryTypedField.html" class="extype" name="net.liftweb.record.field.BinaryTypedField">BinaryTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalBooleanField" data-isabs="false">
-      <a id="OptionalBooleanField:OptionalBooleanField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalBooleanField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalBooleanField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Boolean,OwnerType]withOptionalTypedField[Boolean]withBooleanTypedField"></a>
+      <a id="OptionalBooleanField[OwnerType&lt;:Record[OwnerType]]:OptionalBooleanField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalBooleanField.html"><span class="name">OptionalBooleanField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Boolean, OwnerType] with OptionalTypedField[Boolean] with BooleanTypedField</span>
+        <a href="OptionalBooleanField.html"><span class="name">OptionalBooleanField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalBooleanField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Boolean">Boolean</span>, <span class="extype" name="net.liftweb.record.field.OptionalBooleanField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Boolean">Boolean</span>] with <a href="BooleanTypedField.html" class="extype" name="net.liftweb.record.field.BooleanTypedField">BooleanTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalCountryField" data-isabs="false">
-      <a id="OptionalCountryField:OptionalCountryField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalCountryField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalCountryField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOptionalEnumField[OwnerType,net.liftweb.record.field.Countries.type]"></a>
+      <a id="OptionalCountryField[OwnerType&lt;:Record[OwnerType]]:OptionalCountryField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalCountryField.html"><span class="name">OptionalCountryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends OptionalEnumField[OwnerType, net.liftweb.record.field.Countries.type]</span>
+        <a href="OptionalCountryField.html"><span class="name">OptionalCountryField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalCountryField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OptionalEnumField.html" class="extype" name="net.liftweb.record.field.OptionalEnumField">OptionalEnumField</a>[<span class="extype" name="net.liftweb.record.field.OptionalCountryField.OwnerType">OwnerType</span>, <a href="Countries$.html" class="extype" name="net.liftweb.record.field.Countries">Countries</a>.type]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalDateTimeField" data-isabs="false">
-      <a id="OptionalDateTimeField:OptionalDateTimeField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalDateTimeField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalDateTimeField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[java.util.Calendar,OwnerType]withOptionalTypedField[java.util.Calendar]withDateTimeTypedField"></a>
+      <a id="OptionalDateTimeField[OwnerType&lt;:Record[OwnerType]]:OptionalDateTimeField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalDateTimeField.html"><span class="name">OptionalDateTimeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Calendar, OwnerType] with OptionalTypedField[Calendar] with DateTimeTypedField</span>
+        <a href="OptionalDateTimeField.html"><span class="name">OptionalDateTimeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalDateTimeField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="java.util.Calendar">Calendar</span>, <span class="extype" name="net.liftweb.record.field.OptionalDateTimeField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="java.util.Calendar">Calendar</span>] with <a href="DateTimeTypedField.html" class="extype" name="net.liftweb.record.field.DateTimeTypedField">DateTimeTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalDecimalField" data-isabs="false">
-      <a id="OptionalDecimalField:OptionalDecimalField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalDecimalField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalDecimalField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[BigDecimal,OwnerType]withOptionalTypedField[BigDecimal]withDecimalTypedField"></a>
+      <a id="OptionalDecimalField[OwnerType&lt;:Record[OwnerType]]:OptionalDecimalField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalDecimalField.html"><span class="name">OptionalDecimalField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[BigDecimal, OwnerType] with OptionalTypedField[BigDecimal] with DecimalTypedField</span>
+        <a href="OptionalDecimalField.html"><span class="name">OptionalDecimalField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalDecimalField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.BigDecimal">BigDecimal</span>, <span class="extype" name="net.liftweb.record.field.OptionalDecimalField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.BigDecimal">BigDecimal</span>] with <a href="DecimalTypedField.html" class="extype" name="net.liftweb.record.field.DecimalTypedField">DecimalTypedField</a></span>
       </span>
       </h4>
       <p class="comment cmt">A field that maps to a decimal value.</p>
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalDoubleField" data-isabs="false">
-      <a id="OptionalDoubleField:OptionalDoubleField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalDoubleField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalDoubleField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Double,OwnerType]withOptionalTypedField[Double]withDoubleTypedField"></a>
+      <a id="OptionalDoubleField[OwnerType&lt;:Record[OwnerType]]:OptionalDoubleField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalDoubleField.html"><span class="name">OptionalDoubleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Double, OwnerType] with OptionalTypedField[Double] with DoubleTypedField</span>
+        <a href="OptionalDoubleField.html"><span class="name">OptionalDoubleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalDoubleField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="net.liftweb.record.field.OptionalDoubleField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Double">Double</span>] with <a href="DoubleTypedField.html" class="extype" name="net.liftweb.record.field.DoubleTypedField">DoubleTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalEmailField" data-isabs="false">
-      <a id="OptionalEmailField:OptionalEmailField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalEmailField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalEmailField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOptionalStringField[OwnerType]withEmailTypedField"></a>
+      <a id="OptionalEmailField[OwnerType&lt;:Record[OwnerType]]:OptionalEmailField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalEmailField.html"><span class="name">OptionalEmailField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends OptionalStringField[OwnerType] with EmailTypedField</span>
+        <a href="OptionalEmailField.html"><span class="name">OptionalEmailField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalEmailField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OptionalStringField.html" class="extype" name="net.liftweb.record.field.OptionalStringField">OptionalStringField</a>[<span class="extype" name="net.liftweb.record.field.OptionalEmailField.OwnerType">OwnerType</span>] with <a href="EmailTypedField.html" class="extype" name="net.liftweb.record.field.EmailTypedField">EmailTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalEnumField" data-isabs="false">
-      <a id="OptionalEnumField:OptionalEnumField[OwnerType, EnumType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalEnumField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalEnumField[OwnerType&lt;:net.liftweb.record.Record[OwnerType],EnumType&lt;:Enumeration]extendsField[EnumType#Value,OwnerType]withOptionalTypedField[EnumType#Value]withEnumTypedField[EnumType]"></a>
+      <a id="OptionalEnumField[OwnerType&lt;:Record[OwnerType],EnumType&lt;:Enumeration]:OptionalEnumField[OwnerType,EnumType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalEnumField.html"><span class="name">OptionalEnumField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>, <span name="EnumType">EnumType &lt;: Enumeration</span>]</span><span class="result"> extends Field[Value, OwnerType] with OptionalTypedField[Value] with EnumTypedField[EnumType]</span>
+        <a href="OptionalEnumField.html"><span class="name">OptionalEnumField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalEnumField.OwnerType">OwnerType</span>]</span>, <span name="EnumType">EnumType &lt;: <span class="extype" name="scala.Enumeration">Enumeration</span></span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Enumeration.Value">field.OptionalEnumField.EnumType.Value</span>, <span class="extype" name="net.liftweb.record.field.OptionalEnumField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Enumeration.Value">field.OptionalEnumField.EnumType.Value</span>] with <a href="EnumTypedField.html" class="extype" name="net.liftweb.record.field.EnumTypedField">EnumTypedField</a>[<span class="extype" name="net.liftweb.record.field.OptionalEnumField.EnumType">EnumType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalEnumNameField" data-isabs="false">
-      <a id="OptionalEnumNameField:OptionalEnumNameField[OwnerType, EnumType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalEnumNameField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalEnumNameField[OwnerType&lt;:net.liftweb.record.Record[OwnerType],EnumType&lt;:Enumeration]extendsField[EnumType#Value,OwnerType]withOptionalTypedField[EnumType#Value]withEnumNameTypedField[EnumType]"></a>
+      <a id="OptionalEnumNameField[OwnerType&lt;:Record[OwnerType],EnumType&lt;:Enumeration]:OptionalEnumNameField[OwnerType,EnumType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalEnumNameField.html"><span class="name">OptionalEnumNameField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>, <span name="EnumType">EnumType &lt;: Enumeration</span>]</span><span class="result"> extends Field[Value, OwnerType] with OptionalTypedField[Value] with EnumNameTypedField[EnumType]</span>
+        <a href="OptionalEnumNameField.html"><span class="name">OptionalEnumNameField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalEnumNameField.OwnerType">OwnerType</span>]</span>, <span name="EnumType">EnumType &lt;: <span class="extype" name="scala.Enumeration">Enumeration</span></span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Enumeration.Value">field.OptionalEnumNameField.EnumType.Value</span>, <span class="extype" name="net.liftweb.record.field.OptionalEnumNameField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Enumeration.Value">field.OptionalEnumNameField.EnumType.Value</span>] with <a href="EnumNameTypedField.html" class="extype" name="net.liftweb.record.field.EnumNameTypedField">EnumNameTypedField</a>[<span class="extype" name="net.liftweb.record.field.OptionalEnumNameField.EnumType">EnumType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalIntField" data-isabs="false">
-      <a id="OptionalIntField:OptionalIntField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalIntField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalIntField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Int,OwnerType]withOptionalTypedField[Int]withIntTypedField"></a>
+      <a id="OptionalIntField[OwnerType&lt;:Record[OwnerType]]:OptionalIntField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalIntField.html"><span class="name">OptionalIntField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Int, OwnerType] with OptionalTypedField[Int] with IntTypedField</span>
+        <a href="OptionalIntField.html"><span class="name">OptionalIntField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalIntField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="net.liftweb.record.field.OptionalIntField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Int">Int</span>] with <a href="IntTypedField.html" class="extype" name="net.liftweb.record.field.IntTypedField">IntTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalLocaleField" data-isabs="false">
-      <a id="OptionalLocaleField:OptionalLocaleField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalLocaleField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalLocaleField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOptionalStringField[OwnerType]withLocaleTypedField"></a>
+      <a id="OptionalLocaleField[OwnerType&lt;:Record[OwnerType]]:OptionalLocaleField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalLocaleField.html"><span class="name">OptionalLocaleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends OptionalStringField[OwnerType] with LocaleTypedField</span>
+        <a href="OptionalLocaleField.html"><span class="name">OptionalLocaleField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalLocaleField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OptionalStringField.html" class="extype" name="net.liftweb.record.field.OptionalStringField">OptionalStringField</a>[<span class="extype" name="net.liftweb.record.field.OptionalLocaleField.OwnerType">OwnerType</span>] with <a href="LocaleTypedField.html" class="extype" name="net.liftweb.record.field.LocaleTypedField">LocaleTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalLongField" data-isabs="false">
-      <a id="OptionalLongField:OptionalLongField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalLongField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalLongField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[Long,OwnerType]withOptionalTypedField[Long]withLongTypedField"></a>
+      <a id="OptionalLongField[OwnerType&lt;:Record[OwnerType]]:OptionalLongField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalLongField.html"><span class="name">OptionalLongField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[Long, OwnerType] with OptionalTypedField[Long] with LongTypedField</span>
+        <a href="OptionalLongField.html"><span class="name">OptionalLongField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalLongField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Long">Long</span>, <span class="extype" name="net.liftweb.record.field.OptionalLongField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Long">Long</span>] with <a href="LongTypedField.html" class="extype" name="net.liftweb.record.field.LongTypedField">LongTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalPasswordField" data-isabs="false">
-      <a id="OptionalPasswordField:OptionalPasswordField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalPasswordField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalPasswordField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[String,OwnerType]withOptionalTypedField[String]withPasswordTypedField"></a>
+      <a id="OptionalPasswordField[OwnerType&lt;:Record[OwnerType]]:OptionalPasswordField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalPasswordField.html"><span class="name">OptionalPasswordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[String, OwnerType] with OptionalTypedField[String] with PasswordTypedField</span>
+        <a href="OptionalPasswordField.html"><span class="name">OptionalPasswordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalPasswordField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="net.liftweb.record.field.OptionalPasswordField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="PasswordTypedField.html" class="extype" name="net.liftweb.record.field.PasswordTypedField">PasswordTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalPostalCodeField" data-isabs="false">
-      <a id="OptionalPostalCodeField:OptionalPostalCodeField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalPostalCodeField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalPostalCodeField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOptionalStringField[OwnerType]withPostalCodeTypedField"></a>
+      <a id="OptionalPostalCodeField[OwnerType&lt;:Record[OwnerType]]:OptionalPostalCodeField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalPostalCodeField.html"><span class="name">OptionalPostalCodeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends OptionalStringField[OwnerType] with PostalCodeTypedField</span>
+        <a href="OptionalPostalCodeField.html"><span class="name">OptionalPostalCodeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalPostalCodeField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OptionalStringField.html" class="extype" name="net.liftweb.record.field.OptionalStringField">OptionalStringField</a>[<span class="extype" name="net.liftweb.record.field.OptionalPostalCodeField.OwnerType">OwnerType</span>] with <a href="PostalCodeTypedField.html" class="extype" name="net.liftweb.record.field.PostalCodeTypedField">PostalCodeTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalStringField" data-isabs="false">
-      <a id="OptionalStringField:OptionalStringField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalStringField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalStringField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[String,OwnerType]withOptionalTypedField[String]withStringTypedField"></a>
+      <a id="OptionalStringField[OwnerType&lt;:Record[OwnerType]]:OptionalStringField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalStringField.html"><span class="name">OptionalStringField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[String, OwnerType] with OptionalTypedField[String] with StringTypedField</span>
+        <a href="OptionalStringField.html"><span class="name">OptionalStringField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalStringField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="net.liftweb.record.field.OptionalStringField.OwnerType">OwnerType</span>] with <a href="../OptionalTypedField.html" class="extype" name="net.liftweb.record.OptionalTypedField">OptionalTypedField</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="StringTypedField.html" class="extype" name="net.liftweb.record.field.StringTypedField">StringTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalTextareaField" data-isabs="false">
-      <a id="OptionalTextareaField:OptionalTextareaField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalTextareaField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalTextareaField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOptionalStringField[OwnerType]withTextareaTypedField"></a>
+      <a id="OptionalTextareaField[OwnerType&lt;:Record[OwnerType]]:OptionalTextareaField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalTextareaField.html"><span class="name">OptionalTextareaField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends OptionalStringField[OwnerType] with TextareaTypedField</span>
+        <a href="OptionalTextareaField.html"><span class="name">OptionalTextareaField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalTextareaField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OptionalStringField.html" class="extype" name="net.liftweb.record.field.OptionalStringField">OptionalStringField</a>[<span class="extype" name="net.liftweb.record.field.OptionalTextareaField.OwnerType">OwnerType</span>] with <a href="TextareaTypedField.html" class="extype" name="net.liftweb.record.field.TextareaTypedField">TextareaTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.OptionalTimeZoneField" data-isabs="false">
-      <a id="OptionalTimeZoneField:OptionalTimeZoneField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.OptionalTimeZoneField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptionalTimeZoneField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOptionalStringField[OwnerType]withTimeZoneTypedField"></a>
+      <a id="OptionalTimeZoneField[OwnerType&lt;:Record[OwnerType]]:OptionalTimeZoneField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="OptionalTimeZoneField.html"><span class="name">OptionalTimeZoneField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends OptionalStringField[OwnerType] with TimeZoneTypedField</span>
+        <a href="OptionalTimeZoneField.html"><span class="name">OptionalTimeZoneField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.OptionalTimeZoneField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OptionalStringField.html" class="extype" name="net.liftweb.record.field.OptionalStringField">OptionalStringField</a>[<span class="extype" name="net.liftweb.record.field.OptionalTimeZoneField.OwnerType">OwnerType</span>] with <a href="TimeZoneTypedField.html" class="extype" name="net.liftweb.record.field.TimeZoneTypedField">TimeZoneTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.PasswordField" data-isabs="false">
-      <a id="PasswordField:PasswordField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.PasswordField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PasswordField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[String,OwnerType]withMandatoryTypedField[String]withPasswordTypedField"></a>
+      <a id="PasswordField[OwnerType&lt;:Record[OwnerType]]:PasswordField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PasswordField.html"><span class="name">PasswordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[String, OwnerType] with MandatoryTypedField[String] with PasswordTypedField</span>
+        <a href="PasswordField.html"><span class="name">PasswordField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.PasswordField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="net.liftweb.record.field.PasswordField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="PasswordTypedField.html" class="extype" name="net.liftweb.record.field.PasswordTypedField">PasswordTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.PasswordTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.PasswordTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PasswordTypedFieldextendsTypedField[String]"></a>
       <a id="PasswordTypedField:PasswordTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -560,23 +618,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="PasswordTypedField.html"><span class="name">PasswordTypedField</span></a><span class="result"> extends TypedField[String]</span>
+        <a href="PasswordTypedField.html"><span class="name">PasswordTypedField</span></a><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.PostalCodeField" data-isabs="false">
-      <a id="PostalCodeField:PostalCodeField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.PostalCodeField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PostalCodeField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsStringField[OwnerType]withPostalCodeTypedField"></a>
+      <a id="PostalCodeField[OwnerType&lt;:Record[OwnerType]]:PostalCodeField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PostalCodeField.html"><span class="name">PostalCodeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends StringField[OwnerType] with PostalCodeTypedField</span>
+        <a href="PostalCodeField.html"><span class="name">PostalCodeField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.PostalCodeField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.record.field.PostalCodeField.OwnerType">OwnerType</span>] with <a href="PostalCodeTypedField.html" class="extype" name="net.liftweb.record.field.PostalCodeTypedField">PostalCodeTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.PostalCodeTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.PostalCodeTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PostalCodeTypedFieldextendsStringTypedField"></a>
       <a id="PostalCodeTypedField:PostalCodeTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -584,23 +644,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="PostalCodeTypedField.html"><span class="name">PostalCodeTypedField</span></a><span class="result"> extends StringTypedField</span>
+        <a href="PostalCodeTypedField.html"><span class="name">PostalCodeTypedField</span></a><span class="result"> extends <a href="StringTypedField.html" class="extype" name="net.liftweb.record.field.StringTypedField">StringTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.StringField" data-isabs="false">
-      <a id="StringField:StringField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.StringField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StringField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsField[String,OwnerType]withMandatoryTypedField[String]withStringTypedField"></a>
+      <a id="StringField[OwnerType&lt;:Record[OwnerType]]:StringField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="StringField.html"><span class="name">StringField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends Field[String, OwnerType] with MandatoryTypedField[String] with StringTypedField</span>
+        <a href="StringField.html"><span class="name">StringField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.StringField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="net.liftweb.record.field.StringField.OwnerType">OwnerType</span>] with <a href="../MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="StringTypedField.html" class="extype" name="net.liftweb.record.field.StringTypedField">StringTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.StringTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.StringTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="StringTypedFieldextendsTypedField[String]withStringValidators"></a>
       <a id="StringTypedField:StringTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -608,23 +670,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="StringTypedField.html"><span class="name">StringTypedField</span></a><span class="result"> extends TypedField[String] with StringValidators</span>
+        <a href="StringTypedField.html"><span class="name">StringTypedField</span></a><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="../../util/StringValidators.html" class="extype" name="net.liftweb.util.StringValidators">StringValidators</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.TextareaField" data-isabs="false">
-      <a id="TextareaField:TextareaField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.TextareaField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TextareaField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsStringField[OwnerType]withTextareaTypedField"></a>
+      <a id="TextareaField[OwnerType&lt;:Record[OwnerType]]:TextareaField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="TextareaField.html"><span class="name">TextareaField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends StringField[OwnerType] with TextareaTypedField</span>
+        <a href="TextareaField.html"><span class="name">TextareaField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.TextareaField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.record.field.TextareaField.OwnerType">OwnerType</span>] with <a href="TextareaTypedField.html" class="extype" name="net.liftweb.record.field.TextareaTypedField">TextareaTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.TextareaTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.TextareaTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TextareaTypedFieldextendsStringTypedField"></a>
       <a id="TextareaTypedField:TextareaTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -632,23 +696,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TextareaTypedField.html"><span class="name">TextareaTypedField</span></a><span class="result"> extends StringTypedField</span>
+        <a href="TextareaTypedField.html"><span class="name">TextareaTypedField</span></a><span class="result"> extends <a href="StringTypedField.html" class="extype" name="net.liftweb.record.field.StringTypedField">StringTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.TimeZoneField" data-isabs="false">
-      <a id="TimeZoneField:TimeZoneField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.TimeZoneField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimeZoneField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsStringField[OwnerType]withTimeZoneTypedField"></a>
+      <a id="TimeZoneField[OwnerType&lt;:Record[OwnerType]]:TimeZoneField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="TimeZoneField.html"><span class="name">TimeZoneField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends StringField[OwnerType] with TimeZoneTypedField</span>
+        <a href="TimeZoneField.html"><span class="name">TimeZoneField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.TimeZoneField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.record.field.TimeZoneField.OwnerType">OwnerType</span>] with <a href="TimeZoneTypedField.html" class="extype" name="net.liftweb.record.field.TimeZoneTypedField">TimeZoneTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.TimeZoneTypedField" data-isabs="true">
+    </li><li name="net.liftweb.record.field.TimeZoneTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TimeZoneTypedFieldextendsStringTypedField"></a>
       <a id="TimeZoneTypedField:TimeZoneTypedField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -656,19 +722,20 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TimeZoneTypedField.html"><span class="name">TimeZoneTypedField</span></a><span class="result"> extends StringTypedField</span>
+        <a href="TimeZoneTypedField.html"><span class="name">TimeZoneTypedField</span></a><span class="result"> extends <a href="StringTypedField.html" class="extype" name="net.liftweb.record.field.StringTypedField">StringTypedField</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.UniqueIdField" data-isabs="true">
-      <a id="UniqueIdField:UniqueIdField[OwnerType]"></a>
+    </li><li name="net.liftweb.record.field.UniqueIdField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UniqueIdField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsStringField[OwnerType]"></a>
+      <a id="UniqueIdField[OwnerType&lt;:Record[OwnerType]]:UniqueIdField[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UniqueIdField.html"><span class="name">UniqueIdField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: Record[OwnerType]</span>]</span><span class="result"> extends StringField[OwnerType]</span>
+        <a href="UniqueIdField.html"><span class="name">UniqueIdField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.field.UniqueIdField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="StringField.html" class="extype" name="net.liftweb.record.field.StringField">StringField</a>[<span class="extype" name="net.liftweb.record.field.UniqueIdField.OwnerType">OwnerType</span>]</span>
       </span>
       </h4>
       
@@ -677,9 +744,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.record.field.Countries" data-isabs="false">
+              <ol><li name="net.liftweb.record.field.Countries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Countries"></a>
       <a id="Countries:Countries"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -687,11 +755,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Countries$.html"><span class="name">Countries</span></a><span class="result"> extends Enumeration</span>
+        <a href="Countries$.html"><span class="name">Countries</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.EmailField" data-isabs="false">
+    </li><li name="net.liftweb.record.field.EmailField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EmailField"></a>
       <a id="EmailField:EmailField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -699,11 +768,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="EmailField$.html"><span class="name">EmailField</span></a><span class="result"> extends AnyRef</span>
+        <a href="EmailField$.html"><span class="name">EmailField</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.LocaleField" data-isabs="false">
+    </li><li name="net.liftweb.record.field.LocaleField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocaleField"></a>
       <a id="LocaleField:LocaleField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -711,11 +781,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LocaleField$.html"><span class="name">LocaleField</span></a><span class="result"> extends AnyRef</span>
+        <a href="LocaleField$.html"><span class="name">LocaleField</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.PasswordField" data-isabs="false">
+    </li><li name="net.liftweb.record.field.PasswordField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PasswordField"></a>
       <a id="PasswordField:PasswordField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -723,11 +794,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="PasswordField$.html"><span class="name">PasswordField</span></a><span class="result"> extends AnyRef</span>
+        <a href="PasswordField$.html"><span class="name">PasswordField</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.TimeZoneField" data-isabs="false">
+    </li><li name="net.liftweb.record.field.TimeZoneField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimeZoneField"></a>
       <a id="TimeZoneField:TimeZoneField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -735,11 +807,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="TimeZoneField$.html"><span class="name">TimeZoneField</span></a><span class="result"> extends AnyRef</span>
+        <a href="TimeZoneField$.html"><span class="name">TimeZoneField</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record.field.joda" data-isabs="false">
+    </li><li name="net.liftweb.record.field.joda" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="joda"></a>
       <a id="joda:joda"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -755,10 +828,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.squerylrecord</title>
+          <title>squerylrecord - Lift Framework 2.6-M3 - net.liftweb.squerylrecord</title>
+          <meta name="description" content="squerylrecord - Lift Framework 2.6 - M3 - net.liftweb.squerylrecord" />
+          <meta name="keywords" content="squerylrecord Lift Framework 2.6 M3 net.liftweb.squerylrecord" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.squerylrecord.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
         <h1>squerylrecord</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,33 +61,36 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.squerylrecord.CRUDify" data-isabs="true">
-      <a id="CRUDify:CRUDify[K, T]"></a>
+              <ol><li name="net.liftweb.squerylrecord.CRUDify" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CRUDify[K,T&lt;:net.liftweb.record.Record[T]withorg.squeryl.KeyedEntity[K]]extendsCrudify"></a>
+      <a id="CRUDify[K,T&lt;:Record[T]withKeyedEntity[K]]:CRUDify[K,T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="CRUDify.html"><span class="name">CRUDify</span></a><span class="tparams">[<span name="K">K</span>, <span name="T">T &lt;: Record[T] with KeyedEntity[K]</span>]</span><span class="result"> extends Crudify</span>
+        <a href="CRUDify.html"><span class="name">CRUDify</span></a><span class="tparams">[<span name="K">K</span>, <span name="T">T &lt;: <a href="../record/Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.squerylrecord.CRUDify.T">T</span>] with <span class="extype" name="org.squeryl.KeyedEntity">KeyedEntity</span>[<span class="extype" name="net.liftweb.squerylrecord.CRUDify.K">K</span>]</span>]</span><span class="result"> extends <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.squerylrecord.KeyedRecord" data-isabs="true">
-      <a id="KeyedRecord:KeyedRecord[K]"></a>
+    </li><li name="net.liftweb.squerylrecord.KeyedRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="KeyedRecord[K]extendsIndirectKeyedEntity[K,net.liftweb.record.MandatoryTypedField[K]]"></a>
+      <a id="KeyedRecord[K]:KeyedRecord[K]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="KeyedRecord.html"><span class="name">KeyedRecord</span></a><span class="tparams">[<span name="K">K</span>]</span><span class="result"> extends IndirectKeyedEntity[K, MandatoryTypedField[K]]</span>
+        <a href="KeyedRecord.html"><span class="name">KeyedRecord</span></a><span class="tparams">[<span name="K">K</span>]</span><span class="result"> extends <span class="extype" name="org.squeryl.IndirectKeyedEntity">IndirectKeyedEntity</span>[<span class="extype" name="net.liftweb.squerylrecord.KeyedRecord.K">K</span>, <a href="../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<span class="extype" name="net.liftweb.squerylrecord.KeyedRecord.K">K</span>]]</span>
       </span>
       </h4>
       <p class="comment cmt">Trait to mix into records that have a primary key.</p>
-    </li><li visbl="pub" name="net.liftweb.squerylrecord.RecordMetaDataFactory" data-isabs="false">
+    </li><li name="net.liftweb.squerylrecord.RecordMetaDataFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecordMetaDataFactoryextendsFieldMetaDataFactory"></a>
       <a id="RecordMetaDataFactory:RecordMetaDataFactory"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,11 +98,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="RecordMetaDataFactory.html"><span class="name">RecordMetaDataFactory</span></a><span class="result"> extends FieldMetaDataFactory</span>
+        <a href="RecordMetaDataFactory.html"><span class="name">RecordMetaDataFactory</span></a><span class="result"> extends <span class="extype" name="org.squeryl.internals.FieldMetaDataFactory">FieldMetaDataFactory</span></span>
       </span>
       </h4>
       <p class="comment cmt">FieldMetaDataFactory that allows Squeryl to use Records as model objects.</p>
-    </li><li visbl="pub" name="net.liftweb.squerylrecord.RecordTypeMode" data-isabs="true">
+    </li><li name="net.liftweb.squerylrecord.RecordTypeMode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RecordTypeModeextendsPrimitiveTypeMode"></a>
       <a id="RecordTypeMode:RecordTypeMode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,11 +111,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="RecordTypeMode.html"><span class="name">RecordTypeMode</span></a><span class="result"> extends PrimitiveTypeMode</span>
+        <a href="RecordTypeMode.html"><span class="name">RecordTypeMode</span></a><span class="result"> extends <span class="extype" name="org.squeryl.PrimitiveTypeMode">PrimitiveTypeMode</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.squerylrecord.SquerylRecordField" data-isabs="true">
+    </li><li name="net.liftweb.squerylrecord.SquerylRecordField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SquerylRecordFieldextendsObject"></a>
       <a id="SquerylRecordField:SquerylRecordField"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -104,32 +124,34 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="SquerylRecordField.html"><span class="name">SquerylRecordField</span></a><span class="result"> extends AnyRef</span>
+        <a href="SquerylRecordField.html"><span class="name">SquerylRecordField</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">This trait has to be extended for new fields that
 are derived from net.</p>
-    </li><li visbl="pub" name="net.liftweb.squerylrecord.SquerylRecordNonNumericalExpression" data-isabs="true">
-      <a id="SquerylRecordNonNumericalExpression:SquerylRecordNonNumericalExpression[T]"></a>
+    </li><li name="net.liftweb.squerylrecord.SquerylRecordNonNumericalExpression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SquerylRecordNonNumericalExpression[T]extendsObject"></a>
+      <a id="SquerylRecordNonNumericalExpression[T]:SquerylRecordNonNumericalExpression[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="SquerylRecordNonNumericalExpression.html"><span class="name">SquerylRecordNonNumericalExpression</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="SquerylRecordNonNumericalExpression.html"><span class="name">SquerylRecordNonNumericalExpression</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Record-Specific extensions to non-numerical Squeryl Expressions.</p>
-    </li><li visbl="pub" name="net.liftweb.squerylrecord.SquerylRecordNumericalExpression" data-isabs="true">
-      <a id="SquerylRecordNumericalExpression:SquerylRecordNumericalExpression[T]"></a>
+    </li><li name="net.liftweb.squerylrecord.SquerylRecordNumericalExpression" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SquerylRecordNumericalExpression[T]extendsObject"></a>
+      <a id="SquerylRecordNumericalExpression[T]:SquerylRecordNumericalExpression[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="SquerylRecordNumericalExpression.html"><span class="name">SquerylRecordNumericalExpression</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="SquerylRecordNumericalExpression.html"><span class="name">SquerylRecordNumericalExpression</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Record-Specific extensions to numerical Squeryl Expressions.</p>
@@ -138,9 +160,10 @@ are derived from net.</p>
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.squerylrecord.RecordTypeMode" data-isabs="false">
+              <ol><li name="net.liftweb.squerylrecord.RecordTypeMode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RecordTypeMode"></a>
       <a id="RecordTypeMode:RecordTypeMode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -148,11 +171,12 @@ are derived from net.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="RecordTypeMode$.html"><span class="name">RecordTypeMode</span></a><span class="result"> extends RecordTypeMode</span>
+        <a href="RecordTypeMode$.html"><span class="name">RecordTypeMode</span></a><span class="result"> extends <a href="RecordTypeMode.html" class="extype" name="net.liftweb.squerylrecord.RecordTypeMode">RecordTypeMode</a></span>
       </span>
       </h4>
       <p class="comment cmt">All methods from this object should be imported when creating queries using the Squeryl DSL with lift records.</p>
-    </li><li visbl="pub" name="net.liftweb.squerylrecord.SquerylRecord" data-isabs="false">
+    </li><li name="net.liftweb.squerylrecord.SquerylRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SquerylRecord"></a>
       <a id="SquerylRecord:SquerylRecord"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -160,7 +184,7 @@ are derived from net.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="SquerylRecord$.html"><span class="name">SquerylRecord</span></a><span class="result"> extends Loggable</span>
+        <a href="SquerylRecord$.html"><span class="name">SquerylRecord</span></a><span class="result"> extends <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></span>
       </span>
       </h4>
       <p class="comment cmt">Object containing initialization logic for the Squeryl/Record integration</p>
@@ -168,10 +192,20 @@ are derived from net.</p>
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

@@ -2,55 +2,82 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.common.EmptyBox</title>
+          <title>EmptyBox - Lift Framework 2.6-M3 - net.liftweb.common.EmptyBox</title>
+          <meta name="description" content="EmptyBox - Lift Framework 2.6 - M3 - net.liftweb.common.EmptyBox" />
+          <meta name="keywords" content="EmptyBox Lift Framework 2.6 M3 net.liftweb.common.EmptyBox" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.common.EmptyBox';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../../lib/class_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.common" class="extype" href="package.html">common</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.common">common</a></p>
         <h1>EmptyBox</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">sealed abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">EmptyBox</span><span class="result"> extends <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>] with <span name="scala.Serializable" class="extype">Serializable</span></span>
+        <span class="name">EmptyBox</span><span class="result"> extends <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>The EmptyBox is a Box containing no value.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The EmptyBox is a Box containing no value.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>], <span name="scala.Serializable" class="extype">Serializable</span>, <span name="java.io.Serializable" class="extype">Serializable</span>, <span name="scala.Product" class="extype">Product</span>, <span name="scala.Equals" class="extype">Equals</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="net.liftweb.common.Empty" class="extype" href="Empty$.html">Empty</a>, <a name="net.liftweb.common.Failure" class="extype" href="Failure.html">Failure</a>, <a name="net.liftweb.common.ParamFailure" class="extype" href="ParamFailure.html">ParamFailure</a></div>
+          <div class="subClasses hiddenContent"><a href="Empty$.html" class="extype" name="net.liftweb.common.Empty">Empty</a>, <a href="Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a>, <a href="ParamFailure.html" class="extype" name="net.liftweb.common.ParamFailure">ParamFailure</a></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.common.EmptyBox" class="in"><span>EmptyBox</span></li><li name="net.liftweb.common.Box" class="in"><span>Box</span></li><li name="scala.Serializable" class="in"><span>Serializable</span></li><li name="java.io.Serializable" class="in"><span>Serializable</span></li><li name="scala.Product" class="in"><span>Product</span></li><li name="scala.Equals" class="in"><span>Equals</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.common.EmptyBox"><span>EmptyBox</span></li><li class="in" name="net.liftweb.common.Box"><span>Box</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -59,10 +86,11 @@
 
       <div id="template">
         <div id="allMembers">
-        <div class="members" id="constructors">
+        <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li visbl="pub" name="net.liftweb.common.EmptyBox#this" data-isabs="false">
-      <a id="this:EmptyBox"></a>
+              <ol><li name="net.liftweb.common.EmptyBox#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():net.liftweb.common.EmptyBox"></a>
+      <a id="&lt;init&gt;:EmptyBox"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
@@ -76,9 +104,10 @@
     </li></ol>
             </div>
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.common.Box.WithFilter" data-isabs="false">
+              <ol><li name="net.liftweb.common.Box.WithFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WithFilterextendsObject"></a>
       <a id="WithFilter:WithFilter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -86,16 +115,17 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Box$WithFilter.html"><span class="name">WithFilter</span></a><span class="result"> extends AnyRef</span>
+        <a href="Box$WithFilter.html"><span class="name">WithFilter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Play NiceLike with the Scala 2.</p>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="scala.Equals#canEqual" data-isabs="true">
+              <ol><li name="scala.Equals#canEqual" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="canEqual(that:Any):Boolean"></a>
       <a id="canEqual(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -103,11 +133,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Equals</dd></dl></div>
-    </li><li visbl="pub" name="scala.Product#productArity" data-isabs="true">
+    </li><li name="scala.Product#productArity" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="productArity:Int"></a>
       <a id="productArity:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -115,11 +146,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">productArity</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">productArity</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
-    </li><li visbl="pub" name="scala.Product#productElement" data-isabs="true">
+    </li><li name="scala.Product#productElement" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="productElement(n:Int):Any"></a>
       <a id="productElement(Int):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -127,16 +159,17 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">productElement</span><span class="params">(<span name="n">n: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Any" class="extype">Any</span></span>
+        <span class="name">productElement</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -144,11 +177,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -156,11 +190,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -168,25 +203,27 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#$" data-isabs="false">
-      <a id="$((Box[Nothing]) ⇒ Unit):Box[Nothing]"></a>
+    </li><li name="net.liftweb.common.Box#$" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="$(f:net.liftweb.common.Box[A]=&gt;Unit):net.liftweb.common.Box[A]"></a>
+      <a id="$((Box[Nothing])⇒Unit):Box[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">$</span><span class="params">(<span name="f">f: (<a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">$</span><span class="params">(<span name="f">f: (<a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Alias for pass
 </p><div class="fullcomment"><div class="comment cmt"><p>Alias for pass
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -194,11 +231,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -206,11 +244,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#===" data-isabs="false">
+    </li><li name="net.liftweb.common.Box#===" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="===[B&gt;:A](to:B):Boolean"></a>
       <a id="===[B&gt;:Nothing](B):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -218,40 +257,43 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq$eq">===</span><span class="tparams">[<span name="B">B &gt;: <span name="scala.Nothing" class="extype">Nothing</span></span>]</span><span class="params">(<span name="to">to: B</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq$eq" class="name">===</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Nothing">Nothing</span></span>]</span><span class="params">(<span name="to">to: <span class="extype" name="net.liftweb.common.Box.===.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns true if the value contained in this box is equal to the specified value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns true if the value contained in this box is equal to the specified value.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#?~" data-isabs="false">
-      <a id="?~(⇒ String):Failure"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.EmptyBox#?~" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="?~(msg:=&gt;String):net.liftweb.common.Failure"></a>
+      <a id="?~(⇒String):Failure"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $qmark$tilde">?~</span><span class="params">(<span name="msg">msg: ⇒ String</span>)</span><span class="result">: <a name="net.liftweb.common.Failure" class="extype" href="Failure.html">Failure</a></span>
+        <span title="gt4s: $qmark$tilde" class="name">?~</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Transform an Empty to a Failure with the specified message.</p><div class="fullcomment"><div class="comment cmt"><p>Transform an Empty to a Failure with the specified message.</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the failure message</p></dd><dt>returns</dt><dd class="cmt"><p>a Failure with the message if this Box is Empty
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#?~!" data-isabs="false">
-      <a id="?~!(⇒ String):Failure"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.EmptyBox#?~!" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="?~!(msg:=&gt;String):net.liftweb.common.Failure"></a>
+      <a id="?~!(⇒String):Failure"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $qmark$tilde$bang">?~!</span><span class="params">(<span name="msg">msg: ⇒ String</span>)</span><span class="result">: <a name="net.liftweb.common.Failure" class="extype" href="Failure.html">Failure</a></span>
+        <span title="gt4s: $qmark$tilde$bang" class="name">?~!</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Transform an EmptyBox to a Failure with the specified message and chain
 the new Failure to any previous Failure represented by this Box.</p><div class="fullcomment"><div class="comment cmt"><p>Transform an EmptyBox to a Failure with the specified message and chain
 the new Failure to any previous Failure represented by this Box.</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the failure message</p></dd><dt>returns</dt><dd class="cmt"><p>a Failure with the message if this Box is an Empty Box. Chain the messages if it is already a Failure
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#asA" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#asA" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asA[B](implicitm:scala.reflect.Manifest[B]):net.liftweb.common.Box[B]"></a>
       <a id="asA[B](Manifest[B]):Box[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -259,13 +301,14 @@ the new Failure to any previous Failure represented by this Box.</p></div><dl cl
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asA</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span name="scala.reflect.Manifest" class="extype">Manifest</span>[B]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>
+        <span class="name">asA</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.common.Box.asA.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.asA.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Return a Full[B] if the contents of this Box is of type <code>B</code>, otherwise return Empty
 </p><div class="fullcomment"><div class="comment cmt"><p>Return a Full[B] if the contents of this Box is of type <code>B</code>, otherwise return Empty
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -273,26 +316,28 @@ the new Failure to any previous Failure represented by this Box.</p></div><dl cl
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#choice" data-isabs="false">
-      <a id="choice[B]((Nothing) ⇒ Box[B])(⇒ Box[B]):Box[B]"></a>
+    </li><li name="net.liftweb.common.Box#choice" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="choice[B](f1:A=&gt;net.liftweb.common.Box[B])(alternative:=&gt;net.liftweb.common.Box[B]):net.liftweb.common.Box[B]"></a>
+      <a id="choice[B]((Nothing)⇒Box[B])(⇒Box[B]):Box[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">choice</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f1">f1: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>)</span><span class="params">(<span name="alternative">alternative: ⇒ <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>
+        <span class="name">choice</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f1">f1: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.choice.B">B</span>]</span>)</span><span class="params">(<span name="alternative">alternative: ⇒ <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.choice.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.choice.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Apply the function f1 to the contents of this Box if available; if this
 is empty return the specified alternative.</p><div class="fullcomment"><div class="comment cmt"><p>Apply the function f1 to the contents of this Box if available; if this
 is empty return the specified alternative.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -300,56 +345,60 @@ is empty return the specified alternative.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#collect" data-isabs="false">
-      <a id="collect[B](PartialFunction[Nothing, B]):Box[B]"></a>
+    </li><li name="net.liftweb.common.Box#collect" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="collect[B](pf:PartialFunction[A,B]):net.liftweb.common.Box[B]"></a>
+      <a id="collect[B](PartialFunction[Nothing,B]):Box[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">collect</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="pf">pf: <span name="scala.PartialFunction" class="extype">PartialFunction</span>[<span name="scala.Nothing" class="extype">Nothing</span>, B]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>
+        <span class="name">collect</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="pf">pf: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Nothing">Nothing</span>, <span class="extype" name="net.liftweb.common.Box.collect.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.collect.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">If the partial function is defined at the current Box's value
 apply the partial function.</p><div class="fullcomment"><div class="comment cmt"><p>If the partial function is defined at the current Box's value
 apply the partial function.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#compoundFailMsg" data-isabs="false">
-      <a id="compoundFailMsg(⇒ String):Box[Nothing]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#compoundFailMsg" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compoundFailMsg(msg:=&gt;String):net.liftweb.common.Box[A]"></a>
+      <a id="compoundFailMsg(⇒String):Box[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">compoundFailMsg</span><span class="params">(<span name="msg">msg: ⇒ String</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">compoundFailMsg</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Alias for ?~!
 </p><div class="fullcomment"><div class="comment cmt"><p>Alias for ?~!
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#dmap" data-isabs="false">
-      <a id="dmap[B](⇒ B)((Nothing) ⇒ B):B"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#dmap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dmap[B](dflt:=&gt;B)(f:A=&gt;B):B"></a>
+      <a id="dmap[B](⇒B)((Nothing)⇒B):B"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dmap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="dflt">dflt: ⇒ B</span>)</span><span class="params">(<span name="f">f: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">dmap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="dflt">dflt: ⇒ <span class="extype" name="net.liftweb.common.Box.dmap.B">B</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="net.liftweb.common.Box.dmap.B">B</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.common.Box.dmap.B">B</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Equivalent to map(f).</p><div class="fullcomment"><div class="comment cmt"><p>Equivalent to map(f).openOr(Full(dflt))
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#elements" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#elements" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="elements:Iterator[A]"></a>
       <a id="elements:Iterator[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -357,13 +406,14 @@ apply the partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">elements</span><span class="result">: Iterator[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">elements</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns an Iterator over the value contained in this Box
 </p><div class="fullcomment"><div class="comment cmt"><p>Returns an Iterator over the value contained in this Box
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -371,11 +421,12 @@ apply the partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#equals" data-isabs="false">
+    </li><li name="net.liftweb.common.Box#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(other:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -383,7 +434,7 @@ apply the partial function.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="other">other: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="other">other: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Determines equality based upon the contents of this Box instead of the box itself.</p><div class="fullcomment"><div class="comment cmt"><p>Determines equality based upon the contents of this Box instead of the box itself.
@@ -394,78 +445,84 @@ As a result, it is not symmetric. Which means that for</p><p><pre name="code" cl
     boxedFoo == foo //is true
 </pre></p><p>For Full and Empty, this has the expected behavior. Equality in terms of Failure
 checks for equivalence of failure causes.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a> → Equals → AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#exists" data-isabs="false">
-      <a id="exists((Nothing) ⇒ Boolean):Boolean"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a> → Equals → AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.common.Box#exists" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="exists(func:A=&gt;Boolean):Boolean"></a>
+      <a id="exists((Nothing)⇒Boolean):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">exists</span><span class="params">(<span name="func">func: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">exists</span><span class="params">(<span name="func">func: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Determine whether this Box contains a value which satisfies the specified predicate</p><div class="fullcomment"><div class="comment cmt"><p>Determine whether this Box contains a value which satisfies the specified predicate</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this Box's value satisfies the specified predicate
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#failMsg" data-isabs="false">
-      <a id="failMsg(⇒ String):Box[Nothing]"></a>
+      <p class="shortcomment cmt">Determine whether this Box contains a value which satisfies the specified predicate</p><div class="fullcomment"><div class="comment cmt"><p>Determine whether this Box contains a value which satisfies the specified predicate</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this Box does contain a value and it satisfies the predicate
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#failMsg" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="failMsg(msg:=&gt;String):net.liftweb.common.Box[A]"></a>
+      <a id="failMsg(⇒String):Box[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">failMsg</span><span class="params">(<span name="msg">msg: ⇒ String</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">failMsg</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Alias for ?~
 </p><div class="fullcomment"><div class="comment cmt"><p>Alias for ?~
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#filter" data-isabs="false">
-      <a id="filter((Nothing) ⇒ Boolean):Box[Nothing]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.EmptyBox#filter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="filter(p:Nothing=&gt;Boolean):net.liftweb.common.Box[Nothing]"></a>
+      <a id="filter((Nothing)⇒Boolean):Box[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">filter</span><span class="params">(<span name="p">p: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">filter</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Return this Box if it contains a value satisfying the specified predicate; Empty otherwise</p><div class="fullcomment"><div class="comment cmt"><p>Return this Box if it contains a value satisfying the specified predicate; Empty otherwise</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>this Box if it contains a value satisfying the specified predicate; Empty otherwise
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#filterMsg" data-isabs="false">
-      <a id="filterMsg(String)((Nothing) ⇒ Boolean):Box[Nothing]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#filterMsg" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="filterMsg(msg:String)(p:A=&gt;Boolean):net.liftweb.common.Box[A]"></a>
+      <a id="filterMsg(String)((Nothing)⇒Boolean):Box[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">filterMsg</span><span class="params">(<span name="msg">msg: String</span>)</span><span class="params">(<span name="p">p: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">filterMsg</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Filter this box on the specified predicate, returning a Failure with the specified
 message if the predicate is not satisfied.</p><div class="fullcomment"><div class="comment cmt"><p>Filter this box on the specified predicate, returning a Failure with the specified
 message if the predicate is not satisfied.</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the failure message</p></dd><dt class="param">p</dt><dd class="cmt"><p>a predicate</p></dd><dt>returns</dt><dd class="cmt"><p>a Failure with the message if the predicate is not satisfied by the value contained in this Box
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#filterNot" data-isabs="false">
-      <a id="filterNot((Nothing) ⇒ Boolean):Box[Nothing]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#filterNot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="filterNot(f:A=&gt;Boolean):net.liftweb.common.Box[A]"></a>
+      <a id="filterNot((Nothing)⇒Boolean):Box[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">filterNot</span><span class="params">(<span name="f">f: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">filterNot</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Creates a Box if the current Box is Full and the value does not satisfy the predicate, f.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a Box if the current Box is Full and the value does not satisfy the predicate, f.
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the predicate used to test value.
 </p></dd><dt>returns</dt><dd class="cmt"><p>a Box
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -473,56 +530,74 @@ message if the predicate is not satisfied.</p></div><dl class="paramcmts block">
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#flatMap" data-isabs="false">
-      <a id="flatMap[B]((Nothing) ⇒ Box[B]):Box[B]"></a>
+    </li><li name="net.liftweb.common.Box#flatMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="flatMap[B](f:A=&gt;net.liftweb.common.Box[B]):net.liftweb.common.Box[B]"></a>
+      <a id="flatMap[B]((Nothing)⇒Box[B]):Box[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>
+        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.flatMap.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.flatMap.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Apply a function returning a Box to the value contained in this Box if it exists
 and return the result, or empty otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Apply a function returning a Box to the value contained in this Box if it exists
 and return the result, or empty otherwise.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the modified Box or empty
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#foreach" data-isabs="false">
-      <a id="foreach[U]((Nothing) ⇒ U):Unit"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#forall" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forall(func:A=&gt;Boolean):Boolean"></a>
+      <a id="forall((Nothing)⇒Boolean):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">foreach</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ U</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">forall</span><span class="params">(<span name="func">func: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Determine whether all Box values satisfy the predicate</p><div class="fullcomment"><div class="comment cmt"><p>Determine whether all Box values satisfy the predicate</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if the Box is empty, or if Box's value satisfies the predicate
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#foreach" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="foreach[U](f:A=&gt;U):Unit"></a>
+      <a id="foreach[U]((Nothing)⇒U):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">foreach</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="net.liftweb.common.Box.foreach.U">U</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Perform a side effect by calling the specified function
 with the value contained in this box.</p><div class="fullcomment"><div class="comment cmt"><p>Perform a side effect by calling the specified function
 with the value contained in this box.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -530,11 +605,12 @@ with the value contained in this box.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#isA" data-isabs="false">
+    </li><li name="net.liftweb.common.Box#isA" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isA[B](cls:Class[B]):net.liftweb.common.Box[B]"></a>
       <a id="isA[B](Class[B]):Box[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -542,15 +618,16 @@ with the value contained in this box.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isA</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="cls">cls: Class[B]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>
+        <span class="name">isA</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="cls">cls: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.common.Box.isA.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.isA.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Return a Full[B] if the contents of this Box is an instance of the specified class,
 otherwise return Empty
 </p><div class="fullcomment"><div class="comment cmt"><p>Return a Full[B] if the contents of this Box is an instance of the specified class,
 otherwise return Empty
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#isDefined" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#isDefined" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDefined:Boolean"></a>
       <a id="isDefined:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -558,12 +635,13 @@ otherwise return Empty
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isDefined</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isDefined</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns true if the box contains a value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns true if the box contains a value.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this Box contains a value
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#isEmpty" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.EmptyBox#isEmpty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isEmpty:Boolean"></a>
       <a id="isEmpty:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -571,12 +649,13 @@ otherwise return Empty
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isEmpty</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns true if this Box contains no value (is Empty or Failure or ParamFailure)</p><div class="fullcomment"><div class="comment cmt"><p>Returns true if this Box contains no value (is Empty or Failure or ParamFailure)</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if this Box contains no value
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -584,11 +663,12 @@ otherwise return Empty
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#iterator" data-isabs="false">
+    </li><li name="net.liftweb.common.Box#iterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="iterator:Iterator[A]"></a>
       <a id="iterator:Iterator[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -596,13 +676,14 @@ otherwise return Empty
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">iterator</span><span class="result">: Iterator[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">iterator</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns an Iterator over the value contained in this Box
 </p><div class="fullcomment"><div class="comment cmt"><p>Returns an Iterator over the value contained in this Box
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#javaIterator" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#javaIterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="javaIterator[B&gt;:A]:java.util.Iterator[B]"></a>
       <a id="javaIterator[B&gt;:Nothing]:Iterator[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -610,28 +691,30 @@ otherwise return Empty
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">javaIterator</span><span class="tparams">[<span name="B">B &gt;: <span name="scala.Nothing" class="extype">Nothing</span></span>]</span><span class="result">: <span name="java.util.Iterator" class="extype">Iterator</span>[B]</span>
+        <span class="name">javaIterator</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Nothing">Nothing</span></span>]</span><span class="result">: <span class="extype" name="java.util.Iterator">Iterator</span>[<span class="extype" name="net.liftweb.common.Box.javaIterator.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get a Java Iterator from the Box
 </p><div class="fullcomment"><div class="comment cmt"><p>Get a Java Iterator from the Box
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#map" data-isabs="false">
-      <a id="map[B]((Nothing) ⇒ B):Box[B]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="map[B](f:A=&gt;B):net.liftweb.common.Box[B]"></a>
+      <a id="map[B]((Nothing)⇒B):Box[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ B</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>
+        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="net.liftweb.common.Box.map.B">B</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.map.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Apply a function to the value contained in this Box if it exists and return
 a new Box containing the result, or empty otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Apply a function to the value contained in this Box if it exists and return
 a new Box containing the result, or empty otherwise.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the modified Box or empty
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -639,11 +722,12 @@ a new Box containing the result, or empty otherwise.</p></div><dl class="paramcm
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -651,11 +735,12 @@ a new Box containing the result, or empty otherwise.</p></div><dl class="paramcm
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -663,24 +748,26 @@ a new Box containing the result, or empty otherwise.</p></div><dl class="paramcm
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#openOr" data-isabs="false">
-      <a id="openOr[B](⇒ B):B"></a>
+    </li><li name="net.liftweb.common.EmptyBox#openOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="openOr[B](default:=&gt;B):B"></a>
+      <a id="openOr[B](⇒B):B"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">openOr</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="default">default: ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">openOr</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="default">default: ⇒ <span class="extype" name="net.liftweb.common.EmptyBox.openOr.B">B</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.common.EmptyBox.openOr.B">B</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Return the value contained in this Box if it is full; otherwise return the specified default</p><div class="fullcomment"><div class="comment cmt"><p>Return the value contained in this Box if it is full; otherwise return the specified default</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the value contained in this Box if it is full; otherwise return the specified default
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#openOrThrowException" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.EmptyBox#openOrThrowException" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="openOrThrowException(justification:String):Nothing"></a>
       <a id="openOrThrowException(String):Nothing"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -688,7 +775,7 @@ a new Box containing the result, or empty otherwise.</p></div><dl class="paramcm
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">openOrThrowException</span><span class="params">(<span name="justification">justification: String</span>)</span><span class="result">: <span name="scala.Nothing" class="extype">Nothing</span></span>
+        <span class="name">openOrThrowException</span><span class="params">(<span name="justification">justification: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">If you grew up on Java, you're used to Exceptions as part of your program logic.</p><div class="fullcomment"><div class="comment cmt"><p>If you grew up on Java, you're used to Exceptions as part of your program logic.
@@ -705,37 +792,40 @@ so we're making it more explicit that this method should not commonly be used an
 when used.
 </p></div><dl class="paramcmts block"><dt class="param">justification</dt><dd class="cmt"><p>Justify why calling this method is okay and why it will not result in an Exception
 </p></dd><dt>returns</dt><dd class="cmt"><p>The contents of the Box if it has one or an exception if not
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#or" data-isabs="false">
-      <a id="or[B](⇒ Box[B]):Box[B]"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.EmptyBox#or" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="or[B](alternative:=&gt;net.liftweb.common.Box[B]):net.liftweb.common.Box[B]"></a>
+      <a id="or[B](⇒Box[B]):Box[B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">or</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="alternative">alternative: ⇒ <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[B]</span>
+        <span class="name">or</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="alternative">alternative: ⇒ <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.EmptyBox.or.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.EmptyBox.or.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Return this Box if Full, or the specified alternative if this is empty
 </p><div class="fullcomment"><div class="comment cmt"><p>Return this Box if Full, or the specified alternative if this is empty
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#pass" data-isabs="false">
-      <a id="pass((Box[Nothing]) ⇒ Unit):Box[Nothing]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#pass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pass(f:net.liftweb.common.Box[A]=&gt;Unit):net.liftweb.common.Box[A]"></a>
+      <a id="pass((Box[Nothing])⇒Unit):Box[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pass</span><span class="params">(<span name="f">f: (<a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">pass</span><span class="params">(<span name="f">f: (<a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Perform a side effect by passing this Box to the specified function
 and return this Box unmodified.</p><div class="fullcomment"><div class="comment cmt"><p>Perform a side effect by passing this Box to the specified function
 and return this Box unmodified.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>this Box
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Product#productIterator" data-isabs="false">
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.Product#productIterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productIterator:Iterator[Any]"></a>
       <a id="productIterator:Iterator[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -743,11 +833,12 @@ and return this Box unmodified.</p></div><dl class="paramcmts block"><dt>returns
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">productIterator</span><span class="result">: Iterator[<span name="scala.Any" class="extype">Any</span>]</span>
+        <span class="name">productIterator</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
-    </li><li visbl="pub" name="scala.Product#productPrefix" data-isabs="false">
+    </li><li name="scala.Product#productPrefix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productPrefix:String"></a>
       <a id="productPrefix:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -755,44 +846,47 @@ and return this Box unmodified.</p></div><dl class="paramcmts block"><dt>returns
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">productPrefix</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">productPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#run" data-isabs="false">
-      <a id="run[T](⇒ T)((T, Nothing) ⇒ T):T"></a>
+    </li><li name="net.liftweb.common.Box#run" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="run[T](in:=&gt;T)(f:(T,A)=&gt;T):T"></a>
+      <a id="run[T](⇒T)((T,Nothing)⇒T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">run</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: ⇒ T</span>)</span><span class="params">(<span name="f">f: (T, <span name="scala.Nothing" class="extype">Nothing</span>) ⇒ T</span>)</span><span class="result">: T</span>
+        <span class="name">run</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: ⇒ <span class="extype" name="net.liftweb.common.Box.run.T">T</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.common.Box.run.T">T</span>, <span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="net.liftweb.common.Box.run.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.common.Box.run.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">This method calls the specified function with the value contained in this Box</p><div class="fullcomment"><div class="comment cmt"><p>This method calls the specified function with the value contained in this Box</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the result of the function or a default value
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#toLeft" data-isabs="false">
-      <a id="toLeft[B](⇒ B):Either[Nothing, B]"></a>
+    </li><li name="net.liftweb.common.Box#toLeft" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toLeft[B](right:=&gt;B):Either[A,B]"></a>
+      <a id="toLeft[B](⇒B):Either[Nothing,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toLeft</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="right">right: ⇒ B</span>)</span><span class="result">: <span name="scala.Either" class="extype">Either</span>[<span name="scala.Nothing" class="extype">Nothing</span>, B]</span>
+        <span class="name">toLeft</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="right">right: ⇒ <span class="extype" name="net.liftweb.common.Box.toLeft.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Nothing">Nothing</span>, <span class="extype" name="net.liftweb.common.Box.toLeft.B">B</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">An <code>Either</code> that is a <code>Right</code> with the given
@@ -803,8 +897,9 @@ Fill with the Box's value
 argument
 <code>right</code> if this is empty, or a <code>Left</code> if this is
 Fill with the Box's value
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#toList" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#toList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toList:List[A]"></a>
       <a id="toList:List[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -812,12 +907,13 @@ Fill with the Box's value
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toList</span><span class="result">: List[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">toList</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a List of one element if this is Full, or an empty list if empty.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a List of one element if this is Full, or an empty list if empty.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#toOption" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#toOption" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toOption:Option[A]"></a>
       <a id="toOption:Option[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -825,23 +921,24 @@ Fill with the Box's value
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toOption</span><span class="result">: <span name="scala.Option" class="extype">Option</span>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">toOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns the contents of this box in an Option if this is Full, or
 None if this is a empty (Empty, Failure or ParamFailure)
 </p><div class="fullcomment"><div class="comment cmt"><p>Returns the contents of this box in an Option if this is Full, or
 None if this is a empty (Empty, Failure or ParamFailure)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#toRight" data-isabs="false">
-      <a id="toRight[B](⇒ B):Either[B, Nothing]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#toRight" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toRight[B](left:=&gt;B):Either[B,A]"></a>
+      <a id="toRight[B](⇒B):Either[B,Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toRight</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="left">left: ⇒ B</span>)</span><span class="result">: <span name="scala.Either" class="extype">Either</span>[B, <span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">toRight</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="left">left: ⇒ <span class="extype" name="net.liftweb.common.Box.toRight.B">B</span></span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="net.liftweb.common.Box.toRight.B">B</span>, <span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">An <code>Either</code> that is a <code>Left</code> with the given argument
@@ -849,8 +946,9 @@ None if this is a empty (Empty, Failure or ParamFailure)
 Full with the Box's value.</p><div class="fullcomment"><div class="comment cmt"><p>An <code>Either</code> that is a <code>Left</code> with the given argument
 <code>left</code> if this is empty, or a <code>Right</code> if this
 Full with the Box's value.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -858,11 +956,12 @@ Full with the Box's value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -870,14 +969,15 @@ Full with the Box's value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -885,14 +985,15 @@ Full with the Box's value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -900,47 +1001,75 @@ Full with the Box's value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#withFilter" data-isabs="false">
-      <a id="withFilter((Nothing) ⇒ Boolean):WithFilter"></a>
+    </li><li name="net.liftweb.common.Box#withFilter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withFilter(p:A=&gt;Boolean):Box.this.WithFilter"></a>
+      <a id="withFilter((Nothing)⇒Boolean):WithFilter"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withFilter</span><span class="params">(<span name="p">p: (<span name="scala.Nothing" class="extype">Nothing</span>) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box.WithFilter" class="extype" href="Box$WithFilter.html">WithFilter</a></span>
+        <span class="name">withFilter</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Nothing">Nothing</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="#WithFilterextendsObject" class="extmbr" name="net.liftweb.common.Box.WithFilter">WithFilter</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Makes Box play better with Scala 2.</p><div class="fullcomment"><div class="comment cmt"><p>Makes Box play better with Scala 2.8 for comprehensions
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.EmptyBox#~&gt;" data-isabs="false">
-      <a id="~&gt;[T](⇒ T):ParamFailure[T]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
+    </li><li name="net.liftweb.common.EmptyBox#~&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="~&gt;[T](errorCode:=&gt;T):net.liftweb.common.ParamFailure[T]"></a>
+      <a id="~&gt;[T](⇒T):ParamFailure[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $tilde$greater">~&gt;</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="errorCode">errorCode: ⇒ T</span>)</span><span class="result">: <a name="net.liftweb.common.ParamFailure" class="extype" href="ParamFailure.html">ParamFailure</a>[T]</span>
+        <span title="gt4s: $tilde$greater" class="name">~&gt;</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="errorCode">errorCode: ⇒ <span class="extype" name="net.liftweb.common.EmptyBox.~&gt;.T">T</span></span>)</span><span class="result">: <a href="ParamFailure.html" class="extype" name="net.liftweb.common.ParamFailure">ParamFailure</a>[<span class="extype" name="net.liftweb.common.EmptyBox.~&gt;.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Transform an Empty to a ParamFailure with the specified typesafe
 parameter.</p><div class="fullcomment"><div class="comment cmt"><p>Transform an Empty to a ParamFailure with the specified typesafe
 parameter.</p></div><dl class="paramcmts block"><dt class="param">errorCode</dt><dd class="cmt"><p>a value indicating the error</p></dd><dt>returns</dt><dd class="cmt"><p>a ParamFailure with the specified value
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.EmptyBox" class="extype" href="">EmptyBox</a> → <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd></dl></div>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> → <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        
+
+        <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.common.Box#openTheBox" data-isabs="false">
+              <ol><li name="net.liftweb.common.Box#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get:A"></a>
+      <a id="get:Nothing"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 2.6) use map/flatMap/foreach if possible, or openOrThrowException if you must">get</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return the value contained in this Box if it is Full; throw an
+exception otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Return the value contained in this Box if it is Full; throw an
+exception otherwise.  Please use openOrThrowException instead. In
+the past, this method triggered an implicit conversion to Option
+and could throw an unintended NullPointerException. That is no longer
+the case, and in Lift 3 this method will be changed to return
+a useless type so that the compiler will break attempts to use it.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.6)</i> use map/flatMap/foreach if possible, or openOrThrowException if you must</p></dd></dl></div>
+    </li><li name="net.liftweb.common.Box#openTheBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="openTheBox:A"></a>
       <a id="openTheBox:Nothing"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -948,7 +1077,7 @@ parameter.</p></div><dl class="paramcmts block"><dt class="param">errorCode</dt>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.4) use openOrThrowException, or better yet, do the right thing with your code and use map, flatMap or foreach">openTheBox</span><span class="result">: <span name="scala.Nothing" class="extype">Nothing</span></span>
+        <span class="name deprecated" title="Deprecated: (Since version 2.4) use openOrThrowException, or better yet, do the right thing with your code and use map, flatMap or foreach">openTheBox</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Return the value contained in this Box if it is Full;
@@ -960,11 +1089,12 @@ comment your code with the explanation of the guaranty.
 The better case for extracting the value out of a Box can
 be found at http://lift.la/scala-option-lift-box-and-how-to-make-your-co
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the value contained in this Box if it is full; throw an exception otherwise
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd><dt>Annotations</dt><dd>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4)</i> use openOrThrowException, or better yet, do the right thing with your code and use map, flatMap or foreach</p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.common.Box#open_!" data-isabs="false">
+    </li><li name="net.liftweb.common.Box#open_!" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="open_!:A"></a>
       <a id="open_!:Nothing"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -972,7 +1102,7 @@ be found at http://lift.la/scala-option-lift-box-and-how-to-make-your-co
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="gt4s: open_$bang. Deprecated: (Since version 2.4) use openOrThrowException, or better yet, do the right thing with your code and use map, flatMap or foreach">open_!</span><span class="result">: <span name="scala.Nothing" class="extype">Nothing</span></span>
+        <span title="gt4s: open_$bang. Deprecated: (Since version 2.4) use openOrThrowException, or better yet, do the right thing with your code and use map, flatMap or foreach" class="name deprecated">open_!</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Return the value contained in this Box if it is Full;
@@ -984,44 +1114,37 @@ comment your code with the explanation of the guaranty.&quot;
 The better case for extracting the value out of a Box can
 be found at http://lift.la/scala-option-lift-box-and-how-to-make-your-co
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the value contained in this Box if it is full; throw an exception otherwise
-</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a></dd><dt>Annotations</dt><dd>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4)</i> use openOrThrowException, or better yet, do the right thing with your code and use map, flatMap or foreach</p></dd></dl></div>
-    </li><li visbl="pub" name="scala.Product#productElements" data-isabs="false">
-      <a id="productElements:Iterator[Any]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.8.0) use productIterator instead">productElements</span><span class="result">: Iterator[<span name="scala.Any" class="extype">Any</span>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd><dt>Annotations</dt><dd>
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.8.0)</i> use productIterator instead</p></dd></dl></div>
     </li></ol>
             </div>
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.common.Box" class="parent">
-              <h3>Inherited from <a name="net.liftweb.common.Box" class="extype" href="Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</h3>
-            </div><div name="scala.Serializable" class="parent">
-              <h3>Inherited from <span name="scala.Serializable" class="extype">Serializable</span></h3>
-            </div><div name="java.io.Serializable" class="parent">
-              <h3>Inherited from <span name="java.io.Serializable" class="extype">Serializable</span></h3>
-            </div><div name="scala.Product" class="parent">
-              <h3>Inherited from <span name="scala.Product" class="extype">Product</span></h3>
-            </div><div name="scala.Equals" class="parent">
-              <h3>Inherited from <span name="scala.Equals" class="extype">Equals</span></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.common.Box">
+              <h3>Inherited from <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

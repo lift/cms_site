@@ -2,53 +2,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.markdown.LineTokenizer</title>
+          <title>LineTokenizer - Lift Framework 2.6-M3 - net.liftweb.markdown.LineTokenizer</title>
+          <meta name="description" content="LineTokenizer - Lift Framework 2.6 - M3 - net.liftweb.markdown.LineTokenizer" />
+          <meta name="keywords" content="LineTokenizer Lift Framework 2.6 M3 net.liftweb.markdown.LineTokenizer" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.markdown.LineTokenizer';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../../lib/class_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.markdown" class="extype" href="package.html">markdown</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.markdown">markdown</a></p>
         <h1>LineTokenizer</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">LineTokenizer</span><span class="result"> extends <span name="scala.util.parsing.combinator.Parsers" class="extype">Parsers</span></span>
+        <span class="name">LineTokenizer</span><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers">Parsers</span></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Chops the input into lines and turns those lines into line tokens.
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Chops the input into lines and turns those lines into line tokens.
 Also takes care of preprocessing link definitions and xml blocks.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span name="scala.util.parsing.combinator.Parsers" class="extype">Parsers</span>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.util.parsing.combinator.Parsers">Parsers</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.markdown.LineTokenizer" class="in"><span>LineTokenizer</span></li><li name="scala.util.parsing.combinator.Parsers" class="in"><span>Parsers</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.markdown.LineTokenizer"><span>LineTokenizer</span></li><li class="in" name="scala.util.parsing.combinator.Parsers"><span>Parsers</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -57,10 +84,11 @@ Also takes care of preprocessing link definitions and xml blocks.
 
       <div id="template">
         <div id="allMembers">
-        <div class="members" id="constructors">
+        <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#this" data-isabs="false">
-      <a id="this:LineTokenizer"></a>
+              <ol><li name="net.liftweb.markdown.LineTokenizer#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():net.liftweb.markdown.LineTokenizer"></a>
+      <a id="&lt;init&gt;:LineTokenizer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
@@ -74,9 +102,10 @@ Also takes care of preprocessing link definitions and xml blocks.
     </li></ol>
             </div>
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#Elem" data-isabs="false">
+              <ol><li name="net.liftweb.markdown.LineTokenizer.Elem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Elem=String"></a>
       <a id="Elem:Elem"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -84,13 +113,40 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Elem</span><span class="result"> = <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">Elem</span><span class="result"> = <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">we munch whole lines (OM NOM NOM)
 </p><div class="fullcomment"><div class="comment cmt"><p>we munch whole lines (OM NOM NOM)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.LineTokenizer" class="extype" href="">LineTokenizer</a> → Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#Input" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.markdown.LineTokenizer">LineTokenizer</a> → Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.Error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ErrorextendsParsers.this.NoSuccesswithProductwithSerializable"></a>
+      <a id="Error:Error"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Error</span><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers.NoSuccess">NoSuccess</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.Failure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FailureextendsParsers.this.NoSuccesswithProductwithSerializable"></a>
+      <a id="Failure:Failure"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Failure</span><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers.NoSuccess">NoSuccess</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.Input" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Input=scala.util.parsing.input.Reader[Parsers.this.Elem]"></a>
       <a id="Input:Input"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,7 +154,85 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Input</span><span class="result"> = <span name="scala.util.parsing.input.Reader" class="extype">Reader</span>[Elem]</span>
+        <span class="name">Input</span><span class="result"> = <span class="extype" name="scala.util.parsing.input.Reader">Reader</span>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.NoSuccess" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="NoSuccessextendsParsers.this.ParseResult[Nothing]"></a>
+      <a id="NoSuccess:NoSuccess"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NoSuccess</span><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers.ParseResult">ParseResult</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.OnceParser" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="OnceParser[+T]extendsParsers.this.Parser[T]"></a>
+      <a id="OnceParser[+T]:OnceParser[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">OnceParser</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers.Parser">Parser</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.OnceParser.T">T</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.ParseResult" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ParseResult[+T]extendsObject"></a>
+      <a id="ParseResult[+T]:ParseResult[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ParseResult</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.Parser" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]"></a>
+      <a id="Parser[+T]:Parser[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Parser</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends (<span class="extype" name="scala.util.parsing.combinator.Parsers.Input">Input</span>) ⇒ <span class="extype" name="scala.util.parsing.combinator.Parsers.ParseResult">ParseResult</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.Parser.T">T</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.Success" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Success[+T]extendsParsers.this.ParseResult[T]withProductwithSerializable"></a>
+      <a id="Success[+T]:Success[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Success</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers.ParseResult">ParseResult</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.Success.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers.~" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="~[+a,+b]extendsProductwithSerializable"></a>
+      <a id="~[+a,+b]:~[a,b]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $tilde" class="name">~</span><span class="tparams">[<span name="a">+a</span>, <span name="b">+b</span>]</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
@@ -107,9 +241,10 @@ Also takes care of preprocessing link definitions and xml blocks.
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -117,11 +252,12 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -129,11 +265,12 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -141,11 +278,12 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -153,11 +291,12 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -165,59 +304,64 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#OnceParser" data-isabs="false">
-      <a id="OnceParser[T]((Input) ⇒ ParseResult[T]):Parser[T] with OnceParser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#OnceParser" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="OnceParser[T](f:Parsers.this.Input=&gt;Parsers.this.ParseResult[T]):Parsers.this.Parser[T]withParsers.this.OnceParser[T]"></a>
+      <a id="OnceParser[T]((Input)⇒ParseResult[T]):Parser[T]withOnceParser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">OnceParser</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (Input) ⇒ <span name="scala.util.parsing.combinator.Parsers.ParseResult" class="extype">ParseResult</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T] with <span name="scala.util.parsing.combinator.Parsers.OnceParser" class="extype">OnceParser</span>[T]</span>
+        <span class="name">OnceParser</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (<a href="#Input=scala.util.parsing.input.Reader[Parsers.this.Elem]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Input">Input</a>) ⇒ <a href="#ParseResult[+T]extendsObject" class="extmbr" name="net.liftweb.markdown.LineTokenizer.ParseResult">ParseResult</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.OnceParser.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.OnceParser.T">T</span>] with <a href="#OnceParser[+T]extendsParsers.this.Parser[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.OnceParser">OnceParser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.OnceParser.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#Parser" data-isabs="false">
-      <a id="Parser[T]((Input) ⇒ ParseResult[T]):Parser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#Parser" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Parser[T](f:Parsers.this.Input=&gt;Parsers.this.ParseResult[T]):Parsers.this.Parser[T]"></a>
+      <a id="Parser[T]((Input)⇒ParseResult[T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">Parser</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (Input) ⇒ <span name="scala.util.parsing.combinator.Parsers.ParseResult" class="extype">ParseResult</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">Parser</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (<a href="#Input=scala.util.parsing.input.Reader[Parsers.this.Elem]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Input">Input</a>) ⇒ <a href="#ParseResult[+T]extendsObject" class="extmbr" name="net.liftweb.markdown.LineTokenizer.ParseResult">ParseResult</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.Parser.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.Parser.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#accept" data-isabs="false">
-      <a id="accept[U](String,PartialFunction[Elem, U]):Parser[U]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#accept" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="accept[U](expected:String,f:PartialFunction[Parsers.this.Elem,U]):Parsers.this.Parser[U]"></a>
+      <a id="accept[U](String,PartialFunction[Elem,U]):Parser[U]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">accept</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="expected">expected: String</span>, <span name="f">f: <span name="scala.PartialFunction" class="extype">PartialFunction</span>[Elem, U]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[U]</span>
+        <span class="name">accept</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="expected">expected: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>, <span class="extype" name="scala.util.parsing.combinator.Parsers.accept.U">U</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.accept.U">U</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#accept" data-isabs="false">
-      <a id="accept[ES](ES)((ES) ⇒ List[Elem]):Parser[List[Elem]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#accept" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="accept[ES](es:ES)(implicitevidence$1:ES=&gt;List[Parsers.this.Elem]):Parsers.this.Parser[List[Parsers.this.Elem]]"></a>
+      <a id="accept[ES](ES)((ES)⇒List[Elem]):Parser[List[Elem]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">accept</span><span class="tparams">[<span name="ES">ES</span>]</span><span class="params">(<span name="es">es: ES</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: (ES) ⇒ List[Elem]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[Elem]]</span>
+        <span class="name">accept</span><span class="tparams">[<span name="ES">ES</span>]</span><span class="params">(<span name="es">es: <span class="extype" name="scala.util.parsing.combinator.Parsers.accept.ES">ES</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: (<span class="extype" name="scala.util.parsing.combinator.Parsers.accept.ES">ES</span>) ⇒ <span class="extype" name="scala.List">List</span>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#accept" data-isabs="false">
+    </li><li name="scala.util.parsing.combinator.Parsers#accept" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="accept(e:Parsers.this.Elem):Parsers.this.Parser[Parsers.this.Elem]"></a>
       <a id="accept(Elem):Parser[Elem]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -225,47 +369,51 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">accept</span><span class="params">(<span name="e">e: Elem</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[Elem]</span>
+        <span class="name">accept</span><span class="params">(<span name="e">e: <a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#acceptIf" data-isabs="false">
-      <a id="acceptIf((Elem) ⇒ Boolean)((Elem) ⇒ String):Parser[Elem]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#acceptIf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="acceptIf(p:Parsers.this.Elem=&gt;Boolean)(err:Parsers.this.Elem=&gt;String):Parsers.this.Parser[Parsers.this.Elem]"></a>
+      <a id="acceptIf((Elem)⇒Boolean)((Elem)⇒String):Parser[Elem]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">acceptIf</span><span class="params">(<span name="p">p: (Elem) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="params">(<span name="err">err: (Elem) ⇒ String</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[Elem]</span>
+        <span class="name">acceptIf</span><span class="params">(<span name="p">p: (<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span name="err">err: (<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#acceptMatch" data-isabs="false">
-      <a id="acceptMatch[U](String,PartialFunction[Elem, U]):Parser[U]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#acceptMatch" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="acceptMatch[U](expected:String,f:PartialFunction[Parsers.this.Elem,U]):Parsers.this.Parser[U]"></a>
+      <a id="acceptMatch[U](String,PartialFunction[Elem,U]):Parser[U]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">acceptMatch</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="expected">expected: String</span>, <span name="f">f: <span name="scala.PartialFunction" class="extype">PartialFunction</span>[Elem, U]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[U]</span>
+        <span class="name">acceptMatch</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="expected">expected: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>, <span class="extype" name="scala.util.parsing.combinator.Parsers.acceptMatch.U">U</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.acceptMatch.U">U</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#acceptSeq" data-isabs="false">
-      <a id="acceptSeq[ES](ES)((ES) ⇒ Iterable[Elem]):Parser[List[Elem]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#acceptSeq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="acceptSeq[ES](es:ES)(implicitevidence$2:ES=&gt;Iterable[Parsers.this.Elem]):Parsers.this.Parser[List[Parsers.this.Elem]]"></a>
+      <a id="acceptSeq[ES](ES)((ES)⇒Iterable[Elem]):Parser[List[Elem]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">acceptSeq</span><span class="tparams">[<span name="ES">ES</span>]</span><span class="params">(<span name="es">es: ES</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: (ES) ⇒ Iterable[Elem]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[Elem]]</span>
+        <span class="name">acceptSeq</span><span class="tparams">[<span name="ES">ES</span>]</span><span class="params">(<span name="es">es: <span class="extype" name="scala.util.parsing.combinator.Parsers.acceptSeq.ES">ES</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: (<span class="extype" name="scala.util.parsing.combinator.Parsers.acceptSeq.ES">ES</span>) ⇒ <span class="extype" name="scala.Iterable">Iterable</span>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#allowXmlBlocks" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#allowXmlBlocks" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allowXmlBlocks:Boolean"></a>
       <a id="allowXmlBlocks:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -273,13 +421,14 @@ Also takes care of preprocessing link definitions and xml blocks.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">allowXmlBlocks</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">allowXmlBlocks</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Determines if xml blocks may be included verbatim.</p><div class="fullcomment"><div class="comment cmt"><p>Determines if xml blocks may be included verbatim.
 If true, they are passed through, else they are escaped and turned into paragraphs
 </p></div></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -287,47 +436,51 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#chainl1" data-isabs="false">
-      <a id="chainl1[T, U](⇒ Parser[T],⇒ Parser[U],⇒ Parser[(T, U) ⇒ T]):Parser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#chainl1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="chainl1[T,U](first:=&gt;Parsers.this.Parser[T],p:=&gt;Parsers.this.Parser[U],q:=&gt;Parsers.this.Parser[(T,U)=&gt;T]):Parsers.this.Parser[T]"></a>
+      <a id="chainl1[T,U](⇒Parser[T],⇒Parser[U],⇒Parser[(T,U)⇒T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">chainl1</span><span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span name="first">first: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>, <span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[U]</span>, <span name="q">q: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[(T, U) ⇒ T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">chainl1</span><span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span name="first">first: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>]</span>, <span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.U">U</span>]</span>, <span name="q">q: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[(<span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>, <span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.U">U</span>) ⇒ <span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#chainl1" data-isabs="false">
-      <a id="chainl1[T](⇒ Parser[T],⇒ Parser[(T, T) ⇒ T]):Parser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#chainl1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="chainl1[T](p:=&gt;Parsers.this.Parser[T],q:=&gt;Parsers.this.Parser[(T,T)=&gt;T]):Parsers.this.Parser[T]"></a>
+      <a id="chainl1[T](⇒Parser[T],⇒Parser[(T,T)⇒T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">chainl1</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>, <span name="q">q: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[(T, T) ⇒ T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">chainl1</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>]</span>, <span name="q">q: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[(<span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>, <span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>) ⇒ <span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.chainl1.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#chainr1" data-isabs="false">
-      <a id="chainr1[T, U](⇒ Parser[T],⇒ Parser[(T, U) ⇒ U],(T, U) ⇒ U,U):Parser[U]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#chainr1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="chainr1[T,U](p:=&gt;Parsers.this.Parser[T],q:=&gt;Parsers.this.Parser[(T,U)=&gt;U],combine:(T,U)=&gt;U,first:U):Parsers.this.Parser[U]"></a>
+      <a id="chainr1[T,U](⇒Parser[T],⇒Parser[(T,U)⇒U],(T,U)⇒U,U):Parser[U]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">chainr1</span><span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>, <span name="q">q: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[(T, U) ⇒ U]</span>, <span name="combine">combine: (T, U) ⇒ U</span>, <span name="first">first: U</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[U]</span>
+        <span class="name">chainr1</span><span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.T">T</span>]</span>, <span name="q">q: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[(<span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.T">T</span>, <span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.U">U</span>) ⇒ <span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.U">U</span>]</span>, <span name="combine">combine: (<span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.T">T</span>, <span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.U">U</span>) ⇒ <span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.U">U</span></span>, <span name="first">first: <span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.U">U</span></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.chainr1.U">U</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -335,26 +488,28 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#commit" data-isabs="false">
-      <a id="commit[T](⇒ Parser[T]):Parser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#commit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="commit[T](p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[T]"></a>
+      <a id="commit[T](⇒Parser[T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">commit</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">commit</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.commit.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.commit.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#elem" data-isabs="false">
+    </li><li name="scala.util.parsing.combinator.Parsers#elem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="elem(e:Parsers.this.Elem):Parsers.this.Parser[Parsers.this.Elem]"></a>
       <a id="elem(Elem):Parser[Elem]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -362,23 +517,25 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">elem</span><span class="params">(<span name="e">e: Elem</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[Elem]</span>
+        <span class="name">elem</span><span class="params">(<span name="e">e: <a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#elem" data-isabs="false">
-      <a id="elem(String,(Elem) ⇒ Boolean):Parser[Elem]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#elem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="elem(kind:String,p:Parsers.this.Elem=&gt;Boolean):Parsers.this.Parser[Parsers.this.Elem]"></a>
+      <a id="elem(String,(Elem)⇒Boolean):Parser[Elem]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">elem</span><span class="params">(<span name="kind">kind: String</span>, <span name="p">p: (Elem) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[Elem]</span>
+        <span class="name">elem</span><span class="params">(<span name="kind">kind: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="p">p: (<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="#Elem=String" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Elem">Elem</a>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -386,11 +543,12 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -398,11 +556,12 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#err" data-isabs="false">
+    </li><li name="scala.util.parsing.combinator.Parsers#err" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="err(msg:String):Parsers.this.Parser[Nothing]"></a>
       <a id="err(String):Parser[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -410,11 +569,12 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">err</span><span class="params">(<span name="msg">msg: String</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">err</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#failure" data-isabs="false">
+    </li><li name="scala.util.parsing.combinator.Parsers#failure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="failure(msg:String):Parsers.this.Parser[Nothing]"></a>
       <a id="failure(String):Parser[Nothing]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -422,11 +582,12 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">failure</span><span class="params">(<span name="msg">msg: String</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>
+        <span class="name">failure</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -434,14 +595,15 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#firstChar" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#firstChar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="firstChar(line:String):Char"></a>
       <a id="firstChar(String):Char"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -449,38 +611,41 @@ If true, they are passed through, else they are escaped and turned into paragrap
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">firstChar</span><span class="params">(<span name="line">line: String</span>)</span><span class="result">: <span name="scala.Char" class="extype">Char</span></span>
+        <span class="name">firstChar</span><span class="params">(<span name="line">line: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Char">Char</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns the first char in the given string or a newline if the string is empty.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the first char in the given string or a newline if the string is empty.
 This is done to speed up header parsing. Used to speed up line tokenizing substantially
 by using the first char in a line as lookahead for which parsers to even try.
 </p></div></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#guard" data-isabs="false">
-      <a id="guard[T](⇒ Parser[T]):Parser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#guard" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="guard[T](p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[T]"></a>
+      <a id="guard[T](⇒Parser[T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">guard</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">guard</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.guard.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.guard.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -488,11 +653,12 @@ by using the first char in a line as lookahead for which parsers to even try.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#indicatorChar" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#indicatorChar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="indicatorChar(line:String):Char"></a>
       <a id="indicatorChar(String):Char"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -500,43 +666,46 @@ by using the first char in a line as lookahead for which parsers to even try.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">indicatorChar</span><span class="params">(<span name="line">line: String</span>)</span><span class="result">: <span name="scala.Char" class="extype">Char</span></span>
+        <span class="name">indicatorChar</span><span class="params">(<span name="line">line: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Char">Char</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Finds the char in the given line that is the best indication of what kind of markdown line this is.</p><div class="fullcomment"><div class="comment cmt"><p>Finds the char in the given line that is the best indication of what kind of markdown line this is.
 The “special” Markdown lines all start with up to three spaces. Those are skipped if present.
 The first char after those (up to)three spaces or a newline is returned.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#innerTokenize" data-isabs="false">
-      <a id="innerTokenize(List[String],Map[String, LinkDefinition]):MarkdownLineReader"></a>
+    </li><li name="net.liftweb.markdown.LineTokenizer#innerTokenize" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="innerTokenize(lines:List[String],lookup:Map[String,net.liftweb.markdown.LinkDefinition]):net.liftweb.markdown.MarkdownLineReader"></a>
+      <a id="innerTokenize(List[String],Map[String,LinkDefinition]):MarkdownLineReader"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">innerTokenize</span><span class="params">(<span name="lines">lines: List[String]</span>, <span name="lookup">lookup: Map[String, <a name="net.liftweb.markdown.LinkDefinition" class="extype" href="LinkDefinition.html">LinkDefinition</a>]</span>)</span><span class="result">: <a name="net.liftweb.markdown.MarkdownLineReader" class="extype" href="MarkdownLineReader.html">MarkdownLineReader</a></span>
+        <span class="name">innerTokenize</span><span class="params">(<span name="lines">lines: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="lookup">lookup: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="LinkDefinition.html" class="extype" name="net.liftweb.markdown.LinkDefinition">LinkDefinition</a>]</span>)</span><span class="result">: <a href="MarkdownLineReader.html" class="extype" name="net.liftweb.markdown.MarkdownLineReader">MarkdownLineReader</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Turns a list of inner lines (the payloads of the lines making up the block)
 into line tokens.</p><div class="fullcomment"><div class="comment cmt"><p>Turns a list of inner lines (the payloads of the lines making up the block)
 into line tokens. Does not check for XML chunks or link definitions.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#innerTokens" data-isabs="false">
-      <a id="innerTokens(Map[String, LinkDefinition]):Parser[MarkdownLineReader]"></a>
+    </li><li name="net.liftweb.markdown.LineTokenizer#innerTokens" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="innerTokens(lookup:Map[String,net.liftweb.markdown.LinkDefinition]):LineTokenizer.this.Parser[net.liftweb.markdown.MarkdownLineReader]"></a>
+      <a id="innerTokens(Map[String,LinkDefinition]):Parser[MarkdownLineReader]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">innerTokens</span><span class="params">(<span name="lookup">lookup: Map[String, <a name="net.liftweb.markdown.LinkDefinition" class="extype" href="LinkDefinition.html">LinkDefinition</a>]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<a name="net.liftweb.markdown.MarkdownLineReader" class="extype" href="MarkdownLineReader.html">MarkdownLineReader</a>]</span>
+        <span class="name">innerTokens</span><span class="params">(<span name="lookup">lookup: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="LinkDefinition.html" class="extype" name="net.liftweb.markdown.LinkDefinition">LinkDefinition</a>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="MarkdownLineReader.html" class="extype" name="net.liftweb.markdown.MarkdownLineReader">MarkdownLineReader</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses tokens that may occur inside a block.</p><div class="fullcomment"><div class="comment cmt"><p>Parses tokens that may occur inside a block. Works like the normal token parser except that
 it does not check for link definitions and verbatim XML.
 </p></div></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -544,23 +713,12 @@ it does not check for link definitions and verbatim XML.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#lastNoSuccess" data-isabs="false">
-      <a id="lastNoSuccess:NoSuccess"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">var</span>
-      </span>
-      <span class="symbol">
-        <span class="name">lastNoSuccess</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.NoSuccess" class="extype">NoSuccess</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer.lineParsers" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer.lineParsers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lineParsers"></a>
       <a id="lineParsers:lineParsers"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -568,11 +726,12 @@ it does not check for link definitions and verbatim XML.
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LineTokenizer$lineParsers$.html"><span class="name">lineParsers</span></a><span class="result"> extends LineParsers</span>
+        <a href="LineTokenizer$lineParsers$.html"><span class="name">lineParsers</span></a><span class="result"> extends <a href="LineParsers.html" class="extype" name="net.liftweb.markdown.LineParsers">LineParsers</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#lineToken" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#lineToken" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lineToken:LineTokenizer.this.Parser[net.liftweb.markdown.MarkdownLine]"></a>
       <a id="lineToken:Parser[MarkdownLine]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -580,12 +739,13 @@ it does not check for link definitions and verbatim XML.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lineToken</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<a name="net.liftweb.markdown.MarkdownLine" class="extype" href="MarkdownLine.html">MarkdownLine</a>]</span>
+        <span class="name">lineToken</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses Markdown Lines.</p><div class="fullcomment"><div class="comment cmt"><p>Parses Markdown Lines. Always succeeds.
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#linkDefinition" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#linkDefinition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="linkDefinition:LineTokenizer.this.Parser[net.liftweb.markdown.LinkDefinition]"></a>
       <a id="linkDefinition:Parser[LinkDefinition]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -593,49 +753,53 @@ it does not check for link definitions and verbatim XML.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">linkDefinition</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<a name="net.liftweb.markdown.LinkDefinition" class="extype" href="LinkDefinition.html">LinkDefinition</a>]</span>
+        <span class="name">linkDefinition</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="LinkDefinition.html" class="extype" name="net.liftweb.markdown.LinkDefinition">LinkDefinition</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses a link definition.</p>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#log" data-isabs="false">
-      <a id="log[T](⇒ Parser[T])(String):Parser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#log" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="log[T](p:=&gt;Parsers.this.Parser[T])(name:String):Parsers.this.Parser[T]"></a>
+      <a id="log[T](⇒Parser[T])(String):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">log</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">log</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.log.T">T</span>]</span>)</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.log.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#maybeUrlInNextLine" data-isabs="false">
-      <a id="maybeUrlInNextLine((LinkDefinitionStart, Option[String])):Parser[LinkDefinition]"></a>
+    </li><li name="net.liftweb.markdown.LineTokenizer#maybeUrlInNextLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maybeUrlInNextLine(prev:(net.liftweb.markdown.LinkDefinitionStart,Option[String])):LineTokenizer.this.Parser[net.liftweb.markdown.LinkDefinition]"></a>
+      <a id="maybeUrlInNextLine((LinkDefinitionStart,Option[String])):Parser[LinkDefinition]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">maybeUrlInNextLine</span><span class="params">(<span name="prev">prev: (<a name="net.liftweb.markdown.LinkDefinitionStart" class="extype" href="LinkDefinitionStart.html">LinkDefinitionStart</a>, <span name="scala.Option" class="extype">Option</span>[String])</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<a name="net.liftweb.markdown.LinkDefinition" class="extype" href="LinkDefinition.html">LinkDefinition</a>]</span>
+        <span class="name">maybeUrlInNextLine</span><span class="params">(<span name="prev">prev: (<a href="LinkDefinitionStart.html" class="extype" name="net.liftweb.markdown.LinkDefinitionStart">LinkDefinitionStart</a>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="LinkDefinition.html" class="extype" name="net.liftweb.markdown.LinkDefinition">LinkDefinition</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Tries to parse an URL from the next line if necessary.</p><div class="fullcomment"><div class="comment cmt"><p>Tries to parse an URL from the next line if necessary.
 The passed tuple is the result from a previous parser and used to decide how to continue parsing.
 </p></div></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#mkList" data-isabs="false">
-      <a id="mkList[T]:(~[T, List[T]]) ⇒ List[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#mkList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mkList[T]:Parsers.this.~[T,List[T]]=&gt;List[T]"></a>
+      <a id="mkList[T]:(~[T,List[T]])⇒List[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">mkList</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: (<span name="scala.util.parsing.combinator.Parsers.~" class="extype">~</span>[T, List[T]]) ⇒ <span name="scala.collection.immutable.List" class="extype">List</span>[T]</span>
+        <span class="name">mkList</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: (<a href="#~[+a,+b]extendsProductwithSerializable" class="extmbr" name="net.liftweb.markdown.LineTokenizer.~">~</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.mkList.T">T</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.mkList.T">T</span>]]) ⇒ <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.mkList.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -643,23 +807,25 @@ The passed tuple is the result from a previous parser and used to decide how to 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#not" data-isabs="false">
-      <a id="not[T](⇒ Parser[T]):Parser[Unit]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#not" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="not[T](p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[Unit]"></a>
+      <a id="not[T](⇒Parser[T]):Parser[Unit]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">not</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<span name="scala.Unit" class="extype">Unit</span>]</span>
+        <span class="name">not</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.not.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#notXmlChunkEnd" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#notXmlChunkEnd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="notXmlChunkEnd:LineTokenizer.this.Parser[String]"></a>
       <a id="notXmlChunkEnd:Parser[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -667,11 +833,12 @@ The passed tuple is the result from a previous parser and used to decide how to 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notXmlChunkEnd</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[String]</span>
+        <span class="name">notXmlChunkEnd</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses any line that does not start with a closing XML element.</p>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -679,11 +846,12 @@ The passed tuple is the result from a previous parser and used to decide how to 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -691,37 +859,40 @@ The passed tuple is the result from a previous parser and used to decide how to 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#opt" data-isabs="false">
-      <a id="opt[T](⇒ Parser[T]):Parser[Option[T]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#opt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="opt[T](p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[Option[T]]"></a>
+      <a id="opt[T](⇒Parser[T]):Parser[Option[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">opt</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<span name="scala.Option" class="extype">Option</span>[T]]</span>
+        <span class="name">opt</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.opt.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.opt.T">T</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#p" data-isabs="false">
-      <a id="p[T](Parser[T]):Parser[T]"></a>
+    </li><li name="net.liftweb.markdown.LineTokenizer#p" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="p[T](parser:LineTokenizer.this.lineParsers.Parser[T]):LineTokenizer.this.Parser[T]"></a>
+      <a id="p[T](lineParsers.Parser[T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">p</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="parser">parser: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">p</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="parser">parser: <a href="LineTokenizer$lineParsers$.html#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.lineParsers.Parser">lineParsers.Parser</a>[<span class="extype" name="net.liftweb.markdown.LineTokenizer.p.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="net.liftweb.markdown.LineTokenizer.p.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Returns a parser based on the given line parser.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a parser based on the given line parser.
 The resulting parser succeeds if the given line parser consumes the whole String.
 </p></div></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#phrase" data-isabs="false">
+    </li><li name="scala.util.parsing.combinator.Parsers#phrase" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="phrase[T](p:Parsers.this.Parser[T]):Parsers.this.Parser[T]"></a>
       <a id="phrase[T](Parser[T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -729,111 +900,120 @@ The resulting parser succeeds if the given line parser consumes the whole String
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">phrase</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">phrase</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.phrase.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.phrase.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#positioned" data-isabs="false">
-      <a id="positioned[T&lt;:Positional](⇒ Parser[T]):Parser[T]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#positioned" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="positioned[T&lt;:scala.util.parsing.input.Positional](p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[T]"></a>
+      <a id="positioned[T&lt;:Positional](⇒Parser[T]):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">positioned</span><span class="tparams">[<span name="T">T &lt;: <span name="scala.util.parsing.input.Positional" class="extype">Positional</span></span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">positioned</span><span class="tparams">[<span name="T">T &lt;: <span class="extype" name="scala.util.parsing.input.Positional">Positional</span></span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.positioned.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.positioned.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#preprocessToken" data-isabs="false">
-      <a id="preprocessToken:Parser[Product with Serializable]"></a>
+    </li><li name="net.liftweb.markdown.LineTokenizer#preprocessToken" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="preprocessToken:LineTokenizer.this.Parser[ProductwithSerializable]"></a>
+      <a id="preprocessToken:Parser[ProductwithSerializable]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">preprocessToken</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<span name="scala.Product" class="extype">Product</span> with <span name="scala.Serializable" class="extype">Serializable</span>]</span>
+        <span class="name">preprocessToken</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses link definitions and verbatim xml blocks
 </p>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#rep" data-isabs="false">
-      <a id="rep[T](⇒ Parser[T]):Parser[List[T]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#rep" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rep[T](p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[List[T]]"></a>
+      <a id="rep[T](⇒Parser[T]):Parser[List[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">rep</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[T]]</span>
+        <span class="name">rep</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep.T">T</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#rep1" data-isabs="false">
-      <a id="rep1[T](⇒ Parser[T],⇒ Parser[T]):Parser[List[T]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#rep1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rep1[T](first:=&gt;Parsers.this.Parser[T],p0:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[List[T]]"></a>
+      <a id="rep1[T](⇒Parser[T],⇒Parser[T]):Parser[List[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">rep1</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="first">first: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>, <span name="p0">p0: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[T]]</span>
+        <span class="name">rep1</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="first">first: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep1.T">T</span>]</span>, <span name="p0">p0: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep1.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep1.T">T</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd><dt>Annotations</dt><dd>
                 <span class="name">@migration</span>
               
         </dd><dt>Migration</dt><dd class="cmt"><p><i>(Changed in version 2.9.0)</i> The <code>p0</code> call-by-name arguments is evaluated at most once per constructed Parser object, instead of on every need that arises during parsing.</p></dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#rep1" data-isabs="false">
-      <a id="rep1[T](⇒ Parser[T]):Parser[List[T]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#rep1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rep1[T](p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[List[T]]"></a>
+      <a id="rep1[T](⇒Parser[T]):Parser[List[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">rep1</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[T]]</span>
+        <span class="name">rep1</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep1.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep1.T">T</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#rep1sep" data-isabs="false">
-      <a id="rep1sep[T](⇒ Parser[T],⇒ Parser[Any]):Parser[List[T]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#rep1sep" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rep1sep[T](p:=&gt;Parsers.this.Parser[T],q:=&gt;Parsers.this.Parser[Any]):Parsers.this.Parser[List[T]]"></a>
+      <a id="rep1sep[T](⇒Parser[T],⇒Parser[Any]):Parser[List[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">rep1sep</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>, <span name="q">q: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<span name="scala.Any" class="extype">Any</span>]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[T]]</span>
+        <span class="name">rep1sep</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep1sep.T">T</span>]</span>, <span name="q">q: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.rep1sep.T">T</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#repN" data-isabs="false">
-      <a id="repN[T](Int,⇒ Parser[T]):Parser[List[T]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#repN" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="repN[T](num:Int,p:=&gt;Parsers.this.Parser[T]):Parsers.this.Parser[List[T]]"></a>
+      <a id="repN[T](Int,⇒Parser[T]):Parser[List[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">repN</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="num">num: <span name="scala.Int" class="extype">Int</span></span>, <span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[T]]</span>
+        <span class="name">repN</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="num">num: <span class="extype" name="scala.Int">Int</span></span>, <span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.repN.T">T</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.repN.T">T</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#repsep" data-isabs="false">
-      <a id="repsep[T](⇒ Parser[T],⇒ Parser[Any]):Parser[List[T]]"></a>
+    </li><li name="scala.util.parsing.combinator.Parsers#repsep" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="repsep[T](p:=&gt;Parsers.this.Parser[T],q:=&gt;Parsers.this.Parser[Any]):Parsers.this.Parser[List[T]]"></a>
+      <a id="repsep[T](⇒Parser[T],⇒Parser[Any]):Parser[List[T]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">repsep</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>, <span name="q">q: ⇒ <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<span name="scala.Any" class="extype">Any</span>]</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[List[T]]</span>
+        <span class="name">repsep</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.repsep.T">T</span>]</span>, <span name="q">q: ⇒ <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.util.parsing.combinator.Parsers.repsep.T">T</span>]]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#splitLines" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#splitLines" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="splitLines(s:String):List[String]"></a>
       <a id="splitLines(String):List[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -841,13 +1021,14 @@ The resulting parser succeeds if the given line parser consumes the whole String
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">splitLines</span><span class="params">(<span name="s">s: String</span>)</span><span class="result">: List[String]</span>
+        <span class="name">splitLines</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Simple preprocessing: split the input at each newline.</p><div class="fullcomment"><div class="comment cmt"><p>Simple preprocessing: split the input at each newline. These whole lines are then fed to
 the actual Tokenizer.
 </p></div></div>
-    </li><li visbl="pub" name="scala.util.parsing.combinator.Parsers#success" data-isabs="false">
+    </li><li name="scala.util.parsing.combinator.Parsers#success" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="success[T](v:T):Parsers.this.Parser[T]"></a>
       <a id="success[T](T):Parser[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -855,23 +1036,25 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">success</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="v">v: T</span>)</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[T]</span>
+        <span class="name">success</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="v">v: <span class="extype" name="scala.util.parsing.combinator.Parsers.success.T">T</span></span>)</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.util.parsing.combinator.Parsers.success.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -879,11 +1062,12 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#tokenize" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#tokenize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tokenize(lines:scala.util.parsing.input.Reader[String]):net.liftweb.markdown.MarkdownLineReader"></a>
       <a id="tokenize(Reader[String]):MarkdownLineReader"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -891,11 +1075,12 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tokenize</span><span class="params">(<span name="lines">lines: <span name="scala.util.parsing.input.Reader" class="extype">Reader</span>[String]</span>)</span><span class="result">: <a name="net.liftweb.markdown.MarkdownLineReader" class="extype" href="MarkdownLineReader.html">MarkdownLineReader</a></span>
+        <span class="name">tokenize</span><span class="params">(<span name="lines">lines: <span class="extype" name="scala.util.parsing.input.Reader">Reader</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="MarkdownLineReader.html" class="extype" name="net.liftweb.markdown.MarkdownLineReader">MarkdownLineReader</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Tokenizes preprocessed lines read from a line reader.</p>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#tokenize" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#tokenize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tokenize(lines:List[String]):net.liftweb.markdown.MarkdownLineReader"></a>
       <a id="tokenize(List[String]):MarkdownLineReader"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -903,11 +1088,12 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tokenize</span><span class="params">(<span name="lines">lines: List[String]</span>)</span><span class="result">: <a name="net.liftweb.markdown.MarkdownLineReader" class="extype" href="MarkdownLineReader.html">MarkdownLineReader</a></span>
+        <span class="name">tokenize</span><span class="params">(<span name="lines">lines: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="MarkdownLineReader.html" class="extype" name="net.liftweb.markdown.MarkdownLineReader">MarkdownLineReader</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Tokenizes a preprocessed Markdown document.</p>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#tokenize" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#tokenize" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tokenize(s:String):net.liftweb.markdown.MarkdownLineReader"></a>
       <a id="tokenize(String):MarkdownLineReader"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -915,11 +1101,12 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tokenize</span><span class="params">(<span name="s">s: String</span>)</span><span class="result">: <a name="net.liftweb.markdown.MarkdownLineReader" class="extype" href="MarkdownLineReader.html">MarkdownLineReader</a></span>
+        <span class="name">tokenize</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="MarkdownLineReader.html" class="extype" name="net.liftweb.markdown.MarkdownLineReader">MarkdownLineReader</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Tokenizes a whole Markdown document.</p>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#tokens" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#tokens" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tokens:LineTokenizer.this.Parser[net.liftweb.markdown.MarkdownLineReader]"></a>
       <a id="tokens:Parser[MarkdownLineReader]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -927,12 +1114,13 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tokens</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<a name="net.liftweb.markdown.MarkdownLineReader" class="extype" href="MarkdownLineReader.html">MarkdownLineReader</a>]</span>
+        <span class="name">tokens</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="MarkdownLineReader.html" class="extype" name="net.liftweb.markdown.MarkdownLineReader">MarkdownLineReader</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses first level line tokens, i.</p><div class="fullcomment"><div class="comment cmt"><p>Parses first level line tokens, i.e. Markdown lines, XML chunks and link definitions.
 </p></div></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -940,14 +1128,15 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -955,14 +1144,15 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -970,14 +1160,15 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#xmlChunk" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#xmlChunk" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="xmlChunk:LineTokenizer.this.Parser[net.liftweb.markdown.XmlChunk]"></a>
       <a id="xmlChunk:Parser[XmlChunk]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -985,11 +1176,12 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">xmlChunk</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[<a name="net.liftweb.markdown.XmlChunk" class="extype" href="XmlChunk.html">XmlChunk</a>]</span>
+        <span class="name">xmlChunk</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<a href="XmlChunk.html" class="extype" name="net.liftweb.markdown.XmlChunk">XmlChunk</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Very dumb parser for XML chunks.</p>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#xmlChunkEnd" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#xmlChunkEnd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="xmlChunkEnd:LineTokenizer.this.Parser[String]"></a>
       <a id="xmlChunkEnd:Parser[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -997,11 +1189,12 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">xmlChunkEnd</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[String]</span>
+        <span class="name">xmlChunkEnd</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Parses a line beginning with a closing XML tag.</p>
-    </li><li visbl="pub" name="net.liftweb.markdown.LineTokenizer#xmlChunkStart" data-isabs="false">
+    </li><li name="net.liftweb.markdown.LineTokenizer#xmlChunkStart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="xmlChunkStart:LineTokenizer.this.Parser[String]"></a>
       <a id="xmlChunkStart:Parser[String]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1009,7 +1202,7 @@ the actual Tokenizer.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">xmlChunkStart</span><span class="result">: <span name="scala.util.parsing.combinator.Parsers.Parser" class="extype">Parser</span>[String]</span>
+        <span class="name">xmlChunkStart</span><span class="result">: <a href="#Parser[+T]extendsParsers.this.Input=&gt;Parsers.this.ParseResult[T]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.Parser">Parser</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The start of a verbatim XML chunk: any line starting directly with an XML element
@@ -1018,15 +1211,60 @@ the actual Tokenizer.
             </div>
 
         
+
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.util.parsing.combinator.Parsers#lastNoSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastNoSuccess:Parsers.this.NoSuccess"></a>
+      <a id="lastNoSuccess:NoSuccess"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 2.10.0) lastNoSuccess was not thread-safe and will be removed in 2.11.0">lastNoSuccess</span><span class="result">: <a href="#NoSuccessextendsParsers.this.ParseResult[Nothing]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.NoSuccess">NoSuccess</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.10.0)</i> lastNoSuccess was not thread-safe and will be removed in 2.11.0</p></dd></dl></div>
+    </li><li name="scala.util.parsing.combinator.Parsers#lastNoSuccess_=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastNoSuccess_=(x:Parsers.this.NoSuccess):Unit"></a>
+      <a id="lastNoSuccess_=(NoSuccess):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: lastNoSuccess_$eq. Deprecated: (Since version 2.10.0) lastNoSuccess was not thread-safe and will be removed in 2.11.0" class="name deprecated">lastNoSuccess_=</span><span class="params">(<span name="x">x: <a href="#NoSuccessextendsParsers.this.ParseResult[Nothing]" class="extmbr" name="net.liftweb.markdown.LineTokenizer.NoSuccess">NoSuccess</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Parsers</dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.10.0)</i> lastNoSuccess was not thread-safe and will be removed in 2.11.0</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
-        <div name="scala.util.parsing.combinator.Parsers" class="parent">
-              <h3>Inherited from <span name="scala.util.parsing.combinator.Parsers" class="extype">Parsers</span></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="scala.util.parsing.combinator.Parsers">
+              <h3>Inherited from <span class="extype" name="scala.util.parsing.combinator.Parsers">Parsers</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mockweb</title>
+          <title>mockweb - Lift Framework 2.6-M3 - net.liftweb.mockweb</title>
+          <meta name="description" content="mockweb - Lift Framework 2.6 - M3 - net.liftweb.mockweb" />
+          <meta name="keywords" content="mockweb Lift Framework 2.6 M3 net.liftweb.mockweb" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.mockweb.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
         <h1>mockweb</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mockweb.WebSpec" data-isabs="true">
+              <ol><li name="net.liftweb.mockweb.WebSpec" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="WebSpecextendsSpecification"></a>
       <a id="WebSpec:WebSpec"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,7 +72,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="WebSpec.html"><span class="name">WebSpec</span></a><span class="result"> extends Specification</span>
+        <a href="WebSpec.html"><span class="name">WebSpec</span></a><span class="result"> extends <span class="extype" name="org.specs2.mutable.Specification">Specification</span></span>
       </span>
       </h4>
       <p class="comment cmt">This trait provides Lift-specific extensions to the Specification
@@ -66,9 +82,10 @@ base trait to simplify unit testing of your code.</p>
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mockweb.MockWeb" data-isabs="false">
+              <ol><li name="net.liftweb.mockweb.MockWeb" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MockWeb"></a>
       <a id="MockWeb:MockWeb"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -76,7 +93,7 @@ base trait to simplify unit testing of your code.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MockWeb$.html"><span class="name">MockWeb</span></a><span class="result"> extends AnyRef</span>
+        <a href="MockWeb$.html"><span class="name">MockWeb</span></a>
       </span>
       </h4>
       <p class="comment cmt">The MockWeb object contains various methods to simplify
@@ -86,10 +103,20 @@ stack.</p>
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

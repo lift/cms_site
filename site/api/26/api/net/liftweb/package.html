@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb</title>
+          <title>liftweb - Lift Framework 2.6-M3 - net.liftweb</title>
+          <meta name="description" content="liftweb - Lift Framework 2.6 - M3 - net.liftweb" />
+          <meta name="keywords" content="liftweb Lift Framework 2.6 M3 net.liftweb" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../lib/template.css" />
-      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'net.liftweb.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../package.html">net</a></p>
+        <p id="owner"><a href="../package.html" class="extype" name="net">net</a></p>
         <h1>liftweb</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -50,9 +65,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.actor" data-isabs="false">
+              <ol><li name="net.liftweb.actor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="actor"></a>
       <a id="actor:actor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -64,7 +80,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.builtin" data-isabs="false">
+    </li><li name="net.liftweb.builtin" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="builtin"></a>
       <a id="builtin:builtin"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -76,7 +93,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.common" data-isabs="false">
+    </li><li name="net.liftweb.common" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="common"></a>
       <a id="common:common"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -88,7 +106,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.db" data-isabs="false">
+    </li><li name="net.liftweb.db" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="db"></a>
       <a id="db:db"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -100,7 +119,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http" data-isabs="false">
+    </li><li name="net.liftweb.http" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="http"></a>
       <a id="http:http"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -112,7 +132,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.jpa" data-isabs="false">
+    </li><li name="net.liftweb.jpa" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jpa"></a>
       <a id="jpa:jpa"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -124,7 +145,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.json" data-isabs="false">
+    </li><li name="net.liftweb.json" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="json"></a>
       <a id="json:json"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -136,7 +158,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.ldap" data-isabs="false">
+    </li><li name="net.liftweb.ldap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ldap"></a>
       <a id="ldap:ldap"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -148,7 +171,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mapper" data-isabs="false">
+    </li><li name="net.liftweb.mapper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mapper"></a>
       <a id="mapper:mapper"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -160,7 +184,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.markdown" data-isabs="false">
+    </li><li name="net.liftweb.markdown" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="markdown"></a>
       <a id="markdown:markdown"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -172,7 +197,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mocks" data-isabs="false">
+    </li><li name="net.liftweb.mocks" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mocks"></a>
       <a id="mocks:mocks"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -184,7 +210,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mockweb" data-isabs="false">
+    </li><li name="net.liftweb.mockweb" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mockweb"></a>
       <a id="mockweb:mockweb"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -196,7 +223,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb" data-isabs="false">
+    </li><li name="net.liftweb.mongodb" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mongodb"></a>
       <a id="mongodb:mongodb"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -208,7 +236,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.proto" data-isabs="false">
+    </li><li name="net.liftweb.proto" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="proto"></a>
       <a id="proto:proto"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -220,7 +249,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.record" data-isabs="false">
+    </li><li name="net.liftweb.record" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="record"></a>
       <a id="record:record"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -232,7 +262,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.sitemap" data-isabs="false">
+    </li><li name="net.liftweb.sitemap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="sitemap"></a>
       <a id="sitemap:sitemap"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -244,7 +275,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.squerylrecord" data-isabs="false">
+    </li><li name="net.liftweb.squerylrecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="squerylrecord"></a>
       <a id="squerylrecord:squerylrecord"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -256,7 +288,8 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.util" data-isabs="false">
+    </li><li name="net.liftweb.util" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="util"></a>
       <a id="util:util"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -269,7 +302,8 @@
       </h4>
       <p class="comment cmt">The util package object
 </p>
-    </li><li visbl="pub" name="net.liftweb.wizard" data-isabs="false">
+    </li><li name="net.liftweb.wizard" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="wizard"></a>
       <a id="wizard:wizard"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -285,10 +319,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

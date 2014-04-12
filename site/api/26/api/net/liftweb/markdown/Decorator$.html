@@ -2,52 +2,79 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.markdown.Decorator</title>
+          <title>Decorator - Lift Framework 2.6-M3 - net.liftweb.markdown.Decorator</title>
+          <meta name="description" content="Decorator - Lift Framework 2.6 - M3 - net.liftweb.markdown.Decorator" />
+          <meta name="keywords" content="Decorator Lift Framework 2.6 M3 net.liftweb.markdown.Decorator" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.markdown.Decorator$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
-        <a title="Go to companion" href="Decorator.html"><img src="../../../lib/object_to_trait_big.png" /></a>
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.markdown" class="extype" href="package.html">markdown</a></p>
-        <h1><a title="Go to companion" href="Decorator.html">Decorator</a></h1>
+        <a href="Decorator.html" title="Go to companion"><img src="../../../lib/object_to_trait_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.markdown">markdown</a></p>
+        <h1><a href="Decorator.html" title="Go to companion">Decorator</a></h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Decorator</span><span class="result"> extends <a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></span>
+        <span class="name">Decorator</span><span class="result"> extends <a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Default instance of Decorator with the standard Markdown behavior
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Default instance of Decorator with the standard Markdown behavior
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.markdown.Decorator" class="in"><span>Decorator</span></li><li name="net.liftweb.markdown.Decorator" class="in"><span>Decorator</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.markdown.Decorator"><span>Decorator</span></li><li class="in" name="net.liftweb.markdown.Decorator"><span>Decorator</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -62,9 +89,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -72,11 +100,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -84,11 +113,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -96,11 +126,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -108,11 +139,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -120,11 +152,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#allowVerbatimXml" data-isabs="false">
+    </li><li name="net.liftweb.markdown.Decorator#allowVerbatimXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allowVerbatimXml():Boolean"></a>
       <a id="allowVerbatimXml():Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -132,15 +165,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">allowVerbatimXml</span><span class="params">()</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">allowVerbatimXml</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">If true, inline xml tags and verbatim xml blocks are allowed,
 otherwise they are escaped and included as plain text
 </p><div class="fullcomment"><div class="comment cmt"><p>If true, inline xml tags and verbatim xml blocks are allowed,
 otherwise they are escaped and included as plain text
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -148,11 +182,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -160,14 +195,15 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateBlockQuoteClose" data-isabs="false">
+    </li><li name="net.liftweb.markdown.Decorator#decorateBlockQuoteClose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateBlockQuoteClose():String"></a>
       <a id="decorateBlockQuoteClose():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -175,11 +211,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateBlockQuoteClose</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateBlockQuoteClose</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the end of a blockquote, defaults to &quot;</blockquote>\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a blockquote, defaults to &quot;</blockquote>\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateBlockQuoteOpen" data-isabs="false">
+      <p class="shortcomment cmt">used to print the end of a blockquote, defaults to &quot;</blockquote>\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a blockquote, defaults to &quot;</blockquote>\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateBlockQuoteOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateBlockQuoteOpen():String"></a>
       <a id="decorateBlockQuoteOpen():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -187,11 +224,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateBlockQuoteOpen</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateBlockQuoteOpen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the beginning of a blockquote, defaults to &quot;<blockquote>"</blockquote>"</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a blockquote, defaults to &quot;<blockquote>"</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateBreak" data-isabs="false">
+      <p class="shortcomment cmt">used to print the beginning of a blockquote, defaults to &quot;<blockquote>"</blockquote>"</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a blockquote, defaults to &quot;<blockquote>"</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateBreak" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateBreak():String"></a>
       <a id="decorateBreak():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -199,13 +237,14 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateBreak</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateBreak</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">used to print out manual line breaks (default: <br />)
 </br /></p><div class="fullcomment"><div class="comment cmt"><p>used to print out manual line breaks (default: <br />)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateCode" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateCode(code:String):String"></a>
       <a id="decorateCode(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -213,13 +252,14 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateCode</span><span class="params">(<span name="code">code: String</span>)</span><span class="result">: String</span>
+        <span class="name">decorateCode</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">used to print out inline code (default: <code>...</code>)
 </p><div class="fullcomment"><div class="comment cmt"><p>used to print out inline code (default: <code>...</code>)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateCodeBlockClose" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateCodeBlockClose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateCodeBlockClose():String"></a>
       <a id="decorateCodeBlockClose():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -227,15 +267,20 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateCodeBlockClose</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateCodeBlockClose</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">used to print the end of a code block, defaults to &quot;</code>
 </pre>
-\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a code block, defaults to &quot;</code>
+\n&quot;
+used to print the end of a code block, defaults to &quot;</code>
+</pre></p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a code block, defaults to &quot;</code>
 </pre>
-\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateCodeBlockOpen" data-isabs="false">
+\n&quot;
+used to print the end of a code block, defaults to &quot;</code>
+</pre></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateCodeBlockOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateCodeBlockOpen():String"></a>
       <a id="decorateCodeBlockOpen():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -243,7 +288,7 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateCodeBlockOpen</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateCodeBlockOpen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">used to print the beginning of a code block, defaults to &quot;
@@ -251,8 +296,9 @@ otherwise they are escaped and included as plain text
 <code>"</pre>
 <code>"</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a code block, defaults to &quot;
 <pre>
-<code>"</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateEmphasis" data-isabs="false">
+<code>"</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateEmphasis" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateEmphasis(text:String):String"></a>
       <a id="decorateEmphasis(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -260,13 +306,14 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateEmphasis</span><span class="params">(<span name="text">text: String</span>)</span><span class="result">: String</span>
+        <span class="name">decorateEmphasis</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">used to print out emphasized text (default <em>...</em>)
 </p><div class="fullcomment"><div class="comment cmt"><p>used to print out emphasized text (default <em>...</em>)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateHeaderClose" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateHeaderClose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateHeaderClose(headerNo:Int):String"></a>
       <a id="decorateHeaderClose(Int):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -274,11 +321,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateHeaderClose</span><span class="params">(<span name="headerNo">headerNo: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: String</span>
+        <span class="name">decorateHeaderClose</span><span class="params">(<span name="headerNo">headerNo: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the end of a header, defaults to &quot;&lt;/h[headerNo]\n&gt;&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a header, defaults to &quot;&lt;/h[headerNo]\n&gt;&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateHeaderOpen" data-isabs="false">
+      <p class="shortcomment cmt">used to print the end of a header, defaults to &quot;&lt;/h[headerNo]\n&gt;&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a header, defaults to &quot;&lt;/h[headerNo]\n&gt;&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateHeaderOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateHeaderOpen(headerNo:Int):String"></a>
       <a id="decorateHeaderOpen(Int):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -286,11 +334,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateHeaderOpen</span><span class="params">(<span name="headerNo">headerNo: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: String</span>
+        <span class="name">decorateHeaderOpen</span><span class="params">(<span name="headerNo">headerNo: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the beginning of a header, defaults to &quot;&lt;h[headerNo]&gt;&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a header, defaults to &quot;&lt;h[headerNo]&gt;&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateImg" data-isabs="false">
+      <p class="shortcomment cmt">used to print the beginning of a header, defaults to &quot;&lt;h[headerNo]&gt;&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a header, defaults to &quot;&lt;h[headerNo]&gt;&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateImg" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateImg(alt:String,src:String,title:Option[String]):String"></a>
       <a id="decorateImg(String,String,Option[String]):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -298,12 +347,13 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateImg</span><span class="params">(<span name="alt">alt: String</span>, <span name="src">src: String</span>, <span name="title">title: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: String</span>
+        <span class="name">decorateImg</span><span class="params">(<span name="alt">alt: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="src">src: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Used to print image elements (default: &lt;img .</p><div class="fullcomment"><div class="comment cmt"><p>Used to print image elements (default: &lt;img ...)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateItemClose" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateItemClose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateItemClose():String"></a>
       <a id="decorateItemClose():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -311,11 +361,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateItemClose</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateItemClose</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the end of a list item, defaults to &quot;&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a list item, defaults to &quot;&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateItemOpen" data-isabs="false">
+      <p class="shortcomment cmt">used to print the end of a list item, defaults to &quot;&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a list item, defaults to &quot;&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateItemOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateItemOpen():String"></a>
       <a id="decorateItemOpen():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -323,11 +374,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateItemOpen</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateItemOpen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the beginning of a list item, defaults to &quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a list item, defaults to &quot;</p><ul><li>&quot;</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateLink" data-isabs="false">
+      <p class="shortcomment cmt">used to print the beginning of a list item, defaults to &quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a list item, defaults to &quot;</p><ul><li>&quot;</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateLink" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateLink(text:String,url:String,title:Option[String]):String"></a>
       <a id="decorateLink(String,String,Option[String]):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -335,12 +387,13 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateLink</span><span class="params">(<span name="text">text: String</span>, <span name="url">url: String</span>, <span name="title">title: <span name="scala.Option" class="extype">Option</span>[String]</span>)</span><span class="result">: String</span>
+        <span class="name">decorateLink</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="title">title: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Used to print link elements (default: &lt;a href.</p><div class="fullcomment"><div class="comment cmt"><p>Used to print link elements (default: &lt;a href...)
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateOListClose" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateOListClose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateOListClose():String"></a>
       <a id="decorateOListClose():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -348,11 +401,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateOListClose</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateOListClose</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the end of an ordered list, defaults to \n</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of an ordered list, defaults to \n</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateOListOpen" data-isabs="false">
+      <p class="shortcomment cmt">used to print the end of an ordered list, defaults to \n</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of an ordered list, defaults to \n</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateOListOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateOListOpen():String"></a>
       <a id="decorateOListOpen():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -360,11 +414,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateOListOpen</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateOListOpen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the beginning of an ordered list, defaults to \n</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of an ordered list, defaults to \n</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateParagraphClose" data-isabs="false">
+      <p class="shortcomment cmt">used to print the beginning of an ordered list, defaults to \n</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of an ordered list, defaults to \n</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateParagraphClose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateParagraphClose():String"></a>
       <a id="decorateParagraphClose():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -372,11 +427,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateParagraphClose</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateParagraphClose</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the end of a paragraph, defaults to &quot;\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a paragraph, defaults to &quot;\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateParagraphOpen" data-isabs="false">
+      <p class="shortcomment cmt">used to print the end of a paragraph, defaults to &quot;\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of a paragraph, defaults to &quot;\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateParagraphOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateParagraphOpen():String"></a>
       <a id="decorateParagraphOpen():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -384,11 +440,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateParagraphOpen</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateParagraphOpen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the beginning of a paragraph, defaults to &quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a paragraph, defaults to &quot;</p><p>&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateRuler" data-isabs="false">
+      <p class="shortcomment cmt">used to print the beginning of a paragraph, defaults to &quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of a paragraph, defaults to &quot;</p><p>&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateRuler" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateRuler():String"></a>
       <a id="decorateRuler():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -396,11 +453,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateRuler</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateRuler</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print a horizontal ruler defaults to &quot;<hr />\n&quot;</hr /></p><div class="fullcomment"><div class="comment cmt"><p>used to print a horizontal ruler defaults to &quot;<hr />\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateStrong" data-isabs="false">
+      <p class="shortcomment cmt">used to print a horizontal ruler defaults to &quot;<hr />\n&quot;</hr /></p><div class="fullcomment"><div class="comment cmt"><p>used to print a horizontal ruler defaults to &quot;<hr />\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateStrong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateStrong(text:String):String"></a>
       <a id="decorateStrong(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -408,13 +466,14 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateStrong</span><span class="params">(<span name="text">text: String</span>)</span><span class="result">: String</span>
+        <span class="name">decorateStrong</span><span class="params">(<span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Used to print out strong text (default: <strong>...</strong>
 </p><div class="fullcomment"><div class="comment cmt"><p>Used to print out strong text (default: <strong>...</strong>
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateUListClose" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateUListClose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateUListClose():String"></a>
       <a id="decorateUListClose():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -422,11 +481,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateUListClose</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateUListClose</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the end of an unordered list, defaults to &quot;\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of an unordered list, defaults to &quot;\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#decorateUListOpen" data-isabs="false">
+      <p class="shortcomment cmt">used to print the end of an unordered list, defaults to &quot;\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the end of an unordered list, defaults to &quot;\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="net.liftweb.markdown.Decorator#decorateUListOpen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="decorateUListOpen():String"></a>
       <a id="decorateUListOpen():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -434,11 +494,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decorateUListOpen</span><span class="params">()</span><span class="result">: String</span>
+        <span class="name">decorateUListOpen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <p class="shortcomment cmt">used to print the beginning of an unordered list, defaults to &quot;\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of an unordered list, defaults to &quot;\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+      <p class="shortcomment cmt">used to print the beginning of an unordered list, defaults to &quot;\n&quot;</p><div class="fullcomment"><div class="comment cmt"><p>used to print the beginning of an unordered list, defaults to &quot;\n&quot;</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -446,11 +507,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -458,11 +520,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -470,26 +533,28 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -497,11 +562,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.markdown.Decorator#indentation" data-isabs="false">
+    </li><li name="net.liftweb.markdown.Decorator#indentation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="indentation():String"></a>
       <a id="indentation():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -509,12 +575,13 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">indentation</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">indentation</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">The string used to ident one level.</p><div class="fullcomment"><div class="comment cmt"><p>The string used to ident one level. Defaults to the empty string
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -522,11 +589,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -534,11 +602,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -546,11 +615,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -558,23 +628,25 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -582,11 +654,12 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -594,14 +667,15 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -609,14 +683,15 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -624,7 +699,7 @@ otherwise they are escaped and included as plain text
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -635,15 +710,25 @@ otherwise they are escaped and included as plain text
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.markdown.Decorator" class="parent">
-              <h3>Inherited from <a name="net.liftweb.markdown.Decorator" class="extype" href="Decorator.html">Decorator</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.markdown.Decorator">
+              <h3>Inherited from <a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

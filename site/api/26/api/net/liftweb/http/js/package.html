@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.http.js</title>
+          <title>js - Lift Framework 2.6-M3 - net.liftweb.http.js</title>
+          <meta name="description" content="js - Lift Framework 2.6 - M3 - net.liftweb.http.js" />
+          <meta name="keywords" content="js Lift Framework 2.6 M3 net.liftweb.http.js" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.http.js.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../../package.html">liftweb</a>.<a name="net.liftweb.http" class="extype" href="../package.html">http</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a></p>
         <h1>js</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.http.js.AjaxInfo" data-isabs="false">
+              <ol><li name="net.liftweb.http.js.AjaxInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AjaxInfoextendsProductwithSerializable"></a>
       <a id="AjaxInfo:AjaxInfo"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,11 +72,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="AjaxInfo.html"><span class="name">AjaxInfo</span></a><span class="params">(<span name="data">data: JsExp</span>, <span name="action">action: String</span>, <span name="timeout">timeout: Long</span>, <span name="cache">cache: Boolean</span>, <span name="dataType">dataType: String</span>, <span name="successFunc">successFunc: Box[String]</span>, <span name="failFunc">failFunc: Box[String]</span>)</span><span class="result"> extends Product with Serializable</span>
+        <a href="AjaxInfo.html"><span class="name">AjaxInfo</span></a><span class="params">(<span name="data">data: <a href="JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>, <span name="action">action: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="timeout">timeout: <span class="extype" name="scala.Long">Long</span></span>, <span name="cache">cache: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="dataType">dataType: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="successFunc">successFunc: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="failFunc">failFunc: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Represents the meta data of an Ajax request.</p>
-    </li><li visbl="pub" name="net.liftweb.http.js.HtmlFixer" data-isabs="true">
+    </li><li name="net.liftweb.http.js.HtmlFixer" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HtmlFixerextendsObject"></a>
       <a id="HtmlFixer:HtmlFixer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,11 +85,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HtmlFixer.html"><span class="name">HtmlFixer</span></a><span class="result"> extends AnyRef</span>
+        <a href="HtmlFixer.html"><span class="name">HtmlFixer</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JSArtifacts" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JSArtifacts" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JSArtifactsextendsObject"></a>
       <a id="JSArtifacts:JSArtifacts"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,11 +98,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JSArtifacts.html"><span class="name">JSArtifacts</span></a><span class="result"> extends AnyRef</span>
+        <a href="JSArtifacts.html"><span class="name">JSArtifacts</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Abstracted JavaScript artifacts used by lift core.</p>
-    </li><li visbl="pub" name="net.liftweb.http.js.JsCmd" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JsCmd" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JsCmdextendsHtmlFixerwithToJsCmd"></a>
       <a id="JsCmd:JsCmd"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,11 +111,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsCmd.html"><span class="name">JsCmd</span></a><span class="result"> extends HtmlFixer with ToJsCmd</span>
+        <a href="JsCmd.html"><span class="name">JsCmd</span></a><span class="result"> extends <a href="HtmlFixer.html" class="extype" name="net.liftweb.http.js.HtmlFixer">HtmlFixer</a> with <a href="../../util/ToJsCmd.html" class="extype" name="net.liftweb.util.ToJsCmd">ToJsCmd</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JsCommands" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JsCommands" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsCommandsextendsObject"></a>
       <a id="JsCommands:JsCommands"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -104,11 +124,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="JsCommands.html"><span class="name">JsCommands</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsCommands.html"><span class="name">JsCommands</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JsExp" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JsExp" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JsExpextendsHtmlFixerwithToJsCmd"></a>
       <a id="JsExp:JsExp"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -116,12 +137,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsExp.html"><span class="name">JsExp</span></a><span class="result"> extends HtmlFixer with ToJsCmd</span>
+        <a href="JsExp.html"><span class="name">JsExp</span></a><span class="result"> extends <a href="HtmlFixer.html" class="extype" name="net.liftweb.http.js.HtmlFixer">HtmlFixer</a> with <a href="../../util/ToJsCmd.html" class="extype" name="net.liftweb.util.ToJsCmd">ToJsCmd</a></span>
       </span>
       </h4>
       <p class="comment cmt">The basic JavaScript expression
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.js.JsMember" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JsMember" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JsMemberextendsObject"></a>
       <a id="JsMember:JsMember"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -129,11 +151,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsMember.html"><span class="name">JsMember</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsMember.html"><span class="name">JsMember</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JsObj" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JsObj" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JsObjextendsJsExp"></a>
       <a id="JsObj:JsObj"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -141,11 +164,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsObj.html"><span class="name">JsObj</span></a><span class="result"> extends JsExp</span>
+        <a href="JsObj.html"><span class="name">JsObj</span></a><span class="result"> extends <a href="JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JsonCall" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JsonCall" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsonCallextendsProductwithSerializable"></a>
       <a id="JsonCall:JsonCall"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -153,11 +177,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JsonCall.html"><span class="name">JsonCall</span></a><span class="params">(<span name="funcId">funcId: String</span>)</span><span class="result"> extends Product with Serializable</span>
+        <a href="JsonCall.html"><span class="name">JsonCall</span></a><span class="params">(<span name="funcId">funcId: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.Jx" data-isabs="false">
+    </li><li name="net.liftweb.http.js.Jx" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxextendsNodewithJxBasewithJxYieldFuncwithProductwithSerializable"></a>
       <a id="Jx:Jx"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -165,11 +190,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Jx.html"><span class="name">Jx</span></a><span class="params">(<span name="child">child: NodeSeq</span>)</span><span class="result"> extends Node with JxBase with JxYieldFunc with Product with Serializable</span>
+        <a href="Jx.html"><span class="name">Jx</span></a><span class="params">(<span name="child">child: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <a href="JxYieldFunc.html" class="extype" name="net.liftweb.http.js.JxYieldFunc">JxYieldFunc</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxAttr" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxAttr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxAttrextendsNodewithJxBasewithProductwithSerializable"></a>
       <a id="JxAttr:JxAttr"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -177,11 +203,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxAttr.html"><span class="name">JxAttr</span></a><span class="params">(<span name="in">in: JsCmd</span>)</span><span class="result"> extends Node with JxBase with Product with Serializable</span>
+        <a href="JxAttr.html"><span class="name">JxAttr</span></a><span class="params">(<span name="in">in: <a href="JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxBase" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JxBase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JxBaseextendsObject"></a>
       <a id="JxBase:JxBase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -189,11 +216,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JxBase.html"><span class="name">JxBase</span></a><span class="result"> extends AnyRef</span>
+        <a href="JxBase.html"><span class="name">JxBase</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxCase" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxCase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxCaseextendsProductwithSerializable"></a>
       <a id="JxCase:JxCase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -201,11 +229,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxCase.html"><span class="name">JxCase</span></a><span class="params">(<span name="toMatch">toMatch: JsExp</span>, <span name="toDo">toDo: NodeSeq</span>)</span><span class="result"> extends Product with Serializable</span>
+        <a href="JxCase.html"><span class="name">JxCase</span></a><span class="params">(<span name="toMatch">toMatch: <a href="JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>, <span name="toDo">toDo: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxCmd" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxCmd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxCmdextendsNodewithJxBasewithProductwithSerializable"></a>
       <a id="JxCmd:JxCmd"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -213,11 +242,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxCmd.html"><span class="name">JxCmd</span></a><span class="params">(<span name="in">in: JsCmd</span>)</span><span class="result"> extends Node with JxBase with Product with Serializable</span>
+        <a href="JxCmd.html"><span class="name">JxCmd</span></a><span class="params">(<span name="in">in: <a href="JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxFuncAttr" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxFuncAttr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxFuncAttrextendsNodewithJxBasewithProductwithSerializable"></a>
       <a id="JxFuncAttr:JxFuncAttr"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -225,11 +255,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxFuncAttr.html"><span class="name">JxFuncAttr</span></a><span class="params">(<span name="in">in: JsCmd</span>)</span><span class="result"> extends Node with JxBase with Product with Serializable</span>
+        <a href="JxFuncAttr.html"><span class="name">JxFuncAttr</span></a><span class="params">(<span name="in">in: <a href="JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxIf" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxIf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxIfextendsNodewithJxBasewithProductwithSerializable"></a>
       <a id="JxIf:JxIf"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -237,11 +268,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxIf.html"><span class="name">JxIf</span></a><span class="params">(<span name="toTest">toTest: JsExp</span>, <span name="ifTrue">ifTrue: NodeSeq</span>)</span><span class="result"> extends Node with JxBase with Product with Serializable</span>
+        <a href="JxIf.html"><span class="name">JxIf</span></a><span class="params">(<span name="toTest">toTest: <a href="JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>, <span name="ifTrue">ifTrue: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxIfElse" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxIfElse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxIfElseextendsNodewithJxBasewithProductwithSerializable"></a>
       <a id="JxIfElse:JxIfElse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -249,11 +281,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxIfElse.html"><span class="name">JxIfElse</span></a><span class="params">(<span name="toTest">toTest: JsExp</span>, <span name="ifTrue">ifTrue: NodeSeq</span>, <span name="ifFalse">ifFalse: NodeSeq</span>)</span><span class="result"> extends Node with JxBase with Product with Serializable</span>
+        <a href="JxIfElse.html"><span class="name">JxIfElse</span></a><span class="params">(<span name="toTest">toTest: <a href="JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>, <span name="ifTrue">ifTrue: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="ifFalse">ifFalse: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxMap" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxMapextendsNodewithJxBasewithProductwithSerializable"></a>
       <a id="JxMap:JxMap"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -261,11 +294,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxMap.html"><span class="name">JxMap</span></a><span class="params">(<span name="in">in: JsExp</span>, <span name="what">what: JxYieldFunc</span>)</span><span class="result"> extends Node with JxBase with Product with Serializable</span>
+        <a href="JxMap.html"><span class="name">JxMap</span></a><span class="params">(<span name="in">in: <a href="JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>, <span name="what">what: <a href="JxYieldFunc.html" class="extype" name="net.liftweb.http.js.JxYieldFunc">JxYieldFunc</a></span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxMatch" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JxMatch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JxMatchextendsNodewithJxBasewithProductwithSerializable"></a>
       <a id="JxMatch:JxMatch"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -273,11 +307,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="JxMatch.html"><span class="name">JxMatch</span></a><span class="params">(<span name="exp">exp: JsExp</span>, <span name="cases">cases: JxCase*</span>)</span><span class="result"> extends Node with JxBase with Product with Serializable</span>
+        <a href="JxMatch.html"><span class="name">JxMatch</span></a><span class="params">(<span name="exp">exp: <a href="JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>, <span name="cases">cases: <a href="JxCase.html" class="extype" name="net.liftweb.http.js.JxCase">JxCase</a>*</span>)</span><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxNodeBase" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JxNodeBase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JxNodeBaseextendsNodewithJxBase"></a>
       <a id="JxNodeBase:JxNodeBase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -285,11 +320,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="JxNodeBase.html"><span class="name">JxNodeBase</span></a><span class="result"> extends Node with JxBase</span>
+        <a href="JxNodeBase.html"><span class="name">JxNodeBase</span></a><span class="result"> extends <span class="extype" name="scala.xml.Node">Node</span> with <a href="JxBase.html" class="extype" name="net.liftweb.http.js.JxBase">JxBase</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JxYieldFunc" data-isabs="true">
+    </li><li name="net.liftweb.http.js.JxYieldFunc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JxYieldFuncextendsObject"></a>
       <a id="JxYieldFunc:JxYieldFunc"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -297,7 +333,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JxYieldFunc.html"><span class="name">JxYieldFunc</span></a><span class="result"> extends AnyRef</span>
+        <a href="JxYieldFunc.html"><span class="name">JxYieldFunc</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
@@ -306,9 +342,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.http.js.AjaxInfo" data-isabs="false">
+              <ol><li name="net.liftweb.http.js.AjaxInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AjaxInfo"></a>
       <a id="AjaxInfo:AjaxInfo"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -316,13 +353,14 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="AjaxInfo$.html"><span class="name">AjaxInfo</span></a><span class="result"> extends Serializable</span>
+        <a href="AjaxInfo$.html"><span class="name">AjaxInfo</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">The companion module for AjaxInfo that provides
 different construction schemes
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.js.JE" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JE" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JE"></a>
       <a id="JE:JE"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -330,11 +368,12 @@ different construction schemes
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JE$.html"><span class="name">JE</span></a><span class="result"> extends AnyRef</span>
+        <a href="JE$.html"><span class="name">JE</span></a>
       </span>
       </h4>
       <p class="comment cmt">JavaScript Expressions.</p>
-    </li><li visbl="pub" name="net.liftweb.http.js.JsCmd" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JsCmd" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsCmd"></a>
       <a id="JsCmd:JsCmd"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -342,11 +381,12 @@ different construction schemes
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JsCmd$.html"><span class="name">JsCmd</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsCmd$.html"><span class="name">JsCmd</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JsCmds" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JsCmds" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsCmds"></a>
       <a id="JsCmds:JsCmds"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -354,11 +394,12 @@ different construction schemes
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JsCmds$.html"><span class="name">JsCmds</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsCmds$.html"><span class="name">JsCmds</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JsCommands" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JsCommands" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsCommands"></a>
       <a id="JsCommands:JsCommands"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -366,11 +407,12 @@ different construction schemes
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JsCommands$.html"><span class="name">JsCommands</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsCommands$.html"><span class="name">JsCommands</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.JsExp" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JsExp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsExp"></a>
       <a id="JsExp:JsExp"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -378,13 +420,14 @@ different construction schemes
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JsExp$.html"><span class="name">JsExp</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsExp$.html"><span class="name">JsExp</span></a>
       </span>
       </h4>
       <p class="comment cmt">The companion object to JsExp that has some
 helpful conversions to/from Lift's JSON library
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.js.JsRules" data-isabs="false">
+    </li><li name="net.liftweb.http.js.JsRules" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsRules"></a>
       <a id="JsRules:JsRules"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -392,11 +435,12 @@ helpful conversions to/from Lift's JSON library
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JsRules$.html"><span class="name">JsRules</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsRules$.html"><span class="name">JsRules</span></a>
       </span>
       </h4>
       <p class="comment cmt">A collection of defaults for JavaScript related stuff</p>
-    </li><li visbl="pub" name="net.liftweb.http.js.ScriptRenderer" data-isabs="false">
+    </li><li name="net.liftweb.http.js.ScriptRenderer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ScriptRenderer"></a>
       <a id="ScriptRenderer:ScriptRenderer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -404,12 +448,13 @@ helpful conversions to/from Lift's JSON library
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="ScriptRenderer$.html"><span class="name">ScriptRenderer</span></a><span class="result"> extends AnyRef</span>
+        <a href="ScriptRenderer$.html"><span class="name">ScriptRenderer</span></a>
       </span>
       </h4>
       <p class="comment cmt">the default mechanisms for doing Ajax and Comet in Lift
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.js.extcore" data-isabs="false">
+    </li><li name="net.liftweb.http.js.extcore" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extcore"></a>
       <a id="extcore:extcore"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -421,7 +466,8 @@ helpful conversions to/from Lift's JSON library
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.jquery" data-isabs="false">
+    </li><li name="net.liftweb.http.js.jquery" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jquery"></a>
       <a id="jquery:jquery"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -433,7 +479,8 @@ helpful conversions to/from Lift's JSON library
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.js.yui" data-isabs="false">
+    </li><li name="net.liftweb.http.js.yui" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="yui"></a>
       <a id="yui:yui"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -449,10 +496,20 @@ helpful conversions to/from Lift's JSON library
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

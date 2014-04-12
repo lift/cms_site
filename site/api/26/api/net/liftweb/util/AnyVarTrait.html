@@ -2,55 +2,82 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.util.AnyVarTrait</title>
+          <title>AnyVarTrait - Lift Framework 2.6-M3 - net.liftweb.util.AnyVarTrait</title>
+          <meta name="description" content="AnyVarTrait - Lift Framework 2.6 - M3 - net.liftweb.util.AnyVarTrait" />
+          <meta name="keywords" content="AnyVarTrait Lift Framework 2.6 M3 net.liftweb.util.AnyVarTrait" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.util.AnyVarTrait';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.util" class="extype" href="package.html">util</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.util">util</a></p>
         <h1>AnyVarTrait</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">AnyVarTrait</span><span class="tparams">[<span name="T">T</span>, <span name="MyType">MyType &lt;: <a name="net.liftweb.util.AnyVarTrait" class="extype" href="">AnyVarTrait</a>[T, MyType]</span>]</span><span class="result"> extends <a name="net.liftweb.util.PSettableValueHolder" class="extype" href="PSettableValueHolder.html">PSettableValueHolder</a>[T] with <a name="net.liftweb.util.HasCalcDefaultValue" class="extype" href="HasCalcDefaultValue.html">HasCalcDefaultValue</a>[T]</span>
+        <span class="name">AnyVarTrait</span><span class="tparams">[<span name="T">T</span>, <span name="MyType">MyType &lt;: <a href="" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>, <span class="extype" name="net.liftweb.util.AnyVarTrait.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="PSettableValueHolder.html" class="extype" name="net.liftweb.util.PSettableValueHolder">PSettableValueHolder</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>] with <a href="HasCalcDefaultValue.html" class="extype" name="net.liftweb.util.HasCalcDefaultValue">HasCalcDefaultValue</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>]</span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Abstract a request or a session scoped variable.
-</p></div><dl class="attributes block"> <dt>Self Type</dt><dd>MyType</dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Abstract a request or a session scoped variable.
+</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><span class="extype" name="net.liftweb.util.AnyVarTrait.MyType">MyType</span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.util.HasCalcDefaultValue" class="extype" href="HasCalcDefaultValue.html">HasCalcDefaultValue</a>[T], <a name="net.liftweb.util.PSettableValueHolder" class="extype" href="PSettableValueHolder.html">PSettableValueHolder</a>[T], <a name="net.liftweb.util.SettableValueHolder" class="extype" href="SettableValueHolder.html">SettableValueHolder</a>, <a name="net.liftweb.util.Settable" class="extype" href="Settable.html">Settable</a>, <a name="net.liftweb.util.PValueHolder" class="extype" href="PValueHolder.html">PValueHolder</a>[T], <a name="net.liftweb.util.ValueHolder" class="extype" href="ValueHolder.html">ValueHolder</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="HasCalcDefaultValue.html" class="extype" name="net.liftweb.util.HasCalcDefaultValue">HasCalcDefaultValue</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>], <a href="PSettableValueHolder.html" class="extype" name="net.liftweb.util.PSettableValueHolder">PSettableValueHolder</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>], <a href="SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a>, <a href="Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a>, <a href="PValueHolder.html" class="extype" name="net.liftweb.util.PValueHolder">PValueHolder</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>], <a href="ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
           <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a name="net.liftweb.http.LiftScreen.AjaxOnDone" class="extype" href="../http/LiftScreen$AjaxOnDone$.html">AjaxOnDone</a>, <a name="net.liftweb.wizard.Wizard.AjaxOnDone" class="extype" href="../wizard/Wizard$AjaxOnDone$.html">AjaxOnDone</a>, <a name="net.liftweb.http.LiftScreen.Ajax_?" class="extype" href="../http/LiftScreen$Ajax_$qmark$.html">Ajax_?</a>, <a name="net.liftweb.wizard.Wizard.Ajax_?" class="extype" href="../wizard/Wizard$Ajax_$qmark$.html">Ajax_?</a>, <a name="net.liftweb.util.AnyVar" class="extype" href="AnyVar.html">AnyVar</a>, <a name="net.liftweb.http.CssBoundLiftScreen.CancelId" class="extype" href="../http/CssBoundLiftScreen$CancelId$.html">CancelId</a>, <a name="net.liftweb.http.ContainerVar" class="extype" href="../http/ContainerVar.html">ContainerVar</a>, <a name="net.liftweb.http.rest.ContinuationsStore" class="extype" href="../http/rest/ContinuationsStore$.html">ContinuationsStore</a>, <a name="net.liftweb.wizard.Wizard.CurrentScreen" class="extype" href="../wizard/Wizard$CurrentScreen$.html">CurrentScreen</a>, <a name="net.liftweb.http.LiftScreen.FormGUID" class="extype" href="../http/LiftScreen$FormGUID$.html">FormGUID</a>, <a name="net.liftweb.wizard.Wizard.FormGUID" class="extype" href="../wizard/Wizard$FormGUID$.html">FormGUID</a>, <a name="net.liftweb.http.CssBoundLiftScreen.LocalAction" class="extype" href="../http/CssBoundLiftScreen$LocalAction$.html">LocalAction</a>, <a name="net.liftweb.http.CssBoundLiftScreen.LocalActionRef" class="extype" href="../http/CssBoundLiftScreen$LocalActionRef$.html">LocalActionRef</a>, <a name="net.liftweb.http.CssBoundLiftScreen.LocalActions" class="extype" href="../http/CssBoundLiftScreen$LocalActions$.html">LocalActions</a>, <a name="net.liftweb.builtin.snippet.MsgErrorMeta" class="extype" href="../builtin/snippet/MsgErrorMeta$.html">MsgErrorMeta</a>, <a name="net.liftweb.builtin.snippet.MsgNoticeMeta" class="extype" href="../builtin/snippet/MsgNoticeMeta$.html">MsgNoticeMeta</a>, <a name="net.liftweb.builtin.snippet.MsgWarningMeta" class="extype" href="../builtin/snippet/MsgWarningMeta$.html">MsgWarningMeta</a>, <a name="net.liftweb.builtin.snippet.MsgsErrorMeta" class="extype" href="../builtin/snippet/MsgsErrorMeta$.html">MsgsErrorMeta</a>, <a name="net.liftweb.builtin.snippet.MsgsNoticeMeta" class="extype" href="../builtin/snippet/MsgsNoticeMeta$.html">MsgsNoticeMeta</a>, <a name="net.liftweb.builtin.snippet.MsgsWarningMeta" class="extype" href="../builtin/snippet/MsgsWarningMeta$.html">MsgsWarningMeta</a>, <a name="net.liftweb.http.LiftScreen.NextId" class="extype" href="../http/LiftScreen$NextId$.html">NextId</a>, <a name="net.liftweb.util.NonCleanAnyVar" class="extype" href="NonCleanAnyVar.html">NonCleanAnyVar</a>, <a name="net.liftweb.wizard.Wizard.OnFirstScreen" class="extype" href="../wizard/Wizard$OnFirstScreen$.html">OnFirstScreen</a>, <a name="net.liftweb.http.PageName" class="extype" href="../http/PageName$.html">PageName</a>, <a name="net.liftweb.http.CssBoundLiftScreen.PrevId" class="extype" href="../http/CssBoundLiftScreen$PrevId$.html">PrevId</a>, <a name="net.liftweb.http.LiftScreen.PrevSnapshot" class="extype" href="../http/LiftScreen$PrevSnapshot$.html">PrevSnapshot</a>, <a name="net.liftweb.http.LiftScreen.Referer" class="extype" href="../http/LiftScreen$Referer$.html">Referer</a>, <a name="net.liftweb.wizard.Wizard.Referer" class="extype" href="../wizard/Wizard$Referer$.html">Referer</a>, <a name="net.liftweb.http.RequestVar" class="extype" href="../http/RequestVar.html">RequestVar</a>, <a name="net.liftweb.http.CssBoundLiftScreen.SavedDefaultXml" class="extype" href="../http/CssBoundLiftScreen$SavedDefaultXml$.html">SavedDefaultXml</a>, <a name="net.liftweb.http.LiftScreen.ScreenVar" class="extype" href="../http/LiftScreen$ScreenVar.html">ScreenVar</a>, <a name="net.liftweb.http.SessionVar" class="extype" href="../http/SessionVar.html">SessionVar</a>, <a name="net.liftweb.builtin.snippet.ShowAll" class="extype" href="../builtin/snippet/ShowAll$.html">ShowAll</a>, <a name="net.liftweb.http.SnapshotRequestVar" class="extype" href="../http/SnapshotRequestVar.html">SnapshotRequestVar</a>, <a name="net.liftweb.http.TransientRequestVar" class="extype" href="../http/TransientRequestVar.html">TransientRequestVar</a>, <a name="net.liftweb.wizard.Wizard.VisitedScreens" class="extype" href="../wizard/Wizard$VisitedScreens$.html">VisitedScreens</a>, <a name="net.liftweb.builtin.snippet.WithParamVar" class="extype" href="../builtin/snippet/WithParamVar$.html">WithParamVar</a>, <a name="net.liftweb.wizard.Wizard.WizardVar" class="extype" href="../wizard/Wizard$WizardVar.html">WizardVar</a>, <a name="net.liftweb.http.LiftScreen._defaultXml" class="extype" href="../http/LiftScreen$_defaultXml$.html">_defaultXml</a>, <a name="net.liftweb.wizard.Wizard._defaultXml" class="extype" href="../wizard/Wizard$_defaultXml$.html">_defaultXml</a>, <a name="net.liftweb.sitemap.Loc.accessTestRes" class="extype" href="../sitemap/Loc$accessTestRes$.html">accessTestRes</a>, <a name="net.liftweb.mapper.MetaMapper.addlQueryParams" class="extype" href="../mapper/MetaMapper$addlQueryParams$.html">addlQueryParams</a>, <a name="net.liftweb.http.SessionMemoize.coreVar" class="extype" href="../http/SessionMemoize$coreVar$.html">coreVar</a>, <a name="net.liftweb.http.RequestMemoize.coreVar" class="extype" href="../http/RequestMemoize$coreVar$.html">coreVar</a>, <a name="net.liftweb.http.TransientRequestMemoize.coreVar" class="extype" href="../http/TransientRequestMemoize$coreVar$.html">coreVar</a>, <a name="net.liftweb.proto.ProtoUser.editFunc" class="extype" href="../proto/ProtoUser$editFunc$.html">editFunc</a>, <a name="net.liftweb.jpa.RequestVarEM.emVar" class="extype" href="../jpa/RequestVarEM$emVar$.html">emVar</a>, <a name="net.liftweb.ldap.LDAPProtoUser.ldapRoles" class="extype" href="../ldap/LDAPProtoUser$ldapRoles$.html">ldapRoles</a>, <a name="net.liftweb.http.LiftSession.legacyIeCompatibilityMode" class="extype" href="../http/LiftSession$legacyIeCompatibilityMode$.html">legacyIeCompatibilityMode</a>, <a name="net.liftweb.proto.ProtoUser.loginRedirect" class="extype" href="../proto/ProtoUser$loginRedirect$.html">loginRedirect</a>, <a name="net.liftweb.http.Factory.FactoryMaker.request" class="extype" href="../http/Factory$FactoryMaker$request$.html">request</a>, <a name="net.liftweb.sitemap.Loc.requestValue" class="extype" href="../sitemap/Loc$requestValue$.html">requestValue</a>, <a name="net.liftweb.http.Factory.FactoryMaker.session" class="extype" href="../http/Factory$FactoryMaker$session$.html">session</a>, <a name="net.liftweb.proto.ProtoUser.signupFunc" class="extype" href="../proto/ProtoUser$signupFunc$.html">signupFunc</a>, <a name="net.liftweb.http.auth.userRoles" class="extype" href="../http/auth/userRoles$.html">userRoles</a></div>
+          <div class="subClasses hiddenContent"><a href="../wizard/Wizard$AjaxOnDone$.html" class="extype" name="net.liftweb.wizard.Wizard.AjaxOnDone">AjaxOnDone</a>, <a href="../http/LiftScreen$AjaxOnDone$.html" class="extype" name="net.liftweb.http.LiftScreen.AjaxOnDone">AjaxOnDone</a>, <a href="../wizard/Wizard$Ajax_$qmark$.html" class="extype" name="net.liftweb.wizard.Wizard.Ajax_?">Ajax_?</a>, <a href="../http/LiftScreen$Ajax_$qmark$.html" class="extype" name="net.liftweb.http.LiftScreen.Ajax_?">Ajax_?</a>, <a href="AnyVar.html" class="extype" name="net.liftweb.util.AnyVar">AnyVar</a>, <a href="../http/CssBoundLiftScreen$CancelId$.html" class="extype" name="net.liftweb.http.CssBoundLiftScreen.CancelId">CancelId</a>, <a href="../http/ContainerVar.html" class="extype" name="net.liftweb.http.ContainerVar">ContainerVar</a>, <a href="../http/rest/ContinuationsStore$.html" class="extype" name="net.liftweb.http.rest.ContinuationsStore">ContinuationsStore</a>, <a href="../wizard/Wizard$CurrentScreen$.html" class="extype" name="net.liftweb.wizard.Wizard.CurrentScreen">CurrentScreen</a>, <a href="../wizard/Wizard$FormGUID$.html" class="extype" name="net.liftweb.wizard.Wizard.FormGUID">FormGUID</a>, <a href="../http/LiftScreen$FormGUID$.html" class="extype" name="net.liftweb.http.LiftScreen.FormGUID">FormGUID</a>, <a href="../http/CssBoundLiftScreen$LocalAction$.html" class="extype" name="net.liftweb.http.CssBoundLiftScreen.LocalAction">LocalAction</a>, <a href="../http/CssBoundLiftScreen$LocalActionRef$.html" class="extype" name="net.liftweb.http.CssBoundLiftScreen.LocalActionRef">LocalActionRef</a>, <a href="../http/CssBoundLiftScreen$LocalActions$.html" class="extype" name="net.liftweb.http.CssBoundLiftScreen.LocalActions">LocalActions</a>, <a href="../builtin/snippet/MsgErrorMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgErrorMeta">MsgErrorMeta</a>, <a href="../builtin/snippet/MsgNoticeMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgNoticeMeta">MsgNoticeMeta</a>, <a href="../builtin/snippet/MsgWarningMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgWarningMeta">MsgWarningMeta</a>, <a href="../builtin/snippet/MsgsErrorMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgsErrorMeta">MsgsErrorMeta</a>, <a href="../builtin/snippet/MsgsNoticeMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgsNoticeMeta">MsgsNoticeMeta</a>, <a href="../builtin/snippet/MsgsWarningMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgsWarningMeta">MsgsWarningMeta</a>, <a href="../http/LiftScreen$NextId$.html" class="extype" name="net.liftweb.http.LiftScreen.NextId">NextId</a>, <a href="NonCleanAnyVar.html" class="extype" name="net.liftweb.util.NonCleanAnyVar">NonCleanAnyVar</a>, <a href="../wizard/Wizard$OnFirstScreen$.html" class="extype" name="net.liftweb.wizard.Wizard.OnFirstScreen">OnFirstScreen</a>, <a href="../http/PageName$.html" class="extype" name="net.liftweb.http.PageName">PageName</a>, <a href="../http/CssBoundLiftScreen$PrevId$.html" class="extype" name="net.liftweb.http.CssBoundLiftScreen.PrevId">PrevId</a>, <a href="../http/LiftScreen$PrevSnapshot$.html" class="extype" name="net.liftweb.http.LiftScreen.PrevSnapshot">PrevSnapshot</a>, <a href="../wizard/Wizard$Referer$.html" class="extype" name="net.liftweb.wizard.Wizard.Referer">Referer</a>, <a href="../http/LiftScreen$Referer$.html" class="extype" name="net.liftweb.http.LiftScreen.Referer">Referer</a>, <a href="../http/RequestVar.html" class="extype" name="net.liftweb.http.RequestVar">RequestVar</a>, <a href="../http/CssBoundLiftScreen$SavedDefaultXml$.html" class="extype" name="net.liftweb.http.CssBoundLiftScreen.SavedDefaultXml">SavedDefaultXml</a>, <a href="../http/LiftScreen$ScreenVar.html" class="extype" name="net.liftweb.http.LiftScreen.ScreenVar">ScreenVar</a>, <a href="../http/SessionVar.html" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a>, <a href="../builtin/snippet/ShowAll$.html" class="extype" name="net.liftweb.builtin.snippet.ShowAll">ShowAll</a>, <a href="../http/SnapshotRequestVar.html" class="extype" name="net.liftweb.http.SnapshotRequestVar">SnapshotRequestVar</a>, <a href="../http/TransientRequestVar.html" class="extype" name="net.liftweb.http.TransientRequestVar">TransientRequestVar</a>, <a href="../wizard/Wizard$VisitedScreens$.html" class="extype" name="net.liftweb.wizard.Wizard.VisitedScreens">VisitedScreens</a>, <a href="../builtin/snippet/WithParamVar$.html" class="extype" name="net.liftweb.builtin.snippet.WithParamVar">WithParamVar</a>, <a href="../wizard/Wizard$WizardVar.html" class="extype" name="net.liftweb.wizard.Wizard.WizardVar">WizardVar</a>, <a href="../wizard/Wizard$_defaultXml$.html" class="extype" name="net.liftweb.wizard.Wizard._defaultXml">_defaultXml</a>, <a href="../http/LiftScreen$_defaultXml$.html" class="extype" name="net.liftweb.http.LiftScreen._defaultXml">_defaultXml</a>, <a href="../sitemap/Loc$accessTestRes$.html" class="extype" name="net.liftweb.sitemap.Loc.accessTestRes">accessTestRes</a>, <a href="../mapper/MetaMapper$addlQueryParams$.html" class="extype" name="net.liftweb.mapper.MetaMapper.addlQueryParams">addlQueryParams</a>, <a href="../http/TransientRequestMemoize$coreVar$.html" class="extype" name="net.liftweb.http.TransientRequestMemoize.coreVar">coreVar</a>, <a href="../http/SessionMemoize$coreVar$.html" class="extype" name="net.liftweb.http.SessionMemoize.coreVar">coreVar</a>, <a href="../http/RequestMemoize$coreVar$.html" class="extype" name="net.liftweb.http.RequestMemoize.coreVar">coreVar</a>, <a href="../proto/ProtoUser$editFunc$.html" class="extype" name="net.liftweb.proto.ProtoUser.editFunc">editFunc</a>, <a href="../jpa/RequestVarEM$emVar$.html" class="extype" name="net.liftweb.jpa.RequestVarEM.emVar">emVar</a>, <a href="../ldap/LDAPProtoUser$ldapRoles$.html" class="extype" name="net.liftweb.ldap.LDAPProtoUser.ldapRoles">ldapRoles</a>, <a href="../http/LiftSession$legacyIeCompatibilityMode$.html" class="extype" name="net.liftweb.http.LiftSession.legacyIeCompatibilityMode">legacyIeCompatibilityMode</a>, <a href="../proto/ProtoUser$loginRedirect$.html" class="extype" name="net.liftweb.proto.ProtoUser.loginRedirect">loginRedirect</a>, <a href="../http/Factory$FactoryMaker$request$.html" class="extype" name="net.liftweb.http.Factory.FactoryMaker.request">request</a>, <a href="../sitemap/Loc$requestValue$.html" class="extype" name="net.liftweb.sitemap.Loc.requestValue">requestValue</a>, <a href="../http/Factory$FactoryMaker$session$.html" class="extype" name="net.liftweb.http.Factory.FactoryMaker.session">session</a>, <a href="../proto/ProtoUser$signupFunc$.html" class="extype" name="net.liftweb.proto.ProtoUser.signupFunc">signupFunc</a>, <a href="../http/auth/userRoles$.html" class="extype" name="net.liftweb.http.auth.userRoles">userRoles</a></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.util.AnyVarTrait" class="in"><span>AnyVarTrait</span></li><li name="net.liftweb.util.HasCalcDefaultValue" class="in"><span>HasCalcDefaultValue</span></li><li name="net.liftweb.util.PSettableValueHolder" class="in"><span>PSettableValueHolder</span></li><li name="net.liftweb.util.SettableValueHolder" class="in"><span>SettableValueHolder</span></li><li name="net.liftweb.util.Settable" class="in"><span>Settable</span></li><li name="net.liftweb.util.PValueHolder" class="in"><span>PValueHolder</span></li><li name="net.liftweb.util.ValueHolder" class="in"><span>ValueHolder</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.util.AnyVarTrait"><span>AnyVarTrait</span></li><li class="in" name="net.liftweb.util.HasCalcDefaultValue"><span>HasCalcDefaultValue</span></li><li class="in" name="net.liftweb.util.PSettableValueHolder"><span>PSettableValueHolder</span></li><li class="in" name="net.liftweb.util.SettableValueHolder"><span>SettableValueHolder</span></li><li class="in" name="net.liftweb.util.Settable"><span>Settable</span></li><li class="in" name="net.liftweb.util.PValueHolder"><span>PValueHolder</span></li><li class="in" name="net.liftweb.util.ValueHolder"><span>ValueHolder</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -61,10 +88,11 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.util.AnyVarTrait#CleanUpParam" data-isabs="true">
-      <a id="CleanUpParam:CleanUpParam"></a>
+              <ol><li name="net.liftweb.util.AnyVarTrait.CleanUpParam" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CleanUpParam"></a>
+      <a id="CleanUpParam:MyType.CleanUpParam"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
@@ -75,24 +103,26 @@
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.util.PValueHolder#ValueType" data-isabs="false">
-      <a id="ValueType:ValueType"></a>
+    </li><li name="net.liftweb.util.PValueHolder.ValueType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ValueType=T"></a>
+      <a id="ValueType:MyType.ValueType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">ValueType</span><span class="result"> = T</span>
+        <span class="name">ValueType</span><span class="result"> = <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.PValueHolder" class="extype" href="PValueHolder.html">PValueHolder</a> → <a name="net.liftweb.util.ValueHolder" class="extype" href="ValueHolder.html">ValueHolder</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PValueHolder.html" class="extype" name="net.liftweb.util.PValueHolder">PValueHolder</a> → <a href="ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li visbl="prt" name="net.liftweb.util.AnyVarTrait#calcDefaultValue" data-isabs="true">
+              <ol><li name="net.liftweb.util.AnyVarTrait#calcDefaultValue" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="calcDefaultValue:T"></a>
       <a id="calcDefaultValue:T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -100,11 +130,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">calcDefaultValue</span><span class="result">: T</span>
+        <span class="name">calcDefaultValue</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a name="net.liftweb.util.AnyVarTrait" class="extype" href="">AnyVarTrait</a> → <a name="net.liftweb.util.HasCalcDefaultValue" class="extype" href="HasCalcDefaultValue.html">HasCalcDefaultValue</a></dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#clearFunc" data-isabs="true">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → <a href="HasCalcDefaultValue.html" class="extype" name="net.liftweb.util.HasCalcDefaultValue">HasCalcDefaultValue</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#clearFunc" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="clearFunc(name:String):Unit"></a>
       <a id="clearFunc(String):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -112,25 +143,27 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clearFunc</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">clearFunc</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#doSync" data-isabs="true">
-      <a id="doSync[F](⇒ F):F"></a>
+    </li><li name="net.liftweb.util.AnyVarTrait#doSync" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="doSync[F](f:=&gt;F):F"></a>
+      <a id="doSync[F](⇒F):F"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doSync</span><span class="tparams">[<span name="F">F</span>]</span><span class="params">(<span name="f">f: ⇒ F</span>)</span><span class="result">: F</span>
+        <span class="name">doSync</span><span class="tparams">[<span name="F">F</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.AnyVarTrait.doSync.F">F</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.doSync.F">F</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Different Vars require different mechanisms for synchronization.</p><div class="fullcomment"><div class="comment cmt"><p>Different Vars require different mechanisms for synchronization.  This method implements
 the Var specific synchronization mechanism
 </p></div></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#findFunc" data-isabs="true">
+    </li><li name="net.liftweb.util.AnyVarTrait#findFunc" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="findFunc(name:String):net.liftweb.common.Box[T]"></a>
       <a id="findFunc(String):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -138,23 +171,25 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findFunc</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">findFunc</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#registerCleanupFunc" data-isabs="true">
-      <a id="registerCleanupFunc((CleanUpParam) ⇒ Unit):Unit"></a>
+    </li><li name="net.liftweb.util.AnyVarTrait#registerCleanupFunc" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="registerCleanupFunc(in:AnyVarTrait.this.CleanUpParam=&gt;Unit):Unit"></a>
+      <a id="registerCleanupFunc((MyType.CleanUpParam)⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">registerCleanupFunc</span><span class="params">(<span name="in">in: (CleanUpParam) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">registerCleanupFunc</span><span class="params">(<span name="in">in: (<span class="extype" name="net.liftweb.util.AnyVarTrait.CleanUpParam">MyType.CleanUpParam</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#setFunc" data-isabs="true">
+    </li><li name="net.liftweb.util.AnyVarTrait#setFunc" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="setFunc(name:String,value:T):Unit"></a>
       <a id="setFunc(String,T):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -162,11 +197,12 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setFunc</span><span class="params">(<span name="name">name: String</span>, <span name="value">value: T</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">setFunc</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#testWasSet" data-isabs="true">
+    </li><li name="net.liftweb.util.AnyVarTrait#testWasSet" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="testWasSet(name:String):Boolean"></a>
       <a id="testWasSet(String):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -174,13 +210,14 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">testWasSet</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">testWasSet</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">A non-side-effecting test if the value was initialized
 </p><div class="fullcomment"><div class="comment cmt"><p>A non-side-effecting test if the value was initialized
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#wasInitialized" data-isabs="true">
+    </li><li name="net.liftweb.util.AnyVarTrait#wasInitialized" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="wasInitialized(name:String):Boolean"></a>
       <a id="wasInitialized(String):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -188,16 +225,17 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wasInitialized</span><span class="params">(<span name="name">name: String</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">wasInitialized</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -205,11 +243,12 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -217,11 +256,12 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -229,11 +269,12 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -241,11 +282,12 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -253,11 +295,12 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#__nameSalt" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#__nameSalt" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="__nameSalt:String"></a>
       <a id="__nameSalt:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -265,11 +308,12 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">__nameSalt</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">__nameSalt</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#apply" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(what:T):T"></a>
       <a id="apply(T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -277,14 +321,15 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="what">what: T</span>)</span><span class="result">: T</span>
+        <span class="name">apply</span><span class="params">(<span name="what">what: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Set the session variable
 </p><div class="fullcomment"><div class="comment cmt"><p>Set the session variable
 </p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>-- the value to set the session variable to
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -292,19 +337,20 @@ the Var specific synchronization mechanism
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.Settable#atomicUpdate" data-isabs="false">
-      <a id="atomicUpdate((ValueType) ⇒ ValueType):ValueType"></a>
+    </li><li name="net.liftweb.util.Settable#atomicUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType"></a>
+      <a id="atomicUpdate((MyType.ValueType)⇒MyType.ValueType):MyType.ValueType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">atomicUpdate</span><span class="params">(<span name="f">f: (ValueType) ⇒ ValueType</span>)</span><span class="result">: ValueType</span>
+        <span class="name">atomicUpdate</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.util.PValueHolder.ValueType">MyType.ValueType</span>) ⇒ <span class="extype" name="net.liftweb.util.PValueHolder.ValueType">MyType.ValueType</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.PValueHolder.ValueType">MyType.ValueType</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Perform an atomic update of this Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic update of this Settable.
@@ -312,8 +358,9 @@ The current value is passed to the function and the ValueHolder
 is set to the result of the function.  This is enclosed in the
 performAtomicOperation method which will, by default, synchronize
 this instance
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.Settable" class="extype" href="Settable.html">Settable</a></dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -321,27 +368,29 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#doWith" data-isabs="false">
-      <a id="doWith[F](T)(⇒ F):F"></a>
+    </li><li name="net.liftweb.util.AnyVarTrait#doWith" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="doWith[F](newVal:T)(f:=&gt;F):F"></a>
+      <a id="doWith[F](T)(⇒F):F"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doWith</span><span class="tparams">[<span name="F">F</span>]</span><span class="params">(<span name="newVal">newVal: T</span>)</span><span class="params">(<span name="f">f: ⇒ F</span>)</span><span class="result">: F</span>
+        <span class="name">doWith</span><span class="tparams">[<span name="F">F</span>]</span><span class="params">(<span name="newVal">newVal: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.AnyVarTrait.doWith.F">F</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.doWith.F">F</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Change the value of the Var for the lifespan of the function
 </p>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -349,11 +398,12 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -361,11 +411,12 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -373,14 +424,15 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#get" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get:T"></a>
       <a id="get:T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -388,25 +440,27 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">get</span><span class="result">: T</span>
+        <span class="name">get</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Shadow of the 'is' method
 </p><div class="fullcomment"><div class="comment cmt"><p>Shadow of the 'is' method
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.AnyVarTrait" class="extype" href="">AnyVarTrait</a> → <a name="net.liftweb.util.ValueHolder" class="extype" href="ValueHolder.html">ValueHolder</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → <a href="ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -414,11 +468,12 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#is" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#is" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="is:T"></a>
       <a id="is:T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -426,13 +481,14 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">is</span><span class="result">: T</span>
+        <span class="name">is</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">The current value of the variable
 </p><div class="fullcomment"><div class="comment cmt"><p>The current value of the variable
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.AnyVarTrait" class="extype" href="">AnyVarTrait</a> → <a name="net.liftweb.util.ValueHolder" class="extype" href="ValueHolder.html">ValueHolder</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → <a href="ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -440,11 +496,12 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#name" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#name" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
       <a id="name:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -452,11 +509,12 @@ this instance
         <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">name</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">name</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -464,11 +522,12 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -476,11 +535,12 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -488,49 +548,53 @@ this instance
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#onShutdown" data-isabs="false">
-      <a id="onShutdown(CleanUpParam):Unit"></a>
+    </li><li name="net.liftweb.util.AnyVarTrait#onShutdown" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onShutdown(session:AnyVarTrait.this.CleanUpParam):Unit"></a>
+      <a id="onShutdown(MyType.CleanUpParam):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onShutdown</span><span class="params">(<span name="session">session: CleanUpParam</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">onShutdown</span><span class="params">(<span name="session">session: <span class="extype" name="net.liftweb.util.AnyVarTrait.CleanUpParam">MyType.CleanUpParam</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.Settable#performAtomicOperation" data-isabs="false">
-      <a id="performAtomicOperation[T](⇒ T):T"></a>
+    </li><li name="net.liftweb.util.Settable#performAtomicOperation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="performAtomicOperation[T](f:=&gt;T):T"></a>
+      <a id="performAtomicOperation[T](⇒T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">performAtomicOperation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ T</span>)</span><span class="result">: T</span>
+        <span class="name">performAtomicOperation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Perform an atomic operation on the Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic operation on the Settable. By default
 synchronizes the instance, but it could use other mechanisms
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.Settable" class="extype" href="Settable.html">Settable</a></dd></dl></div>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#registerGlobalCleanupFunc" data-isabs="false">
-      <a id="registerGlobalCleanupFunc((CleanUpParam) ⇒ Unit):Unit"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#registerGlobalCleanupFunc" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerGlobalCleanupFunc(in:AnyVarTrait.this.CleanUpParam=&gt;Unit):Unit"></a>
+      <a id="registerGlobalCleanupFunc((MyType.CleanUpParam)⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">registerGlobalCleanupFunc</span><span class="params">(<span name="in">in: (CleanUpParam) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">registerGlobalCleanupFunc</span><span class="params">(<span name="in">in: (<span class="extype" name="net.liftweb.util.AnyVarTrait.CleanUpParam">MyType.CleanUpParam</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#remove" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#remove" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="remove():Unit"></a>
       <a id="remove():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -538,11 +602,12 @@ synchronizes the instance, but it could use other mechanisms
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">remove</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">remove</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#set" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#set" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set(what:T):T"></a>
       <a id="set(T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -550,26 +615,28 @@ synchronizes the instance, but it could use other mechanisms
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">set</span><span class="params">(<span name="what">what: T</span>)</span><span class="result">: T</span>
+        <span class="name">set</span><span class="params">(<span name="what">what: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Shadow of the apply method
 </p><div class="fullcomment"><div class="comment cmt"><p>Shadow of the apply method
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.AnyVarTrait" class="extype" href="">AnyVarTrait</a> → <a name="net.liftweb.util.Settable" class="extype" href="Settable.html">Settable</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#setIsUnset" data-isabs="false">
-      <a id="setIsUnset(⇒ T):T"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → <a href="Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#setIsUnset" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setIsUnset(value:=&gt;T):T"></a>
+      <a id="setIsUnset(⇒T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setIsUnset</span><span class="params">(<span name="value">value: ⇒ T</span>)</span><span class="result">: T</span>
+        <span class="name">setIsUnset</span><span class="params">(<span name="value">value: ⇒ <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Set the Var if it has not been calculated
 </p>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#set_?" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#set_?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="set_?:Boolean"></a>
       <a id="set_?:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -577,12 +644,13 @@ synchronizes the instance, but it could use other mechanisms
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: set_$qmark">set_?</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: set_$qmark" class="name">set_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Has this Var been set or accessed and had its default value calculated
 </p>
-    </li><li visbl="prt" name="net.liftweb.util.AnyVarTrait#settingDefault_?" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#settingDefault_?" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="settingDefault_?:Boolean"></a>
       <a id="settingDefault_?:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -590,23 +658,25 @@ synchronizes the instance, but it could use other mechanisms
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: settingDefault_$qmark">settingDefault_?</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: settingDefault_$qmark" class="name">settingDefault_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#toString" data-isabs="false">
+    </li><li name="net.liftweb.util.AnyVarTrait#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -614,19 +684,20 @@ synchronizes the instance, but it could use other mechanisms
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.AnyVarTrait" class="extype" href="">AnyVarTrait</a> → AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.util.AnyVarTrait#update" data-isabs="false">
-      <a id="update((T) ⇒ T):T"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(f:T=&gt;T):T"></a>
+      <a id="update((T)⇒T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">update</span><span class="params">(<span name="f">f: (T) ⇒ T</span>)</span><span class="result">: T</span>
+        <span class="name">update</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>) ⇒ <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Applies the given function to the contents of this
@@ -634,7 +705,8 @@ variable and sets the variable to the resulting value.</p><div class="fullcommen
 variable and sets the variable to the resulting value.
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>-- the function to apply and set the result from.
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -642,14 +714,15 @@ variable and sets the variable to the resulting value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -657,14 +730,15 @@ variable and sets the variable to the resulting value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -672,7 +746,7 @@ variable and sets the variable to the resulting value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -683,25 +757,35 @@ variable and sets the variable to the resulting value.
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.util.HasCalcDefaultValue" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.HasCalcDefaultValue" class="extype" href="HasCalcDefaultValue.html">HasCalcDefaultValue</a>[T]</h3>
-            </div><div name="net.liftweb.util.PSettableValueHolder" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.PSettableValueHolder" class="extype" href="PSettableValueHolder.html">PSettableValueHolder</a>[T]</h3>
-            </div><div name="net.liftweb.util.SettableValueHolder" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.SettableValueHolder" class="extype" href="SettableValueHolder.html">SettableValueHolder</a></h3>
-            </div><div name="net.liftweb.util.Settable" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.Settable" class="extype" href="Settable.html">Settable</a></h3>
-            </div><div name="net.liftweb.util.PValueHolder" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.PValueHolder" class="extype" href="PValueHolder.html">PValueHolder</a>[T]</h3>
-            </div><div name="net.liftweb.util.ValueHolder" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.ValueHolder" class="extype" href="ValueHolder.html">ValueHolder</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.util.HasCalcDefaultValue">
+              <h3>Inherited from <a href="HasCalcDefaultValue.html" class="extype" name="net.liftweb.util.HasCalcDefaultValue">HasCalcDefaultValue</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.util.PSettableValueHolder">
+              <h3>Inherited from <a href="PSettableValueHolder.html" class="extype" name="net.liftweb.util.PSettableValueHolder">PSettableValueHolder</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.util.SettableValueHolder">
+              <h3>Inherited from <a href="SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Settable">
+              <h3>Inherited from <a href="Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.PValueHolder">
+              <h3>Inherited from <a href="PValueHolder.html" class="extype" name="net.liftweb.util.PValueHolder">PValueHolder</a>[<span class="extype" name="net.liftweb.util.AnyVarTrait.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.util.ValueHolder">
+              <h3>Inherited from <a href="ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

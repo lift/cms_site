@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.http.testing</title>
+          <title>testing - Lift Framework 2.6-M3 - net.liftweb.http.testing</title>
+          <meta name="description" content="testing - Lift Framework 2.6 - M3 - net.liftweb.http.testing" />
+          <meta name="keywords" content="testing Lift Framework 2.6 M3 net.liftweb.http.testing" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.http.testing.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../../package.html">liftweb</a>.<a name="net.liftweb.http" class="extype" href="../package.html">http</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a></p>
         <h1>testing</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.http.testing.BaseGetPoster" data-isabs="true">
+              <ol><li name="net.liftweb.http.testing.BaseGetPoster" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BaseGetPosterextendsObject"></a>
       <a id="BaseGetPoster:BaseGetPoster"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,12 +72,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="BaseGetPoster.html"><span class="name">BaseGetPoster</span></a><span class="result"> extends AnyRef</span>
+        <a href="BaseGetPoster.html"><span class="name">BaseGetPoster</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A trait that wraps the Apache Commons HTTP client and supports GET and POST
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.BaseResponse" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.BaseResponse" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BaseResponseextendsResponsewithBaseGetPosterwithGetPosterHelper"></a>
       <a id="BaseResponse:BaseResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -69,11 +86,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="BaseResponse.html"><span class="name">BaseResponse</span></a><span class="result"> extends Response with BaseGetPoster with GetPosterHelper</span>
+        <a href="BaseResponse.html"><span class="name">BaseResponse</span></a><span class="result"> extends <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a> with <a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a> with <a href="GetPosterHelper.html" class="extype" name="net.liftweb.http.testing.GetPosterHelper">GetPosterHelper</a></span>
       </span>
       </h4>
       <p class="comment cmt">The response to an HTTP request, as long as the server responds with *SOMETHING*</p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.ClientBuilder" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.ClientBuilder" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ClientBuilderextendsObject"></a>
       <a id="ClientBuilder:ClientBuilder"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -81,11 +99,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ClientBuilder.html"><span class="name">ClientBuilder</span></a><span class="result"> extends AnyRef</span>
+        <a href="ClientBuilder.html"><span class="name">ClientBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.CompleteFailure" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.CompleteFailure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CompleteFailureextendsTestResponse"></a>
       <a id="CompleteFailure:CompleteFailure"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -93,11 +112,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="CompleteFailure.html"><span class="name">CompleteFailure</span></a><span class="result"> extends TestResponse</span>
+        <a href="CompleteFailure.html"><span class="name">CompleteFailure</span></a><span class="result"> extends <a href="TestResponse.html" class="extype" name="net.liftweb.http.testing.TestResponse">TestResponse</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.GetPoster" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.GetPoster" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GetPosterextendsBaseGetPosterwithToResponse"></a>
       <a id="GetPoster:GetPoster"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -105,11 +125,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="GetPoster.html"><span class="name">GetPoster</span></a><span class="result"> extends BaseGetPoster with ToResponse</span>
+        <a href="GetPoster.html"><span class="name">GetPoster</span></a><span class="result"> extends <a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a> with <a href="ToResponse.html" class="extype" name="net.liftweb.http.testing.ToResponse">ToResponse</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.GetPosterHelper" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.GetPosterHelper" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GetPosterHelperextendsObject"></a>
       <a id="GetPosterHelper:GetPosterHelper"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -117,11 +138,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="GetPosterHelper.html"><span class="name">GetPosterHelper</span></a><span class="result"> extends AnyRef</span>
+        <a href="GetPosterHelper.html"><span class="name">GetPosterHelper</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.HttpResponse" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.HttpResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HttpResponseextendsBaseResponsewithToResponsewithTestResponse"></a>
       <a id="HttpResponse:HttpResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -129,11 +151,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="HttpResponse.html"><span class="name">HttpResponse</span></a><span class="result"> extends BaseResponse with ToResponse with TestResponse</span>
+        <a href="HttpResponse.html"><span class="name">HttpResponse</span></a><span class="result"> extends <a href="BaseResponse.html" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> with <a href="ToResponse.html" class="extype" name="net.liftweb.http.testing.ToResponse">ToResponse</a> with <a href="TestResponse.html" class="extype" name="net.liftweb.http.testing.TestResponse">TestResponse</a></span>
       </span>
       </h4>
       <p class="comment cmt">The response to an HTTP request, as long as the server responds with *SOMETHING*</p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.Item" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.Item" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ItemextendsObject"></a>
       <a id="Item:Item"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -141,11 +164,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Item.html"><span class="name">Item</span></a><span class="result"> extends AnyRef</span>
+        <a href="Item.html"><span class="name">Item</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.ReportFailure" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.ReportFailure" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ReportFailureextendsObject"></a>
       <a id="ReportFailure:ReportFailure"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -153,12 +177,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ReportFailure.html"><span class="name">ReportFailure</span></a><span class="result"> extends AnyRef</span>
+        <a href="ReportFailure.html"><span class="name">ReportFailure</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A trait for reporting failures
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.RequestKit" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.RequestKit" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RequestKitextendsClientBuilderwithBaseGetPosterwithGetPosterHelperwithToBoxTheResponse"></a>
       <a id="RequestKit:RequestKit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -166,12 +191,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="RequestKit.html"><span class="name">RequestKit</span></a><span class="result"> extends ClientBuilder with BaseGetPoster with GetPosterHelper with ToBoxTheResponse</span>
+        <a href="RequestKit.html"><span class="name">RequestKit</span></a><span class="result"> extends <a href="ClientBuilder.html" class="extype" name="net.liftweb.http.testing.ClientBuilder">ClientBuilder</a> with <a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a> with <a href="GetPosterHelper.html" class="extype" name="net.liftweb.http.testing.GetPosterHelper">GetPosterHelper</a> with <a href="ToBoxTheResponse.html" class="extype" name="net.liftweb.http.testing.ToBoxTheResponse">ToBoxTheResponse</a></span>
       </span>
       </h4>
       <p class="comment cmt">Mix this trait into your test so you can make HTTP requests on a target
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.Response" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.Response" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ResponseextendsObject"></a>
       <a id="Response:Response"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -179,11 +205,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Response.html"><span class="name">Response</span></a><span class="result"> extends AnyRef</span>
+        <a href="Response.html"><span class="name">Response</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A response returned from an HTTP request.</p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.TestFailureError" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.TestFailureError" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestFailureErrorextendsError"></a>
       <a id="TestFailureError:TestFailureError"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -191,11 +218,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="TestFailureError.html"><span class="name">TestFailureError</span></a><span class="result"> extends Error</span>
+        <a href="TestFailureError.html"><span class="name">TestFailureError</span></a><span class="result"> extends <span class="extype" name="java.lang.Error">java.lang.Error</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.TestFramework" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.TestFramework" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TestFrameworkextendsTestKit"></a>
       <a id="TestFramework:TestFramework"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -203,12 +231,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TestFramework.html"><span class="name">TestFramework</span></a><span class="result"> extends TestKit</span>
+        <a href="TestFramework.html"><span class="name">TestFramework</span></a><span class="result"> extends <a href="TestKit.html" class="extype" name="net.liftweb.http.testing.TestKit">TestKit</a></span>
       </span>
       </h4>
       <p class="comment cmt">A legacy test framework
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.TestKit" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.TestKit" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TestKitextendsClientBuilderwithGetPosterwithGetPosterHelper"></a>
       <a id="TestKit:TestKit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -216,12 +245,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TestKit.html"><span class="name">TestKit</span></a><span class="result"> extends ClientBuilder with GetPoster with GetPosterHelper</span>
+        <a href="TestKit.html"><span class="name">TestKit</span></a><span class="result"> extends <a href="ClientBuilder.html" class="extype" name="net.liftweb.http.testing.ClientBuilder">ClientBuilder</a> with <a href="GetPoster.html" class="extype" name="net.liftweb.http.testing.GetPoster">GetPoster</a> with <a href="GetPosterHelper.html" class="extype" name="net.liftweb.http.testing.GetPosterHelper">GetPosterHelper</a></span>
       </span>
       </h4>
       <p class="comment cmt">Mix this trait into your test so you can make HTTP requests on a target
 </p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.TestResponse" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.TestResponse" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TestResponseextendsResponse"></a>
       <a id="TestResponse:TestResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -229,11 +259,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TestResponse.html"><span class="name">TestResponse</span></a><span class="result"> extends Response</span>
+        <a href="TestResponse.html"><span class="name">TestResponse</span></a><span class="result"> extends <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.TestResults" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.TestResults" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestResultsextendsProductwithSerializable"></a>
       <a id="TestResults:TestResults"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -241,11 +272,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="TestResults.html"><span class="name">TestResults</span></a><span class="params">(<span name="res">res: List[Tracker]</span>)</span><span class="result"> extends Product with Serializable</span>
+        <a href="TestResults.html"><span class="name">TestResults</span></a><span class="params">(<span name="res">res: <span class="extype" name="scala.List">List</span>[<a href="Tracker.html" class="extype" name="net.liftweb.http.testing.Tracker">Tracker</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.TestRunner" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.TestRunner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestRunnerextendsObject"></a>
       <a id="TestRunner:TestRunner"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -253,11 +285,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="TestRunner.html"><span class="name">TestRunner</span></a><span class="result"> extends AnyRef</span>
+        <a href="TestRunner.html"><span class="name">TestRunner</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.TheResponse" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.TheResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TheResponseextendsBaseResponsewithToBoxTheResponse"></a>
       <a id="TheResponse:TheResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -265,11 +298,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="TheResponse.html"><span class="name">TheResponse</span></a><span class="result"> extends BaseResponse with ToBoxTheResponse</span>
+        <a href="TheResponse.html"><span class="name">TheResponse</span></a><span class="result"> extends <a href="BaseResponse.html" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> with <a href="ToBoxTheResponse.html" class="extype" name="net.liftweb.http.testing.ToBoxTheResponse">ToBoxTheResponse</a></span>
       </span>
       </h4>
       <p class="comment cmt">The response to an HTTP request, as long as the server responds with *SOMETHING*</p>
-    </li><li visbl="pub" name="net.liftweb.http.testing.ToBoxTheResponse" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.ToBoxTheResponse" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ToBoxTheResponseextendsObject"></a>
       <a id="ToBoxTheResponse:ToBoxTheResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -277,11 +311,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ToBoxTheResponse.html"><span class="name">ToBoxTheResponse</span></a><span class="result"> extends AnyRef</span>
+        <a href="ToBoxTheResponse.html"><span class="name">ToBoxTheResponse</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.ToResponse" data-isabs="true">
+    </li><li name="net.liftweb.http.testing.ToResponse" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ToResponseextendsObject"></a>
       <a id="ToResponse:ToResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -289,11 +324,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ToResponse.html"><span class="name">ToResponse</span></a><span class="result"> extends AnyRef</span>
+        <a href="ToResponse.html"><span class="name">ToResponse</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.Tracker" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.Tracker" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TrackerextendsProductwithSerializable"></a>
       <a id="Tracker:Tracker"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -301,7 +337,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Tracker.html"><span class="name">Tracker</span></a><span class="params">(<span name="name">name: String</span>, <span name="isAssert">isAssert: Boolean</span>, <span name="isBegin">isBegin: Boolean</span>, <span name="success">success: Boolean</span>, <span name="exception">exception: Box[Throwable]</span>, <span name="trace">trace: List[StackTraceElement]</span>)</span><span class="result"> extends Product with Serializable</span>
+        <a href="Tracker.html"><span class="name">Tracker</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="isAssert">isAssert: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="isBegin">isBegin: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="success">success: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="exception">exception: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Throwable">Throwable</span>]</span>, <span name="trace">trace: <span class="extype" name="scala.List">List</span>[<span class="extype" name="java.lang.StackTraceElement">StackTraceElement</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -310,9 +346,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.http.testing.Item" data-isabs="false">
+              <ol><li name="net.liftweb.http.testing.Item" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Item"></a>
       <a id="Item:Item"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -320,11 +357,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Item$.html"><span class="name">Item</span></a><span class="result"> extends AnyRef</span>
+        <a href="Item$.html"><span class="name">Item</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.http.testing.TestHelpers" data-isabs="false">
+    </li><li name="net.liftweb.http.testing.TestHelpers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TestHelpers"></a>
       <a id="TestHelpers:TestHelpers"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -332,7 +370,7 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="TestHelpers$.html"><span class="name">TestHelpers</span></a><span class="result"> extends AnyRef</span>
+        <a href="TestHelpers$.html"><span class="name">TestHelpers</span></a>
       </span>
       </h4>
       
@@ -340,10 +378,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

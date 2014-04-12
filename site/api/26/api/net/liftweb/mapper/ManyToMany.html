@@ -2,51 +2,78 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mapper.ManyToMany</title>
+          <title>ManyToMany - Lift Framework 2.6-M3 - net.liftweb.mapper.ManyToMany</title>
+          <meta name="description" content="ManyToMany - Lift Framework 2.6 - M3 - net.liftweb.mapper.ManyToMany" />
+          <meta name="keywords" content="ManyToMany Lift Framework 2.6 M3 net.liftweb.mapper.ManyToMany" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.mapper.ManyToMany';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.mapper" class="extype" href="package.html">mapper</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.mapper">mapper</a></p>
         <h1>ManyToMany</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">ManyToMany</span><span class="result"> extends <a name="net.liftweb.mapper.BaseKeyedMapper" class="extype" href="BaseKeyedMapper.html">BaseKeyedMapper</a></span>
+        <span class="name">ManyToMany</span><span class="result"> extends <a href="BaseKeyedMapper.html" class="extype" name="net.liftweb.mapper.BaseKeyedMapper">BaseKeyedMapper</a></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>Add this trait to a Mapper to add support for many-to-many relationships</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a name="net.liftweb.mapper.ManyToMany" class="extype" href="">ManyToMany</a> with net.liftweb.mapper.KeyedMapper[_, _]</dd></dl><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Add this trait to a Mapper to add support for many-to-many relationships</p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a> with <a href="KeyedMapper.html" class="extype" name="net.liftweb.mapper.KeyedMapper">KeyedMapper</a>[_, _]</dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a name="net.liftweb.mapper.BaseKeyedMapper" class="extype" href="BaseKeyedMapper.html">BaseKeyedMapper</a>, <a name="net.liftweb.mapper.BaseMapper" class="extype" href="BaseMapper.html">BaseMapper</a>, <a name="net.liftweb.util.FieldContainer" class="extype" href="../util/FieldContainer.html">FieldContainer</a>, AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="BaseKeyedMapper.html" class="extype" name="net.liftweb.mapper.BaseKeyedMapper">BaseKeyedMapper</a>, <a href="BaseMapper.html" class="extype" name="net.liftweb.mapper.BaseMapper">BaseMapper</a>, <a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.mapper.ManyToMany" class="in"><span>ManyToMany</span></li><li name="net.liftweb.mapper.BaseKeyedMapper" class="in"><span>BaseKeyedMapper</span></li><li name="net.liftweb.mapper.BaseMapper" class="in"><span>BaseMapper</span></li><li name="net.liftweb.util.FieldContainer" class="in"><span>FieldContainer</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.mapper.ManyToMany"><span>ManyToMany</span></li><li class="in" name="net.liftweb.mapper.BaseKeyedMapper"><span>BaseKeyedMapper</span></li><li class="in" name="net.liftweb.mapper.BaseMapper"><span>BaseMapper</span></li><li class="in" name="net.liftweb.util.FieldContainer"><span>FieldContainer</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -57,70 +84,76 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mapper.ManyToMany#K" data-isabs="false">
-      <a id="K:K"></a>
+              <ol><li name="net.liftweb.mapper.ManyToMany.K" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="K=ManyToMany.this.TheKeyType"></a>
+      <a id="K:(ManyToMany.this)#K"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">K</span><span class="result"> = <span name="scala.Any" class="extype">Any</span></span>
+        <span class="name">K</span><span class="result"> = <span class="extype" name="net.liftweb.mapper.ManyToMany._$1">_$1</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mapper.BaseKeyedMapper#KeyedMapperType" data-isabs="true">
-      <a id="KeyedMapperType:KeyedMapperType"></a>
+    </li><li name="net.liftweb.mapper.BaseKeyedMapper.KeyedMapperType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="KeyedMapperType&lt;:net.liftweb.mapper.KeyedMapper[BaseKeyedMapper.this.TheKeyType,BaseKeyedMapper.this.KeyedMapperType]"></a>
+      <a id="KeyedMapperType:(ManyToMany.this)#KeyedMapperType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">KeyedMapperType</span><span class="result"> &lt;: <a name="net.liftweb.mapper.KeyedMapper" class="extype" href="KeyedMapper.html">KeyedMapper</a>[TheKeyType, KeyedMapperType]</span>
+        <span class="name">KeyedMapperType</span><span class="result"> &lt;: <a href="KeyedMapper.html" class="extype" name="net.liftweb.mapper.KeyedMapper">KeyedMapper</a>[(<a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a>.this)#<span class="extype" name="net.liftweb.mapper.KeyedMapper.TheKeyType">TheKeyType</span>, (<a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a>.this)#<span class="extype" name="net.liftweb.mapper.KeyedMapper.KeyedMapperType">KeyedMapperType</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.BaseKeyedMapper" class="extype" href="BaseKeyedMapper.html">BaseKeyedMapper</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.ManyToMany.MappedManyToMany" data-isabs="false">
-      <a id="MappedManyToMany:MappedManyToMany[O, K2, T2]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseKeyedMapper.html" class="extype" name="net.liftweb.mapper.BaseKeyedMapper">BaseKeyedMapper</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.ManyToMany.MappedManyToMany" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MappedManyToMany[O&lt;:net.liftweb.mapper.Mapper[O],K2,T2&lt;:net.liftweb.mapper.KeyedMapper[K2,T2]]extendsBuffer[T2]"></a>
+      <a id="MappedManyToMany[O&lt;:Mapper[O],K2,T2&lt;:KeyedMapper[K2,T2]]:(ManyToMany.this)#MappedManyToMany[O,K2,T2]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ManyToMany$MappedManyToMany.html"><span class="name">MappedManyToMany</span></a><span class="tparams">[<span name="O">O &lt;: Mapper[O]</span>, <span name="K2">K2</span>, <span name="T2">T2 &lt;: KeyedMapper[K2, T2]</span>]</span><span class="result"> extends Buffer[T2]</span>
+        <a href="ManyToMany$MappedManyToMany.html"><span class="name">MappedManyToMany</span></a><span class="tparams">[<span name="O">O &lt;: <a href="Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.ManyToMany.MappedManyToMany.O">O</span>]</span>, <span name="K2">K2</span>, <span name="T2">T2 &lt;: <a href="KeyedMapper.html" class="extype" name="net.liftweb.mapper.KeyedMapper">KeyedMapper</a>[<span class="extype" name="net.liftweb.mapper.ManyToMany.MappedManyToMany.K2">K2</span>, <span class="extype" name="net.liftweb.mapper.ManyToMany.MappedManyToMany.T2">T2</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.collection.mutable.Buffer">Buffer</span>[<span class="extype" name="net.liftweb.mapper.ManyToMany.MappedManyToMany.T2">T2</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">This is the base class to extend for fields that track many-to-many relationships.</p>
-    </li><li visbl="pub" name="net.liftweb.mapper.BaseMapper#MapperType" data-isabs="true">
-      <a id="MapperType:MapperType"></a>
+    </li><li name="net.liftweb.mapper.BaseMapper.MapperType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MapperType&lt;:net.liftweb.mapper.Mapper[BaseMapper.this.MapperType]"></a>
+      <a id="MapperType:(ManyToMany.this)#MapperType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">MapperType</span><span class="result"> &lt;: <a name="net.liftweb.mapper.Mapper" class="extype" href="Mapper.html">Mapper</a>[MapperType]</span>
+        <span class="name">MapperType</span><span class="result"> &lt;: <a href="Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[(<a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a>.this)#<span class="extype" name="net.liftweb.mapper.Mapper.MapperType">MapperType</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.BaseMapper" class="extype" href="BaseMapper.html">BaseMapper</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.ManyToMany#T" data-isabs="false">
-      <a id="T:T"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMapper.html" class="extype" name="net.liftweb.mapper.BaseMapper">BaseMapper</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.ManyToMany.T" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="T=ManyToMany.this.KeyedMapperType"></a>
+      <a id="T:(ManyToMany.this)#T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">T</span><span class="result"> = <span name="scala.Any" class="extype">Any</span></span>
+        <span class="name">T</span><span class="result"> = <span class="extype" name="net.liftweb.mapper.ManyToMany._$2">_$2</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mapper.BaseKeyedMapper#TheKeyType" data-isabs="true">
-      <a id="TheKeyType:TheKeyType"></a>
+    </li><li name="net.liftweb.mapper.BaseKeyedMapper.TheKeyType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TheKeyType"></a>
+      <a id="TheKeyType:(ManyToMany.this)#TheKeyType"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
@@ -130,13 +163,14 @@
         <span class="name">TheKeyType</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.BaseKeyedMapper" class="extype" href="BaseKeyedMapper.html">BaseKeyedMapper</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseKeyedMapper.html" class="extype" name="net.liftweb.mapper.BaseKeyedMapper">BaseKeyedMapper</a></dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.util.FieldContainer#allFields" data-isabs="true">
+              <ol><li name="net.liftweb.util.FieldContainer#allFields" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="allFields:Seq[net.liftweb.util.BaseField]"></a>
       <a id="allFields:Seq[BaseField]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -144,11 +178,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">allFields</span><span class="result">: Seq[<a name="net.liftweb.util.BaseField" class="extype" href="../util/BaseField.html">BaseField</a>]</span>
+        <span class="name">allFields</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.util.FieldContainer" class="extype" href="../util/FieldContainer.html">FieldContainer</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.BaseMapper#dbName" data-isabs="true">
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMapper#dbName" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbName:String"></a>
       <a id="dbName:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -156,28 +191,30 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dbName</span><span class="result">: String</span>
+        <span class="name">dbName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.BaseMapper" class="extype" href="BaseMapper.html">BaseMapper</a></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.BaseKeyedMapper#primaryKeyField" data-isabs="true">
-      <a id="primaryKeyField:MappedField[TheKeyType, MapperType] with IndexedField[TheKeyType]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMapper.html" class="extype" name="net.liftweb.mapper.BaseMapper">BaseMapper</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseKeyedMapper#primaryKeyField" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="primaryKeyField:net.liftweb.mapper.MappedField[BaseKeyedMapper.this.TheKeyType,BaseKeyedMapper.this.MapperType]withnet.liftweb.mapper.IndexedField[BaseKeyedMapper.this.TheKeyType]"></a>
+      <a id="primaryKeyField:MappedField[(ManyToMany.this)#TheKeyType,(ManyToMany.this)#MapperType]withIndexedField[(ManyToMany.this)#TheKeyType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">primaryKeyField</span><span class="result">: <a name="net.liftweb.mapper.MappedField" class="extype" href="MappedField.html">MappedField</a>[TheKeyType, MapperType] with <a name="net.liftweb.mapper.IndexedField" class="extype" href="IndexedField.html">IndexedField</a>[TheKeyType]</span>
+        <span class="name">primaryKeyField</span><span class="result">: <a href="MappedField.html" class="extype" name="net.liftweb.mapper.MappedField">MappedField</a>[(<a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a>.this)#<span class="extype" name="net.liftweb.mapper.KeyedMapper.TheKeyType">TheKeyType</span>, (<a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a>.this)#<span class="extype" name="net.liftweb.mapper.Mapper.MapperType">MapperType</span>] with <a href="IndexedField.html" class="extype" name="net.liftweb.mapper.IndexedField">IndexedField</a>[(<a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a>.this)#<span class="extype" name="net.liftweb.mapper.KeyedMapper.TheKeyType">TheKeyType</span>]</span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.BaseKeyedMapper" class="extype" href="BaseKeyedMapper.html">BaseKeyedMapper</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseKeyedMapper.html" class="extype" name="net.liftweb.mapper.BaseKeyedMapper">BaseKeyedMapper</a></dd></dl></div>
     </li></ol>
             </div>
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -185,11 +222,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -197,11 +235,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -209,11 +248,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -221,11 +261,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -233,11 +274,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -245,11 +287,12 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -257,14 +300,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.ManyToMany#delete_!" data-isabs="false">
+    </li><li name="net.liftweb.mapper.ManyToMany#delete_!" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="delete_!:Boolean"></a>
       <a id="delete_!:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -272,7 +316,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: delete_$bang">delete_!</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: delete_$bang" class="name">delete_!</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">An override for delete_! to propogate the deletion to all children
@@ -280,8 +324,9 @@ of this parent.</p><div class="fullcomment"><div class="comment cmt"><p>An overr
 of this parent.
 Returns false as soon as the parent or a one-to-many field returns false.
 If they are all successful returns true.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.ManyToMany" class="extype" href="">ManyToMany</a> → <a name="net.liftweb.mapper.BaseKeyedMapper" class="extype" href="BaseKeyedMapper.html">BaseKeyedMapper</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a> → <a href="BaseKeyedMapper.html" class="extype" name="net.liftweb.mapper.BaseKeyedMapper">BaseKeyedMapper</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -289,11 +334,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -301,11 +347,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -313,26 +360,28 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -340,11 +389,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -352,11 +402,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -364,11 +415,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -376,11 +428,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -388,11 +441,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.mapper.ManyToMany#save" data-isabs="false">
+    </li><li name="net.liftweb.mapper.ManyToMany#save" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="save:Boolean"></a>
       <a id="save:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -400,7 +454,7 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">save</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">save</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">An override for save to propagate the save to all children
@@ -408,20 +462,22 @@ of this parent.</p><div class="fullcomment"><div class="comment cmt"><p>An overr
 of this parent.
 Returns false as soon as the parent or a one-to-many field returns false.
 If they are all successful returns true.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a name="net.liftweb.mapper.ManyToMany" class="extype" href="">ManyToMany</a> → <a name="net.liftweb.mapper.BaseMapper" class="extype" href="BaseMapper.html">BaseMapper</a></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mapper.ManyToMany">ManyToMany</a> → <a href="BaseMapper.html" class="extype" name="net.liftweb.mapper.BaseMapper">BaseMapper</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -429,11 +485,12 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -441,14 +498,15 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -456,14 +514,15 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -471,7 +530,7 @@ If they are all successful returns true.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -482,19 +541,29 @@ If they are all successful returns true.
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
-        <div name="net.liftweb.mapper.BaseKeyedMapper" class="parent">
-              <h3>Inherited from <a name="net.liftweb.mapper.BaseKeyedMapper" class="extype" href="BaseKeyedMapper.html">BaseKeyedMapper</a></h3>
-            </div><div name="net.liftweb.mapper.BaseMapper" class="parent">
-              <h3>Inherited from <a name="net.liftweb.mapper.BaseMapper" class="extype" href="BaseMapper.html">BaseMapper</a></h3>
-            </div><div name="net.liftweb.util.FieldContainer" class="parent">
-              <h3>Inherited from <a name="net.liftweb.util.FieldContainer" class="extype" href="../util/FieldContainer.html">FieldContainer</a></h3>
-            </div><div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="net.liftweb.mapper.BaseKeyedMapper">
+              <h3>Inherited from <a href="BaseKeyedMapper.html" class="extype" name="net.liftweb.mapper.BaseKeyedMapper">BaseKeyedMapper</a></h3>
+            </div><div class="parent" name="net.liftweb.mapper.BaseMapper">
+              <h3>Inherited from <a href="BaseMapper.html" class="extype" name="net.liftweb.mapper.BaseMapper">BaseMapper</a></h3>
+            </div><div class="parent" name="net.liftweb.util.FieldContainer">
+              <h3>Inherited from <a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 

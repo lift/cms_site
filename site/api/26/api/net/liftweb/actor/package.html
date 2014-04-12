@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.actor</title>
+          <title>actor - Lift Framework 2.6-M3 - net.liftweb.actor</title>
+          <meta name="description" content="actor - Lift Framework 2.6 - M3 - net.liftweb.actor" />
+          <meta name="keywords" content="actor Lift Framework 2.6 M3 net.liftweb.actor" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.actor.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
         <h1>actor</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.actor.AbortedFutureException" data-isabs="false">
+              <ol><li name="net.liftweb.actor.AbortedFutureException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AbortedFutureExceptionextendsException"></a>
       <a id="AbortedFutureException:AbortedFutureException"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,12 +72,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="AbortedFutureException.html"><span class="name">AbortedFutureException</span></a><span class="result"> extends Exception</span>
+        <a href="AbortedFutureException.html"><span class="name">AbortedFutureException</span></a><span class="result"> extends <span class="extype" name="java.lang.Exception">Exception</span></span>
       </span>
       </h4>
       <p class="comment cmt">Thrown if an LAFuture is aborted during a get
 </p>
-    </li><li visbl="pub" name="net.liftweb.actor.ILAExecute" data-isabs="true">
+    </li><li name="net.liftweb.actor.ILAExecute" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ILAExecuteextendsObject"></a>
       <a id="ILAExecute:ILAExecute"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -69,11 +86,12 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ILAExecute.html"><span class="name">ILAExecute</span></a><span class="result"> extends AnyRef</span>
+        <a href="ILAExecute.html"><span class="name">ILAExecute</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.JavaActorBase" data-isabs="false">
+    </li><li name="net.liftweb.actor.JavaActorBase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JavaActorBaseextendsObject"></a>
       <a id="JavaActorBase:JavaActorBase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -81,25 +99,27 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="JavaActorBase.html"><span class="name">JavaActorBase</span></a><span class="result"> extends AnyRef</span>
+        <a href="JavaActorBase.html"><span class="name">JavaActorBase</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture" data-isabs="false">
-      <a id="LAFuture:LAFuture[T]"></a>
+    </li><li name="net.liftweb.actor.LAFuture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LAFuture[T]extendsObject"></a>
+      <a id="LAFuture[T]:LAFuture[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LAFuture.html"><span class="name">LAFuture</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="LAFuture.html"><span class="name">LAFuture</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">A container that contains a calculated value
 or may contain one in the future
 </p>
-    </li><li visbl="pub" name="net.liftweb.actor.LAScheduler" data-isabs="true">
+    </li><li name="net.liftweb.actor.LAScheduler" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LASchedulerextendsObject"></a>
       <a id="LAScheduler:LAScheduler"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -107,12 +127,13 @@ or may contain one in the future
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LAScheduler.html"><span class="name">LAScheduler</span></a><span class="result"> extends AnyRef</span>
+        <a href="LAScheduler.html"><span class="name">LAScheduler</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">The definition of a scheduler
 </p>
-    </li><li visbl="pub" name="net.liftweb.actor.LiftActor" data-isabs="true">
+    </li><li name="net.liftweb.actor.LiftActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="LiftActorextendsSpecializedLiftActor[Any]withGenericActor[Any]withForwardableActor[Any,Any]"></a>
       <a id="LiftActor:LiftActor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -120,11 +141,12 @@ or may contain one in the future
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LiftActor.html"><span class="name">LiftActor</span></a><span class="result"> extends SpecializedLiftActor[Any] with GenericActor[Any] with ForwardableActor[Any, Any]</span>
+        <a href="LiftActor.html"><span class="name">LiftActor</span></a><span class="result"> extends <a href="SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a>[<span class="extype" name="scala.Any">Any</span>] with <a href="../common/GenericActor.html" class="extype" name="net.liftweb.common.GenericActor">GenericActor</a>[<span class="extype" name="scala.Any">Any</span>] with <a href="../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.LiftActorJ" data-isabs="false">
+    </li><li name="net.liftweb.actor.LiftActorJ" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LiftActorJextendsJavaActorBasewithLiftActor"></a>
       <a id="LiftActorJ:LiftActorJ"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -132,11 +154,12 @@ or may contain one in the future
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="LiftActorJ.html"><span class="name">LiftActorJ</span></a><span class="result"> extends JavaActorBase with LiftActor</span>
+        <a href="LiftActorJ.html"><span class="name">LiftActorJ</span></a><span class="result"> extends <a href="JavaActorBase.html" class="extype" name="net.liftweb.actor.JavaActorBase">JavaActorBase</a> with <a href="LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a></span>
       </span>
       </h4>
       <p class="comment cmt">Java versions of Actors should subclass this method.</p>
-    </li><li visbl="pub" name="net.liftweb.actor.MockLiftActor" data-isabs="false">
+    </li><li name="net.liftweb.actor.MockLiftActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MockLiftActorextendsMockSpecializedLiftActor[Any]withLiftActor"></a>
       <a id="MockLiftActor:MockLiftActor"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -144,23 +167,25 @@ or may contain one in the future
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MockLiftActor.html"><span class="name">MockLiftActor</span></a><span class="result"> extends MockSpecializedLiftActor[Any] with LiftActor</span>
+        <a href="MockLiftActor.html"><span class="name">MockLiftActor</span></a><span class="result"> extends <a href="MockSpecializedLiftActor.html" class="extype" name="net.liftweb.actor.MockSpecializedLiftActor">MockSpecializedLiftActor</a>[<span class="extype" name="scala.Any">Any</span>] with <a href="LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a></span>
       </span>
       </h4>
       <p class="comment cmt">A MockLiftActor for use in testing other compnents that talk to actors.</p>
-    </li><li visbl="pub" name="net.liftweb.actor.MockSpecializedLiftActor" data-isabs="false">
-      <a id="MockSpecializedLiftActor:MockSpecializedLiftActor[T]"></a>
+    </li><li name="net.liftweb.actor.MockSpecializedLiftActor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MockSpecializedLiftActor[T]extendsSpecializedLiftActor[T]"></a>
+      <a id="MockSpecializedLiftActor[T]:MockSpecializedLiftActor[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MockSpecializedLiftActor.html"><span class="name">MockSpecializedLiftActor</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends SpecializedLiftActor[T]</span>
+        <a href="MockSpecializedLiftActor.html"><span class="name">MockSpecializedLiftActor</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a>[<span class="extype" name="net.liftweb.actor.MockSpecializedLiftActor.T">T</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">A SpecializedLiftActor designed for use in unit testing of other components.</p>
-    </li><li visbl="pub" name="net.liftweb.actor.PingerException" data-isabs="false">
+    </li><li name="net.liftweb.actor.PingerException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PingerExceptionextendsRuntimeExceptionwithProductwithSerializable"></a>
       <a id="PingerException:PingerException"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -168,19 +193,20 @@ or may contain one in the future
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="PingerException.html"><span class="name">PingerException</span></a><span class="params">(<span name="msg">msg: String</span>, <span name="e">e: Throwable</span>)</span><span class="result"> extends RuntimeException with Product with Serializable</span>
+        <a href="PingerException.html"><span class="name">PingerException</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="e">e: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result"> extends <span class="extype" name="java.lang.RuntimeException">RuntimeException</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <p class="comment cmt">Exception thrown if a ping can't be scheduled.</p>
-    </li><li visbl="pub" name="net.liftweb.actor.SpecializedLiftActor" data-isabs="true">
-      <a id="SpecializedLiftActor:SpecializedLiftActor[T]"></a>
+    </li><li name="net.liftweb.actor.SpecializedLiftActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SpecializedLiftActor[T]extendsSimpleActor[T]"></a>
+      <a id="SpecializedLiftActor[T]:SpecializedLiftActor[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="SpecializedLiftActor.html"><span class="name">SpecializedLiftActor</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends SimpleActor[T]</span>
+        <a href="SpecializedLiftActor.html"><span class="name">SpecializedLiftActor</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<span class="extype" name="net.liftweb.actor.SpecializedLiftActor.T">T</span>]</span>
       </span>
       </h4>
       
@@ -189,9 +215,10 @@ or may contain one in the future
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.actor.ActorLogger" data-isabs="false">
+              <ol><li name="net.liftweb.actor.ActorLogger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ActorLogger"></a>
       <a id="ActorLogger:ActorLogger"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -199,23 +226,12 @@ or may contain one in the future
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="ActorLogger$.html"><span class="name">ActorLogger</span></a><span class="result"> extends Logger</span>
+        <a href="ActorLogger$.html"><span class="name">ActorLogger</span></a><span class="result"> extends <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.JavaActorBase" data-isabs="false">
-      <a id="JavaActorBase:JavaActorBase"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="JavaActorBase$.html"><span class="name">JavaActorBase</span></a><span class="result"> extends </span>
-      </span>
-      </h4>
-      
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LAFuture"></a>
       <a id="LAFuture:LAFuture"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -223,11 +239,12 @@ or may contain one in the future
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LAFuture$.html"><span class="name">LAFuture</span></a><span class="result"> extends AnyRef</span>
+        <a href="LAFuture$.html"><span class="name">LAFuture</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.LAPinger" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAPinger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LAPinger"></a>
       <a id="LAPinger:LAPinger"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -235,11 +252,12 @@ or may contain one in the future
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LAPinger$.html"><span class="name">LAPinger</span></a><span class="result"> extends AnyRef</span>
+        <a href="LAPinger$.html"><span class="name">LAPinger</span></a>
       </span>
       </h4>
       <p class="comment cmt">The ActorPing object schedules an actor to be ping-ed with a given message at specific intervals.</p>
-    </li><li visbl="pub" name="net.liftweb.actor.LAScheduler" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAScheduler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LAScheduler"></a>
       <a id="LAScheduler:LAScheduler"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -247,11 +265,12 @@ or may contain one in the future
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LAScheduler$.html"><span class="name">LAScheduler</span></a><span class="result"> extends LAScheduler with Loggable</span>
+        <a href="LAScheduler$.html"><span class="name">LAScheduler</span></a><span class="result"> extends <a href="LAScheduler.html" class="extype" name="net.liftweb.actor.LAScheduler">LAScheduler</a> with <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.LiftActorJ" data-isabs="false">
+    </li><li name="net.liftweb.actor.LiftActorJ" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LiftActorJ"></a>
       <a id="LiftActorJ:LiftActorJ"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -259,11 +278,12 @@ or may contain one in the future
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="LiftActorJ$.html"><span class="name">LiftActorJ</span></a><span class="result"> extends AnyRef</span>
+        <a href="LiftActorJ$.html"><span class="name">LiftActorJ</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.ThreadPoolRules" data-isabs="false">
+    </li><li name="net.liftweb.actor.ThreadPoolRules" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ThreadPoolRules"></a>
       <a id="ThreadPoolRules:ThreadPoolRules"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -271,7 +291,7 @@ or may contain one in the future
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="ThreadPoolRules$.html"><span class="name">ThreadPoolRules</span></a><span class="result"> extends AnyRef</span>
+        <a href="ThreadPoolRules$.html"><span class="name">ThreadPoolRules</span></a>
       </span>
       </h4>
       <p class="comment cmt">Rules for dealing with thread pools, both in lift-actor and
@@ -281,10 +301,20 @@ in lift-util
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

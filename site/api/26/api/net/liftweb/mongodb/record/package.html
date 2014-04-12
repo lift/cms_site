@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mongodb.record</title>
+          <title>record - Lift Framework 2.6-M3 - net.liftweb.mongodb.record</title>
+          <meta name="description" content="record - Lift Framework 2.6 - M3 - net.liftweb.mongodb.record" />
+          <meta name="keywords" content="record Lift Framework 2.6 M3 net.liftweb.mongodb.record" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../../lib/template.css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.mongodb.record.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../../package.html">liftweb</a>.<a name="net.liftweb.mongodb" class="extype" href="../package.html">mongodb</a></p>
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.mongodb">mongodb</a></p>
         <h1>record</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,65 +61,70 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mongodb.record.BsonMetaRecord" data-isabs="true">
-      <a id="BsonMetaRecord:BsonMetaRecord[BaseRecord]"></a>
+              <ol><li name="net.liftweb.mongodb.record.BsonMetaRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BsonMetaRecord[BaseRecord&lt;:net.liftweb.mongodb.record.BsonRecord[BaseRecord]]extendsMetaRecord[BaseRecord]withJsonFormats"></a>
+      <a id="BsonMetaRecord[BaseRecord&lt;:BsonRecord[BaseRecord]]:BsonMetaRecord[BaseRecord]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="BsonMetaRecord.html"><span class="name">BsonMetaRecord</span></a><span class="tparams">[<span name="BaseRecord">BaseRecord &lt;: BsonRecord[BaseRecord]</span>]</span><span class="result"> extends MetaRecord[BaseRecord] with JsonFormats</span>
+        <a href="BsonMetaRecord.html"><span class="name">BsonMetaRecord</span></a><span class="tparams">[<span name="BaseRecord">BaseRecord &lt;: <a href="BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonMetaRecord.BaseRecord">BaseRecord</span>]</span>]</span><span class="result"> extends <a href="../../record/MetaRecord.html" class="extype" name="net.liftweb.record.MetaRecord">MetaRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonMetaRecord.BaseRecord">BaseRecord</span>] with <a href="../JsonFormats.html" class="extype" name="net.liftweb.mongodb.JsonFormats">JsonFormats</a></span>
       </span>
       </h4>
       <p class="comment cmt">Specialized MetaRecord that deals with BsonRecords</p>
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.BsonRecord" data-isabs="true">
-      <a id="BsonRecord:BsonRecord[MyType]"></a>
+    </li><li name="net.liftweb.mongodb.record.BsonRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="BsonRecord[MyType&lt;:net.liftweb.mongodb.record.BsonRecord[MyType]]extendsRecord[MyType]"></a>
+      <a id="BsonRecord[MyType&lt;:BsonRecord[MyType]]:BsonRecord[MyType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="BsonRecord.html"><span class="name">BsonRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: BsonRecord[MyType]</span>]</span><span class="result"> extends Record[MyType]</span>
+        <a href="BsonRecord.html"><span class="name">BsonRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: <a href="BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonRecord.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="../../record/Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonRecord.MyType">MyType</span>]</span>
       </span>
       </h4>
       <p class="comment cmt">Specialized Record that can be encoded and decoded from BSON (DBObject)</p>
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.MongoMetaRecord" data-isabs="true">
-      <a id="MongoMetaRecord:MongoMetaRecord[BaseRecord]"></a>
+    </li><li name="net.liftweb.mongodb.record.MongoMetaRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoMetaRecord[BaseRecord&lt;:net.liftweb.mongodb.record.MongoRecord[BaseRecord]]extendsBsonMetaRecord[BaseRecord]withMongoMeta[BaseRecord]"></a>
+      <a id="MongoMetaRecord[BaseRecord&lt;:MongoRecord[BaseRecord]]:MongoMetaRecord[BaseRecord]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoMetaRecord.html"><span class="name">MongoMetaRecord</span></a><span class="tparams">[<span name="BaseRecord">BaseRecord &lt;: MongoRecord[BaseRecord]</span>]</span><span class="result"> extends BsonMetaRecord[BaseRecord] with MongoMeta[BaseRecord]</span>
+        <a href="MongoMetaRecord.html"><span class="name">MongoMetaRecord</span></a><span class="tparams">[<span name="BaseRecord">BaseRecord &lt;: <a href="MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord.BaseRecord">BaseRecord</span>]</span>]</span><span class="result"> extends <a href="BsonMetaRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonMetaRecord">BsonMetaRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord.BaseRecord">BaseRecord</span>] with <a href="../MongoMeta.html" class="extype" name="net.liftweb.mongodb.MongoMeta">MongoMeta</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord.BaseRecord">BaseRecord</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.MongoRecord" data-isabs="true">
-      <a id="MongoRecord:MongoRecord[MyType]"></a>
+    </li><li name="net.liftweb.mongodb.record.MongoRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoRecord[MyType&lt;:net.liftweb.mongodb.record.MongoRecord[MyType]]extendsBsonRecord[MyType]"></a>
+      <a id="MongoRecord[MyType&lt;:MongoRecord[MyType]]:MongoRecord[MyType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoRecord.html"><span class="name">MongoRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: MongoRecord[MyType]</span>]</span><span class="result"> extends BsonRecord[MyType]</span>
+        <a href="MongoRecord.html"><span class="name">MongoRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: <a href="MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoRecord.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoRecord.MyType">MyType</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record.MongoId" data-isabs="true">
-      <a id="MongoId:MongoId[OwnerType]"></a>
+    </li><li name="net.liftweb.mongodb.record.MongoId" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoId[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsObject"></a>
+      <a id="MongoId[OwnerType&lt;:MongoRecord[OwnerType]]:MongoId[OwnerType]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoId.html"><span class="name deprecated" title="Deprecated: (Since version 2.5) Use one of the MongoPK traits instead">MongoId</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: MongoRecord[OwnerType]</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="MongoId.html"><span class="name deprecated" title="Deprecated: (Since version 2.5) Use one of the MongoPK traits instead">MongoId</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoId.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       <p class="comment cmt">Mix this into a Record to add an ObjectIdField</p>
@@ -113,9 +133,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mongodb.record.field" data-isabs="false">
+              <ol><li name="net.liftweb.mongodb.record.field" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="field"></a>
       <a id="field:field"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -131,10 +152,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

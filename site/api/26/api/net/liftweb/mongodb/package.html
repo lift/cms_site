@@ -2,24 +2,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.mongodb</title>
+          <title>mongodb - Lift Framework 2.6-M3 - net.liftweb.mongodb</title>
+          <meta name="description" content="mongodb - Lift Framework 2.6 - M3 - net.liftweb.mongodb" />
+          <meta name="keywords" content="mongodb Lift Framework 2.6 M3 net.liftweb.mongodb" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.mongodb.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="value">
+        <body class="value">
       <div id="definition">
         <img src="../../../lib/package_big.png" />
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a></p>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
         <h1>mongodb</h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">package</span>
@@ -29,11 +44,11 @@
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"></div>
-    
+          <div id="comment" class="fullcommenttop"></div>
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         
         
         <div id="visbl">
@@ -46,9 +61,10 @@
         <div id="allMembers">
         
 
-        <div class="types members" id="types">
+        <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mongodb.DateSerializer" data-isabs="false">
+              <ol><li name="net.liftweb.mongodb.DateSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateSerializerextendsSerializer[java.util.Date]"></a>
       <a id="DateSerializer:DateSerializer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -56,11 +72,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DateSerializer.html"><span class="name">DateSerializer</span></a><span class="result"> extends Serializer[Date]</span>
+        <a href="DateSerializer.html"><span class="name">DateSerializer</span></a><span class="result"> extends <a href="../json/Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="java.util.Date">Date</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.DateTimeSerializer" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.DateTimeSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateTimeSerializerextendsSerializer[org.joda.time.DateTime]"></a>
       <a id="DateTimeSerializer:DateTimeSerializer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -68,11 +85,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="DateTimeSerializer.html"><span class="name">DateTimeSerializer</span></a><span class="result"> extends Serializer[DateTime]</span>
+        <a href="DateTimeSerializer.html"><span class="name">DateTimeSerializer</span></a><span class="result"> extends <a href="../json/Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="org.joda.time.DateTime">DateTime</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.FindOption" data-isabs="true">
+    </li><li name="net.liftweb.mongodb.FindOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FindOptionextendsObject"></a>
       <a id="FindOption:FindOption"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -80,11 +98,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FindOption.html"><span class="name">FindOption</span></a><span class="result"> extends AnyRef</span>
+        <a href="FindOption.html"><span class="name">FindOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.JsonFormats" data-isabs="true">
+    </li><li name="net.liftweb.mongodb.JsonFormats" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JsonFormatsextendsObject"></a>
       <a id="JsonFormats:JsonFormats"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,35 +111,38 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsonFormats.html"><span class="name">JsonFormats</span></a><span class="result"> extends AnyRef</span>
+        <a href="JsonFormats.html"><span class="name">JsonFormats</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.JsonObject" data-isabs="true">
-      <a id="JsonObject:JsonObject[BaseDocument]"></a>
+    </li><li name="net.liftweb.mongodb.JsonObject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JsonObject[BaseDocument]extendsObject"></a>
+      <a id="JsonObject[BaseDocument]:JsonObject[BaseDocument]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="JsonObject.html"><span class="name">JsonObject</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="JsonObject.html"><span class="name">JsonObject</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.JsonObjectMeta" data-isabs="false">
-      <a id="JsonObjectMeta:JsonObjectMeta[BaseDocument]"></a>
+    </li><li name="net.liftweb.mongodb.JsonObjectMeta" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsonObjectMeta[BaseDocument]extendsObject"></a>
+      <a id="JsonObjectMeta[BaseDocument]:JsonObjectMeta[BaseDocument]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="JsonObjectMeta.html"><span class="name">JsonObjectMeta</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends AnyRef</span>
+        <a href="JsonObjectMeta.html"><span class="name">JsonObjectMeta</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.Limit" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.Limit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LimitextendsFindOptionwithProductwithSerializable"></a>
       <a id="Limit:Limit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -128,11 +150,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Limit.html"><span class="name">Limit</span></a><span class="params">(<span name="value">value: Int</span>)</span><span class="result"> extends FindOption with Product with Serializable</span>
+        <a href="Limit.html"><span class="name">Limit</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="FindOption.html" class="extype" name="net.liftweb.mongodb.FindOption">FindOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoAddress" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.MongoAddress" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoAddressextendsProductwithSerializable"></a>
       <a id="MongoAddress:MongoAddress"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -140,35 +163,38 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MongoAddress.html"><span class="name">MongoAddress</span></a><span class="params">(<span name="host">host: MongoHostBase</span>, <span name="name">name: String</span>)</span><span class="result"> extends Product with Serializable</span>
+        <a href="MongoAddress.html"><span class="name">MongoAddress</span></a><span class="params">(<span name="host">host: <a href="MongoHostBase.html" class="extype" name="net.liftweb.mongodb.MongoHostBase">MongoHostBase</a></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoDocument" data-isabs="true">
-      <a id="MongoDocument:MongoDocument[BaseDocument]"></a>
+    </li><li name="net.liftweb.mongodb.MongoDocument" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoDocument[BaseDocument]extendsJsonObject[BaseDocument]"></a>
+      <a id="MongoDocument[BaseDocument]:MongoDocument[BaseDocument]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoDocument.html"><span class="name">MongoDocument</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends JsonObject[BaseDocument]</span>
+        <a href="MongoDocument.html"><span class="name">MongoDocument</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends <a href="JsonObject.html" class="extype" name="net.liftweb.mongodb.JsonObject">JsonObject</a>[<span class="extype" name="net.liftweb.mongodb.MongoDocument.BaseDocument">BaseDocument</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoDocumentMeta" data-isabs="true">
-      <a id="MongoDocumentMeta:MongoDocumentMeta[BaseDocument]"></a>
+    </li><li name="net.liftweb.mongodb.MongoDocumentMeta" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoDocumentMeta[BaseDocument]extendsJsonObjectMeta[BaseDocument]withMongoMeta[BaseDocument]"></a>
+      <a id="MongoDocumentMeta[BaseDocument]:MongoDocumentMeta[BaseDocument]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoDocumentMeta.html"><span class="name">MongoDocumentMeta</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends JsonObjectMeta[BaseDocument] with MongoMeta[BaseDocument]</span>
+        <a href="MongoDocumentMeta.html"><span class="name">MongoDocumentMeta</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends <a href="JsonObjectMeta.html" class="extype" name="net.liftweb.mongodb.JsonObjectMeta">JsonObjectMeta</a>[<span class="extype" name="net.liftweb.mongodb.MongoDocumentMeta.BaseDocument">BaseDocument</span>] with <a href="MongoMeta.html" class="extype" name="net.liftweb.mongodb.MongoMeta">MongoMeta</a>[<span class="extype" name="net.liftweb.mongodb.MongoDocumentMeta.BaseDocument">BaseDocument</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoHost" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.MongoHost" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoHostextendsMongoHostBasewithProductwithSerializable"></a>
       <a id="MongoHost:MongoHost"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -176,11 +202,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MongoHost.html"><span class="name">MongoHost</span></a><span class="params">(<span name="server">server: ServerAddress</span>, <span name="options">options: MongoOptions</span>)</span><span class="result"> extends MongoHostBase with Product with Serializable</span>
+        <a href="MongoHost.html"><span class="name">MongoHost</span></a><span class="params">(<span name="server">server: <span class="extype" name="com.mongodb.ServerAddress">ServerAddress</span> = <span class="symbol">new com.mongodb.ServerAddress()</span></span>, <span name="options">options: <span class="extype" name="com.mongodb.MongoOptions">MongoOptions</span> = <span class="symbol">new com.mongodb.MongoOptions()</span></span>)</span><span class="result"> extends <a href="MongoHostBase.html" class="extype" name="net.liftweb.mongodb.MongoHostBase">MongoHostBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoHostBase" data-isabs="true">
+    </li><li name="net.liftweb.mongodb.MongoHostBase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoHostBaseextendsObject"></a>
       <a id="MongoHostBase:MongoHostBase"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -188,11 +215,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MongoHostBase.html"><span class="name">MongoHostBase</span></a><span class="result"> extends AnyRef</span>
+        <a href="MongoHostBase.html"><span class="name">MongoHostBase</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoIdentifier" data-isabs="true">
+    </li><li name="net.liftweb.mongodb.MongoIdentifier" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoIdentifierextendsObject"></a>
       <a id="MongoIdentifier:MongoIdentifier"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -200,23 +228,25 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoIdentifier.html"><span class="name">MongoIdentifier</span></a><span class="result"> extends AnyRef</span>
+        <a href="MongoIdentifier.html"><span class="name">MongoIdentifier</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoMeta" data-isabs="true">
-      <a id="MongoMeta:MongoMeta[BaseDocument]"></a>
+    </li><li name="net.liftweb.mongodb.MongoMeta" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="MongoMeta[BaseDocument]extendsJsonFormats"></a>
+      <a id="MongoMeta[BaseDocument]:MongoMeta[BaseDocument]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MongoMeta.html"><span class="name">MongoMeta</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends JsonFormats</span>
+        <a href="MongoMeta.html"><span class="name">MongoMeta</span></a><span class="tparams">[<span name="BaseDocument">BaseDocument</span>]</span><span class="result"> extends <a href="JsonFormats.html" class="extype" name="net.liftweb.mongodb.JsonFormats">JsonFormats</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoRef" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.MongoRef" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoRefextendsProductwithSerializable"></a>
       <a id="MongoRef:MongoRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -224,11 +254,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MongoRef.html"><span class="name">MongoRef</span></a><span class="params">(<span name="ref">ref: String</span>, <span name="id">id: ObjectId</span>)</span><span class="result"> extends Product with Serializable</span>
+        <a href="MongoRef.html"><span class="name">MongoRef</span></a><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="id">id: <span class="extype" name="org.bson.types.ObjectId">ObjectId</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoSet" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.MongoSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoSetextendsMongoHostBasewithProductwithSerializable"></a>
       <a id="MongoSet:MongoSet"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -236,11 +267,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MongoSet.html"><span class="name">MongoSet</span></a><span class="params">(<span name="dbs">dbs: List[ServerAddress]</span>, <span name="options">options: MongoOptions</span>)</span><span class="result"> extends MongoHostBase with Product with Serializable</span>
+        <a href="MongoSet.html"><span class="name">MongoSet</span></a><span class="params">(<span name="dbs">dbs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="com.mongodb.ServerAddress">ServerAddress</span>]</span>, <span name="options">options: <span class="extype" name="com.mongodb.MongoOptions">MongoOptions</span> = <span class="symbol">new com.mongodb.MongoOptions()</span></span>)</span><span class="result"> extends <a href="MongoHostBase.html" class="extype" name="net.liftweb.mongodb.MongoHostBase">MongoHostBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.ObjectIdSerializer" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.ObjectIdSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ObjectIdSerializerextendsSerializer[org.bson.types.ObjectId]"></a>
       <a id="ObjectIdSerializer:ObjectIdSerializer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -248,11 +280,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ObjectIdSerializer.html"><span class="name">ObjectIdSerializer</span></a><span class="result"> extends Serializer[ObjectId]</span>
+        <a href="ObjectIdSerializer.html"><span class="name">ObjectIdSerializer</span></a><span class="result"> extends <a href="../json/Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="org.bson.types.ObjectId">ObjectId</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.PatternSerializer" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.PatternSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PatternSerializerextendsSerializer[java.util.regex.Pattern]"></a>
       <a id="PatternSerializer:PatternSerializer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -260,11 +293,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PatternSerializer.html"><span class="name">PatternSerializer</span></a><span class="result"> extends Serializer[Pattern]</span>
+        <a href="PatternSerializer.html"><span class="name">PatternSerializer</span></a><span class="result"> extends <a href="../json/Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="java.util.regex.Pattern">Pattern</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.Skip" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.Skip" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SkipextendsFindOptionwithProductwithSerializable"></a>
       <a id="Skip:Skip"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -272,11 +306,12 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Skip.html"><span class="name">Skip</span></a><span class="params">(<span name="value">value: Int</span>)</span><span class="result"> extends FindOption with Product with Serializable</span>
+        <a href="Skip.html"><span class="name">Skip</span></a><span class="params">(<span name="value">value: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="FindOption.html" class="extype" name="net.liftweb.mongodb.FindOption">FindOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.UUIDSerializer" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.UUIDSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UUIDSerializerextendsSerializer[java.util.UUID]"></a>
       <a id="UUIDSerializer:UUIDSerializer"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -284,11 +319,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UUIDSerializer.html"><span class="name">UUIDSerializer</span></a><span class="result"> extends Serializer[UUID]</span>
+        <a href="UUIDSerializer.html"><span class="name">UUIDSerializer</span></a><span class="result"> extends <a href="../json/Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="java.util.UUID">UUID</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.UpdateOption" data-isabs="true">
+    </li><li name="net.liftweb.mongodb.UpdateOption" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="UpdateOptionextendsObject"></a>
       <a id="UpdateOption:UpdateOption"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -296,11 +332,12 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="UpdateOption.html"><span class="name">UpdateOption</span></a><span class="result"> extends AnyRef</span>
+        <a href="UpdateOption.html"><span class="name">UpdateOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoPair" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.MongoPair" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MongoPairextendsMongoHostBasewithProductwithSerializable"></a>
       <a id="MongoPair:MongoPair"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -308,7 +345,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MongoPair.html"><span class="name deprecated" title="Deprecated: (Since version 2.5) Use MongoSet with List[ServerAddress] as argument instead">MongoPair</span></a><span class="params">(<span name="left">left: ServerAddress</span>, <span name="right">right: ServerAddress</span>, <span name="options">options: MongoOptions</span>)</span><span class="result"> extends MongoHostBase with Product with Serializable</span>
+        <a href="MongoPair.html"><span class="name deprecated" title="Deprecated: (Since version 2.5) Use MongoSet with List[ServerAddress] as argument instead">MongoPair</span></a><span class="params">(<span name="left">left: <span class="extype" name="com.mongodb.ServerAddress">ServerAddress</span></span>, <span name="right">right: <span class="extype" name="com.mongodb.ServerAddress">ServerAddress</span></span>, <span name="options">options: <span class="extype" name="com.mongodb.MongoOptions">MongoOptions</span> = <span class="symbol">new com.mongodb.MongoOptions()</span></span>)</span><span class="result"> extends <a href="MongoHostBase.html" class="extype" name="net.liftweb.mongodb.MongoHostBase">MongoHostBase</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
@@ -320,9 +357,10 @@
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="net.liftweb.mongodb.BsonDSL" data-isabs="false">
+              <ol><li name="net.liftweb.mongodb.BsonDSL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BsonDSL"></a>
       <a id="BsonDSL:BsonDSL"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -330,11 +368,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="BsonDSL$.html"><span class="name">BsonDSL</span></a><span class="result"> extends JsonDSL</span>
+        <a href="BsonDSL$.html"><span class="name">BsonDSL</span></a><span class="result"> extends <a href="../json/JsonDSL.html" class="extype" name="net.liftweb.json.JsonDSL">JsonDSL</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.DefaultMongoIdentifier" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.DefaultMongoIdentifier" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultMongoIdentifier"></a>
       <a id="DefaultMongoIdentifier:DefaultMongoIdentifier"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -342,11 +381,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="DefaultMongoIdentifier$.html"><span class="name">DefaultMongoIdentifier</span></a><span class="result"> extends MongoIdentifier with Product with Serializable</span>
+        <a href="DefaultMongoIdentifier$.html"><span class="name">DefaultMongoIdentifier</span></a><span class="result"> extends <a href="MongoIdentifier.html" class="extype" name="net.liftweb.mongodb.MongoIdentifier">MongoIdentifier</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.JObjectParser" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.JObjectParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JObjectParser"></a>
       <a id="JObjectParser:JObjectParser"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -354,11 +394,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="JObjectParser$.html"><span class="name">JObjectParser</span></a><span class="result"> extends SimpleInjector</span>
+        <a href="JObjectParser$.html"><span class="name">JObjectParser</span></a><span class="result"> extends <a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoDB" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.MongoDB" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoDB"></a>
       <a id="MongoDB:MongoDB"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -366,11 +407,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MongoDB$.html"><span class="name">MongoDB</span></a><span class="result"> extends AnyRef</span>
+        <a href="MongoDB$.html"><span class="name">MongoDB</span></a>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.MongoHost" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.MongoHost" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MongoHost"></a>
       <a id="MongoHost:MongoHost"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -378,11 +420,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MongoHost$.html"><span class="name">MongoHost</span></a><span class="result"> extends Serializable</span>
+        <a href="MongoHost$.html"><span class="name">MongoHost</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.Multi" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.Multi" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Multi"></a>
       <a id="Multi:Multi"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -390,11 +433,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Multi$.html"><span class="name">Multi</span></a><span class="result"> extends UpdateOption with Product with Serializable</span>
+        <a href="Multi$.html"><span class="name">Multi</span></a><span class="result"> extends <a href="UpdateOption.html" class="extype" name="net.liftweb.mongodb.UpdateOption">UpdateOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.Upsert" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.Upsert" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Upsert"></a>
       <a id="Upsert:Upsert"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -402,11 +446,12 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Upsert$.html"><span class="name">Upsert</span></a><span class="result"> extends UpdateOption with Product with Serializable</span>
+        <a href="Upsert$.html"><span class="name">Upsert</span></a><span class="result"> extends <a href="UpdateOption.html" class="extype" name="net.liftweb.mongodb.UpdateOption">UpdateOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.mongodb.record" data-isabs="false">
+    </li><li name="net.liftweb.mongodb.record" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="record"></a>
       <a id="record:record"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -422,10 +467,20 @@
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
         
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
         </div>
 
       </div>

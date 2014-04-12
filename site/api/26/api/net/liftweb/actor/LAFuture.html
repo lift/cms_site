@@ -2,53 +2,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>net.liftweb.actor.LAFuture</title>
+          <title>LAFuture - Lift Framework 2.6-M3 - net.liftweb.actor.LAFuture</title>
+          <meta name="description" content="LAFuture - Lift Framework 2.6 - M3 - net.liftweb.actor.LAFuture" />
+          <meta name="keywords" content="LAFuture Lift Framework 2.6 M3 net.liftweb.actor.LAFuture" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link type="text/css" media="screen" rel="stylesheet" href="../../../lib/template.css" />
-      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.actor.LAFuture';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
     
         </head>
-        <body onload="sh_highlightDocument('../lib/', '.min.js');" class="type">
+        <body class="type">
       <div id="definition">
-        <a title="Go to companion" href="LAFuture$.html"><img src="../../../lib/class_to_object_big.png" /></a>
-        <p id="owner"><a name="net" class="extype" href="../../package.html">net</a>.<a name="net.liftweb" class="extype" href="../package.html">liftweb</a>.<a name="net.liftweb.actor" class="extype" href="package.html">actor</a></p>
-        <h1><a title="Go to companion" href="LAFuture$.html">LAFuture</a></h1>
+        <a href="LAFuture$.html" title="Go to companion"><img src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.actor">actor</a></p>
+        <h1><a href="LAFuture$.html" title="Go to companion">LAFuture</a></h1>
       </div>
 
-      <h4 class="signature" id="signature">
+      <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">LAFuture</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">LAFuture</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
-      <div class="fullcommenttop" id="comment"><div class="comment cmt"><p>A container that contains a calculated value
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A container that contains a calculated value
 or may contain one in the future
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent">AnyRef, <span name="scala.Any" class="extype">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
-    
+        
 
       <div id="mbrsel">
-        <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
         <div id="order">
               <span class="filtertype">Ordering</span>
-              <ol><li class="alpha in"><span>Alphabetic</span></li><li class="inherit out"><span>By inheritance</span></li></ol>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
             </div>
         <div id="ancestors">
-              <span class="filtertype">Inherited</span>
-              <ol><li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li></ol>
-              <ol id="linearization"><li name="net.liftweb.actor.LAFuture" class="in"><span>LAFuture</span></li><li name="scala.AnyRef" class="in"><span>AnyRef</span></li><li name="scala.Any" class="in"><span>Any</span></li></ol>
-            </div>
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.actor.LAFuture"><span>LAFuture</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
             <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
@@ -57,10 +84,11 @@ or may contain one in the future
 
       <div id="template">
         <div id="allMembers">
-        <div class="members" id="constructors">
+        <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li visbl="pub" name="net.liftweb.actor.LAFuture#this" data-isabs="false">
-      <a id="this:LAFuture[T]"></a>
+              <ol><li name="net.liftweb.actor.LAFuture#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():net.liftweb.actor.LAFuture[T]"></a>
+      <a id="&lt;init&gt;:LAFuture[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
@@ -71,15 +99,16 @@ or may contain one in the future
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#this" data-isabs="false">
-      <a id="this:LAFuture[T]"></a>
+    </li><li name="net.liftweb.actor.LAFuture#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(scheduler:net.liftweb.actor.LAScheduler):net.liftweb.actor.LAFuture[T]"></a>
+      <a id="&lt;init&gt;:LAFuture[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">LAFuture</span><span class="params">(<span name="scheduler">scheduler: <a name="net.liftweb.actor.LAScheduler" class="extype" href="LAScheduler.html">LAScheduler</a></span>)</span>
+        <span class="name">LAFuture</span><span class="params">(<span name="scheduler">scheduler: <a href="LAScheduler.html" class="extype" name="net.liftweb.actor.LAScheduler">LAScheduler</a></span>)</span>
       </span>
       </h4>
       
@@ -90,9 +119,10 @@ or may contain one in the future
 
         
 
-        <div class="values members" id="values">
+        <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=" data-isabs="false">
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
       <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -100,11 +130,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#!=" data-isabs="false">
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -112,11 +143,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $bang$eq">!=</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef###" data-isabs="false">
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
       <a id="##():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -124,11 +156,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $hash$hash">##</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#==" data-isabs="false">
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -136,11 +169,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.Any#==" data-isabs="false">
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -148,11 +182,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: $eq$eq">==</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#abort" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#abort" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="abort():Unit"></a>
       <a id="abort():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -160,12 +195,13 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">abort</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">abort</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Abort the future.</p><div class="fullcomment"><div class="comment cmt"><p>Abort the future.  It can never be satified
 </p></div></div>
-    </li><li visbl="pub" name="scala.Any#asInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -173,11 +209,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="prt" name="scala.AnyRef#clone" data-isabs="false">
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -185,14 +222,15 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#complete" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#complete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="complete(value:net.liftweb.common.Box[T]):Unit"></a>
       <a id="complete(Box[T]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -200,12 +238,13 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">complete</span><span class="params">(<span name="value">value: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">complete</span><span class="params">(<span name="value">value: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Complete the Future.</p><div class="fullcomment"><div class="comment cmt"><p>Complete the Future... with a Box... useful from Helpers.tryo</p></div><dl class="paramcmts block"><dt class="param">value</dt><dd class="cmt"><p>
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#complete_?" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#complete_?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="complete_?:Boolean"></a>
       <a id="complete_?:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -213,12 +252,13 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name" title="gt4s: complete_$qmark">complete_?</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span title="gt4s: complete_$qmark" class="name">complete_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Has the future completed?
 </p>
-    </li><li visbl="pub" name="scala.AnyRef#eq" data-isabs="false">
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -226,11 +266,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#equals" data-isabs="false">
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -238,11 +279,12 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span name="scala.Any" class="extype">Any</span></span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#fail" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#fail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fail(e:net.liftweb.common.Box[Nothing]):Unit"></a>
       <a id="fail(Box[Nothing]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -250,12 +292,13 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fail</span><span class="params">(<span name="e">e: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">fail</span><span class="params">(<span name="e">e: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">If the execution fails as a Box[Nothing], do this</p><div class="fullcomment"><div class="comment cmt"><p>If the execution fails as a Box[Nothing], do this</p></div><dl class="paramcmts block"><dt class="param">e</dt><dd class="cmt"><p>
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#fail" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#fail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fail(e:Exception):Unit"></a>
       <a id="fail(Exception):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -263,24 +306,26 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fail</span><span class="params">(<span name="e">e: Exception</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">fail</span><span class="params">(<span name="e">e: <span class="extype" name="scala.Exception">Exception</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">If the execution fails, do this</p><div class="fullcomment"><div class="comment cmt"><p>If the execution fails, do this</p></div><dl class="paramcmts block"><dt class="param">e</dt><dd class="cmt"><p>
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#filter" data-isabs="false">
-      <a id="filter((T) ⇒ Boolean):LAFuture[T]"></a>
+    </li><li name="net.liftweb.actor.LAFuture#filter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="filter(f:T=&gt;Boolean):net.liftweb.actor.LAFuture[T]"></a>
+      <a id="filter((T)⇒Boolean):LAFuture[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">filter</span><span class="params">(<span name="f">f: (T) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="net.liftweb.actor.LAFuture" class="extype" href="">LAFuture</a>[T]</span>
+        <span class="name">filter</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.actor.LAFuture">LAFuture</a>[<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="prt" name="scala.AnyRef#finalize" data-isabs="false">
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -288,41 +333,44 @@ or may contain one in the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a name="java.lang" class="extype" href="../../../java/lang/package.html">lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#flatMap" data-isabs="false">
-      <a id="flatMap[A]((T) ⇒ LAFuture[A]):LAFuture[A]"></a>
+    </li><li name="net.liftweb.actor.LAFuture#flatMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="flatMap[A](f:T=&gt;net.liftweb.actor.LAFuture[A]):net.liftweb.actor.LAFuture[A]"></a>
+      <a id="flatMap[A]((T)⇒LAFuture[A]):LAFuture[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">flatMap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (T) ⇒ <a name="net.liftweb.actor.LAFuture" class="extype" href="">LAFuture</a>[A]</span>)</span><span class="result">: <a name="net.liftweb.actor.LAFuture" class="extype" href="">LAFuture</a>[A]</span>
+        <span class="name">flatMap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>) ⇒ <a href="" class="extype" name="net.liftweb.actor.LAFuture">LAFuture</a>[<span class="extype" name="net.liftweb.actor.LAFuture.flatMap.A">A</span>]</span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.actor.LAFuture">LAFuture</a>[<span class="extype" name="net.liftweb.actor.LAFuture.flatMap.A">A</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#foreach" data-isabs="false">
-      <a id="foreach((T) ⇒ Unit):Unit"></a>
+    </li><li name="net.liftweb.actor.LAFuture#foreach" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="foreach(f:T=&gt;Unit):Unit"></a>
+      <a id="foreach((T)⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">foreach</span><span class="params">(<span name="f">f: (T) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">foreach</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Execute the function with the value.</p><div class="fullcomment"><div class="comment cmt"><p>Execute the function with the value. If the
 value has not been satisfied, execute the function
 when the value is satified
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#get" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#get" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="get(timeout:Long):net.liftweb.common.Box[T]"></a>
       <a id="get(Long):Box[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -330,14 +378,15 @@ when the value is satified
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">get</span><span class="params">(<span name="timeout">timeout: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]</span>
+        <span class="name">get</span><span class="params">(<span name="timeout">timeout: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get the future value or if the value is not
 satisfied after the timeout period, return an
 Empty
 </p>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#get" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get:T"></a>
       <a id="get:T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -345,26 +394,28 @@ Empty
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">get</span><span class="result">: T</span>
+        <span class="name">get</span><span class="result">: <span class="extype" name="net.liftweb.actor.LAFuture.T">T</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Get the future value
 2.</p><div class="fullcomment"><div class="comment cmt"><p>Get the future value
 2.9.2 gives a compiler error if we try to use the tailrec annotation
 Once we drop 2.9.x, enable the annotation again</p></div></div>
-    </li><li visbl="pub" name="scala.AnyRef#getClass" data-isabs="false">
-      <a id="getClass():java.lang.Class[_]"></a>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#hashCode" data-isabs="false">
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -372,11 +423,12 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span name="scala.Int" class="extype">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#isAborted" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#isAborted" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isAborted:Boolean"></a>
       <a id="isAborted:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -384,12 +436,13 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isAborted</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isAborted</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Has the future been aborted
 </p>
-    </li><li visbl="pub" name="scala.Any#isInstanceOf" data-isabs="false">
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -397,11 +450,12 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#isSatisfied" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#isSatisfied" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isSatisfied:Boolean"></a>
       <a id="isSatisfied:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -409,25 +463,27 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isSatisfied</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">isSatisfied</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Has the future been satisfied
 </p>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#map" data-isabs="false">
-      <a id="map[A]((T) ⇒ A):LAFuture[A]"></a>
+    </li><li name="net.liftweb.actor.LAFuture#map" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="map[A](f:T=&gt;A):net.liftweb.actor.LAFuture[A]"></a>
+      <a id="map[A]((T)⇒A):LAFuture[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (T) ⇒ A</span>)</span><span class="result">: <a name="net.liftweb.actor.LAFuture" class="extype" href="">LAFuture</a>[A]</span>
+        <span class="name">map</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>) ⇒ <span class="extype" name="net.liftweb.actor.LAFuture.map.A">A</span></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.actor.LAFuture">LAFuture</a>[<span class="extype" name="net.liftweb.actor.LAFuture.map.A">A</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Map the future over a function</p><div class="fullcomment"><div class="comment cmt"><p>Map the future over a function</p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>the type that the function returns</p></dd><dt class="param">f</dt><dd class="cmt"><p>the function to apply to the future</p></dd><dt>returns</dt><dd class="cmt"><p>a Future that represents the function applied to the value of the future
 </p></dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#ne" data-isabs="false">
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -435,11 +491,12 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span name="scala.Boolean" class="extype">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notify" data-isabs="false">
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
       <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -447,11 +504,12 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll" data-isabs="false">
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
       <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -459,56 +517,60 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#onComplete" data-isabs="false">
-      <a id="onComplete((Box[T]) ⇒ Unit):Unit"></a>
+    </li><li name="net.liftweb.actor.LAFuture#onComplete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onComplete(f:net.liftweb.common.Box[T]=&gt;Unit):Unit"></a>
+      <a id="onComplete((Box[T])⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onComplete</span><span class="params">(<span name="f">f: (<a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[T]) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">onComplete</span><span class="params">(<span name="f">f: (<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">A function to execute on completion of the Future, success or failure
 </p><div class="fullcomment"><div class="comment cmt"><p>A function to execute on completion of the Future, success or failure
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function to execute on completion of the Future
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#onFail" data-isabs="false">
-      <a id="onFail((Box[Nothing]) ⇒ Unit):Unit"></a>
+    </li><li name="net.liftweb.actor.LAFuture#onFail" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onFail(f:net.liftweb.common.Box[Nothing]=&gt;Unit):Unit"></a>
+      <a id="onFail((Box[Nothing])⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onFail</span><span class="params">(<span name="f">f: (<a name="net.liftweb.common.Box" class="extype" href="../common/Box.html">Box</a>[<span name="scala.Nothing" class="extype">Nothing</span>]) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">onFail</span><span class="params">(<span name="f">f: (<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Execute a function on failure
 </p><div class="fullcomment"><div class="comment cmt"><p>Execute a function on failure
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function to execute. Will receive a Box[Nothing] which may be a Failure if there's exception data
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#onSuccess" data-isabs="false">
-      <a id="onSuccess((T) ⇒ Unit):Unit"></a>
+    </li><li name="net.liftweb.actor.LAFuture#onSuccess" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onSuccess(f:T=&gt;Unit):Unit"></a>
+      <a id="onSuccess((T)⇒Unit):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onSuccess</span><span class="params">(<span name="f">f: (T) ⇒ <span name="scala.Unit" class="extype">Unit</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">onSuccess</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Execute the function on success of the future
 </p><div class="fullcomment"><div class="comment cmt"><p>Execute the function on success of the future
 </p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function to execute on success.
 </p></dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#satisfy" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#satisfy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="satisfy(value:T):Unit"></a>
       <a id="satisfy(T):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -516,13 +578,14 @@ Once we drop 2.9.x, enable the annotation again</p></div></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">satisfy</span><span class="params">(<span name="value">value: T</span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">satisfy</span><span class="params">(<span name="value">value: <span class="extype" name="net.liftweb.actor.LAFuture.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Satify the future.</p><div class="fullcomment"><div class="comment cmt"><p>Satify the future... perform the calculation
 the results in setting a value for the future
 </p></div></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#scheduler" data-isabs="false">
+    </li><li name="net.liftweb.actor.LAFuture#scheduler" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="scheduler:net.liftweb.actor.LAScheduler"></a>
       <a id="scheduler:LAScheduler"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -530,23 +593,25 @@ the results in setting a value for the future
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">scheduler</span><span class="result">: <a name="net.liftweb.actor.LAScheduler" class="extype" href="LAScheduler.html">LAScheduler</a></span>
+        <span class="name">scheduler</span><span class="result">: <a href="LAScheduler.html" class="extype" name="net.liftweb.actor.LAScheduler">LAScheduler</a></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scala.AnyRef#synchronized" data-isabs="false">
-      <a id="synchronized[T0](⇒ T0):T0"></a>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#toString" data-isabs="false">
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -554,11 +619,12 @@ the results in setting a value for the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span name="java.lang.String" class="extype">String</span></span>
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -566,14 +632,15 @@ the results in setting a value for the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
       <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -581,14 +648,15 @@ the results in setting a value for the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>, <span name="arg1">arg1: <span name="scala.Int" class="extype">Int</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="scala.AnyRef#wait" data-isabs="false">
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
       <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -596,22 +664,23 @@ the results in setting a value for the future
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span name="scala.Long" class="extype">Long</span></span>)</span><span class="result">: <span name="scala.Unit" class="extype">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li visbl="pub" name="net.liftweb.actor.LAFuture#withFilter" data-isabs="false">
-      <a id="withFilter((T) ⇒ Boolean):LAFuture[T]"></a>
+    </li><li name="net.liftweb.actor.LAFuture#withFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withFilter(f:T=&gt;Boolean):net.liftweb.actor.LAFuture[T]"></a>
+      <a id="withFilter((T)⇒Boolean):LAFuture[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withFilter</span><span class="params">(<span name="f">f: (T) ⇒ <span name="scala.Boolean" class="extype">Boolean</span></span>)</span><span class="result">: <a name="net.liftweb.actor.LAFuture" class="extype" href="">LAFuture</a>[T]</span>
+        <span class="name">withFilter</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.actor.LAFuture">LAFuture</a>[<span class="extype" name="net.liftweb.actor.LAFuture.T">T</span>]</span>
       </span>
       </h4>
       
@@ -619,13 +688,23 @@ the results in setting a value for the future
             </div>
 
         
+
+        
         </div>
 
         <div id="inheritedMembers">
-        <div name="scala.AnyRef" class="parent">
-              <h3>Inherited from AnyRef</h3>
-            </div><div name="scala.Any" class="parent">
-              <h3>Inherited from <span name="scala.Any" class="extype">Any</span></h3>
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
             </div>
         </div>
 
