@@ -25,7 +25,7 @@
                   <dt>Download:</dt>
                   <dd>
                     <i class="icon-download-alt" style="vertical-align: midle;"></i>
-                    <span class="label label-info">Lift 2.6-M3:</span>
+                    <span class="label label-info">Lift 2.6-M4:</span>
                     <a href="https://github.com/lift/lift_26_sbt/tarball/master">TAR</a>
                     or
                     <a href="https://github.com/lift/lift_26_sbt/zipball/master">Zip</a>
