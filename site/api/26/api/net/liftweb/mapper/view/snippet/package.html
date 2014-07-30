@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>snippet - Lift Framework 2.6-M3 - net.liftweb.mapper.view.snippet</title>
-          <meta name="description" content="snippet - Lift Framework 2.6 - M3 - net.liftweb.mapper.view.snippet" />
-          <meta name="keywords" content="snippet Lift Framework 2.6 M3 net.liftweb.mapper.view.snippet" />
+          <title>snippet - Lift Framework 2.6-SNAPSHOT - net.liftweb.mapper.view.snippet</title>
+          <meta name="description" content="snippet - Lift Framework 2.6 - SNAPSHOT - net.liftweb.mapper.view.snippet" />
+          <meta name="keywords" content="snippet Lift Framework 2.6 SNAPSHOT net.liftweb.mapper.view.snippet" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="net">net</a>.<a href="../../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../../package.html" class="extype" name="net.liftweb.mapper">mapper</a>.<a href="../package.html" class="extype" name="net.liftweb.mapper.view">view</a></p>
-        <h1>snippet</h1>
+        <h1>snippet</h1> <span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mapper.view.snippet.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -63,7 +66,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.mapper.view.snippet.TableEditor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="net.liftweb.mapper.view.snippet.TableEditor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="TableEditorextendsDispatchSnippet"></a>
       <a id="TableEditor:TableEditor"></a>
       <h4 class="signature">
@@ -74,8 +77,22 @@
       <span class="symbol">
         <a href="TableEditor.html"><span class="name">TableEditor</span></a><span class="result"> extends <a href="../../../http/DispatchSnippet.html" class="extype" name="net.liftweb.http.DispatchSnippet">DispatchSnippet</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This is the snippet that the view references.</p>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mapper.view.snippet.package@TableEditorextendsDispatchSnippet" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is the snippet that the view references.</p><div class="fullcomment"><div class="comment cmt"><p>This is the snippet that the view references.
+It requires the following contents:
+table:title - the title registered in Boot
+header:fields - repeated for every field of the MetaMapper, for the header.
+ field:name - the displayName of the field, capified. Links to sort by the field.
+table:items - repeated for each record
+item:fields - repeated for each field of the current record
+ field:form - the result of toForm on the field
+item:removeBtn - a button to remove the current item
+table:insertBtn - a button to insert another item
+For a default layout, use lift:embed what=&quot;/tableeditor/default&quot;, with</p></div></div>
     </li></ol>
             </div>
 

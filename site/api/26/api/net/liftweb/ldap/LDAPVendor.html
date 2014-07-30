@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>LDAPVendor - Lift Framework 2.6-M3 - net.liftweb.ldap.LDAPVendor</title>
-          <meta name="description" content="LDAPVendor - Lift Framework 2.6 - M3 - net.liftweb.ldap.LDAPVendor" />
-          <meta name="keywords" content="LDAPVendor Lift Framework 2.6 M3 net.liftweb.ldap.LDAPVendor" />
+          <title>LDAPVendor - Lift Framework 2.6-SNAPSHOT - net.liftweb.ldap.LDAPVendor</title>
+          <meta name="description" content="LDAPVendor - Lift Framework 2.6 - SNAPSHOT - net.liftweb.ldap.LDAPVendor" />
+          <meta name="keywords" content="LDAPVendor Lift Framework 2.6 SNAPSHOT net.liftweb.ldap.LDAPVendor" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.ldap">ldap</a></p>
-        <h1>LDAPVendor</h1>
+        <h1>LDAPVendor</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -59,7 +62,7 @@ object myLdap extends LDAPVendor
 myLdap.configure()
 </pre></p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a>, <a href="../util/Injector.html" class="extype" name="net.liftweb.util.Injector">Injector</a>, <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a>, <a href="../util/Injector.html" class="extype" name="net.liftweb.util.Injector">Injector</a>, <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -108,14 +111,18 @@ myLdap.configure()
       <span class="symbol">
         <span class="name">LDAPVendor</span><span class="params">()</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@&lt;init&gt;():net.liftweb.ldap.LDAPVendor" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.util.SimpleInjector.Inject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="net.liftweb.util.SimpleInjector.Inject" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Inject[T]extendsStackableMaker[T]withVendor[T]"></a>
       <a id="Inject[T]:Inject[T]"></a>
       <h4 class="signature">
@@ -126,11 +133,19 @@ myLdap.configure()
       <span class="symbol">
         <a href="../util/SimpleInjector$Inject.html"><span class="name">Inject</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/StackableMaker.html" class="extype" name="net.liftweb.util.StackableMaker">StackableMaker</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>] with <a href="../util/Vendor.html" class="extype" name="net.liftweb.util.Vendor">Vendor</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">Create an object or val that is a subclass of the FactoryMaker to
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.SimpleInjector@Inject[T]extendsStackableMaker[T]withVendor[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create an object or val that is a subclass of the FactoryMaker to
 generate factory for a particular class as well as define session and
 request specific vendors and use doWith to define the vendor just for
-the scope of the call.</p>
+the scope of the call.</p><div class="fullcomment"><div class="comment cmt"><p>Create an object or val that is a subclass of the FactoryMaker to
+generate factory for a particular class as well as define session and
+request specific vendors and use doWith to define the vendor just for
+the scope of the call.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -139,19 +154,6 @@ the scope of the call.</p>
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -162,8 +164,12 @@ the scope of the call.</p>
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -175,22 +181,13 @@ the scope of the call.</p>
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -201,8 +198,12 @@ the scope of the call.</p>
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_AUTHTYPE" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_AUTHTYPE:String(&quot;simple&quot;)"></a>
       <a id="DEFAULT_AUTHTYPE:String(&quot;simple&quot;)"></a>
@@ -214,7 +215,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_AUTHTYPE</span><span class="result">: String(&quot;simple&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_AUTHTYPE:String(&quot;simple&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_BASE_DN" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_BASE_DN:String(&quot;&quot;)"></a>
@@ -227,7 +232,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_BASE_DN</span><span class="result">: String(&quot;&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_BASE_DN:String(&quot;&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_FACTORY" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_FACTORY:String(&quot;com.sun.jndi.ldap.LdapCtxFactory&quot;)"></a>
@@ -240,7 +249,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_FACTORY</span><span class="result">: String(&quot;com.sun.jndi.ldap.LdapCtxFactory&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_FACTORY:String(&quot;com.sun.jndi.ldap.LdapCtxFactory&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_LOOKUP" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_LOOKUP:net.liftweb.common.Empty.type"></a>
@@ -253,7 +266,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_LOOKUP</span><span class="result">: <a href="../common/Empty$.html" class="extype" name="net.liftweb.common.Empty">Empty</a>.type</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_LOOKUP:net.liftweb.common.Empty.type" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_MAX_RETRIES" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_MAX_RETRIES:Int(6)"></a>
@@ -266,7 +283,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_MAX_RETRIES</span><span class="result">: Int(6)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_MAX_RETRIES:Int(6)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_PASSWORD" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_PASSWORD:String(&quot;&quot;)"></a>
@@ -279,7 +300,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_PASSWORD</span><span class="result">: String(&quot;&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_PASSWORD:String(&quot;&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_RETRY_INTERVAL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_RETRY_INTERVAL:Int(5000)"></a>
@@ -292,7 +317,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_RETRY_INTERVAL</span><span class="result">: Int(5000)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_RETRY_INTERVAL:Int(5000)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_URL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_URL:String(&quot;ldap://localhost&quot;)"></a>
@@ -305,7 +334,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_URL</span><span class="result">: String(&quot;ldap://localhost&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_URL:String(&quot;ldap://localhost&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#DEFAULT_USER" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DEFAULT_USER:String(&quot;&quot;)"></a>
@@ -318,7 +351,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">DEFAULT_USER</span><span class="result">: String(&quot;&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@DEFAULT_USER:String(&quot;&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_AUTHTYPE" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_AUTHTYPE:String(&quot;ldap.authType&quot;)"></a>
@@ -331,7 +368,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_AUTHTYPE</span><span class="result">: String(&quot;ldap.authType&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_AUTHTYPE:String(&quot;ldap.authType&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_BASE_DN" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_BASE_DN:String(&quot;ldap.base&quot;)"></a>
@@ -344,7 +385,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_BASE_DN</span><span class="result">: String(&quot;ldap.base&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_BASE_DN:String(&quot;ldap.base&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_FACTORY" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_FACTORY:String(&quot;ldap.initial_context_factory&quot;)"></a>
@@ -357,7 +402,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_FACTORY</span><span class="result">: String(&quot;ldap.initial_context_factory&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_FACTORY:String(&quot;ldap.initial_context_factory&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_LOOKUP" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_LOOKUP:String(&quot;lift-ldap.testLookup&quot;)"></a>
@@ -370,7 +419,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_LOOKUP</span><span class="result">: String(&quot;lift-ldap.testLookup&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_LOOKUP:String(&quot;lift-ldap.testLookup&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_MAX_RETRIES" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_MAX_RETRIES:String(&quot;lift-ldap.maxRetries&quot;)"></a>
@@ -383,7 +436,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_MAX_RETRIES</span><span class="result">: String(&quot;lift-ldap.maxRetries&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_MAX_RETRIES:String(&quot;lift-ldap.maxRetries&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_PASSWORD" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_PASSWORD:String(&quot;ldap.password&quot;)"></a>
@@ -396,7 +453,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_PASSWORD</span><span class="result">: String(&quot;ldap.password&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_PASSWORD:String(&quot;ldap.password&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_RETRY_INTERVAL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_RETRY_INTERVAL:String(&quot;lift-ldap.retryInterval&quot;)"></a>
@@ -409,7 +470,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_RETRY_INTERVAL</span><span class="result">: String(&quot;lift-ldap.retryInterval&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_RETRY_INTERVAL:String(&quot;lift-ldap.retryInterval&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_URL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_URL:String(&quot;ldap.url&quot;)"></a>
@@ -422,7 +487,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_URL</span><span class="result">: String(&quot;ldap.url&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_URL:String(&quot;ldap.url&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#KEY_USER" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="KEY_USER:String(&quot;ldap.userName&quot;)"></a>
@@ -435,7 +504,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">KEY_USER</span><span class="result">: String(&quot;ldap.userName&quot;)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@KEY_USER:String(&quot;ldap.userName&quot;)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -448,7 +521,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#attributesFromDn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="attributesFromDn(dn:String):javax.naming.directory.Attributes"></a>
@@ -461,7 +538,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">attributesFromDn</span><span class="params">(<span name="dn">dn: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javax.naming.directory.Attributes">Attributes</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@attributesFromDn(dn:String):javax.naming.directory.Attributes" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.ldap.LDAPVendor#bindUser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="bindUser(dn:String,password:String):Boolean"></a>
@@ -474,7 +555,11 @@ the scope of the call.</p>
       <span class="symbol">
         <span class="name">bindUser</span><span class="params">(<span name="dn">dn: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="password">password: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@bindUser(dn:String,password:String):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Attempts to authenticate the given DN against the configured
 LDAP provider.</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -486,11 +571,18 @@ LDAP provider.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#configuration" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -504,7 +596,11 @@ LDAP provider.</p>
       <span class="symbol">
         <span class="name">configuration</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@configuration:Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The configuration to use for connecting to the
 provider.</p><div class="fullcomment"><div class="comment cmt"><p>The configuration to use for connecting to the
 provider. It should be set via the configure methods
@@ -520,7 +616,11 @@ provider. It should be set via the configure methods
       <span class="symbol">
         <span class="name">configure</span><span class="params">(<span name="props">props: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@configure(props:Map[String,String]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Configure from the given Map[String,String]
 </p>
     </li><li name="net.liftweb.ldap.LDAPVendor#configure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -534,7 +634,11 @@ provider. It should be set via the configure methods
       <span class="symbol">
         <span class="name">configure</span><span class="params">(<span name="stream">stream: <span class="extype" name="java.io.InputStream">InputStream</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@configure(stream:java.io.InputStream):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Configure from the given input stream.</p><div class="fullcomment"><div class="comment cmt"><p>Configure from the given input stream. The stream is expected
 to be in a format parseable by java.util.Properties
 </p></div></div>
@@ -549,7 +653,11 @@ to be in a format parseable by java.util.Properties
       <span class="symbol">
         <span class="name">configure</span><span class="params">(<span name="filename">filename: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@configure(filename:String):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Configure from the given file.</p><div class="fullcomment"><div class="comment cmt"><p>Configure from the given file. The file is expected
 to be in a format parseable by java.util.Properties
 </p></div></div>
@@ -564,7 +672,11 @@ to be in a format parseable by java.util.Properties
       <span class="symbol">
         <span class="name">configure</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@configure():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Configure straight from the Props object.</p><div class="fullcomment"><div class="comment cmt"><p>Configure straight from the Props object. This allows
 you to use Lift's run modes for different LDAP configuration.
 </p></div></div>
@@ -579,7 +691,11 @@ you to use Lift's run modes for different LDAP configuration.
       <span class="symbol">
         <span class="name">defaultSearchControls</span><span class="params">()</span><span class="result">: <span class="extype" name="javax.naming.directory.SearchControls">SearchControls</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@defaultSearchControls():javax.naming.directory.SearchControls" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The default SearchControls to use: search the
 base DN with a sub-tree scope, and return the
 &quot;cn&quot; attribute.</p>
@@ -592,9 +708,13 @@ base DN with a sub-tree scope, and return the
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -607,7 +727,11 @@ base DN with a sub-tree scope, and return the
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -620,9 +744,16 @@ base DN with a sub-tree scope, and return the
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -636,7 +767,11 @@ base DN with a sub-tree scope, and return the
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#getInitialContext" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getInitialContext():javax.naming.ldap.InitialLdapContext"></a>
@@ -649,7 +784,11 @@ base DN with a sub-tree scope, and return the
       <span class="symbol">
         <span class="name">getInitialContext</span><span class="params">()</span><span class="result">: <span class="extype" name="javax.naming.ldap.InitialLdapContext">InitialLdapContext</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@getInitialContext():javax.naming.ldap.InitialLdapContext" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method attempts to fetch the cached InitialLdapContext for the
 current thread.</p><div class="fullcomment"><div class="comment cmt"><p>This method attempts to fetch the cached InitialLdapContext for the
 current thread. If there isn't a current context, open a new one. If a
@@ -667,7 +806,11 @@ by performing a lookup on the test DN.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#initialContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="initialContext:javax.naming.ldap.InitialLdapContext"></a>
@@ -680,7 +823,11 @@ by performing a lookup on the test DN.
       <span class="symbol">
         <span class="name">initialContext</span><span class="result">: <span class="extype" name="javax.naming.ldap.InitialLdapContext">InitialLdapContext</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@initialContext:javax.naming.ldap.InitialLdapContext" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Obtains a (possibly cached) InitialContext
 instance based on the currently set parameters.</p>
     </li><li name="net.liftweb.util.SimpleInjector#inject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -694,7 +841,11 @@ instance based on the currently set parameters.</p>
       <span class="symbol">
         <span class="name">inject</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@inject[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform the injection for the given type.</p><div class="fullcomment"><div class="comment cmt"><p>Perform the injection for the given type.  You can call:
 inject[Date] or inject[List[Map[String, PaymentThing]]].  The
 appropriate Manifest will be
@@ -710,7 +861,11 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#ldapAuthType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ldapAuthType:LDAPVendor.this.Inject[String]"></a>
@@ -723,7 +878,11 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">ldapAuthType</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@ldapAuthType:LDAPVendor.this.Inject[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This controls the type of authentication to
 use.</p>
     </li><li name="net.liftweb.ldap.LDAPVendor#ldapBaseDn" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -737,7 +896,11 @@ use.</p>
       <span class="symbol">
         <span class="name">ldapBaseDn</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@ldapBaseDn:LDAPVendor.this.Inject[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This controls the base DN used for searcheds
 </p>
     </li><li name="net.liftweb.ldap.LDAPVendor#ldapFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -751,7 +914,11 @@ use.</p>
       <span class="symbol">
         <span class="name">ldapFactory</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@ldapFactory:LDAPVendor.this.Inject[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This controls the factory used to obtain an
 InitialContext
 </p>
@@ -766,7 +933,11 @@ InitialContext
       <span class="symbol">
         <span class="name">ldapPassword</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@ldapPassword:LDAPVendor.this.Inject[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This controls the password used to bind for
 searches (not authentication)
 </p>
@@ -781,7 +952,11 @@ searches (not authentication)
       <span class="symbol">
         <span class="name">ldapUrl</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@ldapUrl:LDAPVendor.this.Inject[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This controls the URL used to connect to the LDAP
 server
 </p>
@@ -796,7 +971,11 @@ server
       <span class="symbol">
         <span class="name">ldapUser</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@ldapUser:LDAPVendor.this.Inject[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This controls the username used to bind for
 searches (not authentication)
 </p>
@@ -811,7 +990,11 @@ searches (not authentication)
       <span class="symbol">
         <span class="name">logger</span><span class="result">: <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@logger:net.liftweb.common.Logger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -822,9 +1005,13 @@ searches (not authentication)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -837,7 +1024,11 @@ searches (not authentication)
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -850,7 +1041,11 @@ searches (not authentication)
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#openInitialContext" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="openInitialContext():javax.naming.ldap.InitialLdapContext"></a>
@@ -863,7 +1058,11 @@ searches (not authentication)
       <span class="symbol">
         <span class="name">openInitialContext</span><span class="params">()</span><span class="result">: <span class="extype" name="javax.naming.ldap.InitialLdapContext">InitialLdapContext</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@openInitialContext():javax.naming.ldap.InitialLdapContext" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method does the actual work of setting up the environment and constructing
 the InitialLdapContext.</p><div class="fullcomment"><div class="comment cmt"><p>This method does the actual work of setting up the environment and constructing
 the InitialLdapContext.
@@ -879,7 +1078,11 @@ the InitialLdapContext.
       <span class="symbol">
         <span class="name">processConfig</span><span class="params">(<span name="input">input: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@processConfig(input:Map[String,String]):Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method checks the configuration and sets defaults for any
 properties that are required.</p><div class="fullcomment"><div class="comment cmt"><p>This method checks the configuration and sets defaults for any
 properties that are required. It also processes any of the
@@ -898,7 +1101,11 @@ configuration, not during granular override of the config.
       <span class="symbol">
         <span class="name">propertiesToMap</span><span class="params">(<span name="props">props: <span class="extype" name="java.util.Properties">Properties</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@propertiesToMap(props:java.util.Properties):Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.util.SimpleInjector#registerInjection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="registerInjection[T](f:()=&gt;T)(implicitman:scala.reflect.Manifest[T]):Unit"></a>
@@ -911,7 +1118,11 @@ configuration, not during granular override of the config.
       <span class="symbol">
         <span class="name">registerInjection</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: () ⇒ <span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@registerInjection[T](f:()=&gt;T)(implicitman:scala.reflect.Manifest[T]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Register a function that will inject for the given Manifest
 </p><div class="fullcomment"><div class="comment cmt"><p>Register a function that will inject for the given Manifest
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
@@ -926,7 +1137,11 @@ configuration, not during granular override of the config.
       <span class="symbol">
         <span class="name">retryInterval</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Long">Long</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@retryInterval:LDAPVendor.this.Inject[Long]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This sets the interval between connection attempts
 on the InitialContext.</p><div class="fullcomment"><div class="comment cmt"><p>This sets the interval between connection attempts
 on the InitialContext. The default is 5 seconds
@@ -942,7 +1157,11 @@ on the InitialContext. The default is 5 seconds
       <span class="symbol">
         <span class="name">retryMaxCount</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@retryMaxCount:LDAPVendor.this.Inject[Int]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This sets the maximum number of connection
 attempts before giving up.</p><div class="fullcomment"><div class="comment cmt"><p>This sets the maximum number of connection
 attempts before giving up. The default is 6
@@ -956,9 +1175,13 @@ attempts before giving up. The default is 6
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">search</span><span class="params">(<span name="filter">filter: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">search</span><span class="params">(<span name="filter">filter: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@search(filter:String):List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Searches the base DN for entities matching the given filter.</p>
     </li><li name="net.liftweb.ldap.LDAPVendor#searchControls" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="searchControls:LDAPVendor.this.Inject[javax.naming.directory.SearchControls]"></a>
@@ -971,7 +1194,11 @@ attempts before giving up. The default is 6
       <span class="symbol">
         <span class="name">searchControls</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<span class="extype" name="javax.naming.directory.SearchControls">SearchControls</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@searchControls:LDAPVendor.this.Inject[javax.naming.directory.SearchControls]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This sets the Directory SearchControls instance
 that is used to refine searches on the provider.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -985,7 +1212,11 @@ that is used to refine searches on the provider.</p>
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.ldap.LDAPVendor#testLookup" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="testLookup:LDAPVendor.this.Inject[net.liftweb.common.Box[String]]"></a>
@@ -998,7 +1229,11 @@ that is used to refine searches on the provider.</p>
       <span class="symbol">
         <span class="name">testLookup</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@testLookup:LDAPVendor.this.Inject[net.liftweb.common.Box[String]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This can be set to test the InitialContext on each LDAP
 operation.</p><div class="fullcomment"><div class="comment cmt"><p>This can be set to test the InitialContext on each LDAP
 operation. It should be set to a search DN.
@@ -1014,7 +1249,11 @@ operation. It should be set to a search DN.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -1027,9 +1266,16 @@ operation. It should be set to a search DN.
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1043,9 +1289,16 @@ operation. It should be set to a search DN.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1059,9 +1312,16 @@ operation. It should be set to a search DN.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.LDAPVendor@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li></ol>
@@ -1080,7 +1340,7 @@ operation. It should be set to a search DN.
             </div><div class="parent" name="net.liftweb.common.Loggable">
               <h3>Inherited from <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

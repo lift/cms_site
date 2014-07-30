@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>ListenerManager - Lift Framework 2.6-M3 - net.liftweb.http.ListenerManager</title>
-          <meta name="description" content="ListenerManager - Lift Framework 2.6 - M3 - net.liftweb.http.ListenerManager" />
-          <meta name="keywords" content="ListenerManager Lift Framework 2.6 M3 net.liftweb.http.ListenerManager" />
+          <title>ListenerManager - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.ListenerManager</title>
+          <meta name="description" content="ListenerManager - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.ListenerManager" />
+          <meta name="keywords" content="ListenerManager Lift Framework 2.6 SNAPSHOT net.liftweb.http.ListenerManager" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <a href="ListenerManager$.html" title="Go to companion"><img src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
-        <h1><a href="ListenerManager$.html" title="Go to companion">ListenerManager</a></h1>
+        <h1><a href="ListenerManager$.html" title="Go to companion">ListenerManager</a></h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -40,7 +43,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">ListenerManager</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">ListenerManager</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
       </h4>
       
@@ -51,12 +54,20 @@ all subscribers, just call the updateListeners method. The createUpdate method i
 the message that you want sent to all subscribers.</p><p>Note that the AddAListener and RemoveAListener messages (for subscription control) are processed
 after any highPriority or mediumPriority messages are processed, so take care to avoid overly
 broad matches in those handlers that might consume internal messages.</p><p>For example, you could write a simple service to provide clock ticks using the following code:</p><p><pre name="code" class="scala">
-case object Tick</p><p>object Ticker extends ListenerManager with LiftActor {
-  import net.liftweb.util.ActorPing</p><p>  // Set up the initial tick
-  ActorPing.schedule(this, Tick, 1000L)</p><p>  // This is a placeholder, since we're only interested
+case object Tick
+
+object Ticker extends ListenerManager with LiftActor {
+  import net.liftweb.util.ActorPing
+
+  // Set up the initial tick
+  ActorPing.schedule(this, Tick, 1000L)
+
+  // This is a placeholder, since we're only interested
   // in Ticks
-  def createUpdate = &quot;Registered&quot;</p><p>  override def mediumPriority = {
-    case Tick =&gt; {
+  def createUpdate = "Registered"
+
+  override def mediumPriority = {
+    case Tick => {
       updateListeners(Tick)
       ActorPing.schedule(this, Tick, 1000L)
 }
@@ -64,16 +75,18 @@ case object Tick</p><p>object Ticker extends ListenerManager with LiftActor {
 }
 </pre></p><p>A client CometActor could look like:</p><p><pre name="code" class="scala">
 class CometClock extends CometListener {
-  val registerWith = Ticker</p><p>  ... handling code ...
+  val registerWith = Ticker
+
+  ... handling code ...
 }
 </pre>
 </p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="net.liftweb.http.ListenerManager">ListenerManager</a> with <a href="../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<span class="extype" name="scala.Any">Any</span>]</dd><dt>See also</dt><dd><span class="cmt"><p>CometListener</p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="LiftActorJWithListenerManager.html" class="extype" name="net.liftweb.http.LiftActorJWithListenerManager">LiftActorJWithListenerManager</a></div>
-        </div></div>
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="LiftActorJWithListenerManager.html" class="extype" name="net.liftweb.http.LiftActorJWithListenerManager">LiftActorJWithListenerManager</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -125,13 +138,17 @@ class CometClock extends CometListener {
       <span class="symbol">
         <span class="name">createUpdate</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@createUpdate:Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method is called when the 
 <pre>
 updateListeners()
 </pre>
  method
-needs a message to send to subscribed Actors.</p><div class="fullcomment"><div class="comment cmt"><p>This method is called when the 
+needs a message to send to subscribed Actors.</pre></p><div class="fullcomment"><div class="comment cmt"><p>This method is called when the 
 <pre>
 updateListeners()
 </pre>
@@ -150,19 +167,6 @@ will receive.
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -173,8 +177,12 @@ will receive.
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -186,22 +194,13 @@ will receive.
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -212,8 +211,12 @@ will receive.
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -225,7 +228,11 @@ will receive.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -236,11 +243,18 @@ will receive.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -252,9 +266,13 @@ will receive.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -267,7 +285,11 @@ will receive.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -280,9 +302,16 @@ will receive.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -296,7 +325,11 @@ will receive.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -309,7 +342,11 @@ will receive.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.ListenerManager#highPriority" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="highPriority:PartialFunction[Any,Unit]"></a>
@@ -322,7 +359,11 @@ will receive.
       <span class="symbol">
         <span class="name">highPriority</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@highPriority:PartialFunction[Any,Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to process high priority messages.</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to process high priority messages. Note:
 <b>you must not process messages with a wildcard (match all)</b>, since
 this will intercept the messages used for subscription control.
@@ -338,7 +379,11 @@ this will intercept the messages used for subscription control.
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.ListenerManager#listenerService" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="listenerService:PartialFunction[Any,Unit]"></a>
@@ -351,7 +396,11 @@ this will intercept the messages used for subscription control.
       <span class="symbol">
         <span class="name">listenerService</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@listenerService:PartialFunction[Any,Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.http.ListenerManager#lowPriority" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="lowPriority:PartialFunction[Any,Unit]"></a>
@@ -364,7 +413,11 @@ this will intercept the messages used for subscription control.
       <span class="symbol">
         <span class="name">lowPriority</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@lowPriority:PartialFunction[Any,Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to process low priority messages.</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to process low priority messages.
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.http.ListenerManager#mediumPriority" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -378,7 +431,11 @@ this will intercept the messages used for subscription control.
       <span class="symbol">
         <span class="name">mediumPriority</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@mediumPriority:PartialFunction[Any,Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to process medium priority messages.</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to process medium priority messages. See
 the highPriority method for an important note on wildcard
 processing.
@@ -395,7 +452,11 @@ processing.
       <span class="symbol">
         <span class="name">messageHandler</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@messageHandler:PartialFunction[Any,Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -406,9 +467,13 @@ processing.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -421,7 +486,11 @@ processing.
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -434,7 +503,11 @@ processing.
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.http.ListenerManager#onListenersListEmptied" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="onListenersListEmptied():Unit"></a>
@@ -447,9 +520,32 @@ processing.
       <span class="symbol">
         <span class="name">onListenersListEmptied</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@onListenersListEmptied():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Called after RemoveAListener-message is processed and no more listeners exist.</p><div class="fullcomment"><div class="comment cmt"><p>Called after RemoveAListener-message is processed and no more listeners exist.
 Default does nothing.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.http.ListenerManager#sendListenersMessage" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendListenersMessage(msg:Any):Unit"></a>
+      <a id="sendListenersMessage(Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendListenersMessage</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@sendListenersMessage(msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Send a message we create to all of the listeners.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message we create to all of the listeners. Note that with this
+invocation the createUpdate method is not used.
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -462,7 +558,11 @@ Default does nothing.
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -475,23 +575,12 @@ Default does nothing.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="net.liftweb.http.ListenerManager#updateListeners" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="updateListeners(msg:Any):Unit"></a>
-      <a id="updateListeners(Any):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">updateListeners</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Update the listeners with a message that we create.</p><div class="fullcomment"><div class="comment cmt"><p>Update the listeners with a message that we create. Note that
-with this invocation the createUpdate method is not used.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.http.ListenerManager#updateListeners" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="updateListeners():Unit"></a>
       <a id="updateListeners():Unit"></a>
@@ -503,7 +592,11 @@ with this invocation the createUpdate method is not used.
       <span class="symbol">
         <span class="name">updateListeners</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@updateListeners():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Update the listeners with the message generated by createUpdate
 </p><div class="fullcomment"><div class="comment cmt"><p>Update the listeners with the message generated by createUpdate
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
@@ -518,9 +611,16 @@ with this invocation the createUpdate method is not used.
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -534,9 +634,16 @@ with this invocation the createUpdate method is not used.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -550,9 +657,16 @@ with this invocation the createUpdate method is not used.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li></ol>
@@ -563,17 +677,21 @@ with this invocation the createUpdate method is not used.
         <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
               <ol><li name="net.liftweb.http.ListenerManager#updateIfPassesTest" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="updateIfPassesTest(update:Any)(info:(net.liftweb.common.SimpleActor[Any],PartialFunction[Any,Boolean])):Unit"></a>
-      <a id="updateIfPassesTest(Any)((SimpleActor[Any],PartialFunction[Any,Boolean])):Unit"></a>
+      <a id="updateIfPassesTest(update:Any)(info:net.liftweb.http.ListenerManager.ActorTest):Unit"></a>
+      <a id="updateIfPassesTest(Any)(ActorTest):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name deprecated" title="Deprecated: (Since version 2.4) Accept/reject logic should be done in the partial function that handles the message.">updateIfPassesTest</span><span class="params">(<span name="update">update: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="params">(<span name="info">info: (<a href="../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<span class="extype" name="scala.Any">Any</span>], <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Boolean">Boolean</span>])</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name deprecated" title="Deprecated: (Since version 2.4) Accept/reject logic should be done in the partial function that handles the message.">updateIfPassesTest</span><span class="params">(<span name="update">update: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="params">(<span name="info">info: <a href="ListenerManager$.html#ActorTest=(net.liftweb.common.SimpleActor[Any],PartialFunction[Any,Boolean])" class="extmbr" name="net.liftweb.http.ListenerManager.ActorTest">ActorTest</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@updateIfPassesTest(update:Any)(info:net.liftweb.http.ListenerManager.ActorTest):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method provides legacy functionality for filtering messages
 before sending to each registered actor.</p><div class="fullcomment"><div class="comment cmt"><p>This method provides legacy functionality for filtering messages
 before sending to each registered actor. It is deprecated in
@@ -583,13 +701,33 @@ message handling partial functions instead.
                 <span class="name">@deprecated</span>
               
         </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.4)</i> Accept/reject logic should be done in the partial function that handles the message.</p></dd></dl></div>
+    </li><li name="net.liftweb.http.ListenerManager#updateListeners" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateListeners(msg:Any):Unit"></a>
+      <a id="updateListeners(Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 2.6) Use sendListenersMessage instead.">updateListeners</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ListenerManager@updateListeners(msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.6)</i> Use sendListenersMessage instead.</p></dd></dl></div>
     </li></ol>
             </div>
         </div>
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

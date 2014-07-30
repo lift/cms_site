@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>RenderOut - Lift Framework 2.6-M3 - net.liftweb.http.RenderOut</title>
-          <meta name="description" content="RenderOut - Lift Framework 2.6 - M3 - net.liftweb.http.RenderOut" />
-          <meta name="keywords" content="RenderOut Lift Framework 2.6 M3 net.liftweb.http.RenderOut" />
+          <title>RenderOut - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.RenderOut</title>
+          <meta name="description" content="RenderOut - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.RenderOut" />
+          <meta name="keywords" content="RenderOut Lift Framework 2.6 SNAPSHOT net.liftweb.http.RenderOut" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
-        <h1>RenderOut</h1>
+        <h1>RenderOut</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -49,7 +52,7 @@ Because of the implicit conversions, RenderOut can come from
 <br/></p></div><dl class="paramcmts block"><dt class="param">xhtml</dt><dd class="cmt"><p>is the &quot;normal&quot; render body</p></dd><dt class="param">fixedXhtml</dt><dd class="cmt"><p>is the &quot;fixed&quot; part of the body.  This is ignored unless reRender(true)</p></dd><dt class="param">script</dt><dd class="cmt"><p>is the script to be executed on render.  This is where you want to put your script</p></dd><dt class="param">destroyScript</dt><dd class="cmt"><p>is executed when the comet widget is redrawn ( e.g., if you register drag or mouse-over or some events, you unregister them here so the page doesn't leak resources.)</p></dd><dt class="param">ignoreHtmlOnJs</dt><dd class="cmt"><p>-- if the reason for sending the render is a Comet update, ignore the xhtml part and just run the JS commands.  This is useful in IE when you need to redraw the stuff inside <table><tr><td>... just doing innerHtml on <tr> is broken in IE
 </p></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -98,7 +101,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">RenderOut</span><span class="params">(<span name="xhtml">xhtml: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="js">js: <a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>, <span name="destroy">destroy: <a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@&lt;init&gt;(xhtml:scala.xml.NodeSeq,js:net.liftweb.http.js.JsCmd,destroy:net.liftweb.http.js.JsCmd):net.liftweb.http.RenderOut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.http.RenderOut#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;init&gt;(xhtml:scala.xml.NodeSeq,js:net.liftweb.http.js.JsCmd):net.liftweb.http.RenderOut"></a>
@@ -111,7 +118,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">RenderOut</span><span class="params">(<span name="xhtml">xhtml: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="js">js: <a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@&lt;init&gt;(xhtml:scala.xml.NodeSeq,js:net.liftweb.http.js.JsCmd):net.liftweb.http.RenderOut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.http.RenderOut#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&lt;init&gt;(xhtml:scala.xml.NodeSeq):net.liftweb.http.RenderOut"></a>
@@ -124,7 +135,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">RenderOut</span><span class="params">(<span name="xhtml">xhtml: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@&lt;init&gt;(xhtml:scala.xml.NodeSeq):net.liftweb.http.RenderOut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.http.RenderOut#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="&lt;init&gt;(xhtml:net.liftweb.common.Box[scala.xml.NodeSeq],fixedXhtml:net.liftweb.common.Box[scala.xml.NodeSeq],script:net.liftweb.common.Box[net.liftweb.http.js.JsCmd],destroyScript:net.liftweb.common.Box[net.liftweb.http.js.JsCmd],ignoreHtmlOnJs:Boolean):net.liftweb.http.RenderOut"></a>
@@ -137,7 +152,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">RenderOut</span><span class="params">(<span name="xhtml">xhtml: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>, <span name="fixedXhtml">fixedXhtml: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>, <span name="script">script: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>, <span name="destroyScript">destroyScript: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>, <span name="ignoreHtmlOnJs">ignoreHtmlOnJs: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@&lt;init&gt;(xhtml:net.liftweb.common.Box[scala.xml.NodeSeq],fixedXhtml:net.liftweb.common.Box[scala.xml.NodeSeq],script:net.liftweb.common.Box[net.liftweb.http.js.JsCmd],destroyScript:net.liftweb.common.Box[net.liftweb.http.js.JsCmd],ignoreHtmlOnJs:Boolean):net.liftweb.http.RenderOut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">xhtml</dt><dd class="cmt"><p>is the &quot;normal&quot; render body</p></dd><dt class="param">fixedXhtml</dt><dd class="cmt"><p>is the &quot;fixed&quot; part of the body.  This is ignored unless reRender(true)</p></dd><dt class="param">script</dt><dd class="cmt"><p>is the script to be executed on render.  This is where you want to put your script</p></dd><dt class="param">destroyScript</dt><dd class="cmt"><p>is executed when the comet widget is redrawn ( e.g., if you register drag or mouse-over or some events, you unregister them here so the page doesn't leak resources.)</p></dd><dt class="param">ignoreHtmlOnJs</dt><dd class="cmt"><p>-- if the reason for sending the render is a Comet update, ignore the xhtml part and just run the JS commands.  This is useful in IE when you need to redraw the stuff inside <table><tr><td>... just doing innerHtml on <tr> is broken in IE
 </p></dd></dl></div>
     </li></ol>
@@ -150,19 +169,6 @@ Because of the implicit conversions, RenderOut can come from
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -173,8 +179,12 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -186,7 +196,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.RenderOut#++" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="++(cmd:net.liftweb.http.js.JsCmd):net.liftweb.http.RenderOut"></a>
@@ -199,22 +213,13 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span title="gt4s: $plus$plus" class="name">++</span><span class="params">(<span name="cmd">cmd: <a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.RenderOut">RenderOut</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@++(cmd:net.liftweb.http.js.JsCmd):net.liftweb.http.RenderOut" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -225,8 +230,12 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -238,7 +247,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -249,11 +262,18 @@ Because of the implicit conversions, RenderOut can come from
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.http.RenderOut#destroyScript" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -267,7 +287,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">destroyScript</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@destroyScript:net.liftweb.common.Box[net.liftweb.http.js.JsCmd]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">is executed when the comet widget is redrawn ( e.</p><div class="fullcomment"><div class="comment cmt"><p>is executed when the comet widget is redrawn ( e.g., if you register drag or mouse-over or some events, you unregister them here so the page doesn't leak resources.)</p></div></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -278,9 +302,13 @@ Because of the implicit conversions, RenderOut can come from
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -293,9 +321,16 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.http.RenderOut#fixedXhtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -309,7 +344,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">fixedXhtml</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@fixedXhtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">is the &quot;fixed&quot; part of the body.</p><div class="fullcomment"><div class="comment cmt"><p>is the &quot;fixed&quot; part of the body.  This is ignored unless reRender(true)</p></div></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
@@ -322,7 +361,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.RenderOut#ignoreHtmlOnJs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ignoreHtmlOnJs:Boolean"></a>
@@ -335,7 +378,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">ignoreHtmlOnJs</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@ignoreHtmlOnJs:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">-- if the reason for sending the render is a Comet update, ignore the xhtml part and just run the JS commands.</p><div class="fullcomment"><div class="comment cmt"><p>-- if the reason for sending the render is a Comet update, ignore the xhtml part and just run the JS commands.  This is useful in IE when you need to redraw the stuff inside <table><tr><td>... just doing innerHtml on <tr> is broken in IE
 </p></div></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -349,7 +396,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -360,9 +411,13 @@ Because of the implicit conversions, RenderOut can come from
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -375,7 +430,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -388,7 +447,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.http.RenderOut#script" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="script:net.liftweb.common.Box[net.liftweb.http.js.JsCmd]"></a>
@@ -401,7 +464,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">script</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@script:net.liftweb.common.Box[net.liftweb.http.js.JsCmd]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">is the script to be executed on render.</p><div class="fullcomment"><div class="comment cmt"><p>is the script to be executed on render.  This is where you want to put your script</p></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -414,7 +481,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -427,9 +498,16 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -443,9 +521,16 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -459,9 +544,16 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.http.RenderOut#xhtml" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -475,7 +567,11 @@ Because of the implicit conversions, RenderOut can come from
       <span class="symbol">
         <span class="name">xhtml</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.RenderOut@xhtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">is the &quot;normal&quot; render body</p>
     </li></ol>
             </div>
@@ -495,7 +591,7 @@ Because of the implicit conversions, RenderOut can come from
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

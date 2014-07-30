@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>LongCRUDify - Lift Framework 2.6-M3 - net.liftweb.mapper.LongCRUDify</title>
-          <meta name="description" content="LongCRUDify - Lift Framework 2.6 - M3 - net.liftweb.mapper.LongCRUDify" />
-          <meta name="keywords" content="LongCRUDify Lift Framework 2.6 M3 net.liftweb.mapper.LongCRUDify" />
+          <title>LongCRUDify - Lift Framework 2.6-SNAPSHOT - net.liftweb.mapper.LongCRUDify</title>
+          <meta name="description" content="LongCRUDify - Lift Framework 2.6 - SNAPSHOT - net.liftweb.mapper.LongCRUDify" />
+          <meta name="keywords" content="LongCRUDify Lift Framework 2.6 SNAPSHOT net.liftweb.mapper.LongCRUDify" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.mapper">mapper</a></p>
-        <h1>LongCRUDify</h1>
+        <h1>LongCRUDify</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -47,7 +50,7 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A specialization of CRUDify for LongKeyedMetaMappers.
 </p></div><dl class="attributes block"> <dt>Self Type</dt><dd><a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>[<span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>] with <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span> with <a href="KeyedMetaMapper.html" class="extype" name="net.liftweb.mapper.KeyedMetaMapper">KeyedMetaMapper</a>[<span class="extype" name="scala.Long">Long</span>, <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>]</dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a>[<span class="extype" name="scala.Long">Long</span>, <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>], <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a>[<span class="extype" name="scala.Long">Long</span>, <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>], <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -87,8 +90,8 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.proto.Crudify.CrudBridge" visbl="prt" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="CrudBridgeextendsObject"></a>
+              <ol><li name="net.liftweb.proto.Crudify.CrudBridge" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CrudBridgeextendsAnyRef"></a>
       <a id="CrudBridge:CrudBridge"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -96,13 +99,21 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="../proto/Crudify$CrudBridge.html"><span class="name">CrudBridge</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="../proto/Crudify$CrudBridge.html"><span class="name">CrudBridge</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This trait represents a Bridge between TheCrudType
-and the Crudify trait.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.proto.Crudify@CrudBridgeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This trait represents a Bridge between TheCrudType
+and the Crudify trait.</p><div class="fullcomment"><div class="comment cmt"><p>This trait represents a Bridge between TheCrudType
+and the Crudify trait.  It's not necessary to mix this
+trait into TheCrudType, but instead provide a mechanism
+for promoting a TheCrudType to CrudBridge
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify.FieldPointerBridge" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="FieldPointerBridgeextendsObject"></a>
+      <a id="FieldPointerBridgeextendsAnyRef"></a>
       <a id="FieldPointerBridge:FieldPointerBridge"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -110,9 +121,13 @@ and the Crudify trait.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="../proto/Crudify$FieldPointerBridge.html"><span class="name">FieldPointerBridge</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="../proto/Crudify$FieldPointerBridge.html"><span class="name">FieldPointerBridge</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.proto.Crudify@FieldPointerBridgeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify.FieldPointerType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="FieldPointerType=net.liftweb.mapper.MappedField[_,CrudType]"></a>
@@ -125,7 +140,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">FieldPointerType</span><span class="result"> = <a href="MappedField.html" class="extype" name="net.liftweb.mapper.MappedField">MappedField</a>[_, <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@FieldPointerType=net.liftweb.mapper.MappedField[_,CrudType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">What's a field pointer for the underlying CRUDify
 </p><div class="fullcomment"><div class="comment cmt"><p>What's a field pointer for the underlying CRUDify
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a> → <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -140,7 +159,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <a href="CRUDify$MyBridge.html"><span class="name">MyBridge</span></a><span class="result"> extends (<a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a>.this)#<span class="extype" name="net.liftweb.proto.Crudify.CrudBridge">CrudBridge</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.CRUDify@MyBridgeextendsCRUDify.this.CrudBridge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a></dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify.MyPointer" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MyPointerextendsCRUDify.this.FieldPointerBridge"></a>
@@ -153,7 +176,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <a href="CRUDify$MyPointer.html"><span class="name">MyPointer</span></a><span class="result"> extends (<a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a>.this)#<span class="extype" name="net.liftweb.proto.Crudify.FieldPointerBridge">FieldPointerBridge</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.CRUDify@MyPointerextendsCRUDify.this.FieldPointerBridge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a></dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify.TheCrudType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="TheCrudType=CrudType"></a>
@@ -166,7 +193,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">TheCrudType</span><span class="result"> = <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@TheCrudType=CrudType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">What's the record type for the underlying CRUDify?
 </p><div class="fullcomment"><div class="comment cmt"><p>What's the record type for the underlying CRUDify?
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a> → <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -186,7 +217,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">create</span><span class="result">: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@create:Crudify.this.TheCrudType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Vend a new instance of TheCrudType
 </p><div class="fullcomment"><div class="comment cmt"><p>Vend a new instance of TheCrudType
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -196,19 +231,6 @@ and the Crudify trait.</p>
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -219,8 +241,12 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -232,22 +258,13 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -258,8 +275,12 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#CreateItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="CreateItem:String"></a>
       <a id="CreateItem:String"></a>
@@ -271,7 +292,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">CreateItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@CreateItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#DeleteItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="DeleteItem:String"></a>
@@ -284,7 +309,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">DeleteItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@DeleteItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#EditItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="EditItem:String"></a>
@@ -297,7 +326,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">EditItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@EditItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#ListItems" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ListItems:String"></a>
@@ -310,7 +343,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">ListItems</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@ListItems:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#Prefix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Prefix:List[String]"></a>
@@ -321,9 +358,13 @@ and the Crudify trait.</p>
         <span class="kind">lazy val</span>
       </span>
       <span class="symbol">
-        <span class="name">Prefix</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">Prefix</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@Prefix:List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#ViewItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ViewItem:String"></a>
@@ -336,7 +377,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">ViewItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@ViewItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#_createTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="_createTemplate:scala.xml.Elem"></a>
@@ -349,7 +394,11 @@ and the Crudify trait.</p>
       <span class="symbol">
         <span class="name">_createTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@_createTemplate:scala.xml.Elem" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The core template for creating.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for creating.  Does not include any
 page wrapping.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -364,7 +413,11 @@ page wrapping.
       <span class="symbol">
         <span class="name">_deleteTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@_deleteTemplate:scala.xml.Elem" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The core template for deleting.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for deleting.  Does not include any
 page wrapping.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -379,7 +432,11 @@ page wrapping.
       <span class="symbol">
         <span class="name">_editTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@_editTemplate:scala.xml.Elem" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The core template for editing.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for editing.  Does not include any
 page wrapping.
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -394,7 +451,11 @@ page wrapping.
       <span class="symbol">
         <span class="name">_showAllTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@_showAllTemplate:scala.xml.Elem" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The core template for showing record.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for showing record.  Does not include any
 page wrapping
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -409,7 +470,11 @@ page wrapping
       <span class="symbol">
         <span class="name">_viewTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@_viewTemplate:scala.xml.Elem" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The core template for viewing.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for viewing.  Does not include any
 page wrapping.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -422,9 +487,13 @@ page wrapping.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addlMenuLocParams</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
+        <span class="name">addlMenuLocParams</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@addlMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">If there are any Loc.</p><div class="fullcomment"><div class="comment cmt"><p>If there are any Loc.LocParams that need to be
 added to every menu (e.g., a guard for access control
 of the Crudify screens)
@@ -440,7 +509,11 @@ of the Crudify screens)
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify#buildBridge" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="buildBridge(from:CRUDify.this.TheCrudType):CRUDify.this.CrudBridge"></a>
@@ -453,7 +526,11 @@ of the Crudify screens)
       <span class="symbol">
         <span class="name">buildBridge</span><span class="params">(<span name="from">from: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>)</span><span class="result">: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.proto.Crudify.CrudBridge">CrudBridge</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@buildBridge(from:CRUDify.this.TheCrudType):CRUDify.this.CrudBridge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method will instantiate a bridge from TheCrudType so
 that the appropriate logical operations can be performed
 on TheCrudType
@@ -472,7 +549,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">buildFieldBridge</span><span class="params">(<span name="from">from: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.FieldPointerType">FieldPointerType</span></span>)</span><span class="result">: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.proto.Crudify.FieldPointerBridge">FieldPointerBridge</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@buildFieldBridge(from:CRUDify.this.FieldPointerType):CRUDify.this.FieldPointerBridge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Based on a FieldPointer, build a FieldPointerBridge
 </p><div class="fullcomment"><div class="comment cmt"><p>Based on a FieldPointer, build a FieldPointerBridge
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a> → <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -487,7 +568,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">calcCreateItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@calcCreateItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#calcDeleteItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="calcDeleteItem:String"></a>
@@ -500,7 +585,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">calcDeleteItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@calcDeleteItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#calcEditItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="calcEditItem:String"></a>
@@ -513,7 +602,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">calcEditItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@calcEditItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#calcListItems" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="calcListItems:String"></a>
@@ -526,7 +619,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">calcListItems</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@calcListItems:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify#calcPrefix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="calcPrefix:List[String]"></a>
@@ -537,9 +634,13 @@ on TheCrudType
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">calcPrefix</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
+        <span class="name">calcPrefix</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@calcPrefix:List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">What's the prefix for this CRUD.</p><div class="fullcomment"><div class="comment cmt"><p>What's the prefix for this CRUD.  Typically the table name
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a> → <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#calcViewItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -553,7 +654,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">calcViewItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@calcViewItem:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -564,11 +669,18 @@ on TheCrudType
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify#computeFieldFromPointer" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -582,7 +694,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">computeFieldFromPointer</span><span class="params">(<span name="instance">instance: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>, <span name="pointer">pointer: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.FieldPointerType">FieldPointerType</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@computeFieldFromPointer(instance:CRUDify.this.TheCrudType,pointer:CRUDify.this.FieldPointerType):net.liftweb.common.Box[net.liftweb.util.BaseField]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Given a field pointer and an instance, get the field on that instance
 </p><div class="fullcomment"><div class="comment cmt"><p>Given a field pointer and an instance, get the field on that instance
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a> → <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -597,7 +713,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createButton</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createButton:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#createClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createClass:String"></a>
@@ -610,7 +730,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createClass:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#createId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createId:String"></a>
@@ -623,7 +747,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createId:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#createMenuLoc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a>
@@ -636,7 +764,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The menu item for creating items (make this &quot;Empty&quot; to disable)
 </p><div class="fullcomment"><div class="comment cmt"><p>The menu item for creating items (make this &quot;Empty&quot; to disable)
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -649,9 +781,13 @@ on TheCrudType
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">createMenuLocParams</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
+        <span class="name">createMenuLocParams</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override to include new Params for the create menu
 </p><div class="fullcomment"><div class="comment cmt"><p>Override to include new Params for the create menu
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -666,7 +802,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createMenuName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#createPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createPath:List[String]"></a>
@@ -679,7 +819,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createPath</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createPath:List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#createPathString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createPathString:String"></a>
@@ -692,7 +836,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createPathString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#createTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createTemplate():scala.xml.NodeSeq"></a>
@@ -705,7 +853,11 @@ on TheCrudType
       <span class="symbol">
         <span class="name">createTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@createTemplate():scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This is the template that's used to render the page after the
 optional wrapping of the template in the page wrapper.</p><div class="fullcomment"><div class="comment cmt"><p>This is the template that's used to render the page after the
 optional wrapping of the template in the page wrapper.
@@ -719,9 +871,13 @@ optional wrapping of the template in the page wrapper.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">crudAllNext</span><span class="params">(<span name="first">first: <span class="extype" name="scala.Long">Long</span></span>, <span name="list">list: <span class="extype" name="scala.List">List</span>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]</span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.Node">Node</span> with <span class="extype" name="scala.Serializable">Serializable</span> { def child: Seq[scala.xml.Node] }</span>
+        <span class="name">crudAllNext</span><span class="params">(<span name="first">first: <span class="extype" name="scala.Long">Long</span></span>, <span name="list">list: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]</span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.Node">Node</span> with <span class="extype" name="scala.Serializable">Serializable</span> { def child: Seq[scala.xml.Node] }</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@crudAllNext(first:Long,list:List[Crudify.this.TheCrudType])(in:scala.xml.NodeSeq):scala.xml.NodewithSerializable{defchild:Seq[scala.xml.Node]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to change how the next link is generated
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how the next link is generated
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -736,7 +892,11 @@ optional wrapping of the template in the page wrapper.
       <span class="symbol">
         <span class="name">crudAllPrev</span><span class="params">(<span name="first">first: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.Node">Node</span> with <span class="extype" name="scala.Serializable">Serializable</span> { def child: Seq[scala.xml.Node] }</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@crudAllPrev(first:Long)(in:scala.xml.NodeSeq):scala.xml.NodewithSerializable{defchild:Seq[scala.xml.Node]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to change how the previous link is
 generated
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how the previous link is
@@ -753,7 +913,11 @@ generated
       <span class="symbol">
         <span class="name">crudDoForm</span><span class="params">(<span name="item">item: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>, <span name="noticeMsg">noticeMsg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@crudDoForm(item:Crudify.this.TheCrudType,noticeMsg:String)(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#crudyDelete" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="crudyDelete(item:Crudify.this.TheCrudType)(html:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
@@ -766,7 +930,11 @@ generated
       <span class="symbol">
         <span class="name">crudyDelete</span><span class="params">(<span name="item">item: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>)</span><span class="params">(<span name="html">html: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@crudyDelete(item:Crudify.this.TheCrudType)(html:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to change how the delete screen is built
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how the delete screen is built
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -781,7 +949,11 @@ generated
       <span class="symbol">
         <span class="name">deleteButton</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deleteButton:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#deleteClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteClass:String"></a>
@@ -794,7 +966,11 @@ generated
       <span class="symbol">
         <span class="name">deleteClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deleteClass:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#deleteId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteId:String"></a>
@@ -807,7 +983,11 @@ generated
       <span class="symbol">
         <span class="name">deleteId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deleteId:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#deleteMenuLoc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a>
@@ -820,7 +1000,11 @@ generated
       <span class="symbol">
         <span class="name">deleteMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deleteMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The menu item for deleting an item (make this &quot;Empty&quot; to disable)
 </p><div class="fullcomment"><div class="comment cmt"><p>The menu item for deleting an item (make this &quot;Empty&quot; to disable)
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -833,9 +1017,13 @@ generated
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">deleteMenuLocParams</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]]</span>
+        <span class="name">deleteMenuLocParams</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deleteMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override to include new Params for the delete menu
 </p><div class="fullcomment"><div class="comment cmt"><p>Override to include new Params for the delete menu
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -850,7 +1038,11 @@ generated
       <span class="symbol">
         <span class="name">deleteMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deleteMenuName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#deletePath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deletePath:List[String]"></a>
@@ -863,7 +1055,11 @@ generated
       <span class="symbol">
         <span class="name">deletePath</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deletePath:List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#deletePathString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deletePathString:String"></a>
@@ -876,7 +1072,11 @@ generated
       <span class="symbol">
         <span class="name">deletePathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deletePathString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#deleteTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteTemplate():scala.xml.NodeSeq"></a>
@@ -889,7 +1089,11 @@ generated
       <span class="symbol">
         <span class="name">deleteTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@deleteTemplate():scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This is the template that's used to render the page after the
 optional wrapping of the template in the page wrapper
 </p><div class="fullcomment"><div class="comment cmt"><p>This is the template that's used to render the page after the
@@ -906,7 +1110,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">displayHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@displayHtml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#displayName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="displayName:String"></a>
@@ -919,7 +1127,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">displayName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@displayName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#displayRecord" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="displayRecord(entry:Crudify.this.TheCrudType)(in:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
@@ -932,7 +1144,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">displayRecord</span><span class="params">(<span name="entry">entry: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@displayRecord(entry:Crudify.this.TheCrudType)(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Customize the display of records for view menu loc
 </p><div class="fullcomment"><div class="comment cmt"><p>Customize the display of records for view menu loc
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -947,7 +1163,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">doCrudAll</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@doCrudAll(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method if you want to change the behavior
 of displaying records via the crud.</p><div class="fullcomment"><div class="comment cmt"><p>Override this method if you want to change the behavior
 of displaying records via the crud.all snippet
@@ -963,7 +1183,11 @@ of displaying records via the crud.all snippet
       <span class="symbol">
         <span class="name">doCrudAllHeaderItems</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@doCrudAllHeaderItems(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to customize how header items are treated
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to customize how header items are treated
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -978,7 +1202,11 @@ of displaying records via the crud.all snippet
       <span class="symbol">
         <span class="name">doCrudAllRowItem</span><span class="params">(<span name="c">c: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@doCrudAllRowItem(c:Crudify.this.TheCrudType)(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to customize how a crudAll line is generated
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to customize how a crudAll line is generated
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -991,9 +1219,13 @@ of displaying records via the crud.all snippet
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doCrudAllRows</span><span class="params">(<span name="list">list: <span class="extype" name="scala.List">List</span>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]</span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+        <span class="name">doCrudAllRows</span><span class="params">(<span name="list">list: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]</span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@doCrudAllRows(list:List[Crudify.this.TheCrudType])(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to determine how all the rows on a crud
 page are displayed
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to determine how all the rows on a crud
@@ -1010,7 +1242,11 @@ page are displayed
       <span class="symbol">
         <span class="name">doDeleteFields</span><span class="params">(<span name="item">item: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>)</span><span class="params">(<span name="html">html: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@doDeleteFields(item:Crudify.this.TheCrudType)(html:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to change how fields are displayed for delete
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how fields are displayed for delete
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1025,7 +1261,11 @@ page are displayed
       <span class="symbol">
         <span class="name">doDeleteSubmit</span><span class="params">(<span name="item">item: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>, <span name="from">from: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@doDeleteSubmit(item:Crudify.this.TheCrudType,from:String)():Nothing" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override this method to change the behavior of deleting an item
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change the behavior of deleting an item
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1040,7 +1280,11 @@ page are displayed
       <span class="symbol">
         <span class="name">doDisplayRecordRow</span><span class="params">(<span name="entry">entry: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@doDisplayRecordRow(entry:Crudify.this.TheCrudType)(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Customize the display of a row for displayRecord
 </p><div class="fullcomment"><div class="comment cmt"><p>Customize the display of a row for displayRecord
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1055,7 +1299,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editButton</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editButton:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#editClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="editClass:String"></a>
@@ -1068,7 +1316,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editClass:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#editErrorClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="editErrorClass:String"></a>
@@ -1081,7 +1333,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editErrorClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editErrorClass:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#editId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="editId:String"></a>
@@ -1094,7 +1350,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editId:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#editMenuLoc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="editMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a>
@@ -1107,7 +1367,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The menu item for editing an item (make this &quot;Empty&quot; to disable)
 </p><div class="fullcomment"><div class="comment cmt"><p>The menu item for editing an item (make this &quot;Empty&quot; to disable)
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1120,9 +1384,13 @@ page are displayed
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">editMenuLocParams</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]]</span>
+        <span class="name">editMenuLocParams</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override to include new Params for the edit menu
 </p><div class="fullcomment"><div class="comment cmt"><p>Override to include new Params for the edit menu
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1137,7 +1405,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editMenuName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The String displayed for menu editing
 </p><div class="fullcomment"><div class="comment cmt"><p>The String displayed for menu editing
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1152,7 +1424,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editPath</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editPath:List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#editPathString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="editPathString:String"></a>
@@ -1165,7 +1441,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editPathString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#editTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="editTemplate():scala.xml.NodeSeq"></a>
@@ -1178,7 +1458,11 @@ page are displayed
       <span class="symbol">
         <span class="name">editTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@editTemplate():scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This is the template that's used to render the page after the
 optional wrapping of the template in the page wrapper
 </p><div class="fullcomment"><div class="comment cmt"><p>This is the template that's used to render the page after the
@@ -1193,9 +1477,13 @@ optional wrapping of the template in the page wrapper
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -1208,7 +1496,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify#fieldsForDisplay" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fieldsForDisplay:List[net.liftweb.mapper.MappedField[_,CrudType]]"></a>
@@ -1219,9 +1511,13 @@ optional wrapping of the template in the page wrapper
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fieldsForDisplay</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="MappedField.html" class="extype" name="net.liftweb.mapper.MappedField">MappedField</a>[_, <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>]]</span>
+        <span class="name">fieldsForDisplay</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="MappedField.html" class="extype" name="net.liftweb.mapper.MappedField">MappedField</a>[_, <span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@fieldsForDisplay:List[net.liftweb.mapper.MappedField[_,CrudType]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The fields to be displayed.</p><div class="fullcomment"><div class="comment cmt"><p>The fields to be displayed. By default all the displayed fields,
 but this list
 can be shortened.
@@ -1235,9 +1531,13 @@ can be shortened.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fieldsForEditing</span><span class="result">: <span class="extype" name="scala.List">List</span>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.FieldPointerType">FieldPointerType</span>]</span>
+        <span class="name">fieldsForEditing</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.FieldPointerType">FieldPointerType</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@fieldsForEditing:List[Crudify.this.FieldPointerType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The list of fields to present on a form form editing
 </p><div class="fullcomment"><div class="comment cmt"><p>The list of fields to present on a form form editing
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1250,9 +1550,13 @@ can be shortened.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fieldsForList</span><span class="result">: <span class="extype" name="scala.List">List</span>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.FieldPointerType">FieldPointerType</span>]</span>
+        <span class="name">fieldsForList</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.FieldPointerType">FieldPointerType</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@fieldsForList:List[Crudify.this.FieldPointerType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The fields displayed on the list page.</p><div class="fullcomment"><div class="comment cmt"><p>The fields displayed on the list page.  By default all
 the displayed fields, but this list
 can be shortened.
@@ -1268,9 +1572,16 @@ can be shortened.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.mapper.CRUDify#findForList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1282,9 +1593,13 @@ can be shortened.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findForList</span><span class="params">(<span name="start">start: <span class="extype" name="scala.Long">Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]</span>
+        <span class="name">findForList</span><span class="params">(<span name="start">start: <span class="extype" name="scala.Long">Long</span></span>, <span name="count">count: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@findForList(start:Long,count:Int):List[CRUDify.this.TheCrudType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Get a List of items from the databased
 </p><div class="fullcomment"><div class="comment cmt"><p>Get a List of items from the databased
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a> → <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1297,9 +1612,13 @@ can be shortened.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">findForListParams</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="QueryParam.html" class="extype" name="net.liftweb.mapper.QueryParam">QueryParam</a>[<span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>]]</span>
+        <span class="name">findForListParams</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="QueryParam.html" class="extype" name="net.liftweb.mapper.QueryParam">QueryParam</a>[<span class="extype" name="net.liftweb.mapper.LongCRUDify.CrudType">CrudType</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@findForListParams:List[net.liftweb.mapper.QueryParam[CrudType]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">What are the query parameters?  Default to ascending on primary key
 </p><div class="fullcomment"><div class="comment cmt"><p>What are the query parameters?  Default to ascending on primary key
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a></dd></dl></div>
@@ -1314,7 +1633,11 @@ can be shortened.
       <span class="symbol">
         <span class="name">findForParam</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@findForParam(in:String):net.liftweb.common.Box[CRUDify.this.TheCrudType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Given a String that represents the primary key, find an instance of
 TheCrudType
 </p><div class="fullcomment"><div class="comment cmt"><p>Given a String that represents the primary key, find an instance of
@@ -1331,7 +1654,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -1344,7 +1671,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -1357,7 +1688,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#listPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="listPath:List[String]"></a>
@@ -1370,7 +1705,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">listPath</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@listPath:List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#listPathString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="listPathString:String"></a>
@@ -1383,7 +1722,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">listPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@listPathString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#locSnippets" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="locSnippets:net.liftweb.sitemap.Loc.DispatchLocSnippets{valdispatch:PartialFunction[String,scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]}"></a>
@@ -1396,7 +1739,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">locSnippets</span><span class="result">: <a href="../sitemap/Loc$$DispatchLocSnippets.html" class="extype" name="net.liftweb.sitemap.Loc.DispatchLocSnippets">DispatchLocSnippets</a> { val dispatch: PartialFunction[String,scala.xml.NodeSeq =&gt; scala.xml.NodeSeq] }</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@locSnippets:net.liftweb.sitemap.Loc.DispatchLocSnippets{valdispatch:PartialFunction[String,scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]}" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#menus" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="menus:List[net.liftweb.sitemap.Menu]"></a>
@@ -1407,9 +1754,13 @@ TheCrudType
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">menus</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
+        <span class="name">menus</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@menus:List[net.liftweb.sitemap.Menu]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -1420,9 +1771,13 @@ TheCrudType
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#nextWord" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nextWord:String"></a>
@@ -1435,7 +1790,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">nextWord</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@nextWord:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -1448,7 +1807,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -1461,7 +1824,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#obscurePrimaryKey" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="obscurePrimaryKey(in:String):String"></a>
@@ -1474,7 +1841,11 @@ TheCrudType
       <span class="symbol">
         <span class="name">obscurePrimaryKey</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@obscurePrimaryKey(in:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method can be used to obscure the primary key.</p><div class="fullcomment"><div class="comment cmt"><p>This method can be used to obscure the primary key.  This is more secure
 because end users will not have access to the primary key.  This method
 actually does the obfuscation.  You can use Mapper's KeyObfuscator class
@@ -1494,7 +1865,11 @@ the obfuscated keys (and translate them back.)
       <span class="symbol">
         <span class="name">obscurePrimaryKey</span><span class="params">(<span name="in">in: (<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@obscurePrimaryKey(in:Crudify.this.TheCrudType):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method can be used to obscure the primary key.</p><div class="fullcomment"><div class="comment cmt"><p>This method can be used to obscure the primary key.  This is more secure
 because end users will not have access to the primary key.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1509,7 +1884,11 @@ because end users will not have access to the primary key.
       <span class="symbol">
         <span class="name">pageWrapper</span><span class="params">(<span name="body">body: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@pageWrapper(body:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#previousWord" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="previousWord:String"></a>
@@ -1522,7 +1901,11 @@ because end users will not have access to the primary key.
       <span class="symbol">
         <span class="name">previousWord</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@previousWord:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#referer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="referer:String"></a>
@@ -1535,7 +1918,11 @@ because end users will not have access to the primary key.
       <span class="symbol">
         <span class="name">referer</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@referer:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#rowsPerPage" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="rowsPerPage:Int"></a>
@@ -1548,7 +1935,11 @@ because end users will not have access to the primary key.
       <span class="symbol">
         <span class="name">rowsPerPage</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@rowsPerPage:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This method defines how many rows are displayed per page.</p><div class="fullcomment"><div class="comment cmt"><p>This method defines how many rows are displayed per page.  By
 default, it's hard coded at 20, but you can make it session specific
 or change the default by overriding this method.
@@ -1564,7 +1955,11 @@ or change the default by overriding this method.
       <span class="symbol">
         <span class="name">showAllClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@showAllClass:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#showAllId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="showAllId:String"></a>
@@ -1577,7 +1972,11 @@ or change the default by overriding this method.
       <span class="symbol">
         <span class="name">showAllId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@showAllId:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#showAllMenuLoc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="showAllMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a>
@@ -1590,7 +1989,11 @@ or change the default by overriding this method.
       <span class="symbol">
         <span class="name">showAllMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@showAllMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The menu item for listing items (make this &quot;Empty&quot; to disable)
 </p><div class="fullcomment"><div class="comment cmt"><p>The menu item for listing items (make this &quot;Empty&quot; to disable)
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1603,9 +2006,13 @@ or change the default by overriding this method.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">showAllMenuLocParams</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
+        <span class="name">showAllMenuLocParams</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@showAllMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override to include new Params for the show all menu
 </p><div class="fullcomment"><div class="comment cmt"><p>Override to include new Params for the show all menu
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1620,7 +2027,11 @@ or change the default by overriding this method.
       <span class="symbol">
         <span class="name">showAllMenuName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@showAllMenuName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#showAllTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="showAllTemplate():scala.xml.NodeSeq"></a>
@@ -1633,7 +2044,11 @@ or change the default by overriding this method.
       <span class="symbol">
         <span class="name">showAllTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@showAllTemplate():scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This is the template that's used to render the page after the
 optional wrapping of the template in the page wrapper
 </p><div class="fullcomment"><div class="comment cmt"><p>This is the template that's used to render the page after the
@@ -1650,7 +2065,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -1663,7 +2082,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#viewClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="viewClass:String"></a>
@@ -1676,7 +2099,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">viewClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewClass:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#viewId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="viewId:String"></a>
@@ -1689,7 +2116,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">viewId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewId:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#viewMenuLoc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="viewMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a>
@@ -1702,7 +2133,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">viewMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The menu item for viewing an item (make this &quot;Empty&quot; to disable)
 </p><div class="fullcomment"><div class="comment cmt"><p>The menu item for viewing an item (make this &quot;Empty&quot; to disable)
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1715,9 +2150,13 @@ optional wrapping of the template in the page wrapper
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">viewMenuLocParams</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]]</span>
+        <span class="name">viewMenuLocParams</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[(<a href="" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>.this)#<span class="extype" name="net.liftweb.mapper.CRUDify.TheCrudType">TheCrudType</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Override to include new Params for the view menu
 </p><div class="fullcomment"><div class="comment cmt"><p>Override to include new Params for the view menu
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
@@ -1732,7 +2171,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">viewMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewMenuName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#viewPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="viewPath:List[String]"></a>
@@ -1745,7 +2188,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">viewPath</span><span class="result">: <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="java.lang.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewPath:List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#viewPathString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="viewPathString:String"></a>
@@ -1758,7 +2205,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">viewPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewPathString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#viewTemplate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="viewTemplate():scala.xml.NodeSeq"></a>
@@ -1771,7 +2222,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">viewTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@viewTemplate():scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">This is the template that's used to render the page after the
 optional wrapping of the template in the page wrapper
 </p><div class="fullcomment"><div class="comment cmt"><p>This is the template that's used to render the page after the
@@ -1788,9 +2243,16 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1804,9 +2266,16 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1820,9 +2289,16 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.proto.Crudify#wrapNameInRequired" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1836,7 +2312,11 @@ optional wrapping of the template in the page wrapper
       <span class="symbol">
         <span class="name">wrapNameInRequired</span><span class="params">(<span name="fieldName">fieldName: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="required">required: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.LongCRUDify@wrapNameInRequired(fieldName:scala.xml.NodeSeq,required:Boolean):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">As the field names are being displayed for editing, this method
 is called with the XHTML that will be displayed as the field name
 and a flag indicating whether the field is required.</p><div class="fullcomment"><div class="comment cmt"><p>As the field names are being displayed for editing, this method
@@ -1862,7 +2342,7 @@ to &quot;required_field&quot;.
             </div><div class="parent" name="net.liftweb.proto.Crudify">
               <h3>Inherited from <a href="../proto/Crudify.html" class="extype" name="net.liftweb.proto.Crudify">Crudify</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

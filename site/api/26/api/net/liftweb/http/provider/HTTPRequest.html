@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>HTTPRequest - Lift Framework 2.6-M3 - net.liftweb.http.provider.HTTPRequest</title>
-          <meta name="description" content="HTTPRequest - Lift Framework 2.6 - M3 - net.liftweb.http.provider.HTTPRequest" />
-          <meta name="keywords" content="HTTPRequest Lift Framework 2.6 M3 net.liftweb.http.provider.HTTPRequest" />
+          <title>HTTPRequest - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.provider.HTTPRequest</title>
+          <meta name="description" content="HTTPRequest - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.provider.HTTPRequest" />
+          <meta name="keywords" content="HTTPRequest Lift Framework 2.6 SNAPSHOT net.liftweb.http.provider.HTTPRequest" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a>.<a href="package.html" class="extype" name="net.liftweb.http.provider">provider</a></p>
-        <h1>HTTPRequest</h1>
+        <h1>HTTPRequest</h1> <span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -40,18 +43,18 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">HTTPRequest</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">HTTPRequest</span><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The representation of a HTTP request state
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="servlet/HTTPRequestServlet.html" class="extype" name="net.liftweb.http.provider.servlet.HTTPRequestServlet">HTTPRequestServlet</a></div>
-        </div></div>
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="servlet/HTTPRequestServlet.html" class="extype" name="net.liftweb.http.provider.servlet.HTTPRequestServlet">HTTPRequestServlet</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -103,7 +106,11 @@
       <span class="symbol">
         <span class="name">authType</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@authType:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- HTTP authentication scheme: BASIC, DIGEST etc.
           Empty if there is auth header.
 </p></dd></dl></div>
@@ -118,7 +125,11 @@
       <span class="symbol">
         <span class="name">contentType</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@contentType:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the MIME type of the body of the request. Empty if this is unknonwn.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#context" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -132,7 +143,11 @@
       <span class="symbol">
         <span class="name">context</span><span class="result">: <a href="HTTPContext.html" class="extype" name="net.liftweb.http.provider.HTTPContext">HTTPContext</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@context:net.liftweb.http.provider.HTTPContext" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the HTTPContext of this service. It does not guarantee that it returns the same
           HTTPContext reference upon each invocation but it must guarantee that HTTPContext
           reference contains the same information.
@@ -148,7 +163,11 @@
       <span class="symbol">
         <span class="name">contextPath</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@contextPath:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the context path. Similar with HttpServletRequest.getContextPath.
           Return &quot;&quot; empty string if your implementation does not support the contept of
           context path
@@ -162,9 +181,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">cookies</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="HTTPCookie.html" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a>]</span>
+        <span class="name">cookies</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="HTTPCookie.html" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@cookies:List[net.liftweb.http.provider.HTTPCookie]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- cookies from this request. Nil if there are no cookies.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#destroyServletSession" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
@@ -178,7 +201,11 @@
       <span class="symbol">
         <span class="name">destroyServletSession</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@destroyServletSession():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Destroy the underlying servlet session
 </p>
     </li><li name="net.liftweb.http.provider.HTTPRequest#extractFiles" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -190,9 +217,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">extractFiles</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="../ParamHolder.html" class="extype" name="net.liftweb.http.ParamHolder">ParamHolder</a>]</span>
+        <span class="name">extractFiles</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../ParamHolder.html" class="extype" name="net.liftweb.http.ParamHolder">ParamHolder</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@extractFiles:List[net.liftweb.http.ParamHolder]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the files uploaded
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#headers" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -204,9 +235,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">headers</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="HTTPParam.html" class="extype" name="net.liftweb.http.provider.HTTPParam">HTTPParam</a>]</span>
+        <span class="name">headers</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="HTTPParam.html" class="extype" name="net.liftweb.http.provider.HTTPParam">HTTPParam</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@headers:List[net.liftweb.http.provider.HTTPParam]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- all header parameters present in this request. Nil if no
           headers are used.
 </p></dd></dl></div>
@@ -219,9 +254,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">headers</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">headers</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@headers(name:String):List[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Return the header values by the given name.</p><div class="fullcomment"><div class="comment cmt"><p>Return the header values by the given name.
 </p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>- the header name</p></dd><dt>returns</dt><dd class="cmt"><p>- List[String] or Nil if there is no such header
 </p></dd></dl></div>
@@ -236,7 +275,11 @@
       <span class="symbol">
         <span class="name">inputStream</span><span class="result">: <span class="extype" name="java.io.InputStream">InputStream</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@inputStream:java.io.InputStream" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the input stream for the request body
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#locale" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -250,7 +293,11 @@
       <span class="symbol">
         <span class="name">locale</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="java.util.Locale">Locale</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@locale:net.liftweb.common.Box[java.util.Locale]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the locale forthis request. Empty if there is not language information.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#method" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -264,7 +311,11 @@
       <span class="symbol">
         <span class="name">method</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@method:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the HTTP method: GET, POST etc.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#multipartContent_?" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -278,7 +329,11 @@
       <span class="symbol">
         <span title="gt4s: multipartContent_$qmark" class="name">multipartContent_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@multipartContent_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true - if the request content is multipart
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#param" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -290,9 +345,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">param</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">param</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@param(name:String):List[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>- the parameter name</p></dd><dt>returns</dt><dd class="cmt"><p>- the list of values associated with this name
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#paramNames" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -304,9 +363,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">paramNames</span><span class="result">: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">paramNames</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@paramNames:List[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- request parameter names
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#params" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -318,9 +381,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">params</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="HTTPParam.html" class="extype" name="net.liftweb.http.provider.HTTPParam">HTTPParam</a>]</span>
+        <span class="name">params</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="HTTPParam.html" class="extype" name="net.liftweb.http.provider.HTTPParam">HTTPParam</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@params:List[net.liftweb.http.provider.HTTPParam]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- all request parameters
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#provider" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
@@ -334,7 +401,11 @@
       <span class="symbol">
         <span class="name">provider</span><span class="result">: <a href="HTTPProvider.html" class="extype" name="net.liftweb.http.provider.HTTPProvider">HTTPProvider</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@provider:net.liftweb.http.provider.HTTPProvider" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The provider associated with this request
 </p>
     </li><li name="net.liftweb.http.provider.HTTPRequest#queryString" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -348,7 +419,11 @@
       <span class="symbol">
         <span class="name">queryString</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@queryString:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the entire query string. Empty if the requst contains no query string
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#remoteAddress" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -362,7 +437,11 @@
       <span class="symbol">
         <span class="name">remoteAddress</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@remoteAddress:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the remote address of the client or the last seen proxy.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#remoteHost" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -376,7 +455,11 @@
       <span class="symbol">
         <span class="name">remoteHost</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@remoteHost:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the fully qualified name of the client host or last seen proxy
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#remotePort" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -390,7 +473,11 @@
       <span class="symbol">
         <span class="name">remotePort</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@remotePort:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the source port of the client or last seen proxy.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#resume" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -404,7 +491,11 @@
       <span class="symbol">
         <span class="name">resume</span><span class="params">(<span name="what">what: (<a href="../Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>)</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@resume(what:(net.liftweb.http.Req,net.liftweb.http.LiftResponse)):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Resume this request</p><div class="fullcomment"><div class="comment cmt"><p>Resume this request</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>false if this continuation cannot be resumed
         as it is not in pending state.
 </p></dd></dl></div>
@@ -419,7 +510,11 @@
       <span class="symbol">
         <span class="name">resumeInfo</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[(<a href="../Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>)]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@resumeInfo:Option[(net.liftweb.http.Req,net.liftweb.http.LiftResponse)]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- Some[Any] if this is a resumed request, return the state
           associated with it.
 </p></dd></dl></div>
@@ -434,7 +529,11 @@
       <span class="symbol">
         <span class="name">scheme</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@scheme:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the name of the scheme of this request: http, https etc.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#serverName" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -448,7 +547,11 @@
       <span class="symbol">
         <span class="name">serverName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@serverName:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the host name of the server
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#serverPort" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -462,7 +565,11 @@
       <span class="symbol">
         <span class="name">serverPort</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@serverPort:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the server port
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#session" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -476,7 +583,11 @@
       <span class="symbol">
         <span class="name">session</span><span class="result">: <a href="HTTPSession.html" class="extype" name="net.liftweb.http.provider.HTTPSession">HTTPSession</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@session:net.liftweb.http.provider.HTTPSession" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the HTTP session associated with this request
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#sessionId" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -490,7 +601,11 @@
       <span class="symbol">
         <span class="name">sessionId</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@sessionId:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the sessionID (if there is one) for this request.  This will *NOT* create
 a new session if one does not already exist
 </p></dd></dl></div>
@@ -505,7 +620,11 @@ a new session if one does not already exist
       <span class="symbol">
         <span class="name">setCharacterEncoding</span><span class="params">(<span name="encoding">encoding: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@setCharacterEncoding(encoding:String):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Sets the character encoding that will be used for request body read
 </p><div class="fullcomment"><div class="comment cmt"><p>Sets the character encoding that will be used for request body read
 </p></div><dl class="paramcmts block"><dt class="param">encoding</dt><dd class="cmt"><p>- the encoding that will be used (e.g. UTF-8)
@@ -521,7 +640,11 @@ a new session if one does not already exist
       <span class="symbol">
         <span class="name">snapshot</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPRequest">HTTPRequest</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@snapshot:net.liftweb.http.provider.HTTPRequest" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Creates a new HTTPRequest instance as a copy of this one.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a new HTTPRequest instance as a copy of this one. It is used when
 snapshots of the current request context is created in order for this request object
 to be used on different threads (such as asynchronous template fragments processing).
@@ -538,7 +661,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">suspend</span><span class="params">(<span name="timeout">timeout: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="RetryState$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="net.liftweb.http.provider.RetryState.Value">RetryState.Value</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@suspend(timeout:Long):net.liftweb.http.provider.RetryState.Value" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Suspend the curent request and resume it after a given timeout
 </p>
     </li><li name="net.liftweb.http.provider.HTTPRequest#suspendResumeSupport_?" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -552,7 +679,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span title="gt4s: suspendResumeSupport_$qmark" class="name">suspendResumeSupport_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@suspendResumeSupport_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if the underlying container supports suspend/resume idiom.
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#uri" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -566,7 +697,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">uri</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@uri:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the request URI
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#url" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
@@ -580,7 +715,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">url</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@url:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>- the request URL
 </p></dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#userAgent" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
@@ -594,7 +733,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">userAgent</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@userAgent:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The User-Agent of the request
 </p>
     </li></ol>
@@ -603,19 +746,6 @@ The new instance must not keep any reference to the container' instances.
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -626,8 +756,12 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -639,22 +773,13 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -665,8 +790,12 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -678,7 +807,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -689,11 +822,18 @@ The new instance must not keep any reference to the container' instances.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -705,9 +845,13 @@ The new instance must not keep any reference to the container' instances.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -720,7 +864,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -733,9 +881,16 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -749,7 +904,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -762,7 +921,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest#header" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="header(name:String):net.liftweb.common.Box[String]"></a>
@@ -775,7 +938,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">header</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@header(name:String):net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Return the header value by the given name
 </p><div class="fullcomment"><div class="comment cmt"><p>Return the header value by the given name
 </p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>- the header name</p></dd><dt>returns</dt><dd class="cmt"><p>- the header value. Empty if there is no such header
@@ -791,7 +958,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -802,9 +973,13 @@ The new instance must not keep any reference to the container' instances.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -817,7 +992,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -830,7 +1009,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -843,7 +1026,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -856,7 +1043,11 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -869,9 +1060,16 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -885,9 +1083,16 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -901,9 +1106,16 @@ The new instance must not keep any reference to the container' instances.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPRequest@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li></ol>
@@ -916,7 +1128,7 @@ The new instance must not keep any reference to the container' instances.
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

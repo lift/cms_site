@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>BaseResponse - Lift Framework 2.6-M3 - net.liftweb.http.testing.BaseResponse</title>
-          <meta name="description" content="BaseResponse - Lift Framework 2.6 - M3 - net.liftweb.http.testing.BaseResponse" />
-          <meta name="keywords" content="BaseResponse Lift Framework 2.6 M3 net.liftweb.http.testing.BaseResponse" />
+          <title>BaseResponse - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.testing.BaseResponse</title>
+          <meta name="description" content="BaseResponse - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.testing.BaseResponse" />
+          <meta name="keywords" content="BaseResponse Lift Framework 2.6 SNAPSHOT net.liftweb.http.testing.BaseResponse" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a>.<a href="package.html" class="extype" name="net.liftweb.http.testing">testing</a></p>
-        <h1>BaseResponse</h1>
+        <h1>BaseResponse</h1> <span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -46,11 +49,11 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The response to an HTTP request, as long as the server responds with *SOMETHING*</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="GetPosterHelper.html" class="extype" name="net.liftweb.http.testing.GetPosterHelper">GetPosterHelper</a>, <a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a>, <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="GetPosterHelper.html" class="extype" name="net.liftweb.http.testing.GetPosterHelper">GetPosterHelper</a>, <a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a>, <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a>, <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="HttpResponse.html" class="extype" name="net.liftweb.http.testing.HttpResponse">HttpResponse</a>, <a href="TheResponse.html" class="extype" name="net.liftweb.http.testing.TheResponse">TheResponse</a></div>
-        </div></div>
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="HttpResponse.html" class="extype" name="net.liftweb.http.testing.HttpResponse">HttpResponse</a>, <a href="TheResponse.html" class="extype" name="net.liftweb.http.testing.TheResponse">TheResponse</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -96,9 +99,13 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">BaseResponse</span><span class="params">(<span name="baseUrl">baseUrl: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="code">code: <span class="extype" name="scala.Int">Int</span></span>, <span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="headers">headers: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="body">body: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]]</span>, <span name="theHttpClient">theHttpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>)</span>
+        <span class="name">BaseResponse</span><span class="params">(<span name="baseUrl">baseUrl: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="code">code: <span class="extype" name="scala.Int">Int</span></span>, <span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="headers">headers: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="body">body: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]]</span>, <span name="theHttpClient">theHttpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@&lt;init&gt;(baseUrl:String,code:Int,msg:String,headers:Map[String,List[String]],body:net.liftweb.common.Box[Array[Byte]],theHttpClient:org.apache.commons.httpclient.HttpClient):net.liftweb.http.testing.BaseResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -116,7 +123,11 @@
       <span class="symbol">
         <span class="name">FuncType</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@FuncType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseGetPoster.ResponseType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="ResponseType"></a>
@@ -129,7 +140,11 @@
       <span class="symbol">
         <span class="name">ResponseType</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a></dd></dl></div>
     </li><li name="net.liftweb.http.testing.Response.SelfType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="SelfType"></a>
@@ -142,7 +157,11 @@
       <span class="symbol">
         <span class="name">SelfType</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
     </li></ol>
             </div>
@@ -162,7 +181,11 @@
       <span class="symbol">
         <span title="gt4s: $bang" class="name">!</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Int">Int</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!(code:Int,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server gave a particular response code.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server gave a particular response code.  If the response is not a 200, call the errorFunc with the msg
 </p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the String to report as an error</p></dd><dt class="param">errorFunc</dt><dd class="cmt"><p>the error reporting thing.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
@@ -177,24 +200,15 @@
       <span class="symbol">
         <span title="gt4s: $bang" class="name">!</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!(msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server gave a response.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server gave a response.  If the server failed to respond, call the errorFunc with the msg
 </p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the String to report as an error</p></dd><dt class="param">errorFunc</dt><dd class="cmt"><p>the error reporting thing.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
     </li><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -205,8 +219,12 @@
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#!@" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!@(msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType"></a>
       <a id="!@(⇒String)(ReportFailure):SelfType"></a>
@@ -218,7 +236,11 @@
       <span class="symbol">
         <span title="gt4s: $bang$at" class="name">!@</span><span class="params">(<span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!@(msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test the response as a 200.</p><div class="fullcomment"><div class="comment cmt"><p>Test the response as a 200.  If the response is not a 200, call the errorFunc with the msg
 </p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>the String to report as an error</p></dd><dt class="param">errorFunc</dt><dd class="cmt"><p>the error reporting thing.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
@@ -233,7 +255,11 @@
       <span class="symbol">
         <span title="gt4s: $bang$bslash" class="name">!\</span><span class="params">(<span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!\(label:String,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response does not contain a node with a particular label as a direct child.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response does not contain a node with a particular label as a direct child.
 If the response does contain valid xml and does contain the node,
   call the errorFunc with the msg
@@ -250,7 +276,11 @@ If the response does contain valid xml and does contain the node,
       <span class="symbol">
         <span title="gt4s: $bang$bslash" class="name">!\</span><span class="params">(<span name="node">node: <span class="extype" name="scala.xml.Node">Node</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!\(node:scala.xml.Node,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response does not contain a particular node as a direct child
 with the exact attributes and children.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response does not contain a particular node as a direct child
 with the exact attributes and children.
@@ -269,7 +299,11 @@ If the response does contain valid xml and does contain the exact node,
       <span class="symbol">
         <span title="gt4s: $bang$bslash$bslash" class="name">!\\</span><span class="params">(<span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!\\(label:String,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response does not contain a node with a particular label anywhere in the xml.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response does not contain a node with a particular label anywhere in the xml.
 If the response does contain valid xml and does contain the node,
   call the errorFunc with the msg
@@ -286,7 +320,11 @@ If the response does contain valid xml and does contain the node,
       <span class="symbol">
         <span title="gt4s: $bang$bslash$bslash" class="name">!\\</span><span class="params">(<span name="node">node: <span class="extype" name="scala.xml.Node">Node</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@!\\(node:scala.xml.Node,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response does not contain a particular node anywhere in the xml
 with the exact attributes and children.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response does not contain a particular node anywhere in the xml
 with the exact attributes and children.
@@ -305,22 +343,13 @@ If the response does contain valid xml and does contain the exact node,
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -331,8 +360,12 @@ If the response does contain valid xml and does contain the exact node,
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#\" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="\(label:String,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType"></a>
       <a id="\(String,⇒String)(ReportFailure):SelfType"></a>
@@ -344,7 +377,11 @@ If the response does contain valid xml and does contain the exact node,
       <span class="symbol">
         <span title="gt4s: $bslash" class="name">\</span><span class="params">(<span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@\(label:String,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response contains a node with a particular label as a direct child.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response contains a node with a particular label as a direct child.
 If the response does not contain valid xml or does not contain the node,
   call the errorFunc with the msg
@@ -361,7 +398,11 @@ If the response does not contain valid xml or does not contain the node,
       <span class="symbol">
         <span title="gt4s: $bslash" class="name">\</span><span class="params">(<span name="node">node: <span class="extype" name="scala.xml.Node">Node</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@\(node:scala.xml.Node,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response contains a particular node as a direct child
 with the exact attributes and children.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response contains a particular node as a direct child
 with the exact attributes and children.
@@ -380,7 +421,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span title="gt4s: $bslash$bslash" class="name">\\</span><span class="params">(<span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@\\(label:String,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response contains a node with a particular label anywhere in the xml.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response contains a node with a particular label anywhere in the xml.
 If the response does not contain valid xml or does not contain the node,
   call the errorFunc with the msg
@@ -397,7 +442,11 @@ If the response does not contain valid xml or does not contain the node,
       <span class="symbol">
         <span title="gt4s: $bslash$bslash" class="name">\\</span><span class="params">(<span name="node">node: <span class="extype" name="scala.xml.Node">Node</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@\\(node:scala.xml.Node,msg:=&gt;String)(impliciterrorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Test that the server response contains a particular node anywhere in the xml
 with the exact attributes and children.</p><div class="fullcomment"><div class="comment cmt"><p>Test that the server response contains a particular node anywhere in the xml
 with the exact attributes and children.
@@ -416,7 +465,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#baseUrl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="baseUrl:String"></a>
@@ -429,7 +482,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">baseUrl</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@baseUrl:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The base URL for all requests
 </p><div class="fullcomment"><div class="comment cmt"><p>The base URL for all requests
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a></dd></dl></div>
@@ -444,7 +501,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">body</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@body:net.liftweb.common.Box[Array[Byte]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.http.testing.BaseResponse#bodyAsString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="bodyAsString:net.liftweb.common.Box[String]"></a>
@@ -457,7 +518,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">bodyAsString</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="java.lang.String">String</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@bodyAsString:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The response body as a UTF-8 encoded String
 </p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -469,11 +534,18 @@ If the response does not contain valid xml or does not contain the exact node,
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#code" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -487,7 +559,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">code</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@code:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.http.testing.BaseResponse#contentType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="contentType:String"></a>
@@ -500,7 +576,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">contentType</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@contentType:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The content type header of the response
 </p>
     </li><li name="net.liftweb.http.testing.GetPosterHelper#delete" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -514,7 +594,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">delete</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@delete(url:String,params:(String,Any)*)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType):GetPosterHelper.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP DELETE with a newly minted httpClient
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP DELETE with a newly minted httpClient
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the URL to make the request on</p></dd><dt class="param">params</dt><dd class="cmt"><p>the parameters to pass
@@ -528,9 +612,13 @@ If the response does not contain valid xml or does not contain the exact node,
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">delete</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="faux_params">faux_params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">delete</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="faux_params">faux_params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@delete(url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)],faux_params:(String,Any)*)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP DELETE
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP DELETE
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request</p></dd><dt class="param">faux_params</dt><dd class="cmt"><p>- the request parameters to include with the request
@@ -544,9 +632,13 @@ If the response does not contain valid xml or does not contain the exact node,
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -559,7 +651,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#filter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="filter(f:BaseResponse.this.FuncType=&gt;Unit):BaseResponse.this.FuncType"></a>
@@ -572,7 +668,11 @@ If the response does not contain valid xml or does not contain the exact node,
       <span class="symbol">
         <span class="name">filter</span><span class="params">(<span name="f">f: (<a href="#FuncType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.FuncType">FuncType</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="#FuncType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.FuncType">FuncType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@filter(f:BaseResponse.this.FuncType=&gt;Unit):BaseResponse.this.FuncType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">the Response has a filter method for chaining in a for comprehension.</p><div class="fullcomment"><div class="comment cmt"><p>the Response has a filter method for chaining in a for comprehension.  Note that the filter method does *NOT* have
 to return a Boolean, any expression (e.g., an assertion)
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
@@ -587,9 +687,16 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#foreach" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -603,7 +710,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">foreach</span><span class="params">(<span name="f">f: (<a href="#FuncType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.FuncType">FuncType</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@foreach(f:BaseResponse.this.FuncType=&gt;Unit):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">the Response has a foreach method for chaining in a for comprehension
 </p><div class="fullcomment"><div class="comment cmt"><p>the Response has a foreach method for chaining in a for comprehension
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
@@ -618,7 +729,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">get</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@get(url:String,params:(String,Any)*)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType):GetPosterHelper.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP GET with a newly minted httpClient
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP GET with a newly minted httpClient
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the URL to make the request on</p></dd><dt class="param">params</dt><dd class="cmt"><p>the parameters to pass
@@ -632,9 +747,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">get</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="faux_params">faux_params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">get</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="faux_params">faux_params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@get(url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)],faux_params:(String,Any)*)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP GET
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP GET
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request</p></dd><dt class="param">faux_params</dt><dd class="cmt"><p>- the request parameters to include with the request
@@ -650,7 +769,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#getOrFail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getOrFail(success:Boolean,msg:String,errorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType"></a>
@@ -663,7 +786,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">getOrFail</span><span class="params">(<span name="success">success: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="errorFunc">errorFunc: <a href="ReportFailure.html" class="extype" name="net.liftweb.http.testing.ReportFailure">ReportFailure</a></span>)</span><span class="result">: <a href="#SelfType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.SelfType">SelfType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@getOrFail(success:Boolean,msg:String,errorFunc:net.liftweb.http.testing.ReportFailure):BaseResponse.this.SelfType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -676,7 +803,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#headers" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="headers:Map[String,List[String]]"></a>
@@ -687,9 +818,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">headers</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+        <span class="name">headers</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@headers:Map[String,List[String]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The response headers
 </p><div class="fullcomment"><div class="comment cmt"><p>The response headers
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
@@ -704,7 +839,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">html5AsXml</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@html5AsXml:net.liftweb.common.Box[scala.xml.Elem]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -717,7 +856,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseGetPoster#jsonToRequestEntity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jsonToRequestEntity(body:net.liftweb.json.JValue):org.apache.commons.httpclient.methods.RequestEntity"></a>
@@ -730,7 +873,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">jsonToRequestEntity</span><span class="params">(<span name="body">body: <a href="../../json/package.html#JValue=net.liftweb.json.JsonAST.JValue" class="extmbr" name="net.liftweb.json.JValue">JValue</a></span>)</span><span class="result">: <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@jsonToRequestEntity(body:net.liftweb.json.JValue):org.apache.commons.httpclient.methods.RequestEntity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a></dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#msg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="msg:String"></a>
@@ -743,7 +890,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">msg</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@msg:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -754,9 +905,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -769,7 +924,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -782,7 +941,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.http.testing.GetPosterHelper#post" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="post(url:String,body:Array[Byte],contentType:String)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType):GetPosterHelper.this.ResponseType"></a>
@@ -795,7 +958,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">post</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="body">body: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@post(url:String,body:Array[Byte],contentType:String)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType):GetPosterHelper.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP POST with a newly minted httpClient
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP POST with a newly minted httpClient
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the URL to make the request on</p></dd><dt class="param">body</dt><dd class="cmt"><p>the bytes to POST to the server</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>the content type of the message
@@ -811,7 +978,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">post</span><span class="tparams">[<span name="RT">RT</span>]</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="xml">xml: <span class="extype" name="net.liftweb.http.testing.GetPosterHelper.post.RT">RT</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>, <span name="bodyToRequestEntity">bodyToRequestEntity: (<span class="extype" name="net.liftweb.http.testing.GetPosterHelper.post.RT">RT</span>) ⇒ <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@post[RT](url:String,xml:RT)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType,implicitbodyToRequestEntity:RT=&gt;org.apache.commons.httpclient.methods.RequestEntity):GetPosterHelper.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP POST with a newly minted httpClient
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP POST with a newly minted httpClient
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the URL to make the request on</p></dd><dt class="param">xml</dt><dd class="cmt"><p>the XML to POST to the server
@@ -827,7 +998,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">post</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@post(url:String,params:(String,Any)*)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType):GetPosterHelper.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP POST with a newly minted httpClient
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP POST with a newly minted httpClient
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the URL to make the request on</p></dd><dt class="param">params</dt><dd class="cmt"><p>the parameters to pass
@@ -841,9 +1016,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">post</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">post</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@post(url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)],body:Array[Byte],contentType:String)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP POST with a pile of bytes in the body
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP POST with a pile of bytes in the body
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request</p></dd><dt class="param">body</dt><dd class="cmt"><p>- the pile of bytes to POST to the target server</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>- the content type of the pile of bytes
@@ -857,9 +1036,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">post</span><span class="tparams">[<span name="RT">RT</span>]</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="net.liftweb.http.testing.BaseGetPoster.post.RT">RT</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>, <span name="bodyToRequestEntity">bodyToRequestEntity: (<span class="extype" name="net.liftweb.http.testing.BaseGetPoster.post.RT">RT</span>) ⇒ <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">post</span><span class="tparams">[<span name="RT">RT</span>]</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="net.liftweb.http.testing.BaseGetPoster.post.RT">RT</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>, <span name="bodyToRequestEntity">bodyToRequestEntity: (<span class="extype" name="net.liftweb.http.testing.BaseGetPoster.post.RT">RT</span>) ⇒ <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@post[RT](url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)],body:RT)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType,implicitbodyToRequestEntity:RT=&gt;org.apache.commons.httpclient.methods.RequestEntity):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP POST with an XML body
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP POST with an XML body
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request</p></dd><dt class="param">body</dt><dd class="cmt"><p>- the xml to post
@@ -873,9 +1056,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">post</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="faux_params">faux_params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">post</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="faux_params">faux_params: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@post(url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)],faux_params:(String,Any)*)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP POST
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP POST
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request</p></dd><dt class="param">faux_params</dt><dd class="cmt"><p>- the request parameters to include with the request
@@ -891,7 +1078,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">put</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="body">body: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@put(url:String,body:Array[Byte],contentType:String)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType):GetPosterHelper.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP POST with a newly minted httpClient
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP POST with a newly minted httpClient
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the URL to make the request on</p></dd><dt class="param">body</dt><dd class="cmt"><p>the bytes to POST to the server</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>the content type of the message
@@ -907,7 +1098,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">put</span><span class="tparams">[<span name="RT">RT</span>]</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="xml">xml: <span class="extype" name="net.liftweb.http.testing.GetPosterHelper.put.RT">RT</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>, <span name="bodyToRequestEntity">bodyToRequestEntity: (<span class="extype" name="net.liftweb.http.testing.GetPosterHelper.put.RT">RT</span>) ⇒ <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@put[RT](url:String,xml:RT)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;GetPosterHelper.this.ResponseType,implicitbodyToRequestEntity:RT=&gt;org.apache.commons.httpclient.methods.RequestEntity):GetPosterHelper.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP PUT with a newly minted httpClient
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP PUT with a newly minted httpClient
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>the URL to make the request on</p></dd><dt class="param">xml</dt><dd class="cmt"><p>the XML to PUT to the server
@@ -921,9 +1116,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">put</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">put</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@put(url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)],body:Array[Byte],contentType:String)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP PUT with a pile of bytes in the body
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP PUT with a pile of bytes in the body
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request</p></dd><dt class="param">body</dt><dd class="cmt"><p>- the pile of bytes to POST to the target server</p></dd><dt class="param">contentType</dt><dd class="cmt"><p>- the content type of the pile of bytes
@@ -937,9 +1136,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">put</span><span class="tparams">[<span name="RT">RT</span>]</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="net.liftweb.http.testing.BaseGetPoster.put.RT">RT</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>, <span name="bodyToRequestEntity">bodyToRequestEntity: (<span class="extype" name="net.liftweb.http.testing.BaseGetPoster.put.RT">RT</span>) ⇒ <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">put</span><span class="tparams">[<span name="RT">RT</span>]</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="body">body: <span class="extype" name="net.liftweb.http.testing.BaseGetPoster.put.RT">RT</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>, <span name="bodyToRequestEntity">bodyToRequestEntity: (<span class="extype" name="net.liftweb.http.testing.BaseGetPoster.put.RT">RT</span>) ⇒ <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@put[RT](url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)],body:RT)(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType,implicitbodyToRequestEntity:RT=&gt;org.apache.commons.httpclient.methods.RequestEntity):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP PUT with an XML body
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP PUT with an XML body
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request</p></dd><dt class="param">body</dt><dd class="cmt"><p>- the xml to post
@@ -953,9 +1156,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">put</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <span class="extype" name="scala.List">List</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
+        <span class="name">put</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="httpClient">httpClient: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>, <span name="headers">headers: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="capture">capture: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span>, <span class="extype" name="org.apache.commons.httpclient.HttpMethodBase">HttpMethodBase</span>) ⇒ <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>)</span><span class="result">: <a href="#ResponseType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.ResponseType">ResponseType</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@put(url:String,httpClient:org.apache.commons.httpclient.HttpClient,headers:List[(String,String)])(implicitcapture:(String,org.apache.commons.httpclient.HttpClient,org.apache.commons.httpclient.HttpMethodBase)=&gt;BaseGetPoster.this.ResponseType):BaseGetPoster.this.ResponseType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Perform an HTTP PUT
 </p><div class="fullcomment"><div class="comment cmt"><p>Perform an HTTP PUT
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>- the URL to append to the baseUrl</p></dd><dt class="param">headers</dt><dd class="cmt"><p>- any additional headers to include with the request
@@ -969,9 +1176,13 @@ to return a Boolean, any expression (e.g., an assertion)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">slurpApacheHeaders</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="org.apache.commons.httpclient.Header">Header</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+        <span class="name">slurpApacheHeaders</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="org.apache.commons.httpclient.Header">Header</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@slurpApacheHeaders(in:Array[org.apache.commons.httpclient.Header]):Map[String,List[String]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -984,7 +1195,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.http.testing.BaseResponse#theHttpClient" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="theHttpClient:org.apache.commons.httpclient.HttpClient"></a>
@@ -997,7 +1212,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">theHttpClient</span><span class="result">: <span class="extype" name="org.apache.commons.httpclient.HttpClient">HttpClient</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@theHttpClient:org.apache.commons.httpclient.HttpClient" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Create the HTTP client for a new get/post request
 </p><div class="fullcomment"><div class="comment cmt"><p>Create the HTTP client for a new get/post request
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="GetPosterHelper.html" class="extype" name="net.liftweb.http.testing.GetPosterHelper">GetPosterHelper</a></dd></dl></div>
@@ -1012,7 +1231,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -1025,9 +1248,16 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1041,9 +1271,16 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1057,11 +1294,35 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
+    </li><li name="net.liftweb.http.testing.BaseResponse#withFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withFilter(f:BaseResponse.this.FuncType=&gt;Unit):BaseResponse.this.FuncType"></a>
+      <a id="withFilter((FuncType)⇒Unit):FuncType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withFilter</span><span class="params">(<span name="f">f: (<a href="#FuncType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.FuncType">FuncType</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="#FuncType" class="extmbr" name="net.liftweb.http.testing.BaseResponse.FuncType">FuncType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@withFilter(f:BaseResponse.this.FuncType=&gt;Unit):BaseResponse.this.FuncType" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="net.liftweb.http.testing.BaseResponse#xml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="xml:net.liftweb.common.Box[scala.xml.Elem]"></a>
       <a id="xml:Box[Elem]"></a>
@@ -1073,7 +1334,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">xml</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@xml:net.liftweb.common.Box[scala.xml.Elem]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Get the body of the response as XML
 </p><div class="fullcomment"><div class="comment cmt"><p>Get the body of the response as XML
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.testing.BaseResponse">BaseResponse</a> → <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></dd></dl></div>
@@ -1088,7 +1353,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">xmlMatch</span><span class="params">(<span name="findFunc">findFunc: (<span class="extype" name="scala.xml.Elem">Elem</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="filterFunc">filterFunc: (<span class="extype" name="scala.xml.Node">Node</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@xmlMatch(findFunc:scala.xml.Elem=&gt;scala.xml.NodeSeq,filterFunc:scala.xml.Node=&gt;Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.http.testing.BaseGetPoster#xmlToRequestEntity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="xmlToRequestEntity(body:scala.xml.NodeSeq):org.apache.commons.httpclient.methods.RequestEntity"></a>
@@ -1101,7 +1370,11 @@ to return a Boolean, any expression (e.g., an assertion)
       <span class="symbol">
         <span class="name">xmlToRequestEntity</span><span class="params">(<span name="body">body: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="org.apache.commons.httpclient.methods.RequestEntity">RequestEntity</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.testing.BaseResponse@xmlToRequestEntity(body:scala.xml.NodeSeq):org.apache.commons.httpclient.methods.RequestEntity" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseGetPoster.html" class="extype" name="net.liftweb.http.testing.BaseGetPoster">BaseGetPoster</a></dd></dl></div>
     </li></ol>
             </div>
@@ -1119,7 +1392,7 @@ to return a Boolean, any expression (e.g., an assertion)
             </div><div class="parent" name="net.liftweb.http.testing.Response">
               <h3>Inherited from <a href="Response.html" class="extype" name="net.liftweb.http.testing.Response">Response</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>sitemap - Lift Framework 2.6-M3 - net.liftweb.sitemap</title>
-          <meta name="description" content="sitemap - Lift Framework 2.6 - M3 - net.liftweb.sitemap" />
-          <meta name="keywords" content="sitemap Lift Framework 2.6 M3 net.liftweb.sitemap" />
+          <title>sitemap - Lift Framework 2.6-SNAPSHOT - net.liftweb.sitemap</title>
+          <meta name="description" content="sitemap - Lift Framework 2.6 - SNAPSHOT - net.liftweb.sitemap" />
+          <meta name="keywords" content="sitemap Lift Framework 2.6 SNAPSHOT net.liftweb.sitemap" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
-        <h1>sitemap</h1>
+        <h1>sitemap</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -63,7 +66,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.sitemap.AMenuPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="net.liftweb.sitemap.AMenuPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="AMenuPathextendsMenuPathwithProductwithSerializable"></a>
       <a id="AMenuPath:AMenuPath"></a>
       <h4 class="signature">
@@ -74,8 +77,15 @@
       <span class="symbol">
         <a href="AMenuPath.html"><span class="name">AMenuPath</span></a><span class="params">(<span name="pathItem">pathItem: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MenuPath.html" class="extype" name="net.liftweb.sitemap.MenuPath">MenuPath</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Defines a single path element for a Menu's Link URI.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@AMenuPathextendsMenuPathwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines a single path element for a Menu's Link URI.</p><div class="fullcomment"><div class="comment cmt"><p>Defines a single path element for a Menu's Link URI. Typically users will
+not utilize this case class, but will use the WithSlash trait's &quot;/&quot; method
+that takes Strings.
+</p></div></div>
     </li><li name="net.liftweb.sitemap.CompleteMenu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="CompleteMenuextendsProductwithSerializable"></a>
       <a id="CompleteMenu:CompleteMenu"></a>
@@ -85,12 +95,16 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="CompleteMenu.html"><span class="name">CompleteMenu</span></a><span class="params">(<span name="lines">lines: <span class="extype" name="scala.Seq">Seq</span>[<a href="MenuItem.html" class="extype" name="net.liftweb.sitemap.MenuItem">MenuItem</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="CompleteMenu.html"><span class="name">CompleteMenu</span></a><span class="params">(<span name="lines">lines: <a href="../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="MenuItem.html" class="extype" name="net.liftweb.sitemap.MenuItem">MenuItem</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@CompleteMenuextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.ConvertableLoc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ConvertableLoc[T]extendsObject"></a>
+      <a id="ConvertableLoc[T]extendsAnyRef"></a>
       <a id="ConvertableLoc[T]:ConvertableLoc[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,12 +112,16 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ConvertableLoc.html"><span class="name">ConvertableLoc</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ConvertableLoc.html"><span class="name">ConvertableLoc</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@ConvertableLoc[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="net.liftweb.sitemap.ConvertableToMenu" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ConvertableToMenuextendsObject"></a>
+    </li><li name="net.liftweb.sitemap.ConvertableToMenu" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ConvertableToMenuextendsAnyRef"></a>
       <a id="ConvertableToMenu:ConvertableToMenu"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -111,12 +129,19 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ConvertableToMenu.html"><span class="name">ConvertableToMenu</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ConvertableToMenu.html"><span class="name">ConvertableToMenu</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A common trait between Menu and something that can be converted to a Menu.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@ConvertableToMenuextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A common trait between Menu and something that can be converted to a Menu.</p><div class="fullcomment"><div class="comment cmt"><p>A common trait between Menu and something that can be converted to a Menu.
+This makes building Lists of things that can be converted to Menu instance
+easier because there's a common trait.
+</p></div></div>
     </li><li name="net.liftweb.sitemap.FlexMenuBuilder" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="FlexMenuBuilderextendsObject"></a>
+      <a id="FlexMenuBuilderextendsAnyRef"></a>
       <a id="FlexMenuBuilder:FlexMenuBuilder"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -124,12 +149,16 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="FlexMenuBuilder.html"><span class="name">FlexMenuBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="FlexMenuBuilder.html"><span class="name">FlexMenuBuilder</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@FlexMenuBuilderextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.HasKids" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HasKidsextendsObject"></a>
+      <a id="HasKidsextendsAnyRef"></a>
       <a id="HasKids:HasKids"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -137,12 +166,16 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HasKids.html"><span class="name">HasKids</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="HasKids.html"><span class="name">HasKids</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@HasKidsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.Loc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Loc[T]extendsObject"></a>
+      <a id="Loc[T]extendsAnyRef"></a>
       <a id="Loc[T]:Loc[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -150,13 +183,17 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Loc.html"><span class="name">Loc</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Loc.html"><span class="name">Loc</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A menu location
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@Loc[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A menu location
 </p>
     </li><li name="net.liftweb.sitemap.LocPath" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="LocPathextendsObject"></a>
+      <a id="LocPathextendsAnyRef"></a>
       <a id="LocPath:LocPath"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -164,9 +201,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LocPath.html"><span class="name">LocPath</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="LocPath.html"><span class="name">LocPath</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@LocPathextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.Menu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MenuextendsHasKidswithConvertableToMenuwithProductwithSerializable"></a>
@@ -179,7 +220,11 @@
       <span class="symbol">
         <a href="Menu.html"><span class="name">Menu</span></a><span class="params">(<span name="loc">loc: <a href="Loc.html" class="extype" name="net.liftweb.sitemap.Loc">Loc</a>[_]</span>, <span name="convertableKids">convertableKids: <a href="ConvertableToMenu.html" class="extype" name="net.liftweb.sitemap.ConvertableToMenu">ConvertableToMenu</a>*</span>)</span><span class="result"> extends <a href="HasKids.html" class="extype" name="net.liftweb.sitemap.HasKids">HasKids</a> with <a href="ConvertableToMenu.html" class="extype" name="net.liftweb.sitemap.ConvertableToMenu">ConvertableToMenu</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@MenuextendsHasKidswithConvertableToMenuwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.MenuItem" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MenuItemextendsProductwithSerializable"></a>
@@ -190,9 +235,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MenuItem.html"><span class="name">MenuItem</span></a><span class="params">(<span name="text">text: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="uri">uri: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="kids">kids: <span class="extype" name="scala.Seq">Seq</span>[<a href="MenuItem.html" class="extype" name="net.liftweb.sitemap.MenuItem">MenuItem</a>]</span>, <span name="current">current: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="path">path: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="info">info: <span class="extype" name="scala.List">List</span>[<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Function0">Function0</span>[_]]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="MenuItem.html"><span class="name">MenuItem</span></a><span class="params">(<span name="text">text: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="uri">uri: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="kids">kids: <a href="../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="MenuItem.html" class="extype" name="net.liftweb.sitemap.MenuItem">MenuItem</a>]</span>, <span name="current">current: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="path">path: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="info">info: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Function0">Function0</span>[_]]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@MenuItemextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.MenuJ" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MenuJextendsObject"></a>
@@ -203,12 +252,16 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MenuJ.html"><span class="name">MenuJ</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="MenuJ.html"><span class="name">MenuJ</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@MenuJextendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.MenuJBridge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MenuJBridgeextendsObject"></a>
+      <a id="MenuJBridgeextendsAnyRef"></a>
       <a id="MenuJBridge:MenuJBridge"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -216,13 +269,17 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MenuJBridge.html"><span class="name">MenuJBridge</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="MenuJBridge.html"><span class="name">MenuJBridge</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">The bridge from the Menu singleton to Java-land
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@MenuJBridgeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The bridge from the Menu singleton to Java-land
 </p>
-    </li><li name="net.liftweb.sitemap.MenuPath" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MenuPathextendsObject"></a>
+    </li><li name="net.liftweb.sitemap.MenuPath" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MenuPathextendsAnyRef"></a>
       <a id="MenuPath:MenuPath"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -230,12 +287,24 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MenuPath.html"><span class="name">MenuPath</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="MenuPath.html"><span class="name">MenuPath</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A common trait that defines a portion of a Menu's Link URI path.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@MenuPathextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A common trait that defines a portion of a Menu's Link URI path.</p><div class="fullcomment"><div class="comment cmt"><p>A common trait that defines a portion of a Menu's Link URI path. This allows
+us to constrain how people construct paths using the DSL by restricting it to
+Strings or to the 
+<pre>
+**
+</pre>
+ object.</p><p>**
+</pre>
+</p></div></div>
     </li><li name="net.liftweb.sitemap.MenuSingleton" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MenuSingletonextendsObject"></a>
+      <a id="MenuSingletonextendsAnyRef"></a>
       <a id="MenuSingleton:MenuSingleton"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -243,10 +312,14 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MenuSingleton.html"><span class="name">MenuSingleton</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="MenuSingleton.html"><span class="name">MenuSingleton</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A DSL for building menus.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@MenuSingletonextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A DSL for building menus.</p>
     </li><li name="net.liftweb.sitemap.NormalLocPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NormalLocPathextendsLocPathwithProductwithSerializable"></a>
       <a id="NormalLocPath:NormalLocPath"></a>
@@ -258,7 +331,11 @@
       <span class="symbol">
         <a href="NormalLocPath.html"><span class="name">NormalLocPath</span></a><span class="params">(<span name="pathItem">pathItem: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="LocPath.html" class="extype" name="net.liftweb.sitemap.LocPath">LocPath</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@NormalLocPathextendsLocPathwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.ParamLocLink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ParamLocLink[T]extendsLoc.Link[T]"></a>
@@ -271,7 +348,11 @@
       <span class="symbol">
         <a href="ParamLocLink.html"><span class="name">ParamLocLink</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Loc$$Link.html" class="extype" name="net.liftweb.sitemap.Loc.Link">Link</a>[<span class="extype" name="net.liftweb.sitemap.ParamLocLink.T">T</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@ParamLocLink[T]extendsLoc.Link[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.SiteMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SiteMapextendsHasKidswithProductwithSerializable"></a>
@@ -282,9 +363,13 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="SiteMap.html"><span class="name">SiteMap</span></a><span class="params">(<span name="globalParamFuncs">globalParamFuncs: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../http/Req.html" class="extype" name="net.liftweb.http.Req">Req</a>], <a href="Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]]</span>, <span name="convertablekids">convertablekids: <a href="ConvertableToMenu.html" class="extype" name="net.liftweb.sitemap.ConvertableToMenu">ConvertableToMenu</a>*</span>)</span><span class="result"> extends <a href="HasKids.html" class="extype" name="net.liftweb.sitemap.HasKids">HasKids</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="SiteMap.html"><span class="name">SiteMap</span></a><span class="params">(<span name="globalParamFuncs">globalParamFuncs: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../http/Req.html" class="extype" name="net.liftweb.http.Req">Req</a>], <a href="Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]]</span>, <span name="convertablekids">convertablekids: <a href="ConvertableToMenu.html" class="extype" name="net.liftweb.sitemap.ConvertableToMenu">ConvertableToMenu</a>*</span>)</span><span class="result"> extends <a href="HasKids.html" class="extype" name="net.liftweb.sitemap.HasKids">HasKids</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@SiteMapextendsHasKidswithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.SiteMapException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SiteMapExceptionextendsException"></a>
@@ -295,9 +380,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SiteMapException.html"><span class="name">SiteMapException</span></a><span class="result"> extends <span class="extype" name="java.lang.Exception">Exception</span></span>
+        <a href="SiteMapException.html"><span class="name">SiteMapException</span></a><span class="result"> extends <a href="../../../scala/package.html#Exception=Exception" class="extmbr" name="scala.Exception">Exception</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@SiteMapExceptionextendsException" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.SiteMapJ" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SiteMapJextendsObject"></a>
@@ -308,12 +397,16 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SiteMapJ.html"><span class="name">SiteMapJ</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="SiteMapJ.html"><span class="name">SiteMapJ</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@SiteMapJextendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.SiteMapJBridge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="SiteMapJBridgeextendsObject"></a>
+      <a id="SiteMapJBridgeextendsAnyRef"></a>
       <a id="SiteMapJBridge:SiteMapJBridge"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -321,13 +414,17 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SiteMapJBridge.html"><span class="name">SiteMapJBridge</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="SiteMapJBridge.html"><span class="name">SiteMapJBridge</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">The bridge to get the SiteMap singleton
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@SiteMapJBridgeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The bridge to get the SiteMap singleton
 </p>
     </li><li name="net.liftweb.sitemap.SiteMapSingleton" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="SiteMapSingletonextendsObject"></a>
+      <a id="SiteMapSingletonextendsAnyRef"></a>
       <a id="SiteMapSingleton:SiteMapSingleton"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -335,9 +432,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="SiteMapSingleton.html"><span class="name">SiteMapSingleton</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="SiteMapSingleton.html"><span class="name">SiteMapSingleton</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@SiteMapSingletonextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -357,9 +458,13 @@
       <span class="symbol">
         <a href="$times$.html"><span title="gt4s: $times" class="name">*</span></a><span class="result"> extends <a href="LocPath.html" class="extype" name="net.liftweb.sitemap.LocPath">LocPath</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@*" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="net.liftweb.sitemap.**" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.sitemap.**" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="**"></a>
       <a id="**:**"></a>
       <h4 class="signature">
@@ -370,13 +475,26 @@
       <span class="symbol">
         <a href="$times$times$.html"><span title="gt4s: $times$times" class="name">**</span></a><span class="result"> extends <a href="MenuPath.html" class="extype" name="net.liftweb.sitemap.MenuPath">MenuPath</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This object may be appended to a Menu DSL path, with the syntax
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@**" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This object may be appended to a Menu DSL path, with the syntax
 <pre>
 Menu("Foo") / "test" / **
 </pre>
  to match anything starting with
-a given path.</p>
+a given path.</pre></p><div class="fullcomment"><div class="comment cmt"><p>This object may be appended to a Menu DSL path, with the syntax
+<pre>
+Menu("Foo") / "test" / **
+</pre>
+ to match anything starting with
+a given path. For more info, see Loc.Link.matchHead_?</p><p>Menu(&quot;Foo&quot;) / &quot;test&quot; / **
+</pre>
+a given path. For more info, see Loc.Link.matchHead_?
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>Loc.Link
+</p></span></dd></dl></div>
     </li><li name="net.liftweb.sitemap.Loc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Loc"></a>
       <a id="Loc:Loc"></a>
@@ -388,8 +506,12 @@ a given path.</p>
       <span class="symbol">
         <a href="Loc$.html"><span class="name">Loc</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The Loc companion object, complete with a nice constructor
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@Loc" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The Loc companion object, complete with a nice constructor
 </p>
     </li><li name="net.liftweb.sitemap.LocPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="LocPath"></a>
@@ -402,7 +524,11 @@ a given path.</p>
       <span class="symbol">
         <a href="LocPath$.html"><span class="name">LocPath</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@LocPath" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.Menu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Menu"></a>
@@ -415,7 +541,11 @@ a given path.</p>
       <span class="symbol">
         <a href="Menu$.html"><span class="name">Menu</span></a><span class="result"> extends <a href="MenuSingleton.html" class="extype" name="net.liftweb.sitemap.MenuSingleton">MenuSingleton</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@Menu" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.sitemap.SiteMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SiteMap"></a>
@@ -428,7 +558,11 @@ a given path.</p>
       <span class="symbol">
         <a href="SiteMap$.html"><span class="name">SiteMap</span></a><span class="result"> extends <a href="SiteMapSingleton.html" class="extype" name="net.liftweb.sitemap.SiteMapSingleton">SiteMapSingleton</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@SiteMap" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -437,7 +571,7 @@ a given path.</p>
 
         <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
-              <ol><li name="net.liftweb.sitemap.XmlMenu" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="net.liftweb.sitemap.XmlMenu" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="XmlMenu"></a>
       <a id="XmlMenu:XmlMenu"></a>
       <h4 class="signature">
@@ -448,9 +582,23 @@ a given path.</p>
       <span class="symbol">
         <a href="XmlMenu$.html"><span class="name deprecated" title="Deprecated: (Since version 2.5) Will be removed">XmlMenu</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The beginning of an experiment to provide a capability to define
-the sitemap menu in xml.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.sitemap.package@XmlMenu" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The beginning of an experiment to provide a capability to define
+the sitemap menu in xml.</p><div class="fullcomment"><div class="comment cmt"><p>The beginning of an experiment to provide a capability to define
+the sitemap menu in xml. Currently pretty limited.
+menu elements have a name attribute, and contain text and link
+elements, and optionally multiple menu elemnts.
+The contents of the text element is the menu display x(ht)ml,
+and the contents of the link element is an array of
+path components in JSON array syntax.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.5)</i> Will be removed</p></dd></dl></div>
     </li></ol>
             </div>
         </div>

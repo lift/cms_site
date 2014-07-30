@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>common - Lift Framework 2.6-M3 - net.liftweb.common</title>
-          <meta name="description" content="common - Lift Framework 2.6 - M3 - net.liftweb.common" />
-          <meta name="keywords" content="common Lift Framework 2.6 M3 net.liftweb.common" />
+          <title>common - Lift Framework 2.6-SNAPSHOT - net.liftweb.common</title>
+          <meta name="description" content="common - Lift Framework 2.6 - SNAPSHOT - net.liftweb.common" />
+          <meta name="keywords" content="common Lift Framework 2.6 SNAPSHOT net.liftweb.common" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
-        <h1>common</h1>
+        <h1>common</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -63,7 +66,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.common.Box" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="net.liftweb.common.Box" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="Box[+A]extendsProductwithSerializable"></a>
       <a id="Box[+A]:Box[A]"></a>
       <h4 class="signature">
@@ -74,10 +77,17 @@
       <span class="symbol">
         <a href="Box.html"><span class="name">Box</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The Box class is a container which is able to declare if it is Full (containing a single non-null value) or EmptyBox.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Box[+A]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The Box class is a container which is able to declare if it is Full (containing a single non-null value) or EmptyBox.</p><div class="fullcomment"><div class="comment cmt"><p>The Box class is a container which is able to declare if it is Full (containing a single non-null value) or EmptyBox. An EmptyBox, or empty, can be the Empty singleton, Failure or ParamFailure.
+Failure and ParamFailure contain information about why the Box is empty including
+exception information, chained Failures and a String.
+It serves a similar purpose to the Option class from Scala standard library but adds several features:</p><ul><li> you can transform it to a Failure object if it is Empty (with the ?~ method)</li><li> you can chain failure messages on Failure Boxes</li><li> you &quot;run&quot; a function on your Box, with a default value: <code>Full(1).run("zero") { (x: String, y: Int) => y.toString }</code></li><li> you can &quot;pass&quot; a Box to a function for side effects: <code>Full(1) $ { x: Box[Int] => println(x openOr 0) }</code></li></ul></div></div>
     </li><li name="net.liftweb.common.BoxJBridge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="BoxJBridgeextendsObject"></a>
+      <a id="BoxJBridgeextendsAnyRef"></a>
       <a id="BoxJBridge:BoxJBridge"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -85,13 +95,17 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="BoxJBridge.html"><span class="name">BoxJBridge</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="BoxJBridge.html"><span class="name">BoxJBridge</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">The bridge from Java to Scala Box
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@BoxJBridgeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The bridge from Java to Scala Box
 </p>
-    </li><li name="net.liftweb.common.BoxOrRaw" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="BoxOrRaw[T]extendsObject"></a>
+    </li><li name="net.liftweb.common.BoxOrRaw" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BoxOrRaw[T]extendsAnyRef"></a>
       <a id="BoxOrRaw[T]:BoxOrRaw[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -99,13 +113,21 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="BoxOrRaw.html"><span class="name">BoxOrRaw</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="BoxOrRaw.html"><span class="name">BoxOrRaw</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Sometimes it's convenient to access either a Box[T]
-or a T.</p>
-    </li><li name="net.liftweb.common.BoxTrait" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="BoxTraitextendsObject"></a>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@BoxOrRaw[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Sometimes it's convenient to access either a Box[T]
+or a T.</p><div class="fullcomment"><div class="comment cmt"><p>Sometimes it's convenient to access either a Box[T]
+or a T.  If you specify BoxOrRaw[T], the
+either a T or a Box[T] can be passed and the &quot;right thing&quot;
+will happen
+</p></div></div>
+    </li><li name="net.liftweb.common.BoxTrait" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BoxTraitextendsAnyRef"></a>
       <a id="BoxTrait:BoxTrait"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -113,12 +135,17 @@ or a T.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="BoxTrait.html"><span class="name">BoxTrait</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="BoxTrait.html"><span class="name">BoxTrait</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">The Box companion object provides methods to create a Box from:</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@BoxTraitextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The Box companion object provides methods to create a Box from:</p><div class="fullcomment"><div class="comment cmt"><p>The Box companion object provides methods to create a Box from:</p><ul><li>an Option</li><li>a List</li><li>any AnyRef object</li></ul><p>It also provides implicit methods to transform Option to Box, Box to Iterable, and Box to Option
+</p></div></div>
     </li><li name="net.liftweb.common.Boxable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Boxable[T]extendsObject"></a>
+      <a id="Boxable[T]extendsAnyRef"></a>
       <a id="Boxable[T]:Boxable[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -126,10 +153,14 @@ or a T.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Boxable.html"><span class="name">Boxable</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Boxable.html"><span class="name">Boxable</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A trait that a class can mix into itself to convert itself into a Box
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Boxable[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A trait that a class can mix into itself to convert itself into a Box
 </p>
     </li><li name="net.liftweb.common.BoxedBoxOrRaw" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="BoxedBoxOrRaw[T]extendsBoxOrRaw[T]withProductwithSerializable"></a>
@@ -142,11 +173,15 @@ or a T.</p>
       <span class="symbol">
         <a href="BoxedBoxOrRaw.html"><span class="name">BoxedBoxOrRaw</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="box">box: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxedBoxOrRaw.T">T</span>]</span>)</span><span class="result"> extends <a href="BoxOrRaw.html" class="extype" name="net.liftweb.common.BoxOrRaw">BoxOrRaw</a>[<span class="extype" name="net.liftweb.common.BoxedBoxOrRaw.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The Boxed up BoxOrRaw
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@BoxedBoxOrRaw[T]extendsBoxOrRaw[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The Boxed up BoxOrRaw
 </p>
     </li><li name="net.liftweb.common.CommonLoanWrapper" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="CommonLoanWrapperextendsObject"></a>
+      <a id="CommonLoanWrapperextendsAnyRef"></a>
       <a id="CommonLoanWrapper:CommonLoanWrapper"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -154,10 +189,14 @@ or a T.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="CommonLoanWrapper.html"><span class="name">CommonLoanWrapper</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="CommonLoanWrapper.html"><span class="name">CommonLoanWrapper</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This trait defines the principle contract for function objects that
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@CommonLoanWrapperextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This trait defines the principle contract for function objects that
 wrap the processing of HTTP requests by Lift while utilizing the preestablished
 request-local scope.</p>
     </li><li name="net.liftweb.common.ConstNodeSeqFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -171,8 +210,12 @@ request-local scope.</p>
       <span class="symbol">
         <a href="ConstNodeSeqFunc.html"><span class="name">ConstNodeSeqFunc</span></a><span class="params">(<span name="ns">ns: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <a href="NodeSeqFunc.html" class="extype" name="net.liftweb.common.NodeSeqFunc">NodeSeqFunc</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The case class that holds the NodeSeq constant.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ConstNodeSeqFuncextendsNodeSeqFuncwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The case class that holds the NodeSeq constant.</p>
     </li><li name="net.liftweb.common.ConstStringFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ConstStringFuncextendsStringFuncwithProductwithSerializable"></a>
       <a id="ConstStringFunc:ConstStringFunc"></a>
@@ -184,8 +227,12 @@ request-local scope.</p>
       <span class="symbol">
         <a href="ConstStringFunc.html"><span class="name">ConstStringFunc</span></a><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="StringFunc.html" class="extype" name="net.liftweb.common.StringFunc">StringFunc</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The case class that holds the String constant.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ConstStringFuncextendsStringFuncwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The case class that holds the String constant.</p>
     </li><li name="net.liftweb.common.EmptyBox" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="EmptyBoxextendsBox[Nothing]withSerializable"></a>
       <a id="EmptyBox:EmptyBox"></a>
@@ -197,10 +244,14 @@ request-local scope.</p>
       <span class="symbol">
         <a href="EmptyBox.html"><span class="name">EmptyBox</span></a><span class="result"> extends <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Nothing">Nothing</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The EmptyBox is a Box containing no value.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@EmptyBoxextendsBox[Nothing]withSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The EmptyBox is a Box containing no value.</p>
     </li><li name="net.liftweb.common.ExcludeThisType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ExcludeThisType[A,B]extendsObject"></a>
+      <a id="ExcludeThisType[A,B]extendsAnyRef"></a>
       <a id="ExcludeThisType[A,B]:ExcludeThisType[A,B]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -208,12 +259,16 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ExcludeThisType.html"><span class="name">ExcludeThisType</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ExcludeThisType.html"><span class="name">ExcludeThisType</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Encoding for &quot;A is not a subtype of B&quot;
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ExcludeThisType[A,B]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Encoding for &quot;A is not a subtype of B&quot;
 </p>
-    </li><li name="net.liftweb.common.Failure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.common.Failure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="FailureextendsEmptyBoxwithProductwithSerializable"></a>
       <a id="Failure:Failure"></a>
       <h4 class="signature">
@@ -222,12 +277,18 @@ request-local scope.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Failure.html"><span class="name">Failure</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exception">exception: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Throwable">Throwable</span>]</span>, <span name="chain">chain: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a>]</span>)</span><span class="result"> extends <a href="EmptyBox.html" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Failure.html"><span class="name">Failure</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exception">exception: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a>]</span>, <span name="chain">chain: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a>]</span>)</span><span class="result"> extends <a href="EmptyBox.html" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">A Failure is an EmptyBox with an additional failure message explaining the reason for its being empty.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@FailureextendsEmptyBoxwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Failure is an EmptyBox with an additional failure message explaining the reason for its being empty.</p><div class="fullcomment"><div class="comment cmt"><p>A Failure is an EmptyBox with an additional failure message explaining the reason for its being empty.
+It can also optionally provide an exception or a chain of causes represented as a list of other Failure objects
+</p></div></div>
     </li><li name="net.liftweb.common.ForwardableActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ForwardableActor[From,To]extendsObject"></a>
+      <a id="ForwardableActor[From,To]extendsAnyRef"></a>
       <a id="ForwardableActor[From,To]:ForwardableActor[From,To]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -235,9 +296,13 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ForwardableActor.html"><span class="name">ForwardableActor</span></a><span class="tparams">[<span name="From">From</span>, <span name="To">To</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ForwardableActor.html"><span class="name">ForwardableActor</span></a><span class="tparams">[<span name="From">From</span>, <span name="To">To</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ForwardableActor[From,To]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.Full" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Full[+A]extendsBox[A]withProductwithSerializable"></a>
@@ -250,8 +315,12 @@ request-local scope.</p>
       <span class="symbol">
         <a href="Full.html"><span class="name">Full</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="value">value: <span class="extype" name="net.liftweb.common.Full.A">A</span></span>)</span><span class="result"> extends <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Full.A">A</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Full is a Box containing a value.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Full[+A]extendsBox[A]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Full is a Box containing a value.</p>
     </li><li name="net.liftweb.common.Func" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FuncextendsObject"></a>
       <a id="Func:Func"></a>
@@ -261,9 +330,13 @@ request-local scope.</p>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Func.html"><span class="name">Func</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Func.html"><span class="name">Func</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@FuncextendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.Func0" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Func0[Z]extendsObject"></a>
@@ -274,9 +347,13 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Func0.html"><span class="name">Func0</span></a><span class="tparams">[<span name="Z">Z</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Func0.html"><span class="name">Func0</span></a><span class="tparams">[<span name="Z">Z</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Func0[Z]extendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.Func1" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Func1[A,Z]extendsObject"></a>
@@ -287,9 +364,13 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Func1.html"><span class="name">Func1</span></a><span class="tparams">[<span name="A">A</span>, <span name="Z">Z</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Func1.html"><span class="name">Func1</span></a><span class="tparams">[<span name="A">A</span>, <span name="Z">Z</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Func1[A,Z]extendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.Func2" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Func2[A,B,Z]extendsObject"></a>
@@ -300,9 +381,13 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Func2.html"><span class="name">Func2</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="Z">Z</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Func2.html"><span class="name">Func2</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="Z">Z</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Func2[A,B,Z]extendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.Func3" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Func3[A,B,C,Z]extendsObject"></a>
@@ -313,9 +398,13 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Func3.html"><span class="name">Func3</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="Z">Z</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Func3.html"><span class="name">Func3</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="Z">Z</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Func3[A,B,C,Z]extendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.Func4" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Func4[A,B,C,D,Z]extendsObject"></a>
@@ -326,12 +415,16 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Func4.html"><span class="name">Func4</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>, <span name="Z">Z</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Func4.html"><span class="name">Func4</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>, <span name="D">D</span>, <span name="Z">Z</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Func4[A,B,C,D,Z]extendsObject" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.FuncJBridge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FuncJBridgeextendsObject"></a>
+      <a id="FuncJBridgeextendsAnyRef"></a>
       <a id="FuncJBridge:FuncJBridge"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -339,12 +432,16 @@ request-local scope.</p>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="FuncJBridge.html"><span class="name">FuncJBridge</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="FuncJBridge.html"><span class="name">FuncJBridge</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Bridge from Java functions to Scala functions
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@FuncJBridgeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Bridge from Java functions to Scala functions
 </p>
-    </li><li name="net.liftweb.common.GenericActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.common.GenericActor" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="GenericActor[+R]extendsTypedActor[Any,R]"></a>
       <a id="GenericActor[+R]:GenericActor[R]"></a>
       <h4 class="signature">
@@ -355,8 +452,14 @@ request-local scope.</p>
       <span class="symbol">
         <a href="GenericActor.html"><span class="name">GenericActor</span></a><span class="tparams">[<span name="R">+R</span>]</span><span class="result"> extends <a href="TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="net.liftweb.common.GenericActor.R">R</span>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">Generic Actor interface.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@GenericActor[+R]extendsTypedActor[Any,R]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generic Actor interface.</p><div class="fullcomment"><div class="comment cmt"><p>Generic Actor interface. Can receive any type of message.
+Can return (via !! and !?) messages of type R.
+</p></div></div>
     </li><li name="net.liftweb.common.LRUMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="LRUMap[K,V]extendsLinkedListElem[K,V]"></a>
       <a id="LRUMap[K,V]:LRUMap[K,V]"></a>
@@ -368,11 +471,15 @@ request-local scope.</p>
       <span class="symbol">
         <a href="LRUMap.html"><span class="name">LRUMap</span></a><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="result"> extends <span class="extype" name="net.liftweb.common.LinkedListElem">LinkedListElem</span>[<span class="extype" name="net.liftweb.common.LRUMap.K">K</span>, <span class="extype" name="net.liftweb.common.LRUMap.V">V</span>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">Implements an LRU Hashmap
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@LRUMap[K,V]extendsLinkedListElem[K,V]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implements an LRU Hashmap
 </p>
-    </li><li name="net.liftweb.common.LazyLoggable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="LazyLoggableextendsObject"></a>
+    </li><li name="net.liftweb.common.LazyLoggable" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="LazyLoggableextendsAnyRef"></a>
       <a id="LazyLoggable:LazyLoggable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -380,10 +487,15 @@ request-local scope.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="LazyLoggable.html"><span class="name">LazyLoggable</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="LazyLoggable.html"><span class="name">LazyLoggable</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Mixin with a nested lazy Logger</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@LazyLoggableextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Mixin with a nested lazy Logger</p><div class="fullcomment"><div class="comment cmt"><p>Mixin with a nested lazy Logger</p><p>Useful for mixin to objects that are created before Lift has booted (and thus Logging is not yet configured)
+</p></div></div>
     </li><li name="net.liftweb.common.ListOfBoxes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ListOfBoxes[T]extendsProductwithSerializable"></a>
       <a id="ListOfBoxes[T]:ListOfBoxes[T]"></a>
@@ -393,13 +505,17 @@ request-local scope.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="ListOfBoxes.html"><span class="name">ListOfBoxes</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="theListOfBoxes">theListOfBoxes: <span class="extype" name="scala.List">List</span>[<a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.ListOfBoxes.T">T</span>]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="ListOfBoxes.html"><span class="name">ListOfBoxes</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="theListOfBoxes">theListOfBoxes: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.ListOfBoxes.T">T</span>]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Helper class to provide an easy way for converting Lists of Boxes[T] into
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ListOfBoxes[T]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper class to provide an easy way for converting Lists of Boxes[T] into
 a Box of List[T].</p>
     </li><li name="net.liftweb.common.Loggable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="LoggableextendsObject"></a>
+      <a id="LoggableextendsAnyRef"></a>
       <a id="Loggable:Loggable"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -407,13 +523,17 @@ a Box of List[T].</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Loggable.html"><span class="name">Loggable</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Loggable.html"><span class="name">Loggable</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Mixin with a nested Logger
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@LoggableextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Mixin with a nested Logger
 </p>
-    </li><li name="net.liftweb.common.Logger" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="LoggerextendsObject"></a>
+    </li><li name="net.liftweb.common.Logger" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="LoggerextendsAnyRef"></a>
       <a id="Logger:Logger"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -421,12 +541,20 @@ a Box of List[T].</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Logger.html"><span class="name">Logger</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Logger.html"><span class="name">Logger</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Logger is a thin wrapper on top of an SLF4J Logger</p>
-    </li><li name="net.liftweb.common.NodeSeqFunc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="NodeSeqFuncextendsObject"></a>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@LoggerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Logger is a thin wrapper on top of an SLF4J Logger</p><div class="fullcomment"><div class="comment cmt"><p>Logger is a thin wrapper on top of an SLF4J Logger</p><p>The main purpose is to utilize Scala features for logging</p><p>Note that the dynamic type of &quot;this&quot; is used when this trait is
+mixed in.</p><p>This may not always be what you want. If you need the static type, you have to declare your
+own Logger:</p><p>class MyClass {
+  val logger = Logger(classOf[MyClass])
+}</p></div></div>
+    </li><li name="net.liftweb.common.NodeSeqFunc" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="NodeSeqFuncextendsAnyRef"></a>
       <a id="NodeSeqFunc:NodeSeqFunc"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -434,11 +562,20 @@ a Box of List[T].</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="NodeSeqFunc.html"><span class="name">NodeSeqFunc</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="NodeSeqFunc.html"><span class="name">NodeSeqFunc</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Sometimes you want a function that returns a NodeSeq as a parameter,
-but many times, you'll just want to pass a NodeSeq constant.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@NodeSeqFuncextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Sometimes you want a function that returns a NodeSeq as a parameter,
+but many times, you'll just want to pass a NodeSeq constant.</p><div class="fullcomment"><div class="comment cmt"><p>Sometimes you want a function that returns a NodeSeq as a parameter,
+but many times, you'll just want to pass a NodeSeq constant.  In
+those cases, this trait and it's implicit conversions come in really
+handy.  Basically, a NodeSeq constant or a NodeSeq function can be passed and
+either will be implicitly converted into a NodeSeqFunc.
+</p></div></div>
     </li><li name="net.liftweb.common.ParamFailure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ParamFailure[T]extendsFailurewithSerializable"></a>
       <a id="ParamFailure[T]:ParamFailure[T]"></a>
@@ -450,8 +587,12 @@ but many times, you'll just want to pass a NodeSeq constant.</p>
       <span class="symbol">
         <a href="ParamFailure.html"><span class="name">ParamFailure</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">A ParamFailure is a Failure with an additional typesafe parameter that can
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ParamFailure[T]extendsFailurewithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A ParamFailure is a Failure with an additional typesafe parameter that can
 allow an application to store other information related to the failure.</p>
     </li><li name="net.liftweb.common.RawBoxOrRaw" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RawBoxOrRaw[T]extendsBoxOrRaw[T]withProductwithSerializable"></a>
@@ -464,8 +605,12 @@ allow an application to store other information related to the failure.</p>
       <span class="symbol">
         <a href="RawBoxOrRaw.html"><span class="name">RawBoxOrRaw</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="raw">raw: <span class="extype" name="net.liftweb.common.RawBoxOrRaw.T">T</span></span>)</span><span class="result"> extends <a href="BoxOrRaw.html" class="extype" name="net.liftweb.common.BoxOrRaw">BoxOrRaw</a>[<span class="extype" name="net.liftweb.common.RawBoxOrRaw.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The raw version of BoxOrRaw
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@RawBoxOrRaw[T]extendsBoxOrRaw[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The raw version of BoxOrRaw
 </p>
     </li><li name="net.liftweb.common.RealNodeSeqFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RealNodeSeqFuncextendsNodeSeqFuncwithProductwithSerializable"></a>
@@ -478,8 +623,12 @@ allow an application to store other information related to the failure.</p>
       <span class="symbol">
         <a href="RealNodeSeqFunc.html"><span class="name">RealNodeSeqFunc</span></a><span class="params">(<span name="func">func: () ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <a href="NodeSeqFunc.html" class="extype" name="net.liftweb.common.NodeSeqFunc">NodeSeqFunc</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The case class that holds a NodeSeq function.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@RealNodeSeqFuncextendsNodeSeqFuncwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The case class that holds a NodeSeq function.</p>
     </li><li name="net.liftweb.common.RealStringFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RealStringFuncextendsStringFuncwithProductwithSerializable"></a>
       <a id="RealStringFunc:RealStringFunc"></a>
@@ -491,10 +640,14 @@ allow an application to store other information related to the failure.</p>
       <span class="symbol">
         <a href="RealStringFunc.html"><span class="name">RealStringFunc</span></a><span class="params">(<span name="func">func: () ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="StringFunc.html" class="extype" name="net.liftweb.common.StringFunc">StringFunc</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The case class that holds a String function.</p>
-    </li><li name="net.liftweb.common.SimpleActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SimpleActor[-T]extendsObject"></a>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@RealStringFuncextendsStringFuncwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The case class that holds a String function.</p>
+    </li><li name="net.liftweb.common.SimpleActor" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SimpleActor[-T]extendsAnyRef"></a>
       <a id="SimpleActor[-T]:SimpleActor[T]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -502,10 +655,16 @@ allow an application to store other information related to the failure.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="SimpleActor.html"><span class="name">SimpleActor</span></a><span class="tparams">[<span name="T">-T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="SimpleActor.html"><span class="name">SimpleActor</span></a><span class="tparams">[<span name="T">-T</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">The simple definition of an actor.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@SimpleActor[-T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The simple definition of an actor.</p><div class="fullcomment"><div class="comment cmt"><p>The simple definition of an actor.  Something that
+can receive a message of type T.
+</p></div></div>
     </li><li name="net.liftweb.common.SimpleList" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SimpleList[T]extendsList[T]withProductwithSerializable"></a>
       <a id="SimpleList[T]:SimpleList[T]"></a>
@@ -515,10 +674,14 @@ allow an application to store other information related to the failure.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="SimpleList.html"><span class="name">SimpleList</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="underlying">underlying: <span class="extype" name="scala.List">List</span>[<span class="extype" name="net.liftweb.common.SimpleList.T">T</span>]</span>)</span><span class="result"> extends <span class="extype" name="java.util.List">List</span>[<span class="extype" name="net.liftweb.common.SimpleList.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="SimpleList.html"><span class="name">SimpleList</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="underlying">underlying: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="net.liftweb.common.SimpleList.T">T</span>]</span>)</span><span class="result"> extends <span class="extype" name="java.util.List">List</span>[<span class="extype" name="net.liftweb.common.SimpleList.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">An immutable singly linked list that uses the Scala List class
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@SimpleList[T]extendsList[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An immutable singly linked list that uses the Scala List class
 as backing store, but is Java-friendly.</p>
     </li><li name="net.liftweb.common.SimpleVector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="SimpleVector[T]extendsList[T]withProductwithSerializable"></a>
@@ -529,10 +692,14 @@ as backing store, but is Java-friendly.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="SimpleVector.html"><span class="name">SimpleVector</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="underlying">underlying: <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="net.liftweb.common.SimpleVector.T">T</span>]</span>)</span><span class="result"> extends <span class="extype" name="java.util.List">List</span>[<span class="extype" name="net.liftweb.common.SimpleVector.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="SimpleVector.html"><span class="name">SimpleVector</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="underlying">underlying: <a href="../../../scala/package.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<span class="extype" name="net.liftweb.common.SimpleVector.T">T</span>]</span>)</span><span class="result"> extends <span class="extype" name="java.util.List">List</span>[<span class="extype" name="net.liftweb.common.SimpleVector.T">T</span>] with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">An immutable singly linked list that uses the Scala List class
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@SimpleVector[T]extendsList[T]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An immutable singly linked list that uses the Scala List class
 as backing store, but is Java-friendly.</p>
     </li><li name="net.liftweb.common.SimplestActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SimplestActorextendsSimpleActor[Any]"></a>
@@ -545,10 +712,14 @@ as backing store, but is Java-friendly.</p>
       <span class="symbol">
         <a href="SimplestActor.html"><span class="name">SimplestActor</span></a><span class="result"> extends <a href="SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">An Actor that can receive a message of any type
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@SimplestActorextendsSimpleActor[Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An Actor that can receive a message of any type
 </p>
-    </li><li name="net.liftweb.common.SimplestGenericActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.common.SimplestGenericActor" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="SimplestGenericActorextendsGenericActor[Any]"></a>
       <a id="SimplestGenericActor:SimplestGenericActor"></a>
       <h4 class="signature">
@@ -559,10 +730,16 @@ as backing store, but is Java-friendly.</p>
       <span class="symbol">
         <a href="SimplestGenericActor.html"><span class="name">SimplestGenericActor</span></a><span class="result"> extends <a href="GenericActor.html" class="extype" name="net.liftweb.common.GenericActor">GenericActor</a>[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">Generic Actor interface.</p>
-    </li><li name="net.liftweb.common.StringFunc" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="StringFuncextendsObject"></a>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@SimplestGenericActorextendsGenericActor[Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generic Actor interface.</p><div class="fullcomment"><div class="comment cmt"><p>Generic Actor interface. Can receive any type of message.
+Can return (via !! and !?) messages of any type.
+</p></div></div>
+    </li><li name="net.liftweb.common.StringFunc" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="StringFuncextendsAnyRef"></a>
       <a id="StringFunc:StringFunc"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -570,13 +747,22 @@ as backing store, but is Java-friendly.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="StringFunc.html"><span class="name">StringFunc</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="StringFunc.html"><span class="name">StringFunc</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Sometimes you want a function that returns a String as a parameter,
-but many times, you'll just want to pass a String constant.</p>
-    </li><li name="net.liftweb.common.StringOrNodeSeq" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="StringOrNodeSeqextendsObject"></a>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@StringFuncextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Sometimes you want a function that returns a String as a parameter,
+but many times, you'll just want to pass a String constant.</p><div class="fullcomment"><div class="comment cmt"><p>Sometimes you want a function that returns a String as a parameter,
+but many times, you'll just want to pass a String constant.  In
+those cases, this trait and it's implicit conversions come in really
+handy.  Basically, a String constant or a String function can be passed and
+either will be implicitly converted into a StringFunc.
+</p></div></div>
+    </li><li name="net.liftweb.common.StringOrNodeSeq" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="StringOrNodeSeqextendsAnyRef"></a>
       <a id="StringOrNodeSeq:StringOrNodeSeq"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -584,11 +770,18 @@ but many times, you'll just want to pass a String constant.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="StringOrNodeSeq.html"><span class="name">StringOrNodeSeq</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="StringOrNodeSeq.html"><span class="name">StringOrNodeSeq</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A helpful trait that will accept either a String or a NodeSeq via
-an implicit conversion.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@StringOrNodeSeqextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A helpful trait that will accept either a String or a NodeSeq via
+an implicit conversion.</p><div class="fullcomment"><div class="comment cmt"><p>A helpful trait that will accept either a String or a NodeSeq via
+an implicit conversion.  So, all you need to do is put in a String or
+a NodeSeq and the right thing will happen.
+</p></div></div>
     </li><li name="net.liftweb.common.TypedActor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="TypedActor[-T,+R]extendsSimpleActor[T]"></a>
       <a id="TypedActor[-T,+R]:TypedActor[T,R]"></a>
@@ -600,8 +793,12 @@ an implicit conversion.</p>
       <span class="symbol">
         <a href="TypedActor.html"><span class="name">TypedActor</span></a><span class="tparams">[<span name="T">-T</span>, <span name="R">+R</span>]</span><span class="result"> extends <a href="SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<span class="extype" name="net.liftweb.common.TypedActor.T">T</span>]</span>
       </span>
-      </h4>
-      <p class="comment cmt">An Actor that can receive messsages of type T and
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@TypedActor[-T,+R]extendsSimpleActor[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An Actor that can receive messsages of type T and
 return responses of type R.</p>
     </li><li name="net.liftweb.common.WrappedLogger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="WrappedLoggerextendsLogger"></a>
@@ -614,7 +811,11 @@ return responses of type R.</p>
       <span class="symbol">
         <a href="WrappedLogger.html"><span class="name">WrappedLogger</span></a><span class="result"> extends <a href="Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@WrappedLoggerextendsLogger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -623,7 +824,7 @@ return responses of type R.</p>
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="net.liftweb.common.Box" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="net.liftweb.common.Box" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Box"></a>
       <a id="Box:Box"></a>
       <h4 class="signature">
@@ -634,8 +835,13 @@ return responses of type R.</p>
       <span class="symbol">
         <a href="Box$.html"><span class="name">Box</span></a><span class="result"> extends <a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">The Box companion object provides methods to create a Box from:</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Box" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The Box companion object provides methods to create a Box from:</p><div class="fullcomment"><div class="comment cmt"><p>The Box companion object provides methods to create a Box from:</p><ul><li>an Option</li><li>a List</li><li>any AnyRef object</li></ul><p>It also provides implicit methods to transform Option to Box, Box to Iterable, and Box to Option
+</p></div></div>
     </li><li name="net.liftweb.common.BoxOrRaw" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="BoxOrRaw"></a>
       <a id="BoxOrRaw:BoxOrRaw"></a>
@@ -647,8 +853,12 @@ return responses of type R.</p>
       <span class="symbol">
         <a href="BoxOrRaw$.html"><span class="name">BoxOrRaw</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The companion object that has helpful conversions
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@BoxOrRaw" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The companion object that has helpful conversions
 </p>
     </li><li name="net.liftweb.common.CombinableBox" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="CombinableBox"></a>
@@ -661,8 +871,12 @@ return responses of type R.</p>
       <span class="symbol">
         <a href="CombinableBox$.html"><span class="name">CombinableBox</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">Via an HList containing a Collection of Box[things], either generate an
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@CombinableBox" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Via an HList containing a Collection of Box[things], either generate an
 HList of the things or a List[Failure]</p>
     </li><li name="net.liftweb.common.CommonLoanWrapper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="CommonLoanWrapper"></a>
@@ -675,7 +889,11 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="CommonLoanWrapper$.html"><span class="name">CommonLoanWrapper</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@CommonLoanWrapper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.Empty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Empty"></a>
@@ -688,10 +906,14 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="Empty$.html"><span class="name">Empty</span></a><span class="result"> extends <a href="EmptyBox.html" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Singleton object representing an Empty Box
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Empty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Singleton object representing an Empty Box
 </p>
-    </li><li name="net.liftweb.common.ExcludeThisType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.common.ExcludeThisType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ExcludeThisType"></a>
       <a id="ExcludeThisType:ExcludeThisType"></a>
       <h4 class="signature">
@@ -702,8 +924,14 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="ExcludeThisType$.html"><span class="name">ExcludeThisType</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The companion object to &lt;:!&lt;.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ExcludeThisType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The companion object to &lt;:!&lt;.</p><div class="fullcomment"><div class="comment cmt"><p>The companion object to &lt;:!&lt;. This allows one of specify
+that a type is not a subtype of another type
+</p></div></div>
     </li><li name="net.liftweb.common.Failure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Failure"></a>
       <a id="Failure:Failure"></a>
@@ -715,8 +943,12 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="Failure$.html"><span class="name">Failure</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Companion object used to simplify the creation of a simple Failure.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Failure" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Companion object used to simplify the creation of a simple Failure.</p>
     </li><li name="net.liftweb.common.FuncJBridge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FuncJBridge"></a>
       <a id="FuncJBridge:FuncJBridge"></a>
@@ -728,9 +960,13 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="FuncJBridge$.html"><span class="name">FuncJBridge</span></a><span class="result"> extends <a href="FuncJBridge.html" class="extype" name="net.liftweb.common.FuncJBridge">FuncJBridge</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@FuncJBridge" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="net.liftweb.common.HLists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.common.HLists" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="HLists"></a>
       <a id="HLists:HLists"></a>
       <h4 class="signature">
@@ -741,8 +977,12 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="HLists$.html"><span class="name">HLists</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">Support for heterogenious lists, aka <a href="http://apocalisp.wordpress.com/2010/07/06/type-level-programming-in-scala-part-6a-heterogeneous-list%C2%A0basics/">HLists</a></a href="http://apocalisp.wordpress.com/2010/07/06/type-level-programming-in-scala-part-6a-heterogeneous-list%C2%A0basics/"></p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@HLists" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Support for heterogenious lists, aka <a href="http://apocalisp.wordpress.com/2010/07/06/type-level-programming-in-scala-part-6a-heterogeneous-list%C2%A0basics/">HLists</a></a></p><div class="fullcomment"><div class="comment cmt"><p>Support for heterogenious lists, aka <a href="http://apocalisp.wordpress.com/2010/07/06/type-level-programming-in-scala-part-6a-heterogeneous-list%C2%A0basics/">HLists</a></p></div></div>
     </li><li name="net.liftweb.common.Log4j" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Log4j"></a>
       <a id="Log4j:Log4j"></a>
@@ -754,8 +994,12 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="Log4j$.html"><span class="name">Log4j</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">Configuration helpers for the log4j logging backend
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Log4j" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration helpers for the log4j logging backend
 </p>
     </li><li name="net.liftweb.common.Logback" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Logback"></a>
@@ -768,8 +1012,12 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="Logback$.html"><span class="name">Logback</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">Configuration helpers for the Logback logging backend
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Logback" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Configuration helpers for the Logback logging backend
 </p>
     </li><li name="net.liftweb.common.Logger" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Logger"></a>
@@ -782,9 +1030,13 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="Logger$.html"><span class="name">Logger</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@Logger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="net.liftweb.common.MDC" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.common.MDC" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MDC"></a>
       <a id="MDC:MDC"></a>
       <h4 class="signature">
@@ -795,9 +1047,15 @@ HList of the things or a List[Failure]</p>
       <span class="symbol">
         <a href="MDC$.html"><span class="name">MDC</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The Mapped Diagnostics Context can hold values per thread and output them
-with each logged output.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@MDC" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The Mapped Diagnostics Context can hold values per thread and output them
+with each logged output.</p><div class="fullcomment"><div class="comment cmt"><p>The Mapped Diagnostics Context can hold values per thread and output them
+with each logged output.</p><p>The logging backend needs to be configured to log these values
+</p></div></div>
     </li><li name="net.liftweb.common.NodeSeqFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="NodeSeqFunc"></a>
       <a id="NodeSeqFunc:NodeSeqFunc"></a>
@@ -809,8 +1067,12 @@ with each logged output.</p>
       <span class="symbol">
         <a href="NodeSeqFunc$.html"><span class="name">NodeSeqFunc</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The companion object to NodeSeqFunc with helpful implicit conversions
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@NodeSeqFunc" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The companion object to NodeSeqFunc with helpful implicit conversions
 </p>
     </li><li name="net.liftweb.common.ParamFailure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ParamFailure"></a>
@@ -823,7 +1085,11 @@ with each logged output.</p>
       <span class="symbol">
         <a href="ParamFailure$.html"><span class="name">ParamFailure</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ParamFailure" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.common.StringFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StringFunc"></a>
@@ -836,8 +1102,12 @@ with each logged output.</p>
       <span class="symbol">
         <a href="StringFunc$.html"><span class="name">StringFunc</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The companion object to StringFunc with helpful implicit conversions
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@StringFunc" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The companion object to StringFunc with helpful implicit conversions
 </p>
     </li><li name="net.liftweb.common.StringOrNodeSeq" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StringOrNodeSeq"></a>
@@ -850,8 +1120,12 @@ with each logged output.</p>
       <span class="symbol">
         <a href="StringOrNodeSeq$.html"><span class="name">StringOrNodeSeq</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">The companion object that has helpful
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@StringOrNodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The companion object that has helpful
 implicit conversions from String and NodeSeq
 </p>
     </li></ol>
@@ -861,7 +1135,7 @@ implicit conversions from String and NodeSeq
 
         <div id="values" class="values members">
               <h3>Deprecated Value Members</h3>
-              <ol><li name="net.liftweb.common.ParseDouble" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="net.liftweb.common.ParseDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ParseDouble"></a>
       <a id="ParseDouble:ParseDouble"></a>
       <h4 class="signature">
@@ -872,10 +1146,22 @@ implicit conversions from String and NodeSeq
       <span class="symbol">
         <a href="ParseDouble$.html"><span class="name deprecated" title="Deprecated: (Since version 2.5) Use a newer or patched JVM instead.">ParseDouble</span></a>
       </span>
-      </h4>
-      <p class="comment cmt">Safely parse a String into a Double, avoiding the JVM bug
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.common.package@ParseDouble" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Safely parse a String into a Double, avoiding the JVM bug
 that causes the thread to hang if the String is
-2.</p>
+2.</p><div class="fullcomment"><div class="comment cmt"><p>Safely parse a String into a Double, avoiding the JVM bug
+that causes the thread to hang if the String is
+2.2250738585072012e-308</p><p>This wonkaround is not recommended anymore. Instead consider using a
+newer version of JVM which has the necessary fix.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.5)</i> Use a newer or patched JVM instead.</p></dd><dt>See also</dt><dd><span class="cmt"><p>http://blogs.oracle.com/security/entry/security_alert_for_cve-2010-44
+</p></span></dd></dl></div>
     </li></ol>
             </div>
         </div>

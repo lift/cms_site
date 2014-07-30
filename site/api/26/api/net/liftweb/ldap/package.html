@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>ldap - Lift Framework 2.6-M3 - net.liftweb.ldap</title>
-          <meta name="description" content="ldap - Lift Framework 2.6 - M3 - net.liftweb.ldap" />
-          <meta name="keywords" content="ldap Lift Framework 2.6 M3 net.liftweb.ldap" />
+          <title>ldap - Lift Framework 2.6-SNAPSHOT - net.liftweb.ldap</title>
+          <meta name="description" content="ldap - Lift Framework 2.6 - SNAPSHOT - net.liftweb.ldap" />
+          <meta name="keywords" content="ldap Lift Framework 2.6 SNAPSHOT net.liftweb.ldap" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
-        <h1>ldap</h1>
+        <h1>ldap</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -74,9 +77,13 @@
       <span class="symbol">
         <a href="LDAPProtoUser.html"><span class="name">LDAPProtoUser</span></a><span class="tparams">[<span name="T">T &lt;: <a href="LDAPProtoUser.html" class="extype" name="net.liftweb.ldap.LDAPProtoUser">LDAPProtoUser</a>[<span class="extype" name="net.liftweb.ldap.LDAPProtoUser.T">T</span>]</span>]</span><span class="result"> extends <a href="../mapper/MegaProtoUser.html" class="extype" name="net.liftweb.mapper.MegaProtoUser">MegaProtoUser</a>[<span class="extype" name="net.liftweb.ldap.LDAPProtoUser.T">T</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.package@LDAPProtoUser[T&lt;:net.liftweb.ldap.LDAPProtoUser[T]]extendsMegaProtoUser[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
-    </li><li name="net.liftweb.ldap.LDAPVendor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.ldap.LDAPVendor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="LDAPVendorextendsLoggablewithSimpleInjector"></a>
       <a id="LDAPVendor:LDAPVendor"></a>
       <h4 class="signature">
@@ -87,9 +94,26 @@
       <span class="symbol">
         <a href="LDAPVendor.html"><span class="name">LDAPVendor</span></a><span class="result"> extends <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a> with <a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This class provides functionality to allow us to search and
-bind (authenticate) a username from a ldap server.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.package@LDAPVendorextendsLoggablewithSimpleInjector" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This class provides functionality to allow us to search and
+bind (authenticate) a username from a ldap server.</p><div class="fullcomment"><div class="comment cmt"><p>This class provides functionality to allow us to search and
+bind (authenticate) a username from a ldap server.</p><p>To configure the LDAP Vendor parameters, use one of the configure
+methods to provide a Map of string parameters.</p><p>The primary parameters (with defaults) are:</p><ul><li>ldap.url - The LDAP Server url : &quot;ldap://localhost&quot;</li><li>ldap.base - The base DN from the LDAP Server : &quot;&quot;</li><li>ldap.userName - The LDAP user dn to perform search operations : &quot;&quot;</li><li>ldap.password - The LDAP user password : &quot;&quot;</li><li>ldap.authType - The schema to use for authentication : &quot;simple&quot;</li><li>ldap.initial_context_factory - the factory class to use for
+     initial contexts : &quot;com.sun.jndi.ldap.LdapCtxFactory&quot;</li></ul><p> -</p><p>Optionally, you can set the following parameters to control context testing
+and reconnect attempts:</p><ul><li>lift-ldap.testLookup - A DN to attempt to look up to validate the
+      current context. Defaults to no testing</li><li>lift-ldap.retryInterval - How many milliseconds to wait between connection
+      attempts due to communications failures. Defaults to 5000</li><li>lift-ldap.maxRetries - The maxiumum number of attempts to make to set up
+      the context before aborting. Defaults to 6</li></ul><p>In addition to configuration via a Map or Properties file, fine-grained control
+over behaviors can be specified via Inject values corresponding to each
+of the properties.</p><p>To use LDAPVendor, you can simply create an object extending it
+and configure:</p><p><pre id="code" class="scala">
+object myLdap extends LDAPVendor
+myLdap.configure()
+</pre></p></div></div>
     </li><li name="net.liftweb.ldap.MetaLDAPProtoUser" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MetaLDAPProtoUser[ModelType&lt;:net.liftweb.ldap.LDAPProtoUser[ModelType]]extendsMetaMegaProtoUser[ModelType]"></a>
       <a id="MetaLDAPProtoUser[ModelType&lt;:LDAPProtoUser[ModelType]]:MetaLDAPProtoUser[ModelType]"></a>
@@ -101,7 +125,11 @@ bind (authenticate) a username from a ldap server.</p>
       <span class="symbol">
         <a href="MetaLDAPProtoUser.html"><span class="name">MetaLDAPProtoUser</span></a><span class="tparams">[<span name="ModelType">ModelType &lt;: <a href="LDAPProtoUser.html" class="extype" name="net.liftweb.ldap.LDAPProtoUser">LDAPProtoUser</a>[<span class="extype" name="net.liftweb.ldap.MetaLDAPProtoUser.ModelType">ModelType</span>]</span>]</span><span class="result"> extends <a href="../mapper/MetaMegaProtoUser.html" class="extype" name="net.liftweb.mapper.MetaMegaProtoUser">MetaMegaProtoUser</a>[<span class="extype" name="net.liftweb.ldap.MetaLDAPProtoUser.ModelType">ModelType</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.ldap.package@MetaLDAPProtoUser[ModelType&lt;:net.liftweb.ldap.LDAPProtoUser[ModelType]]extendsMetaMegaProtoUser[ModelType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>

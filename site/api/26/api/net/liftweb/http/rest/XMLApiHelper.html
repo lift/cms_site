@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>XMLApiHelper - Lift Framework 2.6-M3 - net.liftweb.http.rest.XMLApiHelper</title>
-          <meta name="description" content="XMLApiHelper - Lift Framework 2.6 - M3 - net.liftweb.http.rest.XMLApiHelper" />
-          <meta name="keywords" content="XMLApiHelper Lift Framework 2.6 M3 net.liftweb.http.rest.XMLApiHelper" />
+          <title>XMLApiHelper - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.rest.XMLApiHelper</title>
+          <meta name="description" content="XMLApiHelper - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.rest.XMLApiHelper" />
+          <meta name="keywords" content="XMLApiHelper Lift Framework 2.6 SNAPSHOT net.liftweb.http.rest.XMLApiHelper" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a>.<a href="package.html" class="extype" name="net.liftweb.http.rest">rest</a></p>
-        <h1>XMLApiHelper</h1>
+        <h1>XMLApiHelper</h1> <span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -40,7 +43,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">XMLApiHelper</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">XMLApiHelper</span><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
       </h4>
       
@@ -53,24 +56,30 @@ return from your API.</p><p>For example, the following code implements a simple 
 separated string of integers and reduces them with various operations.</p><p><pre name="code" class="scala">
 object CalculatorApi extends XmlApiHelper {
   // Define our root tag
-  def createTag(contents : NodeSeq) : Elem = &lt;api&gt;{contents}&lt;/api&gt;</p><p>  // The LiftResponses here will be converted to Box[LiftResponse]
+  def createTag(contents : NodeSeq) : Elem = &lt;api>{contents}&lt;/api>
+
+  // The LiftResponses here will be converted to Box[LiftResponse]
   // via the putResponseInBox implicit conversion
   def calculator : LiftRules.DispatchPF = {
-    case r @ Req(List(&quot;api&quot;,&quot;sum&quot;), _, GetRequest) =&gt; () =&gt; doSum(r)
-    case r @ Req(List(&quot;api&quot;,&quot;product&quot;), _, GetRequest) =&gt; () =&gt; doProduct(r)
-    case r @ Req(List(&quot;api&quot;,&quot;max&quot;), _, GetRequest) =&gt; () =&gt; doMax(r)
-    case r @ Req(List(&quot;api&quot;,&quot;min&quot;), _, GetRequest) =&gt; () =&gt; doMin(r)
-    case Req(&quot;api&quot; :: _, _, _) =&gt; () =&gt; BadResponse()
-  }</p><p>  // Define a common handler
-  def reduceOp (operation : (Int,Int) =&gt; Int)(r : Req) : Box[Elem] = tryo {
-    (r.param(&quot;args&quot;).map {
-      args =&gt; &lt;result&gt;{args.split(&quot;,&quot;).map(_.toInt).reduceLeft(operation)}&lt;/result&gt;
-     }) ?~ &quot;Missing args&quot;
+    case r @ Req(List("api","sum"), _, GetRequest) => () => doSum(r)
+    case r @ Req(List("api","product"), _, GetRequest) => () => doProduct(r)
+    case r @ Req(List("api","max"), _, GetRequest) => () => doMax(r)
+    case r @ Req(List("api","min"), _, GetRequest) => () => doMin(r)
+    case Req("api" :: _, _, _) => () => BadResponse()
+  }
+
+  // Define a common handler
+  def reduceOp (operation : (Int,Int) => Int)(r : Req) : Box[Elem] = tryo {
+    (r.param("args").map {
+      args => &lt;result>{args.split(",").map(_.toInt).reduceLeft(operation)}&lt;/result>
+     }) ?~ "Missing args"
   } match {
-    case Full(x) =&gt; x
-    case f : Failure =&gt; f
-    case Empty =&gt; Empty
-  }</p><p>  // Using a return type of LiftResponse causes the canNodeToResponse
+    case Full(x) => x
+    case f : Failure => f
+    case Empty => Empty
+  }
+
+  // Using a return type of LiftResponse causes the canNodeToResponse
   // implicit to be invoked
   def doSum (r : Req) : LiftResponse = reduceOp(_ + _)(r)
   def doProduct (r : Req) : LiftResponse = reduceOp(_ * _)(r)
@@ -84,15 +93,17 @@ http://foo.com/api/sum?args=1,2,3,4,5
  would
 return
 <pre name="code" class="xml">
-&lt;api operation=&quot;sum&quot; success=&quot;true&quot;&gt;&lt;result&gt;15&lt;/result&gt;&lt;/api&gt;
+&lt;api operation="sum" success="true">&lt;result>15&lt;/result>&lt;/api>
 </pre></p><p>http://foo.com/api/sum?args=1,2,3,4,5
 </pre>
 return
 <pre name="code" class="xml">
-&lt;api operation=&quot;sum&quot; success=&quot;true&quot;&gt;&lt;result&gt;15&lt;/result&gt;&lt;/api&gt;
-</pre></p></div><div class="toggleContainer block">
+&lt;api operation="sum" success="true">&lt;result>15&lt;/result>&lt;/api>
+</pre>
+
+</p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -145,7 +156,11 @@ return
       <span class="symbol">
         <span class="name">createTag</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@createTag(in:scala.xml.NodeSeq):scala.xml.Elem" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The method that wraps the outer-most tag around the body.</p><div class="fullcomment"><div class="comment cmt"><p>The method that wraps the outer-most tag around the body. The success,
 operation and msg attributes will be merged into the returned Elem.
 </p></div></div>
@@ -155,19 +170,6 @@ operation and msg attributes will be merged into the returned Elem.
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -178,8 +180,12 @@ operation and msg attributes will be merged into the returned Elem.
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -191,22 +197,13 @@ operation and msg attributes will be merged into the returned Elem.
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -217,8 +214,12 @@ operation and msg attributes will be merged into the returned Elem.
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -230,7 +231,11 @@ operation and msg attributes will be merged into the returned Elem.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.rest.XMLApiHelper#boolToResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="boolToResponse(in:Boolean):net.liftweb.http.LiftResponse"></a>
@@ -243,7 +248,11 @@ operation and msg attributes will be merged into the returned Elem.
       <span class="symbol">
         <span class="name">boolToResponse</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@boolToResponse(in:Boolean):net.liftweb.http.LiftResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Converts a boolean into a response of a root element with
 no contents and the &quot;success&quot; attribute set to the value of
 the &quot;in&quot; parameter.</p>
@@ -258,7 +267,11 @@ the &quot;in&quot; parameter.</p>
       <span class="symbol">
         <span class="name">buildResponse</span><span class="params">(<span name="success">success: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="msg">msg: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>, <span name="body">body: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@buildResponse(success:Boolean,msg:net.liftweb.common.Box[scala.xml.NodeSeq],body:scala.xml.NodeSeq):net.liftweb.http.LiftResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Build the Response based on Success, an optional message
 and the body
 </p><div class="fullcomment"><div class="comment cmt"><p>Build the Response based on Success, an optional message
@@ -275,7 +288,11 @@ and the body
       <span class="symbol">
         <span class="name">canBoolToResponse</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@canBoolToResponse(in:net.liftweb.common.Box[Boolean]):net.liftweb.http.LiftResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Converts a boxed boolean into a response of a root element with
 no contents and the &quot;success&quot; attribute set to the value of
 the &quot;in&quot; parameter.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a boxed boolean into a response of a root element with
@@ -292,9 +309,13 @@ of the root element will be set to the Failure's msg value.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">canNodeToResponse</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.xml.Node">Node</span>]]</span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
+        <span class="name">canNodeToResponse</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="scala.xml.Node">Node</span>]]</span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@canNodeToResponse(in:net.liftweb.common.Box[Seq[scala.xml.Node]]):net.liftweb.http.LiftResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Converts a boxed Seq[Node] into a response.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a boxed Seq[Node] into a response. If the Box is a Full,
 the root element uses the contents of the Box as its contents, and
 sets the &quot;success&quot; attribute to &quot;true&quot;. If the Box is a Failure,
@@ -312,11 +333,18 @@ element is returned with no contents and the &quot;success&quot; attribute set t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -328,9 +356,13 @@ element is returned with no contents and the &quot;success&quot; attribute set t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -343,7 +375,11 @@ element is returned with no contents and the &quot;success&quot; attribute set t
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -356,9 +392,16 @@ element is returned with no contents and the &quot;success&quot; attribute set t
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -372,7 +415,11 @@ element is returned with no contents and the &quot;success&quot; attribute set t
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -385,7 +432,11 @@ element is returned with no contents and the &quot;success&quot; attribute set t
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -398,7 +449,11 @@ element is returned with no contents and the &quot;success&quot; attribute set t
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.rest.XMLApiHelper#listElemToResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="listElemToResponse(in:Seq[scala.xml.Node]):net.liftweb.http.LiftResponse"></a>
@@ -409,9 +464,13 @@ element is returned with no contents and the &quot;success&quot; attribute set t
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">listElemToResponse</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.xml.Node">Node</span>]</span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
+        <span class="name">listElemToResponse</span><span class="params">(<span name="in">in: <a href="../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="scala.xml.Node">Node</span>]</span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@listElemToResponse(in:Seq[scala.xml.Node]):net.liftweb.http.LiftResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Converts a Seq[Node] into a root element with the &quot;success&quot; attribute
 set to &quot;true&quot; and the Seq[Node] as the contents.</p>
     </li><li name="net.liftweb.http.rest.XMLApiHelper#msgAttrName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -425,7 +484,11 @@ set to &quot;true&quot; and the Seq[Node] as the contents.</p>
       <span class="symbol">
         <span class="name">msgAttrName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@msgAttrName:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The name for the msg attribute
 </p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -437,9 +500,13 @@ set to &quot;true&quot; and the Seq[Node] as the contents.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -452,7 +519,11 @@ set to &quot;true&quot; and the Seq[Node] as the contents.</p>
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -465,7 +536,11 @@ set to &quot;true&quot; and the Seq[Node] as the contents.</p>
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.http.rest.XMLApiHelper#operation" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="operation:Option[scala.xml.NodeSeq]"></a>
@@ -478,7 +553,11 @@ set to &quot;true&quot; and the Seq[Node] as the contents.</p>
       <span class="symbol">
         <span class="name">operation</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@operation:Option[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Determines the value to place in the &quot;operation&quot; attribute of
 the root element based on the second element of the request path.</p><div class="fullcomment"><div class="comment cmt"><p>Determines the value to place in the &quot;operation&quot; attribute of
 the root element based on the second element of the request path.
@@ -494,7 +573,11 @@ the root element based on the second element of the request path.
       <span class="symbol">
         <span class="name">operationAttrName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@operationAttrName:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The name for the operation attribue
 </p>
     </li><li name="net.liftweb.http.rest.XMLApiHelper#pairToResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -508,7 +591,11 @@ the root element based on the second element of the request path.
       <span class="symbol">
         <span class="name">pairToResponse</span><span class="params">(<span name="in">in: (<span class="extype" name="scala.Boolean">Boolean</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>)</span><span class="result">: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@pairToResponse(in:(Boolean,String)):net.liftweb.http.LiftResponse" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Converts a pair of (Boolean,String) into a response of a root
 element with no contents, the &quot;success&quot; attribute set to
 the value of the first element of the pair, and the &quot;msg&quot;
@@ -524,7 +611,11 @@ attribute set to the value of the second element of the pair.</p>
       <span class="symbol">
         <span class="name">putResponseInBox</span><span class="params">(<span name="in">in: <a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@putResponseInBox(in:net.liftweb.http.LiftResponse):net.liftweb.common.Box[net.liftweb.http.LiftResponse]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Converts a given LiftResponse into a Full[LiftResponse]
 </p>
     </li><li name="net.liftweb.http.rest.XMLApiHelper#successAttrName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -538,7 +629,11 @@ attribute set to the value of the second element of the pair.</p>
       <span class="symbol">
         <span class="name">successAttrName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@successAttrName:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The name for the success attribute
 </p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -552,7 +647,11 @@ attribute set to the value of the second element of the pair.</p>
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -565,7 +664,11 @@ attribute set to the value of the second element of the pair.</p>
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -578,9 +681,16 @@ attribute set to the value of the second element of the pair.</p>
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -594,9 +704,16 @@ attribute set to the value of the second element of the pair.</p>
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -610,9 +727,16 @@ attribute set to the value of the second element of the pair.</p>
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.rest.XMLApiHelper@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li></ol>
@@ -625,7 +749,7 @@ attribute set to the value of the second element of the pair.</p>
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

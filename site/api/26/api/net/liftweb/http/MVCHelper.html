@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>MVCHelper - Lift Framework 2.6-M3 - net.liftweb.http.MVCHelper</title>
-          <meta name="description" content="MVCHelper - Lift Framework 2.6 - M3 - net.liftweb.http.MVCHelper" />
-          <meta name="keywords" content="MVCHelper Lift Framework 2.6 M3 net.liftweb.http.MVCHelper" />
+          <title>MVCHelper - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.MVCHelper</title>
+          <meta name="description" content="MVCHelper - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.MVCHelper" />
+          <meta name="keywords" content="MVCHelper Lift Framework 2.6 SNAPSHOT net.liftweb.http.MVCHelper" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
-        <h1>MVCHelper</h1>
+        <h1>MVCHelper</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -40,7 +43,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">MVCHelper</span><span class="result"> extends <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]]</span>
+        <span class="name">MVCHelper</span><span class="result"> extends <a href="LiftRules$.html#DispatchPF=PartialFunction[net.liftweb.http.Req,()=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]]" class="extmbr" name="net.liftweb.http.LiftRules.DispatchPF">DispatchPF</a></span>
       </span>
       </h4>
       
@@ -48,7 +51,7 @@
 MVC style coding.  Each controller line is defined as:
 <pre name="code" class="scala">
 serve {
-  case &quot;user&quot; :: User(user) :: _ =&gt; &quot;#name&quot; #&gt; user.firstName
+  case "user" :: User(user) :: _ => "#name" #> user.firstName
 }
 </pre></p><p>The above code matches /user/4, loads the user with primary
 key 4 from the database, then applies the transform to the /user.html
@@ -56,7 +59,7 @@ template replacing the node with the id &quot;name&quot; with the firstName of
 the user
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]], (<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>) ⇒ () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]], (<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>) ⇒ () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>], <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -105,14 +108,18 @@ the user
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">MVCMatch</span><span class="result"> = <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>], <a href="MVCHelper$MVCResponse.html" class="extype" name="net.liftweb.http.MVCHelper.MVCResponse">MVCResponse</a>]</span>
+        <span class="name">MVCMatch</span><span class="result"> = <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="MVCHelper$MVCResponse.html" class="extype" name="net.liftweb.http.MVCHelper.MVCResponse">MVCResponse</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@MVCMatch=PartialFunction[List[String],MVCHelper.this.MVCResponse]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">The partial function to match a request to a response
 </p><div class="fullcomment"><div class="comment cmt"><p>The partial function to match a request to a response
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="net.liftweb.http.MVCHelper.MVCResponse" visbl="prt" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="MVCResponseextendsObject"></a>
+    </li><li name="net.liftweb.http.MVCHelper.MVCResponse" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MVCResponseextendsAnyRef"></a>
       <a id="MVCResponse:MVCResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -120,10 +127,19 @@ the user
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="MVCHelper$MVCResponse.html"><span class="name">MVCResponse</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="MVCHelper$MVCResponse.html"><span class="name">MVCResponse</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A trait that holds a response for the MVCHelper.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@MVCResponseextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A trait that holds a response for the MVCHelper.</p><div class="fullcomment"><div class="comment cmt"><p>A trait that holds a response for the MVCHelper.  Conversions
+exist from Unit (just serve the template),
+CssBindFunc (do the substitution on the template),
+NodeSeq (run the template),
+LiftResponse (send the response back),
+or Box or Option of any of the above.</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li></ol>
             </div>
 
@@ -132,19 +148,6 @@ the user
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -155,8 +158,12 @@ the user
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -168,22 +175,13 @@ the user
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -194,8 +192,12 @@ the user
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.MVCHelper.MVCResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MVCResponse"></a>
       <a id="MVCResponse:MVCResponse"></a>
@@ -207,7 +209,11 @@ the user
       <span class="symbol">
         <a href="MVCHelper$MVCResponse$.html"><span class="name">MVCResponse</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@MVCResponse" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="scala.PartialFunction#andThen" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="andThen[C](k:B=&gt;C):PartialFunction[A,C]"></a>
@@ -220,7 +226,11 @@ the user
       <span class="symbol">
         <span class="name">andThen</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="k">k: (() ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]) ⇒ <span class="extype" name="scala.PartialFunction.andThen.C">C</span></span>)</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, <span class="extype" name="scala.PartialFunction.andThen.C">C</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@andThen[C](k:B=&gt;C):PartialFunction[A,C]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PartialFunction → Function1</dd></dl></div>
     </li><li name="net.liftweb.http.MVCHelper#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="apply(in:net.liftweb.http.Req):()=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]"></a>
@@ -233,7 +243,11 @@ the user
       <span class="symbol">
         <span class="name">apply</span><span class="params">(<span name="in">in: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>)</span><span class="result">: () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@apply(in:net.liftweb.http.Req):()=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Apply the Rest helper
 </p><div class="fullcomment"><div class="comment cmt"><p>Apply the Rest helper
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.MVCHelper">MVCHelper</a> → Function1</dd></dl></div>
@@ -248,7 +262,11 @@ the user
       <span class="symbol">
         <span class="name">applyOrElse</span><span class="tparams">[<span name="A1">A1 &lt;: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>, <span name="B1">B1 &gt;: () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>]</span><span class="params">(<span name="x">x: <span class="extype" name="scala.PartialFunction.applyOrElse.A1">A1</span></span>, <span name="default">default: (<span class="extype" name="scala.PartialFunction.applyOrElse.A1">A1</span>) ⇒ <span class="extype" name="scala.PartialFunction.applyOrElse.B1">B1</span></span>)</span><span class="result">: <span class="extype" name="scala.PartialFunction.applyOrElse.B1">B1</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@applyOrElse[A1&lt;:A,B1&gt;:B](x:A1,default:A1=&gt;B1):B1" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PartialFunction</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -261,7 +279,11 @@ the user
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.MVCHelper#boxToResp" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="boxToResp[T](in:net.liftweb.common.Box[T])(implicitc:T=&gt;MVCHelper.this.MVCResponse):net.liftweb.common.Box[net.liftweb.http.LiftResponse]"></a>
@@ -274,7 +296,11 @@ the user
       <span class="symbol">
         <span class="name">boxToResp</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.http.MVCHelper.boxToResp.T">T</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: (<span class="extype" name="net.liftweb.http.MVCHelper.boxToResp.T">T</span>) ⇒ <a href="MVCHelper$MVCResponse.html" class="extype" name="net.liftweb.http.MVCHelper.MVCResponse">MVCResponse</a></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@boxToResp[T](in:net.liftweb.common.Box[T])(implicitc:T=&gt;MVCHelper.this.MVCResponse):net.liftweb.common.Box[net.liftweb.http.LiftResponse]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Turn a Box[T] into the return type expected by
 DispatchPF.</p><div class="fullcomment"><div class="comment cmt"><p>Turn a Box[T] into the return type expected by
 DispatchPF.  Note that this method will return
@@ -290,11 +316,18 @@ from ParamFailure[Int[(msg, _, _, code)
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.Function1#compose" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -308,7 +341,11 @@ from ParamFailure[Int[(msg, _, _, code)
       <span class="symbol">
         <span class="name">compose</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>)</span><span class="result">: (<span class="extype" name="scala.Function1.compose.A">A</span>) ⇒ () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@compose[A](g:A=&gt;T1):A=&gt;R" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function1</dd><dt>Annotations</dt><dd>
                 <span class="name">@unspecialized</span><span class="args">()</span>
               
@@ -324,7 +361,11 @@ from ParamFailure[Int[(msg, _, _, code)
       <span class="symbol">
         <span class="name">emptyToResp</span><span class="params">(<span name="eb">eb: <a href="../common/EmptyBox.html" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@emptyToResp(eb:net.liftweb.common.EmptyBox):net.liftweb.common.Box[net.liftweb.http.LiftResponse]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Convert an Empty into an appropriate LiftResponse.</p><div class="fullcomment"><div class="comment cmt"><p>Convert an Empty into an appropriate LiftResponse.  In the
 case of Failure, you may want to display a particular error
 message to the user.
@@ -338,9 +379,13 @@ message to the user.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -353,7 +398,11 @@ message to the user.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -366,9 +415,16 @@ message to the user.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<span class="extype" name="java.lang">java.lang</span>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -382,7 +438,11 @@ message to the user.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -395,7 +455,11 @@ message to the user.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.MVCHelper#isDefinedAt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isDefinedAt(in:net.liftweb.http.Req):Boolean"></a>
@@ -408,7 +472,11 @@ message to the user.
       <span class="symbol">
         <span class="name">isDefinedAt</span><span class="params">(<span name="in">in: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@isDefinedAt(in:net.liftweb.http.Req):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Is the Rest helper defined for a given request
 </p><div class="fullcomment"><div class="comment cmt"><p>Is the Rest helper defined for a given request
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.MVCHelper">MVCHelper</a> → PartialFunction</dd></dl></div>
@@ -423,7 +491,11 @@ message to the user.
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.PartialFunction#lift" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="lift:A=&gt;Option[B]"></a>
@@ -436,7 +508,11 @@ message to the user.
       <span class="symbol">
         <span class="name">lift</span><span class="result">: (<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>) ⇒ <span class="extype" name="scala.Option">Option</span>[() ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@lift:A=&gt;Option[B]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PartialFunction</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -447,9 +523,13 @@ message to the user.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -462,7 +542,11 @@ message to the user.
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -475,7 +559,11 @@ message to the user.
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.PartialFunction#orElse" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="orElse[A1&lt;:A,B1&gt;:B](that:PartialFunction[A1,B1]):PartialFunction[A1,B1]"></a>
@@ -488,7 +576,11 @@ message to the user.
       <span class="symbol">
         <span class="name">orElse</span><span class="tparams">[<span name="A1">A1 &lt;: <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a></span>, <span name="B1">B1 &gt;: () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>]</span><span class="params">(<span name="that">that: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.PartialFunction.orElse.A1">A1</span>, <span class="extype" name="scala.PartialFunction.orElse.B1">B1</span>]</span>)</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.PartialFunction.orElse.A1">A1</span>, <span class="extype" name="scala.PartialFunction.orElse.B1">B1</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@orElse[A1&lt;:A,B1&gt;:B](that:PartialFunction[A1,B1]):PartialFunction[A1,B1]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PartialFunction</dd></dl></div>
     </li><li name="scala.PartialFunction#runWith" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="runWith[U](action:B=&gt;U):A=&gt;Boolean"></a>
@@ -501,7 +593,11 @@ message to the user.
       <span class="symbol">
         <span class="name">runWith</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="action">action: (() ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]) ⇒ <span class="extype" name="scala.PartialFunction.runWith.U">U</span></span>)</span><span class="result">: (<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@runWith[U](action:B=&gt;U):A=&gt;Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PartialFunction</dd></dl></div>
     </li><li name="net.liftweb.http.MVCHelper#saveRedir" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="saveRedir(what:AnyRef{defvalidate:List[net.liftweb.util.FieldError];defsave():Boolean},where:String):()=&gt;Unit"></a>
@@ -512,9 +608,13 @@ message to the user.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">saveRedir</span><span class="params">(<span name="what">what: <span class="extype" name="scala.AnyRef">AnyRef</span> { ... /* 2 definitions in type refinement */ }</span>, <span name="where">where: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: () ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">saveRedir</span><span class="params">(<span name="what">what: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a> { ... /* 2 definitions in type refinement */ }</span>, <span name="where">where: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: () ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@saveRedir(what:AnyRef{defvalidate:List[net.liftweb.util.FieldError];defsave():Boolean},where:String):()=&gt;Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Validate what, if it passes validation, then
 redirect to the new URL, else display the messages
 using S.</p><div class="fullcomment"><div class="comment cmt"><p>Validate what, if it passes validation, then
@@ -532,7 +632,11 @@ using S.error and redisplay the current page.
       <span class="symbol">
         <span class="name">serve</span><span class="params">(<span name="pf">pf: <a href="#MVCMatch=PartialFunction[List[String],MVCHelper.this.MVCResponse]" class="extmbr" name="net.liftweb.http.MVCHelper.MVCMatch">MVCMatch</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@serve(pf:MVCHelper.this.MVCMatch):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Serve an MVC page based on matching the path
 </p><div class="fullcomment"><div class="comment cmt"><p>Serve an MVC page based on matching the path
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
@@ -547,7 +651,11 @@ using S.error and redisplay the current page.
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.Function1#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -560,7 +668,11 @@ using S.error and redisplay the current page.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Function1 → AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -573,9 +685,16 @@ using S.error and redisplay the current page.
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -589,9 +708,16 @@ using S.error and redisplay the current page.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -605,9 +731,16 @@ using S.error and redisplay the current page.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.MVCHelper@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">()</span>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
               
         </dd></dl></div>
     </li></ol>
@@ -624,7 +757,7 @@ using S.error and redisplay the current page.
             </div><div class="parent" name="scala.Function1">
               <h3>Inherited from (<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>) ⇒ () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
             </div>

@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>provider - Lift Framework 2.6-M3 - net.liftweb.http.provider</title>
-          <meta name="description" content="provider - Lift Framework 2.6 - M3 - net.liftweb.http.provider" />
-          <meta name="keywords" content="provider Lift Framework 2.6 M3 net.liftweb.http.provider" />
+          <title>provider - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.provider</title>
+          <meta name="description" content="provider - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.provider" />
+          <meta name="keywords" content="provider Lift Framework 2.6 SNAPSHOT net.liftweb.http.provider" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a></p>
-        <h1>provider</h1>
+        <h1>provider</h1> <span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -63,8 +66,8 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.http.provider.HTTPContext" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HTTPContextextendsObject"></a>
+              <ol><li name="net.liftweb.http.provider.HTTPContext" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="HTTPContextextendsAnyRef"></a>
       <a id="HTTPContext:HTTPContext"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -72,10 +75,15 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HTTPContext.html"><span class="name">HTTPContext</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="HTTPContext.html"><span class="name">HTTPContext</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Represents the service context information.</p>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPContextextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the service context information.</p><div class="fullcomment"><div class="comment cmt"><p>Represents the service context information. Similar with servlet context.
+</p></div></div>
     </li><li name="net.liftweb.http.provider.HTTPCookie" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HTTPCookieextendsCloneablewithProductwithSerializable"></a>
       <a id="HTTPCookie:HTTPCookie"></a>
@@ -85,10 +93,14 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="HTTPCookie.html"><span class="name">HTTPCookie</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="domain">domain: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="path">path: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="maxAge">maxAge: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="version">version: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="secure_?">secure_?: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>, <span name="httpOnly">httpOnly: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol">net.liftweb.common.Empty</span></span>)</span><span class="result"> extends <span class="extype" name="java.lang.Cloneable">Cloneable</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="HTTPCookie.html"><span class="name">HTTPCookie</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="domain">domain: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="path">path: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="maxAge">maxAge: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="version">version: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="secure_?">secure_?: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>, <span name="httpOnly">httpOnly: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Boolean">Boolean</span>] = <span class="symbol"><span class="name"><a href="../../../package.html">Empty</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="java.lang.Cloneable">Cloneable</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Repersents an immutable representation of an HTTP Cookie
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPCookieextendsCloneablewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Repersents an immutable representation of an HTTP Cookie
 </p>
     </li><li name="net.liftweb.http.provider.HTTPParam" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HTTPParamextendsProductwithSerializable"></a>
@@ -99,13 +111,17 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="HTTPParam.html"><span class="name">HTTPParam</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="values">values: <span class="extype" name="scala.List">List</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="HTTPParam.html"><span class="name">HTTPParam</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="values">values: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Represents a HTTP query parameter or a HTTP header parameter
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPParamextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a HTTP query parameter or a HTTP header parameter
 </p>
-    </li><li name="net.liftweb.http.provider.HTTPProvider" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HTTPProviderextendsObject"></a>
+    </li><li name="net.liftweb.http.provider.HTTPProvider" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="HTTPProviderextendsAnyRef"></a>
       <a id="HTTPProvider:HTTPProvider"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -113,12 +129,17 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HTTPProvider.html"><span class="name">HTTPProvider</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="HTTPProvider.html"><span class="name">HTTPProvider</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Implement this trait in order to integrate Lift with other underlaying web containers.</p>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPProviderextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implement this trait in order to integrate Lift with other underlaying web containers.</p><div class="fullcomment"><div class="comment cmt"><p>Implement this trait in order to integrate Lift with other underlaying web containers. Not necessarily JEE containers.
+</p></div></div>
     </li><li name="net.liftweb.http.provider.HTTPRequest" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HTTPRequestextendsObject"></a>
+      <a id="HTTPRequestextendsAnyRef"></a>
       <a id="HTTPRequest:HTTPRequest"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -126,13 +147,17 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HTTPRequest.html"><span class="name">HTTPRequest</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="HTTPRequest.html"><span class="name">HTTPRequest</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">The representation of a HTTP request state
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPRequestextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The representation of a HTTP request state
 </p>
     </li><li name="net.liftweb.http.provider.HTTPResponse" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HTTPResponseextendsObject"></a>
+      <a id="HTTPResponseextendsAnyRef"></a>
       <a id="HTTPResponse:HTTPResponse"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -140,13 +165,17 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HTTPResponse.html"><span class="name">HTTPResponse</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="HTTPResponse.html"><span class="name">HTTPResponse</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">Represents the HTTP response that will be send to the client
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPResponseextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the HTTP response that will be send to the client
 </p>
     </li><li name="net.liftweb.http.provider.HTTPSession" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="HTTPSessionextendsObject"></a>
+      <a id="HTTPSessionextendsAnyRef"></a>
       <a id="HTTPSession:HTTPSession"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -154,10 +183,14 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="HTTPSession.html"><span class="name">HTTPSession</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="HTTPSession.html"><span class="name">HTTPSession</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">The representation of a HTTP session
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPSessionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The representation of a HTTP session
 </p>
     </li></ol>
             </div>
@@ -177,8 +210,12 @@
       <span class="symbol">
         <a href="HTTPCookie$.html"><span class="name">HTTPCookie</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Companion module for creating HTTPCookie objects
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Companion module for creating HTTPCookie objects
 </p>
     </li><li name="net.liftweb.http.provider.HTTPParam" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="HTTPParam"></a>
@@ -191,8 +228,12 @@
       <span class="symbol">
         <a href="HTTPParam$.html"><span class="name">HTTPParam</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4>
-      <p class="comment cmt">Companion module for creating new HTTPParam objects
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@HTTPParam" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Companion module for creating new HTTPParam objects
 </p>
     </li><li name="net.liftweb.http.provider.RetryState" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RetryState"></a>
@@ -205,7 +246,11 @@
       <span class="symbol">
         <a href="RetryState$.html"><span class="name">RetryState</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@RetryState" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li><li name="net.liftweb.http.provider.servlet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="servlet"></a>
@@ -218,7 +263,11 @@
       <span class="symbol">
         <a href="servlet/package.html"><span class="name">servlet</span></a>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.package@servlet" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
       
     </li></ol>
             </div>

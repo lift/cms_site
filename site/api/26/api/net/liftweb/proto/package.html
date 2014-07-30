@@ -1,10 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
-          <title>proto - Lift Framework 2.6-M3 - net.liftweb.proto</title>
-          <meta name="description" content="proto - Lift Framework 2.6 - M3 - net.liftweb.proto" />
-          <meta name="keywords" content="proto Lift Framework 2.6 M3 net.liftweb.proto" />
+          <title>proto - Lift Framework 2.6-SNAPSHOT - net.liftweb.proto</title>
+          <meta name="description" content="proto - Lift Framework 2.6 - SNAPSHOT - net.liftweb.proto" />
+          <meta name="keywords" content="proto Lift Framework 2.6 SNAPSHOT net.liftweb.proto" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -31,7 +30,11 @@
       <div id="definition">
         <img src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
-        <h1>proto</h1>
+        <h1>proto</h1> <span class="permalink">
+      <a href="../../../index.html#net.liftweb.proto.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -63,8 +66,8 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.proto.Crudify" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="CrudifyextendsObject"></a>
+              <ol><li name="net.liftweb.proto.Crudify" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CrudifyextendsAnyRef"></a>
       <a id="Crudify:Crudify"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -72,13 +75,21 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="Crudify.html"><span class="name">Crudify</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Crudify.html"><span class="name">Crudify</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This trait automatically adds CRUD (Create, read, update and delete) operations
-to an existing persistence mechanism.</p>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.proto.package@CrudifyextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This trait automatically adds CRUD (Create, read, update and delete) operations
+to an existing persistence mechanism.</p><div class="fullcomment"><div class="comment cmt"><p>This trait automatically adds CRUD (Create, read, update and delete) operations
+to an existing persistence mechanism.
+Various methods can be overridden to
+customize which operations are available to a user and how things are displayed.
+For example, you can disable deletion of entities by overriding deleteMenuLoc to Empty.</p></div></div>
     </li><li name="net.liftweb.proto.ProtoUser" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ProtoUserextendsObject"></a>
+      <a id="ProtoUserextendsAnyRef"></a>
       <a id="ProtoUser:ProtoUser"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -86,10 +97,14 @@ to an existing persistence mechanism.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="ProtoUser.html"><span class="name">ProtoUser</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ProtoUser.html"><span class="name">ProtoUser</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">A prototypical user class with abstractions to the underlying storage
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.proto.package@ProtoUserextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A prototypical user class with abstractions to the underlying storage
 </p>
     </li></ol>
             </div>
@@ -109,8 +124,12 @@ to an existing persistence mechanism.</p>
       <span class="symbol">
         <a href="ProtoRules$.html"><span class="name">ProtoRules</span></a><span class="result"> extends <a href="../http/Factory.html" class="extype" name="net.liftweb.http.Factory">Factory</a> with <a href="../common/LazyLoggable.html" class="extype" name="net.liftweb.common.LazyLoggable">LazyLoggable</a></span>
       </span>
-      </h4>
-      <p class="comment cmt">This singleton contains the rules for persistence
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.proto.package@ProtoRules" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This singleton contains the rules for persistence
 </p>
     </li></ol>
             </div>
