@@ -1,0 +1,83 @@
+<cms path="/26_rc1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2014/07/30">
+  <tag name="sub" value="happening">
+    <b>Lift 2.6-RC1</b>
+  </tag>
+
+  <tag name="desc">
+    2014/07/30 The Lift team is proud to announce Release Candidate 1 of Lift 2.6.
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: 2.6-RC1</title>
+      </head>
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span9">  
+            
+        <div>
+          <div class="page-header">
+          <h1>Announcing Lift 2.6-RC1</h1>
+          </div>
+          <em>July 30, 2014</em>
+
+          <p>The Lift team proudly announces the <a href="/download">availability</a>
+            of Release Candidate 1 of Lift version 2.6.
+          </p>
+          <p>Lift is the most powerful, secure and mature web framework available today. There are
+            <a href="http://seventhings.liftweb.net/" target="_blank">Seven Things</a>
+            that distinguish Lift from other web frameworks.
+          </p>
+
+          <p>Lift applications are:</p>
+          <ul>
+            <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
+            <li>Developer centric -- Lift apps are fast to build, concise and easy to maintain</li>
+            <li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
+            <li>Interactive like a desktop app -- Lift's Comet support is unparalleled and Lift's ajax support is super-easy and very secure</li>
+            <li>Modular -- Lift apps can benefit from, easy to integrate, pre built modules</li>
+            <li>Designer friendly -- Lift apps can be developed in a totally designer friendly way</li>
+          </ul>
+          <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
+          <p>Lift open source software licensed under an Apache 2.0 license.</p>
+          
+          <!-- **** START OF CHANGES PASTED FROM GITHUB RELEASE NOTES *********************** -->
+
+          <div class="markdown-body">
+
+            <h3>Notable Changes</h3>
+
+            <ul>
+              <li>Included option attributes in <code>multiSelect_*</code>.</li>
+              <li>Improved memory usage by sharing init key value for each <code>*Var</code>.</li>
+              <li>Added explicit parameter type when looking for snippet methods.</li>
+              <li>Added <code>Date</code> header when sending mail.</li>
+              <li>Excludes the <code>Position.scala</code> file in Scala &lt; 2.11. (<a href="https://github.com/lift/framework/pull/1589" class="issue-link" title="Conditionally exclude the Position.scala file in Scala &lt;2.11.">#1589</a></li>
+            </ul>
+            
+
+          </div>
+
+
+
+
+          <!-- **** END ********************************************************************* -->
+
+
+          <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
+            and enjoy building awesome apps with Lift.</p>
+
+        </div>
+          </div>      
+	        <div class="span3">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div> 
+    </lift:surround>
+  </content>
+</cms>
