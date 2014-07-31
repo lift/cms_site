@@ -1,0 +1,183 @@
+<cms path="/26_rc1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2014/06/19">
+  <tag name="sub" value="happening">
+    <b>Lift 2.6-RC1</b>
+  </tag>
+
+  <tag name="desc">
+    2014/07/30 The Lift team is proud to announce Release Candidate 1 of Lift 2.6.
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: 2.6-RC1</title>
+      </head>
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span9">  
+            
+        <div>
+          <div class="page-header">
+          <h1>Announcing Lift 2.6-RC1</h1>
+          </div>
+          <em>July 30, 2014</em>
+
+          <p>The Lift team proudly announces the <a href="/download">availability</a>
+            of Release Candidate 1 of Lift version 2.6.
+          </p>
+          <p>Lift is the most powerful, secure and mature web framework available today. There are
+            <a href="http://seventhings.liftweb.net/" target="_blank">Seven Things</a>
+            that distinguish Lift from other web frameworks.
+          </p>
+
+          <p>Lift applications are:</p>
+          <ul>
+            <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
+            <li>Developer centric -- Lift apps are fast to build, concise and easy to maintain</li>
+            <li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
+            <li>Interactive like a desktop app -- Lift's Comet support is unparalleled and Lift's ajax support is super-easy and very secure</li>
+            <li>Modular -- Lift apps can benefit from, easy to integrate, pre built modules</li>
+            <li>Designer friendly -- Lift apps can be developed in a totally designer friendly way</li>
+          </ul>
+          <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
+          <p>Lift open source software licensed under an Apache 2.0 license.</p>
+          
+          <!-- **** START OF CHANGES PASTED FROM GITHUB RELEASE NOTES *********************** -->
+
+          <div class="markdown-body">
+
+            <h3>Notable Changes</h3>
+
+            <ul>
+              <li>Included option attributes in <code>multiSelect_*</code>.</li>
+              <li>Improved memory usage by sharing init key value for each <code>*Var</code>.</li>
+              <li>Added explicit parameter type when looking for snippet methods.</li>
+              <li>Added <code>Date</code> header when sending mail.</li>
+              <li>Excludes the <code>Position.scala</code> file in Scala &lt; 2.11. (<a href="https://github.com/lift/framework/pull/1589" class="issue-link" title="Conditionally exclude the Position.scala file in Scala &lt;2.11.">#1589</a></li>
+              <li>2.10 versions of Lift are now built for Scala 2.10.4.</li>
+              <li>We are now publishing Lift builds for 2.11, built with Scala 2.11.1.</li>
+              <li>
+              <code>MongoRecord.save</code> now has a default <code>true</code> value for its <code>safe</code> parameter.</li>
+              <li>Add <code>saveBox</code>, <code>updateBox</code>, and <code>deleteBox_!</code> methods to <code>MongoRecord</code>
+              that catch exceptions and return a <code>Box</code>.</li>
+              <li>Moved <code>MongoIdentifier</code> to use a common <code>ConnectionIdentifier</code> shared with
+              other record types.</li>
+              <li>Added <code>RecordRules.fieldName</code>, a <code>FactoryMaker</code> that lets you modify a field's
+              corresponding database name based on the database connection and the field's
+              variable name. (<a href="https://github.com/lift/framework/issues/1505" class="issue-link" title="Create RecordRule for field name.">#1505</a>).</li>
+              <li>Added <code>RecordRules.displayName</code>, a <code>FactoryMaker</code> that lets you modify a field's
+              display name (the name rendered in the UI) based on the record instance being
+              handled, the current locale, and the default display name.</li>
+              <li>Added <code>MongoRules.collectionName</code>, an <code>Inject</code> that lets you modify the name of a <code>MongoRecord</code> class's collection based on the connection and the
+              class name.</li>
+              <li>Fix <code>MongoListField</code>'s <code>setFromJValue</code> to properly handle special mongo data
+              types.</li>
+              <li>Add <code>AsObjectId</code> extractor for pattern matching <code>ObjectId</code> <code>String</code>s.</li>
+              <li>Add <code>AsMongoRecord</code> extractor for pattern matching a Mongo <code>Record</code> instance
+              based on an incoming <code>String</code> id.</li>
+              <li>Add <code>JsonObjectId</code>, <code>JsonRegex</code>, <code>JsonUUID</code>, <code>JsonDate</code>, and <code>JsonDateTime</code>
+              extractors for <code>lift-mongodb</code>-formatted <code>JValue</code>s.</li>
+              <li>Added a <code>withFilter</code> method to suppress warnings when using the <code>BaseResponse</code>
+              class in Lift tests (see <a href="https://github.com/lift/framework/pull/1253" class="issue-link" title="&quot;withFilter&quot; method on the BaseResponse class">#1253</a>).</li>
+              <li>Wrap mail parts in <code>multipart/related</code> MIME part in emails (see <a href="https://github.com/lift/framework/pull/1569" class="issue-link" title="Change Email Attachment Behavior to wrap mail parts in multipart/related">#1569</a>).</li>
+              <li>
+              <code>CometActor</code> now handles <code>ResponseShortcutException</code>s with redirect responses
+              by sending an appropriate <code>RedirectTo</code> command to the client. This means that
+              e.g. <code>S.redirectTo</code> will work as expected in a <code>CometActor</code>. Note that this is implemented
+              in the default <code>exceptionHandler</code> of <code>CometActor</code>, so if you've overridden it you'll
+              need to make sure that the default handler is something you eventually invoke.</li>
+              <li>Added the ability to get a forced version of a request body as JSON or XML,
+              regardless of whether the specified <code>Content-Type</code> of the request was correct.
+              These are <code>Req.forcedBodyAsJson</code> and <code>Req.forcedBodyAsXml</code>, respectively.</li>
+              <li>Return a <code>Failure</code> with descriptive error message if <code>bodyAsJson</code> or <code>bodyAsXml</code>
+              are invoked and we don't return the relevant JSON or XML due to an incorrect
+              <code>Content-Type</code> in the request.</li>
+              <li>Added a short note on <code>StackableMaker</code>'s <code>doWith</code> (used by <code>FactoryMaker</code>,
+              amongst other things) regarding the fact that its changes to its maker's value
+              are thread-local.</li>
+            </ul>
+            
+            <h3>Deprecations</h3>
+
+            <ul>
+              <li>
+              <code>JSONParser</code>, Lift's legacy JSON parser, along with its dependents:
+
+              <ul class="task-list">
+              <li><code>MetaRecord.setFieldsFromJSON</code></li>
+              <li><code>MetaRecord.fromJSON</code></li>
+              <li>
+              <code>CometActor</code>'s <code>handleJson</code>, <code>jsonCall</code>, and <code>jsonInCode</code>
+              </li>
+              <li><code>S.buildJsonFunc</code></li>
+              <li>
+              <code>S.jsonFmapFunc</code> with <code>Any=&gt;JsCmd</code>
+              </li>
+              <li><code>JsonHandler</code></li>
+              <li><code>SHtml.fjsonCall</code></li>
+              <li>
+              <code>SHtml.jsonButton</code> with <code>Any=&gt;JsCmd</code>
+              </li>
+              <li><code>SHtml.jsonForm</code></li>
+              </ul>
+              </li>
+              <li>
+              <code>Mapper</code> and <code>MetaMapper</code>'s snippet bindings that use <code>PartialFunction</code>s:
+
+              <ul class="task-list">
+              <li>
+              <code>addSnippet</code>, <code>editSnippet</code>, <code>viewSnippet</code> (in favor of <code>addFormSnippet</code>,
+              <code>editFormSnippet</code>, and <code>viewTransform</code>, all based on CSS selector transforms)</li>
+              <li>
+              <code>modSnippet</code>, used in <code>addSnippet</code> and <code>editSnippet</code>, superseded by <code>formSnippet</code>.</li>
+              <li>
+              <code>add</code>, <code>edit</code>, and <code>view</code> snippets in HTML, in favor of <code>addForm</code>, <code>editForm</code>,
+              and <code>viewTransform</code>
+              </li>
+              <li>
+              <code>fieldMapperPF</code>, in favor of <code>fieldMapperTransforms</code>
+              </li>
+              <li>
+              <code>fieldPF</code>, <code>appendField</code>, and <code>prependField</code>, in favor of <code>fieldTransforms</code>,
+              <code>appendFieldTransform</code>, and <code>prependFieldTransform</code>.</li>
+              </ul>
+              </li>
+              <li>
+              <code>MongoAddress</code>, <code>MongoHostBase</code>, <code>MongoHost</code>, <code>MongoSet</code> and all functions that
+              take them as parameters. Please use the Mongo Java driver's <code>MongoClient</code> instead.</li>
+              <li>
+              <code>MongoRecord.save</code> with no parameters. Please use the version with one
+              parameter, and invoke it with empty parens (<code>save()</code>) if you want a safe save. The
+              default for <code>save</code> with no parameters was an unsafe save, which can be achieved using
+              <code>save(false)</code>.</li>
+              <li>
+              <code>MongoMeta.ensureIndex</code>; use <code>MongoMeta.createIndex instead</code>.</li>
+              <li>
+              <code>ListenerManager.updateListeners(Any)</code>; use <code>ListenerManager.sendListenersMesage(Any)</code>
+              instead.</li>
+            </ul>
+
+          </div>
+
+
+
+
+          <!-- **** END ********************************************************************* -->
+
+
+          <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
+            and enjoy building awesome apps with Lift.</p>
+
+        </div>
+          </div>      
+	        <div class="span3">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div> 
+    </lift:surround>
+  </content>
+</cms>
