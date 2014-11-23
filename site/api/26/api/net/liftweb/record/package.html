@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>record - Lift Framework 2.6-SNAPSHOT - net.liftweb.record</title>
-          <meta name="description" content="record - Lift Framework 2.6 - SNAPSHOT - net.liftweb.record" />
-          <meta name="keywords" content="record Lift Framework 2.6 SNAPSHOT net.liftweb.record" />
+          <title>record - Lift Framework 2.6-RC2 - net.liftweb.record</title>
+          <meta name="description" content="record - Lift Framework 2.6 - RC2 - net.liftweb.record" />
+          <meta name="keywords" content="record Lift Framework 2.6 RC2 net.liftweb.record" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <img src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
-        <h1>record</h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1>record</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -77,13 +69,9 @@
       <span class="symbol">
         <a href="BaseField.html"><span class="name">BaseField</span></a><span class="result"> extends <a href="../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a> with <a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">util.BaseField</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@BaseFieldextendsFieldIdentifierwithBaseField" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Base trait of record fields, with functionality common to any type of field owned by any type of record</p>
-    </li><li name="net.liftweb.record.DisplayWithLabel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      </h4>
+      <p class="comment cmt">Base trait of record fields, with functionality common to any type of field owned by any type of record</p>
+    </li><li name="net.liftweb.record.DisplayWithLabel" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="DisplayWithLabel[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOwnedField[OwnerType]"></a>
       <a id="DisplayWithLabel[OwnerType&lt;:Record[OwnerType]]:DisplayWithLabel[OwnerType]"></a>
       <h4 class="signature">
@@ -94,13 +82,8 @@
       <span class="symbol">
         <a href="DisplayWithLabel.html"><span class="name">DisplayWithLabel</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.DisplayWithLabel.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a>[<span class="extype" name="net.liftweb.record.DisplayWithLabel.OwnerType">OwnerType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@DisplayWithLabel[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOwnedField[OwnerType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Mix in to a field to change its form display to be formatted with the label aside.</p><div class="fullcomment"><div class="comment cmt"><p>Mix in to a field to change its form display to be formatted with the label aside.</p><p>E.g.</p><p><label for={ id }>{ displayName }</label>
-    { control }</p></div></div>
+      </h4>
+      <p class="comment cmt">Mix in to a field to change its form display to be formatted with the label aside.</p>
     </li><li name="net.liftweb.record.ExpandoRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ExpandoRecord[MyType&lt;:net.liftweb.record.Record[MyType]withnet.liftweb.record.ExpandoRecord[MyType]]extendsAnyRef"></a>
       <a id="ExpandoRecord[MyType&lt;:Record[MyType]withExpandoRecord[MyType]]:ExpandoRecord[MyType]"></a>
@@ -112,11 +95,7 @@
       <span class="symbol">
         <a href="ExpandoRecord.html"><span class="name">ExpandoRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.ExpandoRecord.MyType">MyType</span>] with <a href="ExpandoRecord.html" class="extype" name="net.liftweb.record.ExpandoRecord">ExpandoRecord</a>[<span class="extype" name="net.liftweb.record.ExpandoRecord.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@ExpandoRecord[MyType&lt;:net.liftweb.record.Record[MyType]withnet.liftweb.record.ExpandoRecord[MyType]]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.Field" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Field[ThisType,OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOwnedField[OwnerType]withTypedField[ThisType]"></a>
@@ -129,12 +108,8 @@
       <span class="symbol">
         <a href="Field.html"><span class="name">Field</span></a><span class="tparams">[<span name="ThisType">ThisType</span>, <span name="OwnerType">OwnerType &lt;: <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.Field.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a>[<span class="extype" name="net.liftweb.record.Field.OwnerType">OwnerType</span>] with <a href="TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="net.liftweb.record.Field.ThisType">ThisType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@Field[ThisType,OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsOwnedField[OwnerType]withTypedField[ThisType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A simple field that can store and retrieve a value of a given type
+      </h4>
+      <p class="comment cmt">A simple field that can store and retrieve a value of a given type
 </p>
     </li><li name="net.liftweb.record.KeyField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="KeyField[MyType,OwnerType&lt;:net.liftweb.record.Record[OwnerType]withnet.liftweb.record.KeyedRecord[OwnerType,MyType]]extendsField[MyType,OwnerType]"></a>
@@ -147,11 +122,7 @@
       <span class="symbol">
         <a href="KeyField.html"><span class="name">KeyField</span></a><span class="tparams">[<span name="MyType">MyType</span>, <span name="OwnerType">OwnerType &lt;: <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.KeyField.OwnerType">OwnerType</span>] with <a href="KeyedRecord.html" class="extype" name="net.liftweb.record.KeyedRecord">KeyedRecord</a>[<span class="extype" name="net.liftweb.record.KeyField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.record.KeyField.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<span class="extype" name="net.liftweb.record.KeyField.MyType">MyType</span>, <span class="extype" name="net.liftweb.record.KeyField.OwnerType">OwnerType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@KeyField[MyType,OwnerType&lt;:net.liftweb.record.Record[OwnerType]withnet.liftweb.record.KeyedRecord[OwnerType,MyType]]extendsField[MyType,OwnerType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.KeyedRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="KeyedRecord[MyType&lt;:net.liftweb.record.KeyedRecord[MyType,KeyType],KeyType]extendsRecord[MyType]"></a>
@@ -164,11 +135,7 @@
       <span class="symbol">
         <a href="KeyedRecord.html"><span class="name">KeyedRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: <a href="KeyedRecord.html" class="extype" name="net.liftweb.record.KeyedRecord">KeyedRecord</a>[<span class="extype" name="net.liftweb.record.KeyedRecord.MyType">MyType</span>, <span class="extype" name="net.liftweb.record.KeyedRecord.KeyType">KeyType</span>]</span>, <span name="KeyType">KeyType</span>]</span><span class="result"> extends <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.KeyedRecord.MyType">MyType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@KeyedRecord[MyType&lt;:net.liftweb.record.KeyedRecord[MyType,KeyType],KeyType]extendsRecord[MyType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.LifecycleCallbacks" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="LifecycleCallbacksextendsAnyRef"></a>
@@ -181,11 +148,7 @@
       <span class="symbol">
         <a href="LifecycleCallbacks.html"><span class="name">LifecycleCallbacks</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@LifecycleCallbacksextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.MandatoryTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MandatoryTypedField[ThisType]extendsTypedField[ThisType]withProduct1[ThisType]"></a>
@@ -198,13 +161,9 @@
       <span class="symbol">
         <a href="MandatoryTypedField.html"><span class="name">MandatoryTypedField</span></a><span class="tparams">[<span name="ThisType">ThisType</span>]</span><span class="result"> extends <a href="TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="net.liftweb.record.MandatoryTypedField.ThisType">ThisType</span>] with <span class="extype" name="scala.Product1">Product1</span>[<span class="extype" name="net.liftweb.record.MandatoryTypedField.ThisType">ThisType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@MandatoryTypedField[ThisType]extendsTypedField[ThisType]withProduct1[ThisType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
-    </li><li name="net.liftweb.record.MegaProtoUser" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+    </li><li name="net.liftweb.record.MegaProtoUser" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MegaProtoUser[T&lt;:net.liftweb.record.MegaProtoUser[T]]extendsProtoUser[T]"></a>
       <a id="MegaProtoUser[T&lt;:MegaProtoUser[T]]:MegaProtoUser[T]"></a>
       <h4 class="signature">
@@ -215,14 +174,8 @@
       <span class="symbol">
         <a href="MegaProtoUser.html"><span class="name">MegaProtoUser</span></a><span class="tparams">[<span name="T">T &lt;: <a href="MegaProtoUser.html" class="extype" name="net.liftweb.record.MegaProtoUser">MegaProtoUser</a>[<span class="extype" name="net.liftweb.record.MegaProtoUser.T">T</span>]</span>]</span><span class="result"> extends <a href="ProtoUser.html" class="extype" name="net.liftweb.record.ProtoUser">ProtoUser</a>[<span class="extype" name="net.liftweb.record.MegaProtoUser.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@MegaProtoUser[T&lt;:net.liftweb.record.MegaProtoUser[T]]extendsProtoUser[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">ProtoUser is bare bones.</p><div class="fullcomment"><div class="comment cmt"><p>ProtoUser is bare bones.  MetaProtoUser contains a bunch
-more fields including a validated flag, locale, timezone, etc.
-</p></div></div>
+      </h4>
+      <p class="comment cmt">ProtoUser is bare bones.</p>
     </li><li name="net.liftweb.record.MetaMegaProtoUser" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MetaMegaProtoUser[ModelType&lt;:net.liftweb.record.MegaProtoUser[ModelType]]extendsMetaRecord[ModelType]withProtoUser"></a>
       <a id="MetaMegaProtoUser[ModelType&lt;:MegaProtoUser[ModelType]]:MetaMegaProtoUser[ModelType]"></a>
@@ -234,12 +187,8 @@ more fields including a validated flag, locale, timezone, etc.
       <span class="symbol">
         <a href="MetaMegaProtoUser.html"><span class="name">MetaMegaProtoUser</span></a><span class="tparams">[<span name="ModelType">ModelType &lt;: <a href="MegaProtoUser.html" class="extype" name="net.liftweb.record.MegaProtoUser">MegaProtoUser</a>[<span class="extype" name="net.liftweb.record.MetaMegaProtoUser.ModelType">ModelType</span>]</span>]</span><span class="result"> extends <a href="MetaRecord.html" class="extype" name="net.liftweb.record.MetaRecord">MetaRecord</a>[<span class="extype" name="net.liftweb.record.MetaMegaProtoUser.ModelType">ModelType</span>] with <a href="../proto/ProtoUser.html" class="extype" name="net.liftweb.proto.ProtoUser">proto.ProtoUser</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@MetaMegaProtoUser[ModelType&lt;:net.liftweb.record.MegaProtoUser[ModelType]]extendsMetaRecord[ModelType]withProtoUser" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Mix this trait into the Mapper singleton for User and you
+      </h4>
+      <p class="comment cmt">Mix this trait into the Mapper singleton for User and you
 get a bunch of user functionality including password reset, etc.</p>
     </li><li name="net.liftweb.record.MetaRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MetaRecord[BaseRecord&lt;:net.liftweb.record.Record[BaseRecord]]extendsAnyRef"></a>
@@ -252,12 +201,8 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="MetaRecord.html"><span class="name">MetaRecord</span></a><span class="tparams">[<span name="BaseRecord">BaseRecord &lt;: <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.MetaRecord.BaseRecord">BaseRecord</span>]</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@MetaRecord[BaseRecord&lt;:net.liftweb.record.Record[BaseRecord]]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Holds meta information and operations on a record
+      </h4>
+      <p class="comment cmt">Holds meta information and operations on a record
 </p>
     </li><li name="net.liftweb.record.OptionalTypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="OptionalTypedField[ThisType]extendsTypedField[ThisType]withProduct1[net.liftweb.common.Box[ThisType]]"></a>
@@ -270,11 +215,7 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="OptionalTypedField.html"><span class="name">OptionalTypedField</span></a><span class="tparams">[<span name="ThisType">ThisType</span>]</span><span class="result"> extends <a href="TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="net.liftweb.record.OptionalTypedField.ThisType">ThisType</span>] with <span class="extype" name="scala.Product1">Product1</span>[<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.OptionalTypedField.ThisType">ThisType</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@OptionalTypedField[ThisType]extendsTypedField[ThisType]withProduct1[net.liftweb.common.Box[ThisType]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.OwnedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="OwnedField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsBaseField"></a>
@@ -287,12 +228,8 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="OwnedField.html"><span class="name">OwnedField</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.OwnedField.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@OwnedField[OwnerType&lt;:net.liftweb.record.Record[OwnerType]]extendsBaseField" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Refined trait for fields owned by a particular record type</p>
+      </h4>
+      <p class="comment cmt">Refined trait for fields owned by a particular record type</p>
     </li><li name="net.liftweb.record.ProtoUser" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ProtoUser[T&lt;:net.liftweb.record.ProtoUser[T]]extendsRecord[T]"></a>
       <a id="ProtoUser[T&lt;:ProtoUser[T]]:ProtoUser[T]"></a>
@@ -304,12 +241,8 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="ProtoUser.html"><span class="name">ProtoUser</span></a><span class="tparams">[<span name="T">T &lt;: <a href="ProtoUser.html" class="extype" name="net.liftweb.record.ProtoUser">ProtoUser</a>[<span class="extype" name="net.liftweb.record.ProtoUser.T">T</span>]</span>]</span><span class="result"> extends <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.ProtoUser.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@ProtoUser[T&lt;:net.liftweb.record.ProtoUser[T]]extendsRecord[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">ProtoUser provides a &quot;User&quot; with a first name, last name, email, etc.</p>
+      </h4>
+      <p class="comment cmt">ProtoUser provides a &quot;User&quot; with a first name, last name, email, etc.</p>
     </li><li name="net.liftweb.record.Record" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Record[MyType&lt;:net.liftweb.record.Record[MyType]]extendsFieldContainer"></a>
       <a id="Record[MyType&lt;:Record[MyType]]:Record[MyType]"></a>
@@ -321,11 +254,7 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="Record.html"><span class="name">Record</span></a><span class="tparams">[<span name="MyType">MyType &lt;: <a href="Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.record.Record.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@Record[MyType&lt;:net.liftweb.record.Record[MyType]]extendsFieldContainer" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.TypedField" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="TypedField[ThisType]extendsBaseField"></a>
@@ -338,12 +267,8 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="TypedField.html"><span class="name">TypedField</span></a><span class="tparams">[<span name="ThisType">ThisType</span>]</span><span class="result"> extends <a href="BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@TypedField[ThisType]extendsBaseField" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Refined trait for fields holding a particular value type</p>
+      </h4>
+      <p class="comment cmt">Refined trait for fields holding a particular value type</p>
     </li></ol>
             </div>
 
@@ -362,11 +287,7 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="FieldHelpers$.html"><span class="name">FieldHelpers</span></a>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@FieldHelpers" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.RecordHelpers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RecordHelpers"></a>
@@ -379,11 +300,7 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="RecordHelpers$.html"><span class="name">RecordHelpers</span></a>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@RecordHelpers" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.RecordRules" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="RecordRules"></a>
@@ -396,11 +313,7 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="RecordRules$.html"><span class="name">RecordRules</span></a><span class="result"> extends <a href="../http/Factory.html" class="extype" name="net.liftweb.http.Factory">Factory</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@RecordRules" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.record.field" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="field"></a>
@@ -413,11 +326,7 @@ get a bunch of user functionality including password reset, etc.</p>
       <span class="symbol">
         <a href="field/package.html"><span class="name">field</span></a>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.record.package@field" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li></ol>
             </div>
@@ -444,7 +353,6 @@ get a bunch of user functionality including password reset, etc.</p>
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>

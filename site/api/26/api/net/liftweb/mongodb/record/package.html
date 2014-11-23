@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>record - Lift Framework 2.6-SNAPSHOT - net.liftweb.mongodb.record</title>
-          <meta name="description" content="record - Lift Framework 2.6 - SNAPSHOT - net.liftweb.mongodb.record" />
-          <meta name="keywords" content="record Lift Framework 2.6 SNAPSHOT net.liftweb.mongodb.record" />
+          <title>record - Lift Framework 2.6-RC2 - net.liftweb.mongodb.record</title>
+          <meta name="description" content="record - Lift Framework 2.6 - RC2 - net.liftweb.mongodb.record" />
+          <meta name="keywords" content="record Lift Framework 2.6 RC2 net.liftweb.mongodb.record" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <img src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.mongodb">mongodb</a></p>
-        <h1>record</h1> <span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1>record</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -66,7 +58,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.mongodb.record.AsMongoRecord" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="net.liftweb.mongodb.record.AsMongoRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AsMongoRecord[A&lt;:net.liftweb.mongodb.record.MongoRecord[A]]extendsAnyRef"></a>
       <a id="AsMongoRecord[A&lt;:MongoRecord[A]]:AsMongoRecord[A]"></a>
       <h4 class="signature">
@@ -77,14 +69,8 @@
       <span class="symbol">
         <a href="AsMongoRecord.html"><span class="name">AsMongoRecord</span></a><span class="tparams">[<span name="A">A &lt;: <a href="MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.AsMongoRecord.A">A</span>]</span>]</span><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package@AsMongoRecord[A&lt;:net.liftweb.mongodb.record.MongoRecord[A]]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Extend this to create extractors for your MongoRecords.</p><div class="fullcomment"><div class="comment cmt"><p>Extend this to create extractors for your MongoRecords.</p><p>Example:
-   object AsUser extends AsMongoRecord(User)
-</p></div></div>
+      </h4>
+      <p class="comment cmt">Extend this to create extractors for your MongoRecords.</p>
     </li><li name="net.liftweb.mongodb.record.BsonMetaRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="BsonMetaRecord[BaseRecord&lt;:net.liftweb.mongodb.record.BsonRecord[BaseRecord]]extendsMetaRecord[BaseRecord]withJsonFormats"></a>
       <a id="BsonMetaRecord[BaseRecord&lt;:BsonRecord[BaseRecord]]:BsonMetaRecord[BaseRecord]"></a>
@@ -96,12 +82,8 @@
       <span class="symbol">
         <a href="BsonMetaRecord.html"><span class="name">BsonMetaRecord</span></a><span class="tparams">[<span name="BaseRecord">BaseRecord &lt;: <a href="BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonMetaRecord.BaseRecord">BaseRecord</span>]</span>]</span><span class="result"> extends <a href="../../record/MetaRecord.html" class="extype" name="net.liftweb.record.MetaRecord">MetaRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonMetaRecord.BaseRecord">BaseRecord</span>] with <a href="../JsonFormats.html" class="extype" name="net.liftweb.mongodb.JsonFormats">JsonFormats</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package@BsonMetaRecord[BaseRecord&lt;:net.liftweb.mongodb.record.BsonRecord[BaseRecord]]extendsMetaRecord[BaseRecord]withJsonFormats" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Specialized MetaRecord that deals with BsonRecords</p>
+      </h4>
+      <p class="comment cmt">Specialized MetaRecord that deals with BsonRecords</p>
     </li><li name="net.liftweb.mongodb.record.BsonRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="BsonRecord[MyType&lt;:net.liftweb.mongodb.record.BsonRecord[MyType]]extendsRecord[MyType]"></a>
       <a id="BsonRecord[MyType&lt;:BsonRecord[MyType]]:BsonRecord[MyType]"></a>
@@ -113,12 +95,8 @@
       <span class="symbol">
         <a href="BsonRecord.html"><span class="name">BsonRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: <a href="BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonRecord.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="../../record/Record.html" class="extype" name="net.liftweb.record.Record">Record</a>[<span class="extype" name="net.liftweb.mongodb.record.BsonRecord.MyType">MyType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package@BsonRecord[MyType&lt;:net.liftweb.mongodb.record.BsonRecord[MyType]]extendsRecord[MyType]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Specialized Record that can be encoded and decoded from BSON (DBObject)</p>
+      </h4>
+      <p class="comment cmt">Specialized Record that can be encoded and decoded from BSON (DBObject)</p>
     </li><li name="net.liftweb.mongodb.record.MongoMetaRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MongoMetaRecord[BaseRecord&lt;:net.liftweb.mongodb.record.MongoRecord[BaseRecord]]extendsBsonMetaRecord[BaseRecord]withMongoMeta[BaseRecord]"></a>
       <a id="MongoMetaRecord[BaseRecord&lt;:MongoRecord[BaseRecord]]:MongoMetaRecord[BaseRecord]"></a>
@@ -130,11 +108,7 @@
       <span class="symbol">
         <a href="MongoMetaRecord.html"><span class="name">MongoMetaRecord</span></a><span class="tparams">[<span name="BaseRecord">BaseRecord &lt;: <a href="MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord.BaseRecord">BaseRecord</span>]</span>]</span><span class="result"> extends <a href="BsonMetaRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonMetaRecord">BsonMetaRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord.BaseRecord">BaseRecord</span>] with <a href="../MongoMeta.html" class="extype" name="net.liftweb.mongodb.MongoMeta">MongoMeta</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord.BaseRecord">BaseRecord</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package@MongoMetaRecord[BaseRecord&lt;:net.liftweb.mongodb.record.MongoRecord[BaseRecord]]extendsBsonMetaRecord[BaseRecord]withMongoMeta[BaseRecord]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mongodb.record.MongoRecord" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MongoRecord[MyType&lt;:net.liftweb.mongodb.record.MongoRecord[MyType]]extendsBsonRecord[MyType]"></a>
@@ -147,13 +121,9 @@
       <span class="symbol">
         <a href="MongoRecord.html"><span class="name">MongoRecord</span></a><span class="tparams">[<span name="MyType">MyType &lt;: <a href="MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoRecord.MyType">MyType</span>]</span>]</span><span class="result"> extends <a href="BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoRecord.MyType">MyType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package@MongoRecord[MyType&lt;:net.liftweb.mongodb.record.MongoRecord[MyType]]extendsBsonRecord[MyType]" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
-    </li><li name="net.liftweb.mongodb.record.MongoId" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+    </li><li name="net.liftweb.mongodb.record.MongoId" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="MongoId[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsAnyRef"></a>
       <a id="MongoId[OwnerType&lt;:MongoRecord[OwnerType]]:MongoId[OwnerType]"></a>
       <h4 class="signature">
@@ -164,15 +134,8 @@
       <span class="symbol">
         <a href="MongoId.html"><span class="name deprecated" title="Deprecated: (Since version 2.5) Use one of the MongoPK traits instead">MongoId</span></a><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.MongoId.OwnerType">OwnerType</span>]</span>]</span><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package@MongoId[OwnerType&lt;:net.liftweb.mongodb.record.MongoRecord[OwnerType]]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Mix this into a Record to add an ObjectIdField</p><div class="fullcomment"><div class="comment cmt"><p>Mix this into a Record to add an ObjectIdField</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
-                <span class="name">@deprecated</span>
-              
-        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 2.5)</i> Use one of the MongoPK traits instead</p></dd></dl></div>
+      </h4>
+      <p class="comment cmt">Mix this into a Record to add an ObjectIdField</p>
     </li></ol>
             </div>
 
@@ -191,11 +154,7 @@
       <span class="symbol">
         <a href="field/package.html"><span class="name">field</span></a>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#net.liftweb.mongodb.record.package@field" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li></ol>
             </div>
@@ -222,7 +181,6 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../../lib/template.js"></script>
     </body>
       </html>

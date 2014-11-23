@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Bindings - Lift Framework 2.6-SNAPSHOT - net.liftweb.http.Bindings</title>
-          <meta name="description" content="Bindings - Lift Framework 2.6 - SNAPSHOT - net.liftweb.http.Bindings" />
-          <meta name="keywords" content="Bindings Lift Framework 2.6 SNAPSHOT net.liftweb.http.Bindings" />
+          <title>Bindings - Lift Framework 2.6-RC2 - net.liftweb.http.Bindings</title>
+          <meta name="description" content="Bindings - Lift Framework 2.6 - RC2 - net.liftweb.http.Bindings" />
+          <meta name="keywords" content="Bindings Lift Framework 2.6 RC2 net.liftweb.http.Bindings" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <img src="../../../lib/object_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
-        <h1>Bindings</h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1>Bindings</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -136,7 +128,7 @@ allowing composition over object graphs.</p><p>Please see the tests, as well as 
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.http.Bindings.Binder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="net.liftweb.http.Bindings.Binder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="BinderextendsProductwithSerializable"></a>
       <a id="Binder:Binder"></a>
       <h4 class="signature">
@@ -145,19 +137,13 @@ allowing composition over object graphs.</p><p>Please see the tests, as well as 
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="Bindings$$Binder.html"><span class="name">Binder</span></a><span class="params">(<span name="binding">binding: <a href="#Binding=scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" class="extmbr" name="net.liftweb.http.Bindings.Binding">Binding</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="Bindings$$Binder.html"><span class="name">Binder</span></a><span class="params">(<span name="binding">binding: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@BinderextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A decorator for a binding function that allows it to be called as bind() rather than apply().</p><div class="fullcomment"><div class="comment cmt"><p>A decorator for a binding function that allows it to be called as bind() rather than apply().
-This class also provides facilities for binding to a specific template
-</p></div></div>
+      </h4>
+      <p class="comment cmt">A decorator for a binding function that allows it to be called as bind() rather than apply().</p>
     </li><li name="net.liftweb.http.Bindings.Binding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Binding=scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a>
-      <a id="Binding:Binding"></a>
+      <a id="Binding:(NodeSeq)⇒NodeSeq"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
@@ -166,15 +152,11 @@ This class also provides facilities for binding to a specific template
       <span class="symbol">
         <span class="name">Binding</span><span class="result"> = (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@Binding=scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.http.Bindings.DataBinding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DataBinding[T]=T=&gt;(scala.xml.NodeSeq=&gt;scala.xml.NodeSeq)"></a>
-      <a id="DataBinding[T]:DataBinding[T]"></a>
+      <a id="DataBinding[T]:(T)⇒(NodeSeq)⇒NodeSeq"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
@@ -183,11 +165,7 @@ This class also provides facilities for binding to a specific template
       <span class="symbol">
         <span class="name">DataBinding</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> = (<span class="extype" name="net.liftweb.http.Bindings.DataBinding.T">T</span>) ⇒ (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@DataBinding[T]=T=&gt;(scala.xml.NodeSeq=&gt;scala.xml.NodeSeq)" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li></ol>
             </div>
@@ -197,6 +175,19 @@ This class also provides facilities for binding to a specific template
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -207,12 +198,8 @@ This class also provides facilities for binding to a specific template
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -224,13 +211,22 @@ This class also provides facilities for binding to a specific template
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -241,12 +237,8 @@ This class also provides facilities for binding to a specific template
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.Bindings.EmptyBinding" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="EmptyBinding"></a>
       <a id="EmptyBinding:EmptyBinding"></a>
@@ -256,14 +248,10 @@ This class also provides facilities for binding to a specific template
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="Bindings$$EmptyBinding$.html"><span class="name">EmptyBinding</span></a><span class="result"> extends <a href="#Binding=scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" class="extmbr" name="net.liftweb.http.Bindings.Binding">Binding</a></span>
+        <a href="Bindings$$EmptyBinding$.html"><span class="name">EmptyBinding</span></a><span class="result"> extends (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@EmptyBinding" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Bind any input value to the empty NodeSeq.</p>
+      </h4>
+      <p class="comment cmt">Bind any input value to the empty NodeSeq.</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -275,46 +263,34 @@ This class also provides facilities for binding to a specific template
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.Bindings#binder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="binder(binding:net.liftweb.http.Bindings.Binding):net.liftweb.http.Bindings.Binder"></a>
-      <a id="binder(Binding):Binder"></a>
+      <a id="binder(binding:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq):net.liftweb.http.Bindings.Binder"></a>
+      <a id="binder((NodeSeq)⇒NodeSeq):Binder"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">binder</span><span class="params">(<span name="binding">binding: <a href="#Binding=scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" class="extmbr" name="net.liftweb.http.Bindings.Binding">Binding</a></span>)</span><span class="result">: <a href="Bindings$$Binder.html" class="extype" name="net.liftweb.http.Bindings.Binder">Binder</a></span>
+        <span class="name">binder</span><span class="params">(<span name="binding">binding: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="Bindings$$Binder.html" class="extype" name="net.liftweb.http.Bindings.Binder">Binder</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@binder(binding:net.liftweb.http.Bindings.Binding):net.liftweb.http.Bindings.Binder" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Wrap the specified Binding (a function from NodeSeq =&gt; NodeSeq) in a Binder so that
 it can be applied using Binder's bind methods.</p>
     </li><li name="net.liftweb.http.Bindings#binder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="binder[T](t:T)(implicitbinding:net.liftweb.http.Bindings.DataBinding[T]):net.liftweb.http.Bindings.Binder"></a>
-      <a id="binder[T](T)(DataBinding[T]):Binder"></a>
+      <a id="binder[T](t:T)(implicitbinding:T=&gt;(scala.xml.NodeSeq=&gt;scala.xml.NodeSeq)):net.liftweb.http.Bindings.Binder"></a>
+      <a id="binder[T](T)((T)⇒(NodeSeq)⇒NodeSeq):Binder"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">binder</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="net.liftweb.http.Bindings.binder.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="binding">binding: <a href="#DataBinding[T]=T=&gt;(scala.xml.NodeSeq=&gt;scala.xml.NodeSeq)" class="extmbr" name="net.liftweb.http.Bindings.DataBinding">DataBinding</a>[<span class="extype" name="net.liftweb.http.Bindings.binder.T">T</span>]</span>)</span><span class="result">: <a href="Bindings$$Binder.html" class="extype" name="net.liftweb.http.Bindings.Binder">Binder</a></span>
+        <span class="name">binder</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="net.liftweb.http.Bindings.binder.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="binding">binding: (<span class="extype" name="net.liftweb.http.Bindings.binder.T">T</span>) ⇒ (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="Bindings$$Binder.html" class="extype" name="net.liftweb.http.Bindings.Binder">Binder</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@binder[T](t:T)(implicitbinding:net.liftweb.http.Bindings.DataBinding[T]):net.liftweb.http.Bindings.Binder" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Implicitly convert the specified object to a binder for that object if a DataBinding for
 that object's type is available in implicit scope.</p><div class="fullcomment"><div class="comment cmt"><p>Implicitly convert the specified object to a binder for that object if a DataBinding for
 that object's type is available in implicit scope. This essentially adds a bind() method
@@ -331,11 +307,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -354,11 +326,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -371,11 +339,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -388,11 +352,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -411,11 +371,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -428,11 +384,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -445,11 +397,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -462,11 +410,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -479,11 +423,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -496,11 +436,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -513,11 +449,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -530,11 +462,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -547,11 +475,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -570,11 +494,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -593,11 +513,7 @@ to an object if an appropriate implicit DataBinding is available.
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Bindings$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -634,7 +550,6 @@ to an object if an appropriate implicit DataBinding is available.
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>

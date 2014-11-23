@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Mailer - Lift Framework 2.6-SNAPSHOT - net.liftweb.util.Mailer</title>
-          <meta name="description" content="Mailer - Lift Framework 2.6 - SNAPSHOT - net.liftweb.util.Mailer" />
-          <meta name="keywords" content="Mailer Lift Framework 2.6 SNAPSHOT net.liftweb.util.Mailer" />
+          <title>Mailer - Lift Framework 2.6-RC2 - net.liftweb.util.Mailer</title>
+          <meta name="description" content="Mailer - Lift Framework 2.6 - RC2 - net.liftweb.util.Mailer" />
+          <meta name="keywords" content="Mailer Lift Framework 2.6 RC2 net.liftweb.util.Mailer" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <a href="Mailer$.html" title="Go to companion"><img src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.util">util</a></p>
-        <h1><a href="Mailer$.html" title="Go to companion">Mailer</a></h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1><a href="Mailer$.html" title="Go to companion">Mailer</a></h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -53,9 +45,9 @@ implement your own mailer functionality
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><a href="SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a>, <a href="Injector.html" class="extype" name="net.liftweb.util.Injector">Injector</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="Mailer$.html" class="extype" name="net.liftweb.util.Mailer">Mailer</a></div>
-          </div></div>
+          <span class="toggle">Known Subclasses</span>
+          <div class="subClasses hiddenContent"><a href="Mailer$.html" class="extype" name="net.liftweb.util.Mailer">Mailer</a></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -94,7 +86,7 @@ implement your own mailer functionality
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.util.SimpleInjector.Inject" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="net.liftweb.util.SimpleInjector.Inject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Inject[T]extendsStackableMaker[T]withVendor[T]"></a>
       <a id="Inject[T]:Inject[T]"></a>
       <h4 class="signature">
@@ -105,19 +97,11 @@ implement your own mailer functionality
       <span class="symbol">
         <a href="SimpleInjector$Inject.html"><span class="name">Inject</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="StackableMaker.html" class="extype" name="net.liftweb.util.StackableMaker">StackableMaker</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>] with <a href="Vendor.html" class="extype" name="net.liftweb.util.Vendor">Vendor</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.SimpleInjector@Inject[T]extendsStackableMaker[T]withVendor[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create an object or val that is a subclass of the FactoryMaker to
+      </h4>
+      <p class="comment cmt">Create an object or val that is a subclass of the FactoryMaker to
 generate factory for a particular class as well as define session and
 request specific vendors and use doWith to define the vendor just for
-the scope of the call.</p><div class="fullcomment"><div class="comment cmt"><p>Create an object or val that is a subclass of the FactoryMaker to
-generate factory for a particular class as well as define session and
-request specific vendors and use doWith to define the vendor just for
-the scope of the call.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
+the scope of the call.</p>
     </li><li name="net.liftweb.util.Mailer.MsgSender" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="MsgSenderextendsSpecializedLiftActor[net.liftweb.util.Mailer.MessageInfo]"></a>
       <a id="MsgSender:MsgSender"></a>
@@ -129,11 +113,7 @@ the scope of the call.
       <span class="symbol">
         <a href="Mailer$MsgSender.html"><span class="name">MsgSender</span></a><span class="result"> extends <a href="../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a>[<a href="Mailer$$MessageInfo.html" class="extype" name="net.liftweb.util.Mailer.MessageInfo">MessageInfo</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@MsgSenderextendsSpecializedLiftActor[net.liftweb.util.Mailer.MessageInfo]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li></ol>
             </div>
@@ -143,6 +123,19 @@ the scope of the call.
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -153,12 +146,8 @@ the scope of the call.
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -170,13 +159,22 @@ the scope of the call.
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -187,12 +185,8 @@ the scope of the call.
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.util.Mailer#adListToAdArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="adListToAdArray(in:List[net.liftweb.util.Mailer.AddressType]):Array[javax.mail.Address]"></a>
       <a id="adListToAdArray(List[AddressType]):Array[Address]"></a>
@@ -204,11 +198,7 @@ the scope of the call.
       <span class="symbol">
         <span class="name">adListToAdArray</span><span class="params">(<span name="in">in: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="Mailer$$AddressType.html" class="extype" name="net.liftweb.util.Mailer.AddressType">AddressType</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="javax.mail.Address">Address</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@adListToAdArray(in:List[net.liftweb.util.Mailer.AddressType]):Array[javax.mail.Address]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.util.Mailer#addressToAddress" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="addressToAddress(in:net.liftweb.util.Mailer.AddressType):javax.mail.Address"></a>
@@ -221,11 +211,7 @@ the scope of the call.
       <span class="symbol">
         <span class="name">addressToAddress</span><span class="params">(<span name="in">in: <a href="Mailer$$AddressType.html" class="extype" name="net.liftweb.util.Mailer.AddressType">AddressType</a></span>)</span><span class="result">: <span class="extype" name="javax.mail.Address">Address</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@addressToAddress(in:net.liftweb.util.Mailer.AddressType):javax.mail.Address" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -238,11 +224,7 @@ the scope of the call.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.util.Mailer#authenticator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="authenticator:net.liftweb.common.Box[javax.mail.Authenticator]"></a>
@@ -255,11 +237,7 @@ the scope of the call.
       <span class="symbol">
         <span class="name">authenticator</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="javax.mail.Authenticator">Authenticator</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@authenticator:net.liftweb.common.Box[javax.mail.Authenticator]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Passwords cannot be accessed via System.</p><div class="fullcomment"><div class="comment cmt"><p>Passwords cannot be accessed via System.getProperty.  Instead, we
 provide a means of explicitlysetting the authenticator.
 </p></div></div>
@@ -274,11 +252,7 @@ provide a means of explicitlysetting the authenticator.
       <span class="symbol">
         <span class="name">blockingSendMail</span><span class="params">(<span name="from">from: <a href="Mailer$$From.html" class="extype" name="net.liftweb.util.Mailer.From">From</a></span>, <span name="subject">subject: <a href="Mailer$$Subject.html" class="extype" name="net.liftweb.util.Mailer.Subject">Subject</a></span>, <span name="rest">rest: <a href="Mailer$$MailTypes.html" class="extype" name="net.liftweb.util.Mailer.MailTypes">MailTypes</a>*</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@blockingSendMail(from:net.liftweb.util.Mailer.From,subject:net.liftweb.util.Mailer.Subject,rest:net.liftweb.util.Mailer.MailTypes*):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Synchronously send an email.</p>
     </li><li name="net.liftweb.util.Mailer#buildMailBody" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="buildMailBody(tab:net.liftweb.util.Mailer.MailBodyType):javax.mail.BodyPart"></a>
@@ -291,11 +265,7 @@ provide a means of explicitlysetting the authenticator.
       <span class="symbol">
         <span class="name">buildMailBody</span><span class="params">(<span name="tab">tab: <a href="Mailer$$MailBodyType.html" class="extype" name="net.liftweb.util.Mailer.MailBodyType">MailBodyType</a></span>)</span><span class="result">: <span class="extype" name="javax.mail.BodyPart">BodyPart</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@buildMailBody(tab:net.liftweb.util.Mailer.MailBodyType):javax.mail.BodyPart" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Given a MailBodyType, convert it to a javax.</p><div class="fullcomment"><div class="comment cmt"><p>Given a MailBodyType, convert it to a javax.mail.BodyPart.  You can override this method if you
 add custom MailBodyTypes
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
@@ -310,11 +280,7 @@ add custom MailBodyTypes
       <span class="symbol">
         <span class="name">buildProps</span><span class="result">: <span class="extype" name="java.util.Properties">Properties</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@buildProps:java.util.Properties" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.util.Mailer#charSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="charSet:String"></a>
@@ -327,11 +293,7 @@ add custom MailBodyTypes
       <span class="symbol">
         <span class="name">charSet</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@charSet:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Set the mail.</p><div class="fullcomment"><div class="comment cmt"><p>Set the mail.charset property to something other than UTF-8 for non-UTF-8
 mail.
 </p></div></div>
@@ -346,11 +308,7 @@ mail.
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -369,11 +327,7 @@ mail.
       <span class="symbol">
         <span class="name">customProperties</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@customProperties:Map[String,String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Custom properties for the JNDI session
 </p>
     </li><li name="net.liftweb.util.Mailer#devModeSend" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -387,11 +341,7 @@ mail.
       <span class="symbol">
         <span class="name">devModeSend</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[(<span class="extype" name="javax.mail.internet.MimeMessage">MimeMessage</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@devModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">How to send a message in dev mode.</p><div class="fullcomment"><div class="comment cmt"><p>How to send a message in dev mode.  By default, use Transport.send(msg)
 </p></div></div>
     </li><li name="net.liftweb.util.Mailer#encodeHtmlBodyPart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -405,11 +355,7 @@ mail.
       <span class="symbol">
         <span class="name">encodeHtmlBodyPart</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@encodeHtmlBodyPart(in:scala.xml.NodeSeq):String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The default mechanism for encoding a NodeSeq to a String representing HTML.</p><div class="fullcomment"><div class="comment cmt"><p>The default mechanism for encoding a NodeSeq to a String representing HTML.  By default, use Html5.toString(node)
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -423,11 +369,7 @@ mail.
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -440,11 +382,7 @@ mail.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -457,11 +395,7 @@ mail.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -480,11 +414,7 @@ mail.
       <span class="symbol">
         <span class="name">firstNode</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.Node">Node</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@firstNode(in:scala.xml.NodeSeq):scala.xml.Node" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
@@ -497,11 +427,7 @@ mail.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -514,11 +440,7 @@ mail.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.util.Mailer#host" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="host:String"></a>
@@ -531,11 +453,7 @@ mail.
       <span class="symbol">
         <span class="name">host</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@host:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The host that should be used to send mail.</p>
     </li><li name="net.liftweb.util.Mailer#hostFunc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hostFunc:()=&gt;String"></a>
@@ -548,11 +466,7 @@ mail.
       <span class="symbol">
         <span class="name">hostFunc</span><span class="result">: () ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@hostFunc:()=&gt;String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">To change the way the host is calculated, set this to the function that calcualtes the host name.</p><div class="fullcomment"><div class="comment cmt"><p>To change the way the host is calculated, set this to the function that calcualtes the host name.
 By default: System.getProperty(&quot;mail.smtp.host&quot;)
 </p></div></div>
@@ -567,11 +481,7 @@ By default: System.getProperty(&quot;mail.smtp.host&quot;)
       <span class="symbol">
         <span class="name">inject</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@inject[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Perform the injection for the given type.</p><div class="fullcomment"><div class="comment cmt"><p>Perform the injection for the given type.  You can call:
 inject[Date] or inject[List[Map[String, PaymentThing]]].  The
 appropriate Manifest will be
@@ -587,11 +497,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.util.Mailer#jndiName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jndiName:net.liftweb.common.Box[String]"></a>
@@ -604,11 +510,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">jndiName</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@jndiName:net.liftweb.common.Box[String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Use the mailer resource in your container by specifying the JNDI name
 </p>
     </li><li name="net.liftweb.util.Mailer#jndiSession" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -622,11 +524,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">jndiSession</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="javax.mail.Session">Session</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@jndiSession:net.liftweb.common.Box[javax.mail.Session]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.util.Mailer#msgSendImpl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="msgSendImpl(from:net.liftweb.util.Mailer.From,subject:net.liftweb.util.Mailer.Subject,info:List[net.liftweb.util.Mailer.MailTypes]):Unit"></a>
@@ -639,11 +537,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">msgSendImpl</span><span class="params">(<span name="from">from: <a href="Mailer$$From.html" class="extype" name="net.liftweb.util.Mailer.From">From</a></span>, <span name="subject">subject: <a href="Mailer$$Subject.html" class="extype" name="net.liftweb.util.Mailer.Subject">Subject</a></span>, <span name="info">info: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="Mailer$$MailTypes.html" class="extype" name="net.liftweb.util.Mailer.MailTypes">MailTypes</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@msgSendImpl(from:net.liftweb.util.Mailer.From,subject:net.liftweb.util.Mailer.Subject,info:List[net.liftweb.util.Mailer.MailTypes]):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.util.Mailer#msgSender" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="msgSender:Mailer.this.MsgSender"></a>
@@ -656,11 +550,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">msgSender</span><span class="result">: <a href="Mailer$MsgSender.html" class="extype" name="net.liftweb.util.Mailer.MsgSender">MsgSender</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@msgSender:Mailer.this.MsgSender" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -673,11 +563,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -690,11 +576,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -707,11 +589,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.util.Mailer#performTransportSend" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="performTransportSend(msg:javax.mail.internet.MimeMessage):Unit"></a>
@@ -724,11 +602,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">performTransportSend</span><span class="params">(<span name="msg">msg: <span class="extype" name="javax.mail.internet.MimeMessage">MimeMessage</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@performTransportSend(msg:javax.mail.internet.MimeMessage):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.util.Mailer#pilotModeSend" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="pilotModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]"></a>
@@ -741,11 +615,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">pilotModeSend</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[(<span class="extype" name="javax.mail.internet.MimeMessage">MimeMessage</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@pilotModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">How to send a message in pilot mode.</p><div class="fullcomment"><div class="comment cmt"><p>How to send a message in pilot mode.  By default, use Transport.send(msg)
 </p></div></div>
     </li><li name="net.liftweb.util.Mailer#productionModeSend" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -759,11 +629,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">productionModeSend</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[(<span class="extype" name="javax.mail.internet.MimeMessage">MimeMessage</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@productionModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">How to send a message in production mode.</p><div class="fullcomment"><div class="comment cmt"><p>How to send a message in production mode.  By default, use Transport.send(msg)
 </p></div></div>
     </li><li name="net.liftweb.util.Mailer#profileModeSend" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -777,11 +643,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">profileModeSend</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[(<span class="extype" name="javax.mail.internet.MimeMessage">MimeMessage</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@profileModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">How to send a message in profile mode.</p><div class="fullcomment"><div class="comment cmt"><p>How to send a message in profile mode.  By default, use Transport.send(msg)
 </p></div></div>
     </li><li name="net.liftweb.util.Mailer#properties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -795,11 +657,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">properties</span><span class="result">: <span class="extype" name="java.util.Properties">Properties</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@properties:java.util.Properties" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.util.SimpleInjector#registerInjection" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="registerInjection[T](f:()=&gt;T)(implicitman:scala.reflect.Manifest[T]):Unit"></a>
@@ -812,11 +670,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">registerInjection</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: () ⇒ <span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@registerInjection[T](f:()=&gt;T)(implicitman:scala.reflect.Manifest[T]):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Register a function that will inject for the given Manifest
 </p><div class="fullcomment"><div class="comment cmt"><p>Register a function that will inject for the given Manifest
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
@@ -831,11 +685,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">sendMail</span><span class="params">(<span name="from">from: <a href="Mailer$$From.html" class="extype" name="net.liftweb.util.Mailer.From">From</a></span>, <span name="subject">subject: <a href="Mailer$$Subject.html" class="extype" name="net.liftweb.util.Mailer.Subject">Subject</a></span>, <span name="rest">rest: <a href="Mailer$$MailTypes.html" class="extype" name="net.liftweb.util.Mailer.MailTypes">MailTypes</a>*</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@sendMail(from:net.liftweb.util.Mailer.From,subject:net.liftweb.util.Mailer.Subject,rest:net.liftweb.util.Mailer.MailTypes*):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Asynchronously send an email.</p>
     </li><li name="net.liftweb.util.Mailer#stagingModeSend" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="stagingModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]"></a>
@@ -848,11 +698,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">stagingModeSend</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[(<span class="extype" name="javax.mail.internet.MimeMessage">MimeMessage</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@stagingModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">How to send a message in staging mode.</p><div class="fullcomment"><div class="comment cmt"><p>How to send a message in staging mode.  By default, use Transport.send(msg)
 </p></div></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -866,11 +712,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.util.Mailer#testModeSend" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="testModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]"></a>
@@ -883,11 +725,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">testModeSend</span><span class="result">: <a href="#Inject[T]extendsStackableMaker[T]withVendor[T]" class="extmbr" name="net.liftweb.util.SimpleInjector.Inject">Inject</a>[(<span class="extype" name="javax.mail.internet.MimeMessage">MimeMessage</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@testModeSend:Mailer.this.Inject[javax.mail.internet.MimeMessage=&gt;Unit]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">How to send a message in test mode.</p><div class="fullcomment"><div class="comment cmt"><p>How to send a message in test mode.  By default, log the message
 </p></div></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -901,11 +739,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -918,11 +752,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -941,11 +771,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -964,11 +790,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -987,11 +809,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">xmlToMailBodyType</span><span class="params">(<span name="html">html: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="Mailer$$MailBodyType.html" class="extype" name="net.liftweb.util.Mailer.MailBodyType">MailBodyType</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.Mailer@xmlToMailBodyType(html:scala.xml.NodeSeq):net.liftweb.util.Mailer.MailBodyType" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li></ol>
             </div>
@@ -1026,7 +844,6 @@ appropriate Manifest will be
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>

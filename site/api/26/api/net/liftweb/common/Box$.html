@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Box - Lift Framework 2.6-SNAPSHOT - net.liftweb.common.Box</title>
-          <meta name="description" content="Box - Lift Framework 2.6 - SNAPSHOT - net.liftweb.common.Box" />
-          <meta name="keywords" content="Box Lift Framework 2.6 SNAPSHOT net.liftweb.common.Box" />
+          <title>Box - Lift Framework 2.6-RC2 - net.liftweb.common.Box</title>
+          <meta name="description" content="Box - Lift Framework 2.6 - RC2 - net.liftweb.common.Box" />
+          <meta name="keywords" content="Box Lift Framework 2.6 RC2 net.liftweb.common.Box" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <a href="Box.html" title="Go to companion"><img src="../../../lib/object_to_class_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.common">common</a></p>
-        <h1><a href="Box.html" title="Go to companion">Box</a></h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1><a href="Box.html" title="Go to companion">Box</a></h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -105,16 +97,25 @@
       <span class="symbol">
         <span title="gt4s: $bang$bang" class="name">!!</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.common.BoxTrait.!!.T">T</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.!!.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@!![T](in:T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Alias for legacyNullTest.</p><div class="fullcomment"><div class="comment cmt"><p>Alias for legacyNullTest.
 This method allows one to encapsulate any object in a Box in a null-safe manner,
 returning Empty if the specified value is null.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Full(in) if <code>in</code> is not null Empty otherwise
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
     </li><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -125,12 +126,8 @@ returning Empty if the specified value is null.</p></div><dl class="paramcmts bl
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -142,13 +139,22 @@ returning Empty if the specified value is null.</p></div><dl class="paramcmts bl
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -159,12 +165,8 @@ returning Empty if the specified value is null.</p></div><dl class="paramcmts bl
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="apply[InType,OutType](value:InType)(pf:PartialFunction[InType,OutType]):net.liftweb.common.Box[OutType]"></a>
       <a id="apply[InType,OutType](InType)(PartialFunction[InType,OutType]):Box[OutType]"></a>
@@ -176,11 +178,7 @@ returning Empty if the specified value is null.</p></div><dl class="paramcmts bl
       <span class="symbol">
         <span class="name">apply</span><span class="tparams">[<span name="InType">InType</span>, <span name="OutType">OutType</span>]</span><span class="params">(<span name="value">value: <span class="extype" name="net.liftweb.common.BoxTrait.apply.InType">InType</span></span>)</span><span class="params">(<span name="pf">pf: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.InType">InType</span>, <span class="extype" name="net.liftweb.common.BoxTrait.apply.OutType">OutType</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.OutType">OutType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@apply[InType,OutType](value:InType)(pf:PartialFunction[InType,OutType]):net.liftweb.common.Box[OutType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Apply the specified PartialFunction to the specified value and return the result
 in a Full Box; if the pf is undefined at that point return Empty.</p><div class="fullcomment"><div class="comment cmt"><p>Apply the specified PartialFunction to the specified value and return the result
 in a Full Box; if the pf is undefined at that point return Empty.</p></div><dl class="paramcmts block"><dt class="param">value</dt><dd class="cmt"><p>the value to transform</p></dd><dt class="param">pf</dt><dd class="cmt"><p>the partial function to use to transform the value</p></dd><dt>returns</dt><dd class="cmt"><p>a Full box containing the transformed value if pf.isDefinedAt(value); Empty otherwise
@@ -196,11 +194,7 @@ in a Full Box; if the pf is undefined at that point return Empty.</p></div><dl c
       <span class="symbol">
         <span class="name">apply</span><span class="tparams">[<span name="InType">InType</span>, <span name="OutType">OutType</span>]</span><span class="params">(<span name="pf">pf: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.InType">InType</span>, <span class="extype" name="net.liftweb.common.BoxTrait.apply.OutType">OutType</span>]</span>)</span><span class="params">(<span name="value">value: <span class="extype" name="net.liftweb.common.BoxTrait.apply.InType">InType</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.OutType">OutType</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@apply[InType,OutType](pf:PartialFunction[InType,OutType])(value:InType):net.liftweb.common.Box[OutType]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Apply the specified PartialFunction to the specified value and return the result
 in a Full Box; if the pf is undefined at that point return Empty.</p><div class="fullcomment"><div class="comment cmt"><p>Apply the specified PartialFunction to the specified value and return the result
 in a Full Box; if the pf is undefined at that point return Empty.</p></div><dl class="paramcmts block"><dt class="param">pf</dt><dd class="cmt"><p>the partial function to use to transform the value</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value to transform</p></dd><dt>returns</dt><dd class="cmt"><p>a Full box containing the transformed value if pf.isDefinedAt(value); Empty otherwise
@@ -216,11 +210,7 @@ in a Full Box; if the pf is undefined at that point return Empty.</p></div><dl c
       <span class="symbol">
         <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@apply[T](in:List[T]):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Transform a List with zero or one elements to a Box.</p><div class="fullcomment"><div class="comment cmt"><p>Transform a List with zero or one elements to a Box.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box object containing the head of a List. Full(x) if the List contains at least one element and Empty otherwise.
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -234,11 +224,7 @@ in a Full Box; if the pf is undefined at that point return Empty.</p></div><dl c
       <span class="symbol">
         <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@apply[T](in:net.liftweb.common.Box[T]):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Create a Box from the specified Box, checking for null.</p><div class="fullcomment"><div class="comment cmt"><p>Create a Box from the specified Box, checking for null.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Full(x) if in is Full(x) and x is not null
 Empty otherwise
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
@@ -253,11 +239,7 @@ Empty otherwise
       <span class="symbol">
         <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@apply[T](in:Option[T]):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Create a Box from the specified Option.</p><div class="fullcomment"><div class="comment cmt"><p>Create a Box from the specified Option.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box created from an Option. Full(x) if the Option is Some(x) and Empty otherwise
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#asA" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -271,11 +253,7 @@ Empty otherwise
       <span class="symbol">
         <span class="name">asA</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.common.BoxTrait.asA.in.T">T</span> forSome {type T}</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.common.BoxTrait.asA.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.asA.B">B</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@asA[B](in:TforSome{typeT})(implicitm:scala.reflect.Manifest[B]):net.liftweb.common.Box[B]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Create a Full box containing the specified value if <code>in</code> is of
 type <code>B</code>; Empty otherwise.</code></code></p><div class="fullcomment"><div class="comment cmt"><p>Create a Full box containing the specified value if <code>in</code> is of
 type <code>B</code>; Empty otherwise.
@@ -291,11 +269,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#box2Iterable" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="box2Iterable[T](in:net.liftweb.common.Box[T]):Iterable[T]"></a>
@@ -308,11 +282,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">box2Iterable</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.box2Iterable.T">T</span>]</span>)</span><span class="result">: <a href="../../../scala/package.html#Iterable[+A]=Iterable[A]" class="extmbr" name="scala.Iterable">Iterable</a>[<span class="extype" name="net.liftweb.common.BoxTrait.box2Iterable.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@box2Iterable[T](in:net.liftweb.common.Box[T]):Iterable[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">This implicit transformation allows one to use a Box as an Iterable</p><div class="fullcomment"><div class="comment cmt"><p>This implicit transformation allows one to use a Box as an Iterable</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>List(in) if this Box is Full(in); Nil otherwise
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#box2Option" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -326,11 +296,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">box2Option</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.box2Option.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="net.liftweb.common.BoxTrait.box2Option.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@box2Option[T](in:net.liftweb.common.Box[T]):Option[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">This implicit transformation allows one to use a Box as an Option.</p><div class="fullcomment"><div class="comment cmt"><p>This implicit transformation allows one to use a Box as an Option.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>Some(in)</code> if this Box is <code>Full(in)</code>; None otherwise
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -344,11 +310,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -367,11 +329,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -384,11 +342,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -401,11 +355,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -424,11 +374,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -441,11 +387,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#isA" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isA[A,B](in:A,clz:Class[B]):net.liftweb.common.Box[B]"></a>
@@ -458,11 +400,7 @@ type <code>B</code>; Empty otherwise.
       <span class="symbol">
         <span class="name">isA</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.common.BoxTrait.isA.A">A</span></span>, <span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.common.BoxTrait.isA.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.isA.B">B</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@isA[A,B](in:A,clz:Class[B]):net.liftweb.common.Box[B]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Create a Full box containing the specified value if &quot;in&quot; is an instance
 of the specified class, or Empty otherwise.</p><div class="fullcomment"><div class="comment cmt"><p>Create a Full box containing the specified value if &quot;in&quot; is an instance
 of the specified class, or Empty otherwise.
@@ -478,11 +416,7 @@ of the specified class, or Empty otherwise.
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#legacyNullTest" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="legacyNullTest[T](in:T):net.liftweb.common.Box[T]"></a>
@@ -495,11 +429,7 @@ of the specified class, or Empty otherwise.
       <span class="symbol">
         <span class="name">legacyNullTest</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.common.BoxTrait.legacyNullTest.T">T</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.legacyNullTest.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@legacyNullTest[T](in:T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">This method allows one to encapsulate any object in a Box in a null-safe manner,
 treating null values to Empty</p><div class="fullcomment"><div class="comment cmt"><p>This method allows one to encapsulate any object in a Box in a null-safe manner,
 treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>Full(in)</code> if <code>in</code> is not null; Empty otherwise
@@ -515,11 +445,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">listToListOfBoxes</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="boxes">boxes: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.listToListOfBoxes.T">T</span>]]</span>)</span><span class="result">: <a href="ListOfBoxes.html" class="extype" name="net.liftweb.common.ListOfBoxes">ListOfBoxes</a>[<span class="extype" name="net.liftweb.common.Box.listToListOfBoxes.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@listToListOfBoxes[T](boxes:List[net.liftweb.common.Box[T]]):net.liftweb.common.ListOfBoxes[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -532,11 +458,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -549,11 +471,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -566,11 +484,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#option2Box" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="option2Box[T](in:Option[T]):net.liftweb.common.Box[T]"></a>
@@ -583,11 +497,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">option2Box</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="net.liftweb.common.BoxTrait.option2Box.T">T</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.option2Box.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@option2Box[T](in:Option[T]):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">This implicit transformation allows one to use an Option as a Box.</p><div class="fullcomment"><div class="comment cmt"><p>This implicit transformation allows one to use an Option as a Box.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box object from an Option. Full(in) if the Option is Some(in); Empty otherwise
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
     </li><li name="net.liftweb.common.BoxTrait#primativeMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -601,11 +511,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">primativeMap</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.Class">Class</span>[_], <span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@primativeMap:Map[Class[_],Class[_]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BoxTrait.html" class="extype" name="net.liftweb.common.BoxTrait">BoxTrait</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -618,11 +524,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -635,11 +537,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -652,11 +550,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -675,11 +569,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -698,11 +588,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -728,11 +614,7 @@ treating null values to Empty</p></div><dl class="paramcmts block"><dt>returns</
       <span class="symbol">
         <span class="name deprecated" title="Deprecated: (Since version 2.5) Use legacyNullTest">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.BoxTrait.apply.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.common.Box$@apply[T](in:T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">This method allows one to encapsulate any object in a Box in a null-safe manner,
 treating null values to Empty.</p><div class="fullcomment"><div class="comment cmt"><p>This method allows one to encapsulate any object in a Box in a null-safe manner,
 treating null values to Empty.  This is a parallel method to
@@ -774,7 +656,6 @@ and it's much, much better to use legacyNullTest in this case.
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>

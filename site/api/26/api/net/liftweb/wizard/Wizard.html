@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Wizard - Lift Framework 2.6-SNAPSHOT - net.liftweb.wizard.Wizard</title>
-          <meta name="description" content="Wizard - Lift Framework 2.6 - SNAPSHOT - net.liftweb.wizard.Wizard" />
-          <meta name="keywords" content="Wizard Lift Framework 2.6 SNAPSHOT net.liftweb.wizard.Wizard" />
+          <title>Wizard - Lift Framework 2.6-RC2 - net.liftweb.wizard.Wizard</title>
+          <meta name="description" content="Wizard - Lift Framework 2.6 - RC2 - net.liftweb.wizard.Wizard" />
+          <meta name="keywords" content="Wizard Lift Framework 2.6 RC2 net.liftweb.wizard.Wizard" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <img src="../../../lib/trait_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.wizard">wizard</a></p>
-        <h1>Wizard</h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1>Wizard</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -102,13 +94,9 @@ with back-button support and state support
       <span class="symbol">
         <span class="name">DispatchIt</span><span class="result"> = <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@DispatchIt=PartialFunction[String,scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../http/DispatchSnippet.html" class="extype" name="net.liftweb.http.DispatchSnippet">DispatchSnippet</a></dd></dl></div>
-    </li><li name="net.liftweb.http.Factory.FactoryMaker" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+    </li><li name="net.liftweb.http.Factory.FactoryMaker" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="FactoryMaker[T]extendsStackableMaker[T]withVendor[T]"></a>
       <a id="FactoryMaker[T]:FactoryMaker[T]"></a>
       <h4 class="signature">
@@ -119,20 +107,12 @@ with back-button support and state support
       <span class="symbol">
         <a href="../http/Factory$FactoryMaker.html"><span class="name">FactoryMaker</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/StackableMaker.html" class="extype" name="net.liftweb.util.StackableMaker">StackableMaker</a>[<span class="extype" name="net.liftweb.http.Factory.FactoryMaker.T">T</span>] with <a href="../util/Vendor.html" class="extype" name="net.liftweb.util.Vendor">Vendor</a>[<span class="extype" name="net.liftweb.http.Factory.FactoryMaker.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.Factory@FactoryMaker[T]extendsStackableMaker[T]withVendor[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create an object or val that is a subclass of the FactoryMaker to
+      </h4>
+      <p class="comment cmt">Create an object or val that is a subclass of the FactoryMaker to
 generate factory for a particular class as well as define session and
 request specific vendors and use doWith to define the vendor just for
-the scope of the call.</p><div class="fullcomment"><div class="comment cmt"><p>Create an object or val that is a subclass of the FactoryMaker to
-generate factory for a particular class as well as define session and
-request specific vendors and use doWith to define the vendor just for
-the scope of the call.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../http/Factory.html" class="extype" name="net.liftweb.http.Factory">Factory</a></dd></dl></div>
-    </li><li name="net.liftweb.util.SimpleInjector.Inject" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+the scope of the call.</p>
+    </li><li name="net.liftweb.util.SimpleInjector.Inject" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Inject[T]extendsStackableMaker[T]withVendor[T]"></a>
       <a id="Inject[T]:Inject[T]"></a>
       <h4 class="signature">
@@ -143,19 +123,11 @@ the scope of the call.
       <span class="symbol">
         <a href="../util/SimpleInjector$Inject.html"><span class="name">Inject</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/StackableMaker.html" class="extype" name="net.liftweb.util.StackableMaker">StackableMaker</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>] with <a href="../util/Vendor.html" class="extype" name="net.liftweb.util.Vendor">Vendor</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.util.SimpleInjector@Inject[T]extendsStackableMaker[T]withVendor[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Create an object or val that is a subclass of the FactoryMaker to
+      </h4>
+      <p class="comment cmt">Create an object or val that is a subclass of the FactoryMaker to
 generate factory for a particular class as well as define session and
 request specific vendors and use doWith to define the vendor just for
-the scope of the call.</p><div class="fullcomment"><div class="comment cmt"><p>Create an object or val that is a subclass of the FactoryMaker to
-generate factory for a particular class as well as define session and
-request specific vendors and use doWith to define the vendor just for
-the scope of the call.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
+the scope of the call.</p>
     </li><li name="net.liftweb.wizard.Wizard.Screen" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ScreenextendsAbstractScreen"></a>
       <a id="Screen:Screen"></a>
@@ -167,12 +139,8 @@ the scope of the call.
       <span class="symbol">
         <a href="Wizard$Screen.html"><span class="name">Screen</span></a><span class="result"> extends <a href="../http/AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@ScreenextendsAbstractScreen" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Define a screen within this wizard
+      </h4>
+      <p class="comment cmt">Define a screen within this wizard
 </p>
     </li><li name="net.liftweb.http.ScreenWizardRendered.Snapshot" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="SnapshotextendsAnyRef"></a>
@@ -185,11 +153,7 @@ the scope of the call.
       <span class="symbol">
         <a href="../http/ScreenWizardRendered$Snapshot.html"><span class="name">Snapshot</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.http.ScreenWizardRendered@SnapshotextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard.WizardSnapshot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="WizardSnapshotextendsWizard.this.Snapshot"></a>
@@ -202,13 +166,9 @@ the scope of the call.
       <span class="symbol">
         <a href="Wizard$WizardSnapshot.html"><span class="name">WizardSnapshot</span></a><span class="result"> extends <a href="#SnapshotextendsAnyRef" class="extmbr" name="net.liftweb.http.ScreenWizardRendered.Snapshot">Snapshot</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@WizardSnapshotextendsWizard.this.Snapshot" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
-    </li><li name="net.liftweb.wizard.Wizard.WizardVar" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+    </li><li name="net.liftweb.wizard.Wizard.WizardVar" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="WizardVar[T]extendsNonCleanAnyVar[T]"></a>
       <a id="WizardVar[T]:WizardVar[T]"></a>
       <h4 class="signature">
@@ -219,19 +179,9 @@ the scope of the call.
       <span class="symbol">
         <a href="Wizard$WizardVar.html"><span class="name">WizardVar</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/NonCleanAnyVar.html" class="extype" name="net.liftweb.util.NonCleanAnyVar">NonCleanAnyVar</a>[<span class="extype" name="net.liftweb.wizard.Wizard.WizardVar.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@WizardVar[T]extendsNonCleanAnyVar[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Keep request-local information around without the nastiness of naming session variables
-or the type-unsafety of casting the results.</p><div class="fullcomment"><div class="comment cmt"><p>Keep request-local information around without the nastiness of naming session variables
-or the type-unsafety of casting the results.
-RequestVars share their value through the scope of the current HTTP
-request. They have no value at the beginning of request servicing
-and their value is discarded at the end of request processing. They
-are helpful to share values across many snippets.
-</p></div></div>
+      </h4>
+      <p class="comment cmt">Keep request-local information around without the nastiness of naming session variables
+or the type-unsafety of casting the results.</p>
     </li></ol>
             </div>
 
@@ -248,11 +198,7 @@ are helpful to share values across many snippets.
       <span class="symbol">
         <span class="name">finish</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@finish():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">This method will be called within a transactional block when the last screen is completed
 </p><div class="fullcomment"><div class="comment cmt"><p>This method will be called within a transactional block when the last screen is completed
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
@@ -262,6 +208,19 @@ are helpful to share values across many snippets.
         <div id="values" class="values members">
               <h3>Concrete Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -272,12 +231,8 @@ are helpful to share values across many snippets.
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -289,13 +244,22 @@ are helpful to share values across many snippets.
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -306,13 +270,9 @@ are helpful to share values across many snippets.
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="net.liftweb.wizard.Wizard.AjaxOnDone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.wizard.Wizard.AjaxOnDone" visbl="prt" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AjaxOnDone"></a>
       <a id="AjaxOnDone:AjaxOnDone"></a>
       <h4 class="signature">
@@ -323,16 +283,8 @@ are helpful to share values across many snippets.
       <span class="symbol">
         <a href="Wizard$AjaxOnDone$.html"><span class="name">AjaxOnDone</span></a><span class="result"> extends <a href="Wizard$WizardVar.html" class="extype" name="net.liftweb.wizard.Wizard.WizardVar">WizardVar</a>[<a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@AjaxOnDone" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">What to do when the Screen is done.</p><div class="fullcomment"><div class="comment cmt"><p>What to do when the Screen is done.  By default, will
-do a redirect back to Whence, but you can change this behavior,
-for example, put up some other Ajax thing or alternatively,
-remove the form from the screen.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
+      </h4>
+      <p class="comment cmt">What to do when the Screen is done.</p>
     </li><li name="net.liftweb.wizard.Wizard.Ajax_?" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Ajax_?"></a>
       <a id="Ajax_?:Ajax_?"></a>
@@ -344,11 +296,7 @@ remove the form from the screen.
       <span class="symbol">
         <a href="Wizard$Ajax_$qmark$.html"><span title="gt4s: Ajax_$qmark" class="name">Ajax_?</span></a><span class="result"> extends <a href="Wizard$WizardVar.html" class="extype" name="net.liftweb.wizard.Wizard.WizardVar">WizardVar</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@Ajax_?" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard.CurrentScreen" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="CurrentScreen"></a>
@@ -361,13 +309,9 @@ remove the form from the screen.
       <span class="symbol">
         <a href="Wizard$CurrentScreen$.html"><span class="name">CurrentScreen</span></a><span class="result"> extends <a href="Wizard$WizardVar.html" class="extype" name="net.liftweb.wizard.Wizard.WizardVar">WizardVar</a>[<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="Wizard$Screen.html" class="extype" name="net.liftweb.wizard.Wizard.Screen">Screen</a>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@CurrentScreen" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="net.liftweb.wizard.Wizard.FormGUID" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="net.liftweb.wizard.Wizard.FormGUID" visbl="prt" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="FormGUID"></a>
       <a id="FormGUID:FormGUID"></a>
       <h4 class="signature">
@@ -378,14 +322,8 @@ remove the form from the screen.
       <span class="symbol">
         <a href="Wizard$FormGUID$.html"><span class="name">FormGUID</span></a><span class="result"> extends <a href="Wizard$WizardVar.html" class="extype" name="net.liftweb.wizard.Wizard.WizardVar">WizardVar</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@FormGUID" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A unique GUID for the form.</p><div class="fullcomment"><div class="comment cmt"><p>A unique GUID for the form... this allows us to do an Ajax SetHtml
-to replace the form
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
+      </h4>
+      <p class="comment cmt">A unique GUID for the form.</p>
     </li><li name="net.liftweb.wizard.Wizard.OnFirstScreen" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="OnFirstScreen"></a>
       <a id="OnFirstScreen:OnFirstScreen"></a>
@@ -397,11 +335,7 @@ to replace the form
       <span class="symbol">
         <a href="Wizard$OnFirstScreen$.html"><span class="name">OnFirstScreen</span></a><span class="result"> extends <a href="../http/TransientRequestVar.html" class="extype" name="net.liftweb.http.TransientRequestVar">TransientRequestVar</a>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@OnFirstScreen" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard.Referer" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Referer"></a>
@@ -414,11 +348,7 @@ to replace the form
       <span class="symbol">
         <a href="Wizard$Referer$.html"><span class="name">Referer</span></a><span class="result"> extends <a href="Wizard$WizardVar.html" class="extype" name="net.liftweb.wizard.Wizard.WizardVar">WizardVar</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@Referer" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard.VisitedScreens" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="VisitedScreens"></a>
@@ -431,13 +361,9 @@ to replace the form
       <span class="symbol">
         <a href="Wizard$VisitedScreens$.html"><span class="name">VisitedScreens</span></a><span class="result"> extends <a href="Wizard$WizardVar.html" class="extype" name="net.liftweb.wizard.Wizard.WizardVar">WizardVar</a>[<a href="../../../scala/package.html#Vector[+A]=scala.collection.immutable.Vector[A]" class="extmbr" name="scala.Vector">Vector</a>[<a href="Wizard$Screen.html" class="extype" name="net.liftweb.wizard.Wizard.Screen">Screen</a>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@VisitedScreens" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="net.liftweb.wizard.Wizard._defaultXml" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+    </li><li name="net.liftweb.wizard.Wizard._defaultXml" visbl="prt" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="_defaultXml"></a>
       <a id="_defaultXml:_defaultXml"></a>
       <h4 class="signature">
@@ -448,16 +374,10 @@ to replace the form
       <span class="symbol">
         <a href="Wizard$_defaultXml$.html"><span class="name">_defaultXml</span></a><span class="result"> extends <a href="../http/TransientRequestVar.html" class="extype" name="net.liftweb.http.TransientRequestVar">TransientRequestVar</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@_defaultXml" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Holds the template passed via the snippet for the duration
+      </h4>
+      <p class="comment cmt">Holds the template passed via the snippet for the duration
 of the request
-</p><div class="fullcomment"><div class="comment cmt"><p>Holds the template passed via the snippet for the duration
-of the request
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+</p>
     </li><li name="net.liftweb.http.StatefulSnippet#addName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="addName(name:String):Unit"></a>
       <a id="addName(String):Unit"></a>
@@ -469,11 +389,7 @@ of the request
       <span class="symbol">
         <span class="name">addName</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@addName(name:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../http/StatefulSnippet.html" class="extype" name="net.liftweb.http.StatefulSnippet">StatefulSnippet</a></dd></dl></div>
     </li><li name="net.liftweb.http.ScreenWizardRendered#ajaxForms_?" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ajaxForms_?:Boolean"></a>
@@ -486,11 +402,7 @@ of the request
       <span class="symbol">
         <span title="gt4s: ajaxForms_$qmark" class="name">ajaxForms_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@ajaxForms_?:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Are the forms Ajax or regular HTTP/HTML.</p><div class="fullcomment"><div class="comment cmt"><p>Are the forms Ajax or regular HTTP/HTML.</p><p>If the ajax=true attribute is present on the original snippet
 invocation, the forms will be ajax.
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
@@ -505,11 +417,7 @@ invocation, the forms will be ajax.
       <span class="symbol">
         <span class="name">allTemplate</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@allTemplate:scala.xml.NodeSeq" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.http.ScreenWizardRendered#allTemplateNodeSeq" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="allTemplateNodeSeq:scala.xml.NodeSeq"></a>
@@ -522,11 +430,7 @@ invocation, the forms will be ajax.
       <span class="symbol">
         <span class="name">allTemplateNodeSeq</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@allTemplateNodeSeq:scala.xml.NodeSeq" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#allTemplatePath" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="allTemplatePath:List[String]"></a>
@@ -539,11 +443,7 @@ invocation, the forms will be ajax.
       <span class="symbol">
         <span class="name">allTemplatePath</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@allTemplatePath:List[String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -556,11 +456,7 @@ invocation, the forms will be ajax.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.ScreenWizardRendered#calcAjax" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="calcAjax:Boolean"></a>
@@ -573,11 +469,7 @@ invocation, the forms will be ajax.
       <span class="symbol">
         <span class="name">calcAjax</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@calcAjax:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Calculate if this Screen/Wizard should be ajax
 </p><div class="fullcomment"><div class="comment cmt"><p>Calculate if this Screen/Wizard should be ajax
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
@@ -592,11 +484,7 @@ invocation, the forms will be ajax.
       <span class="symbol">
         <span class="name">calcAjaxOnDone</span><span class="result">: <a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@calcAjaxOnDone:net.liftweb.http.js.JsCmd" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">What should be done at the end of an Ajax session.</p><div class="fullcomment"><div class="comment cmt"><p>What should be done at the end of an Ajax session.  By
 default, RedirectTo(Referer.get)
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
@@ -611,11 +499,7 @@ default, RedirectTo(Referer.get)
       <span class="symbol">
         <span class="name">calcFirstScreen</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="Wizard$Screen.html" class="extype" name="net.liftweb.wizard.Wizard.Screen">Screen</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@calcFirstScreen:net.liftweb.common.Box[Wizard.this.Screen]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">What's the first screen in this wizard
 </p>
     </li><li name="net.liftweb.http.ScreenWizardRendered#calcReferer" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -629,11 +513,7 @@ default, RedirectTo(Referer.get)
       <span class="symbol">
         <span class="name">calcReferer</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@calcReferer:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Calculate the referer (the page to go back to on finish).</p><div class="fullcomment"><div class="comment cmt"><p>Calculate the referer (the page to go back to on finish).
 defaults to S.referer openOr &quot;/&quot;
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
@@ -648,11 +528,7 @@ defaults to S.referer openOr &quot;/&quot;
       <span class="symbol">
         <span class="name">calcScreenAfter</span><span class="params">(<span name="which">which: <a href="Wizard$Screen.html" class="extype" name="net.liftweb.wizard.Wizard.Screen">Screen</a></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="Wizard$Screen.html" class="extype" name="net.liftweb.wizard.Wizard.Screen">Screen</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@calcScreenAfter(which:Wizard.this.Screen):net.liftweb.common.Box[Wizard.this.Screen]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Given the current screen, what's the next screen?
 </p>
     </li><li name="net.liftweb.wizard.Wizard#cancelButton" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -666,11 +542,7 @@ defaults to S.referer openOr &quot;/&quot;
       <span class="symbol">
         <span class="name">cancelButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@cancelButton:scala.xml.Elem" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -683,11 +555,7 @@ defaults to S.referer openOr &quot;/&quot;
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -706,11 +574,7 @@ defaults to S.referer openOr &quot;/&quot;
       <span class="symbol">
         <span class="name">createSnapshot</span><span class="result">: <a href="Wizard$WizardSnapshot.html" class="extype" name="net.liftweb.wizard.Wizard.WizardSnapshot">WizardSnapshot</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@createSnapshot:Wizard.this.WizardSnapshot" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#currentScreen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="currentScreen:net.liftweb.common.Box[Wizard.this.Screen]"></a>
@@ -723,11 +587,7 @@ defaults to S.referer openOr &quot;/&quot;
       <span class="symbol">
         <span class="name">currentScreen</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="Wizard$Screen.html" class="extype" name="net.liftweb.wizard.Wizard.Screen">Screen</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@currentScreen:net.liftweb.common.Box[Wizard.this.Screen]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.wizard.Wizard#dbConnections" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="dbConnections:List[net.liftweb.db.ConnectionIdentifier]"></a>
@@ -740,11 +600,7 @@ defaults to S.referer openOr &quot;/&quot;
       <span class="symbol">
         <span class="name">dbConnections</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../db/package.html#ConnectionIdentifier=net.liftweb.util.ConnectionIdentifier" class="extmbr" name="net.liftweb.db.ConnectionIdentifier">ConnectionIdentifier</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@dbConnections:List[net.liftweb.db.ConnectionIdentifier]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.http.ScreenWizardRendered#defaultToAjax_?" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="defaultToAjax_?:Boolean"></a>
@@ -757,11 +613,7 @@ defaults to S.referer openOr &quot;/&quot;
       <span class="symbol">
         <span title="gt4s: defaultToAjax_$qmark" class="name">defaultToAjax_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@defaultToAjax_?:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Should all instances of this Wizard or Screen default to Ajax
 when not explicitly set
 </p><div class="fullcomment"><div class="comment cmt"><p>Should all instances of this Wizard or Screen default to Ajax
@@ -778,11 +630,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">defaultXml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@defaultXml:scala.xml.NodeSeq" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">the NodeSeq passed as a parameter when the snippet was invoked
 </p><div class="fullcomment"><div class="comment cmt"><p>the NodeSeq passed as a parameter when the snippet was invoked
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
@@ -797,11 +645,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">dispatch</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@dispatch:PartialFunction[String,scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/DispatchSnippet.html" class="extype" name="net.liftweb.http.DispatchSnippet">DispatchSnippet</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#elemInABox" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="elemInABox(in:scala.xml.Elem):net.liftweb.common.Box[scala.xml.Elem]"></a>
@@ -814,11 +658,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">elemInABox</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.Elem">Elem</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@elemInABox(in:scala.xml.Elem):net.liftweb.common.Box[scala.xml.Elem]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -831,11 +671,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -848,11 +684,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -865,11 +697,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -888,11 +716,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">finishButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@finishButton:scala.xml.Elem" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.wizard.Wizard#formAttrs" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="formAttrs:scala.xml.MetaData"></a>
@@ -905,11 +729,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">formAttrs</span><span class="result">: <span class="extype" name="scala.xml.MetaData">MetaData</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@formAttrs:scala.xml.MetaData" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">What additional attributes should be put on the
 </p><div class="fullcomment"><div class="comment cmt"><p>What additional attributes should be put on the
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
@@ -924,11 +744,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -941,11 +757,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.util.SimpleInjector#inject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="inject[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[T]"></a>
@@ -958,11 +770,7 @@ when not explicitly set
       <span class="symbol">
         <span class="name">inject</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@inject[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Perform the injection for the given type.</p><div class="fullcomment"><div class="comment cmt"><p>Perform the injection for the given type.  You can call:
 inject[Date] or inject[List[Map[String, PaymentThing]]].  The
 appropriate Manifest will be
@@ -978,11 +786,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.http.StatefulSnippet#link" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="link(to:String,func:()=&gt;Any,body:scala.xml.NodeSeq,attrs:net.liftweb.http.SHtml.ElemAttr*):scala.xml.Elem"></a>
@@ -995,11 +799,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">link</span><span class="params">(<span name="to">to: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="func">func: () ⇒ <span class="extype" name="scala.Any">Any</span></span>, <span name="body">body: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="attrs">attrs: <a href="../http/SHtml$.html#ElemAttrextendsxml.Elem=&gt;scala.xml.Elem" class="extmbr" name="net.liftweb.http.SHtml.ElemAttr">http.SHtml.ElemAttr</a>*</span>)</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@link(to:String,func:()=&gt;Any,body:scala.xml.NodeSeq,attrs:net.liftweb.http.SHtml.ElemAttr*):scala.xml.Elem" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">create an anchor tag around a body
 </p><div class="fullcomment"><div class="comment cmt"><p>create an anchor tag around a body
 </p></div><dl class="paramcmts block"><dt class="param">to</dt><dd class="cmt"><p>- the target</p></dd><dt class="param">func</dt><dd class="cmt"><p>- the function to invoke when the link is clicked</p></dd><dt class="param">body</dt><dd class="cmt"><p>- the NodeSeq to wrap in the anchor tag</p></dd><dt class="param">attrs</dt><dd class="cmt"><p>- the (optional) attributes for the HTML element
@@ -1015,11 +815,7 @@ appropriate Manifest will be
       <span class="symbol">
         <span class="name">localSetup</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@localSetup():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Override this method to do setup the first time the
 screen is entered
 </p><div class="fullcomment"><div class="comment cmt"><p>Override this method to do setup the first time the
@@ -1036,11 +832,7 @@ screen is entered
       <span class="symbol">
         <span class="name">names</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@names:Set[String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../http/StatefulSnippet.html" class="extype" name="net.liftweb.http.StatefulSnippet">StatefulSnippet</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -1053,11 +845,7 @@ screen is entered
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#nextButton" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nextButton:scala.xml.Elem"></a>
@@ -1070,11 +858,7 @@ screen is entered
       <span class="symbol">
         <span class="name">nextButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@nextButton:scala.xml.Elem" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.wizard.Wizard#nextScreen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="nextScreen():net.liftweb.http.js.JsCmd"></a>
@@ -1087,11 +871,7 @@ screen is entered
       <span class="symbol">
         <span class="name">nextScreen</span><span class="params">()</span><span class="result">: <a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@nextScreen():net.liftweb.http.js.JsCmd" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.wizard.Wizard#noticeTypeToAttr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="noticeTypeToAttr(screen:net.liftweb.http.AbstractScreen):net.liftweb.common.Box[net.liftweb.http.NoticeType.Value=&gt;scala.xml.MetaData]"></a>
@@ -1104,11 +884,7 @@ screen is entered
       <span class="symbol">
         <span class="name">noticeTypeToAttr</span><span class="params">(<span name="screen">screen: <a href="../http/AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<a href="../http/NoticeType$$Value.html" class="extype" name="net.liftweb.http.NoticeType.Value">Value</a>) ⇒ <span class="extype" name="scala.xml.MetaData">MetaData</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@noticeTypeToAttr(screen:net.liftweb.http.AbstractScreen):net.liftweb.common.Box[net.liftweb.http.NoticeType.Value=&gt;scala.xml.MetaData]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.wizard.Wizard">Wizard</a> → <a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -1121,11 +897,7 @@ screen is entered
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -1138,11 +910,7 @@ screen is entered
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#onConfirm_?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="onConfirm_?:Boolean"></a>
@@ -1155,11 +923,7 @@ screen is entered
       <span class="symbol">
         <span title="gt4s: onConfirm_$qmark" class="name">onConfirm_?</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@onConfirm_?:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">By default, are all the fields on all the screen in this wizard on the confirm screen?
 </p>
     </li><li name="net.liftweb.wizard.Wizard#prevButton" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1173,11 +937,7 @@ screen is entered
       <span class="symbol">
         <span class="name">prevButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@prevButton:scala.xml.Elem" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.wizard.Wizard#prevScreen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="prevScreen():net.liftweb.http.js.JsCmd"></a>
@@ -1190,11 +950,7 @@ screen is entered
       <span class="symbol">
         <span class="name">prevScreen</span><span class="params">()</span><span class="result">: <a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@prevScreen():net.liftweb.http.js.JsCmd" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.http.ScreenWizardRendered#redirectBack" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="redirectBack():net.liftweb.http.js.JsCmd"></a>
@@ -1207,11 +963,7 @@ screen is entered
       <span class="symbol">
         <span class="name">redirectBack</span><span class="params">()</span><span class="result">: <a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@redirectBack():net.liftweb.http.js.JsCmd" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.http.StatefulSnippet#redirectTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="redirectTo(where:String):Nothing"></a>
@@ -1224,11 +976,7 @@ screen is entered
       <span class="symbol">
         <span class="name">redirectTo</span><span class="params">(<span name="where">where: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@redirectTo(where:String):Nothing" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Redirect to another page, but make sure this StatefulSnippet is registered
 on that page so the state continues on the new page
 </p><div class="fullcomment"><div class="comment cmt"><p>Redirect to another page, but make sure this StatefulSnippet is registered
@@ -1245,11 +993,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">registerInjection</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: () ⇒ <span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@registerInjection[T](f:()=&gt;T)(implicitman:scala.reflect.Manifest[T]):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Register a function that will inject for the given Manifest
 </p><div class="fullcomment"><div class="comment cmt"><p>Register a function that will inject for the given Manifest
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
@@ -1264,11 +1008,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">registerThisSnippet</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@registerThisSnippet():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../http/StatefulSnippet.html" class="extype" name="net.liftweb.http.StatefulSnippet">StatefulSnippet</a></dd></dl></div>
     </li><li name="net.liftweb.http.ScreenWizardRendered#renderAll" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="renderAll(currentScreenNumber:net.liftweb.common.Box[scala.xml.NodeSeq],screenCount:net.liftweb.common.Box[scala.xml.NodeSeq],wizardTop:net.liftweb.common.Box[scala.xml.Elem],screenTop:net.liftweb.common.Box[scala.xml.Elem],fields:List[net.liftweb.http.ScreenFieldInfo],prev:net.liftweb.common.Box[scala.xml.Elem],cancel:net.liftweb.common.Box[scala.xml.Elem],next:net.liftweb.common.Box[scala.xml.Elem],finish:net.liftweb.common.Box[scala.xml.Elem],screenBottom:net.liftweb.common.Box[scala.xml.Elem],wizardBottom:net.liftweb.common.Box[scala.xml.Elem],nextId:(String,()=&gt;net.liftweb.http.js.JsCmd),prevId:net.liftweb.common.Box[(String,()=&gt;net.liftweb.http.js.JsCmd)],cancelId:(String,()=&gt;net.liftweb.http.js.JsCmd),theScreen:net.liftweb.http.AbstractScreen,ajax_?:Boolean):scala.xml.NodeSeq"></a>
@@ -1281,11 +1021,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">renderAll</span><span class="params">(<span name="currentScreenNumber">currentScreenNumber: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>, <span name="screenCount">screenCount: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>, <span name="wizardTop">wizardTop: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="screenTop">screenTop: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="fields">fields: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../http/ScreenFieldInfo.html" class="extype" name="net.liftweb.http.ScreenFieldInfo">ScreenFieldInfo</a>]</span>, <span name="prev">prev: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="cancel">cancel: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="next">next: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="finish">finish: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="screenBottom">screenBottom: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="wizardBottom">wizardBottom: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>, <span name="nextId">nextId: (<span class="extype" name="scala.Predef.String">String</span>, () ⇒ <a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>)</span>, <span name="prevId">prevId: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<span class="extype" name="scala.Predef.String">String</span>, () ⇒ <a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>)]</span>, <span name="cancelId">cancelId: (<span class="extype" name="scala.Predef.String">String</span>, () ⇒ <a href="../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>)</span>, <span name="theScreen">theScreen: <a href="../http/AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></span>, <span name="ajax_?">ajax_?: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@renderAll(currentScreenNumber:net.liftweb.common.Box[scala.xml.NodeSeq],screenCount:net.liftweb.common.Box[scala.xml.NodeSeq],wizardTop:net.liftweb.common.Box[scala.xml.Elem],screenTop:net.liftweb.common.Box[scala.xml.Elem],fields:List[net.liftweb.http.ScreenFieldInfo],prev:net.liftweb.common.Box[scala.xml.Elem],cancel:net.liftweb.common.Box[scala.xml.Elem],next:net.liftweb.common.Box[scala.xml.Elem],finish:net.liftweb.common.Box[scala.xml.Elem],screenBottom:net.liftweb.common.Box[scala.xml.Elem],wizardBottom:net.liftweb.common.Box[scala.xml.Elem],nextId:(String,()=&gt;net.liftweb.http.js.JsCmd),prevId:net.liftweb.common.Box[(String,()=&gt;net.liftweb.http.js.JsCmd)],cancelId:(String,()=&gt;net.liftweb.http.js.JsCmd),theScreen:net.liftweb.http.AbstractScreen,ajax_?:Boolean):scala.xml.NodeSeq" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#renderHtml" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="renderHtml():scala.xml.NodeSeq"></a>
@@ -1298,11 +1034,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">renderHtml</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@renderHtml():scala.xml.NodeSeq" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#screenCount" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="screenCount:Int"></a>
@@ -1315,11 +1047,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">screenCount</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@screenCount:Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Total number of screens in the wizard
 </p>
     </li><li name="net.liftweb.wizard.Wizard#screens" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -1333,11 +1061,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">screens</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="Wizard$Screen.html" class="extype" name="net.liftweb.wizard.Wizard.Screen">Screen</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@screens:List[Wizard.this.Screen]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The ordered list of Screens
 </p>
     </li><li name="net.liftweb.http.StatefulSnippet#seeOther" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -1351,11 +1075,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">seeOther</span><span class="params">(<span name="where">where: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@seeOther(where:String):Nothing" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">See Other to another page, but make sure this StatefulSnippet is registered
 on that page so the state continues on the new page
 </p><div class="fullcomment"><div class="comment cmt"><p>See Other to another page, but make sure this StatefulSnippet is registered
@@ -1372,11 +1092,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">submitOrAjax</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@submitOrAjax(id:String):String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -1389,11 +1105,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#toForm" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="toForm:scala.xml.NodeSeq"></a>
@@ -1406,11 +1118,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">toForm</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@toForm:scala.xml.NodeSeq" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -1423,11 +1131,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.http.StatefulSnippet#unregisterThisSnippet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="unregisterThisSnippet():Unit"></a>
@@ -1440,11 +1144,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">unregisterThisSnippet</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@unregisterThisSnippet():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../http/StatefulSnippet.html" class="extype" name="net.liftweb.http.StatefulSnippet">StatefulSnippet</a></dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#vendAVar" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="vendAVar[T](dflt:=&gt;T):net.liftweb.util.NonCleanAnyVar[T]"></a>
@@ -1457,11 +1157,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">vendAVar</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="dflt">dflt: ⇒ <span class="extype" name="net.liftweb.wizard.Wizard.vendAVar.T">T</span></span>)</span><span class="result">: <a href="../util/NonCleanAnyVar.html" class="extype" name="net.liftweb.util.NonCleanAnyVar">NonCleanAnyVar</a>[<span class="extype" name="net.liftweb.wizard.Wizard.vendAVar.T">T</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@vendAVar[T](dflt:=&gt;T):net.liftweb.util.NonCleanAnyVar[T]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#vendForm" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="vendForm[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[(T,T=&gt;Any)=&gt;scala.xml.NodeSeq]"></a>
@@ -1474,11 +1170,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">vendForm</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.wizard.Wizard.vendForm.T">T</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<span class="extype" name="net.liftweb.wizard.Wizard.vendForm.T">T</span>, (<span class="extype" name="net.liftweb.wizard.Wizard.vendForm.T">T</span>) ⇒ <span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@vendForm[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[(T,T=&gt;Any)=&gt;scala.xml.NodeSeq]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -1491,11 +1183,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1514,11 +1202,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1537,11 +1221,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1560,11 +1240,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">wizardBottom</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@wizardBottom:net.liftweb.common.Box[scala.xml.Elem]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.wizard.Wizard#wizardTop" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wizardTop:net.liftweb.common.Box[scala.xml.Elem]"></a>
@@ -1577,11 +1253,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">wizardTop</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@wizardTop:net.liftweb.common.Box[scala.xml.Elem]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.http.ScreenWizardRendered#wrapInDiv" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wrapInDiv(in:scala.xml.NodeSeq):scala.xml.Elem"></a>
@@ -1594,11 +1266,7 @@ on that page so the state continues on the new page
       <span class="symbol">
         <span class="name">wrapInDiv</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.wizard.Wizard@wrapInDiv(in:scala.xml.NodeSeq):scala.xml.Elem" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../http/ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></dd></dl></div>
     </li></ol>
             </div>
@@ -1641,7 +1309,6 @@ on that page so the state continues on the new page
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>

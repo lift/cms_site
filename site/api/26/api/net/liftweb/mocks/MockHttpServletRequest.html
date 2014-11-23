@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>MockHttpServletRequest - Lift Framework 2.6-SNAPSHOT - net.liftweb.mocks.MockHttpServletRequest</title>
-          <meta name="description" content="MockHttpServletRequest - Lift Framework 2.6 - SNAPSHOT - net.liftweb.mocks.MockHttpServletRequest" />
-          <meta name="keywords" content="MockHttpServletRequest Lift Framework 2.6 SNAPSHOT net.liftweb.mocks.MockHttpServletRequest" />
+          <title>MockHttpServletRequest - Lift Framework 2.6-RC2 - net.liftweb.mocks.MockHttpServletRequest</title>
+          <meta name="description" content="MockHttpServletRequest - Lift Framework 2.6 - RC2 - net.liftweb.mocks.MockHttpServletRequest" />
+          <meta name="keywords" content="MockHttpServletRequest Lift Framework 2.6 RC2 net.liftweb.mocks.MockHttpServletRequest" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <img src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.mocks">mocks</a></p>
-        <h1>MockHttpServletRequest</h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1>MockHttpServletRequest</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -100,11 +92,7 @@ interested in. At the very least, you will need to change method and path.</p><p
       <span class="symbol">
         <span class="name">MockHttpServletRequest</span><span class="params">(<span name="url">url: <span class="extype" name="java.net.URL">URL</span></span>, <span name="contextPath">contextPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@&lt;init&gt;(url:java.net.URL,contextPath:String):net.liftweb.mocks.MockHttpServletRequest" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Construct a new mock request for the given URL.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a new mock request for the given URL. See processUrl
 for limitations.
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>The URL to extract from</p></dd><dt class="param">contextPath</dt><dd class="cmt"><p>The servlet context of the request.
@@ -120,11 +108,7 @@ for limitations.
       <span class="symbol">
         <span class="name">MockHttpServletRequest</span><span class="params">(<span name="url">url: <span class="extype" name="java.net.URL">URL</span></span>)</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@&lt;init&gt;(url:java.net.URL):net.liftweb.mocks.MockHttpServletRequest" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Construct a new mock request for the given URL.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a new mock request for the given URL. See processUrl
 for limitations.
 </p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>The URL to extract from
@@ -140,11 +124,7 @@ for limitations.
       <span class="symbol">
         <span class="name">MockHttpServletRequest</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>, <span name="contextPath">contextPath: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>)</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@&lt;init&gt;(url:String,contextPath:String):net.liftweb.mocks.MockHttpServletRequest" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>The URL to extract from</p></dd><dt class="param">contextPath</dt><dd class="cmt"><p>The context path for this request. Defaults to &quot;&quot; per the Servlet API.</p></dd></dl></div>
     </li></ol>
             </div>
@@ -156,6 +136,19 @@ for limitations.
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -166,12 +159,8 @@ for limitations.
       <span class="symbol">
         <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -183,13 +172,22 @@ for limitations.
       <span class="symbol">
         <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@##():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -200,12 +198,8 @@ for limitations.
       <span class="symbol">
         <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#addBasicAuth" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="addBasicAuth(user:String,pass:String):Unit"></a>
       <a id="addBasicAuth(String,String):Unit"></a>
@@ -217,11 +211,7 @@ for limitations.
       <span class="symbol">
         <span class="name">addBasicAuth</span><span class="params">(<span name="user">user: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pass">pass: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@addBasicAuth(user:String,pass:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Adds an &quot;Authorization&quot; header, per RFC1945.</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -234,11 +224,7 @@ for limitations.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#attributes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="attributes:Map[String,Object]"></a>
@@ -251,11 +237,7 @@ for limitations.
       <span class="symbol">
         <span class="name">attributes</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@attributes:Map[String,Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#authType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="authType:String"></a>
@@ -268,11 +250,7 @@ for limitations.
       <span class="symbol">
         <span class="name">authType</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@authType:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#body" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="body:Array[Byte]"></a>
@@ -285,11 +263,7 @@ for limitations.
       <span class="symbol">
         <span class="name">body</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Byte">Byte</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@body:Array[Byte]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The raw body of the request.</p>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#body_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="body_=(jval:net.liftweb.json.JsonAST.JValue,contentType:String):Unit"></a>
@@ -302,11 +276,7 @@ for limitations.
       <span class="symbol">
         <span title="gt4s: body_$eq" class="name">body_=</span><span class="params">(<span name="jval">jval: <a href="../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@body_=(jval:net.liftweb.json.JsonAST.JValue,contentType:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Sets the body to the given json value and content type.</p>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#body_=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="body_=(jval:net.liftweb.json.JsonAST.JValue):Unit"></a>
@@ -319,11 +289,7 @@ for limitations.
       <span class="symbol">
         <span title="gt4s: body_$eq" class="name">body_=</span><span class="params">(<span name="jval">jval: <a href="../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@body_=(jval:net.liftweb.json.JsonAST.JValue):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Sets the body to the given json value.</p><div class="fullcomment"><div class="comment cmt"><p>Sets the body to the given json value. Also
 sets the contentType to &quot;application/json&quot;
 </p></div></div>
@@ -338,11 +304,7 @@ sets the contentType to &quot;application/json&quot;
       <span class="symbol">
         <span title="gt4s: body_$eq" class="name">body_=</span><span class="params">(<span name="nodes">nodes: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@body_=(nodes:scala.xml.NodeSeq,contentType:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Sets the body to the given elements and content type.</p><div class="fullcomment"><div class="comment cmt"><p>Sets the body to the given elements and content type.</p><p>Note that the elements will be converted to bytes
 based on the current setting of charEncoding.
 </p></div></div>
@@ -357,11 +319,7 @@ based on the current setting of charEncoding.
       <span class="symbol">
         <span title="gt4s: body_$eq" class="name">body_=</span><span class="params">(<span name="nodes">nodes: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@body_=(nodes:scala.xml.NodeSeq):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Sets the body to the given elements.</p><div class="fullcomment"><div class="comment cmt"><p>Sets the body to the given elements. Also sets
 the contentType to &quot;text/xml&quot;</p><p>Note that the elements will be converted to bytes
 based on the current setting of charEncoding.
@@ -377,11 +335,7 @@ based on the current setting of charEncoding.
       <span class="symbol">
         <span title="gt4s: body_$eq" class="name">body_=</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="contentType">contentType: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@body_=(s:String,contentType:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Sets the body to the given string and content type.</p><div class="fullcomment"><div class="comment cmt"><p>Sets the body to the given string and content type.</p><p>Note that the String will be converted to bytes
 based on the current setting of charEncoding.
 </p></div></div>
@@ -396,11 +350,7 @@ based on the current setting of charEncoding.
       <span class="symbol">
         <span title="gt4s: body_$eq" class="name">body_=</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@body_=(s:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Sets the body to the given string.</p><div class="fullcomment"><div class="comment cmt"><p>Sets the body to the given string. The content
 type is set to &quot;text/plain&quot;.</p><p>Note that the String will be converted to bytes
 based on the current setting of charEncoding.
@@ -416,11 +366,7 @@ based on the current setting of charEncoding.
       <span class="symbol">
         <span class="name">charEncoding</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@charEncoding:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The character encoding of the request.</p><div class="fullcomment"><div class="comment cmt"><p>The character encoding of the request.</p><p>Defaults to UTF-8. Note that this differs from the default
 encoding per the HTTP spec (ISO-8859-1), so you
 will need to change this if you need something
@@ -437,11 +383,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@clone():Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -460,11 +402,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">computeRealPath</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@computeRealPath(path:String):String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Compute the path portion after the contextPath</p>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#contentType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="contentType:String"></a>
@@ -477,11 +415,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">contentType</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@contentType:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#contextPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="contextPath:String"></a>
@@ -494,11 +428,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">contextPath</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@contextPath:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The context path for this request.</p><div class="fullcomment"><div class="comment cmt"><p>The context path for this request. Defaults to &quot;&quot; per the Servlet API.</p></div></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#cookies" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="cookies:List[javax.servlet.http.Cookie]"></a>
@@ -511,11 +441,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">cookies</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="javax.servlet.http.Cookie">Cookie</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@cookies:List[javax.servlet.http.Cookie]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -528,11 +454,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -545,11 +467,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -562,11 +480,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -585,11 +499,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getAttribute</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getAttribute(key:String):Object" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getAttributeNames" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getAttributeNames():java.util.Enumeration[Object]"></a>
@@ -602,11 +512,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getAttributeNames</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Enumeration">Enumeration</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getAttributeNames():java.util.Enumeration[Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getAuthType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getAuthType():String"></a>
@@ -619,11 +525,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getAuthType</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getAuthType():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getCharacterEncoding" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getCharacterEncoding():String"></a>
@@ -636,11 +538,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getCharacterEncoding</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getCharacterEncoding():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
@@ -653,11 +551,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getContentLength" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getContentLength():Int"></a>
@@ -670,11 +564,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getContentLength</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getContentLength():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getContentType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getContentType():String"></a>
@@ -687,11 +577,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getContentType</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getContentType():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getContextPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getContextPath():String"></a>
@@ -704,11 +590,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getContextPath</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getContextPath():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getCookies" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getCookies():Array[javax.servlet.http.Cookie]"></a>
@@ -721,11 +603,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getCookies</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="javax.servlet.http.Cookie">Cookie</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getCookies():Array[javax.servlet.http.Cookie]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getDateHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getDateHeader(h:String):Long"></a>
@@ -738,11 +616,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getDateHeader</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Long">Long</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getDateHeader(h:String):Long" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getHeader(h:String):String"></a>
@@ -755,11 +629,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getHeader</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getHeader(h:String):String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getHeaderNames" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getHeaderNames():java.util.Enumeration[Object]"></a>
@@ -772,11 +642,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getHeaderNames</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Enumeration">Enumeration</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getHeaderNames():java.util.Enumeration[Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getHeaders" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getHeaders(s:String):java.util.Enumeration[Object]"></a>
@@ -789,11 +655,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getHeaders</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.util.Enumeration">Enumeration</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getHeaders(s:String):java.util.Enumeration[Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getInputStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getInputStream():javax.servlet.ServletInputStream"></a>
@@ -806,11 +668,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getInputStream</span><span class="params">()</span><span class="result">: <span class="extype" name="javax.servlet.ServletInputStream">ServletInputStream</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getInputStream():javax.servlet.ServletInputStream" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getIntHeader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getIntHeader(h:String):Int"></a>
@@ -823,11 +681,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getIntHeader</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getIntHeader(h:String):Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getLocalAddr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLocalAddr():String"></a>
@@ -840,11 +694,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getLocalAddr</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getLocalAddr():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getLocalName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLocalName():String"></a>
@@ -857,11 +707,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getLocalName</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getLocalName():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getLocalPort" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLocalPort():Int"></a>
@@ -874,11 +720,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getLocalPort</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getLocalPort():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getLocale" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLocale():java.util.Locale"></a>
@@ -891,11 +733,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getLocale</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Locale">Locale</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getLocale():java.util.Locale" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getLocales" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getLocales():java.util.Enumeration[Object]"></a>
@@ -908,11 +746,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getLocales</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Enumeration">Enumeration</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getLocales():java.util.Enumeration[Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getMethod():String"></a>
@@ -925,11 +759,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getMethod</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getMethod():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getParameter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getParameter(key:String):String"></a>
@@ -942,11 +772,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getParameter</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getParameter(key:String):String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getParameterMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getParameterMap():java.util.Map[Object,Object]"></a>
@@ -959,11 +785,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getParameterMap</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Map">Map</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getParameterMap():java.util.Map[Object,Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getParameterNames" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getParameterNames():java.util.Enumeration[Object]"></a>
@@ -976,11 +798,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getParameterNames</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Enumeration">Enumeration</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getParameterNames():java.util.Enumeration[Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getParameterValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getParameterValues(key:String):Array[String]"></a>
@@ -993,11 +811,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getParameterValues</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getParameterValues(key:String):Array[String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getPathInfo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getPathInfo():String"></a>
@@ -1010,11 +824,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getPathInfo</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getPathInfo():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getPathTranslated" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getPathTranslated():String"></a>
@@ -1027,11 +837,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getPathTranslated</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getPathTranslated():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getProtocol" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getProtocol():String"></a>
@@ -1044,11 +850,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getProtocol</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getProtocol():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getQueryString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getQueryString():String"></a>
@@ -1061,11 +863,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getQueryString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getQueryString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getReader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getReader():java.io.BufferedReader"></a>
@@ -1078,11 +876,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getReader</span><span class="params">()</span><span class="result">: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getReader():java.io.BufferedReader" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRealPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRealPath(s:String):String"></a>
@@ -1095,11 +889,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRealPath</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRealPath(s:String):String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRemoteAddr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRemoteAddr():String"></a>
@@ -1112,11 +902,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRemoteAddr</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRemoteAddr():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRemoteHost" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRemoteHost():String"></a>
@@ -1129,11 +915,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRemoteHost</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRemoteHost():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRemotePort" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRemotePort():Int"></a>
@@ -1146,11 +928,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRemotePort</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRemotePort():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRemoteUser" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRemoteUser():String"></a>
@@ -1163,11 +941,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRemoteUser</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRemoteUser():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRequestDispatcher" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRequestDispatcher(s:String):javax.servlet.RequestDispatcher"></a>
@@ -1180,11 +954,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRequestDispatcher</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javax.servlet.RequestDispatcher">RequestDispatcher</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRequestDispatcher(s:String):javax.servlet.RequestDispatcher" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRequestURI" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRequestURI():String"></a>
@@ -1197,11 +967,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRequestURI</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRequestURI():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRequestURL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRequestURL():StringBuffer"></a>
@@ -1214,11 +980,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRequestURL</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.StringBuffer">StringBuffer</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRequestURL():StringBuffer" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getRequestedSessionId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getRequestedSessionId():String"></a>
@@ -1231,11 +993,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getRequestedSessionId</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getRequestedSessionId():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getScheme" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getScheme():String"></a>
@@ -1248,11 +1006,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getScheme</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getScheme():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getServerName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getServerName():String"></a>
@@ -1265,11 +1019,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getServerName</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getServerName():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getServerPort" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getServerPort():Int"></a>
@@ -1282,11 +1032,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getServerPort</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getServerPort():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getServletPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getServletPath():String"></a>
@@ -1299,11 +1045,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getServletPath</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getServletPath():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getSession" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getSession(create:Boolean):javax.servlet.http.HttpSession"></a>
@@ -1316,11 +1058,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getSession</span><span class="params">(<span name="create">create: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="javax.servlet.http.HttpSession">HttpSession</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getSession(create:Boolean):javax.servlet.http.HttpSession" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getSession" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getSession():javax.servlet.http.HttpSession"></a>
@@ -1333,11 +1071,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getSession</span><span class="params">()</span><span class="result">: <span class="extype" name="javax.servlet.http.HttpSession">HttpSession</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getSession():javax.servlet.http.HttpSession" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#getUserPrincipal" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getUserPrincipal():java.security.Principal"></a>
@@ -1350,11 +1084,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">getUserPrincipal</span><span class="params">()</span><span class="result">: <span class="extype" name="java.security.Principal">Principal</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@getUserPrincipal():java.security.Principal" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -1367,11 +1097,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#headers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="headers:Map[String,List[String]]"></a>
@@ -1384,11 +1110,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">headers</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@headers:Map[String,List[String]]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -1401,11 +1123,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#isRequestedSessionIdFromCookie" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isRequestedSessionIdFromCookie():Boolean"></a>
@@ -1418,11 +1136,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">isRequestedSessionIdFromCookie</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@isRequestedSessionIdFromCookie():Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#isRequestedSessionIdFromURL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isRequestedSessionIdFromURL():Boolean"></a>
@@ -1435,11 +1149,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">isRequestedSessionIdFromURL</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@isRequestedSessionIdFromURL():Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#isRequestedSessionIdFromUrl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isRequestedSessionIdFromUrl():Boolean"></a>
@@ -1452,11 +1162,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">isRequestedSessionIdFromUrl</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@isRequestedSessionIdFromUrl():Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#isRequestedSessionIdValid" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isRequestedSessionIdValid():Boolean"></a>
@@ -1469,11 +1175,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">isRequestedSessionIdValid</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@isRequestedSessionIdValid():Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#isSecure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isSecure():Boolean"></a>
@@ -1486,11 +1188,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">isSecure</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@isSecure():Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#isUserInRole" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isUserInRole(user:String):Boolean"></a>
@@ -1503,11 +1201,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">isUserInRole</span><span class="params">(<span name="user">user: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@isUserInRole(user:String):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → HttpServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#localAddr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="localAddr:String"></a>
@@ -1520,11 +1214,7 @@ other than UTF-8.
       <span class="symbol">
         <span class="name">localAddr</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@localAddr:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The local address that the request was received on.</p><div class="fullcomment"><div class="comment cmt"><p>The local address that the request was received on.</p><p>If you change this you should probably change localName
 and serverName as well.
 </p></div></div>
@@ -1539,11 +1229,7 @@ and serverName as well.
       <span class="symbol">
         <span class="name">localName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@localName:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The local hostname that the request was received on.</p><div class="fullcomment"><div class="comment cmt"><p>The local hostname that the request was received on.</p><p>If you change this you should probably change localAddr
 and serverName as well.
 </p></div></div>
@@ -1558,11 +1244,7 @@ and serverName as well.
       <span class="symbol">
         <span class="name">localPort</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@localPort:Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The port that this request was received on.</p><div class="fullcomment"><div class="comment cmt"><p>The port that this request was received on. You should
 probably change serverPort as well if you change this.
 </p></div></div>
@@ -1577,11 +1259,7 @@ probably change serverPort as well if you change this.
       <span class="symbol">
         <span class="name">locales</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="java.util.Locale">Locale</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@locales:List[java.util.Locale]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The preferred locales for the client, in decreasing order
 of preference.</p><div class="fullcomment"><div class="comment cmt"><p>The preferred locales for the client, in decreasing order
 of preference. If not set, the default locale will be
@@ -1598,11 +1276,7 @@ used.
       <span class="symbol">
         <span class="name">method</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@method:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -1615,11 +1289,7 @@ used.
       <span class="symbol">
         <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -1632,11 +1302,7 @@ used.
       <span class="symbol">
         <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -1649,11 +1315,7 @@ used.
       <span class="symbol">
         <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#parameters" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parameters:List[(String,String)]"></a>
@@ -1666,11 +1328,7 @@ used.
       <span class="symbol">
         <span class="name">parameters</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@parameters:List[(String,String)]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The query parameters for the request.</p><div class="fullcomment"><div class="comment cmt"><p>The query parameters for the request. There are two main
 ways to set this List, either by modifying the parameters
 var directly, or by assigning to queryString, which will
@@ -1687,11 +1345,7 @@ parse the provided string into GET parameters.
       <span class="symbol">
         <span class="name">path</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@path:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#pathInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="pathInfo:String"></a>
@@ -1704,11 +1358,7 @@ parse the provided string into GET parameters.
       <span class="symbol">
         <span class="name">pathInfo</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@pathInfo:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#processUrl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="processUrl(url:java.net.URL):Unit"></a>
@@ -1721,11 +1371,7 @@ parse the provided string into GET parameters.
       <span class="symbol">
         <span class="name">processUrl</span><span class="params">(<span name="url">url: <span class="extype" name="java.net.URL">URL</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@processUrl(url:java.net.URL):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Set fields based on the given URL.</p><div class="fullcomment"><div class="comment cmt"><p>Set fields based on the given URL. There are several limitations:</p><ul><li>The host portion is used to set localAddr, localHost and serverName. You will
       need to manually set these if you want different behavior.</li><li>The userinfo field isn't processed. If you want to mock BASIC authentication,
       use the addBasicAuth method</li></ul></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>The URL to extract from</p></dd></dl></div>
@@ -1740,11 +1386,7 @@ parse the provided string into GET parameters.
       <span class="symbol">
         <span class="name">processUrl</span><span class="params">(<span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@processUrl(url:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Set fields based on the given url string.</p><div class="fullcomment"><div class="comment cmt"><p>Set fields based on the given url string. If the
 url begins with &quot;http&quot; it is assumed to be a full URL, and is
 processed with processUrl(URL). If the url begins with &quot;/&quot; then it's
@@ -1762,11 +1404,7 @@ assumed to be only the path and query string.
       <span class="symbol">
         <span class="name">protocol</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@protocol:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#queryString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="queryString:String"></a>
@@ -1779,11 +1417,7 @@ assumed to be only the path and query string.
       <span class="symbol">
         <span class="name">queryString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@queryString:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#queryString_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="queryString_=(q:String):Unit"></a>
@@ -1796,11 +1430,7 @@ assumed to be only the path and query string.
       <span class="symbol">
         <span title="gt4s: queryString_$eq" class="name">queryString_=</span><span class="params">(<span name="q">q: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@queryString_=(q:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#remoteAddr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="remoteAddr:String"></a>
@@ -1813,11 +1443,7 @@ assumed to be only the path and query string.
       <span class="symbol">
         <span class="name">remoteAddr</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@remoteAddr:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The address of the client that sent the request.</p><div class="fullcomment"><div class="comment cmt"><p>The address of the client that sent the request.</p><p>If you change this you should probably change remoteHost
 as well.
 </p></div></div>
@@ -1832,11 +1458,7 @@ as well.
       <span class="symbol">
         <span class="name">remoteHost</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@remoteHost:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The hostname of the client that sent the request.</p><div class="fullcomment"><div class="comment cmt"><p>The hostname of the client that sent the request.</p><p>If you change this you should probably change remoteAddr
 as well.
 </p></div></div>
@@ -1851,11 +1473,7 @@ as well.
       <span class="symbol">
         <span class="name">remotePort</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@remotePort:Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#removeAttribute" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="removeAttribute(key:String):Unit"></a>
@@ -1868,11 +1486,7 @@ as well.
       <span class="symbol">
         <span class="name">removeAttribute</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@removeAttribute(key:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#requestUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="requestUri:String"></a>
@@ -1885,11 +1499,7 @@ as well.
       <span class="symbol">
         <span class="name">requestUri</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@requestUri:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#scheme" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="scheme:String"></a>
@@ -1902,11 +1512,7 @@ as well.
       <span class="symbol">
         <span class="name">scheme</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@scheme:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#secure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="secure:Boolean"></a>
@@ -1919,11 +1525,7 @@ as well.
       <span class="symbol">
         <span class="name">secure</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@secure:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">Indicates whether the request is being handled by a
 secure protocol (e.</p><div class="fullcomment"><div class="comment cmt"><p>Indicates whether the request is being handled by a
 secure protocol (e.g. HTTPS). If you set the scheme
@@ -1940,11 +1542,7 @@ to https you should set this to true.
       <span class="symbol">
         <span class="name">serverName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@serverName:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#serverPort" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="serverPort:Int"></a>
@@ -1957,11 +1555,7 @@ to https you should set this to true.
       <span class="symbol">
         <span class="name">serverPort</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@serverPort:Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The port that this request was received on.</p><div class="fullcomment"><div class="comment cmt"><p>The port that this request was received on. You should
 probably change localPort as well if you change this.
 </p></div></div>
@@ -1976,11 +1570,7 @@ probably change localPort as well if you change this.
       <span class="symbol">
         <span class="name">servletPath</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@servletPath:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#session" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="session:javax.servlet.http.HttpSession"></a>
@@ -1993,11 +1583,7 @@ probably change localPort as well if you change this.
       <span class="symbol">
         <span class="name">session</span><span class="result">: <span class="extype" name="javax.servlet.http.HttpSession">HttpSession</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@session:javax.servlet.http.HttpSession" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#setAttribute" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setAttribute(key:String,value:Object):Unit"></a>
@@ -2010,11 +1596,7 @@ probably change localPort as well if you change this.
       <span class="symbol">
         <span class="name">setAttribute</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@setAttribute(key:String,value:Object):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#setCharacterEncoding" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="setCharacterEncoding(enc:String):Unit"></a>
@@ -2027,11 +1609,7 @@ probably change localPort as well if you change this.
       <span class="symbol">
         <span class="name">setCharacterEncoding</span><span class="params">(<span name="enc">enc: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@setCharacterEncoding(enc:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mocks.MockHttpServletRequest">MockHttpServletRequest</a> → ServletRequest</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#setDateHeader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="setDateHeader(s:String,l:Long):Unit"></a>
@@ -2044,11 +1622,7 @@ probably change localPort as well if you change this.
       <span class="symbol">
         <span class="name">setDateHeader</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="l">l: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@setDateHeader(s:String,l:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">A utility method to set the given header to an RFC1123 date
 based on the given long value (epoch seconds).</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -2062,11 +1636,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -2079,11 +1649,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#url" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="url:String"></a>
@@ -2096,11 +1662,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">url</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@url:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <p class="shortcomment cmt">The URL to extract from</p>
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#user" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="user:String"></a>
@@ -2113,11 +1675,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">user</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@user:String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#userPrincipal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="userPrincipal:java.security.Principal"></a>
@@ -2130,11 +1688,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">userPrincipal</span><span class="result">: <span class="extype" name="java.security.Principal">Principal</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@userPrincipal:java.security.Principal" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="net.liftweb.mocks.MockHttpServletRequest#userRoles" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="userRoles:Set[String]"></a>
@@ -2147,11 +1701,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">userRoles</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@userRoles:Set[String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -2164,11 +1714,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -2187,11 +1733,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -2210,11 +1752,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -2240,11 +1778,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name deprecated" title="Deprecated: (Since version 2.4) Use the &quot;attributes&quot; var instead">attr</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@attr:Map[String,Object]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
@@ -2260,11 +1794,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span title="gt4s: attr_$eq. Deprecated: (Since version 2.4) Use the &amp;quot;attributes&amp;quot; var instead" class="name deprecated">attr_=</span><span class="params">(<span name="attrs">attrs: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@attr_=(attrs:Map[String,Object]):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
@@ -2280,11 +1810,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span class="name deprecated" title="Deprecated: (Since version 2.4) Use the &quot;parameters&quot; var instead">parameterMap</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@parameterMap:scala.collection.immutable.Map[String,String]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
@@ -2300,11 +1826,7 @@ based on the given long value (epoch seconds).</p>
       <span class="symbol">
         <span title="gt4s: parameterMap_$eq. Deprecated: (Since version 2.4) Use the &amp;quot;parameters&amp;quot; var instead" class="name deprecated">parameterMap_=</span><span class="params">(<span name="params">params: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.MockHttpServletRequest@parameterMap_=(params:Map[String,List[String]]):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+      </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@deprecated</span>
               
@@ -2338,7 +1860,6 @@ based on the given long value (epoch seconds).</p>
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>

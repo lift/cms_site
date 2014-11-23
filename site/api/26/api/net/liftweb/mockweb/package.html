@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>mockweb - Lift Framework 2.6-SNAPSHOT - net.liftweb.mockweb</title>
-          <meta name="description" content="mockweb - Lift Framework 2.6 - SNAPSHOT - net.liftweb.mockweb" />
-          <meta name="keywords" content="mockweb Lift Framework 2.6 SNAPSHOT net.liftweb.mockweb" />
+          <title>mockweb - Lift Framework 2.6-RC2 - net.liftweb.mockweb</title>
+          <meta name="description" content="mockweb - Lift Framework 2.6 - RC2 - net.liftweb.mockweb" />
+          <meta name="keywords" content="mockweb Lift Framework 2.6 RC2 net.liftweb.mockweb" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <img src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
-        <h1>mockweb</h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.mockweb.package" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1>mockweb</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -66,7 +58,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="net.liftweb.mockweb.WebSpec" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+              <ol><li name="net.liftweb.mockweb.WebSpec" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="WebSpecextendsSpecificationwithXmlMatchers"></a>
       <a id="WebSpec:WebSpec"></a>
       <h4 class="signature">
@@ -77,20 +69,9 @@
       <span class="symbol">
         <a href="WebSpec.html"><span class="name">WebSpec</span></a><span class="result"> extends <span class="extype" name="org.specs2.mutable.Specification">Specification</span> with <span class="extype" name="org.specs2.matcher.XmlMatchers">XmlMatchers</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mockweb.package@WebSpecextendsSpecificationwithXmlMatchers" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">This trait provides Lift-specific extensions to the Specification
-base trait to simplify unit testing of your code.</p><div class="fullcomment"><div class="comment cmt"><p>This trait provides Lift-specific extensions to the Specification
-base trait to simplify unit testing of your code. In addition to
-the Scaladoc, Please see the
-source to WebSpecSpec.scala for an example of how to use this. This class
-allows you to optionally configure LiftRules for your spec. LiftRules rules
-are always used, so if you don't want that to happen you can just use MockWeb directly
-in your own custom spec and simply omit any LiftRules setup.
-</p></div></div>
+      </h4>
+      <p class="comment cmt">This trait provides Lift-specific extensions to the Specification
+base trait to simplify unit testing of your code.</p>
     </li></ol>
             </div>
 
@@ -98,7 +79,7 @@ in your own custom spec and simply omit any LiftRules setup.
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="net.liftweb.mockweb.MockWeb" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+              <ol><li name="net.liftweb.mockweb.MockWeb" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockWeb"></a>
       <a id="MockWeb:MockWeb"></a>
       <h4 class="signature">
@@ -109,17 +90,10 @@ in your own custom spec and simply omit any LiftRules setup.
       <span class="symbol">
         <a href="MockWeb$.html"><span class="name">MockWeb</span></a>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mockweb.package@MockWeb" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">The MockWeb object contains various methods to simplify
+      </h4>
+      <p class="comment cmt">The MockWeb object contains various methods to simplify
 unit testing in Lift outside of the full-blown testkit
-stack.</p><div class="fullcomment"><div class="comment cmt"><p>The MockWeb object contains various methods to simplify
-unit testing in Lift outside of the full-blown testkit
-stack.</p><p>There is partial support for configuration defined in the
-LiftRules object. This includes:</p><ul><li>early</li><li>statelessRewrite</li><li>statelessTest</li><li>statefulRewrite</li></ul></div></div>
+stack.</p>
     </li></ol>
             </div>
 
@@ -145,7 +119,6 @@ LiftRules object. This includes:</p><ul><li>early</li><li>statelessRewrite</li><
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>

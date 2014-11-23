@@ -1,18 +1,14 @@
-<!DOCTYPE html >
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>mocks - Lift Framework 2.6-SNAPSHOT - net.liftweb.mocks</title>
-          <meta name="description" content="mocks - Lift Framework 2.6 - SNAPSHOT - net.liftweb.mocks" />
-          <meta name="keywords" content="mocks Lift Framework 2.6 SNAPSHOT net.liftweb.mocks" />
+          <title>mocks - Lift Framework 2.6-RC2 - net.liftweb.mocks</title>
+          <meta name="description" content="mocks - Lift Framework 2.6 - RC2 - net.liftweb.mocks" />
+          <meta name="keywords" content="mocks Lift Framework 2.6 RC2 net.liftweb.mocks" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
-      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
-      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,11 +26,7 @@
       <div id="definition">
         <img src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
-        <h1>mocks</h1> <span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
+        <h1>mocks</h1>
       </div>
 
       <h4 id="signature" class="signature">
@@ -77,13 +69,9 @@
       <span class="symbol">
         <a href="DoNothingFilterChain.html"><span class="name">DoNothingFilterChain</span></a><span class="result"> extends <span class="extype" name="javax.servlet.FilterChain">FilterChain</span> with <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@DoNothingFilterChainextendsFilterChainwithLogger" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A FilterChain that does nothing.</p>
-    </li><li name="net.liftweb.mocks.MockFilterConfig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4>
+      <p class="comment cmt">A FilterChain that does nothing.</p>
+    </li><li name="net.liftweb.mocks.MockFilterConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockFilterConfigextendsFilterConfig"></a>
       <a id="MockFilterConfig:MockFilterConfig"></a>
       <h4 class="signature">
@@ -94,15 +82,9 @@
       <span class="symbol">
         <a href="MockFilterConfig.html"><span class="name">MockFilterConfig</span></a><span class="result"> extends <span class="extype" name="javax.servlet.FilterConfig">FilterConfig</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@MockFilterConfigextendsFilterConfig" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A Mock FilterConfig.</p><div class="fullcomment"><div class="comment cmt"><p>A Mock FilterConfig. Construct with a MockServletContext and pass into
-LiftFilter.init
-</p></div></div>
-    </li><li name="net.liftweb.mocks.MockHttpServletRequest" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4>
+      <p class="comment cmt">A Mock FilterConfig.</p>
+    </li><li name="net.liftweb.mocks.MockHttpServletRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockHttpServletRequestextendsHttpServletRequest"></a>
       <a id="MockHttpServletRequest:MockHttpServletRequest"></a>
       <h4 class="signature">
@@ -113,15 +95,9 @@ LiftFilter.init
       <span class="symbol">
         <a href="MockHttpServletRequest.html"><span class="name">MockHttpServletRequest</span></a><span class="result"> extends <span class="extype" name="javax.servlet.http.HttpServletRequest">HttpServletRequest</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@MockHttpServletRequestextendsHttpServletRequest" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A Mock ServletRequest.</p><div class="fullcomment"><div class="comment cmt"><p>A Mock ServletRequest. Change its state to create the request you are
-interested in. At the very least, you will need to change method and path.</p><p>There are several things that aren't supported:</p><ul><li>getRequestDispatcher - returns null always</li><li>getRequestedSessionId - always returns null. The related
-      isRequestedSessionId... methods similarly all return false</li><li>getRealPath - simply returns the input string</li></ul></div></div>
-    </li><li name="net.liftweb.mocks.MockHttpServletResponse" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4>
+      <p class="comment cmt">A Mock ServletRequest.</p>
+    </li><li name="net.liftweb.mocks.MockHttpServletResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockHttpServletResponseextendsHttpServletResponse"></a>
       <a id="MockHttpServletResponse:MockHttpServletResponse"></a>
       <h4 class="signature">
@@ -132,14 +108,8 @@ interested in. At the very least, you will need to change method and path.</p><p
       <span class="symbol">
         <a href="MockHttpServletResponse.html"><span class="name">MockHttpServletResponse</span></a><span class="result"> extends <span class="extype" name="javax.servlet.http.HttpServletResponse">HttpServletResponse</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@MockHttpServletResponseextendsHttpServletResponse" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A Mock HttpServletResponse.</p><div class="fullcomment"><div class="comment cmt"><p>A Mock HttpServletResponse. Take a peek at it's writer or
-outputStream to see what lift has written in response to your request
-</p></div></div>
+      </h4>
+      <p class="comment cmt">A Mock HttpServletResponse.</p>
     </li><li name="net.liftweb.mocks.MockHttpSession" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockHttpSessionextendsHttpSession"></a>
       <a id="MockHttpSession:MockHttpSession"></a>
@@ -151,13 +121,9 @@ outputStream to see what lift has written in response to your request
       <span class="symbol">
         <a href="MockHttpSession.html"><span class="name">MockHttpSession</span></a><span class="result"> extends <span class="extype" name="javax.servlet.http.HttpSession">HttpSession</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@MockHttpSessionextendsHttpSession" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A Mock HttpSession implementation.</p>
-    </li><li name="net.liftweb.mocks.MockServletContext" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4>
+      <p class="comment cmt">A Mock HttpSession implementation.</p>
+    </li><li name="net.liftweb.mocks.MockServletContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockServletContextextendsServletContext"></a>
       <a id="MockServletContext:MockServletContext"></a>
       <h4 class="signature">
@@ -168,14 +134,9 @@ outputStream to see what lift has written in response to your request
       <span class="symbol">
         <a href="MockServletContext.html"><span class="name">MockServletContext</span></a><span class="result"> extends <span class="extype" name="javax.servlet.ServletContext">ServletContext</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@MockServletContextextendsServletContext" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A Mock ServletContext.</p><div class="fullcomment"><div class="comment cmt"><p>A Mock ServletContext. LiftFilter expects a ServletContext inside a FilterConfig
-</p></div></div>
-    </li><li name="net.liftweb.mocks.MockServletInputStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4>
+      <p class="comment cmt">A Mock ServletContext.</p>
+    </li><li name="net.liftweb.mocks.MockServletInputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockServletInputStreamextendsServletInputStream"></a>
       <a id="MockServletInputStream:MockServletInputStream"></a>
       <h4 class="signature">
@@ -186,14 +147,9 @@ outputStream to see what lift has written in response to your request
       <span class="symbol">
         <a href="MockServletInputStream.html"><span class="name">MockServletInputStream</span></a><span class="result"> extends <span class="extype" name="javax.servlet.ServletInputStream">ServletInputStream</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@MockServletInputStreamextendsServletInputStream" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A Mock ServletInputStream.</p><div class="fullcomment"><div class="comment cmt"><p>A Mock ServletInputStream. Pass in any ol InputStream like a ByteArrayInputStream.
-</p></div></div>
-    </li><li name="net.liftweb.mocks.MockServletOutputStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4>
+      <p class="comment cmt">A Mock ServletInputStream.</p>
+    </li><li name="net.liftweb.mocks.MockServletOutputStream" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="MockServletOutputStreamextendsServletOutputStream"></a>
       <a id="MockServletOutputStream:MockServletOutputStream"></a>
       <h4 class="signature">
@@ -204,13 +160,8 @@ outputStream to see what lift has written in response to your request
       <span class="symbol">
         <a href="MockServletOutputStream.html"><span class="name">MockServletOutputStream</span></a><span class="result"> extends <span class="extype" name="javax.servlet.ServletOutputStream">ServletOutputStream</span></span>
       </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#net.liftweb.mocks.package@MockServletOutputStreamextendsServletOutputStream" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">A Mock ServletOutputStream.</p><div class="fullcomment"><div class="comment cmt"><p>A Mock ServletOutputStream. Pass in any ol' OutputStream like a ByteArrayOuputStream.
-</p></div></div>
+      </h4>
+      <p class="comment cmt">A Mock ServletOutputStream.</p>
     </li></ol>
             </div>
 
@@ -240,7 +191,6 @@ outputStream to see what lift has written in response to your request
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-
-
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
     </body>
       </html>
