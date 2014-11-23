@@ -1,0 +1,80 @@
+<cms path="/26_rc2" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2014/11/23">
+  <tag name="sub" value="happening">
+    <b>Lift 2.6-RC2</b>
+  </tag>
+
+  <tag name="desc">
+    2014/11/23 The Lift team is proud to announce Release Candidate 2 of Lift 2.6.
+  </tag>
+
+  <content>
+    <lift:surround with="default" at="content">
+      <head>
+        <title>Lift :: 2.6-RC2</title>
+      </head>
+    <div class="row-fluid">
+      <div class="span12">
+
+        <div class="row-fluid">
+          <div class="span9">  
+            
+        <div>
+          <div class="page-header">
+          <h1>Announcing Lift 2.6-RC2</h1>
+          </div>
+          <em>November 23, 2014</em>
+
+          <p>The Lift team proudly announces the <a href="/download">availability</a>
+            of Release Candidate 2 of Lift version 2.6.
+          </p>
+          <p>Lift is the most powerful, secure and mature web framework available today. There are
+            <a href="http://seventhings.liftweb.net/" target="_blank">Seven Things</a>
+            that distinguish Lift from other web frameworks.
+          </p>
+
+          <p>Lift applications are:</p>
+          <ul>
+            <li>Secure -- Lift apps are resistant to common vulnerabilities including many of the OWASP Top 10</li>
+            <li>Developer centric -- Lift apps are fast to build, concise and easy to maintain</li>
+            <li>Scalable -- Lift apps are high performance and scale in the real world to handle insane traffic levels</li>
+            <li>Interactive like a desktop app -- Lift's Comet support is unparalleled and Lift's ajax support is super-easy and very secure</li>
+            <li>Modular -- Lift apps can benefit from, easy to integrate, pre built modules</li>
+            <li>Designer friendly -- Lift apps can be developed in a totally designer friendly way</li>
+          </ul>
+          <p>Read an <a href="/lift_overview">overview</a> of how Lift achieves these important goals.</p>
+          <p>Lift open source software licensed under an Apache 2.0 license.</p>
+          
+          <!-- **** START OF CHANGES PASTED FROM GITHUB RELEASE NOTES *********************** -->
+
+          <div class="markdown-body">
+            <h2>Bug Fixes</h2>
+
+            <ul class="task-list">
+              <li>Fix for the conflict between the private class scala.io.Position and our implementation of it. Hat tip to <a href="https://github.com/fmpwizard" class="user-mention">@fmpwizard</a> to fixing this in <a href="https://github.com/lift/framework/pull/1636" class="issue-link" title="Renaming the Position.scala file to ScalaPosition.scala to avoid">#1636</a>.</li>
+              <li>Fix for the incorrect manipulation of <code>ajaxPostTimeout</code> on the server, which caused threads processing an ajax request to stick around longer than they should have. Penguin tip to <a href="https://github.com/fmpwizard" class="user-mention">@fmpwizard</a> for fixing this in <a href="https://github.com/lift/framework/pull/1637" class="issue-link" title="ajaxPostTimeout doesn't have to be multiplied by 1000, because it is use...">#1637</a>.</li>
+              <li>Added an implicit conversion from tuple to <code>SelectableOption</code> for backward compatibility niceness. Bacon tip to <a href="https://github.com/fmpwizard" class="user-mention">@fmpwizard</a> for fixing this in <a href="https://github.com/lift/framework/pull/1630" class="issue-link" title="Add implicit from tuple to SelectableOption">#1630</a>.</li>
+              <li>Removed some unnecessary synchronization for Vars. Shoe tip to <a href="https://github.com/davewhittaker" class="user-mention">@davewhittaker</a> for making that happen in <a href="https://github.com/lift/framework/pull/1631" class="issue-link" title="Remove unnecessary synchronization">#1631</a>.</li>
+              <li>Return <code>DefaultConnectionIdentifier.jndiName</code> to being a var, with an added deprecation warning. JNDI tip to <a href="https://github.com/eltimn" class="user-mention">@eltimn</a> for making that happen in <a href="https://github.com/lift/framework/pull/1623" class="issue-link" title="Revert DefaultConnectionIdentifier.jndiName to var">#1623</a>.</li>
+            </ul>
+          </div>
+
+
+
+
+          <!-- **** END ********************************************************************* -->
+
+
+          <p>Please join the <a href="https://groups.google.com/group/liftweb" target="_blank">Lift Community</a>
+            and enjoy building awesome apps with Lift.</p>
+
+        </div>
+          </div>      
+	        <div class="span3">  
+	          <lift:embed what="col2"/> 
+            </div>
+        </div>     
+        </div>  
+      </div> 
+    </lift:surround>
+  </content>
+</cms>
