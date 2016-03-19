@@ -1,7 +1,7 @@
 <cms path="/logocontainer" type="html" locale="en_US" host="liftweb.net">
 	<content>
 		<html xmlns="http://www.w3.org/1999/xhtml">
-			
+
 				<head>
 					<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 					<meta http-equiv="Content-Language" content="en-US" />
@@ -64,7 +64,7 @@
 								      $(document).ready(function(){
                                         $('#lh-quote').carousel({
                                           interval: 17000
-                                        });       
+                                        });
 								      });
 								    </script>
 									<div class="row-fluid">
@@ -109,7 +109,7 @@
 								</div>
 
 								<div id="footer">
-								    
+
 									<div class="ftr-links">
 										<lift:xmenu active_class="active">
 											<a menu:href="index">
@@ -119,7 +119,7 @@
 									</div>
                                     <hr class="tight"/>
 									<div class="ftr-copy">Copyright &copy;
-										2010-2015 WorldWide Conferencing, LLC
+										2010-2016 WorldWide Conferencing, LLC
 									</div>
 									<p>
 										Lift performance and tuning is courtesy of
@@ -139,7 +139,7 @@
 										<a href="https://telegr.am">Telegram</a>
 									</p>
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
@@ -155,7 +155,7 @@
 
 				</body>
 
-			
+
 		</html>
 	</content>
 </cms>
