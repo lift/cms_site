@@ -42,7 +42,6 @@
                     <hr />
                   </dd>
                   <dd>
-                  <dd>
                     <i class="icon-download-alt" style="vertical-align: midle;"></i>
                     <span class="label label-info">Lift 2.6:</span>
                     <a href="https://github.com/lift/lift_26_sbt/tarball/master">TAR</a>
