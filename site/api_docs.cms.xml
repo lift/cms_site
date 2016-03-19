@@ -18,6 +18,13 @@
 	  						<h1>Lift API Docs</h1>
               </div>
               <p>
+                <a href="/api/30/api/">Lift 3.0 API documentation</a>
+                and the
+                <a href="/api/30/liftweb-3.0.tar.gz">tarball</a>
+                .
+              </p>
+              <p>
+              <p>
                 <a href="/api/26/api/">Lift 2.6 API documentation</a>
                 and the
                 <a href="/api/26/liftweb-2.6.tar.gz">tarball</a>

@@ -1,0 +1,1263 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>DB - Lift Framework 3.0-SNAPSHOT - net.liftweb.db.DB</title>
+          <meta name="description" content="DB - Lift Framework 3.0 - SNAPSHOT - net.liftweb.db.DB" />
+          <meta name="keywords" content="DB Lift Framework 3.0 SNAPSHOT net.liftweb.db.DB" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.db.DB';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="DB$.html" title="See companion object"><img alt="Trait/Object" src="../../../lib/trait_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.db">db</a></p>
+        <h1><a href="DB$.html" title="See companion object">DB</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="DB$.html" title="See companion object">object DB</a>
+            | <a href="package.html" class="extype" name="net.liftweb.db">package db</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DB</span><span class="result"> extends <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.db.DB"><span>DB</span></li><li class="in" name="net.liftweb.common.Loggable"><span>Loggable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.db.DB.ConnectionHolder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConnectionHolderextendsProductwithSerializable"></a>
+      <a id="ConnectionHolder:ConnectionHolder"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DB$ConnectionHolder.html"><span class="name">ConnectionHolder</span></a><span class="params">(<span name="conn">conn: <a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a></span>, <span name="cnt">cnt: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="postTransaction">postTransaction: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>, <span name="rolledBack">rolledBack: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@ConnectionHolderextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB.LogFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LogFunc=(net.liftweb.db.DBLog,Long)=&gt;Any"></a>
+      <a id="LogFunc:LogFunc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LogFunc</span><span class="result"> = (<a href="DBLog.html" class="extype" name="net.liftweb.db.DBLog">DBLog</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@LogFunc=(net.liftweb.db.DBLog,Long)=&gt;Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.db.DB#addLogFunc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addLogFunc(f:DB.this.LogFunc):List[DB.this.LogFunc]"></a>
+      <a id="addLogFunc(LogFunc):List[LogFunc]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addLogFunc</span><span class="params">(<span name="f">f: <a href="#LogFunc=(net.liftweb.db.DBLog,Long)=&gt;Any" class="extmbr" name="net.liftweb.db.DB.LogFunc">LogFunc</a></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#LogFunc=(net.liftweb.db.DBLog,Long)=&gt;Any" class="extmbr" name="net.liftweb.db.DB.LogFunc">LogFunc</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@addLogFunc(f:DB.this.LogFunc):List[DB.this.LogFunc]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#appendPostTransaction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="appendPostTransaction(func:Boolean=&gt;Unit):Unit"></a>
+      <a id="appendPostTransaction((Boolean)⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appendPostTransaction</span><span class="params">(<span name="func">func: (<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@appendPostTransaction(func:Boolean=&gt;Unit):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Append function to be invoked after the current transaction on DefaultConnectionIdentifier has ended</p>
+    </li><li name="net.liftweb.db.DB#appendPostTransaction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="appendPostTransaction(name:net.liftweb.util.ConnectionIdentifier,func:Boolean=&gt;Unit):Unit"></a>
+      <a id="appendPostTransaction(ConnectionIdentifier,(Boolean)⇒Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appendPostTransaction</span><span class="params">(<span name="name">name: <a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a></span>, <span name="func">func: (<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@appendPostTransaction(name:net.liftweb.util.ConnectionIdentifier,func:Boolean=&gt;Unit):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Append a function to be invoked after the transaction on the specified connection identifier has ended.</p><div class="fullcomment"><div class="comment cmt"><p>Append a function to be invoked after the transaction on the specified connection identifier has ended.
+The value passed to the function indicates true for success/commit or false for failure/rollback.</p><p>Note: the function will only be called when automatic transaction management is in effect, either by executing within
+the context of a buildLoanWrapper or a DB.use {}
+</p></div></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.db.DB#buildLoanWrapper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="buildLoanWrapper(eager:Boolean,in:List[net.liftweb.util.ConnectionIdentifier]):net.liftweb.util.LoanWrapper"></a>
+      <a id="buildLoanWrapper(Boolean,List[ConnectionIdentifier]):LoanWrapper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildLoanWrapper</span><span class="params">(<span name="eager">eager: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="in">in: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a>]</span>)</span><span class="result">: <a href="../util/LoanWrapper.html" class="extype" name="net.liftweb.util.LoanWrapper">LoanWrapper</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@buildLoanWrapper(eager:Boolean,in:List[net.liftweb.util.ConnectionIdentifier]):net.liftweb.util.LoanWrapper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Build a LoanWrapper to pass into S.addAround() to make requests for
+the List of ConnectionIdentifiers transactional for the complete HTTP request
+</p>
+    </li><li name="net.liftweb.db.DB#buildLoanWrapper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="buildLoanWrapper(eager:Boolean):net.liftweb.util.LoanWrapper"></a>
+      <a id="buildLoanWrapper(Boolean):LoanWrapper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildLoanWrapper</span><span class="params">(<span name="eager">eager: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="../util/LoanWrapper.html" class="extype" name="net.liftweb.util.LoanWrapper">LoanWrapper</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@buildLoanWrapper(eager:Boolean):net.liftweb.util.LoanWrapper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Build a LoanWrapper to pass into S.addAround() to make requests for
+the DefaultConnectionIdentifier transactional for the complete HTTP request
+</p>
+    </li><li name="net.liftweb.db.DB#buildLoanWrapper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="buildLoanWrapper(in:List[net.liftweb.util.ConnectionIdentifier]):net.liftweb.util.LoanWrapper"></a>
+      <a id="buildLoanWrapper(List[ConnectionIdentifier]):LoanWrapper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildLoanWrapper</span><span class="params">(<span name="in">in: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a>]</span>)</span><span class="result">: <a href="../util/LoanWrapper.html" class="extype" name="net.liftweb.util.LoanWrapper">LoanWrapper</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@buildLoanWrapper(in:List[net.liftweb.util.ConnectionIdentifier]):net.liftweb.util.LoanWrapper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Build a LoanWrapper to pass into S.addAround() to make requests for
+the List of ConnectionIdentifiers transactional for the complete HTTP request
+</p>
+    </li><li name="net.liftweb.db.DB#buildLoanWrapper" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="buildLoanWrapper():net.liftweb.util.LoanWrapper"></a>
+      <a id="buildLoanWrapper():LoanWrapper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildLoanWrapper</span><span class="params">()</span><span class="result">: <a href="../util/LoanWrapper.html" class="extype" name="net.liftweb.util.LoanWrapper">LoanWrapper</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@buildLoanWrapper():net.liftweb.util.LoanWrapper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Build a LoanWrapper to pass into S.addAround() to make requests for
+the DefaultConnectionIdentifier transactional for the complete HTTP request
+</p>
+    </li><li name="net.liftweb.db.DB#checkNull" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="checkNull[T](rs:java.sql.ResultSet,pos:Int,res:=&gt;T):T"></a>
+      <a id="checkNull[T](ResultSet,Int,⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">checkNull</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="rs">rs: <span class="extype" name="java.sql.ResultSet">ResultSet</span></span>, <span name="pos">pos: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="res">res: ⇒ <span class="extype" name="net.liftweb.db.DB.checkNull.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.checkNull.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@checkNull[T](rs:java.sql.ResultSet,pos:Int,res:=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.db.DB#currentConnection" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="currentConnection:net.liftweb.common.Box[net.liftweb.db.SuperConnection]"></a>
+      <a id="currentConnection:Box[SuperConnection]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentConnection</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@currentConnection:net.liftweb.common.Box[net.liftweb.db.SuperConnection]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#defaultReservedWords" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultReservedWords:scala.collection.immutable.Set[String]"></a>
+      <a id="defaultReservedWords:Set[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultReservedWords</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.immutable.Set" class="extype" target="_top">Set</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@defaultReservedWords:scala.collection.immutable.Set[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The default reserved words.</p><div class="fullcomment"><div class="comment cmt"><p>The default reserved words.</p><p>TODO : Maybe this should be refactored to allow for driver-specific reserved words
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#defineConnectionManager" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="defineConnectionManager(name:net.liftweb.util.ConnectionIdentifier,mgr:net.liftweb.db.ConnectionManager):Unit"></a>
+      <a id="defineConnectionManager(ConnectionIdentifier,ConnectionManager):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defineConnectionManager</span><span class="params">(<span name="name">name: <a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a></span>, <span name="mgr">mgr: <a href="ConnectionManager.html" class="extype" name="net.liftweb.db.ConnectionManager">ConnectionManager</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@defineConnectionManager(name:net.liftweb.util.ConnectionIdentifier,mgr:net.liftweb.db.ConnectionManager):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#doWithConnectionManagers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="doWithConnectionManagers[T](mgrs:(net.liftweb.util.ConnectionIdentifier,net.liftweb.db.ConnectionManager)*)(f:=&gt;T):T"></a>
+      <a id="doWithConnectionManagers[T]((ConnectionIdentifier,ConnectionManager)*)(⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doWithConnectionManagers</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="mgrs">mgrs: (<a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a>, <a href="ConnectionManager.html" class="extype" name="net.liftweb.db.ConnectionManager">ConnectionManager</a>)*</span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.db.DB.doWithConnectionManagers.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.doWithConnectionManagers.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@doWithConnectionManagers[T](mgrs:(net.liftweb.util.ConnectionIdentifier,net.liftweb.db.ConnectionManager)*)(f:=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Allows you to override the connection manager associated with particular connection identifiers for the duration
+of the call.</p>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.db.DB#exec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="exec[T](statement:java.sql.PreparedStatement)(f:java.sql.ResultSet=&gt;T):T"></a>
+      <a id="exec[T](PreparedStatement)((ResultSet)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="statement">statement: <span class="extype" name="java.sql.PreparedStatement">PreparedStatement</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.sql.ResultSet">ResultSet</span>) ⇒ <span class="extype" name="net.liftweb.db.DB.exec.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.exec.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@exec[T](statement:java.sql.PreparedStatement)(f:java.sql.ResultSet=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes  { @code statement } and converts the  { @code ResultSet } to model
+instance  { @code T } using  { @code f }
+</p>
+    </li><li name="net.liftweb.db.DB#exec" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="exec[T](db:net.liftweb.db.SuperConnection,query:String)(f:java.sql.ResultSet=&gt;T):T"></a>
+      <a id="exec[T](SuperConnection,String)((ResultSet)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exec</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="db">db: <a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a></span>, <span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.sql.ResultSet">ResultSet</span>) ⇒ <span class="extype" name="net.liftweb.db.DB.exec.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.exec.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@exec[T](db:net.liftweb.db.SuperConnection,query:String)(f:java.sql.ResultSet=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.db.DB#globalDefaultSchemaName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="globalDefaultSchemaName:net.liftweb.common.Box[String]"></a>
+      <a id="globalDefaultSchemaName:Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">globalDefaultSchemaName</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@globalDefaultSchemaName:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.db.DB#jndiJdbcConnAvailable_?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jndiJdbcConnAvailable_?:Boolean"></a>
+      <a id="jndiJdbcConnAvailable_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: jndiJdbcConnAvailable_$qmark" class="name">jndiJdbcConnAvailable_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@jndiJdbcConnAvailable_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">can we get a JDBC connection from JNDI?
+</p>
+    </li><li name="net.liftweb.common.Loggable#logger" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:net.liftweb.common.Logger"></a>
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@logger:net.liftweb.common.Logger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></dd></dl></div>
+    </li><li name="net.liftweb.db.DB#loggingEnabled_?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="loggingEnabled_?:Boolean"></a>
+      <a id="loggingEnabled_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: loggingEnabled_$qmark" class="name">loggingEnabled_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@loggingEnabled_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.db.DB#performQuery" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="performQuery(query:String):(List[String],List[List[Any]])"></a>
+      <a id="performQuery(String):(List[String],List[List[Any]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">performQuery</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@performQuery(query:String):(List[String],List[List[Any]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#performQuery" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="performQuery(query:String,params:List[Any],connectionIdentifier:net.liftweb.util.ConnectionIdentifier):(List[String],List[List[Any]])"></a>
+      <a id="performQuery(String,List[Any],ConnectionIdentifier):(List[String],List[List[Any]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">performQuery</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>, <span name="connectionIdentifier">connectionIdentifier: <a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a></span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@performQuery(query:String,params:List[Any],connectionIdentifier:net.liftweb.util.ConnectionIdentifier):(List[String],List[List[Any]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes the given parameterized query string with the given parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Executes the given parameterized query string with the given parameters.
+Parameters are substituted in order. For Date/Time types, passing a java.util.Date will result in a
+Timestamp parameter. If you want a specific SQL Date/Time type, use the corresponding
+java.sql.Date, java.sql.Time, or java.sql.Timestamp classes.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#performQuery" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="performQuery(query:String,params:List[Any]):(List[String],List[List[Any]])"></a>
+      <a id="performQuery(String,List[Any]):(List[String],List[List[Any]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">performQuery</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@performQuery(query:String,params:List[Any]):(List[String],List[List[Any]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes the given parameterized query string with the given parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Executes the given parameterized query string with the given parameters.
+Parameters are substituted in order. For Date/Time types, passing a java.util.Date will result in a
+Timestamp parameter. If you want a specific SQL Date/Time type, use the corresponding
+java.sql.Date, java.sql.Time, or java.sql.Timestamp classes.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#prepareStatement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prepareStatement[T](statement:String,autoColumns:Array[String],conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T"></a>
+      <a id="prepareStatement[T](String,Array[String],SuperConnection)((PreparedStatement)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prepareStatement</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="statement">statement: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="autoColumns">autoColumns: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="conn">conn: <a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.sql.PreparedStatement">PreparedStatement</span>) ⇒ <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@prepareStatement[T](statement:String,autoColumns:Array[String],conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Prepares the given statement and then passes it to the given function for use.</p><div class="fullcomment"><div class="comment cmt"><p>Prepares the given statement and then passes it to the given function for use. This method
+represents a loan pattern, and will automatically handle creation and closing of the
+PreparedStatement.</p><p>If the driver supports it, generated keys for the given column names can be retrieved.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#prepareStatement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prepareStatement[T](statement:String,autoColumns:Array[Int],conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T"></a>
+      <a id="prepareStatement[T](String,Array[Int],SuperConnection)((PreparedStatement)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prepareStatement</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="statement">statement: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="autoColumns">autoColumns: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>, <span name="conn">conn: <a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.sql.PreparedStatement">PreparedStatement</span>) ⇒ <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@prepareStatement[T](statement:String,autoColumns:Array[Int],conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Prepares the given statement and then passes it to the given function for use.</p><div class="fullcomment"><div class="comment cmt"><p>Prepares the given statement and then passes it to the given function for use. This method
+represents a loan pattern, and will automatically handle creation and closing of the
+PreparedStatement.</p><p>If the driver supports it, generated keys for the given column indices can be retrieved.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#prepareStatement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prepareStatement[T](statement:String,autokeys:Int,conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T"></a>
+      <a id="prepareStatement[T](String,Int,SuperConnection)((PreparedStatement)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prepareStatement</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="statement">statement: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="autokeys">autokeys: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="conn">conn: <a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.sql.PreparedStatement">PreparedStatement</span>) ⇒ <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@prepareStatement[T](statement:String,autokeys:Int,conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Prepares the given statement and then passes it to the given function for use.</p><div class="fullcomment"><div class="comment cmt"><p>Prepares the given statement and then passes it to the given function for use. This method
+represents a loan pattern, and will automatically handle creation and closing of the
+PreparedStatement.</p><p>Retrieval of generated keys is controlled with the autokeys parameter, corresponding to the
+constants defined on java.sql.Statement: RETURN_GENERATED_KEYS or NO_GENERATED_KEYS
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#prepareStatement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prepareStatement[T](statement:String,conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T"></a>
+      <a id="prepareStatement[T](String,SuperConnection)((PreparedStatement)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prepareStatement</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="statement">statement: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="conn">conn: <a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.sql.PreparedStatement">PreparedStatement</span>) ⇒ <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.prepareStatement.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@prepareStatement[T](statement:String,conn:net.liftweb.db.SuperConnection)(f:java.sql.PreparedStatement=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Prepares the given statement and then passes it to the given function for use.</p><div class="fullcomment"><div class="comment cmt"><p>Prepares the given statement and then passes it to the given function for use. This method
+represents a loan pattern, and will automatically handle creation and closing of the
+PreparedStatement.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#queryCollector" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="queryCollector:DB.this.LogFunc"></a>
+      <a id="queryCollector:LogFunc"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">queryCollector</span><span class="result">: <a href="#LogFunc=(net.liftweb.db.DBLog,Long)=&gt;Any" class="extmbr" name="net.liftweb.db.DB.LogFunc">LogFunc</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@queryCollector:DB.this.LogFunc" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">queryCollector can be used to collect all statements executed in a single request when passed to addLogFunc</p><div class="fullcomment"><div class="comment cmt"><p>queryCollector can be used to collect all statements executed in a single request when passed to addLogFunc</p><p>Use S.queryLog to get the list of (statement, duration) entries or set an analyzer function using
+S.addAnalyzer
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#queryTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="queryTimeout:net.liftweb.common.Box[Int]"></a>
+      <a id="queryTimeout:Box[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">queryTimeout</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@queryTimeout:net.liftweb.common.Box[Int]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#reservedWords" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reservedWords:scala.collection.immutable.Set[String]"></a>
+      <a id="reservedWords:Set[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reservedWords</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.immutable.Set" class="extype" target="_top">Set</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@reservedWords:scala.collection.immutable.Set[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The SQL reserved words.</p><div class="fullcomment"><div class="comment cmt"><p>The SQL reserved words.  These words will be changed if they are used for column or table names.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#resultSetTo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resultSetTo(rs:java.sql.ResultSet):(List[String],List[List[String]])"></a>
+      <a id="resultSetTo(ResultSet):(List[String],List[List[String]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resultSetTo</span><span class="params">(<span name="rs">rs: <span class="extype" name="java.sql.ResultSet">ResultSet</span></span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@resultSetTo(rs:java.sql.ResultSet):(List[String],List[List[String]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#resultSetToAny" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resultSetToAny(rs:java.sql.ResultSet):(List[String],List[List[Any]])"></a>
+      <a id="resultSetToAny(ResultSet):(List[String],List[List[Any]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resultSetToAny</span><span class="params">(<span name="rs">rs: <span class="extype" name="java.sql.ResultSet">ResultSet</span></span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@resultSetToAny(rs:java.sql.ResultSet):(List[String],List[List[Any]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#rollback" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rollback:Unit"></a>
+      <a id="rollback:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rollback</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@rollback:Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#rollback" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rollback(name:net.liftweb.util.ConnectionIdentifier):Unit"></a>
+      <a id="rollback(ConnectionIdentifier):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rollback</span><span class="params">(<span name="name">name: <a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@rollback(name:net.liftweb.util.ConnectionIdentifier):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#runQuery" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="runQuery(query:String):(List[String],List[List[String]])"></a>
+      <a id="runQuery(String):(List[String],List[List[String]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runQuery</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@runQuery(query:String):(List[String],List[List[String]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.db.DB#runQuery" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runQuery(query:String,params:List[Any],connectionIdentifier:net.liftweb.util.ConnectionIdentifier):(List[String],List[List[String]])"></a>
+      <a id="runQuery(String,List[Any],ConnectionIdentifier):(List[String],List[List[String]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runQuery</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>, <span name="connectionIdentifier">connectionIdentifier: <a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a></span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@runQuery(query:String,params:List[Any],connectionIdentifier:net.liftweb.util.ConnectionIdentifier):(List[String],List[List[String]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes the given parameterized query string with the given parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Executes the given parameterized query string with the given parameters.
+Parameters are substituted in order. For Date/Time types, passing a java.util.Date will result in a
+Timestamp parameter. If you want a specific SQL Date/Time type, use the corresponding
+java.sql.Date, java.sql.Time, or java.sql.Timestamp classes.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#runQuery" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runQuery(query:String,params:List[Any]):(List[String],List[List[String]])"></a>
+      <a id="runQuery(String,List[Any]):(List[String],List[List[String]])"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runQuery</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>)</span><span class="result">: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]])</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@runQuery(query:String,params:List[Any]):(List[String],List[List[String]])" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes the given parameterized query string with the given parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Executes the given parameterized query string with the given parameters.
+Parameters are substituted in order. For Date/Time types, passing a java.util.Date will result in a
+Timestamp parameter. If you want a specific SQL Date/Time type, use the corresponding
+java.sql.Date, java.sql.Time, or java.sql.Timestamp classes.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#runUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runUpdate(query:String,params:List[Any],connectionIdentifier:net.liftweb.util.ConnectionIdentifier):Int"></a>
+      <a id="runUpdate(String,List[Any],ConnectionIdentifier):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runUpdate</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>, <span name="connectionIdentifier">connectionIdentifier: <a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@runUpdate(query:String,params:List[Any],connectionIdentifier:net.liftweb.util.ConnectionIdentifier):Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes the given parameterized update string with the given parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Executes the given parameterized update string with the given parameters.
+Parameters are substituted in order. For Date/Time types, passing a java.util.Date will result in a
+Timestamp parameter. If you want a specific SQL Date/Time type, use the corresponding
+java.sql.Date, java.sql.Time, or java.sql.Timestamp classes.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#runUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runUpdate(query:String,params:List[Any]):Int"></a>
+      <a id="runUpdate(String,List[Any]):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runUpdate</span><span class="params">(<span name="query">query: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@runUpdate(query:String,params:List[Any]):Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes the given parameterized update string with the given parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Executes the given parameterized update string with the given parameters.
+Parameters are substituted in order. For Date/Time types, passing a java.util.Date will result in a
+Timestamp parameter. If you want a specific SQL Date/Time type, use the corresponding
+java.sql.Date, java.sql.Time, or java.sql.Timestamp classes.
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#statement" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="statement[T](db:net.liftweb.db.SuperConnection)(f:java.sql.Statement=&gt;T):T"></a>
+      <a id="statement[T](SuperConnection)((Statement)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">statement</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="db">db: <a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.sql.Statement">Statement</span>) ⇒ <span class="extype" name="net.liftweb.db.DB.statement.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.statement.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@statement[T](db:net.liftweb.db.SuperConnection)(f:java.sql.Statement=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.db.DB#use" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="use[T](name:net.liftweb.util.ConnectionIdentifier)(f:net.liftweb.db.SuperConnection=&gt;T):T"></a>
+      <a id="use[T](ConnectionIdentifier)((SuperConnection)⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">use</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: <a href="../util/ConnectionIdentifier.html" class="extype" name="net.liftweb.util.ConnectionIdentifier">ConnectionIdentifier</a></span>)</span><span class="params">(<span name="f">f: (<a href="SuperConnection.html" class="extype" name="net.liftweb.db.SuperConnection">SuperConnection</a>) ⇒ <span class="extype" name="net.liftweb.db.DB.use.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.db.DB.use.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@use[T](name:net.liftweb.util.ConnectionIdentifier)(f:net.liftweb.db.SuperConnection=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Executes function  { @code f } with the connection named  { @code name }.</p><div class="fullcomment"><div class="comment cmt"><p>Executes function  { @code f } with the connection named  { @code name }. Releases the connection
+before returning.</p><p>Only use within a stateful request
+</p></div></div>
+    </li><li name="net.liftweb.db.DB#userReservedWords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="userReservedWords:net.liftweb.common.Box[scala.collection.immutable.Set[String]]"></a>
+      <a id="userReservedWords:Box[Set[String]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">userReservedWords</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.immutable.Set" class="extype" target="_top">Set</a>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@userReservedWords:net.liftweb.common.Box[scala.collection.immutable.Set[String]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> If you need to change some of the reserved word, you can supply your own set in Boot.scala:
+DB.userReservedWords = Full(Set(&quot;foo&quot;, &quot;bar&quot;))
+</p>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.db.DB@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.common.Loggable">
+              <h3>Inherited from <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

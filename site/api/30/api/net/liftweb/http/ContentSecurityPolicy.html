@@ -1,0 +1,730 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>ContentSecurityPolicy - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.ContentSecurityPolicy</title>
+          <meta name="description" content="ContentSecurityPolicy - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.ContentSecurityPolicy" />
+          <meta name="keywords" content="ContentSecurityPolicy Lift Framework 3.0 SNAPSHOT net.liftweb.http.ContentSecurityPolicy" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.http.ContentSecurityPolicy';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="ContentSecurityPolicy$.html" title="See companion object"><img alt="Class/Object" src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
+        <h1><a href="ContentSecurityPolicy$.html" title="See companion object">ContentSecurityPolicy</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="ContentSecurityPolicy$.html" title="See companion object">object ContentSecurityPolicy</a>
+            | <a href="package.html" class="extype" name="net.liftweb.http">package http</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ContentSecurityPolicy</span><span class="params">(<span name="defaultSources">defaultSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol"><span class="name"><a href="ContentSourceRestriction$.html">List(ContentSourceRestriction.Self)</a></span></span></span>, <span name="connectSources">connectSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="fontSources">fontSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="frameSources">frameSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="imageSources">imageSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol"><span class="name"><a href="ContentSourceRestriction$.html">List(ContentSourceRestriction.All)</a></span></span></span>, <span name="mediaSources">mediaSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="objectSources">objectSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="scriptSources">scriptSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="JavaScriptSourceRestriction.html" class="extype" name="net.liftweb.http.JavaScriptSourceRestriction">JavaScriptSourceRestriction</a>] = <span class="defval" name='<span class="name"><a href="ContentSourceRestriction$.html">List(
+    ContentSourceRestriction.UnsafeEval,
+    ContentSourceRestriction.Self
+  )</a></span>'>...</span></span>, <span name="styleSources">styleSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="StylesheetSourceRestriction.html" class="extype" name="net.liftweb.http.StylesheetSourceRestriction">StylesheetSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="reportUri">reportUri: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="java.net.URI">URI</span>] = <span class="defval" name='<span class="name"><a href="ContentSecurityPolicy$.html">Some(ContentSecurityPolicy.defaultReportUri)</a></span>'>...</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Specifies a <code><a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP" target="_blank">Content-Security-Policy</a> </code>
+for this site. This will be sent to the client in a <code>Content-Security-Policy</code>
+header when responses are returned from Lift.</p><p>In development mode, content security policy violations are only reported if
+the browser supports them, not enforced. In all other modes, content security
+policy violations are enforced if the browser supports them.</p><p>Note that the <code>X-Webkit-CSP</code> header is NOT specified, due to
+potentially-broken behavior in iOS 5 and 5.1. This means iOS 6/6.1 will not
+receive a content security policy that it can
+understand. See the <a href="http://caniuse.com/#feat=contentsecuritypolicy" target="_blank">caniuse
+page on content security policy</a> for more.
+</p></div><dl class="paramcmts block"><dt class="param">defaultSources</dt><dd class="cmt"><p>A list of default source restrictions; if one of the
+       other sources parameters is empty, the default sources will apply
+       instead.</p></dd><dt class="param">connectSources</dt><dd class="cmt"><p>A list of source restrictions for <code>XmlHttpRequest</code>
+       (AJAX) connections.</p></dd><dt class="param">fontSources</dt><dd class="cmt"><p>A list of source restrictions for loading fonts (e.g.,
+       from CSS <code>font-face</code> declarations).</p></dd><dt class="param">frameSources</dt><dd class="cmt"><p>A list of source restrictions for loading frames and
+       iframes.</p></dd><dt class="param">imageSources</dt><dd class="cmt"><p>A list of source restrictions for loading images.</p></dd><dt class="param">mediaSources</dt><dd class="cmt"><p>A list of source restrictions for loading media (audio
+       and video).</p></dd><dt class="param">objectSources</dt><dd class="cmt"><p>A list of source restrictions for loading <code>object</code>,
+       <code>embed</code>, <code>applet</code>, and related elements.</p></dd><dt class="param">scriptSources</dt><dd class="cmt"><p>A list of source restrictions for loading scripts. Also
+       accepts the <code><a href="ContentSourceRestriction$$UnsafeInline$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeInline">UnsafeInline</a></code>
+       and <code><a href="ContentSourceRestriction$$UnsafeEval$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeEval">UnsafeEval</a></code> source
+       restrictions, though these are strongly discouraged.</p></dd><dt class="param">styleSources</dt><dd class="cmt"><p>A list of source restrictions for loading styles. Also
+       accepts the <code><a href="ContentSourceRestriction$$UnsafeInline$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeInline">UnsafeInline</a></code>
+       source, though it is strongly discouraged.</p></dd><dt class="param">reportUri</dt><dd class="cmt"><p>The URI where any violation of the security policy will be
+       reported. You can set the function that handles these violations in
+       <code><a href="LiftRules.html#contentSecurityPolicyViolationReport:net.liftweb.http.ContentSecurityPolicyViolation=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]" class="extmbr" name="net.liftweb.http.LiftRules#contentSecurityPolicyViolationReport">LiftRules.contentSecurityPolicyViolationReport</a></code>. By default,
+       reported to <code><a href="ContentSecurityPolicy$.html#defaultReportUri:java.net.URI" class="extmbr" name="net.liftweb.http.ContentSecurityPolicy#defaultReportUri">ContentSecurityPolicy.defaultReportUri</a></code>.
+       If this is <code>None</code>, violations will not be reported.</p></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.http.ContentSecurityPolicy"><span>ContentSecurityPolicy</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="net.liftweb.http.ContentSecurityPolicy#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(defaultSources:List[net.liftweb.http.ContentSourceRestriction],connectSources:List[net.liftweb.http.ContentSourceRestriction],fontSources:List[net.liftweb.http.ContentSourceRestriction],frameSources:List[net.liftweb.http.ContentSourceRestriction],imageSources:List[net.liftweb.http.ContentSourceRestriction],mediaSources:List[net.liftweb.http.ContentSourceRestriction],objectSources:List[net.liftweb.http.ContentSourceRestriction],scriptSources:List[net.liftweb.http.JavaScriptSourceRestriction],styleSources:List[net.liftweb.http.StylesheetSourceRestriction],reportUri:Option[java.net.URI]):net.liftweb.http.ContentSecurityPolicy"></a>
+      <a id="&lt;init&gt;:ContentSecurityPolicy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ContentSecurityPolicy</span><span class="params">(<span name="defaultSources">defaultSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol"><span class="name"><a href="ContentSourceRestriction$.html">List(ContentSourceRestriction.Self)</a></span></span></span>, <span name="connectSources">connectSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="fontSources">fontSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="frameSources">frameSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="imageSources">imageSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol"><span class="name"><a href="ContentSourceRestriction$.html">List(ContentSourceRestriction.All)</a></span></span></span>, <span name="mediaSources">mediaSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="objectSources">objectSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="scriptSources">scriptSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="JavaScriptSourceRestriction.html" class="extype" name="net.liftweb.http.JavaScriptSourceRestriction">JavaScriptSourceRestriction</a>] = <span class="defval" name='<span class="name"><a href="ContentSourceRestriction$.html">List(
+    ContentSourceRestriction.UnsafeEval,
+    ContentSourceRestriction.Self
+  )</a></span>'>...</span></span>, <span name="styleSources">styleSources: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="StylesheetSourceRestriction.html" class="extype" name="net.liftweb.http.StylesheetSourceRestriction">StylesheetSourceRestriction</a>] = <span class="symbol">Nil</span></span>, <span name="reportUri">reportUri: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="java.net.URI">URI</span>] = <span class="defval" name='<span class="name"><a href="ContentSecurityPolicy$.html">Some(ContentSecurityPolicy.defaultReportUri)</a></span>'>...</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@&lt;init&gt;(defaultSources:List[net.liftweb.http.ContentSourceRestriction],connectSources:List[net.liftweb.http.ContentSourceRestriction],fontSources:List[net.liftweb.http.ContentSourceRestriction],frameSources:List[net.liftweb.http.ContentSourceRestriction],imageSources:List[net.liftweb.http.ContentSourceRestriction],mediaSources:List[net.liftweb.http.ContentSourceRestriction],objectSources:List[net.liftweb.http.ContentSourceRestriction],scriptSources:List[net.liftweb.http.JavaScriptSourceRestriction],styleSources:List[net.liftweb.http.StylesheetSourceRestriction],reportUri:Option[java.net.URI]):net.liftweb.http.ContentSecurityPolicy" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">defaultSources</dt><dd class="cmt"><p>A list of default source restrictions; if one of the
+       other sources parameters is empty, the default sources will apply
+       instead.</p></dd><dt class="param">connectSources</dt><dd class="cmt"><p>A list of source restrictions for <code>XmlHttpRequest</code>
+       (AJAX) connections.</p></dd><dt class="param">fontSources</dt><dd class="cmt"><p>A list of source restrictions for loading fonts (e.g.,
+       from CSS <code>font-face</code> declarations).</p></dd><dt class="param">frameSources</dt><dd class="cmt"><p>A list of source restrictions for loading frames and
+       iframes.</p></dd><dt class="param">imageSources</dt><dd class="cmt"><p>A list of source restrictions for loading images.</p></dd><dt class="param">mediaSources</dt><dd class="cmt"><p>A list of source restrictions for loading media (audio
+       and video).</p></dd><dt class="param">objectSources</dt><dd class="cmt"><p>A list of source restrictions for loading <code>object</code>,
+       <code>embed</code>, <code>applet</code>, and related elements.</p></dd><dt class="param">scriptSources</dt><dd class="cmt"><p>A list of source restrictions for loading scripts. Also
+       accepts the <code><a href="ContentSourceRestriction$$UnsafeInline$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeInline">UnsafeInline</a></code>
+       and <code><a href="ContentSourceRestriction$$UnsafeEval$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeEval">UnsafeEval</a></code> source
+       restrictions, though these are strongly discouraged.</p></dd><dt class="param">styleSources</dt><dd class="cmt"><p>A list of source restrictions for loading styles. Also
+       accepts the <code><a href="ContentSourceRestriction$$UnsafeInline$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeInline">UnsafeInline</a></code>
+       source, though it is strongly discouraged.</p></dd><dt class="param">reportUri</dt><dd class="cmt"><p>The URI where any violation of the security policy will be
+       reported. You can set the function that handles these violations in
+       <code><a href="LiftRules.html#contentSecurityPolicyViolationReport:net.liftweb.http.ContentSecurityPolicyViolation=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]" class="extmbr" name="net.liftweb.http.LiftRules#contentSecurityPolicyViolationReport">LiftRules.contentSecurityPolicyViolationReport</a></code>. By default,
+       reported to <code><a href="ContentSecurityPolicy$.html#defaultReportUri:java.net.URI" class="extmbr" name="net.liftweb.http.ContentSecurityPolicy#defaultReportUri">ContentSecurityPolicy.defaultReportUri</a></code>.
+       If this is <code>None</code>, violations will not be reported.</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#connectSources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="connectSources:List[net.liftweb.http.ContentSourceRestriction]"></a>
+      <a id="connectSources:List[ContentSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">connectSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@connectSources:List[net.liftweb.http.ContentSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for <code>XmlHttpRequest</code>
+       (AJAX) connections.</p>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#contentSecurityPolicyString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="contentSecurityPolicyString:String"></a>
+      <a id="contentSecurityPolicyString:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">contentSecurityPolicyString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@contentSecurityPolicyString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The string that describes this content security policy in the syntax
+expected by the <code>Content-Security-Policy</code> header.</p>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#defaultSources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="defaultSources:List[net.liftweb.http.ContentSourceRestriction]"></a>
+      <a id="defaultSources:List[ContentSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@defaultSources:List[net.liftweb.http.ContentSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of default source restrictions; if one of the
+       other sources parameters is empty, the default sources will apply
+       instead.</p>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#fontSources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fontSources:List[net.liftweb.http.ContentSourceRestriction]"></a>
+      <a id="fontSources:List[ContentSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fontSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@fontSources:List[net.liftweb.http.ContentSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for loading fonts (e.g.,
+       from CSS <code>font-face</code> declarations).</p>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#frameSources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="frameSources:List[net.liftweb.http.ContentSourceRestriction]"></a>
+      <a id="frameSources:List[ContentSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">frameSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@frameSources:List[net.liftweb.http.ContentSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for loading frames and
+       iframes.</p>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#headers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="headers(enforce:Boolean,logViolations:Boolean):List[(String,String)]"></a>
+      <a id="headers(Boolean,Boolean):List[(String,String)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">headers</span><span class="params">(<span name="enforce">enforce: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>, <span name="logViolations">logViolations: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a> = <span class="symbol">true</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@headers(enforce:Boolean,logViolations:Boolean):List[(String,String)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the headers implied by this content security policy.</p>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#imageSources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="imageSources:List[net.liftweb.http.ContentSourceRestriction]"></a>
+      <a id="imageSources:List[ContentSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">imageSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@imageSources:List[net.liftweb.http.ContentSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for loading images.</p>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#mediaSources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mediaSources:List[net.liftweb.http.ContentSourceRestriction]"></a>
+      <a id="mediaSources:List[ContentSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mediaSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@mediaSources:List[net.liftweb.http.ContentSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for loading media (audio
+       and video).</p>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#objectSources" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectSources:List[net.liftweb.http.ContentSourceRestriction]"></a>
+      <a id="objectSources:List[ContentSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="ContentSourceRestriction.html" class="extype" name="net.liftweb.http.ContentSourceRestriction">ContentSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@objectSources:List[net.liftweb.http.ContentSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for loading <code>object</code>,
+       <code>embed</code>, <code>applet</code>, and related elements.</p>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#reportUri" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reportUri:Option[java.net.URI]"></a>
+      <a id="reportUri:Option[URI]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reportUri</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="java.net.URI">URI</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@reportUri:Option[java.net.URI]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The URI where any violation of the security policy will be
+       reported.</p><div class="fullcomment"><div class="comment cmt"><p>The URI where any violation of the security policy will be
+       reported. You can set the function that handles these violations in
+       <code><a href="LiftRules.html#contentSecurityPolicyViolationReport:net.liftweb.http.ContentSecurityPolicyViolation=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]" class="extmbr" name="net.liftweb.http.LiftRules#contentSecurityPolicyViolationReport">LiftRules.contentSecurityPolicyViolationReport</a></code>. By default,
+       reported to <code><a href="ContentSecurityPolicy$.html#defaultReportUri:java.net.URI" class="extmbr" name="net.liftweb.http.ContentSecurityPolicy#defaultReportUri">ContentSecurityPolicy.defaultReportUri</a></code>.
+       If this is <code>None</code>, violations will not be reported.</p></div></div>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#scriptSources" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="scriptSources:List[net.liftweb.http.JavaScriptSourceRestriction]"></a>
+      <a id="scriptSources:List[JavaScriptSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">scriptSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="JavaScriptSourceRestriction.html" class="extype" name="net.liftweb.http.JavaScriptSourceRestriction">JavaScriptSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@scriptSources:List[net.liftweb.http.JavaScriptSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for loading scripts.</p><div class="fullcomment"><div class="comment cmt"><p>A list of source restrictions for loading scripts. Also
+       accepts the <code><a href="ContentSourceRestriction$$UnsafeInline$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeInline">UnsafeInline</a></code>
+       and <code><a href="ContentSourceRestriction$$UnsafeEval$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeEval">UnsafeEval</a></code> source
+       restrictions, though these are strongly discouraged.</p></div></div>
+    </li><li name="net.liftweb.http.ContentSecurityPolicy#styleSources" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="styleSources:List[net.liftweb.http.StylesheetSourceRestriction]"></a>
+      <a id="styleSources:List[StylesheetSourceRestriction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">styleSources</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="StylesheetSourceRestriction.html" class="extype" name="net.liftweb.http.StylesheetSourceRestriction">StylesheetSourceRestriction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@styleSources:List[net.liftweb.http.StylesheetSourceRestriction]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of source restrictions for loading styles.</p><div class="fullcomment"><div class="comment cmt"><p>A list of source restrictions for loading styles. Also
+       accepts the <code><a href="ContentSourceRestriction$$UnsafeInline$.html" class="extype" name="net.liftweb.http.ContentSourceRestriction.UnsafeInline">UnsafeInline</a></code>
+       source, though it is strongly discouraged.</p></div></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.ContentSecurityPolicy@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

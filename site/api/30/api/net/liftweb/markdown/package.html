@@ -1,0 +1,653 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>markdown - Lift Framework 3.0-SNAPSHOT - net.liftweb.markdown</title>
+          <meta name="description" content="markdown - Lift Framework 3.0 - SNAPSHOT - net.liftweb.markdown" />
+          <meta name="keywords" content="markdown Lift Framework 3.0 SNAPSHOT net.liftweb.markdown" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.markdown.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a></p>
+        <h1>markdown</h1><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">markdown</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.markdown.AtxHeaderLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AtxHeaderLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="AtxHeaderLine:AtxHeaderLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AtxHeaderLine.html"><span class="name">AtxHeaderLine</span></a><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pay">pay: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@AtxHeaderLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An atx style header line.</p><div class="fullcomment"><div class="comment cmt"><p>An atx style header line.
+Trims hashes automatically and determines the header level from them.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.BaseParsers" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BaseParsersextendsRegexParsers"></a>
+      <a id="BaseParsers:BaseParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BaseParsers.html"><span class="name">BaseParsers</span></a><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.RegexParsers">RegexParsers</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@BaseParsersextendsRegexParsers" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Basic parsers for Markdown Source.</p><div class="fullcomment"><div class="comment cmt"><p>Basic parsers for Markdown Source.
+Provides general, small parsers that are used by other parsers.
+Also contains parsers for XML elements.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.BlockParsers" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BlockParsersextendsParsers"></a>
+      <a id="BlockParsers:BlockParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="BlockParsers.html"><span class="name">BlockParsers</span></a><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers">Parsers</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@BlockParsersextendsParsers" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A parser for the markdown language.</p><div class="fullcomment"><div class="comment cmt"><p>A parser for the markdown language.
+Works on pre-parsed lines that can be created by a LineParser.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.BlockQuoteLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlockQuoteLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="BlockQuoteLine:BlockQuoteLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BlockQuoteLine.html"><span class="name">BlockQuoteLine</span></a><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pay">pay: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@BlockQuoteLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A line indicating a block quote (starts with &quot;&gt; &quot;)
+</p>
+    </li><li name="net.liftweb.markdown.CodeLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CodeLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="CodeLine:CodeLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CodeLine.html"><span class="name">CodeLine</span></a><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pay">pay: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@CodeLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A line in verbatim code or the continuation of a list item
+</p>
+    </li><li name="net.liftweb.markdown.Decorator" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DecoratorextendsAnyRef"></a>
+      <a id="Decorator:Decorator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Decorator.html"><span class="name">Decorator</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@DecoratorextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This trait influences the behavior of the Markdown output of inline and block parsers
+and the complete transformer.</p><div class="fullcomment"><div class="comment cmt"><p>This trait influences the behavior of the Markdown output of inline and block parsers
+and the complete transformer.
+Mix in this trait and override methods to change the behavior and override the &quot;deco()&quot; method
+in the respective parser/transformer to return
+your modified instances to change the output they create.</p><p>Inline element decoration methods always get passed the spanned text, so you have to
+prepend and append the opening/closing tags. For block elements there is always a method
+for the opening and closing tags. This is to make block
+processing more efficient to prevent unnecessary String building of whole blocks just to
+add tags. (The block building uses a StringBuilder internally and just appends the returned tags)</p><p>If you want line breaks after opening/closing block level tags, you have to add the newline yourself.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.EmptyLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EmptyLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="EmptyLine:EmptyLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="EmptyLine.html"><span class="name">EmptyLine</span></a><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@EmptyLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A line consisting only of whitespace.</p>
+    </li><li name="net.liftweb.markdown.ExtendedFencedCode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExtendedFencedCodeextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="ExtendedFencedCode:ExtendedFencedCode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ExtendedFencedCode.html"><span class="name">ExtendedFencedCode</span></a><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pay">pay: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@ExtendedFencedCodeextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Starting line of a fenced code block: three backticks followed by an optional
+language token
+</p>
+    </li><li name="net.liftweb.markdown.FencedCode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FencedCodeextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="FencedCode:FencedCode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FencedCode.html"><span class="name">FencedCode</span></a><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@FencedCodeextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Ending line of a fenced code block: three backticks followed by optional whitespace
+</p>
+    </li><li name="net.liftweb.markdown.InlineParsers" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="InlineParsersextendsBaseParsers"></a>
+      <a id="InlineParsers:InlineParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InlineParsers.html"><span class="name">InlineParsers</span></a><span class="result"> extends <a href="BaseParsers.html" class="extype" name="net.liftweb.markdown.BaseParsers">BaseParsers</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@InlineParsersextendsBaseParsers" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A parser for inline markdown, markdown escapes and XML escapes.</p><div class="fullcomment"><div class="comment cmt"><p>A parser for inline markdown, markdown escapes and XML escapes.
+This is used by the result classes of the block parsers to handle
+Markdown within a block.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.LineParsers" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="LineParsersextendsInlineParsers"></a>
+      <a id="LineParsers:LineParsers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="LineParsers.html"><span class="name">LineParsers</span></a><span class="result"> extends <a href="InlineParsers.html" class="extype" name="net.liftweb.markdown.InlineParsers">InlineParsers</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@LineParsersextendsInlineParsers" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parses single lines into tokens.</p><div class="fullcomment"><div class="comment cmt"><p>Parses single lines into tokens.
+Markdown lines are differentiated by their beginning.
+These lines are then organized in blocks by the BlockParsers.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.LineReader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LineReaderextendsReader[String]withProductwithSerializable"></a>
+      <a id="LineReader:LineReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LineReader.html"><span class="name">LineReader</span></a><span class="result"> extends <span class="extype" name="scala.util.parsing.input.Reader">Reader</span>[<span class="extype" name="scala.Predef.String">String</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@LineReaderextendsReader[String]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Reader for reading whole Strings as tokens.</p><div class="fullcomment"><div class="comment cmt"><p>A Reader for reading whole Strings as tokens.
+Used by the Tokenizer to parse whole lines as one Element.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.LineTokenizer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LineTokenizerextendsParsers"></a>
+      <a id="LineTokenizer:LineTokenizer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LineTokenizer.html"><span class="name">LineTokenizer</span></a><span class="result"> extends <span class="extype" name="scala.util.parsing.combinator.Parsers">Parsers</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@LineTokenizerextendsParsers" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Chops the input into lines and turns those lines into line tokens.</p><div class="fullcomment"><div class="comment cmt"><p>Chops the input into lines and turns those lines into line tokens.
+Also takes care of preprocessing link definitions and xml blocks.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.LinkDefinition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LinkDefinitionextendsProductwithSerializable"></a>
+      <a id="LinkDefinition:LinkDefinition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LinkDefinition.html"><span class="name">LinkDefinition</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="title">title: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@LinkDefinitionextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Definition of a link or url that can be referenced by id.</p>
+    </li><li name="net.liftweb.markdown.LinkDefinitionStart" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LinkDefinitionStartextendsProductwithSerializable"></a>
+      <a id="LinkDefinitionStart:LinkDefinitionStart"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LinkDefinitionStart.html"><span class="name">LinkDefinitionStart</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@LinkDefinitionStartextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Stub class that is an intermediate result when parsing link definitions.</p>
+    </li><li name="net.liftweb.markdown.MarkdownLine" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="MarkdownLineextendsAnyRef"></a>
+      <a id="MarkdownLine:MarkdownLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MarkdownLine.html"><span class="name">MarkdownLine</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@MarkdownLineextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a line of markdown.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a line of markdown.
+The prefix is the beginning of the line that indicates the line type,
+the payload is the actual content after the prefix.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.MarkdownLineReader" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MarkdownLineReaderextendsReader[net.liftweb.markdown.MarkdownLine]withProductwithSerializable"></a>
+      <a id="MarkdownLineReader:MarkdownLineReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="MarkdownLineReader.html"><span class="name">MarkdownLineReader</span></a><span class="result"> extends <span class="extype" name="scala.util.parsing.input.Reader">Reader</span>[<a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@MarkdownLineReaderextendsReader[net.liftweb.markdown.MarkdownLine]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This class allows us to reference a map with link definitions resulting from the line parsing during block parsing.</p><div class="fullcomment"><div class="comment cmt"><p>This class allows us to reference a map with link definitions resulting from the line parsing during block parsing.
+It extends a Reader for MarkdownLines and allows us to add the said map to the parsing context.
+This is basically a modification of the parser monad's state.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.OItemStartLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="OItemStartLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="OItemStartLine:OItemStartLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OItemStartLine.html"><span class="name">OItemStartLine</span></a><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pay">pay: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@OItemStartLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A line indicating the start of an ordered list item (starts with &quot;   [NUMBER].</p><div class="fullcomment"><div class="comment cmt"><p>A line indicating the start of an ordered list item (starts with &quot;   [NUMBER].  &quot;)
+</p></div></div>
+    </li><li name="net.liftweb.markdown.OtherLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OtherLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="OtherLine:OtherLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OtherLine.html"><span class="name">OtherLine</span></a><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@OtherLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Any other line.</p>
+    </li><li name="net.liftweb.markdown.RulerLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RulerLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="RulerLine:RulerLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="RulerLine.html"><span class="name">RulerLine</span></a><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@RulerLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A horizontal ruler line.</p>
+    </li><li name="net.liftweb.markdown.SetExtHeaderLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SetExtHeaderLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="SetExtHeaderLine:SetExtHeaderLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="SetExtHeaderLine.html"><span class="name">SetExtHeaderLine</span></a><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="headerLevel">headerLevel: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@SetExtHeaderLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents the underline for a setext style header
+</p>
+    </li><li name="net.liftweb.markdown.SingleThreadedTransformer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SingleThreadedTransformerextendsTransformer"></a>
+      <a id="SingleThreadedTransformer:SingleThreadedTransformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SingleThreadedTransformer.html"><span class="name">SingleThreadedTransformer</span></a><span class="result"> extends <a href="Transformer.html" class="extype" name="net.liftweb.markdown.Transformer">Transformer</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@SingleThreadedTransformerextendsTransformer" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.markdown.ThreadLocalTransformer" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ThreadLocalTransformerextendsTransformer"></a>
+      <a id="ThreadLocalTransformer:ThreadLocalTransformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ThreadLocalTransformer.html"><span class="name">ThreadLocalTransformer</span></a><span class="result"> extends <a href="Transformer.html" class="extype" name="net.liftweb.markdown.Transformer">Transformer</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@ThreadLocalTransformerextendsTransformer" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Simple Standalone Markdown transformer.</p><div class="fullcomment"><div class="comment cmt"><p>Simple Standalone Markdown transformer.
+Use this if you simply want to transform a block of markdown without any special options.
+val input:String = ...
+val xhtml:String = new ActuariusTransformer()(input)</p><p>Note that this markdown parser isn't inherently thread-safe, as Scala Parser Combinators aren't, so this
+class instantiates a SingleThreadedTransformer for each thread.
+You'll need to write your own pooled implementation if this isn't efficient for your usage.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.TimedTransformer" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TimedTransformerextendsAnyRef"></a>
+      <a id="TimedTransformer:TimedTransformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TimedTransformer.html"><span class="name">TimedTransformer</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@TimedTransformerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Quick and dirty test for measuring the time of this Parser.</p><div class="fullcomment"><div class="comment cmt"><p>Quick and dirty test for measuring the time of this Parser.
+Contains hardcoded file paths, just ignore this, it will be removed soon.
+</p></div></div>
+    </li><li name="net.liftweb.markdown.Transformer" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TransformerextendsAnyRef"></a>
+      <a id="Transformer:Transformer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Transformer.html"><span class="name">Transformer</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@TransformerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is the Transformer that uses the other parsers to transform markdown into xhtml.</p><div class="fullcomment"><div class="comment cmt"><p>This is the Transformer that uses the other parsers to transform markdown into xhtml.
+Mix this trait in if you want more control over the output (like switching verbatim xml on/off or using
+different opening/closing tags for the output).
+</p></div></div>
+    </li><li name="net.liftweb.markdown.UItemStartLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UItemStartLineextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="UItemStartLine:UItemStartLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UItemStartLine.html"><span class="name">UItemStartLine</span></a><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pay">pay: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@UItemStartLineextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A line indicating the start of an unordered list item (starts with &quot;   *  &quot;)
+</p>
+    </li><li name="net.liftweb.markdown.XmlChunk" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="XmlChunkextendsMarkdownLinewithProductwithSerializable"></a>
+      <a id="XmlChunk:XmlChunk"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="XmlChunk.html"><span class="name">XmlChunk</span></a><span class="params">(<span name="content">content: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="MarkdownLine.html" class="extype" name="net.liftweb.markdown.MarkdownLine">MarkdownLine</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@XmlChunkextendsMarkdownLinewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents lines of verbatim xml.</p><div class="fullcomment"><div class="comment cmt"><p>Represents lines of verbatim xml.
+Actually this class is a little cheat, as it represents multiple lines.
+But it is a token that is created when &quot;parsing with a line scope&quot;, so it is not too bad.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="net.liftweb.markdown.Decorator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Decorator"></a>
+      <a id="Decorator:Decorator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Decorator$.html"><span class="name">Decorator</span></a><span class="result"> extends <a href="Decorator.html" class="extype" name="net.liftweb.markdown.Decorator">Decorator</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@Decorator" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Default instance of Decorator with the standard Markdown behavior
+</p>
+    </li><li name="net.liftweb.markdown.TimeTest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TimeTest"></a>
+      <a id="TimeTest:TimeTest"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TimeTest$.html"><span class="name">TimeTest</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.markdown.package@TimeTest" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

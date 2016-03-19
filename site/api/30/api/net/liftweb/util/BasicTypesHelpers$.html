@@ -1,0 +1,1851 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>BasicTypesHelpers - Lift Framework 3.0-SNAPSHOT - net.liftweb.util.BasicTypesHelpers</title>
+          <meta name="description" content="BasicTypesHelpers - Lift Framework 3.0 - SNAPSHOT - net.liftweb.util.BasicTypesHelpers" />
+          <meta name="keywords" content="BasicTypesHelpers Lift Framework 3.0 SNAPSHOT net.liftweb.util.BasicTypesHelpers" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.util.BasicTypesHelpers$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <a href="BasicTypesHelpers.html" title="See companion trait"><img alt="Object/Trait" src="../../../lib/object_to_trait_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.util">util</a></p>
+        <h1><a href="BasicTypesHelpers.html" title="See companion trait">BasicTypesHelpers</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="BasicTypesHelpers.html" title="See companion trait">trait BasicTypesHelpers</a>
+            | <a href="package.html" class="extype" name="net.liftweb.util">package util</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BasicTypesHelpers</span><span class="result"> extends <a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a> with <a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a> with <a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This object adds functionality to Scala standard types.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a>, <a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a>, <a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a>, <a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a>, <a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.util.BasicTypesHelpers"><span>BasicTypesHelpers</span></li><li class="in" name="net.liftweb.util.ControlHelpers"><span>ControlHelpers</span></li><li class="in" name="net.liftweb.common.Tryo"><span>Tryo</span></li><li class="in" name="net.liftweb.util.ClassHelpers"><span>ClassHelpers</span></li><li class="in" name="net.liftweb.util.StringHelpers"><span>StringHelpers</span></li><li class="in" name="net.liftweb.util.BasicTypesHelpers"><span>BasicTypesHelpers</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.util.BasicTypesHelpers.Boolean2" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Boolean2extendsAnyRef"></a>
+      <a id="Boolean2:(BasicTypesHelpers.this)#Boolean2"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$Boolean2.html"><span class="name">Boolean2</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@Boolean2extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This decorator class adds a ternary operator to a Boolean value</p><div class="fullcomment"><div class="comment cmt"><p>This decorator class adds a ternary operator to a Boolean value</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.OptionExtension" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="OptionExtension[T]extendsAnyRef"></a>
+      <a id="OptionExtension[T]:(BasicTypesHelpers.this)#OptionExtension[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$OptionExtension.html"><span class="name">OptionExtension</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@OptionExtension[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.OptionalCons" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="OptionalConsextendsAnyRef"></a>
+      <a id="OptionalCons:(BasicTypesHelpers.this)#OptionalCons"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$OptionalCons.html"><span class="name">OptionalCons</span></a><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@OptionalConsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Optional cons that implements the expression: <code>expr ?> value ::: List</code></code></p><div class="fullcomment"><div class="comment cmt"><p>Optional cons that implements the expression: <code>expr ?> value ::: List</code></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.PartialFunctionWrapper" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PartialFunctionWrapper[A]extendsAnyRef"></a>
+      <a id="PartialFunctionWrapper[A]:(BasicTypesHelpers.this)#PartialFunctionWrapper[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$PartialFunctionWrapper.html"><span class="name">PartialFunctionWrapper</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@PartialFunctionWrapper[A]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A helper class that facilitates wrapping of one PartialFunction
+around another
+</p><div class="fullcomment"><div class="comment cmt"><p>A helper class that facilitates wrapping of one PartialFunction
+around another
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.TryExtension" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TryExtension[T]extendsAnyRef"></a>
+      <a id="TryExtension[T]:(BasicTypesHelpers.this)#TryExtension[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$TryExtension.html"><span class="name">TryExtension</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@TryExtension[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.AsBoolean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AsBoolean"></a>
+      <a id="AsBoolean:AsBoolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$AsBoolean$.html"><span class="name">AsBoolean</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@AsBoolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A helpful Boolean extractor</p><div class="fullcomment"><div class="comment cmt"><p>A helpful Boolean extractor</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.AsDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AsDouble"></a>
+      <a id="AsDouble:AsDouble"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$AsDouble$.html"><span class="name">AsDouble</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@AsDouble" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A helpful Double extractor</p><div class="fullcomment"><div class="comment cmt"><p>A helpful Double extractor</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.AsInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AsInt"></a>
+      <a id="AsInt:AsInt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$AsInt$.html"><span class="name">AsInt</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@AsInt" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A helpful Int extractor</p><div class="fullcomment"><div class="comment cmt"><p>A helpful Int extractor</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers.AsLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AsLong"></a>
+      <a id="AsLong:AsLong"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicTypesHelpers$AsLong$.html"><span class="name">AsLong</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers@AsLong" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A helpful Long extractor</p><div class="fullcomment"><div class="comment cmt"><p>A helpful Long extractor</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#^" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="^[T](i:T*):List[T]"></a>
+      <a id="^[T](T*):List[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $up" class="name">^</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="i">i: <span class="extype" name="net.liftweb.util.ClassHelpers.^.T">T</span>*</span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="net.liftweb.util.ClassHelpers.^.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@^[T](i:T*):List[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This operator transforms its arguments into a List</p><div class="fullcomment"><div class="comment cmt"><p>This operator transforms its arguments into a List</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the list of arguments passed as varargs</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#asBoolean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asBoolean(in:String):net.liftweb.common.Box[Boolean]"></a>
+      <a id="asBoolean(String):Box[Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asBoolean</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@asBoolean(in:String):net.liftweb.common.Box[Boolean]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A helper that will convert the String to a Boolean if it's
+t, true, yes, 1, f, false, no, or 0
+</p><div class="fullcomment"><div class="comment cmt"><p>A helper that will convert the String to a Boolean if it's
+t, true, yes, 1, f, false, no, or 0
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#asDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asDouble(in:String):net.liftweb.common.Box[Double]"></a>
+      <a id="asDouble(String):Box[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asDouble</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Double" class="extype" target="_top">Double</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@asDouble(in:String):net.liftweb.common.Box[Double]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Safely convert the specified String to a Double.</p><div class="fullcomment"><div class="comment cmt"><p>Safely convert the specified String to a Double.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#asInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInt(in:String):net.liftweb.common.Box[Int]"></a>
+      <a id="asInt(String):Box[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInt</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@asInt(in:String):net.liftweb.common.Box[Int]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Safely convert the specified String to an Int.</p><div class="fullcomment"><div class="comment cmt"><p>Safely convert the specified String to an Int.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#asLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asLong(in:Any):net.liftweb.common.Box[Long]"></a>
+      <a id="asLong(Any):Box[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asLong</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@asLong(in:Any):net.liftweb.common.Box[Long]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert any object to an &quot;equivalent&quot; Long depending on its value
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert any object to an &quot;equivalent&quot; Long depending on its value
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#asLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asLong(in:String):net.liftweb.common.Box[Long]"></a>
+      <a id="asLong(String):Box[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asLong</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@asLong(in:String):net.liftweb.common.Box[Long]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Safely convert the specified String to a Long.</p><div class="fullcomment"><div class="comment cmt"><p>Safely convert the specified String to a Long.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#blankForNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="blankForNull(s:String):String"></a>
+      <a id="blankForNull(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">blankForNull</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@blankForNull(s:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Test for null and return either the given String if not null or the blank String.</p><div class="fullcomment"><div class="comment cmt"><p>Test for null and return either the given String if not null or the blank String.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#callableMethod_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="callableMethod_?(meth:java.lang.reflect.Method):Boolean"></a>
+      <a id="callableMethod_?(Method):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: callableMethod_$qmark" class="name">callableMethod_?</span><span class="params">(<span name="meth">meth: <span class="extype" name="java.lang.reflect.Method">Method</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@callableMethod_?(meth:java.lang.reflect.Method):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if the method is public and has no parameters</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#camelify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="camelify(name:String):String"></a>
+      <a id="camelify(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">camelify</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@camelify(name:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Turns a string of format &quot;foo_bar&quot; into camel case &quot;FooBar&quot;</p><div class="fullcomment"><div class="comment cmt"><p>Turns a string of format &quot;foo_bar&quot; into camel case &quot;FooBar&quot;</p><p>Functional code courtesy of Jamie Webb (j@jmawebb.cjb.net) 2006/11/28</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the String to CamelCase</p></dd><dt>returns</dt><dd class="cmt"><p>the CamelCased string</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#camelifyMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="camelifyMethod(name:String):String"></a>
+      <a id="camelifyMethod(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">camelifyMethod</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@camelifyMethod(name:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Turn a string of format &quot;foo_bar&quot; into camel case with the first letter in lower case: &quot;fooBar&quot;
+This function is especially used to camelCase method names.</p><div class="fullcomment"><div class="comment cmt"><p>Turn a string of format &quot;foo_bar&quot; into camel case with the first letter in lower case: &quot;fooBar&quot;
+This function is especially used to camelCase method names.
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the String to CamelCase</p></dd><dt>returns</dt><dd class="cmt"><p>the CamelCased string</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#capify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="capify(in:String):String"></a>
+      <a id="capify(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">capify</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@capify(in:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Capitalize every &quot;word&quot; in the string.</p><div class="fullcomment"><div class="comment cmt"><p>Capitalize every &quot;word&quot; in the string. A word is either separated by spaces or underscores.</p></div><dl class="paramcmts block"><dt class="param">in</dt><dd class="cmt"><p>string to capify</p></dd><dt>returns</dt><dd class="cmt"><p>the capified string</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#charSplit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="charSplit(what:String,sep:Char):List[String]"></a>
+      <a id="charSplit(String,Char):List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">charSplit</span><span class="params">(<span name="what">what: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sep">sep: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@charSplit(what:String,sep:Char):List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Faster than roboSplit...</p><div class="fullcomment"><div class="comment cmt"><p>Faster than roboSplit... this method splits Strings at a given
+character
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#classHasControllerMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="classHasControllerMethod(clz:Class[_],name:String):Boolean"></a>
+      <a id="classHasControllerMethod(Class[_],String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">classHasControllerMethod</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@classHasControllerMethod(clz:Class[_],name:String):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Check that the method 'name' is callable for class 'clz'
+</p><div class="fullcomment"><div class="comment cmt"><p>Check that the method 'name' is callable for class 'clz'
+</p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>the class supposed to own the method</p></dd><dt class="param">name</dt><dd class="cmt"><p>name of the method to test</p></dd><dt>returns</dt><dd class="cmt"><p>true if the method exists on the class and is callable</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#classHierarchy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="classHierarchy(in:Class[_]):List[Class[_]]"></a>
+      <a id="classHierarchy(Class[_]):List[Class[_]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">classHierarchy</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@classHierarchy(in:Class[_]):List[Class[_]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#clean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clean(in:String):String"></a>
+      <a id="clean(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clean</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@clean(in:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Remove all the characters from a string exception a-z, A-Z, 0-9, and '_'</p><div class="fullcomment"><div class="comment cmt"><p>Remove all the characters from a string exception a-z, A-Z, 0-9, and '_'</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the cleaned string and an empty string if the input is null</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#commafy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="commafy(what:String):String"></a>
+      <a id="commafy(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">commafy</span><span class="params">(<span name="what">what: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@commafy(what:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Add commas before the last 3 characters</p><div class="fullcomment"><div class="comment cmt"><p>Add commas before the last 3 characters</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the string with commas</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#compareElem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareElem(left:scala.xml.Elem,right:scala.xml.Elem):Boolean"></a>
+      <a id="compareElem(Elem,Elem):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareElem</span><span class="params">(<span name="left">left: <span class="extype" name="scala.xml.Elem">Elem</span></span>, <span name="right">right: <span class="extype" name="scala.xml.Elem">Elem</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@compareElem(left:scala.xml.Elem,right:scala.xml.Elem):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compare two Elems
+</p><div class="fullcomment"><div class="comment cmt"><p>Compare two Elems
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#compareMetaData" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareMetaData(left:List[scala.xml.MetaData],right:List[scala.xml.MetaData]):Boolean"></a>
+      <a id="compareMetaData(List[MetaData],List[MetaData]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareMetaData</span><span class="params">(<span name="left">left: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.xml.MetaData">MetaData</span>]</span>, <span name="right">right: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.xml.MetaData">MetaData</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@compareMetaData(left:List[scala.xml.MetaData],right:List[scala.xml.MetaData]):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compare the metadata of two attributes
+</p><div class="fullcomment"><div class="comment cmt"><p>Compare the metadata of two attributes
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#compareNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareNode(left:scala.xml.Node,right:scala.xml.Node):Boolean"></a>
+      <a id="compareNode(Node,Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareNode</span><span class="params">(<span name="left">left: <span class="extype" name="scala.xml.Node">Node</span></span>, <span name="right">right: <span class="extype" name="scala.xml.Node">Node</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@compareNode(left:scala.xml.Node,right:scala.xml.Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Comparse two XML nodes
+</p><div class="fullcomment"><div class="comment cmt"><p>Comparse two XML nodes
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#compareXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="compareXml(left:scala.xml.NodeSeq,right:scala.xml.NodeSeq):Boolean"></a>
+      <a id="compareXml(NodeSeq,NodeSeq):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compareXml</span><span class="params">(<span name="left">left: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="right">right: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@compareXml(left:scala.xml.NodeSeq,right:scala.xml.NodeSeq):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compare two NodeSeq and return true if they are equal, even if
+attribute order of Elems is different
+</p><div class="fullcomment"><div class="comment cmt"><p>Compare two NodeSeq and return true if they are equal, even if
+attribute order of Elems is different
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#containsClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="containsClass[C](clz:Class[C],toMatch:List[Class[_]]):Boolean"></a>
+      <a id="containsClass[C](Class[C],List[Class[_]]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">containsClass</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.containsClass.C">C</span>]</span>, <span name="toMatch">toMatch: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@containsClass[C](clz:Class[C],toMatch:List[Class[_]]):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the clz an instance of (assignable from) any of the classes in the list
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the clz an instance of (assignable from) any of the classes in the list
+</p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>the class to test</p></dd><dt class="param">toMatch</dt><dd class="cmt"><p>the list of classes to match against</p></dd><dt>returns</dt><dd class="cmt"><p>true if clz is assignable from any of the matching classes</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#createInvoker" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createInvoker[C&lt;:AnyRef](name:String,on:C):net.liftweb.common.Box[()=&gt;net.liftweb.common.Box[Any]]"></a>
+      <a id="createInvoker[C&lt;:AnyRef](String,C):Box[()⇒Box[Any]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createInvoker</span><span class="tparams">[<span name="C">C &lt;: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="on">on: <span class="extype" name="net.liftweb.util.ClassHelpers.createInvoker.C">C</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[() ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@createInvoker[C&lt;:AnyRef](name:String,on:C):net.liftweb.common.Box[()=&gt;net.liftweb.common.Box[Any]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a function (the 'invoker') which will trigger any public, parameterless method
+That function will throw the cause exception if the method can't be invoked
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a function (the 'invoker') which will trigger any public, parameterless method
+That function will throw the cause exception if the method can't be invoked
+</p></div><dl class="paramcmts block"><dt class="param">on</dt><dd class="cmt"><p>instance whose method must be invoked</p></dd><dt>returns</dt><dd class="cmt"><p>Empty if instance is null or Full(invoker)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#emptyForBlank" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="emptyForBlank(s:String):net.liftweb.common.Box[String]"></a>
+      <a id="emptyForBlank(String):Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">emptyForBlank</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@emptyForBlank(s:String):net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Turn a String into a Box[String], with Empty for the blank string.</p><div class="fullcomment"><div class="comment cmt"><p>Turn a String into a Box[String], with Empty for the blank string.</p><p>A string containing only spaces is considered blank.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Full(s.trim) if s is not null or blank, Empty otherwise</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#encJs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="encJs(what:String):String"></a>
+      <a id="encJs(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">encJs</span><span class="params">(<span name="what">what: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@encJs(what:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Encode the string to be including in JavaScript, replacing '\' or '\\' or non-ASCII characters by their unicode value</p><div class="fullcomment"><div class="comment cmt"><p>Encode the string to be including in JavaScript, replacing '\' or '\\' or non-ASCII characters by their unicode value</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the encoded string inserted into quotes</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#escChar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="escChar(in:Char):String"></a>
+      <a id="escChar(Char):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">escChar</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Char" class="extype" target="_top">Char</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@escChar(in:Char):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create the unicode value of a character</p><div class="fullcomment"><div class="comment cmt"><p>Create the unicode value of a character</p></div><dl class="paramcmts block"><dt class="param">in</dt><dd class="cmt"><p>character</p></dd><dt>returns</dt><dd class="cmt"><p>the unicode value as a string starting by \\u</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass(where:List[(String,List[String])]):net.liftweb.common.Box[Class[AnyRef]]"></a>
+      <a id="findClass(List[(String,List[String])]):Box[Class[AnyRef]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findClass</span><span class="params">(<span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findClass(where:List[(String,List[String])]):net.liftweb.common.Box[Class[AnyRef]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Find a class given a list of possible names and corresponding packages, turning underscored
+names to CamelCase if necessary
+</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given a list of possible names and corresponding packages, turning underscored
+names to CamelCase if necessary
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass(name:String,where:List[String]):net.liftweb.common.Box[Class[AnyRef]]"></a>
+      <a id="findClass(String,List[String]):Box[Class[AnyRef]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findClass</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findClass(name:String,where:List[String]):net.liftweb.common.Box[Class[AnyRef]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Find a class given its name and a list of packages, turning underscored names to CamelCase if
+necessary.</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its name and a list of packages, turning underscored names to CamelCase if
+necessary.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass[C&lt;:AnyRef](name:String,where:List[String],targetType:Class[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findClass[C&lt;:AnyRef](String,List[String],Class[C]):Box[Class[C]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findClass</span><span class="tparams">[<span name="C">C &lt;: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="targetType">targetType: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findClass[C&lt;:AnyRef](name:String,where:List[String],targetType:Class[C]):net.liftweb.common.Box[Class[C]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Find a class given its name and a list of packages, turning underscored names to
+CamelCase if necessary.</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its name and a list of packages, turning underscored names to
+CamelCase if necessary.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass(name:String,where:List[String],modifiers:List[String=&gt;String]):net.liftweb.common.Box[Class[AnyRef]]"></a>
+      <a id="findClass(String,List[String],List[(String)⇒String]):Box[Class[AnyRef]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findClass</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="modifiers">modifiers: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findClass(name:String,where:List[String],modifiers:List[String=&gt;String]):net.liftweb.common.Box[Class[AnyRef]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">General method to in find a class according to its name, a list of possible packages and a
+list of functions modifying the given name create a target name to look for (e.g: 'name' is
+hello_world and the target name may be 'HelloWorld').</p><div class="fullcomment"><div class="comment cmt"><p>General method to in find a class according to its name, a list of possible packages and a
+list of functions modifying the given name create a target name to look for (e.g: 'name' is
+hello_world and the target name may be 'HelloWorld').
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findClass[C&lt;:AnyRef](name:String,where:List[String],modifiers:List[String=&gt;String],targetType:Class[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findClass[C&lt;:AnyRef](String,List[String],List[(String)⇒String],Class[C]):Box[Class[C]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findClass</span><span class="tparams">[<span name="C">C &lt;: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="modifiers">modifiers: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="targetType">targetType: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findClass.C">C</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findClass[C&lt;:AnyRef](name:String,where:List[String],modifiers:List[String=&gt;String],targetType:Class[C]):net.liftweb.common.Box[Class[C]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">General method to in find a class according to its name, a list of possible packages,
+a list of functions modifying the given name create a target name to look for
+(e.g: 'name' is hello_world and the target name may be 'HelloWorld').</p><div class="fullcomment"><div class="comment cmt"><p>General method to in find a class according to its name, a list of possible packages,
+a list of functions modifying the given name create a target name to look for
+(e.g: 'name' is hello_world and the target name may be 'HelloWorld').
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findType[C&lt;:AnyRef](where:List[(String,List[String])])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findType[C&lt;:AnyRef](List[(String,List[String])])(Manifest[C]):Box[Class[C]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>]</span><span class="params">(<span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.reflect.Manifest" class="extype" target="_top">Manifest</a>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findType[C&lt;:AnyRef](where:List[(String,List[String])])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Find a class given its type, a list of possible names and corresponding packages, turning
+underscored names to CamelCase if necessary
+</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its type, a list of possible names and corresponding packages, turning
+underscored names to CamelCase if necessary
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findType[C&lt;:AnyRef](name:String,where:List[String])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findType[C&lt;:AnyRef](String,List[String])(Manifest[C]):Box[Class[C]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.reflect.Manifest" class="extype" target="_top">Manifest</a>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findType[C&lt;:AnyRef](name:String,where:List[String])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Find a class given its type, its name and a list of packages, turning underscored names to
+CamelCase if necessary.</p><div class="fullcomment"><div class="comment cmt"><p>Find a class given its type, its name and a list of packages, turning underscored names to
+CamelCase if necessary.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#findType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findType[C&lt;:AnyRef](name:String,where:List[String],modifiers:List[String=&gt;String])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]"></a>
+      <a id="findType[C&lt;:AnyRef](String,List[String],List[(String)⇒String])(Manifest[C]):Box[Class[C]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findType</span><span class="tparams">[<span name="C">C &lt;: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="where">where: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="modifiers">modifiers: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.reflect.Manifest" class="extype" target="_top">Manifest</a>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.findType.C">C</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@findType[C&lt;:AnyRef](name:String,where:List[String],modifiers:List[String=&gt;String])(implicitm:scala.reflect.Manifest[C]):net.liftweb.common.Box[Class[C]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">General method to in find a class according to its type, its name, a list of possible
+packages and a list of functions modifying the given name create a target name to look for
+(e.g: 'name' is hello_world and the target name may be 'HelloWorld').</p><div class="fullcomment"><div class="comment cmt"><p>General method to in find a class according to its type, its name, a list of possible
+packages and a list of functions modifying the given name create a target name to look for
+(e.g: 'name' is hello_world and the target name may be 'HelloWorld').
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Box, either containing the found class or an Empty can.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#instantiate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="instantiate[C](clz:Class[C]):net.liftweb.common.Box[C]"></a>
+      <a id="instantiate[C](Class[C]):Box[C]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">instantiate</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.instantiate.C">C</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.ClassHelpers.instantiate.C">C</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@instantiate[C](clz:Class[C]):net.liftweb.common.Box[C]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a new instance of a class
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a new instance of a class
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a Full can with the instance or a Failure if the instance can't be created</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeControllerMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeControllerMethod(clz:Class[_],meth:String):Any"></a>
+      <a id="invokeControllerMethod(Class[_],String):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">invokeControllerMethod</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@invokeControllerMethod(clz:Class[_],meth:String):Any" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Invoke a controller method (parameterless, public) on a class
+</p><div class="fullcomment"><div class="comment cmt"><p>Invoke a controller method (parameterless, public) on a class
+</p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>the class owning the method</p></dd><dt>returns</dt><dd class="cmt"><p>the result of the method invocation or throws the root exception causing an error</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String,params:Array[AnyRef],ptypes:Array[Class[_]]):net.liftweb.common.Box[Any]"></a>
+      <a id="invokeMethod[C](Class[C],AnyRef,String,Array[AnyRef],Array[Class[_]]):Box[Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.invokeMethod.C">C</span>]</span>, <span name="inst">inst: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>, <span name="ptypes">ptypes: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String,params:Array[AnyRef],ptypes:Array[Class[_]]):net.liftweb.common.Box[Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Invoke the given method for the given class, with some parameters and their types
+Tries the method name, then the method as a CamelCased name and the method as a camelCased name
+The class is not instanciated if the method is static, otherwise the passed instance is used
+</p><div class="fullcomment"><div class="comment cmt"><p>Invoke the given method for the given class, with some parameters and their types
+Tries the method name, then the method as a CamelCased name and the method as a camelCased name
+The class is not instanciated if the method is static, otherwise the passed instance is used
+</p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>class whose method should be invoked</p></dd><dt class="param">inst</dt><dd class="cmt"><p>instance of the class who method should be invoked, if the method is not static</p></dd><dt class="param">meth</dt><dd class="cmt"><p>method to invoke</p></dd><dt class="param">params</dt><dd class="cmt"><p>parameters to pass to the method</p></dd><dt class="param">ptypes</dt><dd class="cmt"><p>list of types of the parameters</p></dd><dt>returns</dt><dd class="cmt"><p>a Box containing the value returned by the method</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String,params:Array[AnyRef]):net.liftweb.common.Box[Any]"></a>
+      <a id="invokeMethod[C](Class[C],AnyRef,String,Array[AnyRef]):Box[Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.invokeMethod.C">C</span>]</span>, <span name="inst">inst: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="params">params: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String,params:Array[AnyRef]):net.liftweb.common.Box[Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Invoke the given method for the given class, with some parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Invoke the given method for the given class, with some parameters.
+Tries the method name, then the method as a CamelCased name and the method as a camelCased name
+The class is not instanciated if the method is static, otherwise the passed instance is used
+</p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>class whose method should be invoked</p></dd><dt class="param">inst</dt><dd class="cmt"><p>instance of the class who method should be invoked, if the method is not static</p></dd><dt class="param">meth</dt><dd class="cmt"><p>method to invoke</p></dd><dt class="param">params</dt><dd class="cmt"><p>parameters to pass to the method</p></dd><dt>returns</dt><dd class="cmt"><p>a Box containing the value returned by the method</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ClassHelpers#invokeMethod" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String):net.liftweb.common.Box[Any]"></a>
+      <a id="invokeMethod[C](Class[C],AnyRef,String):Box[Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">invokeMethod</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="clz">clz: <span class="extype" name="scala.Predef.Class">Class</span>[<span class="extype" name="net.liftweb.util.ClassHelpers.invokeMethod.C">C</span>]</span>, <span name="inst">inst: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="meth">meth: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@invokeMethod[C](clz:Class[C],inst:AnyRef,meth:String):net.liftweb.common.Box[Any]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Invoke the given method for the given class, with no params.</p><div class="fullcomment"><div class="comment cmt"><p>Invoke the given method for the given class, with no params.
+The class is not instanciated if the method is static, otherwise the passed instance is used
+</p></div><dl class="paramcmts block"><dt class="param">clz</dt><dd class="cmt"><p>class whose method should be invoked</p></dd><dt class="param">inst</dt><dd class="cmt"><p>instance of the class who method should be invoked, if the method is not static</p></dd><dt class="param">meth</dt><dd class="cmt"><p>method to invoke</p></dd><dt>returns</dt><dd class="cmt"><p>a Box containing the value returned by the method</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#isEq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isEq(a:Array[Byte],b:Array[Byte]):Boolean"></a>
+      <a id="isEq(Array[Byte],Array[Byte]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEq</span><span class="params">(<span name="a">a: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]</span>, <span name="b">b: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@isEq(a:Array[Byte],b:Array[Byte]):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compare two arrays of Byte for byte equality.</p><div class="fullcomment"><div class="comment cmt"><p>Compare two arrays of Byte for byte equality.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if two Byte arrays contain the same bytes</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#listFromListAndString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="listFromListAndString(lst:List[String],s:String):List[String]"></a>
+      <a id="listFromListAndString(List[String],String):List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">listFromListAndString</span><span class="params">(<span name="lst">lst: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@listFromListAndString(lst:List[String],s:String):List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a List of Strings from a List[String] and a String
+</p><div class="fullcomment"><div class="comment cmt"><p>Creates a List of Strings from a List[String] and a String
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#listFromStrings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="listFromStrings(s1:String,s2:String):List[String]"></a>
+      <a id="listFromStrings(String,String):List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">listFromStrings</span><span class="params">(<span name="s1">s1: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="s2">s2: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@listFromStrings(s1:String,s2:String):List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a List of Strings from two Strings
+</p><div class="fullcomment"><div class="comment cmt"><p>Creates a List of Strings from two Strings
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#listStringToSuper" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="listStringToSuper(in:List[String]):net.liftweb.util.SuperListString"></a>
+      <a id="listStringToSuper(List[String]):SuperListString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">listStringToSuper</span><span class="params">(<span name="in">in: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="SuperListString.html" class="extype" name="net.liftweb.util.SuperListString">SuperListString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@listStringToSuper(in:List[String]):net.liftweb.util.SuperListString" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a SuperString with more available methods such as roboSplit or commafy</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#nodeSeqToOptionString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeSeqToOptionString(in:scala.xml.NodeSeq):net.liftweb.common.Box[String]"></a>
+      <a id="nodeSeqToOptionString(NodeSeq):Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeSeqToOptionString</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@nodeSeqToOptionString(in:scala.xml.NodeSeq):net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an Empty can if the node seq is empty and a full can with the NodeSeq text otherwise</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#notEq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notEq(a:Array[Byte],b:Array[Byte]):Boolean"></a>
+      <a id="notEq(Array[Byte],Array[Byte]):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notEq</span><span class="params">(<span name="a">a: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]</span>, <span name="b">b: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Byte" class="extype" target="_top">Byte</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@notEq(a:Array[Byte],b:Array[Byte]):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Compare two arrays of Byte for byte equality.</p><div class="fullcomment"><div class="comment cmt"><p>Compare two arrays of Byte for byte equality.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>true if two Byte arrays don't contain the same bytes</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#parseNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parseNumber(tin:String):Long"></a>
+      <a id="parseNumber(String):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseNumber</span><span class="params">(<span name="tin">tin: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@parseNumber(tin:String):Long" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parse a string and return the Long value of that string.</p><div class="fullcomment"><div class="comment cmt"><p>Parse a string and return the Long value of that string.</p><p>The string can start with '-' if it is a negative number or '+' for a positive number</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the Long value of the input String</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#processString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="processString(msg:String,subst:Map[String,String]):String"></a>
+      <a id="processString(String,Map[String,String]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">processString</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="subst">subst: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@processString(msg:String,subst:Map[String,String]):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Replaces the value found in a string surrounded by &lt;%= ...</p><div class="fullcomment"><div class="comment cmt"><p>Replaces the value found in a string surrounded by &lt;%= ... %&gt; by a replacement according to the value found in the subst Map.</p><p>Throws an exception if no correspondance can be found.
+</p></div><dl class="paramcmts block"><dt class="param">msg</dt><dd class="cmt"><p>string where replacements should be done</p></dd><dt class="param">subst</dt><dd class="cmt"><p>map of [regular expression with groups, replacement]</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#randomString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="randomString(size:Int):String"></a>
+      <a id="randomString(Int):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">randomString</span><span class="params">(<span name="size">size: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@randomString(size:Int):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create a random string of a given size.</p><div class="fullcomment"><div class="comment cmt"><p>Create a random string of a given size.  5 bits of randomness per character</p></div><dl class="paramcmts block"><dt class="param">size</dt><dd class="cmt"><p>size of the string to create. Must be a positive integer.</p></dd><dt>returns</dt><dd class="cmt"><p>the generated string</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#roboSplit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="roboSplit(what:String,sep:String):List[String]"></a>
+      <a id="roboSplit(String,String):List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">roboSplit</span><span class="params">(<span name="what">what: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sep">sep: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@roboSplit(what:String,sep:String):List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Split a string according to a separator</p><div class="fullcomment"><div class="comment cmt"><p>Split a string according to a separator</p></div><dl class="paramcmts block"><dt class="param">sep</dt><dd class="cmt"><p>a regexp to use with the String::split method</p></dd><dt>returns</dt><dd class="cmt"><p>a list of trimmed parts whose length is &gt; 0</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#snakify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="snakify(name:String):String"></a>
+      <a id="snakify(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">snakify</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@snakify(name:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Turn a string of format &quot;FooBar&quot; into snake case &quot;foo_bar&quot;</p><div class="fullcomment"><div class="comment cmt"><p>Turn a string of format &quot;FooBar&quot; into snake case &quot;foo_bar&quot;</p><p>Note: snakify is not reversible, ie. in general the following will _not_ be true:</p><p>s == camelify(snakify(s))
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the underscored string</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#splitAt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="splitAt(what:String,sep:String):List[(String,String)]"></a>
+      <a id="splitAt(String,String):List[(String,String)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">splitAt</span><span class="params">(<span name="what">what: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sep">sep: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@splitAt(what:String,sep:String):List[(String,String)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Split a string in 2 parts at the first place where a separator is found</p><div class="fullcomment"><div class="comment cmt"><p>Split a string in 2 parts at the first place where a separator is found</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a List containing a pair of the 2 trimmed parts</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#splitColonPair" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="splitColonPair(in:String,first:String,second:String):(String,String)"></a>
+      <a id="splitColonPair(String,String,String):(String,String)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">splitColonPair</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="first">first: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="second">second: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@splitColonPair(in:String,first:String,second:String):(String,String)" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Split a string separated by a point or by a column in 2 parts.</p><div class="fullcomment"><div class="comment cmt"><p>Split a string separated by a point or by a column in 2 parts. Uses default values if only one is found or if no parts are found</p></div><dl class="paramcmts block"><dt class="param">in</dt><dd class="cmt"><p>string to split</p></dd><dt class="param">first</dt><dd class="cmt"><p>default value for the first part if no split can be done</p></dd><dt class="param">second</dt><dd class="cmt"><p>default value for the second part if one or less parts can be found</p></dd><dt>returns</dt><dd class="cmt"><p>a pair containing the first and second parts</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#splitNameValuePairs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="splitNameValuePairs(props:String):Map[String,String]"></a>
+      <a id="splitNameValuePairs(String):Map[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">splitNameValuePairs</span><span class="params">(<span name="props">props: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@splitNameValuePairs(props:String):Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Splits a string of the form &lt;name1=value1, name2=value2, ...</p><div class="fullcomment"><div class="comment cmt"><p>Splits a string of the form &lt;name1=value1, name2=value2, ... &gt; and unquotes the quoted values.
+The result is a Map[String, String]
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#stringToSuper" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stringToSuper(in:String):net.liftweb.util.SuperString"></a>
+      <a id="stringToSuper(String):SuperString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringToSuper</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="SuperString.html" class="extype" name="net.liftweb.util.SuperString">SuperString</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@stringToSuper(in:String):net.liftweb.util.SuperString" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a SuperString with more available methods such as roboSplit or commafy</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#toBoolean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBoolean(in:Any):Boolean"></a>
+      <a id="toBoolean(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBoolean</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@toBoolean(in:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert any object to an &quot;equivalent&quot; Boolean depending on its value
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert any object to an &quot;equivalent&quot; Boolean depending on its value
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#toByteArrayInputStream" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toByteArrayInputStream(in:java.io.InputStream):java.io.ByteArrayInputStream"></a>
+      <a id="toByteArrayInputStream(InputStream):ByteArrayInputStream"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toByteArrayInputStream</span><span class="params">(<span name="in">in: <span class="extype" name="java.io.InputStream">InputStream</span></span>)</span><span class="result">: <span class="extype" name="java.io.ByteArrayInputStream">ByteArrayInputStream</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@toByteArrayInputStream(in:java.io.InputStream):java.io.ByteArrayInputStream" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert any InputStream to a ByteArrayInputStream
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert any InputStream to a ByteArrayInputStream
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#toInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toInt(in:Any):Int"></a>
+      <a id="toInt(Any):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toInt</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@toInt(in:Any):Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert any object to an &quot;equivalent&quot; Int depending on its value
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert any object to an &quot;equivalent&quot; Int depending on its value
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BasicTypesHelpers#toLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toLong(in:Any):Long"></a>
+      <a id="toLong(Any):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toLong</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@toLong(in:Any):Long" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert any object to an &quot;equivalent&quot; Long depending on its value
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert any object to an &quot;equivalent&quot; Long depending on its value
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.common.Tryo#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](ignore:Class[_])(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](Class[_])(⇒T):Box[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: <span class="extype" name="scala.Predef.Class">Class</span>[_]</span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@tryo[T](ignore:Class[_])(f:=&gt;T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f. Takes only one Class of exception to ignore</p></div><dl class="paramcmts block"><dt class="param">ignore</dt><dd class="cmt"><p>- a single exception classes to ignore. A thrown exception will be ignored if it is assignable from this class.</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Tryo#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](ignore:List[Class[_]])(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](List[Class[_]])(⇒T):Box[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@tryo[T](ignore:List[Class[_]])(f:=&gt;T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f</p></div><dl class="paramcmts block"><dt class="param">ignore</dt><dd class="cmt"><p>- a list of exception classes to ignore. A thrown exception will be ignored if it is assignable from one of
+the exception classes in the list</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Tryo#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](onError:Throwable=&gt;Unit)(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T]((Throwable)⇒Unit)(⇒T):Box[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="onError">onError: (<a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@tryo[T](onError:Throwable=&gt;Unit)(f:=&gt;T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f and trigger a callback function if an exception is thrown</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f and trigger a callback function if an exception is thrown</p></div><dl class="paramcmts block"><dt class="param">onError</dt><dd class="cmt"><p>- an optional callback function that will use the thrown exception as a parameter</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Tryo#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](⇒T):Box[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@tryo[T](f:=&gt;T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Tryo#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](handler:PartialFunction[Throwable,T],f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](PartialFunction[Throwable,T],⇒T):Box[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="handler">handler: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a>, <span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span>]</span>, <span name="f">f: ⇒ <span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@tryo[T](handler:PartialFunction[Throwable,T],f:=&gt;T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f. If f throws
+an exception that is in the domain of the handler PF,
+the handler will be invoked on the exception. Otherwise
+the exception is wrapped into a Failure.
+</p></div><dl class="paramcmts block"><dt class="param">handler</dt><dd class="cmt"><p>- A partial function that handles exceptions</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a></dd><dt>See also</dt><dd><span class="cmt"><p>net.liftweb.common.Failure</p></span></dd></dl></div>
+    </li><li name="net.liftweb.common.Tryo#tryo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryo[T](ignore:List[Class[_]],onError:net.liftweb.common.Box[Throwable=&gt;Unit])(f:=&gt;T):net.liftweb.common.Box[T]"></a>
+      <a id="tryo[T](List[Class[_]],Box[(Throwable)⇒Unit])(⇒T):Box[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryo</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="ignore">ignore: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.Class">Class</span>[_]]</span>, <span name="onError">onError: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Tryo.tryo.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@tryo[T](ignore:List[Class[_]],onError:net.liftweb.common.Box[Throwable=&gt;Unit])(f:=&gt;T):net.liftweb.common.Box[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Wraps a &quot;try&quot; block around the function f.</p><div class="fullcomment"><div class="comment cmt"><p>Wraps a &quot;try&quot; block around the function f. If f throws
+an exception with its class in the 'ignore' list or if 'ignore' is
+null or an empty list, ignore the exception and return None.
+</p></div><dl class="paramcmts block"><dt class="param">ignore</dt><dd class="cmt"><p>- a list of exception classes to ignore. A thrown exception will be ignored if it is assignable from one of
+the exception classes in the list</p></dd><dt class="param">onError</dt><dd class="cmt"><p>- an optional callback function that will use the thrown exception as a parameter</p></dd><dt class="param">f</dt><dd class="cmt"><p>- the block of code to evaluate</p></dd><dt>returns</dt><dd class="cmt"><p></p><ul><li>Full(result of the evaluation of f) if f doesn't throw any exception</li><li>a Failure if f throws an exception</li><li>Empty if the exception class is in the ignore list</li></ul></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a></dd></dl></div>
+    </li><li name="net.liftweb.util.StringHelpers#unquote" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unquote(str:String):String"></a>
+      <a id="unquote(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unquote</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@unquote(str:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">If str is surrounded by quotes it return the content between the quotes
+</p><div class="fullcomment"><div class="comment cmt"><p>If str is surrounded by quotes it return the content between the quotes
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.BasicTypesHelpers$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.util.ControlHelpers">
+              <h3>Inherited from <a href="ControlHelpers.html" class="extype" name="net.liftweb.util.ControlHelpers">ControlHelpers</a></h3>
+            </div><div class="parent" name="net.liftweb.common.Tryo">
+              <h3>Inherited from <a href="../common/Tryo.html" class="extype" name="net.liftweb.common.Tryo">Tryo</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ClassHelpers">
+              <h3>Inherited from <a href="ClassHelpers.html" class="extype" name="net.liftweb.util.ClassHelpers">ClassHelpers</a></h3>
+            </div><div class="parent" name="net.liftweb.util.StringHelpers">
+              <h3>Inherited from <a href="StringHelpers.html" class="extype" name="net.liftweb.util.StringHelpers">StringHelpers</a></h3>
+            </div><div class="parent" name="net.liftweb.util.BasicTypesHelpers">
+              <h3>Inherited from <a href="BasicTypesHelpers.html" class="extype" name="net.liftweb.util.BasicTypesHelpers">BasicTypesHelpers</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

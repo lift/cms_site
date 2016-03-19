@@ -1,0 +1,1655 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>BaseForeignKey - Lift Framework 3.0-SNAPSHOT - net.liftweb.mapper.BaseForeignKey</title>
+          <meta name="description" content="BaseForeignKey - Lift Framework 3.0 - SNAPSHOT - net.liftweb.mapper.BaseForeignKey" />
+          <meta name="keywords" content="BaseForeignKey Lift Framework 3.0 SNAPSHOT net.liftweb.mapper.BaseForeignKey" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.mapper.BaseForeignKey';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Trait" src="../../../lib/trait_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.mapper">mapper</a></p>
+        <h1>BaseForeignKey</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="net.liftweb.mapper">package mapper</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BaseForeignKey</span><span class="result"> extends <a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A trait that defines foreign key references
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a>, <a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>, <a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a>, <a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a>, <a href="../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a>, <a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a>, <a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a>, <a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a>, <a href="../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a>, <a href="../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a>, <a href="SelectableField.html" class="extype" name="net.liftweb.mapper.SelectableField">SelectableField</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="MappedLongForeignKey.html" class="extype" name="net.liftweb.mapper.MappedLongForeignKey">MappedLongForeignKey</a>, <a href="MappedStringForeignKey.html" class="extype" name="net.liftweb.mapper.MappedStringForeignKey">MappedStringForeignKey</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.mapper.BaseForeignKey"><span>BaseForeignKey</span></li><li class="in" name="net.liftweb.mapper.BaseMappedField"><span>BaseMappedField</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="net.liftweb.mapper.MixableMappedField"><span>MixableMappedField</span></li><li class="in" name="net.liftweb.util.BaseField"><span>BaseField</span></li><li class="in" name="net.liftweb.util.FieldContainer"><span>FieldContainer</span></li><li class="in" name="net.liftweb.util.SettableField"><span>SettableField</span></li><li class="in" name="net.liftweb.util.SettableValueHolder"><span>SettableValueHolder</span></li><li class="in" name="net.liftweb.util.Settable"><span>Settable</span></li><li class="in" name="net.liftweb.util.ReadableField"><span>ReadableField</span></li><li class="in" name="net.liftweb.util.ValueHolder"><span>ValueHolder</span></li><li class="in" name="net.liftweb.util.FieldIdentifier"><span>FieldIdentifier</span></li><li class="in" name="net.liftweb.util.Bindable"><span>Bindable</span></li><li class="in" name="net.liftweb.mapper.SelectableField"><span>SelectableField</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.mapper.BaseForeignKey.KeyType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="KeyType"></a>
+      <a id="KeyType:KeyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">KeyType</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@KeyType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.mapper.BaseForeignKey.KeyedForeignType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="KeyedForeignType&lt;:net.liftweb.mapper.KeyedMapper[BaseForeignKey.this.KeyType,BaseForeignKey.this.KeyedForeignType]"></a>
+      <a id="KeyedForeignType:KeyedForeignType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">KeyedForeignType</span><span class="result"> &lt;: <a href="KeyedMapper.html" class="extype" name="net.liftweb.mapper.KeyedMapper">KeyedMapper</a>[<a href="#KeyType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.KeyType">KeyType</a>, <a href="#KeyedForeignType&lt;:net.liftweb.mapper.KeyedMapper[BaseForeignKey.this.KeyType,BaseForeignKey.this.KeyedForeignType]" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.KeyedForeignType">KeyedForeignType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@KeyedForeignType&lt;:net.liftweb.mapper.KeyedMapper[BaseForeignKey.this.KeyType,BaseForeignKey.this.KeyedForeignType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.mapper.BaseForeignKey.OwnerType" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="OwnerType&lt;:net.liftweb.mapper.Mapper[BaseForeignKey.this.OwnerType]"></a>
+      <a id="OwnerType:OwnerType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">OwnerType</span><span class="result"> &lt;: <a href="Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<a href="#OwnerType&lt;:net.liftweb.mapper.Mapper[BaseForeignKey.this.OwnerType]" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.OwnerType">OwnerType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@OwnerType&lt;:net.liftweb.mapper.Mapper[BaseForeignKey.this.OwnerType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.mapper.MixableMappedField.TheOwnerType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TheOwnerType&lt;:net.liftweb.mapper.Mapper[MixableMappedField.this.TheOwnerType]"></a>
+      <a id="TheOwnerType:TheOwnerType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TheOwnerType</span><span class="result"> &lt;: <a href="Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<a href="#TheOwnerType&lt;:net.liftweb.mapper.Mapper[MixableMappedField.this.TheOwnerType]" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.TheOwnerType">TheOwnerType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@TheOwnerType&lt;:net.liftweb.mapper.Mapper[MixableMappedField.this.TheOwnerType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Will be set to the type of the owner of the field
+</p><div class="fullcomment"><div class="comment cmt"><p>Will be set to the type of the owner of the field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ValueHolder.ValueType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ValueType"></a>
+      <a id="ValueType:ValueType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ValueType</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@ValueType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="net.liftweb.mapper.BaseMappedField#_toForm" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="_toForm:net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
+      <a id="_toForm:Box[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_toForm</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@_toForm:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is where the instance creates its &quot;toForm&quot; stuff.</p><div class="fullcomment"><div class="comment cmt"><p>This is where the instance creates its &quot;toForm&quot; stuff.
+The actual toForm method wraps the information based on
+mode.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#asJsExp" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="asJsExp:net.liftweb.http.js.JsExp"></a>
+      <a id="asJsExp:JsExp"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJsExp</span><span class="result">: <a href="../http/js/JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@asJsExp:net.liftweb.http.js.JsExp" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#asJsonValue" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="asJsonValue:net.liftweb.common.Box[net.liftweb.json.JsonAST.JValue]"></a>
+      <a id="asJsonValue:Box[JValue]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJsonValue</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@asJsonValue:net.liftweb.common.Box[net.liftweb.json.JsonAST.JValue]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#asString" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="asString:String"></a>
+      <a id="asString:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@asString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert the field to its name/value pair (e.g., name=David)
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert the field to its name/value pair (e.g., name=David)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a> → <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbAddedColumn" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbAddedColumn:net.liftweb.common.Box[()=&gt;Unit]"></a>
+      <a id="dbAddedColumn:Box[()⇒Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbAddedColumn</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[() ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbAddedColumn:net.liftweb.common.Box[()=&gt;Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Called when a column has been added to the database via Schemifier
+</p><div class="fullcomment"><div class="comment cmt"><p>Called when a column has been added to the database via Schemifier
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseForeignKey#dbAddedForeignKey" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbAddedForeignKey:net.liftweb.common.Box[()=&gt;Unit]"></a>
+      <a id="dbAddedForeignKey:Box[()⇒Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbAddedForeignKey</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[() ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbAddedForeignKey:net.liftweb.common.Box[()=&gt;Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Called when Schemifier adds a foreign key.</p><div class="fullcomment"><div class="comment cmt"><p>Called when Schemifier adds a foreign key.  Return a function that will be called when Schemifier
+is done with the schemification.
+</p></div></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbAddedIndex" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbAddedIndex:net.liftweb.common.Box[()=&gt;Unit]"></a>
+      <a id="dbAddedIndex:Box[()⇒Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbAddedIndex</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[() ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbAddedIndex:net.liftweb.common.Box[()=&gt;Unit]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Called when a column has indexed via Schemifier
+</p><div class="fullcomment"><div class="comment cmt"><p>Called when a column has indexed via Schemifier
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbColumnCount" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbColumnCount:Int"></a>
+      <a id="dbColumnCount:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbColumnCount</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbColumnCount:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The number of database columns that this field represents
+</p><div class="fullcomment"><div class="comment cmt"><p>The number of database columns that this field represents
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a> → <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbColumnName" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbColumnName:String"></a>
+      <a id="dbColumnName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbColumnName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbColumnName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbColumnNames" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbColumnNames(in:String):List[String]"></a>
+      <a id="dbColumnNames(String):List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbColumnNames</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbColumnNames(in:String):List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbForeignKey_?" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbForeignKey_?:Boolean"></a>
+      <a id="dbForeignKey_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbForeignKey_$qmark" class="name">dbForeignKey_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbForeignKey_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the field a foreign key reference
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the field a foreign key reference
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a> → <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbIndexed_?" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbIndexed_?:Boolean"></a>
+      <a id="dbIndexed_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbIndexed_$qmark" class="name">dbIndexed_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbIndexed_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Should the field be indexed?
+</p><div class="fullcomment"><div class="comment cmt"><p> Should the field be indexed?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a> → <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseForeignKey#dbKeyToColumn" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="dbKeyToColumn:net.liftweb.mapper.BaseMappedField"></a>
+      <a id="dbKeyToColumn:BaseMappedField"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbKeyToColumn</span><span class="result">: <a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbKeyToColumn:net.liftweb.mapper.BaseMappedField" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.mapper.BaseForeignKey#dbKeyToTable" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="dbKeyToTable:net.liftweb.mapper.BaseMetaMapper"></a>
+      <a id="dbKeyToTable:BaseMetaMapper"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbKeyToTable</span><span class="result">: <a href="BaseMetaMapper.html" class="extype" name="net.liftweb.mapper.BaseMetaMapper">BaseMetaMapper</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbKeyToTable:net.liftweb.mapper.BaseMetaMapper" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get the object referred to by this foreign key
+</p>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbPrimaryKey_?" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbPrimaryKey_?:Boolean"></a>
+      <a id="dbPrimaryKey_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbPrimaryKey_$qmark" class="name">dbPrimaryKey_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbPrimaryKey_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the field the table's primary key
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the field the table's primary key
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a> → <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.SelectableField#dbSelectString" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="dbSelectString:String"></a>
+      <a id="dbSelectString:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dbSelectString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbSelectString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SelectableField.html" class="extype" name="net.liftweb.mapper.SelectableField">SelectableField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseForeignKey#defined_?" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="defined_?:Boolean"></a>
+      <a id="defined_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: defined_$qmark" class="name">defined_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@defined_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the key defined?
+</p>
+    </li><li name="net.liftweb.mapper.BaseMappedField#doneWithSave" visbl="prt" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="doneWithSave():Unit"></a>
+      <a id="doneWithSave():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doneWithSave</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@doneWithSave():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Called after the field is saved to the database
+</p><div class="fullcomment"><div class="comment cmt"><p>Called after the field is saved to the database
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="net.liftweb.mapper">net.liftweb.mapper</a>] </dd><dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#fieldCreatorString" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="fieldCreatorString(dbType:net.liftweb.mapper.DriverType):List[String]"></a>
+      <a id="fieldCreatorString(DriverType):List[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldCreatorString</span><span class="params">(<span name="dbType">dbType: <a href="package.html#DriverType=net.liftweb.db.DriverType" class="extmbr" name="net.liftweb.mapper.DriverType">DriverType</a></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@fieldCreatorString(dbType:net.liftweb.mapper.DriverType):List[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given the driver type, return a list of statements to create the columns in the database
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the driver type, return a list of statements to create the columns in the database
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#fieldCreatorString" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="fieldCreatorString(dbType:net.liftweb.mapper.DriverType,colName:String):String"></a>
+      <a id="fieldCreatorString(DriverType,String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldCreatorString</span><span class="params">(<span name="dbType">dbType: <a href="package.html#DriverType=net.liftweb.db.DriverType" class="extmbr" name="net.liftweb.mapper.DriverType">DriverType</a></span>, <span name="colName">colName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@fieldCreatorString(dbType:net.liftweb.mapper.DriverType,colName:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given the driver type, return the string required to create the column in the database
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the driver type, return the string required to create the column in the database
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseForeignKey#findFor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="findFor(key:BaseForeignKey.this.KeyedForeignType):List[BaseForeignKey.this.OwnerType]"></a>
+      <a id="findFor(KeyedForeignType):List[OwnerType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findFor</span><span class="params">(<span name="key">key: <a href="#KeyedForeignType&lt;:net.liftweb.mapper.KeyedMapper[BaseForeignKey.this.KeyType,BaseForeignKey.this.KeyedForeignType]" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.KeyedForeignType">KeyedForeignType</a></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#OwnerType&lt;:net.liftweb.mapper.Mapper[BaseForeignKey.this.OwnerType]" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.OwnerType">OwnerType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@findFor(key:BaseForeignKey.this.KeyedForeignType):List[BaseForeignKey.this.OwnerType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.mapper.BaseForeignKey#findFor" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="findFor(key:BaseForeignKey.this.KeyType):List[BaseForeignKey.this.OwnerType]"></a>
+      <a id="findFor(KeyType):List[OwnerType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findFor</span><span class="params">(<span name="key">key: <a href="#KeyType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.KeyType">KeyType</a></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#OwnerType&lt;:net.liftweb.mapper.Mapper[BaseForeignKey.this.OwnerType]" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.OwnerType">OwnerType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@findFor(key:BaseForeignKey.this.KeyType):List[BaseForeignKey.this.OwnerType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.util.ValueHolder#get" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="get:ValueHolder.this.ValueType"></a>
+      <a id="get:ValueType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="result">: <a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@get:ValueHolder.this.ValueType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get the value
+</p><div class="fullcomment"><div class="comment cmt"><p>get the value
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#jdbcFriendly" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="jdbcFriendly:AnyRef"></a>
+      <a id="jdbcFriendly:AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jdbcFriendly</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@jdbcFriendly:AnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get a JDBC friendly object for the part of this field that maps to the first
+column in the database
+</p><div class="fullcomment"><div class="comment cmt"><p>Get a JDBC friendly object for the part of this field that maps to the first
+column in the database
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#jdbcFriendly" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="jdbcFriendly(field:String):AnyRef"></a>
+      <a id="jdbcFriendly(String):AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jdbcFriendly</span><span class="params">(<span name="field">field: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@jdbcFriendly(field:String):AnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Get a JDBC friendly representation of the named field (this is used for MappedFields that correspond to more than
+1 column in the database.)</p><div class="fullcomment"><div class="comment cmt"><p> Get a JDBC friendly representation of the named field (this is used for MappedFields that correspond to more than
+1 column in the database.)</p></div><dl class="paramcmts block"><dt class="param">field</dt><dd class="cmt"><p>-- the name of the field being mapped to</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#name" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@name:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The human name of this field
+</p><div class="fullcomment"><div class="comment cmt"><p>The human name of this field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#set" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="set(in:Settable.this.ValueType):Settable.this.ValueType"></a>
+      <a id="set(ValueType):ValueType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">set</span><span class="params">(<span name="in">in: <a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a></span>)</span><span class="result">: <a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@set(in:Settable.this.ValueType):Settable.this.ValueType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#setFilter" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="setFilter:List[SettableField.this.ValueType=&gt;SettableField.this.ValueType]"></a>
+      <a id="setFilter:List[(ValueType)⇒ValueType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFilter</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a>) ⇒ <a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@setFilter:List[SettableField.this.ValueType=&gt;SettableField.this.ValueType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of functions that transform the value before it is set.</p><div class="fullcomment"><div class="comment cmt"><p>A list of functions that transform the value before it is set.  The transformations
+are also applied before the value is used in a query.  Typical applications
+of this are trimming and/or toLowerCase-ing strings
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#targetSQLType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="targetSQLType:Int"></a>
+      <a id="targetSQLType:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">targetSQLType</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@targetSQLType:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get the JDBC SQL Type for this field
+</p><div class="fullcomment"><div class="comment cmt"><p>Get the JDBC SQL Type for this field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#targetSQLType" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="targetSQLType(field:String):Int"></a>
+      <a id="targetSQLType(String):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">targetSQLType</span><span class="params">(<span name="field">field: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@targetSQLType(field:String):Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get the JDBC SQL Type for this field
+</p><div class="fullcomment"><div class="comment cmt"><p>Get the JDBC SQL Type for this field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#toForm" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toForm:net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
+      <a id="toForm:Box[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toForm</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@toForm:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Create an input field for the item
+</p><div class="fullcomment"><div class="comment cmt"><p>Create an input field for the item
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#validate" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="validate:List[net.liftweb.util.FieldError]"></a>
+      <a id="validate:List[FieldError]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validate</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@validate:List[net.liftweb.util.FieldError]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Validate this field and return a list of Validation Issues
+</p><div class="fullcomment"><div class="comment cmt"><p>Validate this field and return a list of Validation Issues
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#validations" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="validations:List[SettableField.this.ValueType=&gt;List[net.liftweb.util.FieldError]]"></a>
+      <a id="validations:List[(ValueType)⇒List[FieldError]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validations</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a>) ⇒ <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@validations:List[SettableField.this.ValueType=&gt;List[net.liftweb.util.FieldError]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#_dbColumnNameLC" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_dbColumnNameLC:String"></a>
+      <a id="_dbColumnNameLC:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_dbColumnNameLC</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@_dbColumnNameLC:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The forced lower case column names
+</p><div class="fullcomment"><div class="comment cmt"><p>The forced lower case column names
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.BaseField#allFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allFields:Seq[net.liftweb.util.BaseField]"></a>
+      <a id="allFields:Seq[BaseField]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">allFields</span><span class="result">: <a href="../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@allFields:Seq[net.liftweb.util.BaseField]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a> → <a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#asHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asHtml:scala.xml.NodeSeq"></a>
+      <a id="asHtml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@asHtml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Default read-only rendering of field
+</p><div class="fullcomment"><div class="comment cmt"><p>Default read-only rendering of field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a> → <a href="../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#asJs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJs:List[(String,net.liftweb.http.js.JsExp)]"></a>
+      <a id="asJs:List[(String,JsExp)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJs</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="../http/js/JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@asJs:List[(String,net.liftweb.http.js.JsExp)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#asJsonField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJsonField:net.liftweb.common.Box[net.liftweb.json.JsonAST.JField]"></a>
+      <a id="asJsonField:Box[JField]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJsonField</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../json/JsonAST$$JField.html" class="extype" name="net.liftweb.json.JsonAST.JField">JField</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@asJsonField:net.liftweb.common.Box[net.liftweb.json.JsonAST.JField]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#atomicUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType"></a>
+      <a id="atomicUpdate((ValueType)⇒ValueType):ValueType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">atomicUpdate</span><span class="params">(<span name="f">f: (<a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a>) ⇒ <a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a></span>)</span><span class="result">: <a href="#ValueType" class="extmbr" name="net.liftweb.mapper.BaseForeignKey.ValueType">ValueType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Perform an atomic update of this Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic update of this Settable.
+The current value is passed to the function and the ValueHolder
+is set to the result of the function.  This is enclosed in the
+performAtomicOperation method which will, by default, synchronize
+this instance
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbAutogenerated_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dbAutogenerated_?:Boolean"></a>
+      <a id="dbAutogenerated_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbAutogenerated_$qmark" class="name">dbAutogenerated_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbAutogenerated_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the primary key autogenerated
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the primary key autogenerated
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbDisplay_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dbDisplay_?:Boolean"></a>
+      <a id="dbDisplay_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbDisplay_$qmark" class="name">dbDisplay_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbDisplay_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbIgnoreSQLType_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dbIgnoreSQLType_?:Boolean"></a>
+      <a id="dbIgnoreSQLType_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbIgnoreSQLType_$qmark" class="name">dbIgnoreSQLType_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbIgnoreSQLType_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Do we ignore the targetSQLType for setObject
+</p><div class="fullcomment"><div class="comment cmt"><p>Do we ignore the targetSQLType for setObject
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbIncludeInForm_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dbIncludeInForm_?:Boolean"></a>
+      <a id="dbIncludeInForm_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbIncludeInForm_$qmark" class="name">dbIncludeInForm_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbIncludeInForm_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#dbNotNull_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dbNotNull_?:Boolean"></a>
+      <a id="dbNotNull_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dbNotNull_$qmark" class="name">dbNotNull_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@dbNotNull_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Set to true if the field should be created as NOT NULL
+</p><div class="fullcomment"><div class="comment cmt"><p>Set to true if the field should be created as NOT NULL
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a> → <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayHtml:scala.xml.NodeSeq"></a>
+      <a id="displayHtml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@displayHtml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayName:String"></a>
+      <a id="displayName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@displayName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The display name of this field (e.g., &quot;First Name&quot;)
+</p><div class="fullcomment"><div class="comment cmt"><p>The display name of this field (e.g., &quot;First Name&quot;)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayNameHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayNameHtml:net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
+      <a id="displayNameHtml:Box[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayNameHtml</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@displayNameHtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#fieldId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fieldId:Option[scala.xml.NodeSeq]"></a>
+      <a id="fieldId:Option[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldId</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@fieldId:Option[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A unique 'id' for the field for form generation
+</p><div class="fullcomment"><div class="comment cmt"><p>A unique 'id' for the field for form generation
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#formElemAttrs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formElemAttrs:Seq[net.liftweb.http.SHtml.ElemAttr]"></a>
+      <a id="formElemAttrs:Seq[http.SHtml.ElemAttr]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">formElemAttrs</span><span class="result">: <a href="../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../http/SHtml$.html#ElemAttrextendsxml.Elem=&gt;scala.xml.Elem" class="extmbr" name="net.liftweb.http.SHtml.ElemAttr">http.SHtml.ElemAttr</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@formElemAttrs:Seq[net.liftweb.http.SHtml.ElemAttr]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">What form elements are we going to add to this field?
+</p><div class="fullcomment"><div class="comment cmt"><p>What form elements are we going to add to this field?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#helpAsHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="helpAsHtml:net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
+      <a id="helpAsHtml:Box[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">helpAsHtml</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@helpAsHtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#performAtomicOperation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="performAtomicOperation[T](f:=&gt;T):T"></a>
+      <a id="performAtomicOperation[T](⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">performAtomicOperation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@performAtomicOperation[T](f:=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Perform an atomic operation on the Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic operation on the Settable. By default
+synchronizes the instance, but it could use other mechanisms
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.BaseMappedField#renderJs_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="renderJs_?:Boolean"></a>
+      <a id="renderJs_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: renderJs_$qmark" class="name">renderJs_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@renderJs_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#required_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="required_?:Boolean"></a>
+      <a id="required_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: required_$qmark" class="name">required_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@required_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the Field required (and will have a style designating it as such)
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the Field required (and will have a style designating it as such)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#shouldDisplay_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shouldDisplay_?:Boolean"></a>
+      <a id="shouldDisplay_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: shouldDisplay_$qmark" class="name">shouldDisplay_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@shouldDisplay_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given the current context, should this field be displayed
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the current context, should this field be displayed
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#show_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="show_?:Boolean"></a>
+      <a id="show_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: show_$qmark" class="name">show_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@show_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given the current state of things, should this field be shown
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the current state of things, should this field be shown
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.FieldIdentifier#uniqueFieldId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniqueFieldId:net.liftweb.common.Box[String]"></a>
+      <a id="uniqueFieldId:Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniqueFieldId</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@uniqueFieldId:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#uploadField_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uploadField_?:Boolean"></a>
+      <a id="uploadField_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: uploadField_$qmark" class="name">uploadField_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@uploadField_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is this an upload field so that a form that includes this field must be multi-part mime
+</p><div class="fullcomment"><div class="comment cmt"><p>Is this an upload field so that a form that includes this field must be multi-part mime
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.mapper.BaseForeignKey@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.mapper.BaseMappedField">
+              <h3>Inherited from <a href="BaseMappedField.html" class="extype" name="net.liftweb.mapper.BaseMappedField">BaseMappedField</a></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="net.liftweb.mapper.MixableMappedField">
+              <h3>Inherited from <a href="MixableMappedField.html" class="extype" name="net.liftweb.mapper.MixableMappedField">MixableMappedField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.BaseField">
+              <h3>Inherited from <a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.FieldContainer">
+              <h3>Inherited from <a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></h3>
+            </div><div class="parent" name="net.liftweb.util.SettableField">
+              <h3>Inherited from <a href="../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.SettableValueHolder">
+              <h3>Inherited from <a href="../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Settable">
+              <h3>Inherited from <a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ReadableField">
+              <h3>Inherited from <a href="../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ValueHolder">
+              <h3>Inherited from <a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.FieldIdentifier">
+              <h3>Inherited from <a href="../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Bindable">
+              <h3>Inherited from <a href="../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a></h3>
+            </div><div class="parent" name="net.liftweb.mapper.SelectableField">
+              <h3>Inherited from <a href="SelectableField.html" class="extype" name="net.liftweb.mapper.SelectableField">SelectableField</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

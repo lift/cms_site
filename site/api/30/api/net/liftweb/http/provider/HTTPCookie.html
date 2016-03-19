@@ -1,0 +1,713 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>HTTPCookie - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.provider.HTTPCookie</title>
+          <meta name="description" content="HTTPCookie - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.provider.HTTPCookie" />
+          <meta name="keywords" content="HTTPCookie Lift Framework 3.0 SNAPSHOT net.liftweb.http.provider.HTTPCookie" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.http.provider.HTTPCookie';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="HTTPCookie$.html" title="See companion object"><img alt="Class/Object" src="../../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a>.<a href="package.html" class="extype" name="net.liftweb.http.provider">provider</a></p>
+        <h1><a href="HTTPCookie$.html" title="See companion object">HTTPCookie</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="HTTPCookie$.html" title="See companion object">object HTTPCookie</a>
+            | <a href="package.html" class="extype" name="net.liftweb.http.provider">package provider</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">HTTPCookie</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="domain">domain: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="path">path: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="maxAge">maxAge: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>, <span name="version">version: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>, <span name="secure_?">secure_?: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>, <span name="httpOnly">httpOnly: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>] = <span class="symbol"><span class="name"><a href="../../../package.html">Empty</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="java.lang.Cloneable">Cloneable</span> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Repersents an immutable representation of an HTTP Cookie
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <span class="extype" name="java.lang.Cloneable">Cloneable</span>, <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.http.provider.HTTPCookie"><span>HTTPCookie</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="java.lang.Cloneable"><span>Cloneable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="net.liftweb.http.provider.HTTPCookie#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(name:String,value:net.liftweb.common.Box[String],domain:net.liftweb.common.Box[String],path:net.liftweb.common.Box[String],maxAge:net.liftweb.common.Box[Int],version:net.liftweb.common.Box[Int],secure_?:net.liftweb.common.Box[Boolean],httpOnly:net.liftweb.common.Box[Boolean]):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="&lt;init&gt;:HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">HTTPCookie</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="domain">domain: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="path">path: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="maxAge">maxAge: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>, <span name="version">version: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>, <span name="secure_?">secure_?: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>, <span name="httpOnly">httpOnly: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>] = <span class="symbol"><span class="name"><a href="../../../package.html">Empty</a></span></span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@&lt;init&gt;(name:String,value:net.liftweb.common.Box[String],domain:net.liftweb.common.Box[String],path:net.liftweb.common.Box[String],maxAge:net.liftweb.common.Box[Int],version:net.liftweb.common.Box[Int],secure_?:net.liftweb.common.Box[Boolean],httpOnly:net.liftweb.common.Box[Boolean]):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#clone" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="clone():HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@clone():net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a> → AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#domain" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="domain:net.liftweb.common.Box[String]"></a>
+      <a id="domain:Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">domain</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@domain:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#httpOnly" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="httpOnly:net.liftweb.common.Box[Boolean]"></a>
+      <a id="httpOnly:Box[Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">httpOnly</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@httpOnly:net.liftweb.common.Box[Boolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#maxAge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="maxAge:net.liftweb.common.Box[Int]"></a>
+      <a id="maxAge:Box[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maxAge</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@maxAge:net.liftweb.common.Box[Int]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.provider.HTTPCookie#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="name:String"></a>
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@name:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#path" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="path:net.liftweb.common.Box[String]"></a>
+      <a id="path:Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">path</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@path:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.provider.HTTPCookie#secure_?" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="secure_?:net.liftweb.common.Box[Boolean]"></a>
+      <a id="secure_?:Box[Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: secure_$qmark" class="name">secure_?</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@secure_?:net.liftweb.common.Box[Boolean]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.provider.HTTPCookie#setDomain" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setDomain(newDomain:String):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="setDomain(String):HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setDomain</span><span class="params">(<span name="newDomain">newDomain: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@setDomain(newDomain:String):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a new HTTPCookie that preserve existing member values but sets the cookie domain to newDomain</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new HTTPCookie that preserve existing member values but sets the cookie domain to newDomain</p></div><dl class="paramcmts block"><dt class="param">newDomain</dt><dd class="cmt"><p>- the new cookie domain</p></dd><dt>returns</dt><dd class="cmt"><p>HTTPCookie</p></dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#setHttpOnly" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setHttpOnly(flagHttpOnly:Boolean):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="setHttpOnly(Boolean):HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setHttpOnly</span><span class="params">(<span name="flagHttpOnly">flagHttpOnly: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@setHttpOnly(flagHttpOnly:Boolean):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a new HTTPCookie that preserve existing member values but sets the httpOnly attribute</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new HTTPCookie that preserve existing member values but sets the httpOnly attribute</p></div><dl class="paramcmts block"><dt class="param">flagHttpOnly</dt><dd class="cmt"><p>- should the cookie be flagged as HTTP Only (only works in Servlet 3.0 containers)</p></dd><dt>returns</dt><dd class="cmt"><p>HTTPCookie</p></dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#setMaxAge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setMaxAge(newMaxAge:Int):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="setMaxAge(Int):HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setMaxAge</span><span class="params">(<span name="newMaxAge">newMaxAge: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@setMaxAge(newMaxAge:Int):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a new HTTPCookie that preserve existing member values but sets the cookie maxAge to newVMaxAge</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new HTTPCookie that preserve existing member values but sets the cookie maxAge to newVMaxAge</p></div><dl class="paramcmts block"><dt class="param">newMaxAge</dt><dd class="cmt"><p>- the new cookie maxAge</p></dd><dt>returns</dt><dd class="cmt"><p>HTTPCookie</p></dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#setPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setPath(newPath:String):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="setPath(String):HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setPath</span><span class="params">(<span name="newPath">newPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@setPath(newPath:String):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a new HTTPCookie that preserve existing member values but sets the cookie path to newPath</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new HTTPCookie that preserve existing member values but sets the cookie path to newPath</p></div><dl class="paramcmts block"><dt class="param">newPath</dt><dd class="cmt"><p>- the new cookie path</p></dd><dt>returns</dt><dd class="cmt"><p>HTTPCookie</p></dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#setSecure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setSecure(newSecure:Boolean):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="setSecure(Boolean):HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setSecure</span><span class="params">(<span name="newSecure">newSecure: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@setSecure(newSecure:Boolean):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a new HTTPCookie that preserve existing member values but sets the cookie secure flag to newSecure</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new HTTPCookie that preserve existing member values but sets the cookie secure flag to newSecure</p></div><dl class="paramcmts block"><dt class="param">newSecure</dt><dd class="cmt"><p>- the new cookie secure flag</p></dd><dt>returns</dt><dd class="cmt"><p>HTTPCookie</p></dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#setValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setValue(newValue:String):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="setValue(String):HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setValue</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@setValue(newValue:String):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a new HTTPCookie that preserve existing member values but sets the cookie value to newValue</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new HTTPCookie that preserve existing member values but sets the cookie value to newValue</p></div><dl class="paramcmts block"><dt class="param">newValue</dt><dd class="cmt"><p>- the new cookie value</p></dd><dt>returns</dt><dd class="cmt"><p>HTTPCookie</p></dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#setVersion" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setVersion(newVersion:Int):net.liftweb.http.provider.HTTPCookie"></a>
+      <a id="setVersion(Int):HTTPCookie"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setVersion</span><span class="params">(<span name="newVersion">newVersion: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.http.provider.HTTPCookie">HTTPCookie</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@setVersion(newVersion:Int):net.liftweb.http.provider.HTTPCookie" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a new HTTPCookie that preserve existing member values but sets the cookie version to newVersion</p><div class="fullcomment"><div class="comment cmt"><p>Returns a new HTTPCookie that preserve existing member values but sets the cookie version to newVersion</p></div><dl class="paramcmts block"><dt class="param">newVersion</dt><dd class="cmt"><p>- the new cookie version</p></dd><dt>returns</dt><dd class="cmt"><p>HTTPCookie</p></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.provider.HTTPCookie#value" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="value:net.liftweb.common.Box[String]"></a>
+      <a id="value:Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@value:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.provider.HTTPCookie#version" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="version:net.liftweb.common.Box[Int]"></a>
+      <a id="version:Box[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">version</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@version:net.liftweb.common.Box[Int]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.provider.HTTPCookie@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
+            </div><div class="parent" name="java.lang.Cloneable">
+              <h3>Inherited from <span class="extype" name="java.lang.Cloneable">Cloneable</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

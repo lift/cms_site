@@ -1,0 +1,892 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>LiftRules - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.LiftRules</title>
+          <meta name="description" content="LiftRules - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.LiftRules" />
+          <meta name="keywords" content="LiftRules Lift Framework 3.0 SNAPSHOT net.liftweb.http.LiftRules" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.http.LiftRules$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <a href="LiftRules.html" title="See companion class"><img alt="Object/Class" src="../../../lib/object_to_class_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.http">http</a></p>
+        <h1><a href="LiftRules.html" title="See companion class">LiftRules</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="LiftRules.html" title="See companion class">class LiftRules</a>
+            | <a href="package.html" class="extype" name="net.liftweb.http">package http</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LiftRules</span><span class="result"> extends <a href="LiftRulesMocker.html" class="extype" name="net.liftweb.http.LiftRulesMocker">LiftRulesMocker</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The Lift configuration singleton
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="LiftRulesMocker.html" class="extype" name="net.liftweb.http.LiftRulesMocker">LiftRulesMocker</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.http.LiftRules"><span>LiftRules</span></li><li class="in" name="net.liftweb.http.LiftRulesMocker"><span>LiftRulesMocker</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.http.LiftRules.CometCreationPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CometCreationPF=PartialFunction[net.liftweb.http.CometCreationInfo,net.liftweb.http.LiftCometActor]"></a>
+      <a id="CometCreationPF:CometCreationPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CometCreationPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="CometCreationInfo.html" class="extype" name="net.liftweb.http.CometCreationInfo">CometCreationInfo</a>, <a href="LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@CometCreationPF=PartialFunction[net.liftweb.http.CometCreationInfo,net.liftweb.http.LiftCometActor]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.DataAttributeProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DataAttributeProcessor=PartialFunction[(String,String,scala.xml.Elem,net.liftweb.http.LiftSession),net.liftweb.http.DataAttributeProcessorAnswer]"></a>
+      <a id="DataAttributeProcessor:DataAttributeProcessor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DataAttributeProcessor</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.xml.Elem">Elem</span>, <a href="LiftSession.html" class="extype" name="net.liftweb.http.LiftSession">LiftSession</a>), <a href="DataAttributeProcessorAnswer.html" class="extype" name="net.liftweb.http.DataAttributeProcessorAnswer">DataAttributeProcessorAnswer</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@DataAttributeProcessor=PartialFunction[(String,String,scala.xml.Elem,net.liftweb.http.LiftSession),net.liftweb.http.DataAttributeProcessorAnswer]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A partial function that allows processing of any attribute on an Elem
+if the attribute begins with &quot;data-&quot;
+</p>
+    </li><li name="net.liftweb.http.LiftRules.DispatchPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DispatchPF=PartialFunction[net.liftweb.http.Req,()=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]]"></a>
+      <a id="DispatchPF:DispatchPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DispatchPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@DispatchPF=PartialFunction[net.liftweb.http.Req,()=&gt;net.liftweb.common.Box[net.liftweb.http.LiftResponse]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.ExceptionHandlerPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ExceptionHandlerPF=PartialFunction[(net.liftweb.util.Props.RunModes.Value,net.liftweb.http.Req,Throwable),net.liftweb.http.LiftResponse]"></a>
+      <a id="ExceptionHandlerPF:ExceptionHandlerPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ExceptionHandlerPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<a href="../util/Props$$RunModes$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="net.liftweb.util.Props.RunModes.Value">util.Props.RunModes.Value</a>, <a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a>), <a href="LiftResponse.html" class="extype" name="net.liftweb.http.LiftResponse">LiftResponse</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@ExceptionHandlerPF=PartialFunction[(net.liftweb.util.Props.RunModes.Value,net.liftweb.http.Req,Throwable),net.liftweb.http.LiftResponse]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.HttpAuthProtectedResourcePF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HttpAuthProtectedResourcePF=PartialFunction[net.liftweb.http.Req,net.liftweb.common.Box[net.liftweb.http.auth.Role]]"></a>
+      <a id="HttpAuthProtectedResourcePF:HttpAuthProtectedResourcePF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">HttpAuthProtectedResourcePF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="auth/Role.html" class="extype" name="net.liftweb.http.auth.Role">Role</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@HttpAuthProtectedResourcePF=PartialFunction[net.liftweb.http.Req,net.liftweb.common.Box[net.liftweb.http.auth.Role]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.LiftRequestPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LiftRequestPF=PartialFunction[net.liftweb.http.Req,Boolean]"></a>
+      <a id="LiftRequestPF:LiftRequestPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LiftRequestPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@LiftRequestPF=PartialFunction[net.liftweb.http.Req,Boolean]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A partial function that allows the application to define requests that should be
+handled by lift rather than the default handler
+</p>
+    </li><li name="net.liftweb.http.LiftRules.LiftTagPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LiftTagPF=PartialFunction[(String,scala.xml.Elem,scala.xml.MetaData,scala.xml.NodeSeq,String),scala.xml.NodeSeq]"></a>
+      <a id="LiftTagPF:LiftTagPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LiftTagPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.xml.Elem">Elem</span>, <span class="extype" name="scala.xml.MetaData">MetaData</span>, <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>, <span class="extype" name="scala.Predef.String">String</span>), <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@LiftTagPF=PartialFunction[(String,scala.xml.Elem,scala.xml.MetaData,scala.xml.NodeSeq,String),scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.ResourceBundleFactoryPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ResourceBundleFactoryPF=PartialFunction[(String,java.util.Locale),java.util.ResourceBundle]"></a>
+      <a id="ResourceBundleFactoryPF:ResourceBundleFactoryPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ResourceBundleFactoryPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="java.util.Locale">Locale</span>), <span class="extype" name="java.util.ResourceBundle">ResourceBundle</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@ResourceBundleFactoryPF=PartialFunction[(String,java.util.Locale),java.util.ResourceBundle]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.RewritePF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RewritePF=PartialFunction[net.liftweb.http.RewriteRequest,net.liftweb.http.RewriteResponse]"></a>
+      <a id="RewritePF:RewritePF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RewritePF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="RewriteRequest.html" class="extype" name="net.liftweb.http.RewriteRequest">RewriteRequest</a>, <a href="RewriteResponse.html" class="extype" name="net.liftweb.http.RewriteResponse">RewriteResponse</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@RewritePF=PartialFunction[net.liftweb.http.RewriteRequest,net.liftweb.http.RewriteResponse]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.SnippetDispatchPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SnippetDispatchPF=PartialFunction[String,net.liftweb.http.DispatchSnippet]"></a>
+      <a id="SnippetDispatchPF:SnippetDispatchPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SnippetDispatchPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<span class="extype" name="scala.Predef.String">String</span>, <a href="DispatchSnippet.html" class="extype" name="net.liftweb.http.DispatchSnippet">DispatchSnippet</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@SnippetDispatchPF=PartialFunction[String,net.liftweb.http.DispatchSnippet]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.SnippetFailure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SnippetFailureextendsProductwithSerializable"></a>
+      <a id="SnippetFailure:SnippetFailure"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LiftRules$$SnippetFailure.html"><span class="name">SnippetFailure</span></a><span class="params">(<span name="page">page: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="typeName">typeName: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="failure">failure: <a href="LiftRules$$SnippetFailures$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="net.liftweb.http.LiftRules.SnippetFailures.Value">SnippetFailures.Value</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@SnippetFailureextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Holds the failure information when a snippet can not be executed.</p>
+    </li><li name="net.liftweb.http.LiftRules.SnippetPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SnippetPF=PartialFunction[List[String],scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]"></a>
+      <a id="SnippetPF:SnippetPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SnippetPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@SnippetPF=PartialFunction[List[String],scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.SplitSuffixPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SplitSuffixPF=PartialFunction[List[String],(List[String],String)]"></a>
+      <a id="SplitSuffixPF:SplitSuffixPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SplitSuffixPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@SplitSuffixPF=PartialFunction[List[String],(List[String],String)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.StatelessReqTestPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StatelessReqTestPF=PartialFunction[net.liftweb.http.StatelessReqTest,Boolean]"></a>
+      <a id="StatelessReqTestPF:StatelessReqTestPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">StatelessReqTestPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="StatelessReqTest.html" class="extype" name="net.liftweb.http.StatelessReqTest">StatelessReqTest</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@StatelessReqTestPF=PartialFunction[net.liftweb.http.StatelessReqTest,Boolean]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The test between the path of a request, the HTTP request, and whether that path
+should result in stateless servicing of that path
+</p>
+    </li><li name="net.liftweb.http.LiftRules.StatelessTestPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StatelessTestPF=PartialFunction[List[String],Boolean]"></a>
+      <a id="StatelessTestPF:StatelessTestPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">StatelessTestPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@StatelessTestPF=PartialFunction[List[String],Boolean]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The test between the path of a request and whether that path
+should result in stateless servicing of that path
+</p>
+    </li><li name="net.liftweb.http.LiftRules.TagProcessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TagProcessor=PartialFunction[(String,scala.xml.Elem,net.liftweb.http.LiftSession),net.liftweb.http.DataAttributeProcessorAnswer]"></a>
+      <a id="TagProcessor:TagProcessor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TagProcessor</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.xml.Elem">Elem</span>, <a href="LiftSession.html" class="extype" name="net.liftweb.http.LiftSession">LiftSession</a>), <a href="DataAttributeProcessorAnswer.html" class="extype" name="net.liftweb.http.DataAttributeProcessorAnswer">DataAttributeProcessorAnswer</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@TagProcessor=PartialFunction[(String,scala.xml.Elem,net.liftweb.http.LiftSession),net.liftweb.http.DataAttributeProcessorAnswer]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The pattern/PartialFunction for matching tags in Lift
+</p>
+    </li><li name="net.liftweb.http.LiftRules.URINotFoundPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="URINotFoundPF=PartialFunction[(net.liftweb.http.Req,net.liftweb.common.Box[net.liftweb.common.Failure]),net.liftweb.http.NotFound]"></a>
+      <a id="URINotFoundPF:URINotFoundPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">URINotFoundPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<a href="Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../common/Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a>]), <a href="NotFound.html" class="extype" name="net.liftweb.http.NotFound">NotFound</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@URINotFoundPF=PartialFunction[(net.liftweb.http.Req,net.liftweb.common.Box[net.liftweb.common.Failure]),net.liftweb.http.NotFound]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.URLDecoratorPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="URLDecoratorPF=PartialFunction[String,String]"></a>
+      <a id="URLDecoratorPF:URLDecoratorPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">URLDecoratorPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@URLDecoratorPF=PartialFunction[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules.ViewDispatchPF" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ViewDispatchPF=PartialFunction[List[String],Either[()=&gt;net.liftweb.common.Box[scala.xml.NodeSeq],net.liftweb.http.LiftView]]"></a>
+      <a id="ViewDispatchPF:ViewDispatchPF"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ViewDispatchPF</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../../../scala/package.html#Either[+A,+B]=scala.util.Either[A,B]" class="extmbr" name="scala.Either">Either</a>[() ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>], <a href="LiftView.html" class="extype" name="net.liftweb.http.LiftView">LiftView</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@ViewDispatchPF=PartialFunction[List[String],Either[()=&gt;net.liftweb.common.Box[scala.xml.NodeSeq],net.liftweb.http.LiftView]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.LiftRules.SnippetFailures" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SnippetFailures"></a>
+      <a id="SnippetFailures:SnippetFailures"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="LiftRules$$SnippetFailures$.html"><span class="name">SnippetFailures</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Enumeration" class="extype" target="_top">Enumeration</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@SnippetFailures" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.LiftRules#defaultFuncNameGenerator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="defaultFuncNameGenerator(runMode:net.liftweb.util.Props.RunModes.Value):()=&gt;String"></a>
+      <a id="defaultFuncNameGenerator(util.Props.RunModes.Value):()⇒String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultFuncNameGenerator</span><span class="params">(<span name="runMode">runMode: <a href="../util/Props$$RunModes$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="net.liftweb.util.Props.RunModes.Value">util.Props.RunModes.Value</a></span>)</span><span class="result">: () ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@defaultFuncNameGenerator(runMode:net.liftweb.util.Props.RunModes.Value):()=&gt;String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.LiftRules#prodInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="prodInstance:net.liftweb.http.LiftRules"></a>
+      <a id="prodInstance:LiftRules"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prodInstance</span><span class="result">: <a href="LiftRules.html" class="extype" name="net.liftweb.http.LiftRules">LiftRules</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@prodInstance:net.liftweb.http.LiftRules" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.LiftRules#realInstance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="realInstance:net.liftweb.http.LiftRules"></a>
+      <a id="realInstance:LiftRules"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">realInstance</span><span class="result">: <a href="LiftRules.html" class="extype" name="net.liftweb.http.LiftRules">LiftRules</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@realInstance:net.liftweb.http.LiftRules" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get the real instance of LiftRules
+</p><div class="fullcomment"><div class="comment cmt"><p>Get the real instance of LiftRules
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.LiftRules">LiftRules</a> → <a href="LiftRulesMocker.html" class="extype" name="net.liftweb.http.LiftRulesMocker">LiftRulesMocker</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.http.LiftRules$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.http.LiftRulesMocker">
+              <h3>Inherited from <a href="LiftRulesMocker.html" class="extype" name="net.liftweb.http.LiftRulesMocker">LiftRulesMocker</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

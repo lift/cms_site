@@ -1,0 +1,978 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>MapperPaginatorSnippet - Lift Framework 3.0-SNAPSHOT - net.liftweb.mapper.view.MapperPaginatorSnippet</title>
+          <meta name="description" content="MapperPaginatorSnippet - Lift Framework 3.0 - SNAPSHOT - net.liftweb.mapper.view.MapperPaginatorSnippet" />
+          <meta name="keywords" content="MapperPaginatorSnippet Lift Framework 3.0 SNAPSHOT net.liftweb.mapper.view.MapperPaginatorSnippet" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.mapper.view.MapperPaginatorSnippet';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.mapper">mapper</a>.<a href="package.html" class="extype" name="net.liftweb.mapper.view">view</a></p>
+        <h1>MapperPaginatorSnippet</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="net.liftweb.mapper.view">package view</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MapperPaginatorSnippet</span><span class="tparams">[<span name="T">T &lt;: <a href="../Mapper.html" class="extype" name="net.liftweb.mapper.Mapper">Mapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</span>]</span><span class="result"> extends <a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>] with <a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Convenience class that combines MapperPaginator with PaginatorSnippet</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>], <a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>], <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>], <a href="../../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a>, <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.mapper.view.MapperPaginatorSnippet"><span>MapperPaginatorSnippet</span></li><li class="in" name="net.liftweb.http.PaginatorSnippet"><span>PaginatorSnippet</span></li><li class="in" name="net.liftweb.mapper.view.MapperPaginator"><span>MapperPaginator</span></li><li class="in" name="net.liftweb.http.Paginator"><span>Paginator</span></li><li class="in" name="net.liftweb.common.Loggable"><span>Loggable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="net.liftweb.mapper.view.MapperPaginatorSnippet#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(meta:net.liftweb.mapper.MetaMapper[T]):net.liftweb.mapper.view.MapperPaginatorSnippet[T]"></a>
+      <a id="&lt;init&gt;:MapperPaginatorSnippet[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MapperPaginatorSnippet</span><span class="params">(<span name="meta">meta: <a href="../MetaMapper.html" class="extype" name="net.liftweb.mapper.MetaMapper">MetaMapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@&lt;init&gt;(meta:net.liftweb.mapper.MetaMapper[T]):net.liftweb.mapper.view.MapperPaginatorSnippet[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">meta</dt><dd class="cmt"><p>The singleton of the Mapper class you're paginating</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#_first" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_first:Long"></a>
+      <a id="_first:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_first</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@_first:Long" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#constantParams" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="constantParams:Seq[net.liftweb.mapper.QueryParam[T]]"></a>
+      <a id="constantParams:Seq[QueryParam[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">constantParams</span><span class="result">: <a href="../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../QueryParam.html" class="extype" name="net.liftweb.mapper.QueryParam">QueryParam</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@constantParams:Seq[net.liftweb.mapper.QueryParam[T]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">QueryParams to use always
+</p><div class="fullcomment"><div class="comment cmt"><p>QueryParams to use always
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#count" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="count:Long"></a>
+      <a id="count:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">count</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@count:Long" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The total number of items
+</p><div class="fullcomment"><div class="comment cmt"><p>The total number of items
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a> → <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Paginator#curPage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="curPage:Int"></a>
+      <a id="curPage:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">curPage</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@curPage:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Calculates the current page number, based on the value of 'first.'
+</p><div class="fullcomment"><div class="comment cmt"><p>Calculates the current page number, based on the value of 'first.'
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#currentXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentXml:scala.xml.NodeSeq"></a>
+      <a id="currentXml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">currentXml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@currentXml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The status displayed when using &lt;nav:records/&gt; in the template.</p><div class="fullcomment"><div class="comment cmt"><p>The status displayed when using &lt;nav:records/&gt; in the template.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#first" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="first:Long"></a>
+      <a id="first:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">first</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@first:Long" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Overrides the super's implementation so the first record can be overridden by a URL query parameter.</p><div class="fullcomment"><div class="comment cmt"><p>Overrides the super's implementation so the first record can be overridden by a URL query parameter.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a> → <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#firstXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="firstXml:scala.xml.NodeSeq"></a>
+      <a id="firstXml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">firstXml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@firstXml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The &quot;first page&quot; link text
+</p><div class="fullcomment"><div class="comment cmt"><p>The &quot;first page&quot; link text
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#first_=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="first_=(f:Long):Unit"></a>
+      <a id="first_=(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: first_$eq" class="name">first_=</span><span class="params">(<span name="f">f: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@first_=(f:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Sets the default starting record of the page (URL query parameters take precedence over this)
+</p><div class="fullcomment"><div class="comment cmt"><p>Sets the default starting record of the page (URL query parameters take precedence over this)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.Paginator#itemsPerPage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="itemsPerPage:Int"></a>
+      <a id="itemsPerPage:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">itemsPerPage</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@itemsPerPage:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">How many items to put on each page
+</p><div class="fullcomment"><div class="comment cmt"><p>How many items to put on each page
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#lastXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastXml:scala.xml.NodeSeq"></a>
+      <a id="lastXml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lastXml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@lastXml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The &quot;last page&quot; link text
+</p><div class="fullcomment"><div class="comment cmt"><p>The &quot;last page&quot; link text
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Loggable#logger" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:net.liftweb.common.Logger"></a>
+      <a id="logger:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <a href="../../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@logger:net.liftweb.common.Logger" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#meta" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="meta:net.liftweb.mapper.MetaMapper[T]"></a>
+      <a id="meta:MetaMapper[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">meta</span><span class="result">: <a href="../MetaMapper.html" class="extype" name="net.liftweb.mapper.MetaMapper">MetaMapper</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@meta:net.liftweb.mapper.MetaMapper[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The singleton of the Mapper class you're paginating</p><div class="fullcomment"><div class="comment cmt"><p>The singleton of the Mapper class you're paginating</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#navPrefix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="navPrefix:String"></a>
+      <a id="navPrefix:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">navPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@navPrefix:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The template prefix for general navigation components
+</p><div class="fullcomment"><div class="comment cmt"><p>The template prefix for general navigation components
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#nextXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nextXml:scala.xml.NodeSeq"></a>
+      <a id="nextXml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextXml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@nextXml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The &quot;next page&quot; link text
+</p><div class="fullcomment"><div class="comment cmt"><p>The &quot;next page&quot; link text
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.Paginator#numPages" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numPages:Int"></a>
+      <a id="numPages:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numPages</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@numPages:Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Calculates the number of pages the items will be spread across
+</p><div class="fullcomment"><div class="comment cmt"><p>Calculates the number of pages the items will be spread across
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#offsetParam" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="offsetParam:String"></a>
+      <a id="offsetParam:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">offsetParam</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@offsetParam:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The URL query parameter to propagate the record the page should start at
+</p><div class="fullcomment"><div class="comment cmt"><p>The URL query parameter to propagate the record the page should start at
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.mapper.view.MapperPaginator#page" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="page:List[T]"></a>
+      <a id="page:List[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">page</span><span class="result">: <a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@page:List[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The items displayed on the current page
+</p><div class="fullcomment"><div class="comment cmt"><p>The items displayed on the current page
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a> → <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#pageUrl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pageUrl(offset:Long):String"></a>
+      <a id="pageUrl(Long):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pageUrl</span><span class="params">(<span name="offset">offset: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@pageUrl(offset:Long):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a URL used to link to a page starting at the given record offset.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a URL used to link to a page starting at the given record offset.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#pageXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pageXml(newFirst:Long,ns:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
+      <a id="pageXml(Long,NodeSeq):NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pageXml</span><span class="params">(<span name="newFirst">newFirst: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="ns">ns: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@pageXml(newFirst:Long,ns:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns XML that links to a page starting at the given record offset, if the offset is valid and not the current one.</p><div class="fullcomment"><div class="comment cmt"><p>Returns XML that links to a page starting at the given record offset, if the offset is valid and not the current one.</p></div><dl class="paramcmts block"><dt class="param">ns</dt><dd class="cmt"><p>The link text, if the offset is valid and not the current offset; or, if that is not the case, the static unlinked text to display</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#pagesXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pagesXml(pages:Seq[Int])(sep:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
+      <a id="pagesXml(Seq[Int])(NodeSeq):NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pagesXml</span><span class="params">(<span name="pages">pages: <a href="../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>)</span><span class="params">(<span name="sep">sep: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@pagesXml(pages:Seq[Int])(sep:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generates links to multiple pages with arbitrary XML delimiting them.</p><div class="fullcomment"><div class="comment cmt"><p>Generates links to multiple pages with arbitrary XML delimiting them.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#paginate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="paginate:net.liftweb.util.CssSel"></a>
+      <a id="paginate:CssSel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">paginate</span><span class="result">: <a href="../../util/CssSel.html" class="extype" name="net.liftweb.util.CssSel">CssSel</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@paginate:net.liftweb.util.CssSel" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This method binds template HTML based according to the specified
+configuration.</p><div class="fullcomment"><div class="comment cmt"><p>This method binds template HTML based according to the specified
+configuration. You can reference this as a snippet method directly
+in your template; or you can call it directly as part of your binding
+code.</p><p>Classes used to bind:</p><ul><li><code>first</code>: link to go back to the first page (populated by <code>firstXml</code>)</li><li><code>prev</code>: link to go to previous page (populated by <code>prevXml</code>)</li><li><code>all-pages</code>: container for all pages (populated by <code>pagesXml</code>)</li><li><code>zoomed-pages</code>: container for <code>zoomedPages</code> (populated by <code>pagesXml</code>)</li><li><code>next</code>: link to go to next page (populated by <code>nextXml</code>)</li><li><code>last</code>: link to go to last page (populated by <code>lastXml</code>)</li><li><code>records</code>: currently visible records + total count (populated by
+   <code>currentXml</code>)</li><li><code>records-start</code>: start of currently visible records</li><li><code>records-end</code>: end of currently visible records</li><li><code>records-count</code>: total records count
+</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#prevXml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prevXml:scala.xml.NodeSeq"></a>
+      <a id="prevXml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prevXml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@prevXml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The &quot;previous page&quot; link text
+</p><div class="fullcomment"><div class="comment cmt"><p>The &quot;previous page&quot; link text
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#recordsFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordsFrom:String"></a>
+      <a id="recordsFrom:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordsFrom</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@recordsFrom:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">How to display the page's starting record
+</p><div class="fullcomment"><div class="comment cmt"><p>How to display the page's starting record
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="net.liftweb.http.PaginatorSnippet#recordsTo" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="recordsTo:String"></a>
+      <a id="recordsTo:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recordsTo</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@recordsTo:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">How to display the page's ending record
+</p><div class="fullcomment"><div class="comment cmt"><p>How to display the page's ending record
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.Paginator#zoomedPages" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="zoomedPages:List[Int]"></a>
+      <a id="zoomedPages:List[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zoomedPages</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.mapper.view.MapperPaginatorSnippet@zoomedPages:List[Int]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a list of page numbers to be displayed in 'zoomed' mode, i.e.,
+as the page numbers get further from the current page, they are more sparse.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a list of page numbers to be displayed in 'zoomed' mode, i.e.,
+as the page numbers get further from the current page, they are more sparse.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.http.PaginatorSnippet">
+              <h3>Inherited from <a href="../../http/PaginatorSnippet.html" class="extype" name="net.liftweb.http.PaginatorSnippet">PaginatorSnippet</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.mapper.view.MapperPaginator">
+              <h3>Inherited from <a href="MapperPaginator.html" class="extype" name="net.liftweb.mapper.view.MapperPaginator">MapperPaginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.http.Paginator">
+              <h3>Inherited from <a href="../../http/Paginator.html" class="extype" name="net.liftweb.http.Paginator">Paginator</a>[<span class="extype" name="net.liftweb.mapper.view.MapperPaginatorSnippet.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.common.Loggable">
+              <h3>Inherited from <a href="../../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

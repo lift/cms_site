@@ -1,0 +1,2118 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>LongRefListField - Lift Framework 3.0-SNAPSHOT - net.liftweb.mongodb.record.field.LongRefListField</title>
+          <meta name="description" content="LongRefListField - Lift Framework 3.0 - SNAPSHOT - net.liftweb.mongodb.record.field.LongRefListField" />
+          <meta name="keywords" content="LongRefListField Lift Framework 3.0 SNAPSHOT net.liftweb.mongodb.record.field.LongRefListField" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'net.liftweb.mongodb.record.field.LongRefListField';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="net">net</a>.<a href="../../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../../package.html" class="extype" name="net.liftweb.mongodb">mongodb</a>.<a href="../package.html" class="extype" name="net.liftweb.mongodb.record">record</a>.<a href="package.html" class="extype" name="net.liftweb.mongodb.record.field">field</a></p>
+        <h1>LongRefListField</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="net.liftweb.mongodb.record.field">package field</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LongRefListField</span><span class="tparams">[<span name="OwnerType">OwnerType &lt;: <a href="../BsonRecord.html" class="extype" name="net.liftweb.mongodb.record.BsonRecord">BsonRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>]</span>, <span name="RefType">RefType &lt;: <a href="../MongoRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoRecord">MongoRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>]</span>]</span><span class="result"> extends <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>], <a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>], <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]], <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product1" class="extype" target="_top">Product1</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]], <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>], <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>], <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]], <a href="../../../record/OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>], <a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a>, <a href="../../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>, <a href="../../../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a>, <a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a>, <a href="../../../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a>, <a href="../../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a>, <a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a>, <a href="../../../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a>, <a href="../../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a>, <a href="../../../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a>, <a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.mongodb.record.field.LongRefListField"><span>LongRefListField</span></li><li class="in" name="net.liftweb.mongodb.record.field.MongoRefListField"><span>MongoRefListField</span></li><li class="in" name="net.liftweb.mongodb.record.field.MongoListField"><span>MongoListField</span></li><li class="in" name="net.liftweb.mongodb.record.field.MongoFieldFlavor"><span>MongoFieldFlavor</span></li><li class="in" name="net.liftweb.record.MandatoryTypedField"><span>MandatoryTypedField</span></li><li class="in" name="scala.Product1"><span>Product1</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="net.liftweb.record.Field"><span>Field</span></li><li class="in" name="net.liftweb.record.TypedField"><span>TypedField</span></li><li class="in" name="net.liftweb.record.OwnedField"><span>OwnedField</span></li><li class="in" name="net.liftweb.record.BaseField"><span>BaseField</span></li><li class="in" name="net.liftweb.util.BaseField"><span>BaseField</span></li><li class="in" name="net.liftweb.util.FieldContainer"><span>FieldContainer</span></li><li class="in" name="net.liftweb.util.SettableField"><span>SettableField</span></li><li class="in" name="net.liftweb.util.SettableValueHolder"><span>SettableValueHolder</span></li><li class="in" name="net.liftweb.util.Settable"><span>Settable</span></li><li class="in" name="net.liftweb.util.ReadableField"><span>ReadableField</span></li><li class="in" name="net.liftweb.util.Bindable"><span>Bindable</span></li><li class="in" name="net.liftweb.util.ValueHolder"><span>ValueHolder</span></li><li class="in" name="net.liftweb.util.FieldIdentifier"><span>FieldIdentifier</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="net.liftweb.mongodb.record.field.LongRefListField#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(rec:OwnerType,refMeta:net.liftweb.mongodb.record.MongoMetaRecord[RefType]):net.liftweb.mongodb.record.field.LongRefListField[OwnerType,RefType]"></a>
+      <a id="&lt;init&gt;:LongRefListField[OwnerType,RefType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LongRefListField</span><span class="params">(<span name="rec">rec: <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span></span>, <span name="refMeta">refMeta: <a href="../MongoMetaRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord">MongoMetaRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@&lt;init&gt;(rec:OwnerType,refMeta:net.liftweb.mongodb.record.MongoMetaRecord[RefType]):net.liftweb.mongodb.record.field.LongRefListField[OwnerType,RefType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.mongodb.record.field.MongoListField.MyType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MyType=List[ListType]"></a>
+      <a id="MyType:MyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MyType</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@MyType=List[ListType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField.ValidationFunction" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ValidationFunction=TypedField.this.ValueType=&gt;List[net.liftweb.util.FieldError]"></a>
+      <a id="ValidationFunction:ValidationFunction"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ValidationFunction</span><span class="result"> = (<a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a>) ⇒ <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@ValidationFunction=TypedField.this.ValueType=&gt;List[net.liftweb.util.FieldError]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField.ValueType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ValueType=ThisType"></a>
+      <a id="ValueType:ValueType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ValueType</span><span class="result"> = <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@ValueType=ThisType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">ValueType represents the type that users will work with.</p><div class="fullcomment"><div class="comment cmt"><p>ValueType represents the type that users will work with.  For MandatoryTypeField, this is
+equal to ThisType.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#_1" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_1:MandatoryTypedField.this.MyType"></a>
+      <a id="_1:LongRefListField.MyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_1</span><span class="result">: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@_1:MandatoryTypedField.this.MyType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → Product1</dd></dl></div>
+    </li><li name="net.liftweb.util.BaseField#allFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allFields:Seq[net.liftweb.util.BaseField]"></a>
+      <a id="allFields:Seq[BaseField]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">allFields</span><span class="result">: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@allFields:Seq[net.liftweb.util.BaseField]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a> → <a href="../../../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></dd></dl></div>
+    </li><li name="net.liftweb.record.Field#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(in:net.liftweb.common.Box[Field.this.MyType]):OwnerType"></a>
+      <a id="apply(Box[LongRefListField.MyType]):OwnerType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>)</span><span class="result">: <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@apply(in:net.liftweb.common.Box[Field.this.MyType]):OwnerType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a></dd></dl></div>
+    </li><li name="net.liftweb.record.Field#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(in:Field.this.MyType):OwnerType"></a>
+      <a id="apply(LongRefListField.MyType):OwnerType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@apply(in:Field.this.MyType):OwnerType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#asDBObject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asDBObject:com.mongodb.DBObject"></a>
+      <a id="asDBObject:DBObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asDBObject</span><span class="result">: <span class="extype" name="com.mongodb.DBObject">DBObject</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@asDBObject:com.mongodb.DBObject" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#asHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asHtml:scala.xml.NodeSeq"></a>
+      <a id="asHtml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@asHtml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Default read-only rendering of field
+</p><div class="fullcomment"><div class="comment cmt"><p>Default read-only rendering of field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a> → <a href="../../../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#asJString" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJString(encode:TypedField.this.MyType=&gt;String):net.liftweb.json.JsonAST.JValue"></a>
+      <a id="asJString((LongRefListField.MyType)⇒String):JValue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJString</span><span class="params">(<span name="encode">encode: (<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@asJString(encode:TypedField.this.MyType=&gt;String):net.liftweb.json.JsonAST.JValue" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper for implementing asJValue for a conversion to an encoded JString
+</p><div class="fullcomment"><div class="comment cmt"><p>Helper for implementing asJValue for a conversion to an encoded JString
+</p></div><dl class="paramcmts block"><dt class="param">encode</dt><dd class="cmt"><p>function to transform the field value into a String</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#asJValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJValue:net.liftweb.json.JValue"></a>
+      <a id="asJValue:JValue"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJValue</span><span class="result">: <a href="../../../json/package.html#JValue=net.liftweb.json.JsonAST.JValue" class="extmbr" name="net.liftweb.json.JValue">JValue</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@asJValue:net.liftweb.json.JValue" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Encode the field value into a JValue</p><div class="fullcomment"><div class="comment cmt"><p>Encode the field value into a JValue</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a> → <a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoFieldFlavor#asJs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJs:net.liftweb.http.js.JsExpwithProductwithSerializable"></a>
+      <a id="asJs:JsExpwithProductwithSerializable"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJs</span><span class="result">: <a href="../../../http/js/JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@asJs:net.liftweb.http.js.JsExpwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the field's value as a valid JavaScript expression
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns the field's value as a valid JavaScript expression
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#asString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asString:String"></a>
+      <a id="asString:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asString</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@asString:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert the field to a String...</p><div class="fullcomment"><div class="comment cmt"><p>Convert the field to a String... usually of the form &quot;displayName=value&quot;
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#atomicUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType"></a>
+      <a id="atomicUpdate((ValueType)⇒ValueType):ValueType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">atomicUpdate</span><span class="params">(<span name="f">f: (<a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a>) ⇒ <a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a></span>)</span><span class="result">: <a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Perform an atomic update of this Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic update of this Settable.
+The current value is passed to the function and the ValueHolder
+is set to the result of the function.  This is enclosed in the
+performAtomicOperation method which will, by default, synchronize
+this instance
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#boxNodeFuncToFieldError" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="boxNodeFuncToFieldError(in:net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[scala.xml.Node]):net.liftweb.common.Box[TypedField.this.MyType]=&gt;List[net.liftweb.util.FieldError]"></a>
+      <a id="boxNodeFuncToFieldError((Box[LongRefListField.MyType])⇒Box[Node]):(Box[LongRefListField.MyType])⇒List[FieldError]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">boxNodeFuncToFieldError</span><span class="params">(<span name="in">in: (<a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]) ⇒ <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Node">Node</span>]</span>)</span><span class="result">: (<a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]) ⇒ <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@boxNodeFuncToFieldError(in:net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[scala.xml.Node]):net.liftweb.common.Box[TypedField.this.MyType]=&gt;List[net.liftweb.util.FieldError]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#boxNodeToFieldError" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="boxNodeToFieldError(in:net.liftweb.common.Box[scala.xml.Node]):List[net.liftweb.util.FieldError]"></a>
+      <a id="boxNodeToFieldError(Box[Node]):List[FieldError]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">boxNodeToFieldError</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Node">Node</span>]</span>)</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@boxNodeToFieldError(in:net.liftweb.common.Box[scala.xml.Node]):List[net.liftweb.util.FieldError]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoRefListField#cached_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cached_?:Boolean"></a>
+      <a id="cached_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: cached_$qmark" class="name">cached_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@cached_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#canEqual" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canEqual(a:Any):Boolean"></a>
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">canEqual</span><span class="params">(<span name="a">a: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@canEqual(a:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → Equals</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#canRead_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canRead_?:Boolean"></a>
+      <a id="canRead_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: canRead_$qmark" class="name">canRead_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@canRead_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Can the value of this field be read without obscuring the result?
+</p><div class="fullcomment"><div class="comment cmt"><p>Can the value of this field be read without obscuring the result?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#canWrite_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canWrite_?:Boolean"></a>
+      <a id="canWrite_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: canWrite_$qmark" class="name">canWrite_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@canWrite_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Can the value of this field be written?
+</p><div class="fullcomment"><div class="comment cmt"><p>Can the value of this field be written?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#checkCanRead_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkCanRead_?:Boolean"></a>
+      <a id="checkCanRead_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: checkCanRead_$qmark" class="name">checkCanRead_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@checkCanRead_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be read
+</p><div class="fullcomment"><div class="comment cmt"><p>If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be read
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#checkCanWrite_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkCanWrite_?:Boolean"></a>
+      <a id="checkCanWrite_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: checkCanWrite_$qmark" class="name">checkCanWrite_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@checkCanWrite_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be written
+</p><div class="fullcomment"><div class="comment cmt"><p>If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be written
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#clear" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clear:Unit"></a>
+      <a id="clear:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clear</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@clear:Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Clear the value of this field</p><div class="fullcomment"><div class="comment cmt"><p>Clear the value of this field</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#defaultValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultValue:List[ListType]"></a>
+      <a id="defaultValue:List[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultValue</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@defaultValue:List[ListType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The default value of the field when a field has no value set and is optional, or a method that must return a value (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>The default value of the field when a field has no value set and is optional, or a method that must return a value (e.g. value) is used
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#defaultValueBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultValueBox:net.liftweb.common.Box[MandatoryTypedField.this.MyType]"></a>
+      <a id="defaultValueBox:Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultValueBox</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@defaultValueBox:net.liftweb.common.Box[MandatoryTypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The default value of the field when no value is set.</p><div class="fullcomment"><div class="comment cmt"><p>The default value of the field when no value is set. Must return a Full Box unless optional_? is true</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#dirty_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dirty_?:Boolean"></a>
+      <a id="dirty_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dirty_$qmark" class="name">dirty_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@dirty_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#dirty_?" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dirty_?(b:Boolean):Unit"></a>
+      <a id="dirty_?(Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dirty_$qmark" class="name">dirty_?</span><span class="params">(<span name="b">b: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@dirty_?(b:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayHtml:scala.xml.NodeSeq"></a>
+      <a id="displayHtml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@displayHtml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.OwnedField#displayName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayName:String"></a>
+      <a id="displayName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@displayName:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The display name of this field (e.g., &quot;First Name&quot;)
+</p><div class="fullcomment"><div class="comment cmt"><p>The display name of this field (e.g., &quot;First Name&quot;)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a> → <a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayNameHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayNameHtml:net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
+      <a id="displayNameHtml:Box[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayNameHtml</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@displayNameHtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#fieldId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fieldId:Option[scala.xml.NodeSeq]"></a>
+      <a id="fieldId:Option[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldId</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@fieldId:Option[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A unique 'id' for the field for form generation
+</p><div class="fullcomment"><div class="comment cmt"><p>A unique 'id' for the field for form generation
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoRefListField#findAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findAll:List[RefType]"></a>
+      <a id="findAll:List[RefType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findAll</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@findAll:List[RefType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Find the referenced objects
+</p><div class="fullcomment"><div class="comment cmt"><p>Find the referenced objects
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#forceDirty_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forceDirty_?:Boolean"></a>
+      <a id="forceDirty_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: forceDirty_$qmark" class="name">forceDirty_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@forceDirty_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Should the dirty flag always be set when setBox is called
+</p><div class="fullcomment"><div class="comment cmt"><p>Should the dirty flag always be set when setBox is called
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#formElemAttrs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formElemAttrs:Seq[net.liftweb.http.SHtml.ElemAttr]"></a>
+      <a id="formElemAttrs:Seq[http.SHtml.ElemAttr]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">formElemAttrs</span><span class="result">: <a href="../../../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../../http/SHtml$.html#ElemAttrextendsxml.Elem=&gt;scala.xml.Elem" class="extmbr" name="net.liftweb.http.SHtml.ElemAttr">http.SHtml.ElemAttr</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@formElemAttrs:Seq[net.liftweb.http.SHtml.ElemAttr]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">What form elements are we going to add to this field?
+</p><div class="fullcomment"><div class="comment cmt"><p>What form elements are we going to add to this field?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#formInputType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formInputType:String"></a>
+      <a id="formInputType:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">formInputType</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@formInputType:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Form field's type.</p><div class="fullcomment"><div class="comment cmt"><p>Form field's type.
+Defaults to 'text', but you may want to change it to other HTML5 values.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#formats" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formats:net.liftweb.json.Formats"></a>
+      <a id="formats:Formats"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">formats</span><span class="result">: <a href="../../../json/Formats.html" class="extype" name="net.liftweb.json.Formats">Formats</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@formats:net.liftweb.json.Formats" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#genericSetFromAny" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="genericSetFromAny(in:Any)(implicitm:scala.reflect.Manifest[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a>
+      <a id="genericSetFromAny(Any)(Manifest[LongRefListField.MyType]):Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">genericSetFromAny</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.reflect.Manifest" class="extype" target="_top">Manifest</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@genericSetFromAny(in:Any)(implicitm:scala.reflect.Manifest[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generic implementation of setFromAny that implements exactly what the doc for setFromAny specifies, using a Manifest to check types</p><div class="fullcomment"><div class="comment cmt"><p>Generic implementation of setFromAny that implements exactly what the doc for setFromAny specifies, using a Manifest to check types</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get:MandatoryTypedField.this.MyType"></a>
+      <a id="get:LongRefListField.MyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="result">: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@get:MandatoryTypedField.this.MyType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get the value
+</p><div class="fullcomment"><div class="comment cmt"><p>get the value
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#helpAsHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="helpAsHtml:net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
+      <a id="helpAsHtml:Box[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">helpAsHtml</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@helpAsHtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#ignoreField_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ignoreField_?:Boolean"></a>
+      <a id="ignoreField_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: ignoreField_$qmark" class="name">ignoreField_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@ignoreField_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Should the field be ignored by the OR Mapper?
+</p><div class="fullcomment"><div class="comment cmt"><p>Should the field be ignored by the OR Mapper?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#label" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="label:scala.xml.NodeSeq"></a>
+      <a id="label:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">label</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@label:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#liftSetFilterToBox" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftSetFilterToBox(in:net.liftweb.common.Box[MandatoryTypedField.this.MyType]):net.liftweb.common.Box[MandatoryTypedField.this.MyType]"></a>
+      <a id="liftSetFilterToBox(Box[LongRefListField.MyType]):Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">liftSetFilterToBox</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@liftSetFilterToBox(in:net.liftweb.common.Box[MandatoryTypedField.this.MyType]):net.liftweb.common.Box[MandatoryTypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">OptionalTypedField and MandatoryTypedField implement this to do the appropriate lifting of Box[MyType] to ValueType</p><div class="fullcomment"><div class="comment cmt"><p>OptionalTypedField and MandatoryTypedField implement this to do the appropriate lifting of Box[MyType] to ValueType</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#mf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mf:Manifest[ListType]"></a>
+      <a id="mf:Manifest[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mf</span><span class="result">: <span class="extype" name="scala.Predef.Manifest">Manifest</span>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@mf:Manifest[ListType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.OwnedField#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@name:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The text name of this field
+</p><div class="fullcomment"><div class="comment cmt"><p>The text name of this field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a> → <a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#noValueErrorMessage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="noValueErrorMessage:String"></a>
+      <a id="noValueErrorMessage:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">noValueErrorMessage</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@noValueErrorMessage:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The error message used when the field value could not be set
+</p><div class="fullcomment"><div class="comment cmt"><p>The error message used when the field value could not be set
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#nodeToFieldError" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeToFieldError(node:scala.xml.Node):List[net.liftweb.util.FieldError]"></a>
+      <a id="nodeToFieldError(Node):List[FieldError]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeToFieldError</span><span class="params">(<span name="node">node: <span class="extype" name="scala.xml.Node">Node</span></span>)</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@nodeToFieldError(node:scala.xml.Node):List[net.liftweb.util.FieldError]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#notOptionalErrorMessage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notOptionalErrorMessage:String"></a>
+      <a id="notOptionalErrorMessage:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notOptionalErrorMessage</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@notOptionalErrorMessage:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The error message used when the field value must be set
+</p><div class="fullcomment"><div class="comment cmt"><p>The error message used when the field value must be set
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoRefListField#objs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="objs:List[RefType]"></a>
+      <a id="objs:List[RefType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objs</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@objs:List[RefType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#obscure" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="obscure(in:TypedField.this.MyType):net.liftweb.common.Box[TypedField.this.MyType]"></a>
+      <a id="obscure(LongRefListField.MyType):Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">obscure</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@obscure(in:TypedField.this.MyType):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#optional_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="optional_?:Boolean"></a>
+      <a id="optional_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: optional_$qmark" class="name">optional_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@optional_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the value of this field optional (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Is the value of this field optional (e.g. NULLable)?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#options" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="options:List[(ListType,String)]"></a>
+      <a id="options:List[(Long,String)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">options</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@options:List[(ListType,String)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Options for select list *</p><div class="fullcomment"><div class="comment cmt"><p>Options for select list *</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#owner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="owner:OwnerType"></a>
+      <a id="owner:OwnerType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">owner</span><span class="result">: <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@owner:OwnerType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Return the owner of this field
+</p><div class="fullcomment"><div class="comment cmt"><p>Return the owner of this field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="../../../record/OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#performAtomicOperation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="performAtomicOperation[T](f:=&gt;T):T"></a>
+      <a id="performAtomicOperation[T](⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">performAtomicOperation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@performAtomicOperation[T](f:=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Perform an atomic operation on the Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic operation on the Settable. By default
+synchronizes the instance, but it could use other mechanisms
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoRefListField#primeObjs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="primeObjs(objs:List[RefType]):Unit"></a>
+      <a id="primeObjs(List[RefType]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">primeObjs</span><span class="params">(<span name="objs">objs: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@primeObjs(objs:List[RefType]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a></dd></dl></div>
+    </li><li name="scala.Product1#productArity" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productArity:Int"></a>
+      <a id="productArity:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productArity</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@productArity:Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product1 → Product</dd></dl></div>
+    </li><li name="scala.Product1#productElement" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productElement(n:Int):Any"></a>
+      <a id="productElement(Int):Any"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productElement</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@productElement(n:Int):Any" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product1 → Product</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.IndexOutOfBoundsException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Product#productIterator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productIterator:Iterator[Any]"></a>
+      <a id="productIterator:Iterator[Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productIterator</span><span class="result">: <a href="../../../../../scala/package.html#Iterator[+A]=Iterator[A]" class="extmbr" name="scala.Iterator">Iterator</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@productIterator:Iterator[Any]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
+    </li><li name="scala.Product#productPrefix" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productPrefix:String"></a>
+      <a id="productPrefix:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@productPrefix:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Product</dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.LongRefListField#refMeta" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="refMeta:net.liftweb.mongodb.record.MongoMetaRecord[RefType]"></a>
+      <a id="refMeta:MongoMetaRecord[RefType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">refMeta</span><span class="result">: <a href="../MongoMetaRecord.html" class="extype" name="net.liftweb.mongodb.record.MongoMetaRecord">MongoMetaRecord</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@refMeta:net.liftweb.mongodb.record.MongoMetaRecord[RefType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The MongoMetaRecord of the referenced object *</p><div class="fullcomment"><div class="comment cmt"><p>The MongoMetaRecord of the referenced object *</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.mongodb.record.field.LongRefListField">LongRefListField</a> → <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#required_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="required_?:Boolean"></a>
+      <a id="required_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: required_$qmark" class="name">required_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@required_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the Field required (and will have a style designating it as such)
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the Field required (and will have a style designating it as such)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#resetDirty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resetDirty:Unit"></a>
+      <a id="resetDirty:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resetDirty</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@resetDirty:Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#runFilters" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runFilters(in:net.liftweb.common.Box[TypedField.this.MyType],filter:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]):net.liftweb.common.Box[TypedField.this.MyType]"></a>
+      <a id="runFilters(Box[LongRefListField.MyType],List[(Box[LongRefListField.MyType])⇒Box[LongRefListField.MyType]]):Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runFilters</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>, <span name="filter">filter: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]) ⇒ <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]]</span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@runFilters(in:net.liftweb.common.Box[TypedField.this.MyType],filter:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#runValidation" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runValidation(in:net.liftweb.common.Box[TypedField.this.MyType]):List[net.liftweb.util.FieldError]"></a>
+      <a id="runValidation(Box[LongRefListField.MyType]):List[FieldError]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runValidation</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>)</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@runValidation(in:net.liftweb.common.Box[TypedField.this.MyType]):List[net.liftweb.util.FieldError]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper function that does validation of a value by using the validators specified for the field</p><div class="fullcomment"><div class="comment cmt"><p>Helper function that does validation of a value by using the validators specified for the field</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.OwnedField#safe_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="safe_?:Boolean"></a>
+      <a id="safe_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: safe_$qmark" class="name">safe_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@safe_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Are we in &quot;safe&quot; mode (i.e., the value of the field can be read or written without any security checks.)
+</p><div class="fullcomment"><div class="comment cmt"><p>Are we in &quot;safe&quot; mode (i.e., the value of the field can be read or written without any security checks.)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a> → <a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#set" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set(in:MandatoryTypedField.this.MyType):MandatoryTypedField.this.MyType"></a>
+      <a id="set(LongRefListField.MyType):LongRefListField.MyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">set</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@set(in:MandatoryTypedField.this.MyType):MandatoryTypedField.this.MyType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Set the value of the field to the given value.</p><div class="fullcomment"><div class="comment cmt"><p>Set the value of the field to the given value.
+Note: Because setting a field can fail (return non-Full), this method will
+return defaultValue if the field could not be set.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoRefListField#setBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setBox(in:net.liftweb.common.Box[MongoRefListField.this.MyType]):net.liftweb.common.Box[MongoRefListField.this.MyType]"></a>
+      <a id="setBox(Box[MyType]):Box[MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setBox</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=List[ListType]" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=List[ListType]" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.MyType">MyType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setBox(in:net.liftweb.common.Box[MongoRefListField.this.MyType]):net.liftweb.common.Box[MongoRefListField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFilter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFilter:List[TypedField.this.ValueType=&gt;TypedField.this.ValueType]"></a>
+      <a id="setFilter:List[(ValueType)⇒ValueType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFilter</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a>) ⇒ <a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setFilter:List[TypedField.this.ValueType=&gt;TypedField.this.ValueType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of functions that transform the value before it is set.</p><div class="fullcomment"><div class="comment cmt"><p>A list of functions that transform the value before it is set.  The transformations
+are also applied before the value is used in a query.  Typical applications
+of this are trimming and/or toLowerCase-ing strings
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFilterBox" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFilterBox:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]"></a>
+      <a id="setFilterBox:List[(Box[LongRefListField.MyType])⇒Box[LongRefListField.MyType]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFilterBox</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]) ⇒ <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setFilterBox:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A list of functions that transform the value before it is set.</p><div class="fullcomment"><div class="comment cmt"><p>A list of functions that transform the value before it is set.  The transformations
+are also applied before the value is used in a query.  Typical applications
+of this are trimming and/or toLowerCase-ing strings
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#setFromAny" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFromAny(in:Any):net.liftweb.common.Box[MongoListField.this.MyType]"></a>
+      <a id="setFromAny(Any):Box[MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromAny</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=List[ListType]" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.MyType">MyType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setFromAny(in:Any):net.liftweb.common.Box[MongoListField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Set the value of the field from anything.</p><div class="fullcomment"><div class="comment cmt"><p>Set the value of the field from anything.
+Implementations of this method should accept at least the following (pattern =&gt; valueBox)</p><ul><li>value: MyType       =&gt; setBox(Full(value))</li><li>Some(value: MyType) =&gt; setBox(Full(value))</li><li>Full(value: MyType) =&gt; setBox(Full(value))</li><li>(value: MyType)::_  =&gt; setBox(Full(value))</li><li>s: String           =&gt; setFromString(s)</li><li>Some(s: String)     =&gt; setFromString(s)</li><li>Full(s: String)     =&gt; setFromString(s)</li><li>null|None|Empty     =&gt; setBox(defaultValueBox)</li><li>f: Failure          =&gt; setBox(f)
+And usually convert the input to a string and uses setFromString as a last resort.</li></ul><p>Note that setFromAny should _always_ call setBox, even if the conversion fails. This is so that validation
+properly notes the error.</p><p>The method genericSetFromAny implements this guideline.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#setFromDBObject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFromDBObject(dbo:com.mongodb.DBObject):net.liftweb.common.Box[MongoListField.this.MyType]"></a>
+      <a id="setFromDBObject(DBObject):Box[MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromDBObject</span><span class="params">(<span name="dbo">dbo: <span class="extype" name="com.mongodb.DBObject">DBObject</span></span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=List[ListType]" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.MyType">MyType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setFromDBObject(dbo:com.mongodb.DBObject):net.liftweb.common.Box[MongoListField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFromJString" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFromJString(jvalue:net.liftweb.json.JsonAST.JValue)(decode:String=&gt;net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a>
+      <a id="setFromJString(JValue)((String)⇒Box[LongRefListField.MyType]):Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromJString</span><span class="params">(<span name="jvalue">jvalue: <a href="../../../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>)</span><span class="params">(<span name="decode">decode: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setFromJString(jvalue:net.liftweb.json.JsonAST.JValue)(decode:String=&gt;net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Helper for implementing setFromJValue for a conversion from an encoded JString
+</p><div class="fullcomment"><div class="comment cmt"><p>Helper for implementing setFromJValue for a conversion from an encoded JString
+</p></div><dl class="paramcmts block"><dt class="param">decode</dt><dd class="cmt"><p>function to try and transform a String into a field value</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#setFromJValue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFromJValue(jvalue:net.liftweb.json.JValue):net.liftweb.common.Box[MongoListField.this.MyType]"></a>
+      <a id="setFromJValue(JValue):Box[MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromJValue</span><span class="params">(<span name="jvalue">jvalue: <a href="../../../json/package.html#JValue=net.liftweb.json.JsonAST.JValue" class="extmbr" name="net.liftweb.json.JValue">JValue</a></span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=List[ListType]" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.MyType">MyType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setFromJValue(jvalue:net.liftweb.json.JValue):net.liftweb.common.Box[MongoListField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Decode the JValue and set the field to the decoded value.</p><div class="fullcomment"><div class="comment cmt"><p>Decode the JValue and set the field to the decoded value. Returns Empty or Failure if the value could not be set</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#setFromString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFromString(in:String):net.liftweb.common.Box[List[ListType]]"></a>
+      <a id="setFromString(String):Box[List[Long]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromString</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@setFromString(in:String):net.liftweb.common.Box[List[ListType]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Set the value of the field using some kind of type-specific conversion from a String.</p><div class="fullcomment"><div class="comment cmt"><p>Set the value of the field using some kind of type-specific conversion from a String.
+By convention, if the field is optional_?, then the empty string should be treated as no-value (Empty).
+Note that setFromString should _always_ call setBox, even if the conversion fails. This is so that validation
+properly notes the error.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Full(convertedValue) if the conversion succeeds (the field value will be set by side-effect)
+        Empty or Failure if the conversion does not succeed</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#set_!" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set_!(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a>
+      <a id="set_!(Box[LongRefListField.MyType]):Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: set_$bang" class="name">set_!</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>)</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@set_!(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#shouldDisplay_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shouldDisplay_?:Boolean"></a>
+      <a id="shouldDisplay_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: shouldDisplay_$qmark" class="name">shouldDisplay_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@shouldDisplay_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given the current context, should this field be displayed
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the current context, should this field be displayed
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#show_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="show_?:Boolean"></a>
+      <a id="show_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: show_$qmark" class="name">show_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@show_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given the current state of things, should this field be shown
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the current state of things, should this field be shown
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#tabIndex" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tabIndex:Int"></a>
+      <a id="tabIndex:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tabIndex</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@tabIndex:Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#toBoxMyType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBoxMyType(in:MandatoryTypedField.this.ValueType):net.liftweb.common.Full[MandatoryTypedField.this.ValueType]"></a>
+      <a id="toBoxMyType(ValueType):Full[ValueType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBoxMyType</span><span class="params">(<span name="in">in: <a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a></span>)</span><span class="result">: <a href="../../../common/Full.html" class="extype" name="net.liftweb.common.Full">Full</a>[<a href="#ValueType=ThisType" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValueType">ValueType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@toBoxMyType(in:MandatoryTypedField.this.ValueType):net.liftweb.common.Full[MandatoryTypedField.this.ValueType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.mongodb.record.field.MongoListField#toForm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toForm:net.liftweb.common.Box[scala.xml.NodeSeq]"></a>
+      <a id="toForm:Box[NodeSeq]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toForm</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@toForm:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Generate a form control for the field
+</p><div class="fullcomment"><div class="comment cmt"><p>Generate a form control for the field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a> → <a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a> → <a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#toValueType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toValueType(in:net.liftweb.common.Box[MandatoryTypedField.this.MyType]):MandatoryTypedField.this.MyType"></a>
+      <a id="toValueType(Box[LongRefListField.MyType]):LongRefListField.MyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toValueType</span><span class="params">(<span name="in">in: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>)</span><span class="result">: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@toValueType(in:net.liftweb.common.Box[MandatoryTypedField.this.MyType]):MandatoryTypedField.this.MyType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a> → <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#toXHtml" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toXHtml:scala.xml.NodeSeq"></a>
+      <a id="toXHtml:NodeSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toXHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@toXHtml:scala.xml.NodeSeq" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convert the field value to an XHTML representation
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert the field value to an XHTML representation
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#uniqueFieldId" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniqueFieldId:net.liftweb.common.Box[String]"></a>
+      <a id="uniqueFieldId:Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniqueFieldId</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@uniqueFieldId:net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a> → <a href="../../../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#uploadField_?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uploadField_?:Boolean"></a>
+      <a id="uploadField_?:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: uploadField_$qmark" class="name">uploadField_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@uploadField_?:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is this an upload field so that a form that includes this field must be multi-part mime
+</p><div class="fullcomment"><div class="comment cmt"><p>Is this an upload field so that a form that includes this field must be multi-part mime
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#validate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validate:List[net.liftweb.util.FieldError]"></a>
+      <a id="validate:List[FieldError]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validate</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@validate:List[net.liftweb.util.FieldError]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Validate this field's setting, returning any errors found</p><div class="fullcomment"><div class="comment cmt"><p>Validate this field's setting, returning any errors found</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#validations" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validations:List[TypedField.this.ValidationFunction]"></a>
+      <a id="validations:List[ValidationFunction]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validations</span><span class="result">: <a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#ValidationFunction=TypedField.this.ValueType=&gt;List[net.liftweb.util.FieldError]" class="extmbr" name="net.liftweb.mongodb.record.field.LongRefListField.ValidationFunction">ValidationFunction</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@validations:List[TypedField.this.ValidationFunction]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.MandatoryTypedField#value" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="value:MandatoryTypedField.this.MyType"></a>
+      <a id="value:LongRefListField.MyType"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="result">: <span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@value:MandatoryTypedField.this.MyType" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#valueBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="valueBox:net.liftweb.common.Box[TypedField.this.MyType]"></a>
+      <a id="valueBox:Box[LongRefListField.MyType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">valueBox</span><span class="result">: <a href="../../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.record.TypedField.MyType">LongRefListField.MyType</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@valueBox:net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#net.liftweb.mongodb.record.field.LongRefListField@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.mongodb.record.field.MongoRefListField">
+              <h3>Inherited from <a href="MongoRefListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoRefListField">MongoRefListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>, <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.RefType">RefType</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</h3>
+            </div><div class="parent" name="net.liftweb.mongodb.record.field.MongoListField">
+              <h3>Inherited from <a href="MongoListField.html" class="extype" name="net.liftweb.mongodb.record.field.MongoListField">MongoListField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</h3>
+            </div><div class="parent" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">
+              <h3>Inherited from <a href="MongoFieldFlavor.html" class="extype" name="net.liftweb.mongodb.record.field.MongoFieldFlavor">MongoFieldFlavor</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]]</h3>
+            </div><div class="parent" name="net.liftweb.record.MandatoryTypedField">
+              <h3>Inherited from <a href="../../../record/MandatoryTypedField.html" class="extype" name="net.liftweb.record.MandatoryTypedField">MandatoryTypedField</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]]</h3>
+            </div><div class="parent" name="scala.Product1">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product1" class="extype" target="_top">Product1</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]]</h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
+            </div><div class="parent" name="net.liftweb.record.Field">
+              <h3>Inherited from <a href="../../../record/Field.html" class="extype" name="net.liftweb.record.Field">Field</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>], <span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>]</h3>
+            </div><div class="parent" name="net.liftweb.record.TypedField">
+              <h3>Inherited from <a href="../../../record/TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<a href="../../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]]</h3>
+            </div><div class="parent" name="net.liftweb.record.OwnedField">
+              <h3>Inherited from <a href="../../../record/OwnedField.html" class="extype" name="net.liftweb.record.OwnedField">OwnedField</a>[<span class="extype" name="net.liftweb.mongodb.record.field.LongRefListField.OwnerType">OwnerType</span>]</h3>
+            </div><div class="parent" name="net.liftweb.record.BaseField">
+              <h3>Inherited from <a href="../../../record/BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.BaseField">
+              <h3>Inherited from <a href="../../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.FieldContainer">
+              <h3>Inherited from <a href="../../../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></h3>
+            </div><div class="parent" name="net.liftweb.util.SettableField">
+              <h3>Inherited from <a href="../../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.SettableValueHolder">
+              <h3>Inherited from <a href="../../../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Settable">
+              <h3>Inherited from <a href="../../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ReadableField">
+              <h3>Inherited from <a href="../../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Bindable">
+              <h3>Inherited from <a href="../../../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ValueHolder">
+              <h3>Inherited from <a href="../../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.FieldIdentifier">
+              <h3>Inherited from <a href="../../../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

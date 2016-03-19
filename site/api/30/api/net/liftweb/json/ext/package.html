@@ -1,0 +1,342 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>ext - Lift Framework 3.0-SNAPSHOT - net.liftweb.json.ext</title>
+          <meta name="description" content="ext - Lift Framework 3.0 - SNAPSHOT - net.liftweb.json.ext" />
+          <meta name="keywords" content="ext Lift Framework 3.0 SNAPSHOT net.liftweb.json.ext" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.json.ext.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.json">json</a></p>
+        <h1>ext</h1><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ext</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.json.ext.ClassSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassSerializer[A,B]extendsSerializer[A]withProductwithSerializable"></a>
+      <a id="ClassSerializer[A,B]:ClassSerializer[A,B]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassSerializer.html"><span class="name">ClassSerializer</span></a><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="t">t: <span class="extype" name="net.liftweb.json.ext.ClassType">ClassType</span>[<span class="extype" name="net.liftweb.json.ext.ClassSerializer.A">A</span>, <span class="extype" name="net.liftweb.json.ext.ClassSerializer.B">B</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evidence$1">evidence$1: <span class="extype" name="scala.Predef.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.json.ext.ClassSerializer.A">A</span>]</span>, <span name="evidence$2">evidence$2: <span class="extype" name="scala.Predef.Manifest">Manifest</span>[<span class="extype" name="net.liftweb.json.ext.ClassSerializer.B">B</span>]</span>)</span><span class="result"> extends <a href="../Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="net.liftweb.json.ext.ClassSerializer.A">A</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@ClassSerializer[A,B]extendsSerializer[A]withProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.EnumNameSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EnumNameSerializer[E&lt;:Enumeration]extendsSerializer[E#Value]"></a>
+      <a id="EnumNameSerializer[E&lt;:Enumeration]:EnumNameSerializer[E]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EnumNameSerializer.html"><span class="name">EnumNameSerializer</span></a><span class="tparams">[<span name="E">E &lt;: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Enumeration" class="extype" target="_top">Enumeration</a></span>]</span><span class="result"> extends <a href="../Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="scala.Enumeration.Value">ext.EnumNameSerializer.E.Value</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@EnumNameSerializer[E&lt;:Enumeration]extendsSerializer[E#Value]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.EnumSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EnumSerializer[E&lt;:Enumeration]extendsSerializer[E#Value]"></a>
+      <a id="EnumSerializer[E&lt;:Enumeration]:EnumSerializer[E]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="EnumSerializer.html"><span class="name">EnumSerializer</span></a><span class="tparams">[<span name="E">E &lt;: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Enumeration" class="extype" target="_top">Enumeration</a></span>]</span><span class="result"> extends <a href="../Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<span class="extype" name="scala.Enumeration.Value">ext.EnumSerializer.E.Value</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@EnumSerializer[E&lt;:Enumeration]extendsSerializer[E#Value]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.JsonBoxSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsonBoxSerializerextendsSerializer[net.liftweb.common.Box[_]]"></a>
+      <a id="JsonBoxSerializer:JsonBoxSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonBoxSerializer.html"><span class="name">JsonBoxSerializer</span></a><span class="result"> extends <a href="../Serializer.html" class="extype" name="net.liftweb.json.Serializer">Serializer</a>[<a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[_]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@JsonBoxSerializerextendsSerializer[net.liftweb.common.Box[_]]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="net.liftweb.json.ext.DateMidnightSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateMidnightSerializer"></a>
+      <a id="DateMidnightSerializer:DateMidnightSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DateMidnightSerializer$.html"><span class="name">DateMidnightSerializer</span></a><span class="result"> extends <a href="../CustomSerializer.html" class="extype" name="net.liftweb.json.CustomSerializer">CustomSerializer</a>[<span class="extype" name="org.joda.time.DateMidnight">DateMidnight</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@DateMidnightSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.DateParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateParser"></a>
+      <a id="DateParser:DateParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DateParser$.html"><span class="name">DateParser</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@DateParser" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.DateTimeSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DateTimeSerializer"></a>
+      <a id="DateTimeSerializer:DateTimeSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DateTimeSerializer$.html"><span class="name">DateTimeSerializer</span></a><span class="result"> extends <a href="../CustomSerializer.html" class="extype" name="net.liftweb.json.CustomSerializer">CustomSerializer</a>[<span class="extype" name="org.joda.time.DateTime">DateTime</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@DateTimeSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.DurationSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DurationSerializer"></a>
+      <a id="DurationSerializer:DurationSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DurationSerializer$.html"><span class="name">DurationSerializer</span></a><span class="result"> extends <a href="../CustomSerializer.html" class="extype" name="net.liftweb.json.CustomSerializer">CustomSerializer</a>[<span class="extype" name="org.joda.time.Duration">Duration</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@DurationSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.InstantSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstantSerializer"></a>
+      <a id="InstantSerializer:InstantSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InstantSerializer$.html"><span class="name">InstantSerializer</span></a><span class="result"> extends <a href="../CustomSerializer.html" class="extype" name="net.liftweb.json.CustomSerializer">CustomSerializer</a>[<span class="extype" name="org.joda.time.Instant">Instant</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@InstantSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.IntervalSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntervalSerializer"></a>
+      <a id="IntervalSerializer:IntervalSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="IntervalSerializer$.html"><span class="name">IntervalSerializer</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@IntervalSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.JodaTimeSerializers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JodaTimeSerializers"></a>
+      <a id="JodaTimeSerializers:JodaTimeSerializers"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="JodaTimeSerializers$.html"><span class="name">JodaTimeSerializers</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@JodaTimeSerializers" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.LocalDateSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocalDateSerializer"></a>
+      <a id="LocalDateSerializer:LocalDateSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="LocalDateSerializer$.html"><span class="name">LocalDateSerializer</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@LocalDateSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.LocalTimeSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LocalTimeSerializer"></a>
+      <a id="LocalTimeSerializer:LocalTimeSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="LocalTimeSerializer$.html"><span class="name">LocalTimeSerializer</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@LocalTimeSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.json.ext.PeriodSerializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PeriodSerializer"></a>
+      <a id="PeriodSerializer:PeriodSerializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PeriodSerializer$.html"><span class="name">PeriodSerializer</span></a><span class="result"> extends <a href="../CustomSerializer.html" class="extype" name="net.liftweb.json.CustomSerializer">CustomSerializer</a>[<span class="extype" name="org.joda.time.Period">Period</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.json.ext.package@PeriodSerializer" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

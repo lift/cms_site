@@ -1,0 +1,167 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>comet - Lift Framework 3.0-SNAPSHOT - net.liftweb.builtin.comet</title>
+          <meta name="description" content="comet - Lift Framework 3.0 - SNAPSHOT - net.liftweb.builtin.comet" />
+          <meta name="keywords" content="comet Lift Framework 3.0 SNAPSHOT net.liftweb.builtin.comet" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.builtin.comet.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.builtin">builtin</a></p>
+        <h1>comet</h1><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.builtin.comet.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">comet</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.builtin.comet.AsyncRenderComet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AsyncRenderCometextendsMessageCometActor"></a>
+      <a id="AsyncRenderComet:AsyncRenderComet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AsyncRenderComet.html"><span class="name">AsyncRenderComet</span></a><span class="result"> extends <a href="../../http/MessageCometActor.html" class="extype" name="net.liftweb.http.MessageCometActor">MessageCometActor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.builtin.comet.package@AsyncRenderCometextendsMessageCometActor" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><code>AsyncRenderComet</code> facilitates rendering anything that produces a <code>JsCmd</code>
+independently from a page request.</p><div class="fullcomment"><div class="comment cmt"><p><code>AsyncRenderComet</code> facilitates rendering anything that produces a <code>JsCmd</code>
+independently from a page request. All you have to do is create one and
+send it a <code>Compute</code> message with the function that will produce the <code>JsCmd</code>.
+<code>AsyncRenderComet</code> will take ownership of the function and run it in
+a separate thread comet context, sending the results down using a
+<code>partialUpdate</code> when it is done.</p><p>Note that if you want to run a function that requires the context of the
+request you're running in, you'll want to use <code>LiftSession</code>'s
+<code>buildDeferredFunction</code> method to make sure that when the function is
+executed in a separate thread, it will retain request context.</p><p>In general, consider using one of:</p><ul><li><code>AsyncRenderComet.asyncRender</code>.</li><li>The <code>lazy</code> snippet.</li><li>The <code>CanBind</code> implicits in the <code>net.liftweb.http</code> package that allow using
+   <code>LAFuture</code> and Scala <code>Future</code> objects as the right-hand-side of a CSS
+   selector binding.</li></ul><p>None of these requires explicit use of <code>buildDeferredFunction</code>.
+</p></div></div>
+    </li><li name="net.liftweb.builtin.comet.Compute" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ComputeextendsProductwithSerializable"></a>
+      <a id="Compute:Compute"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Compute.html"><span class="name">Compute</span></a><span class="params">(<span name="js">js: () ⇒ <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.builtin.comet.package@ComputeextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="net.liftweb.builtin.comet.AsyncRenderComet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AsyncRenderComet"></a>
+      <a id="AsyncRenderComet:AsyncRenderComet"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AsyncRenderComet$.html"><span class="name">AsyncRenderComet</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.builtin.comet.package@AsyncRenderComet" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

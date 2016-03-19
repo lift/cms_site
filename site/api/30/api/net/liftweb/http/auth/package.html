@@ -1,0 +1,368 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>auth - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.auth</title>
+          <meta name="description" content="auth - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.auth" />
+          <meta name="keywords" content="auth Lift Framework 3.0 SNAPSHOT net.liftweb.http.auth" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'net.liftweb.http.auth.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="net">net</a>.<a href="../../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../package.html" class="extype" name="net.liftweb.http">http</a></p>
+        <h1>auth</h1><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">auth</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.http.auth.AuthenticationAlgorithm" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AuthenticationAlgorithmextendsAnyRef"></a>
+      <a id="AuthenticationAlgorithm:AuthenticationAlgorithm"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthenticationAlgorithm.html"><span class="name">AuthenticationAlgorithm</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@AuthenticationAlgorithmextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.AuthenticationScheme" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AuthenticationSchemeextendsAnyRef"></a>
+      <a id="AuthenticationScheme:AuthenticationScheme"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthenticationScheme.html"><span class="name">AuthenticationScheme</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@AuthenticationSchemeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.DigestAuthentication" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DigestAuthenticationextendsProductwithSerializable"></a>
+      <a id="DigestAuthentication:DigestAuthentication"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DigestAuthentication.html"><span class="name">DigestAuthentication</span></a><span class="params">(<span name="method">method: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="userName">userName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="realm">realm: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="nonce">nonce: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="uri">uri: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="qop">qop: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="nc">nc: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cnonce">cnonce: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="response">response: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="opaque">opaque: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@DigestAuthenticationextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.HttpAuthentication" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="HttpAuthenticationextendsAnyRef"></a>
+      <a id="HttpAuthentication:HttpAuthentication"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="HttpAuthentication.html"><span class="name">HttpAuthentication</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@HttpAuthenticationextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">All http authentication methods must implement these methods.</p><div class="fullcomment"><div class="comment cmt"><p>All http authentication methods must implement these methods.
+The most important method to note here is the verified_? partial function
+as this is what is used to then determine if the response specified in
+the boot dispatcher is used or its a 401 response.</p></div></div>
+    </li><li name="net.liftweb.http.auth.HttpBasicAuthentication" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HttpBasicAuthenticationextendsHttpAuthenticationwithProductwithSerializable"></a>
+      <a id="HttpBasicAuthentication:HttpBasicAuthentication"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HttpBasicAuthentication.html"><span class="name">HttpBasicAuthentication</span></a><span class="params">(<span name="realmName">realmName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="func">func: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="../Req.html" class="extype" name="net.liftweb.http.Req">Req</a>), <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>)</span><span class="result"> extends <a href="HttpAuthentication.html" class="extype" name="net.liftweb.http.auth.HttpAuthentication">HttpAuthentication</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@HttpBasicAuthenticationextendsHttpAuthenticationwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Methods that are specific to HTTP basic are defined here.</p><div class="fullcomment"><div class="comment cmt"><p>Methods that are specific to HTTP basic are defined here.
+The methods from the parent trait are implemented to decode the
+Base64 encoded input from the http client.
+</p></div></div>
+    </li><li name="net.liftweb.http.auth.HttpDigestAuthentication" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HttpDigestAuthenticationextendsHttpAuthenticationwithLoggablewithProductwithSerializable"></a>
+      <a id="HttpDigestAuthentication:HttpDigestAuthentication"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="HttpDigestAuthentication.html"><span class="name">HttpDigestAuthentication</span></a><span class="params">(<span name="realmName">realmName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="func">func: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="../Req.html" class="extype" name="net.liftweb.http.Req">Req</a>, (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>), <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>)</span><span class="result"> extends <a href="HttpAuthentication.html" class="extype" name="net.liftweb.http.auth.HttpAuthentication">HttpAuthentication</a> with <a href="../../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@HttpDigestAuthenticationextendsHttpAuthenticationwithLoggablewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.Role" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RoleextendsAnyRef"></a>
+      <a id="Role:Role"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Role.html"><span class="name">Role</span></a><span class="result"> extends <a href="../../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@RoleextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Role may be assigned to a resource denominated by a path.</p><div class="fullcomment"><div class="comment cmt"><p>A Role may be assigned to a resource denominated by a path. A subject
+that is assigned to the same role or to a role higher into the roles hierarchy
+will have access to requested resource.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="net.liftweb.http.auth.AuthRole" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AuthRole"></a>
+      <a id="AuthRole:AuthRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AuthRole$.html"><span class="name">AuthRole</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@AuthRole" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.BasicScheme" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BasicScheme"></a>
+      <a id="BasicScheme:BasicScheme"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="BasicScheme$.html"><span class="name">BasicScheme</span></a><span class="result"> extends <a href="AuthenticationScheme.html" class="extype" name="net.liftweb.http.auth.AuthenticationScheme">AuthenticationScheme</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@BasicScheme" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.DigestScheme" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DigestScheme"></a>
+      <a id="DigestScheme:DigestScheme"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DigestScheme$.html"><span class="name">DigestScheme</span></a><span class="result"> extends <a href="AuthenticationScheme.html" class="extype" name="net.liftweb.http.auth.AuthenticationScheme">AuthenticationScheme</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@DigestScheme" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.MD5" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MD5"></a>
+      <a id="MD5:MD5"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MD5$.html"><span class="name">MD5</span></a><span class="result"> extends <a href="AuthenticationAlgorithm.html" class="extype" name="net.liftweb.http.auth.AuthenticationAlgorithm">AuthenticationAlgorithm</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@MD5" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.MD5Session" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MD5Session"></a>
+      <a id="MD5Session:MD5Session"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="MD5Session$.html"><span class="name">MD5Session</span></a><span class="result"> extends <a href="AuthenticationAlgorithm.html" class="extype" name="net.liftweb.http.auth.AuthenticationAlgorithm">AuthenticationAlgorithm</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@MD5Session" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.NoAuthentication" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoAuthentication"></a>
+      <a id="NoAuthentication:NoAuthentication"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NoAuthentication$.html"><span class="name">NoAuthentication</span></a><span class="result"> extends <a href="HttpAuthentication.html" class="extype" name="net.liftweb.http.auth.HttpAuthentication">HttpAuthentication</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@NoAuthentication" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.UnknownScheme" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnknownScheme"></a>
+      <a id="UnknownScheme:UnknownScheme"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="UnknownScheme$.html"><span class="name">UnknownScheme</span></a><span class="result"> extends <a href="AuthenticationScheme.html" class="extype" name="net.liftweb.http.auth.AuthenticationScheme">AuthenticationScheme</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@UnknownScheme" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="net.liftweb.http.auth.userRoles" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="userRoles"></a>
+      <a id="userRoles:userRoles"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="userRoles$.html"><span class="name">userRoles</span></a><span class="result"> extends <a href="../RequestVar.html" class="extype" name="net.liftweb.http.RequestVar">RequestVar</a>[<a href="../../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="Role.html" class="extype" name="net.liftweb.http.auth.Role">Role</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#net.liftweb.http.auth.package@userRoles" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

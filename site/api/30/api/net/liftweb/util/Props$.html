@@ -1,0 +1,1717 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>Props - Lift Framework 3.0-SNAPSHOT - net.liftweb.util.Props</title>
+          <meta name="description" content="Props - Lift Framework 3.0 - SNAPSHOT - net.liftweb.util.Props" />
+          <meta name="keywords" content="Props Lift Framework 3.0 SNAPSHOT net.liftweb.util.Props" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'net.liftweb.util.Props$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Object" src="../../../lib/object_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="net">net</a>.<a href="../package.html" class="extype" name="net.liftweb">liftweb</a>.<a href="package.html" class="extype" name="net.liftweb.util">util</a></p>
+        <h1>Props</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="net.liftweb.util">package util</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Props</span><span class="result"> extends <span class="extype" name="net.liftweb.util.Props">Props</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Configuration management utilities.</p><p>If you want to provide a configuration file for a subset of your application
+or for a specific environment, Lift expects configuration files to be named
+in a manner relating to the context in which they are being used. The standard
+name format is:</p><pre>$modeName.$userName.$hostName.$props
+
+examples:
+dpp.yak.props
+test.dpp.yak.props
+production.moose.props
+staging.dpp.props
+test.default.props
+default.props</pre><p>with <code>hostName</code> and <code>userName</code> being optional, and <code>modeName</code> being one of
+&quot;test&quot;, &quot;staging&quot;, &quot;production&quot;, &quot;pilot&quot;, &quot;profile&quot;, or &quot;default&quot;.
+The standard Lift properties file extension is &quot;props&quot;.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="net.liftweb.util.Props">Props</span>, <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a>, <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="net.liftweb.util.Props"><span>Props</span></li><li class="in" name="net.liftweb.util.Props"><span>Props</span></li><li class="in" name="net.liftweb.common.Logger"><span>Logger</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.util.Props.InterpolationValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InterpolationValues=scala.collection.Map[String,String]"></a>
+      <a id="InterpolationValues:InterpolationValues"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InterpolationValues</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.Map" class="extype" target="_top">Map</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@InterpolationValues=scala.collection.Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props.PropProvider" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PropProvider=scala.collection.Map[String,String]"></a>
+      <a id="PropProvider:PropProvider"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PropProvider</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.Map" class="extype" target="_top">Map</a>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@PropProvider=scala.collection.Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props.RunModeProperty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RunModeProperty[T]extendsLogger"></a>
+      <a id="RunModeProperty[T]:RunModeProperty[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RunModeProperty</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@RunModeProperty[T]extendsLogger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Exposes a property affecting run-mode determination, for customisation.</p><div class="fullcomment"><div class="comment cmt"><p>Exposes a property affecting run-mode determination, for customisation. If the property is modified
+after the run-mode is realised, then it will have no effect and will instead log a warning indicating thus.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.Props.RunModes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RunModes"></a>
+      <a id="RunModes:RunModes"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Props$$RunModes$.html"><span class="name">RunModes</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Enumeration" class="extype" target="_top">Enumeration</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@RunModes" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Enumeration of available run modes.</p>
+    </li><li name="net.liftweb.common.Logger#_logger" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_logger:org.slf4j.Logger"></a>
+      <a id="_logger:Logger"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_logger</span><span class="result">: <span class="extype" name="org.slf4j.Logger">Logger</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@_logger:org.slf4j.Logger" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#appendInterpolationValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="appendInterpolationValues(interpolationValues:Props.this.InterpolationValues):Seq[Props.this.InterpolationValues]"></a>
+      <a id="appendInterpolationValues(InterpolationValues):Seq[InterpolationValues]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appendInterpolationValues</span><span class="params">(<span name="interpolationValues">interpolationValues: <a href="#InterpolationValues=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.InterpolationValues">InterpolationValues</a></span>)</span><span class="result">: <a href="../../../scala/package.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="#InterpolationValues=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.InterpolationValues">InterpolationValues</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@appendInterpolationValues(interpolationValues:Props.this.InterpolationValues):Seq[Props.this.InterpolationValues]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Updates Props to find values in the argument when interpolating values found in providers.</p><div class="fullcomment"><div class="comment cmt"><p>Updates Props to find values in the argument when interpolating values found in providers.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd><dt>Note</dt><dd><span class="cmt"><p>You can only modify these BEFORE you look up any props!</p></span></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#appendProvider" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="appendProvider(provider:Props.this.PropProvider):List[Props.this.PropProvider]"></a>
+      <a id="appendProvider(PropProvider):List[PropProvider]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appendProvider</span><span class="params">(<span name="provider">provider: <a href="#PropProvider=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.PropProvider">PropProvider</a></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#PropProvider=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.PropProvider">PropProvider</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@appendProvider(provider:Props.this.PropProvider):List[Props.this.PropProvider]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Updates Props to find property values in the argument AFTER first looking
+in the standard Lift prop files.</p><div class="fullcomment"><div class="comment cmt"><p>Updates Props to find property values in the argument AFTER first looking
+in the standard Lift prop files.
+</p></div><dl class="paramcmts block"><dt class="param">provider</dt><dd class="cmt"><p>Arbitrary map of property key -&gt; property value.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd><dt>Note</dt><dd><span class="cmt"><p>You can only modify these BEFORE you look up any props!</p></span></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#assertLog" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="assertLog(assertion:Boolean,msg:=&gt;String):Unit"></a>
+      <a id="assertLog(Boolean,⇒String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">assertLog</span><span class="params">(<span name="assertion">assertion: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@assertLog(assertion:Boolean,msg:=&gt;String):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#autoDetectRunModeFn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="autoDetectRunModeFn:Props.this.RunModeProperty[()=&gt;net.liftweb.util.Props.RunModes.Value]"></a>
+      <a id="autoDetectRunModeFn:RunModeProperty[()⇒Props.RunModes.Value]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">autoDetectRunModeFn</span><span class="result">: <a href="#RunModeProperty[T]extendsLogger" class="extmbr" name="net.liftweb.util.Props.RunModeProperty">RunModeProperty</a>[() ⇒ <a href="Props$$RunModes$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="net.liftweb.util.Props.RunModes.Value">Props.RunModes.Value</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@autoDetectRunModeFn:Props.this.RunModeProperty[()=&gt;net.liftweb.util.Props.RunModes.Value]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">When the <code>run.mode</code> environment variable isn't set or recognised, this function is invoked to determine the
+appropriate mode to use.</p><div class="fullcomment"><div class="comment cmt"><p>When the <code>run.mode</code> environment variable isn't set or recognised, this function is invoked to determine the
+appropriate mode to use.</p><p>This logic can be customised by calling <code>set</code> <b>before</b> the run-mode is
+referenced. (An attempt to customise this after the run-mode is realised
+will have no effect and will instead log a warning.)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit"></a>
+      <a id="debug(⇒AnyRef,Throwable,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@debug(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit"></a>
+      <a id="debug(⇒AnyRef,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@debug(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(msg:=&gt;AnyRef,t:Throwable):Unit"></a>
+      <a id="debug(⇒AnyRef,Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@debug(msg:=&gt;AnyRef,t:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(msg:=&gt;AnyRef):Unit"></a>
+      <a id="debug(⇒AnyRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@debug(msg:=&gt;AnyRef):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#debug" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="debug(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit"></a>
+      <a id="debug(⇒AnyRef,Box[_]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">debug</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="box">box: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@debug(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Debug a <code>Failure</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Debug a <code>Failure</code>.  If the log level is debug and the <code>Box</code> is a
+<code>Failure</code>, debug the message concatenated with the <code>Failure</code>'s message.  If
+the <code>Failure</code> contains an <code>Exception</code>, debug that as well.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#devMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="devMode:Boolean"></a>
+      <a id="devMode:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">devMode</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@devMode:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the system running in development mode
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the system running in development mode
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#doesStackTraceContainKnownTestRunner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doesStackTraceContainKnownTestRunner:Props.this.RunModeProperty[Array[StackTraceElement]=&gt;Boolean]"></a>
+      <a id="doesStackTraceContainKnownTestRunner:RunModeProperty[(Array[StackTraceElement])⇒Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doesStackTraceContainKnownTestRunner</span><span class="result">: <a href="#RunModeProperty[T]extendsLogger" class="extmbr" name="net.liftweb.util.Props.RunModeProperty">RunModeProperty</a>[(<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Array" class="extype" target="_top">Array</a>[<span class="extype" name="java.lang.StackTraceElement">StackTraceElement</span>]) ⇒ <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@doesStackTraceContainKnownTestRunner:Props.this.RunModeProperty[Array[StackTraceElement]=&gt;Boolean]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The default run-mode auto-detection routine uses this function to infer whether Lift is being run in a test.</p><div class="fullcomment"><div class="comment cmt"><p>The default run-mode auto-detection routine uses this function to infer whether Lift is being run in a test.</p><p>This routine can be customised by calling <code>set</code> <b>before</b> the run-mode
+is referenced. (An attempt to customise this after the run-mode is
+realised will have no effect and will instead log a warning.)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit"></a>
+      <a id="error(⇒AnyRef,Throwable,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@error(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit"></a>
+      <a id="error(⇒AnyRef,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@error(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(msg:=&gt;AnyRef,t:Throwable):Unit"></a>
+      <a id="error(⇒AnyRef,Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@error(msg:=&gt;AnyRef,t:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(msg:=&gt;AnyRef):Unit"></a>
+      <a id="error(⇒AnyRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@error(msg:=&gt;AnyRef):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#error" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit"></a>
+      <a id="error(⇒AnyRef,Box[_]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="box">box: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@error(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Error a <code>Failure</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Error a <code>Failure</code>.  If the log level is error and the <code>Box</code> is a <code>Failure</code>,
+error the message concatenated with the <code>Failure</code>'s message.  If the
+<code>Failure</code> contains an <code>Exception</code>, error that as well.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#fileName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fileName:String"></a>
+      <a id="fileName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fileName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@fileName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.Props#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get(name:String,defVal:String):String"></a>
+      <a id="get(String,String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defVal">defVal: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@get(name:String,defVal:String):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#get" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get(name:String):net.liftweb.common.Box[String]"></a>
+      <a id="get(String):Box[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@get(name:String):net.liftweb.common.Box[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Get the configuration property value for the specified key.</p><div class="fullcomment"><div class="comment cmt"><p>Get the configuration property value for the specified key.
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>key for the property to get</p></dd><dt>returns</dt><dd class="cmt"><p>the value of the property if defined</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#getBool" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getBool(name:String,defVal:Boolean):Boolean"></a>
+      <a id="getBool(String,Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getBool</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defVal">defVal: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@getBool(name:String,defVal:Boolean):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#getBool" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getBool(name:String):net.liftweb.common.Box[Boolean]"></a>
+      <a id="getBool(String):Box[Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getBool</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@getBool(name:String):net.liftweb.common.Box[Boolean]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#getInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getInt(name:String,defVal:Int):Int"></a>
+      <a id="getInt(String,Int):Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getInt</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defVal">defVal: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@getInt(name:String,defVal:Int):Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#getInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getInt(name:String):net.liftweb.common.Box[Int]"></a>
+      <a id="getInt(String):Box[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getInt</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@getInt(name:String):net.liftweb.common.Box[Int]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#getLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLong(name:String,defVal:Long):Long"></a>
+      <a id="getLong(String,Long):Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLong</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defVal">defVal: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@getLong(name:String,defVal:Long):Long" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#getLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getLong(name:String):net.liftweb.common.Box[Long]"></a>
+      <a id="getLong(String):Box[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLong</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@getLong(name:String):net.liftweb.common.Box[Long]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#hostName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hostName:String"></a>
+      <a id="hostName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hostName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@hostName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The resource path segment corresponding to the system hostname.</p><div class="fullcomment"><div class="comment cmt"><p>The resource path segment corresponding to the system hostname.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#inGAE" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="inGAE:Boolean"></a>
+      <a id="inGAE:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inGAE</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@inGAE:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the app running in the Google App engine (the System property in.gae.j is set)
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the app running in the Google App engine (the System property in.gae.j is set)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit"></a>
+      <a id="info(⇒AnyRef,Throwable,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@info(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit"></a>
+      <a id="info(⇒AnyRef,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@info(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(msg:=&gt;AnyRef,t:=&gt;Throwable):Unit"></a>
+      <a id="info(⇒AnyRef,⇒Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: ⇒ <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@info(msg:=&gt;AnyRef,t:=&gt;Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(msg:=&gt;AnyRef):Unit"></a>
+      <a id="info(⇒AnyRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@info(msg:=&gt;AnyRef):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#info" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="info(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit"></a>
+      <a id="info(⇒AnyRef,Box[_]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">info</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="box">box: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@info(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Info a <code>Failure</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Info a <code>Failure</code>.  If the log level is info and the <code>Box</code> is a <code>Failure</code>,
+info the message concatenated with the <code>Failure</code>'s message.  If the
+<code>Failure</code> contains an <code>Exception</code>, info that as well.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#isDebugEnabled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDebugEnabled:Boolean"></a>
+      <a id="isDebugEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDebugEnabled</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@isDebugEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#isErrorEnabled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isErrorEnabled:Boolean"></a>
+      <a id="isErrorEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isErrorEnabled</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@isErrorEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#isInfoEnabled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInfoEnabled:Boolean"></a>
+      <a id="isInfoEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInfoEnabled</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@isInfoEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#isTraceEnabled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isTraceEnabled:Boolean"></a>
+      <a id="isTraceEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isTraceEnabled</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@isTraceEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#isWarnEnabled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isWarnEnabled:Boolean"></a>
+      <a id="isWarnEnabled:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isWarnEnabled</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@isWarnEnabled:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#mode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mode:net.liftweb.util.Props.RunModes.Value"></a>
+      <a id="mode:Props.RunModes.Value"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mode</span><span class="result">: <a href="Props$$RunModes$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="net.liftweb.util.Props.RunModes.Value">Props.RunModes.Value</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@mode:net.liftweb.util.Props.RunModes.Value" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The mode for which to retrieve properties, retrieved by System.getProperty(&quot;run.mode&quot;).</p><div class="fullcomment"><div class="comment cmt"><p>The mode for which to retrieve properties, retrieved by System.getProperty(&quot;run.mode&quot;).
+Recognized modes are &quot;development&quot;, &quot;test&quot;, &quot;profile&quot;, &quot;pilot&quot;, &quot;staging&quot; and &quot;production&quot;
+with the default run mode being development.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#modeName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="modeName:String"></a>
+      <a id="modeName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">modeName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@modeName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The resource path segment corresponding to the current mode.</p><div class="fullcomment"><div class="comment cmt"><p>The resource path segment corresponding to the current mode.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#prependProvider" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prependProvider(provider:Props.this.PropProvider):List[Props.this.PropProvider]"></a>
+      <a id="prependProvider(PropProvider):List[PropProvider]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prependProvider</span><span class="params">(<span name="provider">provider: <a href="#PropProvider=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.PropProvider">PropProvider</a></span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#PropProvider=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.PropProvider">PropProvider</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@prependProvider(provider:Props.this.PropProvider):List[Props.this.PropProvider]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Updates Props to find property values in the argument BEFORE looking in
+the standard Lift prop files.</p><div class="fullcomment"><div class="comment cmt"><p>Updates Props to find property values in the argument BEFORE looking in
+the standard Lift prop files.
+</p></div><dl class="paramcmts block"><dt class="param">provider</dt><dd class="cmt"><p>Arbitrary map of property key -&gt; property value to be used
+                for property lookup.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd><dt>Note</dt><dd><span class="cmt"><p>You can only modify these BEFORE you look up any props!</p></span></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#productionMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="productionMode:Boolean"></a>
+      <a id="productionMode:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">productionMode</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@productionMode:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the system running in production mode (apply full optimizations)
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the system running in production mode (apply full optimizations)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#propFileName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propFileName:String"></a>
+      <a id="propFileName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propFileName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@propFileName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#props" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="props:Map[String,String]"></a>
+      <a id="props:Map[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">props</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@props:Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The map of key/value pairs retrieved from the property file.</p><div class="fullcomment"><div class="comment cmt"><p>The map of key/value pairs retrieved from the property file.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#require" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="require(what:String*):Seq[String]"></a>
+      <a id="require(String*):Seq[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">require</span><span class="params">(<span name="what">what: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.Seq" class="extype" target="_top">Seq</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@require(what:String*):Seq[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Determine whether the specified properties exist.</p><div class="fullcomment"><div class="comment cmt"><p>Determine whether the specified properties exist.</p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>the properties to test</p></dd><dt>returns</dt><dd class="cmt"><p>the subset of strings in 'what' that do not correspond to
+keys for available properties.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#requireOrDie" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="requireOrDie(what:String*):Unit"></a>
+      <a id="requireOrDie(String*):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">requireOrDie</span><span class="params">(<span name="what">what: <span class="extype" name="scala.Predef.String">String</span>*</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@requireOrDie(what:String*):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Ensure that all of the specified properties exist; throw an exception if
+any of the specified values are not keys for available properties.</p><div class="fullcomment"><div class="comment cmt"><p>Ensure that all of the specified properties exist; throw an exception if
+any of the specified values are not keys for available properties.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#testMode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="testMode:Boolean"></a>
+      <a id="testMode:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">testMode</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@testMode:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Is the system running in test mode
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the system running in test mode
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.Props#toTry" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toTry:List[()=&gt;String]"></a>
+      <a id="toTry:List[()⇒String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toTry</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[() ⇒ <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@toTry:List[()=&gt;String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The list of paths to search for property file resources.</p><div class="fullcomment"><div class="comment cmt"><p>The list of paths to search for property file resources.
+Properties files may be found at either the classpath root or
+in /props
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(msg:=&gt;AnyRef,t:Throwable,marker:=&gt;org.slf4j.Marker):Unit"></a>
+      <a id="trace(⇒AnyRef,Throwable,⇒Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>, <span name="marker">marker: ⇒ <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@trace(msg:=&gt;AnyRef,t:Throwable,marker:=&gt;org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit"></a>
+      <a id="trace(⇒AnyRef,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@trace(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(msg:=&gt;AnyRef,t:Throwable):Unit"></a>
+      <a id="trace(⇒AnyRef,Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@trace(msg:=&gt;AnyRef,t:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(msg:=&gt;AnyRef):Unit"></a>
+      <a id="trace(⇒AnyRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@trace(msg:=&gt;AnyRef):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit"></a>
+      <a id="trace(⇒AnyRef,Box[_]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="box">box: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@trace(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Trace a <code><a href="../common/Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a></code>.</p><div class="fullcomment"><div class="comment cmt"><p>Trace a <code><a href="../common/Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a></code>.  If the log level is trace and the <code><a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a></code> is a
+<code>Failure</code>, trace the message concatenated with the <code>Failure</code>'s message. If
+the <code>Failure</code> contains an <code>Exception</code>, trace that as well.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#trace" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trace[T](msg:String,v:T):T"></a>
+      <a id="trace[T](String,T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trace</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="v">v: <span class="extype" name="net.liftweb.common.Logger.trace.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.common.Logger.trace.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@trace[T](msg:String,v:T):T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Log the value of v with trace and return v.</p><div class="fullcomment"><div class="comment cmt"><p>Log the value of v with trace and return v. Useful for tracing values in expressions
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#updateInterpolationValues" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateInterpolationValues(updater:List[Props.this.InterpolationValues]=&gt;List[Props.this.InterpolationValues]):List[Props.this.InterpolationValues]"></a>
+      <a id="updateInterpolationValues((List[InterpolationValues])⇒List[InterpolationValues]):List[InterpolationValues]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateInterpolationValues</span><span class="params">(<span name="updater">updater: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#InterpolationValues=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.InterpolationValues">InterpolationValues</a>]) ⇒ <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#InterpolationValues=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.InterpolationValues">InterpolationValues</a>]</span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#InterpolationValues=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.InterpolationValues">InterpolationValues</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@updateInterpolationValues(updater:List[Props.this.InterpolationValues]=&gt;List[Props.this.InterpolationValues]):List[Props.this.InterpolationValues]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Passes the current <code>InterpolationValues</code>s to the passed <code>updater</code>, then sets the
+providers to the result of the updater.</p><div class="fullcomment"><div class="comment cmt"><p>Passes the current <code>InterpolationValues</code>s to the passed <code>updater</code>, then sets the
+providers to the result of the updater. Consider using
+<code><a href="#appendInterpolationValues(interpolationValues:Props.this.InterpolationValues):Seq[Props.this.InterpolationValues]" class="extmbr" name="net.liftweb.util.Props#appendInterpolationValues">appendInterpolationValues</a></code> instead.
+</p></div><dl class="paramcmts block"><dt class="param">updater</dt><dd class="cmt"><p>Function that gets the current <code>InterpolationValues</code>s and returns
+               the new ones to use.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd><dt>Note</dt><dd><span class="cmt"><p>You can only modify these BEFORE you look up any props!</p></span></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#updateProviders" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="updateProviders(updater:List[Props.this.PropProvider]=&gt;List[Props.this.PropProvider]):List[Props.this.PropProvider]"></a>
+      <a id="updateProviders((List[PropProvider])⇒List[PropProvider]):List[PropProvider]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateProviders</span><span class="params">(<span name="updater">updater: (<a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#PropProvider=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.PropProvider">PropProvider</a>]) ⇒ <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#PropProvider=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.PropProvider">PropProvider</a>]</span>)</span><span class="result">: <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#PropProvider=scala.collection.Map[String,String]" class="extmbr" name="net.liftweb.util.Props.PropProvider">PropProvider</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@updateProviders(updater:List[Props.this.PropProvider]=&gt;List[Props.this.PropProvider]):List[Props.this.PropProvider]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Passes the current <code>PropProvider</code>s to the passed <code>updater</code>, then sets the
+providers to the result of the updater.</p><div class="fullcomment"><div class="comment cmt"><p>Passes the current <code>PropProvider</code>s to the passed <code>updater</code>, then sets the
+providers to the result of the updater. Consider using
+<code><a href="#appendProvider(provider:Props.this.PropProvider):List[Props.this.PropProvider]" class="extmbr" name="net.liftweb.util.Props#appendProvider">appendProvider</a></code> or <code><a href="#prependProvider(provider:Props.this.PropProvider):List[Props.this.PropProvider]" class="extmbr" name="net.liftweb.util.Props#prependProvider">prependProvider</a></code> instead.
+</p></div><dl class="paramcmts block"><dt class="param">updater</dt><dd class="cmt"><p>Function that gets the current <code>PropProvider</code>s and returns
+               the new ones to use.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd><dt>Note</dt><dd><span class="cmt"><p>You can only modify these BEFORE you look up any props!</p></span></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#userName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="userName:String"></a>
+      <a id="userName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">userName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@userName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The resource path segment corresponding to the current system user
+(from System.getProperty(&quot;user.name&quot;))
+</p><div class="fullcomment"><div class="comment cmt"><p>The resource path segment corresponding to the current system user
+(from System.getProperty(&quot;user.name&quot;))
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit"></a>
+      <a id="warn(⇒AnyRef,Throwable,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@warn(msg:=&gt;AnyRef,t:Throwable,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit"></a>
+      <a id="warn(⇒AnyRef,Marker):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="marker">marker: <span class="extype" name="org.slf4j.Marker">Marker</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@warn(msg:=&gt;AnyRef,marker:org.slf4j.Marker):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(msg:=&gt;AnyRef,t:Throwable):Unit"></a>
+      <a id="warn(⇒AnyRef,Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="t">t: <a href="../../../scala/package.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@warn(msg:=&gt;AnyRef,t:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(msg:=&gt;AnyRef):Unit"></a>
+      <a id="warn(⇒AnyRef):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@warn(msg:=&gt;AnyRef):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Logger#warn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warn(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit"></a>
+      <a id="warn(⇒AnyRef,Box[_]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warn</span><span class="params">(<span name="msg">msg: ⇒ <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>, <span name="box">box: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@warn(msg:=&gt;AnyRef,box:net.liftweb.common.Box[_]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Warn a <code>Failure</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Warn a <code>Failure</code>.  If the log level is warn and the <code>Box</code> is a <code>Failure</code>,
+warn the message concatenated with the <code>Failure</code>'s message.  If the
+<code>Failure</code> contains an <code>Exception</code>, warn that as well.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Props#whereToLook" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="whereToLook:()=&gt;List[(String,()=&gt;net.liftweb.common.Box[java.io.InputStream])]"></a>
+      <a id="whereToLook:()⇒List[(String,()⇒Box[InputStream])]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">whereToLook</span><span class="result">: () ⇒ <a href="../../../scala/package.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<span class="extype" name="scala.Predef.String">String</span>, () ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="java.io.InputStream">InputStream</span>])]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#net.liftweb.util.Props$@whereToLook:()=&gt;List[(String,()=&gt;net.liftweb.common.Box[java.io.InputStream])]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is a function that returns the first places to look for a props file.</p><div class="fullcomment"><div class="comment cmt"><p>This is a function that returns the first places to look for a props file.
+The function returns a List of String -&gt; () =&gt; Box[InputStream].
+So, if you want to consult System.getProperties to look for a properties file or
+some such, you can set the whereToLook function in your Boot.scala file
+<b>before</b> you call anything else in <code>Props</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>Props</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.util.Props">
+              <h3>Inherited from <span class="extype" name="net.liftweb.util.Props">Props</span></h3>
+            </div><div class="parent" name="net.liftweb.common.Logger">
+              <h3>Inherited from <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/package.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
