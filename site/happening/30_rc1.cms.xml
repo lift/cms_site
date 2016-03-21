@@ -57,8 +57,8 @@
               Matching multiple fields would return a JObject with the matched fields in it.
               Now, <code>\\</code> always returns a **JObject** with the matching fields in it, even if there is only one such field.
               This may require adapting certain uses of <code>\\</code>, especially in for comprehensions.
-              Code like <code>for (JString(name) <- object \\ "name")</code> will have to be changed to something more like
-               <code>for (JField(_, JString(name)) <- object \\ "name")</code> to work correctly.
+              Code like <code>for (JString(name) &lt;- object \\ "name")</code> will have to be changed to something more like
+               <code>for (JField(_, JString(name)) &lt;- object \\ "name")</code> to work correctly.
                Thanks to <a href="https://github.com/eallik">@eallik</a> for reporting!
              </li>
              <li>
@@ -74,7 +74,7 @@
             <ul>
               <li>
                 <a class="issue-link" href="https://github.com/lift/framework/pull/1772">(#1772)</a>
-                 When JsCmds including Noop were combined with <code>&</code>, you would get a lot of empty lines,
+                 When JsCmds including Noop were combined with <code>&amp;</code>, you would get a lot of empty lines,
                  since each Noop would emit some empty lines in those cases.
                  Now, we ignore Noop when combining <code>JsCmds</code>, which should lead to reduced noise in serialized JS output.
                  The most immediate impact is that page-specific JavaScript will be much more compact than it was before.
