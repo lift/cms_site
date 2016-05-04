@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>LiftRules - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.LiftRules</title>
-          <meta name="description" content="LiftRules - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.LiftRules" />
-          <meta name="keywords" content="LiftRules Lift Framework 3.0 SNAPSHOT net.liftweb.http.LiftRules" />
+          <title>LiftRules - Lift Framework 3.0-RC3 - net.liftweb.http.LiftRules</title>
+          <meta name="description" content="LiftRules - Lift Framework 3.0 - RC3 - net.liftweb.http.LiftRules" />
+          <meta name="keywords" content="LiftRules Lift Framework 3.0 RC3 net.liftweb.http.LiftRules" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -1552,7 +1552,7 @@ helps in testing automation.
       <p class="shortcomment cmt">Holds user functions that will be executed very early in the request processing.</p><div class="fullcomment"><div class="comment cmt"><p>Holds user functions that will be executed very early in the request processing. The functions'
 result will be ignored.
 </p></div></div>
-    </li><li name="net.liftweb.http.LiftRules#earlyInStateful" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="net.liftweb.http.LiftRules#earlyInStateful" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="earlyInStateful:LiftRules.this.RulesSeq[net.liftweb.common.Box[net.liftweb.http.Req]=&gt;Unit]"></a>
       <a id="earlyInStateful:RulesSeq[(Box[Req])⇒Unit]"></a>
       <h4 class="signature">
@@ -1570,7 +1570,11 @@ result will be ignored.
     </span>
       <p class="shortcomment cmt">Execute certain functions early in a Stateful Request
 This is called early in a stateful request (one that's not serviced by a stateless REST request and
-one that's not marked as a stateless HTML page request).</p>
+one that's not marked as a stateless HTML page request).</p><div class="fullcomment"><div class="comment cmt"><p>Execute certain functions early in a Stateful Request
+This is called early in a stateful request (one that's not serviced by a stateless REST request and
+one that's not marked as a stateless HTML page request).</p><p>DPP strongly recommends that everything that you do related to user state
+is done with <code>earlyInStateful</code>, instead of using <code><a href="#onBeginServicing:LiftRules.this.RulesSeq[net.liftweb.http.Req=&gt;Unit]" class="extmbr" name="net.liftweb.http.LiftRules#onBeginServicing">onBeginServicing</a></code>.
+</p></div></div>
     </li><li name="net.liftweb.http.LiftRules#earlyInStateless" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="earlyInStateless:LiftRules.this.RulesSeq[net.liftweb.common.Box[net.liftweb.http.Req]=&gt;Unit]"></a>
       <a id="earlyInStateless:RulesSeq[(Box[Req])⇒Unit]"></a>
@@ -1820,7 +1824,8 @@ be used.  Also, keep in mind how FactoryMaker can be used... it can be global, p
     </span>
       <p class="shortcomment cmt">Modifies the root relative paths from the css url-s
 </p><div class="fullcomment"><div class="comment cmt"><p>Modifies the root relative paths from the css url-s
-</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>- the path of the css resource</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">path</dt><dd class="cmt"><p>the path of the css resource</p></dd><dt class="param">prefix</dt><dd class="cmt"><p>the prefix to be added on the root relative paths. If this
+              is Empty, the prefix will be the application context path.</p></dd></dl></div>
     </li><li name="net.liftweb.http.LiftRules#flipDocTypeForIE6" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="flipDocTypeForIE6:Boolean"></a>
       <a id="flipDocTypeForIE6:Boolean"></a>

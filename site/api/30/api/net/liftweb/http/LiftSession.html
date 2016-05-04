@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>LiftSession - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.LiftSession</title>
-          <meta name="description" content="LiftSession - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.LiftSession" />
-          <meta name="keywords" content="LiftSession Lift Framework 3.0 SNAPSHOT net.liftweb.http.LiftSession" />
+          <title>LiftSession - Lift Framework 3.0-RC3 - net.liftweb.http.LiftSession</title>
+          <meta name="description" content="LiftSession - Lift Framework 3.0 - RC3 - net.liftweb.http.LiftSession" />
+          <meta name="keywords" content="LiftSession Lift Framework 3.0 RC3 net.liftweb.http.LiftSession" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -974,8 +974,9 @@ way a particular session handles lift tags, alter this partial function.
         <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">Apply HTML specific corrections such as adding the context path etc.</p><div class="fullcomment"><div class="comment cmt"><p>Apply HTML specific corrections such as adding the context path etc.</p><p>In general, you should heavily consider using <code><span class="extype" name="normalizeHtmlAndEvents">normalizeHtmlAndEvents</span></code>
-or its friendliest sibling, <code><span class="extype" name="normalizeHtmlAndAppendEvents">normalizeHtmlAndAppendEvents</span></code>.
+      <p class="shortcomment cmt">Apply HTML specific corrections such as adding the context path etc.</p><div class="fullcomment"><div class="comment cmt"><p>Apply HTML specific corrections such as adding the context path etc.</p><p>In general, you should heavily consider using
+<code><a href="#normalizeHtmlAndEventHandlers(nodes:scala.xml.NodeSeq):net.liftweb.http.NodesAndEventJs" class="extmbr" name="net.liftweb.http.LiftSession#normalizeHtmlAndEventHandlers">normalizeHtmlAndEventHandlers</a></code> or its friendliest sibling,
+<code><a href="#normalizeHtmlAndAppendEventHandlers(in:scala.xml.NodeSeq):scala.xml.NodeSeq" class="extmbr" name="net.liftweb.http.LiftSession#normalizeHtmlAndAppendEventHandlers">normalizeHtmlAndAppendEventHandlers</a></code>.
 </p></div></div>
     </li><li name="net.liftweb.http.LiftSession#normalizeHtmlAndAppendEventHandlers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="normalizeHtmlAndAppendEventHandlers(in:scala.xml.NodeSeq):scala.xml.NodeSeq"></a>
@@ -995,9 +996,10 @@ or its friendliest sibling, <code><span class="extype" name="normalizeHtmlAndApp
     </span>
       <p class="shortcomment cmt">Runs <code><a href="#normalizeHtmlAndEventHandlers(nodes:scala.xml.NodeSeq):net.liftweb.http.NodesAndEventJs" class="extmbr" name="net.liftweb.http.LiftSession#normalizeHtmlAndEventHandlers">normalizeHtmlAndEventHandlers</a></code> to adjust URLs to context paths
 and extract JS event handlers from the given <code>NodeSeq</code> and pull them into
-a separate JsCmd, then uses <code><a href="S$.html#appendJs(js:Seq[net.liftweb.http.js.JsCmd]):Unit" class="extmbr" name="net.liftweb.http.S#appendJs">S.appendJs</a></code> to append that JS to the
-response's JavaScript (the page-specific JS file if we are rendering a
-page, or the end of the returned JS if this is an AJAX or comet request).</p>
+a separate JsCmd, then uses
+<code><a href="S.html#appendJs(js:net.liftweb.http.js.JsCmd):Unit" class="extmbr" name="net.liftweb.http.S#appendJs">S.appendJs</a></code> to append that JS to the response's JavaScript (the
+page-specific JS file if we are rendering a page, or the end of the
+returned JS if this is an AJAX or comet request).</p>
     </li><li name="net.liftweb.http.LiftSession#normalizeHtmlAndEventHandlers" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="normalizeHtmlAndEventHandlers(nodes:scala.xml.NodeSeq):net.liftweb.http.NodesAndEventJs"></a>
       <a id="normalizeHtmlAndEventHandlers(NodeSeq):NodesAndEventJs"></a>
@@ -1206,7 +1208,7 @@ will be located via findVisibleTemplate</p></dd><dt class="param">request</dt><d
       </a>
     </span>
       <p class="shortcomment cmt">Removes the function with the given <code>name</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Removes the function with the given <code>name</code>. Note that this will
-<b>not</b> trigger <code><span class="extype" name="onFunctionOwnersRemoved">onFunctionOwnersRemoved</span></code> listeners.
+<b>not</b> trigger <code><a href="LiftSession$.html#onFunctionOwnersRemoved:List[Set[String]=&gt;Unit]" class="extmbr" name="net.liftweb.http.LiftSession#onFunctionOwnersRemoved">LiftSession$.onFunctionOwnersRemoved</a></code> listeners.
 </p></div></div>
     </li><li name="net.liftweb.http.LiftSession#requestHtmlProperties" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="requestHtmlProperties:net.liftweb.http.TransientRequestVar[net.liftweb.http.HtmlProperties]"></a>

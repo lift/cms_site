@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Screen - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.Wizard.Screen</title>
-          <meta name="description" content="Screen - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.Wizard.Screen" />
-          <meta name="keywords" content="Screen Lift Framework 3.0 SNAPSHOT net.liftweb.http.Wizard.Screen" />
+          <title>Screen - Lift Framework 3.0-RC3 - net.liftweb.http.Wizard.Screen</title>
+          <meta name="description" content="Screen - Lift Framework 3.0 - RC3 - net.liftweb.http.Wizard.Screen" />
+          <meta name="keywords" content="Screen Lift Framework 3.0 RC3 net.liftweb.http.Wizard.Screen" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -1121,11 +1121,13 @@ appropriate Manifest will be
     </span>
       <p class="shortcomment cmt">Create a field that's added to the Screen
 </p><div class="fullcomment"><div class="comment cmt"><p>Create a field that's added to the Screen
-</p></div><dl class="paramcmts block"><dt class="param">theName</dt><dd class="cmt"><p>- the name of the field.  This is call-by-name, so you
+</p></div><dl class="paramcmts block"><dt class="param">theName</dt><dd class="cmt"><p>the name of the field.  This is call-by-name, so you
 can do things like S.?(&quot;Dog's Name&quot;) such that the string will be
-localized</p></dd><dt class="param">defaultValue</dt><dd class="cmt"><p>- the starting value for the field.  This is
+localized</p></dd><dt class="param">defaultValue</dt><dd class="cmt"><p>the starting value for the field.  This is
 also call-by-name which is handy for constructs like:
-<code class="scala">SomeExternalRequestVarOrSessionVar.get</code></p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+<code class="scala">SomeExternalRequestVarOrSessionVar.get</code></p></dd><dt class="param">theToForm</dt><dd class="cmt"><p>a function to convert the field into a form</p></dd><dt class="param">otherValue</dt><dd class="cmt"><p>a handy way include other values in the field.  The other value is
+calcualted when the field is initialized.  You can, for example, put
+a list of valid options in the field.</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>a list of filters and validations for the field</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
     </li><li name="net.liftweb.http.AbstractScreen#maxVal" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="maxVal[T](len:=&gt;T,msg:=&gt;String)(implicitf:T=&gt;Number):T=&gt;List[net.liftweb.util.FieldError]"></a>
       <a id="maxVal[T](⇒T,⇒String)((T)⇒Number):(T)⇒List[FieldError]"></a>

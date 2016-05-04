@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>RestHelper - Lift Framework 3.0-SNAPSHOT - net.liftweb.http.rest.RestHelper</title>
-          <meta name="description" content="RestHelper - Lift Framework 3.0 - SNAPSHOT - net.liftweb.http.rest.RestHelper" />
-          <meta name="keywords" content="RestHelper Lift Framework 3.0 SNAPSHOT net.liftweb.http.rest.RestHelper" />
+          <title>RestHelper - Lift Framework 3.0-RC3 - net.liftweb.http.rest.RestHelper</title>
+          <meta name="description" content="RestHelper - Lift Framework 3.0 - RC3 - net.liftweb.http.rest.RestHelper" />
+          <meta name="keywords" content="RestHelper Lift Framework 3.0 RC3 net.liftweb.http.rest.RestHelper" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -1676,7 +1676,9 @@ into JSON and then Xml.toXml() to convert to XML.</p></dd></dl><dl class="attrib
       </a>
     </span>
       <p class="shortcomment cmt">Serve a request returning either JSON or XML.</p><div class="fullcomment"><div class="comment cmt"><p>Serve a request returning either JSON or XML.
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">pf</dt><dd class="cmt"><p>-- a Partial Function that converts the request into
+Any (note that the response must be convertable into
+JSON vis Lift JSON Extraction.decompose</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="net.liftweb.http.rest.RestHelper#serveType" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="serveType[T,SelectType](selection:net.liftweb.http.Req=&gt;net.liftweb.common.BoxOrRaw[SelectType])(pf:PartialFunction[net.liftweb.http.Req,net.liftweb.common.BoxOrRaw[T]])(implicitcvt:PartialFunction[(SelectType,T,net.liftweb.http.Req),net.liftweb.http.LiftResponse]):Unit"></a>
       <a id="serveType[T,SelectType]((Req)⇒BoxOrRaw[SelectType])(PartialFunction[Req,BoxOrRaw[T]])(PartialFunction[(SelectType,T,Req),LiftResponse]):Unit"></a>
