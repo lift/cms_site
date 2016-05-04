@@ -53,7 +53,7 @@
                 <a class="issue-link" href="https://github.com/lift/framework/pull/1787">(#1787)</a> Record and MetaRecord now have a <code>asJObject</code> method, which is
                 called by <code>asJValue</code>. This allows you to use Lift json's <code>~</code> to join records and construct valid json values.
 
-                 Thanks to [Torsten Uhlmann](https://github.com/tuhlmann) and [Tim Nelson](https://github.com/eltimn) for reporting this issue on the mailing list and fixing it!
+                 Thanks to <a href="https://github.com/tuhlmann">Torsten Uhlmann</a> and <a href="https://github.com/eltimn">Tim Nelson</a> for reporting this issue on the mailing list and fixing it!
              </li>
           </ul>
           </div>
