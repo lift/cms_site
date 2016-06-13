@@ -69,6 +69,14 @@
 									</div>	
 
 									<div class="logo">
+										<a href="https://www.eventa.it/">
+											<img height="50" 
+											    src="/images/comp-logo/eventa.png"
+												alt="Eventa" />
+										</a>
+									</div>	
+
+									<div class="logo">
 										<a href="http://www.elemica.com/">
 											<img height="50" 
 											    src="/images/comp-logo/elemica.png"
