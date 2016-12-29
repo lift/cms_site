@@ -4,7 +4,7 @@
 	<tag name="menu" value=" Forum" />
 	<tag name="menu-locgroup" value="locgroup2" />
 	<tag name="menu-icon" value="icon-list" />
-	<tag name="order" value="2" />	
+	<tag name="order" value="2" />
 <!-- 	<tag name="order" value="11" /> -->
 	<content>
 		<lift:surround with="default" at="content">
@@ -13,6 +13,7 @@
 			</head>
 			<div class="row-fluid">
 				<div class="span12">
+					<p>Visit our <a href="https://groups.google.com/forum/#!forum/liftweb">Google groups</a><p>
 					<center>
 						<iframe id="forum_embed" src="javascript:void(0)" scrolling="no" frameborder="0" width="100%" height="1500px">
 						</iframe>
