@@ -12,7 +12,7 @@
 					<lift:subs type="happening">
 						<h3>
 							<a sub:href="/">
-								<sub:title />
+								<b><sub:title /></b>
 							</a>
 						</h3>
 						<p>
@@ -62,15 +62,15 @@
 
 				<p>
 					<a href="http://www.packtpub.com/lift-web-applications/book">Lift Web Applications How-to</a>
-					by Torsten Uhlmann 
+					by Torsten Uhlmann
 					is available in print and eBook format.
 				</p>
-				
+
 				<p>
-				    <a href="http://www.packtpub.com/lift-application-development-cookbook/book">Lift Application Development Cookbook</a> 
-				    by <a href="www.packtpub.com/authors/profiles/gilberto-t-garcia-jr">Gilberto T. Garcia Jr.</a> 
+				    <a href="http://www.packtpub.com/lift-application-development-cookbook/book">Lift Application Development Cookbook</a>
+				    by <a href="www.packtpub.com/authors/profiles/gilberto-t-garcia-jr">Gilberto T. Garcia Jr.</a>
 				    is available in print and eBook format.
-				</p>				
+				</p>
 
 				<hr />
 
