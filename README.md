@@ -26,10 +26,13 @@ building and updating the API docs in `api/`.
 ## Adding News
 
 For now, adding news is just a matter of adding an appropriate file to
-`happening/`.
+`happening/`. “Appropriate” requires cloning an existing `.cms.xml` file
+and changing the bits that seem relevant. This will be more straightforward
+soon when Markdown support is merged.
 
 ## Format
 
 Currently all the documents in the site are `.cms.xml` files, which are files
 designed for hoisted to consume. However, hoisted will also happily work with
-Markdown files, as long as they're named `.md`.
+Markdown files, as long as they're named `.md`. There are still a few hurdles
+before markdown files will be immediately usable for happenings.
