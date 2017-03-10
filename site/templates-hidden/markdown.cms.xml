@@ -32,11 +32,9 @@
 
 					<script type="text/javascript" src="https://www.google-analytics.com/ga.js">
 					</script>
-
-          <title class="lift:Menu.title">Lift: </title>
 				</head>
 				<body onload="prettyPrint()" id="back" data-spy="scroll"
-					data-target=".subnav" data-offset="50">
+					data-target=".subnav" data-offset="50" class="markdown">
 
 					<!-- if you want page specific navbars surround with lift:if test -->
 					<!-- for more info look at how this is done for quotes -->
@@ -47,7 +45,6 @@
 					<div id="container-bg" class="container-fluid">
 						<div class="row-fluid">
 							<div class="span12">
-
 								<div class="row-fluid">
 									<div class="span12">
 										<div id="header">
@@ -61,21 +58,21 @@
 									</div>
 								</div>
 
-								<div>
-							    <div class="row-fluid">
-							      <div class="span12">
-							        <div class="row-fluid">
-							          <div class="span9">
-							            <div id="content">
-							            	<lift:bind name="content" />
-								          </div>
-								        <div class="span3">
-								          <lift:embed what="col2"/>
-							          </div>
-						         	</div>
+								<div class="row-fluid">
+									<div class="span12">
+										<div class="row-fluid">
+											<div class="span9">
+												<div id="content">
+													<h1>This is where the content goes!</h1>
+												</div>
+											</div>
+
+							        <div class="span3">
+							          <lift:embed what="col2"/>
+						          </div>
 						        </div>
 						      </div>
-								</div>
+						    </div>
 
 								<div id="footer">
 
