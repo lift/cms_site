@@ -1,4 +1,4 @@
-<cms path="/301" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2016/12/13">
+<cms path="/310-m1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2017/02/03">
   <tag name="sub" value="happening">
     <b>Lift 3.1.0-M1</b>
   </tag>
