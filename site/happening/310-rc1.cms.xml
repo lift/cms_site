@@ -1,9 +1,9 @@
-<cms path="/310-rc1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2017/07/18">
+<cms path="/310-rc1" serve="true" type="html" locale="en_US" host="liftweb.net" valid_from="2017/06/18">
   <tag name="sub" value="happening">
     <b>Lift 3.1.0-RC1</b>
   </tag>
   <tag name="desc">
-    2017/07/18 The Lift team is proud to announce the release of Lift 3.1.0-RC1.
+    2017/06/18 The Lift team is proud to announce the release of Lift 3.1.0-RC1.
   </tag>
   <content>
     <lift:surround with="default" at="content">
@@ -18,11 +18,12 @@
               <div class="page-header">
                 <h1>Announcing Lift 3.1.0-RC1</h1>
               </div>
-              <em>July 18, 2017</em>
+              <em>June 18, 2017</em>
 
               <p>
                 The Lift team proudly announces the <a href="/download">availability</a>
-                of Lift version 3.1.0-RC1.
+                of Lift version 3.1.0-RC1. This will become the final 3.1.0 build at the end of June
+		unless we need to release additional RCs.
               </p>
               <p>
                 Lift is the most powerful, secure and mature web framework available today. There are
