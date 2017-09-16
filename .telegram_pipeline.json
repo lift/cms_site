@@ -1,0 +1,1 @@
+{"version": 1.0, "pipeline": [{"docker": "opentelegram/hoisted-classic:latest"}]}
