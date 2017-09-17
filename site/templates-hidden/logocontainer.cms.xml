@@ -121,14 +121,6 @@
 <!-- 										</a>										 -->
 									</div>
 									<div class="logo">
-<!-- 									 src="http://static.liftweb.com/open_study.png" -->
-										<a href="http://openstudy.com">
-											<img height="50" 
-											    src="/images/comp-logo/open_study.png"
-												alt="Open Study" />
-										</a>
-									</div>
-									<div class="logo">
 <!-- 									src="http://sgrouples.com/img/logos/sgrouples_logo_lift.png" -->
 										<a href="http://sgrouples.com">
 											<img height="50"
