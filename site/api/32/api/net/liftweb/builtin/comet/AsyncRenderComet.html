@@ -1,0 +1,2584 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Lift Framework 3.2.0-M3 - net.liftweb.builtin.comet.AsyncRenderComet</title>
+          <meta name="description" content="Lift Framework 3.2.0 - M3 - net.liftweb.builtin.comet.AsyncRenderComet" />
+          <meta name="keywords" content="Lift Framework 3.2.0 M3 net.liftweb.builtin.comet.AsyncRenderComet" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Lift Framework<span id="doc-version">3.2.0-M3</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.net" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="net"></a><a id="net:net"></a>
+      <span class="permalink">
+      <a href="index.html#net" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html">
+              <span class="name">net</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="net.liftweb" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftweb"></a><a id="liftweb:liftweb"></a>
+      <span class="permalink">
+      <a href="../net/index.html#liftweb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">liftweb</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="net">net</a></dd></dl></div>
+    </li><li name="net.liftweb.builtin" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="builtin"></a><a id="builtin:builtin"></a>
+      <span class="permalink">
+      <a href="../../net/liftweb/index.html#builtin" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">builtin</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="net.liftweb">liftweb</a></dd></dl></div>
+    </li><li name="net.liftweb.builtin.comet" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="comet"></a><a id="comet:comet"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/builtin/index.html#comet" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html">
+              <span class="name">comet</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="net.liftweb.builtin">builtin</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <a class="object" href="AsyncRenderComet$.html" title=""></a>
+                        <a class="class" href="" title="AsyncRenderComet facilitates rendering anything that produces a JsCmd
+independently from a page request."></a>
+                        <a href="" title="AsyncRenderComet facilitates rendering anything that produces a JsCmd
+independently from a page request.">
+                          AsyncRenderComet
+                        </a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Compute.html" title=""></a>
+                        <a href="Compute.html" title="">
+                          Compute
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <a href="AsyncRenderComet$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
+        <p id="owner"><a href="../../../index.html" class="extype" name="net">net</a>.<a href="../../index.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../index.html" class="extype" name="net.liftweb.builtin">builtin</a>.<a href="index.html" class="extype" name="net.liftweb.builtin.comet">comet</a></p>
+        <h1><a href="AsyncRenderComet$.html" title="See companion object">AsyncRenderComet</a><span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"><div>
+            Companion <a href="AsyncRenderComet$.html" title="See companion object">object AsyncRenderComet</a>
+          </div></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AsyncRenderComet</span><span class="result"> extends <a href="../../http/MessageCometActor.html" class="extype" name="net.liftweb.http.MessageCometActor">MessageCometActor</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p><code>AsyncRenderComet</code> facilitates rendering anything that produces a <code>JsCmd</code>
+independently from a page request. All you have to do is create one and
+send it a <code>Compute</code> message with the function that will produce the <code>JsCmd</code>.
+<code>AsyncRenderComet</code> will take ownership of the function and run it in
+a separate thread comet context, sending the results down using a
+<code>partialUpdate</code> when it is done.</p><p>Note that if you want to run a function that requires the context of the
+request you're running in, you'll want to use <code>LiftSession</code>'s
+<code>buildDeferredFunction</code> method to make sure that when the function is
+executed in a separate thread, it will retain request context.</p><p>In general, consider using one of:</p><ul><li><code>AsyncRenderComet.asyncRender</code>.</li><li>The <code>lazy</code> snippet.</li><li>The <code>CanBind</code> implicits in the <code>net.liftweb.http</code> package that allow using
+   <code>LAFuture</code> and Scala <code>Future</code> objects as the right-hand-side of a CSS
+   selector binding.</li></ul><p>None of these requires explicit use of <code>buildDeferredFunction</code>.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="../../http/MessageCometActor.html" class="extype" name="net.liftweb.http.MessageCometActor">MessageCometActor</a>, <a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a>, <a href="../../util/CssBindImplicits.html" class="extype" name="net.liftweb.util.CssBindImplicits">CssBindImplicits</a>, <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a>, <a href="../../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a>, <a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a>, <a href="../../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>], <a href="../../common/GenericActor.html" class="extype" name="net.liftweb.common.GenericActor">GenericActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>], <a href="../../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>], <a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>], <a href="../../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>], <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="net.liftweb.builtin.comet.AsyncRenderComet"><span>AsyncRenderComet</span></li><li class="in" name="net.liftweb.http.MessageCometActor"><span>MessageCometActor</span></li><li class="in" name="net.liftweb.http.BaseCometActor"><span>BaseCometActor</span></li><li class="in" name="net.liftweb.util.CssBindImplicits"><span>CssBindImplicits</span></li><li class="in" name="net.liftweb.http.LiftCometActor"><span>LiftCometActor</span></li><li class="in" name="net.liftweb.util.Dependent"><span>Dependent</span></li><li class="in" name="net.liftweb.actor.LiftActor"><span>LiftActor</span></li><li class="in" name="net.liftweb.common.ForwardableActor"><span>ForwardableActor</span></li><li class="in" name="net.liftweb.common.GenericActor"><span>GenericActor</span></li><li class="in" name="net.liftweb.common.TypedActor"><span>TypedActor</span></li><li class="in" name="net.liftweb.actor.SpecializedLiftActor"><span>SpecializedLiftActor</span></li><li class="in" name="net.liftweb.common.SimpleActor"><span>SimpleActor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="net.liftweb.builtin.comet.AsyncRenderComet#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():net.liftweb.builtin.comet.AsyncRenderComet"></a><a id="&lt;init&gt;:AsyncRenderComet"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#&lt;init&gt;():net.liftweb.builtin.comet.AsyncRenderComet" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AsyncRenderComet</span><span class="params">()</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.util.CssBindImplicits.CssBindPromoter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CssBindPromoterextendsAnyRef"></a><a id="CssBindPromoter:CssBindPromoter"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/CssBindImplicits.html#CssBindPromoterextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../util/CssBindImplicits$CssBindPromoter.html">
+              <span class="name">CssBindPromoter</span>
+            </a><span class="result"> extends <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/CssBindImplicits.html" class="extype" name="net.liftweb.util.CssBindImplicits">CssBindImplicits</a></dd></dl></div>
+    </li><li name="net.liftweb.util.CssBindImplicits.CssSelectorToCssBindPromoter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CssSelectorToCssBindPromoterextendsCssBindImplicits.this.CssBindPromoter"></a><a id="CssSelectorToCssBindPromoter:CssSelectorToCssBindPromoter"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/CssBindImplicits.html#CssSelectorToCssBindPromoterextendsCssBindImplicits.this.CssBindPromoter" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../util/CssBindImplicits$CssSelectorToCssBindPromoter.html">
+              <span class="name">CssSelectorToCssBindPromoter</span>
+            </a><span class="result"> extends <a href="../../util/CssBindImplicits$CssBindPromoter.html" class="extype" name="net.liftweb.util.CssBindImplicits.CssBindPromoter">CssBindPromoter</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/CssBindImplicits.html" class="extype" name="net.liftweb.util.CssBindImplicits">CssBindImplicits</a></dd></dl></div>
+    </li><li name="net.liftweb.util.CssBindImplicits.StringToCssBindPromoter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StringToCssBindPromoterextendsCssBindImplicits.this.CssBindPromoter"></a><a id="StringToCssBindPromoter:StringToCssBindPromoter"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/CssBindImplicits.html#StringToCssBindPromoterextendsCssBindImplicits.this.CssBindPromoter" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../util/CssBindImplicits$StringToCssBindPromoter.html">
+              <span class="name">StringToCssBindPromoter</span>
+            </a><span class="result"> extends <a href="../../util/CssBindImplicits$CssBindPromoter.html" class="extype" name="net.liftweb.util.CssBindImplicits.CssBindPromoter">CssBindPromoter</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/CssBindImplicits.html" class="extype" name="net.liftweb.util.CssBindImplicits">CssBindImplicits</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="net.liftweb.actor.SpecializedLiftActor#!" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!(msg:T):Unit"></a><a id="!(Any):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#!(msg:T):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang" class="name">!</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor.  This call will always succeed
+and return almost immediately.  The message will be processed
+asynchronously.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a> → <a href="../../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#!!" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!!(msg:Any):net.liftweb.common.Box[Any]"></a><a id="!!(Any):Box[Any]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#!!(msg:Any):net.liftweb.common.Box[Any]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$bang" class="name">!!</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and wait for
+the actor to process the message and reply.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and wait for
+the actor to process the message and reply.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#!!" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!!(msg:Any,timeout:Long):net.liftweb.common.Box[Any]"></a><a id="!!(Any,Long):Box[Any]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#!!(msg:Any,timeout:Long):net.liftweb.common.Box[Any]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$bang" class="name">!!</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>, <span name="timeout">timeout: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and wait for
+up to timeout milliseconds for
+the actor to process the message and reply.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and wait for
+up to timeout milliseconds for
+the actor to process the message and reply.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#!&lt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!&lt;(msg:Any):net.liftweb.actor.LAFuture[Any]"></a><a id="!&lt;(Any):LAFuture[Any]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#!&lt;(msg:Any):net.liftweb.actor.LAFuture[Any]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$less" class="name">!&lt;</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="../../actor/LAFuture.html" class="extype" name="net.liftweb.actor.LAFuture">LAFuture</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and get an LAFuture
+that will contain the reply (if any) from the message
+</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and get an LAFuture
+that will contain the reply (if any) from the message
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#!?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!?(timeout:Long,message:Any):net.liftweb.common.Box[Any]"></a><a id="!?(Long,Any):Box[Any]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#!?(timeout:Long,message:Any):net.liftweb.common.Box[Any]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$qmark" class="name">!?</span><span class="params">(<span name="timeout">timeout: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="message">message: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and wait for
+up to timeout milliseconds for
+the actor to process the message and reply.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and wait for
+up to timeout milliseconds for
+the actor to process the message and reply.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#!?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!?(msg:Any):Any"></a><a id="!?(Any):Any"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#!?(msg:Any):Any" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$qmark" class="name">!?</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and wait for
+the actor to process the message and reply.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and wait for
+the actor to process the message and reply.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#alwaysReRenderOnPageLoad" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="alwaysReRenderOnPageLoad:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#alwaysReRenderOnPageLoad:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">alwaysReRenderOnPageLoad</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Set to 'true' if we should run &quot;render&quot; on every page load
+</p><div class="fullcomment"><div class="comment cmt"><p>Set to 'true' if we should run &quot;render&quot; on every page load
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#answer" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="answer(answer:Any):Unit"></a><a id="answer(Any):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#answer(answer:Any):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">answer</span><span class="params">(<span name="answer">answer: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#appendJsonHandler" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="appendJsonHandler(h:PartialFunction[Any,net.liftweb.http.js.JsCmd]):Unit"></a><a id="appendJsonHandler(PartialFunction[Any,JsCmd]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#appendJsonHandler(h:PartialFunction[Any,net.liftweb.http.js.JsCmd]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">appendJsonHandler</span><span class="params">(<span name="h">h: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Prepends the handler to the Json Handlers.</p><div class="fullcomment"><div class="comment cmt"><p>Prepends the handler to the Json Handlers.  Should only be used
+during instantiation
+</p></div><dl class="paramcmts block"><dt class="param">h</dt><dd class="cmt"><p>-- the PartialFunction that can handle a JSON request</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.SpecializedLiftActor#around" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="around[R](f:=&gt;R):R"></a><a id="around[R](⇒R):R"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#around[R](f:=&gt;R):R" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">around</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.actor.SpecializedLiftActor.around.R">R</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.actor.SpecializedLiftActor.around.R">R</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">You can wrap calls around the evaluation of the mailbox.</p><div class="fullcomment"><div class="comment cmt"><p>You can wrap calls around the evaluation of the mailbox.  This allows you to set up
+the environment.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.SpecializedLiftActor#aroundLoans" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundLoans:List[net.liftweb.common.CommonLoanWrapper]"></a><a id="aroundLoans:List[CommonLoanWrapper]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#aroundLoans:List[net.liftweb.common.CommonLoanWrapper]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundLoans</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../common/CommonLoanWrapper.html" class="extype" name="net.liftweb.common.CommonLoanWrapper">CommonLoanWrapper</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A list of LoanWrappers that will be executed around the evaluation of mailboxes
+</p><div class="fullcomment"><div class="comment cmt"><p>A list of LoanWrappers that will be executed around the evaluation of mailboxes
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#arrayToRenderOut" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="arrayToRenderOut(in:Seq[scala.xml.Node]):net.liftweb.http.RenderOut"></a><a id="arrayToRenderOut(Seq[Node]):RenderOut"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#arrayToRenderOut(in:Seq[scala.xml.Node]):net.liftweb.http.RenderOut" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayToRenderOut</span><span class="params">(<span name="in">in: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="scala.xml.Node">Node</span>]</span>)</span><span class="result">: <a href="../../http/RenderOut.html" class="extype" name="net.liftweb.http.RenderOut">RenderOut</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Convert a Seq[Node] (the superclass of NodeSeq) to a RenderOut.</p><div class="fullcomment"><div class="comment cmt"><p>Convert a Seq[Node] (the superclass of NodeSeq) to a RenderOut.
+The render method
+returns a RenderOut.  This method implicitly (in Scala) or explicitly
+(in Java) will convert a NodeSeq to a RenderOut.  This
+is helpful if you return a NodeSeq from your render method.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#ask" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ask(who:net.liftweb.http.LiftCometActor,what:Any)(answerWith:Any=&gt;Unit):Unit"></a><a id="ask(LiftCometActor,Any)((Any)⇒Unit):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#ask(who:net.liftweb.http.LiftCometActor,what:Any)(answerWith:Any=&gt;Unit):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ask</span><span class="params">(<span name="who">who: <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></span>, <span name="what">what: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="params">(<span name="answerWith">answerWith: (<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Ask another CometActor a question.</p><div class="fullcomment"><div class="comment cmt"><p>Ask another CometActor a question.  That other CometActor will
+take over the screen real estate until the question is answered.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#attributes" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="attributes:Map[String,String]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#attributes:Map[String,String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">attributes</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#autoIncludeJsonCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="autoIncludeJsonCode:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#autoIncludeJsonCode:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">autoIncludeJsonCode</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Set this method to true to have the Json call code included in the Comet output
+</p><div class="fullcomment"><div class="comment cmt"><p>Set this method to true to have the Json call code included in the Comet output
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#buildSpan" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="buildSpan(xml:scala.xml.NodeSeq):scala.xml.Elem"></a><a id="buildSpan(NodeSeq):Elem"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#buildSpan(xml:scala.xml.NodeSeq):scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildSpan</span><span class="params">(<span name="xml">xml: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Creates the span element acting as the real estate for comet rendering.</p><div class="fullcomment"><div class="comment cmt"><p>Creates the span element acting as the real estate for comet rendering.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#cacheFixedRender" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cacheFixedRender:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#cacheFixedRender:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cacheFixedRender</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">By default, we do not cache the value of fixedRender.</p><div class="fullcomment"><div class="comment cmt"><p>By default, we do not cache the value of fixedRender.  If it's
+expensive to recompute it each time there's a conversion
+of something to a RenderOut, override this method if you
+want to cache fixedRender.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#calcFixedRender" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calcFixedRender:net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="calcFixedRender:Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#calcFixedRender:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcFixedRender</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Calculate fixedRender and capture the postpage javascript
+</p><div class="fullcomment"><div class="comment cmt"><p>Calculate fixedRender and capture the postpage javascript
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#captureInitialReq" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="captureInitialReq(initialReq:net.liftweb.common.Box[net.liftweb.http.Req]):Unit"></a><a id="captureInitialReq(Box[Req]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#captureInitialReq(initialReq:net.liftweb.common.Box[net.liftweb.http.Req]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">captureInitialReq</span><span class="params">(<span name="initialReq">initialReq: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../../http/Req.html" class="extype" name="net.liftweb.http.Req">Req</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Comet Actors live outside the HTTP request/response cycle.</p><div class="fullcomment"><div class="comment cmt"><p>Comet Actors live outside the HTTP request/response cycle.
+However, it may be useful to know what Request led to the
+creation of the CometActor.  You can override this method
+and capture the initial Req object.  Note that keeping a reference
+to the Req may lead to memory retention issues if the Req contains
+large message bodies, etc.  It's optimal to capture the path
+or capture any request parameters that you care about rather
+the keeping the whole Req reference.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#clearWiringDependencies" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clearWiringDependencies():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#clearWiringDependencies():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearWiringDependencies</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Clear the common dependencies for Wiring.</p><div class="fullcomment"><div class="comment cmt"><p>Clear the common dependencies for Wiring.  This
+method will clearPostPageJavaScriptForThisPage() and
+unregisterFromAllDependencies().  The combination
+will result in a clean slate for Wiring during a redraw.
+You can change the behavior of the wiring dependency management
+by overriding this method
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#cometActorLocale" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometActorLocale:java.util.Locale"></a><a id="cometActorLocale:Locale"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#cometActorLocale:java.util.Locale" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cometActorLocale</span><span class="result">: <span class="extype" name="java.util.Locale">Locale</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The locale for the session that created the CometActor
+</p><div class="fullcomment"><div class="comment cmt"><p>The locale for the session that created the CometActor
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#cometListeners" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometListeners:List[net.liftweb.http.ListenerId]"></a><a id="cometListeners:List[ListenerId]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#cometListeners:List[net.liftweb.http.ListenerId]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cometListeners</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../http/ListenerId.html" class="extype" name="net.liftweb.http.ListenerId">ListenerId</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Return the list of ListenerIds of all long poll agents that
+are waiting for this CometActor to change its state.</p><div class="fullcomment"><div class="comment cmt"><p>Return the list of ListenerIds of all long poll agents that
+are waiting for this CometActor to change its state.  This method
+is useful for detecting presence.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#cometProcessingTimeout" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometProcessingTimeout:Long"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#cometProcessingTimeout:Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cometProcessingTimeout</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override in sub-class to customise timeout for AJAX-requests to the comet-component for the specific comet
+</p><div class="fullcomment"><div class="comment cmt"><p>Override in sub-class to customise timeout for AJAX-requests to the comet-component for the specific comet
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#cometProcessingTimeoutHandler" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometProcessingTimeoutHandler():net.liftweb.http.js.JsCmd"></a><a id="cometProcessingTimeoutHandler():JsCmd"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#cometProcessingTimeoutHandler():net.liftweb.http.js.JsCmd" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cometProcessingTimeoutHandler</span><span class="params">()</span><span class="result">: <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is to react to comet-requests timing out.</p><div class="fullcomment"><div class="comment cmt"><p>This is to react to comet-requests timing out.
+When the timeout specified in <code><a href="../../http/LiftRules.html#cometProcessingTimeout:Long" class="extmbr" name="net.liftweb.http.LiftRules#cometProcessingTimeout">LiftRules#cometProcessingTimeout</a></code> occurs one may override
+this to send a message to the user informing of the timeout.</p><p>Do NOT manipulate actor-state here. If you want to manipulate state, send the actor a new message.</p><p>Typical example would be:
+<pre>
+  override def cometTimeoutHandler(): JsCmd = {
+    Alert("Timeout processing comet-request, timeout is: " + cometProcessingTimeout + "ms")
+}
+</pre>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#cometRenderTimeout" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometRenderTimeout:Long"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#cometRenderTimeout:Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cometRenderTimeout</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override in sub-class to customise timeout for the render()-method for the specific comet
+</p><div class="fullcomment"><div class="comment cmt"><p>Override in sub-class to customise timeout for the render()-method for the specific comet
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#cometRenderTimeoutHandler" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cometRenderTimeoutHandler():net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="cometRenderTimeoutHandler():Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#cometRenderTimeoutHandler():net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cometRenderTimeoutHandler</span><span class="params">()</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">This is to react to comet-actors timing out while initial rendering, calls to render().</p><div class="fullcomment"><div class="comment cmt"><p>This is to react to comet-actors timing out while initial rendering, calls to render().
+When the timeout specified in <code><a href="../../http/LiftRules.html#cometRenderTimeout:Long" class="extmbr" name="net.liftweb.http.LiftRules#cometRenderTimeout">LiftRules#cometRenderTimeout</a></code> occurs one may override
+this to customise the output.</p><p>Do NOT manipulate actor-state here. If you want to manipulate state, send the actor a new message.</p><p>Typical example would be:
+<pre>
+  override def renderTimeoutHandler(): Box[NodeSeq] = {
+    Full(&lt;div&gt;Comet {this.getClass} timed out, timeout is {cometRenderTimeout}ms&lt;/div&gt;)
+}
+</pre>
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#composeFunction" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="composeFunction:PartialFunction[Any,Unit]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#composeFunction:PartialFunction[Any,Unit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">composeFunction</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Compose the Message Handler function.</p><div class="fullcomment"><div class="comment cmt"><p>Compose the Message Handler function. By default,
+composes highPriority orElse mediumPriority orElse internalHandler orElse
+lowPriority orElse internalHandler.  But you can change how
+the handler works if doing stuff in highPriority, mediumPriority and
+lowPriority is not enough.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#defaultHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultHtml:scala.xml.NodeSeq"></a><a id="defaultHtml:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#defaultHtml:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The template that was passed to this component during comet
+initializations
+</p><div class="fullcomment"><div class="comment cmt"><p>The template that was passed to this component during comet
+initializations
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#defaultPrefix" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="defaultPrefix:net.liftweb.common.Box[String]"></a><a id="defaultPrefix:Box[String]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#defaultPrefix:net.liftweb.common.Box[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultPrefix</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#dontCacheRendering" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dontCacheRendering:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#dontCacheRendering:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dontCacheRendering</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Set this method to true if you want to avoid caching the
+rendering.</p><div class="fullcomment"><div class="comment cmt"><p>Set this method to true if you want to avoid caching the
+rendering.  This trades space for time.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#elemToFull" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="elemToFull(in:scala.xml.Elem):net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="elemToFull(Elem):Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#elemToFull(in:scala.xml.Elem):net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">elemToFull</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.Elem">Elem</span></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#error" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(id:String,n:String):Unit"></a><a id="error(String,String):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#error(id:String,n:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.error
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.error
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#error" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(id:String,n:scala.xml.NodeSeq):Unit"></a><a id="error(String,NodeSeq):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#error(id:String,n:scala.xml.NodeSeq):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="n">n: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.error
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.error
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#error" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(n:scala.xml.NodeSeq):Unit"></a><a id="error(NodeSeq):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#error(n:scala.xml.NodeSeq):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="n">n: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.error
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.error
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#error" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="error(n:String):Unit"></a><a id="error(String):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#error(n:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.error
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.error
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#exceptionHandler" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="exceptionHandler:PartialFunction[Throwable,Unit]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#exceptionHandler:PartialFunction[Throwable,Unit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exceptionHandler</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="../../../../scala/index.html#Throwable=Throwable" class="extmbr" name="scala.Throwable">Throwable</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">By default, <code>CometActor</code> handles <code>RedirectShortcutException</code>, which is
+used to handle many types of redirects in Lift.</p><div class="fullcomment"><div class="comment cmt"><p>By default, <code>CometActor</code> handles <code>RedirectShortcutException</code>, which is
+used to handle many types of redirects in Lift. If you override this
+<code>PartialFunction</code> to do your own exception handling and want redirects
+from e.g. <code>S.redirectTo</code> to continue working correctly, make sure you
+chain back to this implementation.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#execTranslate" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="execTranslate(f:Any=&gt;Unit)(v:Any):Unit"></a><a id="execTranslate((Any)⇒Unit)(Any):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#execTranslate(f:Any=&gt;Unit)(v:Any):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">execTranslate</span><span class="params">(<span name="f">f: (<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#fixedRender" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fixedRender:net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="fixedRender:Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#fixedRender:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fixedRender</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A part of the CometActor's screen real estate that is not
+updated by default with reRender().</p><div class="fullcomment"><div class="comment cmt"><p>A part of the CometActor's screen real estate that is not
+updated by default with reRender().  This block of HTML is
+useful for the editor part of a Comet-based control where
+the data is JSON and updated with partialUpdates.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#forwardMessageTo" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forwardMessageTo(msg:Any,forwardTo:net.liftweb.common.TypedActor[Any,Any]):Unit"></a><a id="forwardMessageTo(Any,TypedActor[Any,Any]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#forwardMessageTo(msg:Any,forwardTo:net.liftweb.common.TypedActor[Any,Any]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forwardMessageTo</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>, <span name="forwardTo">forwardTo: <a href="../../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#hasOuter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasOuter:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#hasOuter:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasOuter</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#highPriority" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="highPriority:PartialFunction[Any,Unit]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#highPriority:PartialFunction[Any,Unit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">highPriority</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Handle messages sent to this Actor before the
+</p><div class="fullcomment"><div class="comment cmt"><p>Handle messages sent to this Actor before the
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.SpecializedLiftActor#highPriorityReceive" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="highPriorityReceive:net.liftweb.common.Box[PartialFunction[T,Unit]]"></a><a id="highPriorityReceive:Box[PartialFunction[Any,Unit]]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#highPriorityReceive:net.liftweb.common.Box[PartialFunction[T,Unit]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">highPriorityReceive</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a>]]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.builtin.comet.AsyncRenderComet#initCometActor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="initCometActor(creationInfo:net.liftweb.http.CometCreationInfo):Unit"></a><a id="initCometActor(CometCreationInfo):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#initCometActor(creationInfo:net.liftweb.http.CometCreationInfo):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initCometActor</span><span class="params">(<span name="creationInfo">creationInfo: <a href="../../http/CometCreationInfo.html" class="extype" name="net.liftweb.http.CometCreationInfo">CometCreationInfo</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">It's seriously suboptimal to override this method.</p><div class="fullcomment"><div class="comment cmt"><p>It's seriously suboptimal to override this method.  Instead
+use localSetup()
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.builtin.comet.AsyncRenderComet">AsyncRenderComet</a> → <a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.SpecializedLiftActor#insertMsgAtHeadOfQueue_!" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="insertMsgAtHeadOfQueue_!(msg:T):Unit"></a><a id="insertMsgAtHeadOfQueue_!(Any):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#insertMsgAtHeadOfQueue_!(msg:T):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: insertMsgAtHeadOfQueue_$bang" class="name">insertMsgAtHeadOfQueue_!</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method inserts the message at the head of the mailbox.</p><div class="fullcomment"><div class="comment cmt"><p>This method inserts the message at the head of the mailbox.
+It's protected because this functionality may or may not want
+to be exposed.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#jsToXmlOrJsCmd" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jsToXmlOrJsCmd(in:net.liftweb.http.js.JsCmd):net.liftweb.http.RenderOut"></a><a id="jsToXmlOrJsCmd(JsCmd):RenderOut"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#jsToXmlOrJsCmd(in:net.liftweb.http.js.JsCmd):net.liftweb.http.RenderOut" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jsToXmlOrJsCmd</span><span class="params">(<span name="in">in: <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result">: <a href="../../http/RenderOut.html" class="extype" name="net.liftweb.http.RenderOut">RenderOut</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#jsonSend" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jsonSend:net.liftweb.http.js.JsonCall"></a><a id="jsonSend:JsonCall"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#jsonSend:net.liftweb.http.js.JsonCall" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jsonSend</span><span class="result">: <a href="../../http/js/JsonCall.html" class="extype" name="net.liftweb.http.js.JsonCall">JsonCall</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The JavaScript call that you use to send the data to the server.</p><div class="fullcomment"><div class="comment cmt"><p>The JavaScript call that you use to send the data to the server. For example:
+&lt;button onclick={jsonSend(&quot;Hello&quot;, JsRaw(&quot;Dude&quot;.encJs))}&gt;Click&lt;/button&gt;
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#jsonToIncludeInCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jsonToIncludeInCode:net.liftweb.http.js.JsCmd"></a><a id="jsonToIncludeInCode:JsCmd"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#jsonToIncludeInCode:net.liftweb.http.js.JsCmd" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jsonToIncludeInCode</span><span class="result">: <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The call that packages up the JSON and tosses it to the server.</p><div class="fullcomment"><div class="comment cmt"><p>The call that packages up the JSON and tosses it to the server.  If you set autoIncludeJsonCode to true,
+then this will be included in the stuff sent to the server.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#lastListenerTime" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastListenerTime:Long"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#lastListenerTime:Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lastListenerTime</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The last &quot;when&quot; sent from the listener</p><div class="fullcomment"><div class="comment cmt"><p>The last &quot;when&quot; sent from the listener</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the last when sent from the listener</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#lastRenderTime" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lastRenderTime:Long"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#lastRenderTime:Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lastRenderTime</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.builtin.comet.AsyncRenderComet#lifespan" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lifespan:net.liftweb.common.Box[net.liftweb.util.Helpers.TimeSpan]"></a><a id="lifespan:Box[util.Helpers.TimeSpan]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#lifespan:net.liftweb.common.Box[net.liftweb.util.Helpers.TimeSpan]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lifespan</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../../util/Helpers$.html#TimeSpanextendsConvertableToDate" class="extmbr" name="net.liftweb.util.TimeHelpers.TimeSpan">util.Helpers.TimeSpan</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The lifespan of this component.</p><div class="fullcomment"><div class="comment cmt"><p>The lifespan of this component.  By default CometActors
+will last for the entire session that they were created in,
+even if the CometActor is not currently visible.  You can
+set the lifespan of the CometActor.  If the CometActor
+isn't visible on any page for some period after its lifespan
+the CometActor will be shut down.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.builtin.comet.AsyncRenderComet">AsyncRenderComet</a> → <a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#listenerTransition" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="listenerTransition():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#listenerTransition():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">listenerTransition</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method will be called when there's a change in the long poll
+listeners.</p><div class="fullcomment"><div class="comment cmt"><p>This method will be called when there's a change in the long poll
+listeners.  The method does nothing, but allows you to get a granular
+sense of how many browsers care about this CometActor.  Note that
+this method should not block for any material time and if there's
+any processing to do, use Scheduler.schedule or send a message to this
+CometActor.  Do not change the Actor's state from this method.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#localSetup" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localSetup():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#localSetup():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localSetup</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method will be called after the Actor has started.</p><div class="fullcomment"><div class="comment cmt"><p>This method will be called after the Actor has started.  Do any setup here.
+DO NOT do initialization in the constructor or in initCometActor... do it here.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#localShutdown" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localShutdown():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#localShutdown():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localShutdown</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method will be called as part of the shut-down of the actor.</p><div class="fullcomment"><div class="comment cmt"><p>This method will be called as part of the shut-down of the actor.  Release any resources here.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.builtin.comet.AsyncRenderComet#lowPriority" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="lowPriority:PartialFunction[Any,Unit]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#lowPriority:PartialFunction[Any,Unit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lowPriority</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.builtin.comet.AsyncRenderComet">AsyncRenderComet</a> → <a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#manualWiringDependencyManagement" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="manualWiringDependencyManagement:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#manualWiringDependencyManagement:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">manualWiringDependencyManagement</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">By default, Lift deals with managing wiring dependencies.</p><div class="fullcomment"><div class="comment cmt"><p>By default, Lift deals with managing wiring dependencies.
+This means on each full render (a full render will
+happen on reRender() or on a page load if there have been
+partial updates.) You may want to manually deal with
+wiring dependencies.  If you do, override this method
+and return true
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#mediumPriority" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mediumPriority:PartialFunction[Any,Unit]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#mediumPriority:PartialFunction[Any,Unit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mediumPriority</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#messageHandler" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="messageHandler:PartialFunction[Any,Unit]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#messageHandler:PartialFunction[Any,Unit]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">messageHandler</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:net.liftweb.common.Box[String]"></a><a id="name:Box[String]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#name:net.liftweb.common.Box[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The optional name of this CometActors
+</p><div class="fullcomment"><div class="comment cmt"><p>The optional name of this CometActors
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#nodeSeqFuncToBoxNodeSeq" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeSeqFuncToBoxNodeSeq(f:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq):net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="nodeSeqFuncToBoxNodeSeq((NodeSeq)⇒NodeSeq):Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#nodeSeqFuncToBoxNodeSeq(f:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq):net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeSeqFuncToBoxNodeSeq</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A helpful implicit conversion that takes a NodeSeq =&gt; NodeSeq
+(for example a CssSel) and converts it to a Box[NodeSeq] by
+applying the function to defaultHtml
+</p><div class="fullcomment"><div class="comment cmt"><p>A helpful implicit conversion that takes a NodeSeq =&gt; NodeSeq
+(for example a CssSel) and converts it to a Box[NodeSeq] by
+applying the function to defaultHtml
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#nodeSeqToFull" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeSeqToFull(in:scala.xml.NodeSeq):net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="nodeSeqToFull(NodeSeq):Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#nodeSeqToFull(in:scala.xml.NodeSeq):net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeSeqToFull</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#notice" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notice(id:String,n:String):Unit"></a><a id="notice(String,String):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#notice(id:String,n:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notice</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.notice
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.notice
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#notice" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notice(id:String,n:scala.xml.NodeSeq):Unit"></a><a id="notice(String,NodeSeq):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#notice(id:String,n:scala.xml.NodeSeq):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notice</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="n">n: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.notice
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.notice
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#notice" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notice(n:scala.xml.NodeSeq):Unit"></a><a id="notice(NodeSeq):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#notice(n:scala.xml.NodeSeq):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notice</span><span class="params">(<span name="n">n: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.notice
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.notice
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#notice" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notice(n:String):Unit"></a><a id="notice(String):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#notice(n:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notice</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.notice
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.notice
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#nsToNsFuncToRenderOut" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nsToNsFuncToRenderOut(f:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq):net.liftweb.http.RenderOut"></a><a id="nsToNsFuncToRenderOut((NodeSeq)⇒NodeSeq):RenderOut"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#nsToNsFuncToRenderOut(f:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq):net.liftweb.http.RenderOut" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nsToNsFuncToRenderOut</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="../../http/RenderOut.html" class="extype" name="net.liftweb.http.RenderOut">RenderOut</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Convert a NodeSeq =&gt; NodeSeq to a RenderOut.</p><div class="fullcomment"><div class="comment cmt"><p>Convert a NodeSeq =&gt; NodeSeq to a RenderOut.  The render method
+returns a RenderOut.  This method implicitly (in Scala) or explicitly
+(in Java) will convert a NodeSeq =&gt; NodeSeq to a RenderOut.  This
+is helpful if you use Lift's CSS Selector Transforms to define
+rendering.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#onJsonError" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onJsonError:net.liftweb.common.Box[net.liftweb.http.js.JsCmd]"></a><a id="onJsonError:Box[JsCmd]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#onJsonError:net.liftweb.common.Box[net.liftweb.http.js.JsCmd]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onJsonError</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">If there's actor-specific JSON behavior on failure to make the JSON
+call, include the JavaScript here.</p><div class="fullcomment"><div class="comment cmt"><p>If there's actor-specific JSON behavior on failure to make the JSON
+call, include the JavaScript here.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#pairToPair" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pairToPair(in:(String,Any)):(String,scala.xml.NodeSeq)"></a><a id="pairToPair((String,Any)):(String,NodeSeq)"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#pairToPair(in:(String,Any)):(String,scala.xml.NodeSeq)" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pairToPair</span><span class="params">(<span name="in">in: (<span class="extype" name="scala.Predef.String">String</span>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>)</span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>)</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#parentTag" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parentTag:scala.xml.Elem"></a><a id="parentTag:Elem"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#parentTag:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parentTag</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#partialUpdate" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="partialUpdate(cmd:=&gt;net.liftweb.http.js.JsCmd):Unit"></a><a id="partialUpdate(⇒JsCmd):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#partialUpdate(cmd:=&gt;net.liftweb.http.js.JsCmd):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">partialUpdate</span><span class="params">(<span name="cmd">cmd: ⇒ <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Perform a partial update of the comet component based
+on the JsCmd.</p><div class="fullcomment"><div class="comment cmt"><p>Perform a partial update of the comet component based
+on the JsCmd.  This means that the JsCmd will be sent to
+all of the currently listening browser tabs.  This is the
+preferred method over reRender to update the component
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#poke" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="poke():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#poke():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">poke</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Poke the CometActor and cause it to do a partial update Noop which
+will have the effect of causing the component to redisplay any
+Wiring elements on the component.</p><div class="fullcomment"><div class="comment cmt"><p>Poke the CometActor and cause it to do a partial update Noop which
+will have the effect of causing the component to redisplay any
+Wiring elements on the component.
+This method is Actor-safe and may be called from any thread, not
+just the Actor's message handler thread.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#predicateChanged" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predicateChanged(which:net.liftweb.util.Cell[_]):Unit"></a><a id="predicateChanged(Cell[_]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#predicateChanged(which:net.liftweb.util.Cell[_]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predicateChanged</span><span class="params">(<span name="which">which: <a href="../../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">If the predicate cell changes, the Dependent will be notified
+</p><div class="fullcomment"><div class="comment cmt"><p>If the predicate cell changes, the Dependent will be notified
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a> → <a href="../../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="net.liftweb.http.MessageCometActor#pushMessage" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pushMessage(cmd:=&gt;net.liftweb.http.js.JsCmd):Unit"></a><a id="pushMessage(⇒JsCmd):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#pushMessage(cmd:=&gt;net.liftweb.http.js.JsCmd):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pushMessage</span><span class="params">(<span name="cmd">cmd: ⇒ <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/MessageCometActor.html" class="extype" name="net.liftweb.http.MessageCometActor">MessageCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#reRender" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reRender():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#reRender():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reRender</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Cause the entire component to be reRendered and pushed out
+to any listeners.</p><div class="fullcomment"><div class="comment cmt"><p>Cause the entire component to be reRendered and pushed out
+to any listeners.  This method will cause the entire component
+to be rendered which can result in a huge blob of JavaScript to
+be sent to the client.  It's a much better practice to use
+partialUpdate for non-trivial CometActor components.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#reRender" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reRender(sendAll:Boolean):Unit"></a><a id="reRender(Boolean):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#reRender(sendAll:Boolean):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reRender</span><span class="params">(<span name="sendAll">sendAll: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Cause the entire component to be reRendered and pushed out
+to any listeners.</p><div class="fullcomment"><div class="comment cmt"><p>Cause the entire component to be reRendered and pushed out
+to any listeners.  This method will cause the entire component
+to be rendered which can result in a huge blob of JavaScript to
+be sent to the client.  It's a much better practice to use
+partialUpdate for non-trivial CometActor components.
+</p></div><dl class="paramcmts block"><dt class="param">sendAll</dt><dd class="cmt"><p>-- Should the fixed part of the CometActor be
+rendered.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#receiveJson" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="receiveJson:PartialFunction[net.liftweb.json.JsonAST.JValue,net.liftweb.http.js.JsCmd]"></a><a id="receiveJson:PartialFunction[JValue,JsCmd]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#receiveJson:PartialFunction[net.liftweb.json.JsonAST.JValue,net.liftweb.http.js.JsCmd]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">receiveJson</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.PartialFunction" class="extype" target="_top">PartialFunction</a>[<a href="../../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a>, <a href="../../http/js/JsCmd.html" class="extype" name="net.liftweb.http.js.JsCmd">JsCmd</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to deal with JSON sent from the browser via the sendJson function.</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to deal with JSON sent from the browser via the sendJson function.  This
+is based on the Lift JSON package rather than the handleJson stuff based on the older util.JsonParser.  This
+is the preferred mechanism.  If you use the jsonSend call, you will get a JObject(JField(&quot;command&quot;, cmd), JField(&quot;param&quot;, params))
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.MessageCometActor#render" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="render:net.liftweb.http.RenderOut"></a><a id="render:RenderOut"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#render:net.liftweb.http.RenderOut" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">render</span><span class="result">: <a href="../../http/RenderOut.html" class="extype" name="net.liftweb.http.RenderOut">RenderOut</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">It's the main method to override, to define what is rendered by the CometActor</p><div class="fullcomment"><div class="comment cmt"><p>It's the main method to override, to define what is rendered by the CometActor</p><p>There are implicit conversions for a bunch of stuff to
+RenderOut (including NodeSeq).  Thus, if you don't declare the return
+turn to be something other than RenderOut and return something that's
+coercible into RenderOut, the compiler &quot;does the right thing&quot;(tm) for you.
+<br/>
+There are implicit conversions for NodeSeq, so you can return a pile of
+XML right here.  There's an implicit conversion for NodeSeq =&gt; NodeSeq,
+so you can return a function (e.g., a CssBindFunc) that will convert
+the defaultHtml to the correct output.  There's an implicit conversion
+from JsCmd, so you can return a pile of JavaScript that'll be shipped
+to the browser.<br/>
+Note that the render method will be called each time a new browser tab
+is opened to the comet component or the comet component is otherwise
+accessed during a full page load (this is true if a partialUpdate
+has occurred.)  You may want to look at the fixedRender method which is
+only called once and sets up a stable rendering state.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/MessageCometActor.html" class="extype" name="net.liftweb.http.MessageCometActor">MessageCometActor</a> → <a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#renderClock" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="renderClock:Long"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#renderClock:Long" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">renderClock</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Get the current render clock for the CometActor</p><div class="fullcomment"><div class="comment cmt"><p>Get the current render clock for the CometActor</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#reply" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reply(v:Any):Unit"></a><a id="reply(Any):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#reply(v:Any):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reply</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The Actor should call this method with a reply
+to the message
+</p><div class="fullcomment"><div class="comment cmt"><p>The Actor should call this method with a reply
+to the message
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#reportError" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="reportError(msg:String,exception:Exception):Unit"></a><a id="reportError(String,Exception):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#reportError(msg:String,exception:Exception):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reportError</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exception">exception: <a href="../../../../scala/index.html#Exception=Exception" class="extmbr" name="scala.Exception">Exception</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">How to report an error that occurs during message dispatch
+</p><div class="fullcomment"><div class="comment cmt"><p>How to report an error that occurs during message dispatch
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#running" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="running:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#running:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">running</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Is the CometActor running?
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the CometActor running?
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.SpecializedLiftActor#send" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="send(msg:T):Unit"></a><a id="send(Any):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#send(msg:T):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">send</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor.  This call will always succeed
+and return almost immediately.  The message will be processed
+asynchronously.  This is a Java-callable alias for !.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#sendAndGetFuture" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendAndGetFuture(msg:Any):net.liftweb.actor.LAFuture[Any]"></a><a id="sendAndGetFuture(Any):LAFuture[Any]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#sendAndGetFuture(msg:Any):net.liftweb.actor.LAFuture[Any]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendAndGetFuture</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="../../actor/LAFuture.html" class="extype" name="net.liftweb.actor.LAFuture">LAFuture</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and get an LAFuture
+that will contain the reply (if any) from the message.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and get an LAFuture
+that will contain the reply (if any) from the message.
+This method calls !&lt; and is here for Java compatibility.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#sendAndGetReply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendAndGetReply(timeout:Long,msg:Any):Any"></a><a id="sendAndGetReply(Long,Any):Any"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#sendAndGetReply(timeout:Long,msg:Any):Any" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendAndGetReply</span><span class="params">(<span name="timeout">timeout: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and wait for
+up to timeout milliseconds for
+the actor to process the message and reply.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and wait for
+up to timeout milliseconds for
+the actor to process the message and reply.
+This method is the Java callable version of !?.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#sendAndGetReply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendAndGetReply(msg:Any):Any"></a><a id="sendAndGetReply(Any):Any"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#sendAndGetReply(msg:Any):Any" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sendAndGetReply</span><span class="params">(<span name="msg">msg: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Send a message to the Actor and wait for
+the actor to process the message and reply.</p><div class="fullcomment"><div class="comment cmt"><p>Send a message to the Actor and wait for
+the actor to process the message and reply.
+This method is the Java callable version of !?.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.LiftCometActor#sendInitialReq_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sendInitialReq_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#sendInitialReq_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: sendInitialReq_$qmark" class="name">sendInitialReq_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Is this CometActor going to capture the initial Req
+object?  If yes, override this method and return true
+and override captureInitialReq to capture the Req.</p><div class="fullcomment"><div class="comment cmt"><p>Is this CometActor going to capture the initial Req
+object?  If yes, override this method and return true
+and override captureInitialReq to capture the Req.  Why
+have to explicitly ask for the Req? In order to send Req
+instances across threads, the Req objects must be snapshotted
+which is the process of reading the POST or PUT body from the
+HTTP request stream.  We don't want to do this unless we
+have to, so by default the Req is not snapshotted/sent.  But
+if you want it, you can have it.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#startQuestion" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="startQuestion(what:Any):Unit"></a><a id="startQuestion(Any):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#startQuestion(what:Any):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">startQuestion</span><span class="params">(<span name="what">what: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.actor.LiftActor#testTranslate" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="testTranslate(f:Any=&gt;Boolean)(v:Any):Boolean"></a><a id="testTranslate((Any)⇒Boolean)(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#testTranslate(f:Any=&gt;Boolean)(v:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">testTranslate</span><span class="params">(<span name="f">f: (<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a> → <a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#theSession" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="theSession:net.liftweb.http.LiftSession"></a><a id="theSession:LiftSession"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#theSession:net.liftweb.http.LiftSession" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">theSession</span><span class="result">: <a href="../../http/LiftSession.html" class="extype" name="net.liftweb.http.LiftSession">LiftSession</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#theType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="theType:net.liftweb.common.Box[String]"></a><a id="theType:Box[String]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#theType:net.liftweb.common.Box[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">theType</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The optional type of this CometActor
+</p><div class="fullcomment"><div class="comment cmt"><p>The optional type of this CometActor
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#unWatch" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unWatch:Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#unWatch:Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unWatch</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#uniqueId" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniqueId:String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#uniqueId:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniqueId</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a> → <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Dependent#unregisterFromAllDependencies" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unregisterFromAllDependencies():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#unregisterFromAllDependencies():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unregisterFromAllDependencies</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Remove from all dependencies
+</p><div class="fullcomment"><div class="comment cmt"><p>Remove from all dependencies
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#warning" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warning(id:String,n:String):Unit"></a><a id="warning(String,String):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#warning(id:String,n:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warning</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.warning
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.warning
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#warning" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warning(id:String,n:scala.xml.NodeSeq):Unit"></a><a id="warning(String,NodeSeq):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#warning(id:String,n:scala.xml.NodeSeq):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warning</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="n">n: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.warning
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.warning
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#warning" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warning(n:scala.xml.NodeSeq):Unit"></a><a id="warning(NodeSeq):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#warning(n:scala.xml.NodeSeq):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warning</span><span class="params">(<span name="n">n: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.warning
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.warning
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.http.BaseCometActor#warning" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="warning(n:String):Unit"></a><a id="warning(String):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#warning(n:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">warning</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Similar with S.warning
+</p><div class="fullcomment"><div class="comment cmt"><p>Similar with S.warning
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Dependent#whoDoIDependOn" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="whoDoIDependOn:Seq[net.liftweb.util.Cell[_]]"></a><a id="whoDoIDependOn:Seq[Cell[_]]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#whoDoIDependOn:Seq[net.liftweb.util.Cell[_]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">whoDoIDependOn</span><span class="result">: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Get a list of all the cells this Dependency depends on
+</p><div class="fullcomment"><div class="comment cmt"><p>Get a list of all the cells this Dependency depends on
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Dependent#youDependOnMe" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="youDependOnMe(who:net.liftweb.util.Cell[_]):Unit"></a><a id="youDependOnMe(Cell[_]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#youDependOnMe(who:net.liftweb.util.Cell[_]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">youDependOnMe</span><span class="params">(<span name="who">who: <a href="../../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The Cell notifies the Dependent of the dependency
+</p><div class="fullcomment"><div class="comment cmt"><p>The Cell notifies the Dependent of the dependency
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Dependent#youDontDependOnMe" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="youDontDependOnMe(who:net.liftweb.util.Cell[_]):Unit"></a><a id="youDontDependOnMe(Cell[_]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/builtin/comet/AsyncRenderComet.html#youDontDependOnMe(who:net.liftweb.util.Cell[_]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">youDontDependOnMe</span><span class="params">(<span name="who">who: <a href="../../util/Cell.html" class="extype" name="net.liftweb.util.Cell">Cell</a>[_]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The Cell notifies the Dependent of the removed dependency
+</p><div class="fullcomment"><div class="comment cmt"><p>The Cell notifies the Dependent of the removed dependency
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.http.MessageCometActor">
+              <h3>Inherited from <a href="../../http/MessageCometActor.html" class="extype" name="net.liftweb.http.MessageCometActor">MessageCometActor</a></h3>
+            </div><div class="parent" name="net.liftweb.http.BaseCometActor">
+              <h3>Inherited from <a href="../../http/BaseCometActor.html" class="extype" name="net.liftweb.http.BaseCometActor">BaseCometActor</a></h3>
+            </div><div class="parent" name="net.liftweb.util.CssBindImplicits">
+              <h3>Inherited from <a href="../../util/CssBindImplicits.html" class="extype" name="net.liftweb.util.CssBindImplicits">CssBindImplicits</a></h3>
+            </div><div class="parent" name="net.liftweb.http.LiftCometActor">
+              <h3>Inherited from <a href="../../http/LiftCometActor.html" class="extype" name="net.liftweb.http.LiftCometActor">LiftCometActor</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Dependent">
+              <h3>Inherited from <a href="../../util/Dependent.html" class="extype" name="net.liftweb.util.Dependent">Dependent</a></h3>
+            </div><div class="parent" name="net.liftweb.actor.LiftActor">
+              <h3>Inherited from <a href="../../actor/LiftActor.html" class="extype" name="net.liftweb.actor.LiftActor">LiftActor</a></h3>
+            </div><div class="parent" name="net.liftweb.common.ForwardableActor">
+              <h3>Inherited from <a href="../../common/ForwardableActor.html" class="extype" name="net.liftweb.common.ForwardableActor">ForwardableActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</h3>
+            </div><div class="parent" name="net.liftweb.common.GenericActor">
+              <h3>Inherited from <a href="../../common/GenericActor.html" class="extype" name="net.liftweb.common.GenericActor">GenericActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</h3>
+            </div><div class="parent" name="net.liftweb.common.TypedActor">
+              <h3>Inherited from <a href="../../common/TypedActor.html" class="extype" name="net.liftweb.common.TypedActor">TypedActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</h3>
+            </div><div class="parent" name="net.liftweb.actor.SpecializedLiftActor">
+              <h3>Inherited from <a href="../../actor/SpecializedLiftActor.html" class="extype" name="net.liftweb.actor.SpecializedLiftActor">SpecializedLiftActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</h3>
+            </div><div class="parent" name="net.liftweb.common.SimpleActor">
+              <h3>Inherited from <a href="../../common/SimpleActor.html" class="extype" name="net.liftweb.common.SimpleActor">SimpleActor</a>[<a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

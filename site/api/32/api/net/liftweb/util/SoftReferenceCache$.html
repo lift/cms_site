@@ -1,0 +1,1961 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Lift Framework 3.2.0-M3 - net.liftweb.util.SoftReferenceCache</title>
+          <meta name="description" content="Lift Framework 3.2.0 - M3 - net.liftweb.util.SoftReferenceCache" />
+          <meta name="keywords" content="Lift Framework 3.2.0 M3 net.liftweb.util.SoftReferenceCache" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Lift Framework<span id="doc-version">3.2.0-M3</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.net" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="net"></a><a id="net:net"></a>
+      <span class="permalink">
+      <a href="index.html#net" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">net</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="net.liftweb" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftweb"></a><a id="liftweb:liftweb"></a>
+      <span class="permalink">
+      <a href="../net/index.html#liftweb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">liftweb</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="net">net</a></dd></dl></div>
+    </li><li name="net.liftweb.util" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="util"></a><a id="util:util"></a>
+      <span class="permalink">
+      <a href="../../net/liftweb/index.html#util" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="The util package object
+" href="index.html">
+              <span class="name">util</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">The util package object
+</p><div class="fullcomment"><div class="comment cmt"><p>The util package object
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="net.liftweb">liftweb</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="A.html" title=""></a>
+                        <a href="A.html" title="">
+                          A
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AU$.html" title=""></a>
+                        <a href="AU$.html" title="">
+                          AU
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ActorPingException.html" title="Exception thrown if a ping can't be scheduled."></a>
+                        <a href="ActorPingException.html" title="Exception thrown if a ping can't be scheduled.">
+                          ActorPingException
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AltXML$.html" title=""></a>
+                        <a href="AltXML$.html" title="">
+                          AltXML
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AnyVar$.html" title=""></a>
+                        <a class="class" href="AnyVar.html" title=""></a>
+                        <a href="AnyVar.html" title="">
+                          AnyVar
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AnyVarTrait.html" title="Abstract a request or a session scoped variable."></a>
+                        <a href="AnyVarTrait.html" title="Abstract a request or a session scoped variable.">
+                          AnyVarTrait
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AppendDelta.html" title=""></a>
+                        <a href="AppendDelta.html" title="">
+                          AppendDelta
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AppendKidsSubNode.html" title=""></a>
+                        <a href="AppendKidsSubNode.html" title="">
+                          AppendKidsSubNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AttrAppendSubNode.html" title=""></a>
+                        <a href="AttrAppendSubNode.html" title="">
+                          AttrAppendSubNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AttrHelper.html" title="A common function-like interface for accessing information about
+attributes, based on the two core findAttr and
+convert methods."></a>
+                        <a href="AttrHelper.html" title="A common function-like interface for accessing information about
+attributes, based on the two core findAttr and
+convert methods.">
+                          AttrHelper
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AttrRemoveSubNode.html" title=""></a>
+                        <a href="AttrRemoveSubNode.html" title="">
+                          AttrRemoveSubNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AttrSelector.html" title=""></a>
+                        <a href="AttrSelector.html" title="">
+                          AttrSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AttrSubNode.html" title=""></a>
+                        <a href="AttrSubNode.html" title="">
+                          AttrSubNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AttributeRule.html" title=""></a>
+                        <a href="AttributeRule.html" title="">
+                          AttributeRule
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AutoResourceManager.html" title="A trait that defines an Automatic Resource Manager."></a>
+                        <a href="AutoResourceManager.html" title="A trait that defines an Automatic Resource Manager.">
+                          AutoResourceManager
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AvoidTypeErasureIssues1$.html" title="The companion object that does the implicit vending of AvoidTypeErasureIssues1
+"></a>
+                        <a class="trait" href="AvoidTypeErasureIssues1.html" title="Generics on the JVM have an issues with Type Erasure."></a>
+                        <a href="AvoidTypeErasureIssues1.html" title="Generics on the JVM have an issues with Type Erasure.">
+                          AvoidTypeErasureIssues1
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BCrypt.html" title=""></a>
+                        <a href="BCrypt.html" title="">
+                          BCrypt
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="BaseField.html" title=""></a>
+                        <a href="BaseField.html" title="">
+                          BaseField
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="BasicTypesHelpers$.html" title="This object adds functionality to Scala standard types."></a>
+                        <a class="trait" href="BasicTypesHelpers.html" title="This trait adds functionality to Scala standard types
+"></a>
+                        <a href="BasicTypesHelpers.html" title="This trait adds functionality to Scala standard types
+">
+                          BasicTypesHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Bindable.html" title="This trait is used to identify an object that is representable as a
+NodeSeq."></a>
+                        <a href="Bindable.html" title="This trait is used to identify an object that is representable as a
+NodeSeq.">
+                          Bindable
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BoxNodeSeqFuncIterableConst.html" title="The implementation for a Box[NodeSeq =&gt; Node] Iterable Const
+"></a>
+                        <a href="BoxNodeSeqFuncIterableConst.html" title="The implementation for a Box[NodeSeq =&gt; Node] Iterable Const
+">
+                          BoxNodeSeqFuncIterableConst
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="BundleBuilder$.html" title="Converts a NodeSeq of a particular format into
+a ResourceBundle."></a>
+                        <a href="BundleBuilder$.html" title="Converts a NodeSeq of a particular format into
+a ResourceBundle.">
+                          BundleBuilder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CSSHelpers$.html" title=""></a>
+                        <a href="CSSHelpers$.html" title="">
+                          CSSHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CSSParser$.html" title=""></a>
+                        <a href="CSSParser$.html" title="">
+                          CSSParser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CanBind$.html" title=""></a>
+                        <a class="trait" href="CanBind.html" title=""></a>
+                        <a href="CanBind.html" title="">
+                          CanBind
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CanResolveAsync$.html" title=""></a>
+                        <a class="trait" href="CanResolveAsync.html" title="Represents a unifying class that can resolve an asynchronous container."></a>
+                        <a href="CanResolveAsync.html" title="Represents a unifying class that can resolve an asynchronous container.">
+                          CanResolveAsync
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Cell$.html" title=""></a>
+                        <a class="trait" href="Cell.html" title="A wiring Cell."></a>
+                        <a href="Cell.html" title="A wiring Cell.">
+                          Cell
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CheckNodeSeq$.html" title=""></a>
+                        <a href="CheckNodeSeq$.html" title="">
+                          CheckNodeSeq
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClassHelpers$.html" title=""></a>
+                        <a class="trait" href="ClassHelpers.html" title="ClassHelpers provide several functions to instantiate a Class object given the class name and one or more package names
+"></a>
+                        <a href="ClassHelpers.html" title="ClassHelpers provide several functions to instantiate a Class object given the class name and one or more package names
+">
+                          ClassHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ClassSelector.html" title=""></a>
+                        <a href="ClassSelector.html" title="">
+                          ClassSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ClearClearable$.html" title="This CssBind will clear all nodes marked with the class
+clearable."></a>
+                        <a class="class" href="ClearClearable.html" title="This CssBind will clear all nodes marked with the class
+clearable."></a>
+                        <a href="ClearClearable.html" title="This CssBind will clear all nodes marked with the class
+clearable.">
+                          ClearClearable
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ClearNodes$.html" title="Replaces the nodes with an Empty NodeSeq."></a>
+                        <a href="ClearNodes$.html" title="Replaces the nodes with an Empty NodeSeq.">
+                          ClearNodes
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CombParserHelpers.html" title="The CombParserHelpers trait provides parser combinators helpers."></a>
+                        <a href="CombParserHelpers.html" title="The CombParserHelpers trait provides parser combinators helpers.">
+                          CombParserHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ConcurrentLock.html" title=""></a>
+                        <a href="ConcurrentLock.html" title="">
+                          ConcurrentLock
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConfirmField.html" title="A base field that also has a confirm method
+"></a>
+                        <a href="ConfirmField.html" title="A base field that also has a confirm method
+">
+                          ConfirmField
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ConnectionIdentifier.html" title=""></a>
+                        <a href="ConnectionIdentifier.html" title="">
+                          ConnectionIdentifier
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ControlHelpers$.html" title=""></a>
+                        <a class="trait" href="ControlHelpers.html" title="Control helpers provide alternate ways to catch exceptions and ignore them as necessary
+"></a>
+                        <a href="ControlHelpers.html" title="Control helpers provide alternate ways to catch exceptions and ignore them as necessary
+">
+                          ControlHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ConvertableToDate$.html" title=""></a>
+                        <a class="trait" href="ConvertableToDate.html" title=""></a>
+                        <a href="ConvertableToDate.html" title="">
+                          ConvertableToDate
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Css.html" title=""></a>
+                        <a href="Css.html" title="">
+                          Css
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CssBind$.html" title=""></a>
+                        <a class="trait" href="CssBind.html" title=""></a>
+                        <a href="CssBind.html" title="">
+                          CssBind
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CssBindImpl.html" title="An abstract implementation of CssBind."></a>
+                        <a href="CssBindImpl.html" title="An abstract implementation of CssBind.">
+                          CssBindImpl
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CssBindImplicits.html" title=""></a>
+                        <a href="CssBindImplicits.html" title="">
+                          CssBindImplicits
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CssJBridge.html" title="Bridge from Java-land to Scala
+"></a>
+                        <a href="CssJBridge.html" title="Bridge from Java-land to Scala
+">
+                          CssJBridge
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CssSel.html" title="This trait is both a NodeSeq =&gt; NodeSeq and has the ability
+to chain CssSel instances so that they can be applied
+en masse to incoming NodeSeq and do the transformation."></a>
+                        <a href="CssSel.html" title="This trait is both a NodeSeq =&gt; NodeSeq and has the ability
+to chain CssSel instances so that they can be applied
+en masse to incoming NodeSeq and do the transformation.">
+                          CssSel
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CssSelector.html" title=""></a>
+                        <a href="CssSelector.html" title="">
+                          CssSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CssSelectorParser$.html" title="Parse a subset of CSS into the appropriate selector objects
+"></a>
+                        <a href="CssSelectorParser$.html" title="Parse a subset of CSS into the appropriate selector objects
+">
+                          CssSelectorParser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CssUrlPrefixer.html" title="Utility for prefixing root-relative urls in CSS with a given prefix."></a>
+                        <a href="CssUrlPrefixer.html" title="Utility for prefixing root-relative urls in CSS with a given prefix.">
+                          CssUrlPrefixer
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Currency$.html" title=""></a>
+                        <a class="class" href="Currency.html" title="A simple fixed-point currency representation
+"></a>
+                        <a href="Currency.html" title="A simple fixed-point currency representation
+">
+                          Currency
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CurrencyMismatchException.html" title="This exception is thrown if an operation is attempted on two currency values
+where currency symbols do not match."></a>
+                        <a href="CurrencyMismatchException.html" title="This exception is thrown if an operation is attempted on two currency values
+where currency symbols do not match.">
+                          CurrencyMismatchException
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CurrencyZone.html" title=""></a>
+                        <a href="CurrencyZone.html" title="">
+                          CurrencyZone
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DateTimeConverter.html" title="Implement this trait to specify a set of rules to parse and format dates"></a>
+                        <a href="DateTimeConverter.html" title="Implement this trait to specify a set of rules to parse and format dates">
+                          DateTimeConverter
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DefaultConnectionIdentifier$.html" title=""></a>
+                        <a href="DefaultConnectionIdentifier$.html" title="">
+                          DefaultConnectionIdentifier
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DefaultDateTimeConverter$.html" title="A default implementation of DateTimeConverter that uses (Time)Helpers"></a>
+                        <a href="DefaultDateTimeConverter$.html" title="A default implementation of DateTimeConverter that uses (Time)Helpers">
+                          DefaultDateTimeConverter
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DeltaInfo.html" title="Provide information about the deltas between
+two lists
+"></a>
+                        <a href="DeltaInfo.html" title="Provide information about the deltas between
+two lists
+">
+                          DeltaInfo
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Dependent.html" title="Something that depends on the values of other cells
+"></a>
+                        <a href="Dependent.html" title="Something that depends on the values of other cells
+">
+                          Dependent
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DollarCurrency.html" title=""></a>
+                        <a href="DollarCurrency.html" title="">
+                          DollarCurrency
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Done$.html" title=""></a>
+                        <a href="Done$.html" title="">
+                          Done
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DontMergeAttributes$.html" title=""></a>
+                        <a href="DontMergeAttributes$.html" title="">
+                          DontMergeAttributes
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="DynamicCell.html" title="A cell that changes value on each access."></a>
+                        <a href="DynamicCell.html" title="A cell that changes value on each access.">
+                          DynamicCell
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DynoVar.html" title=""></a>
+                        <a href="DynoVar.html" title="">
+                          DynoVar
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="EU$.html" title=""></a>
+                        <a href="EU$.html" title="">
+                          EU
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ElemSelector.html" title=""></a>
+                        <a href="ElemSelector.html" title="">
+                          ElemSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="EnclosedSelector.html" title=""></a>
+                        <a href="EnclosedSelector.html" title="">
+                          EnclosedSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="EnumWithDescription.html" title=""></a>
+                        <a href="EnumWithDescription.html" title="">
+                          EnumWithDescription
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="False.html" title=""></a>
+                        <a href="False.html" title="">
+                          False
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FatLazy$.html" title="Companion object for FatLaxy."></a>
+                        <a class="class" href="FatLazy.html" title="A class that does lazy evaluation
+"></a>
+                        <a href="FatLazy.html" title="A class that does lazy evaluation
+">
+                          FatLazy
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldContainer.html" title=""></a>
+                        <a href="FieldContainer.html" title="">
+                          FieldContainer
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldConverter.html" title="Convert the field into other representations
+"></a>
+                        <a href="FieldConverter.html" title="Convert the field into other representations
+">
+                          FieldConverter
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FieldError$.html" title=""></a>
+                        <a class="class" href="FieldError.html" title="Associate a FieldIdentifier with a NodeSeq
+"></a>
+                        <a href="FieldError.html" title="Associate a FieldIdentifier with a NodeSeq
+">
+                          FieldError
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FieldIdentifier.html" title="Defines the association of this reference with a markup tag ID
+"></a>
+                        <a href="FieldIdentifier.html" title="Defines the association of this reference with a markup tag ID
+">
+                          FieldIdentifier
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FormBuilderLocator.html" title=""></a>
+                        <a href="FormBuilderLocator.html" title="">
+                          FormBuilderLocator
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="FuncCell$.html" title="The companion object for FuncCell (function cells)"></a>
+                        <a href="FuncCell$.html" title="The companion object for FuncCell (function cells)">
+                          FuncCell
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FuncCell1.html" title=""></a>
+                        <a href="FuncCell1.html" title="">
+                          FuncCell1
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FuncCell2.html" title=""></a>
+                        <a href="FuncCell2.html" title="">
+                          FuncCell2
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FuncCell3.html" title=""></a>
+                        <a href="FuncCell3.html" title="">
+                          FuncCell3
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FuncCell4.html" title=""></a>
+                        <a href="FuncCell4.html" title="">
+                          FuncCell4
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="FuncCell5.html" title=""></a>
+                        <a href="FuncCell5.html" title="">
+                          FuncCell5
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="GB$.html" title=""></a>
+                        <a href="GB$.html" title="">
+                          GB
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="HasCalcDefaultValue.html" title=""></a>
+                        <a href="HasCalcDefaultValue.html" title="">
+                          HasCalcDefaultValue
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="HasParams.html" title=""></a>
+                        <a href="HasParams.html" title="">
+                          HasParams
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="HeadHelper$.html" title="This object provides functions to setup the head section of html documents."></a>
+                        <a href="HeadHelper$.html" title="This object provides functions to setup the head section of html documents.">
+                          HeadHelper
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Helpers$.html" title="The Helpers object provides a lot of utility functions:"></a>
+                        <a href="Helpers$.html" title="The Helpers object provides a lot of utility functions:">
+                          Helpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Html5$.html" title=""></a>
+                        <a href="Html5$.html" title="">
+                          Html5
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Html5Constants$.html" title=""></a>
+                        <a href="Html5Constants$.html" title="">
+                          Html5Constants
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Html5Parser.html" title="A utility that supports parsing of HTML5 file."></a>
+                        <a href="Html5Parser.html" title="A utility that supports parsing of HTML5 file.">
+                          Html5Parser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Html5Writer.html" title=""></a>
+                        <a href="Html5Writer.html" title="">
+                          Html5Writer
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="HtmlEntities$.html" title="Utilities for simplifying use of named HTML symbols."></a>
+                        <a href="HtmlEntities$.html" title="Utilities for simplifying use of named HTML symbols.">
+                          HtmlEntities
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="HtmlHelpers.html" title=""></a>
+                        <a href="HtmlHelpers.html" title="">
+                          HtmlHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="HttpHelpers$.html" title=""></a>
+                        <a class="trait" href="HttpHelpers.html" title=""></a>
+                        <a href="HttpHelpers.html" title="">
+                          HttpHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="IdSelector.html" title=""></a>
+                        <a href="IdSelector.html" title="">
+                          IdSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="InMemoryCache$.html" title="Companion module for InMemoryCache
+"></a>
+                        <a class="class" href="InMemoryCache.html" title="Caches templates in a LRU map
+"></a>
+                        <a href="InMemoryCache.html" title="Caches templates in a LRU map
+">
+                          InMemoryCache
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Injector.html" title="A trait that does basic dependency injection."></a>
+                        <a href="Injector.html" title="A trait that does basic dependency injection.">
+                          Injector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InsertAfterDelta.html" title=""></a>
+                        <a href="InsertAfterDelta.html" title="">
+                          InsertAfterDelta
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InsertAtStartDelta.html" title=""></a>
+                        <a href="InsertAtStartDelta.html" title="">
+                          InsertAtStartDelta
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="IoHelpers$.html" title=""></a>
+                        <a class="trait" href="IoHelpers.html" title=""></a>
+                        <a href="IoHelpers.html" title="">
+                          IoHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="IterableConst$.html" title="The companion object that does the helpful promotion of common
+collection types into an IterableConst,
+e.g."></a>
+                        <a class="trait" href="IterableConst.html" title="A trait that has some helpful implicit conversions from
+Iterable[NodeSeq], Seq[String], Box[String], and Option[String]
+"></a>
+                        <a href="IterableConst.html" title="A trait that has some helpful implicit conversions from
+Iterable[NodeSeq], Seq[String], Box[String], and Option[String]
+">
+                          IterableConst
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="IterableFunc$.html" title=""></a>
+                        <a class="trait" href="IterableFunc.html" title=""></a>
+                        <a href="IterableFunc.html" title="">
+                          IterableFunc
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="JodaHelpers$.html" title=""></a>
+                        <a class="trait" href="JodaHelpers.html" title=""></a>
+                        <a href="JodaHelpers.html" title="">
+                          JodaHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="JsonCmd.html" title="Impersonates a JSON command
+"></a>
+                        <a href="JsonCmd.html" title="Impersonates a JSON command
+">
+                          JsonCmd
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="JsonCommand$.html" title="A helpful extractor to take the JValue sent from the client-side JSON stuff and
+make some sense of it."></a>
+                        <a href="JsonCommand$.html" title="A helpful extractor to take the JValue sent from the client-side JSON stuff and
+make some sense of it.">
+                          JsonCommand
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="KeyedCache.html" title="A simple Read-through cache."></a>
+                        <a href="KeyedCache.html" title="A simple Read-through cache.">
+                          KeyedCache
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="KidsSubNode.html" title=""></a>
+                        <a href="KidsSubNode.html" title="">
+                          KidsSubNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LD$.html" title="Calculate the edit distance between words
+"></a>
+                        <a href="LD$.html" title="Calculate the edit distance between words
+">
+                          LD
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LRU.html" title="LRU Cache wrapping org.apache.commons.collections.map.LRUMap
+"></a>
+                        <a href="LRU.html" title="LRU Cache wrapping org.apache.commons.collections.map.LRUMap
+">
+                          LRU
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LZ$.html" title="Sometimes, you want to do pattern matching against a lazy value."></a>
+                        <a class="class" href="LZ.html" title="LZ encapsulates a lazy value."></a>
+                        <a href="LZ.html" title="LZ encapsulates a lazy value.">
+                          LZ
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LiftFlowOfControlException.html" title="The superclass for all Lift flow of control exceptions
+"></a>
+                        <a href="LiftFlowOfControlException.html" title="The superclass for all Lift flow of control exceptions
+">
+                          LiftFlowOfControlException
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LiftValue.html" title="Kinda like a JavaBean property."></a>
+                        <a href="LiftValue.html" title="Kinda like a JavaBean property.">
+                          LiftValue
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ListHelpers$.html" title=""></a>
+                        <a class="trait" href="ListHelpers.html" title="The ListHelpers trait provides useful functions which can be applied to Lists."></a>
+                        <a href="ListHelpers.html" title="The ListHelpers trait provides useful functions which can be applied to Lists.">
+                          ListHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LoanWrapper.html" title="This trait defines the principle contract for function objects that
+wrap the processing of HTTP requests by Lift while utilizing the preestablished
+request-local scope."></a>
+                        <a href="LoanWrapper.html" title="This trait defines the principle contract for function objects that
+wrap the processing of HTTP requests by Lift while utilizing the preestablished
+request-local scope.">
+                          LoanWrapper
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LoggingAutoConfigurer$.html" title="Function object that can be used in Logger.setup"></a>
+                        <a href="LoggingAutoConfigurer$.html" title="Function object that can be used in Logger.setup">
+                          LoggingAutoConfigurer
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LowPriorityCanResolveAsyncImplicits.html" title=""></a>
+                        <a href="LowPriorityCanResolveAsyncImplicits.html" title="">
+                          LowPriorityCanResolveAsyncImplicits
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Mailer$.html" title="Utilities for sending email."></a>
+                        <a class="trait" href="Mailer.html" title="This trait implmenets the mail sending."></a>
+                        <a href="Mailer.html" title="This trait implmenets the mail sending.">
+                          Mailer
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Maker$.html" title=""></a>
+                        <a class="trait" href="Maker.html" title="In addition to an Injector, you can have a Maker which will make a given
+type."></a>
+                        <a href="Maker.html" title="In addition to an Injector, you can have a Maker which will make a given
+type.">
+                          Maker
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MakerJ.html" title=""></a>
+                        <a href="MakerJ.html" title="">
+                          MakerJ
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MakerStack.html" title="An implementation where you can define the stack of makers."></a>
+                        <a href="MakerStack.html" title="An implementation where you can define the stack of makers.">
+                          MakerStack
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="MarkdownParser$.html" title=""></a>
+                        <a href="MarkdownParser$.html" title="">
+                          MarkdownParser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MemoizeVar.html" title=""></a>
+                        <a href="MemoizeVar.html" title="">
+                          MemoizeVar
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MonadicCondition.html" title="A MonadicCondition allows building boolean expressions of the form
+(a(0) &amp;&amp; a(1) &amp;&amp; .."></a>
+                        <a href="MonadicCondition.html" title="A MonadicCondition allows building boolean expressions of the form
+(a(0) &amp;&amp; a(1) &amp;&amp; ..">
+                          MonadicCondition
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="MonadicConversions$.html" title="Holds the implicit conversions from/to MonadicCondition
+"></a>
+                        <a href="MonadicConversions$.html" title="Holds the implicit conversions from/to MonadicCondition
+">
+                          MonadicConversions
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NameSelector.html" title=""></a>
+                        <a href="NameSelector.html" title="">
+                          NameSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="NamedPF$.html" title=""></a>
+                        <a class="class" href="NamedPF.html" title="This class is the base implementation of the NamedPartialFunction trait."></a>
+                        <a href="NamedPF.html" title="This class is the base implementation of the NamedPartialFunction trait.">
+                          NamedPF
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="NamedPartialFunction.html" title="This trait is used to represent a PartialFunction with additional
+associated metadata, a name that allows the NamedPartialFunction
+to be looked up dynamically."></a>
+                        <a href="NamedPartialFunction.html" title="This trait is used to represent a PartialFunction with additional
+associated metadata, a name that allows the NamedPartialFunction
+to be looked up dynamically.">
+                          NamedPartialFunction
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NoCache$.html" title="A cache that caches nothing
+"></a>
+                        <a href="NoCache$.html" title="A cache that caches nothing
+">
+                          NoCache
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NodeSeqFuncIterableConst.html" title="The implementation for a NodeSeq =&gt; NodeSeq Iterable Const
+"></a>
+                        <a href="NodeSeqFuncIterableConst.html" title="The implementation for a NodeSeq =&gt; NodeSeq Iterable Const
+">
+                          NodeSeqFuncIterableConst
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NodeSeqIterableConst.html" title="The implementation for a NodeSeq Iterable Const
+"></a>
+                        <a href="NodeSeqIterableConst.html" title="The implementation for a NodeSeq Iterable Const
+">
+                          NodeSeqIterableConst
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NonCleanAnyVar.html" title=""></a>
+                        <a href="NonCleanAnyVar.html" title="">
+                          NonCleanAnyVar
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionNodeSeqFuncIterableConst.html" title="The implementation for a Option[NodeSeq =&gt; Node] Iterable Const
+"></a>
+                        <a href="OptionNodeSeqFuncIterableConst.html" title="The implementation for a Option[NodeSeq =&gt; Node] Iterable Const
+">
+                          OptionNodeSeqFuncIterableConst
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="PCData.html" title=""></a>
+                        <a href="PCData.html" title="">
+                          PCData
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="PCDataMarkupParser.html" title="Extends the Markup Parser to do the right thing (tm) with PCData blocks
+"></a>
+                        <a href="PCDataMarkupParser.html" title="Extends the Markup Parser to do the right thing (tm) with PCData blocks
+">
+                          PCDataMarkupParser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="PCDataXmlParser$.html" title=""></a>
+                        <a class="class" href="PCDataXmlParser.html" title=""></a>
+                        <a href="PCDataXmlParser.html" title="">
+                          PCDataXmlParser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="PSettableValueHolder.html" title=""></a>
+                        <a href="PSettableValueHolder.html" title="">
+                          PSettableValueHolder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="PValueHolder$.html" title=""></a>
+                        <a class="trait" href="PValueHolder.html" title=""></a>
+                        <a href="PValueHolder.html" title="">
+                          PValueHolder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="PassThru$.html" title="A passthrough function that does not change the nodes
+"></a>
+                        <a href="PassThru$.html" title="A passthrough function that does not change the nodes
+">
+                          PassThru
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="PrependKidsSubNode.html" title=""></a>
+                        <a href="PrependKidsSubNode.html" title="">
+                          PrependKidsSubNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ProcessQueue$.html" title=""></a>
+                        <a href="ProcessQueue$.html" title="">
+                          ProcessQueue
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Props$.html" title="Configuration management utilities."></a>
+                        <a href="Props$.html" title="Configuration management utilities.">
+                          Props
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="RE$.html" title="A regular expressions helper library
+RE(&quot;foo&quot;) =~ &quot;A string&quot; -or-
+&quot;A string&quot; =~: RE(&quot;foo&quot;) -or-
+&quot;A String&quot;.substring(RE(&quot;Str&quot;))
+(&quot;A B cat D&quot; =~: RE(&quot;([A-Z])&quot;)).capture // List(A,B,D)
+"></a>
+                        <a href="RE$.html" title="A regular expressions helper library
+RE(&quot;foo&quot;) =~ &quot;A string&quot; -or-
+&quot;A string&quot; =~: RE(&quot;foo&quot;) -or-
+&quot;A String&quot;.substring(RE(&quot;Str&quot;))
+(&quot;A B cat D&quot; =~: RE(&quot;([A-Z])&quot;)).capture // List(A,B,D)
+">
+                          RE
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="REDoer.html" title=""></a>
+                        <a href="REDoer.html" title="">
+                          REDoer
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="REMatcher$.html" title=""></a>
+                        <a class="class" href="REMatcher.html" title="This class adds higher-order functions and lazy evaluation
+for pattern matching on top of the standard Java regular expressions
+library."></a>
+                        <a href="REMatcher.html" title="This class adds higher-order functions and lazy evaluation
+for pattern matching on top of the standard Java regular expressions
+library.">
+                          REMatcher
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ReadableField.html" title="A field that can be displayed but not edited
+"></a>
+                        <a href="ReadableField.html" title="A field that can be displayed but not edited
+">
+                          ReadableField
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RemoveDelta.html" title="The new list does not contain the item."></a>
+                        <a href="RemoveDelta.html" title="The new list does not contain the item.">
+                          RemoveDelta
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ResponseInfoHolder.html" title="Holds information about a response
+"></a>
+                        <a href="ResponseInfoHolder.html" title="Holds information about a response
+">
+                          ResponseInfoHolder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RestoringWeakReference$.html" title=""></a>
+                        <a class="class" href="RestoringWeakReference.html" title="RestoringWeakReference contains a scala.ref.WeakReference that,
+after it has been nulled out, uses a restorer function to restore the
+value."></a>
+                        <a href="RestoringWeakReference.html" title="RestoringWeakReference contains a scala.ref.WeakReference that,
+after it has been nulled out, uses a restorer function to restore the
+value.">
+                          RestoringWeakReference
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Safe$.html" title="Manage the current &quot;safety&quot; state of the stack
+"></a>
+                        <a href="Safe$.html" title="Manage the current &quot;safety&quot; state of the stack
+">
+                          Safe
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SafeNodeSeq$.html" title="Used for type-safe pattern matching of an Any and returns a Seq[Node]
+"></a>
+                        <a href="SafeNodeSeq$.html" title="Used for type-safe pattern matching of an Any and returns a Seq[Node]
+">
+                          SafeNodeSeq
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SafeSeqParser.html" title=""></a>
+                        <a href="SafeSeqParser.html" title="">
+                          SafeSeqParser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Schedule$.html" title="The Schedule object schedules an actor to be ping-ed with a given message after a specified
+delay."></a>
+                        <a class="trait" href="Schedule.html" title="The Schedule object schedules an actor to be ping-ed with a given message after a specified
+delay."></a>
+                        <a href="Schedule.html" title="The Schedule object schedules an actor to be ping-ed with a given message after a specified
+delay.">
+                          Schedule
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ScheduleJBridge.html" title=""></a>
+                        <a href="ScheduleJBridge.html" title="">
+                          ScheduleJBridge
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Scheduled$.html" title="Send to the actor that we scheduled for recurrent ping
+"></a>
+                        <a href="Scheduled$.html" title="Send to the actor that we scheduled for recurrent ping
+">
+                          Scheduled
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SecurityHelpers$.html" title=""></a>
+                        <a class="trait" href="SecurityHelpers.html" title="The SecurityHelpers trait provides functions to:"></a>
+                        <a href="SecurityHelpers.html" title="The SecurityHelpers trait provides functions to:">
+                          SecurityHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SelectThisNode.html" title=""></a>
+                        <a href="SelectThisNode.html" title="">
+                          SelectThisNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SeqBindableIterableConst.html" title="Sequence of Bindable iterable const
+"></a>
+                        <a href="SeqBindableIterableConst.html" title="Sequence of Bindable iterable const
+">
+                          SeqBindableIterableConst
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SeqCell.html" title="A collection of Cells og a given type"></a>
+                        <a href="SeqCell.html" title="A collection of Cells og a given type">
+                          SeqCell
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SeqStringIterableConst.html" title="Sequence of String iterable const
+"></a>
+                        <a href="SeqStringIterableConst.html" title="Sequence of String iterable const
+">
+                          SeqStringIterableConst
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Settable.html" title="A value that can be set
+"></a>
+                        <a href="Settable.html" title="A value that can be set
+">
+                          Settable
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SettableField.html" title="A field that can be set
+"></a>
+                        <a href="SettableField.html" title="A field that can be set
+">
+                          SettableField
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SettableValueHolder.html" title=""></a>
+                        <a href="SettableValueHolder.html" title="">
+                          SettableValueHolder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SimpleInjector.html" title="An implementation of Injector that has an implementation
+"></a>
+                        <a href="SimpleInjector.html" title="An implementation of Injector that has an implementation
+">
+                          SimpleInjector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="" title="Companion module that has the role of monitoring garbage collected references and remove the orphaned
+keys from the cache."></a>
+                        <a class="class" href="SoftReferenceCache.html" title="A Map that holds the values as SoftReference-s."></a>
+                        <a href="SoftReferenceCache.html" title="A Map that holds the values as SoftReference-s.">
+                          SoftReferenceCache
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SoftValue.html" title=""></a>
+                        <a href="SoftValue.html" title="">
+                          SoftValue
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceFieldInfo.html" title="Value and metadata for a field
+"></a>
+                        <a href="SourceFieldInfo.html" title="Value and metadata for a field
+">
+                          SourceFieldInfo
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SourceFieldInfoRep.html" title="An inplementation of SourceFieldInfo
+"></a>
+                        <a href="SourceFieldInfoRep.html" title="An inplementation of SourceFieldInfo
+">
+                          SourceFieldInfoRep
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceFieldMetadata.html" title="Metadata about a specific field
+"></a>
+                        <a href="SourceFieldMetadata.html" title="Metadata about a specific field
+">
+                          SourceFieldMetadata
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SourceFieldMetadataRep.html" title=""></a>
+                        <a href="SourceFieldMetadataRep.html" title="">
+                          SourceFieldMetadataRep
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SourceInfo.html" title="A trait that allows an object to tell you about itself
+rather than using reflection
+"></a>
+                        <a href="SourceInfo.html" title="A trait that allows an object to tell you about itself
+rather than using reflection
+">
+                          SourceInfo
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StackableMaker.html" title="A StackableMaker allows DynamicVar functionality by supply a Maker or function
+that will vend an instance during any sub-call on the stack and then
+restore the implementation."></a>
+                        <a href="StackableMaker.html" title="A StackableMaker allows DynamicVar functionality by supply a Maker or function
+that will vend an instance during any sub-call on the stack and then
+restore the implementation.">
+                          StackableMaker
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="StarSelector.html" title=""></a>
+                        <a href="StarSelector.html" title="">
+                          StarSelector
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="StringHelpers$.html" title=""></a>
+                        <a class="trait" href="StringHelpers.html" title="Utility methods for manipulating strings."></a>
+                        <a href="StringHelpers.html" title="Utility methods for manipulating strings.">
+                          StringHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="StringPromotable$.html" title=""></a>
+                        <a class="trait" href="StringPromotable.html" title="This trait marks something that can be promoted into a String."></a>
+                        <a href="StringPromotable.html" title="This trait marks something that can be promoted into a String.">
+                          StringPromotable
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StringValidators.html" title=""></a>
+                        <a href="StringValidators.html" title="">
+                          StringValidators
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SubNode$.html" title=""></a>
+                        <a class="trait" href="SubNode.html" title=""></a>
+                        <a href="SubNode.html" title="">
+                          SubNode
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SuperListString.html" title="A class that allows chaining &quot;foo&quot; / &quot;bar&quot; / &quot;baz&quot;
+"></a>
+                        <a href="SuperListString.html" title="A class that allows chaining &quot;foo&quot; / &quot;bar&quot; / &quot;baz&quot;
+">
+                          SuperListString
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SuperString.html" title="The SuperString class adds functionalities to the String class
+"></a>
+                        <a href="SuperString.html" title="The SuperString class adds functionalities to the String class
+">
+                          SuperString
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SurroundKids.html" title=""></a>
+                        <a href="SurroundKids.html" title="">
+                          SurroundKids
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TemplateCache.html" title=""></a>
+                        <a href="TemplateCache.html" title="">
+                          TemplateCache
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ThreadGlobal.html" title="This is a decorator for a ThreadLocal variable that provides
+convenience methods to transform the variable to a Box and execute
+functions in a &quot;scope&quot; wherein the variable may hold a different value."></a>
+                        <a href="ThreadGlobal.html" title="This is a decorator for a ThreadLocal variable that provides
+convenience methods to transform the variable to a Box and execute
+functions in a &quot;scope&quot; wherein the variable may hold a different value.">
+                          ThreadGlobal
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ThreadLazy$.html" title=""></a>
+                        <a class="class" href="ThreadLazy.html" title="A thread-local lazy value that provides a means to evaluate
+a function in a lazily-evaluated scope."></a>
+                        <a href="ThreadLazy.html" title="A thread-local lazy value that provides a means to evaluate
+a function in a lazily-evaluated scope.">
+                          ThreadLazy
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="TimeHelpers$.html" title="The TimeHelpers object extends the TimeHelpers."></a>
+                        <a class="trait" href="TimeHelpers.html" title="The TimeHelpers trait provide functions to create TimeSpans (an object representing duration in milliseconds),
+to manage date formats or general utility functions (get the date for today, get year/month/day number,...)
+"></a>
+                        <a href="TimeHelpers.html" title="The TimeHelpers trait provide functions to create TimeSpans (an object representing duration in milliseconds),
+to manage date formats or general utility functions (get the date for today, get year/month/day number,...)
+">
+                          TimeHelpers
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ToJsCmd.html" title="TODO: Is this something that can be converted to a JavaScript Command
+"></a>
+                        <a href="ToJsCmd.html" title="TODO: Is this something that can be converted to a JavaScript Command
+">
+                          ToJsCmd
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="True$.html" title=""></a>
+                        <a href="True$.html" title="">
+                          True
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="TwoFractionDigits.html" title=""></a>
+                        <a href="TwoFractionDigits.html" title="">
+                          TwoFractionDigits
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="US$.html" title=""></a>
+                        <a href="US$.html" title="">
+                          US
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="UnSchedule$.html" title="Send by the scheduled actor to sign off from recurrent scheduling
+"></a>
+                        <a href="UnSchedule$.html" title="Send by the scheduled actor to sign off from recurrent scheduling
+">
+                          UnSchedule
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="VCardParser$.html" title="Parser for a VCard string such as"></a>
+                        <a href="VCardParser$.html" title="Parser for a VCard string such as">
+                          VCardParser
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ValueCell$.html" title="The companion object that has a helpful constructor
+"></a>
+                        <a class="class" href="ValueCell.html" title="A ValueCell holds a value that can be mutated."></a>
+                        <a href="ValueCell.html" title="A ValueCell holds a value that can be mutated.">
+                          ValueCell
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ValueHolder$.html" title=""></a>
+                        <a class="trait" href="ValueHolder.html" title=""></a>
+                        <a href="ValueHolder.html" title="">
+                          ValueHolder
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ValueWithDescription.html" title=""></a>
+                        <a href="ValueWithDescription.html" title="">
+                          ValueWithDescription
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Vendor$.html" title="A companion to the Vendor trait
+"></a>
+                        <a class="trait" href="Vendor.html" title="A Vendor is a Maker that also guarantees that it will return a value
+"></a>
+                        <a href="Vendor.html" title="A Vendor is a Maker that also guarantees that it will return a value
+">
+                          Vendor
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VendorJ.html" title=""></a>
+                        <a href="VendorJ.html" title="">
+                          VendorJ
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VendorJBridge.html" title="A bridge from Java to Scala
+"></a>
+                        <a href="VendorJBridge.html" title="A bridge from Java to Scala
+">
+                          VendorJBridge
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="WithKids.html" title=""></a>
+                        <a href="WithKids.html" title="">
+                          WithKids
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="object value">
+      <div id="definition">
+        <a href="SoftReferenceCache.html" title="See companion class"><div class="big-circle object-companion-class">o</div></a>
+        <p id="owner"><a href="../../index.html" class="extype" name="net">net</a>.<a href="../index.html" class="extype" name="net.liftweb">liftweb</a>.<a href="index.html" class="extype" name="net.liftweb.util">util</a></p>
+        <h1><a href="SoftReferenceCache.html" title="See companion class">SoftReferenceCache</a><span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"><div>
+            Companion <a href="SoftReferenceCache.html" title="See companion class">class SoftReferenceCache</a>
+          </div></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SoftReferenceCache</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Companion module that has the role of monitoring garbage collected references and remove the orphaned
+keys from the cache. The monitor is started by calling <i>initialize</i> function and terminated by
+calling <i>shutDown</i>. It monitors all SoftReferenceCache instances in the context of the same classloader.
+It can also be used as a factory for obtaining new instances of SoftReferenceCache class
+</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="net.liftweb.util.SoftReferenceCache"><span>SoftReferenceCache</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.SoftReferenceCache#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[K,V](size:Int):net.liftweb.util.SoftReferenceCache[K,V]"></a><a id="apply[K,V](Int):SoftReferenceCache[K,V]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#apply[K,V](size:Int):net.liftweb.util.SoftReferenceCache[K,V]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="K">K</span>, <span name="V">V</span>]</span><span class="params">(<span name="size">size: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="SoftReferenceCache.html" class="extype" name="net.liftweb.util.SoftReferenceCache">SoftReferenceCache</a>[<span class="extype" name="net.liftweb.util.SoftReferenceCache.apply.K">K</span>, <span class="extype" name="net.liftweb.util.SoftReferenceCache.apply.V">V</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a new SoftReferenceCache instance
+</p>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.SoftReferenceCache#initialize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="initialize:Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#initialize:Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initialize</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Initialize the orphan keys monitor
+</p>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.util.SoftReferenceCache#shutDown" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="shutDown:Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#shutDown:Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">shutDown</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">ShutDown the monitoring
+</p>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SoftReferenceCache$.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
