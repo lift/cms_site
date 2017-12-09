@@ -196,7 +196,11 @@
 			 									alt="Open Bank Project - Open Source API for Banks" />
 		 								</a>
 									</div>
-
+					<div class="logo">
+						<a href="https://www.sejda.com">
+							<img height="50" src="/images/comp-logo/sejda.png" alt="Sejda PDF" />
+						</a>
+					</div>
 
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
