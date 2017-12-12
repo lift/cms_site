@@ -134,13 +134,6 @@
 <!-- 										</a> -->
 									</div>
 									<div class="logo">
-										<a href="https://twisp.me">
-											<img height="50"
-												src="/images/comp-logo/twisp.png"
-												alt="twisp" />
-										</a>		
-									</div>
-									<div class="logo">
 										<a href="http://dbschools.com/music-gradebook/">
 											<img height="50"
 												src="/images/comp-logo/dbschools-music-gradebook.png"
@@ -162,20 +155,6 @@
      								</a>
 		              </div>
                   <div class="logo">
-                    <a href="http://sheeprice.com">
-                      <img height="50"
-                        src="/images/comp-logo/sheeprice.png"
-                        alt="Sheeprice" />
-                    </a>
-                  </div>
-                  <div class="logo">
-                    <a href="http://www.tagtrail.com">
-                      <img height="50"
-                        src="/images/comp-logo/tagtrail.png"
-                        alt="Tagtrail - NFC management" />
-                    </a>
-                  </div>
-                  <div class="logo">
                     <a href="http://www.home-artist.org">
                       <img height="50"
                         src="/images/comp-logo/home_artist_org.png"
@@ -196,7 +175,11 @@
 			 									alt="Open Bank Project - Open Source API for Banks" />
 		 								</a>
 									</div>
-
+					<div class="logo">
+						<a href="https://www.sejda.com">
+							<img height="50" src="/images/comp-logo/sejda.png" alt="Sejda PDF" />
+						</a>
+					</div>
 
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
