@@ -3,9 +3,9 @@
         <head>
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-          <title>Lift Framework 3.2.0-M3 - net.liftweb.http.LiftRules</title>
-          <meta name="description" content="Lift Framework 3.2.0 - M3 - net.liftweb.http.LiftRules" />
-          <meta name="keywords" content="Lift Framework 3.2.0 M3 net.liftweb.http.LiftRules" />
+          <title>Lift Framework 3.2.0-RC1 - net.liftweb.http.LiftRules</title>
+          <meta name="description" content="Lift Framework 3.2.0 - RC1 - net.liftweb.http.LiftRules" />
+          <meta name="keywords" content="Lift Framework 3.2.0 RC1 net.liftweb.http.LiftRules" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,7 +28,7 @@
         </head>
         <body>
       <div id="search">
-        <span id="doc-title">Lift Framework<span id="doc-version">3.2.0-M3</span></span>
+        <span id="doc-title">Lift Framework<span id="doc-version">3.2.0-RC1</span></span>
         <span class="close-results"><span class="left">&lt;</span> Back</span>
         <div id="textfilter">
           <span class="input">
@@ -3490,6 +3490,27 @@ is done with <code>earlyInStateful</code>, instead of using <code><a href="#onBe
       </span>
       
       
+    </li><li name="net.liftweb.http.LiftRules#enableCometRehydration" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="enableCometRehydration():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/LiftRules.html#enableCometRehydration():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">enableCometRehydration</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Adjusts LiftRules to allow a page's comets to &quot;rehydrate&quot; (i.e.</p><div class="fullcomment"><div class="comment cmt"><p>Adjusts LiftRules to allow a page's comets to &quot;rehydrate&quot; (i.e. reconnect to the page) after a server restart.
+This works by reloading the page into an iframe and stealing all of the comets. When the refresh occurs,
+new comet actors will be instantiated, so beware that any state therein will NOT be reinstated. Applications
+utilizing this feature should be designed to reconstruct comet state from the DB, cookies, client info, etc
+as required.
+</p></div></div>
     </li><li name="net.liftweb.http.LiftRules#enableContainerSessions" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="enableContainerSessions:Boolean"></a>
       <span class="permalink">
