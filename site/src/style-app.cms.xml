@@ -14,7 +14,7 @@ body {
     position: relative;
 }
 
-#container-bg {  
+#container-bg {
     background-color: #f8f8f8;/*#f0f0f0;*/
 	margin:-10px auto 40px auto;
 	max-width:980px;
@@ -29,7 +29,7 @@ body {
     padding-top:20px;
 }
 
-/* Overridng som bootstrap 
+/* Overridng som bootstrap
 *************************************************************************/
 /*icon viewing in telegr.am*/
 [class^="icon-"],
@@ -61,18 +61,24 @@ h1, h2, h3 {
     padding-bottom: 0px;
 }
 
+.markdown h1, .asciidoc h1 {
+  padding-bottom: 17px;
+  margin: 18px 0;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 1;
+}
 
 /* NAVBAR
 *******************************************************************************/
 .navbar {
     width:100%;
     background-color: #006699;
-    background-image: -moz-linear-gradient(center top , #003366, #006699); 
+    background-image: -moz-linear-gradient(center top , #003366, #006699);
     background: -webkit-gradient(linear, left top, left bottom, from(#003366), to(#006699));
     background-repeat: repeat-x;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;  
- 
-} 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+
+}
 .navbar .brand {
     color: #ccc;
     font-family: Orbitron,Helvetica,Verdana,sans-serif;
@@ -82,14 +88,14 @@ h1, h2, h3 {
     margin-left: 5px;
 }
 .navbar-inner {
-     background-color: #006699; 
-     background-image: -moz-linear-gradient(center top , #003366, #006699);  
-     background: -webkit-gradient(linear, left top, left bottom, from(#003366), to(#006699)); 
-     background-repeat: repeat-x; 
-     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;   
-   
+     background-color: #006699;
+     background-image: -moz-linear-gradient(center top , #003366, #006699);
+     background: -webkit-gradient(linear, left top, left bottom, from(#003366), to(#006699));
+     background-repeat: repeat-x;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+
 	margin: 0px auto 0px auto;
-	max-width:1020px;    
+	max-width:1020px;
 }
 div.navbar > div.navbar-inner > div.container > div.nav-collapse > ul.nav > li > a {
   color:#ccc;
@@ -130,7 +136,7 @@ div#header div#hdr { float: left;  max-width: 180px; height:61px; margin-left:20
 	text-indent: -9999px;
 	float:left;
 	display: inline;
-}	
+}
 
 .header-home span a{
 	display: block;
@@ -143,14 +149,14 @@ div#header div#hdr { float: left;  max-width: 180px; height:61px; margin-left:20
     margin:5px 0px 20px 10px;
 	}
 
-/* MAIN QUOTE AREA 
+/* MAIN QUOTE AREA
 *************************************************************************/
 
 /*playing around with gradient just coment this out if you whant the bootstrap defaults */
 /*.well {
   background-image: -moz-radial-gradient(orange,#4861b4);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(orange), to(#4861b4)); 
-  background-image: -webkit-radial-gradient(orange, #4861b4); 
+  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(orange), to(#4861b4));
+  background-image: -webkit-radial-gradient(orange, #4861b4);
   background-image: radial-gradient(orange, #4861b4);
   color:#ccc;
 }*/
@@ -168,15 +174,15 @@ div#header div#hdr { float: left;  max-width: 180px; height:61px; margin-left:20
 #lh-quote div.well > blockquote > p.lead:before {
     content: "“";
     left: -10px;
-    top: -11px;   
+    top: -11px;
 }
-blockquote > p.lead{  
+blockquote > p.lead{
   font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
   font-style: italic;
   font-weight: 600;
 }
 blockquote > p.lead:after,
-blockquote > p.lead:before { 
+blockquote > p.lead:before {
     font-family: Georgia,Serif;
     color:#ccc;
     font-size: 36px;
@@ -189,11 +195,11 @@ blockquote > p.lead:before {
 /*playing around with gradient just coment this out if you whant the plainer look bellow */
 /*div.gradient-panel {
   background-image: -moz-radial-gradient(#9eccf0,#E0E9F0);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#9eccf0), to(#E0E9F0)); 
-  background-image: -webkit-radial-gradient(#9eccf0, #E0E9F0); 
+  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#9eccf0), to(#E0E9F0));
+  background-image: -webkit-radial-gradient(#9eccf0, #E0E9F0);
   background-image: radial-gradient(#9eccf0, #E0E9F0);
   }*/
-/*plain look*/	
+/*plain look*/
 div.gradient-panel {
    background: #E0E9F0;
    overflow: hidden;
@@ -201,17 +207,17 @@ div.gradient-panel {
    float:left;
    width:24%; min-width:204px;
    min-height:105px;
-	border: none;  
+	border: none;
 	padding: 10px 5px 5px 10px;
 	margin: 0px 0.5% 15px 0.5%;
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
-	-webkit-box-shadow: 1px 1px 1px 2px #C1C4BA; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 1px 1px 1px 2px #C1C4BA;
 	-moz-box-shadow: 1px 1px 1px 2px #C1C4BA;
-	box-shadow: 1px 1px 1px 2px #C1C4BA; 
-	-webkit-border-radius: 4px; 
-	-moz-border-radius: 4px; 
+	box-shadow: 1px 1px 1px 2px #C1C4BA;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
 
@@ -221,44 +227,44 @@ div.gradient-panel {
 #logo-container {
   display: block;
   float:left;
-  width:100%; 
-  background:#9eccf0; /*#b6d7f0;*/ /* #7891E4;*/ /*#E0E9F0;*/ /*#4861b4;*/ /*#374e97;*/ 
+  width:100%;
+  background:#9eccf0; /*#b6d7f0;*/ /* #7891E4;*/ /*#E0E9F0;*/ /*#4861b4;*/ /*#374e97;*/
   text-align:center;
-  padding:10px 0px; 
-  margin:5px 0px 25px 0px; 
+  padding:10px 0px;
+  margin:5px 0px 25px 0px;
 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
-	-webkit-box-shadow: 1px 1px 1px 2px #C1C4BA; 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 1px 1px 1px 2px #C1C4BA;
 	-moz-box-shadow: 1px 1px 1px 2px #C1C4BA;
-	box-shadow: 1px 1px 1px 2px #C1C4BA;   
- 
-  -webkit-border-radius: 20px; 
-  -moz-border-radius: 20px; 
-  border-radius: 20px;  
+	box-shadow: 1px 1px 1px 2px #C1C4BA;
+
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
   }
 
 
 #logo-container {
   background-image: -moz-radial-gradient(#9eccf0,#E0E9F0);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#9eccf0), to(#E0E9F0)); 
-  background-image: -webkit-radial-gradient(#9eccf0, #E0E9F0); 
+  background-image: -webkit-gradient(radial, center center, 0, center center, 220, from(#9eccf0), to(#E0E9F0));
+  background-image: -webkit-radial-gradient(#9eccf0, #E0E9F0);
   background-image: radial-gradient(#9eccf0, #E0E9F0);
-  } 
- 
-  
-#logo-container .logo {
-  float:left; 
-  width:24%; 
-  margin: 10px 0.5% 10px 0.5%;
-  text-align:center; 
   }
-  
+
+
+#logo-container .logo {
+  float:left;
+  width:24%;
+  margin: 10px 0.5% 10px 0.5%;
+  text-align:center;
+  }
+
 /* FOOTER
 *******************************************************************************/
 #footer{ float:left; margin: 5px auto 0;	width: 100%; height:auto; text-align:center;  }
-#footer p {	
+#footer p {
   font-family: "Warnock Pro", "Goudy Old Style", "Palatino",
   "Book Antiqua", Georgia, serif;
   font-style: italic;
@@ -267,7 +273,7 @@ div.gradient-panel {
 .ftr-links {line-height: 18px; color:#888; font-size:0.9em; }
 .ftr-links a, .ftr-links a:visited, .ftr-copy a {color:#888; }
 .ftr-links a:hover {text-decoration:underline;}
-.ftr-copy { text-align:center; color:#000;}  
+.ftr-copy { text-align:center; color:#000;}
 
 hr.tight {
   margin: 4px 0;
@@ -290,7 +296,7 @@ hr {
 }
 
 
-/* MEDIA stuff 
+/* MEDIA stuff
 *************************************************************************/
 
 @media (max-width: 1040px) {
@@ -302,7 +308,7 @@ hr {
 @media (min-width: 768px) and (max-width: 979px) {
     body {font-size: 80%; line-height: 16px; padding-top:0px; padding-left:0px;padding-right:0px;}
     li.vdivider {display: none !important;}
-    #container-bg {    
+    #container-bg {
     background-color: #f8f8f8;
 	margin:-20px auto 40px auto;
 	max-width:1024px;
@@ -319,9 +325,9 @@ hr {
     .navbar .container { padding: 0 10px;}
     .navbar-fixed-top, .navbar-fixed-bottom {margin-left: 0;margin-right: 0;}
 	div.gradient-panel {width: 49%;min-height:70px;}
-    div.gradient-panel h1 {font-size:130%;}	
-    div.gradient-panel p {font-size:100%;}	
-    #logo-container .logo { width:44%;}    
+    div.gradient-panel h1 {font-size:130%;}
+    div.gradient-panel p {font-size:100%;}
+    #logo-container .logo { width:44%;}
     .lh-top-btn { width:90px;}
     #lh-quote div.well {min-height:290px;}
 }
@@ -329,7 +335,7 @@ hr {
     body {font-size: 90%;line-height: 16px; padding-top:0px; padding-left:0px;padding-right:0px; }
     li.vdivider {display: none !important;}
     .row-fluid > #col2.span3 {width: 98.0%;}
-    #container-bg {    
+    #container-bg {
     background-color: #f8f8f8;
 	margin:-18px auto 40px auto;
 	max-width:1024px;
@@ -342,15 +348,15 @@ hr {
     -moz-border-radius: 0px ;
     border-radius: 0px ;
     padding:10px 5px;
-    }    
+    }
     .navbar-fixed-top, .navbar-fixed-bottom {margin-left: 0;margin-right: 0;}
     .navbar .container { padding: 0 10px;}
-	div.gradient-panel h1 {font-size:120%;}	
+	div.gradient-panel h1 {font-size:120%;}
 	div.gradient-panel p {font-size:90%;}
 	div.gradient-panel {width:100%;min-height:70px;}
 	.lh-top-btn { width:70px;}
-	#logo-container .logo { width:44%;}  
-    .lh-top-btn {width:100px;margin:5px 0px 20px 0px;}	
+	#logo-container .logo { width:44%;}
+    .lh-top-btn {width:100px;margin:5px 0px 20px 0px;}
     .header-home {max-height: 61px; max-width: 180px;margin:0px 0px 5px 1px;}
     div#header div#hdr { margin-left:3px; }
 	#lh-quote div.well {min-height:460px;}
@@ -361,7 +367,7 @@ hr {
 @media (max-width: 480px) {
     body {font-size: 90%;line-height: 16px;padding-top:0px; padding-left:0px;padding-right:0px;}
     li.vdivider {display: none !important;}
-    #container-bg {    
+    #container-bg {
     background-color: #f8f8f8;
 	margin:-18px auto 5px auto;
 	max-width:1024px;
@@ -374,25 +380,25 @@ hr {
     -moz-border-radius: 0px ;
     border-radius: 0px ;
     padding:10px 5px;
-    }    
+    }
     .navbar .container { padding: 0 10px;}
     .navbar-fixed-top, .navbar-fixed-bottom {margin-left: 0;margin-right: 0;}
 	div.box-gradient {width: 100%;min-height:90px; }
 	div.box-gradient h1 {font-size:120%;}
-	div.box-gradient span {font-size:70%;}	
-	.lh-top-btn { width:90px;}	
-	#logo-container .logo { width:95%;}  
+	div.box-gradient span {font-size:70%;}
+	.lh-top-btn { width:90px;}
+	#logo-container .logo { width:95%;}
     .lh-top-btn {width:100px;margin:5px 0px 20px 0px;}
     .header-home {max-height: 61px; max-width: 180px;margin:0px 0px 5px 1px;}
     div#header div#hdr { margin-left:3px; }
     #lh-quote div.well {min-height:730px;}
 }
 
-/* 
+/*
 *************************************************************************/
 
 
-/* SUBNAV is currently not used 
+/* SUBNAV is currently not used
 *
 *.subnav {
 *    background-color: #EEEEEE;
