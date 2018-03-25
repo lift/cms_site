@@ -1,1 +1,1 @@
-{"version": 1.0, "pipeline": [{"docker": "opentelegram/hoisted:latest"}]}
+{"version": 1.0, "pipeline": [{"docker": "shadowfiend/hoisted:latest"}]}
