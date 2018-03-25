@@ -1,0 +1,2329 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Lift Framework 3.2.0 - net.liftweb.proto.Crudify</title>
+          <meta name="description" content="Lift Framework 3.2.0 - net.liftweb.proto.Crudify" />
+          <meta name="keywords" content="Lift Framework 3.2.0 net.liftweb.proto.Crudify" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Lift Framework<span id="doc-version">3.2.0</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.net" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="net"></a><a id="net:net"></a>
+      <span class="permalink">
+      <a href="index.html#net" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">net</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="net.liftweb" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftweb"></a><a id="liftweb:liftweb"></a>
+      <span class="permalink">
+      <a href="../net/index.html#liftweb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">liftweb</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="net">net</a></dd></dl></div>
+    </li><li name="net.liftweb.proto" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="proto"></a><a id="proto:proto"></a>
+      <span class="permalink">
+      <a href="../../net/liftweb/index.html#proto" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html">
+              <span class="name">proto</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="net.liftweb">liftweb</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="" title="This trait automatically adds CRUD (Create, read, update and delete) operations
+to an existing persistence mechanism."></a>
+                        <a href="" title="This trait automatically adds CRUD (Create, read, update and delete) operations
+to an existing persistence mechanism.">
+                          Crudify
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ProtoRules$.html" title="This singleton contains the rules for persistence
+"></a>
+                        <a href="ProtoRules$.html" title="This singleton contains the rules for persistence
+">
+                          ProtoRules
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ProtoUser.html" title="A prototypical user class with abstractions to the underlying storage
+"></a>
+                        <a href="ProtoUser.html" title="A prototypical user class with abstractions to the underlying storage
+">
+                          ProtoUser
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="trait type">
+      <div id="definition">
+        <div class="big-circle trait">t</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="net">net</a>.<a href="../index.html" class="extype" name="net.liftweb">liftweb</a>.<a href="index.html" class="extype" name="net.liftweb.proto">proto</a></p>
+        <h1>Crudify<span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Crudify</span><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This trait automatically adds CRUD (Create, read, update and delete) operations
+to an existing persistence mechanism.
+Various methods can be overridden to
+customize which operations are available to a user and how things are displayed.
+For example, you can disable deletion of entities by overriding deleteMenuLoc to Empty.</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">
+              Known Subclasses
+            </span>
+            <div class="subClasses hiddenContent"><a href="../mapper/CRUDify.html" class="extype" name="net.liftweb.mapper.CRUDify">CRUDify</a>, <a href="../mapper/LongCRUDify.html" class="extype" name="net.liftweb.mapper.LongCRUDify">LongCRUDify</a>, <a href="../squerylrecord/CRUDify.html" class="extype" name="net.liftweb.squerylrecord.CRUDify">CRUDify</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="net.liftweb.proto.Crudify"><span>Crudify</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.proto.Crudify.CrudBridge" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CrudBridgeextendsAnyRef"></a><a id="CrudBridge:CrudBridge"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#CrudBridgeextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="This trait represents a Bridge between TheCrudType
+and the Crudify trait." href="Crudify$CrudBridge.html">
+              <span class="name">CrudBridge</span>
+            </a><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This trait represents a Bridge between TheCrudType
+and the Crudify trait.</p><div class="fullcomment"><div class="comment cmt"><p>This trait represents a Bridge between TheCrudType
+and the Crudify trait.  It's not necessary to mix this
+trait into TheCrudType, but instead provide a mechanism
+for promoting a TheCrudType to CrudBridge
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify.FieldPointerBridge" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FieldPointerBridgeextendsAnyRef"></a><a id="FieldPointerBridge:FieldPointerBridge"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#FieldPointerBridgeextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Crudify$FieldPointerBridge.html">
+              <span class="name">FieldPointerBridge</span>
+            </a><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify.FieldPointerType" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FieldPointerType"></a><a id="FieldPointerType:FieldPointerType"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#FieldPointerType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FieldPointerType</span>
+      </span>
+      
+      <p class="shortcomment cmt">A generic representation of a field.</p><div class="fullcomment"><div class="comment cmt"><p>A generic representation of a field.  For example, this represents the
+abstract &quot;name&quot; field and is used along with an instance of TheCrudType
+to compute the BaseField that is the &quot;name&quot; field on the specific instance
+of TheCrudType
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify.TheCrudType" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TheCrudType"></a><a id="TheCrudType:TheCrudType"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#TheCrudType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TheCrudType</span>
+      </span>
+      
+      <p class="shortcomment cmt">The type of records we're manipulating
+</p>
+    </li></ol>
+            </div>
+
+        <div class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="net.liftweb.proto.Crudify#buildBridge" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="buildBridge(from:Crudify.this.TheCrudType):Crudify.this.CrudBridge"></a><a id="buildBridge(TheCrudType):CrudBridge"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#buildBridge(from:Crudify.this.TheCrudType):Crudify.this.CrudBridge" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildBridge</span><span class="params">(<span name="from">from: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>)</span><span class="result">: <a href="Crudify$CrudBridge.html" class="extype" name="net.liftweb.proto.Crudify.CrudBridge">CrudBridge</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method will instantiate a bridge from TheCrudType so
+that the appropriate logical operations can be performed
+on TheCrudType
+</p><div class="fullcomment"><div class="comment cmt"><p>This method will instantiate a bridge from TheCrudType so
+that the appropriate logical operations can be performed
+on TheCrudType
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#buildFieldBridge" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="buildFieldBridge(from:Crudify.this.FieldPointerType):Crudify.this.FieldPointerBridge"></a><a id="buildFieldBridge(FieldPointerType):FieldPointerBridge"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#buildFieldBridge(from:Crudify.this.FieldPointerType):Crudify.this.FieldPointerBridge" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildFieldBridge</span><span class="params">(<span name="from">from: <a href="#FieldPointerType" class="extmbr" name="net.liftweb.proto.Crudify.FieldPointerType">FieldPointerType</a></span>)</span><span class="result">: <a href="Crudify$FieldPointerBridge.html" class="extype" name="net.liftweb.proto.Crudify.FieldPointerBridge">FieldPointerBridge</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Based on a FieldPointer, build a FieldPointerBridge
+</p><div class="fullcomment"><div class="comment cmt"><p>Based on a FieldPointer, build a FieldPointerBridge
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#calcPrefix" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="calcPrefix:List[String]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#calcPrefix:List[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcPrefix</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">What's the prefix for this CRUD.</p><div class="fullcomment"><div class="comment cmt"><p>What's the prefix for this CRUD.  Typically the table name.
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#computeFieldFromPointer" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="computeFieldFromPointer(instance:Crudify.this.TheCrudType,pointer:Crudify.this.FieldPointerType):net.liftweb.common.Box[net.liftweb.util.BaseField]"></a><a id="computeFieldFromPointer(TheCrudType,FieldPointerType):Box[BaseField]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#computeFieldFromPointer(instance:Crudify.this.TheCrudType,pointer:Crudify.this.FieldPointerType):net.liftweb.common.Box[net.liftweb.util.BaseField]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">computeFieldFromPointer</span><span class="params">(<span name="instance">instance: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>, <span name="pointer">pointer: <a href="#FieldPointerType" class="extmbr" name="net.liftweb.proto.Crudify.FieldPointerType">FieldPointerType</a></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Given an instance of TheCrudType and FieldPointerType, convert
+that to an actual instance of a BaseField on the instance of TheCrudType
+</p><div class="fullcomment"><div class="comment cmt"><p>Given an instance of TheCrudType and FieldPointerType, convert
+that to an actual instance of a BaseField on the instance of TheCrudType
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#create" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="create:Crudify.this.TheCrudType"></a><a id="create:TheCrudType"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#create:Crudify.this.TheCrudType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">create</span><span class="result">: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Vend a new instance of TheCrudType
+</p>
+    </li><li name="net.liftweb.proto.Crudify#fieldsForDisplay" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="fieldsForDisplay:List[Crudify.this.FieldPointerType]"></a><a id="fieldsForDisplay:List[FieldPointerType]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#fieldsForDisplay:List[Crudify.this.FieldPointerType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldsForDisplay</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#FieldPointerType" class="extmbr" name="net.liftweb.proto.Crudify.FieldPointerType">FieldPointerType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">When displaying a record, what fields do we display
+</p>
+    </li><li name="net.liftweb.proto.Crudify#findForList" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="findForList(start:Long,count:Int):List[Crudify.this.TheCrudType]"></a><a id="findForList(Long,Int):List[TheCrudType]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#findForList(start:Long,count:Int):List[Crudify.this.TheCrudType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findForList</span><span class="params">(<span name="start">start: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="count">count: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Given a range, find the records.</p><div class="fullcomment"><div class="comment cmt"><p>Given a range, find the records.  Your implementation of this
+method should enforce ordering (e.g., on primary key).
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#findForParam" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="findForParam(in:String):net.liftweb.common.Box[Crudify.this.TheCrudType]"></a><a id="findForParam(String):Box[TheCrudType]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#findForParam(in:String):net.liftweb.common.Box[Crudify.this.TheCrudType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findForParam</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Given a String that represents the primary key, find an instance of
+TheCrudType
+</p>
+    </li></ol>
+            </div>
+
+        <div class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#CreateItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CreateItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#CreateItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CreateItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#DeleteItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeleteItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#DeleteItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DeleteItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#EditItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EditItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#EditItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">EditItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#ListItems" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ListItems:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#ListItems:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ListItems</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#Prefix" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Prefix:List[String]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#Prefix:List[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Prefix</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#ViewItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ViewItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#ViewItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ViewItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#_createTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_createTemplate:scala.xml.Elem"></a><a id="_createTemplate:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#_createTemplate:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_createTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The core template for creating.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for creating.  Does not include any
+page wrapping.
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#_deleteTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_deleteTemplate:scala.xml.Elem"></a><a id="_deleteTemplate:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#_deleteTemplate:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_deleteTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The core template for deleting.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for deleting.  Does not include any
+page wrapping.
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#_editTemplate" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_editTemplate:scala.xml.Elem"></a><a id="_editTemplate:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#_editTemplate:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_editTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The core template for editing.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for editing.  Does not include any
+page wrapping.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#_showAllTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_showAllTemplate:scala.xml.Elem"></a><a id="_showAllTemplate:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#_showAllTemplate:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_showAllTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The core template for showing record.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for showing record.  Does not include any
+page wrapping
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#_viewTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_viewTemplate:scala.xml.Elem"></a><a id="_viewTemplate:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#_viewTemplate:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">_viewTemplate</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The core template for viewing.</p><div class="fullcomment"><div class="comment cmt"><p>The core template for viewing.  Does not include any
+page wrapping.
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#addlMenuLocParams" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addlMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]"></a><a id="addlMenuLocParams:List[AnyLocParam]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#addlMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addlMenuLocParams</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">If there are any Loc.LocParams that need to be
+added to every menu (e.g., a guard for access control
+of the Crudify screens)
+</p><div class="fullcomment"><div class="comment cmt"><p>If there are any Loc.LocParams that need to be
+added to every menu (e.g., a guard for access control
+of the Crudify screens)
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#calcCreateItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="calcCreateItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#calcCreateItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcCreateItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#calcDeleteItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="calcDeleteItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#calcDeleteItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcDeleteItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#calcEditItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="calcEditItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#calcEditItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcEditItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#calcListItems" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="calcListItems:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#calcListItems:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcListItems</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#calcViewItem" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="calcViewItem:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#calcViewItem:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcViewItem</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#createButton" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createButton:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createButton:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createButton</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#createClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createClass:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createClass:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#createId" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createId:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createId:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#createMenuLoc" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a><a id="createMenuLoc:Box[Menu]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The menu item for creating items (make this &quot;Empty&quot; to disable)
+</p>
+    </li><li name="net.liftweb.proto.Crudify#createMenuLocParams" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]"></a><a id="createMenuLocParams:List[AnyLocParam]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createMenuLocParams</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Override to include new Params for the create menu
+</p>
+    </li><li name="net.liftweb.proto.Crudify#createMenuName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createMenuName:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createMenuName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#createPath" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createPath:List[String]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createPath:List[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createPath</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#createPathString" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createPathString:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createPathString:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#createTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createTemplate():scala.xml.NodeSeq"></a><a id="createTemplate():NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#createTemplate():scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is the template that's used to render the page after the
+optional wrapping of the template in the page wrapper.</p>
+    </li><li name="net.liftweb.proto.Crudify#crudAllNext" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="crudAllNext(first:Long,list:List[Crudify.this.TheCrudType]):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="crudAllNext(Long,List[TheCrudType]):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#crudAllNext(first:Long,list:List[Crudify.this.TheCrudType]):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">crudAllNext</span><span class="params">(<span name="first">first: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="list">list: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a>]</span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to change how the next link is generated
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how the next link is generated
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#crudAllPrev" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="crudAllPrev(first:Long):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="crudAllPrev(Long):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#crudAllPrev(first:Long):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">crudAllPrev</span><span class="params">(<span name="first">first: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to change how the previous link is
+generated
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how the previous link is
+generated
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#crudDoForm" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="crudDoForm(item:Crudify.this.TheCrudType,noticeMsg:String)(in:scala.xml.NodeSeq):scala.xml.NodeSeq"></a><a id="crudDoForm(TheCrudType,String)(NodeSeq):NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#crudDoForm(item:Crudify.this.TheCrudType,noticeMsg:String)(in:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">crudDoForm</span><span class="params">(<span name="item">item: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>, <span name="noticeMsg">noticeMsg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#crudyDelete" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="crudyDelete(item:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="crudyDelete(TheCrudType):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#crudyDelete(item:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">crudyDelete</span><span class="params">(<span name="item">item: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to change how the delete screen is built
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how the delete screen is built
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#deleteButton" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deleteButton:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deleteButton:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteButton</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#deleteClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deleteClass:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deleteClass:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#deleteId" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deleteId:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deleteId:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#deleteMenuLoc" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deleteMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a><a id="deleteMenuLoc:Box[Menu]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deleteMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The menu item for deleting an item (make this &quot;Empty&quot; to disable)
+</p>
+    </li><li name="net.liftweb.proto.Crudify#deleteMenuLocParams" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deleteMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]"></a><a id="deleteMenuLocParams:List[LocParam[TheCrudType]]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deleteMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteMenuLocParams</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[<a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Override to include new Params for the delete menu
+</p>
+    </li><li name="net.liftweb.proto.Crudify#deleteMenuName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deleteMenuName:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deleteMenuName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#deletePath" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deletePath:List[String]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deletePath:List[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deletePath</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#deletePathString" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deletePathString:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deletePathString:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deletePathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#deleteTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="deleteTemplate():scala.xml.NodeSeq"></a><a id="deleteTemplate():NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#deleteTemplate():scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is the template that's used to render the page after the
+optional wrapping of the template in the page wrapper
+</p>
+    </li><li name="net.liftweb.proto.Crudify#displayHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="displayHtml:scala.xml.NodeSeq"></a><a id="displayHtml:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#displayHtml:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#displayName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="displayName:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#displayName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#displayRecord" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayRecord(entry:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="displayRecord(TheCrudType):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#displayRecord(entry:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayRecord</span><span class="params">(<span name="entry">entry: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Customize the display of records for view menu loc
+</p><div class="fullcomment"><div class="comment cmt"><p>Customize the display of records for view menu loc
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#doCrudAll" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doCrudAll:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="doCrudAll:(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#doCrudAll:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doCrudAll</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method if you want to change the behavior
+of displaying records via the crud.all snippet
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method if you want to change the behavior
+of displaying records via the crud.all snippet
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#doCrudAllHeaderItems" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doCrudAllHeaderItems:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="doCrudAllHeaderItems:(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#doCrudAllHeaderItems:scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doCrudAllHeaderItems</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to customize how header items are treated
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to customize how header items are treated
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#doCrudAllRowItem" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doCrudAllRowItem(c:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="doCrudAllRowItem(TheCrudType):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#doCrudAllRowItem(c:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doCrudAllRowItem</span><span class="params">(<span name="c">c: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to customize how a crudAll line is generated
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to customize how a crudAll line is generated
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#doCrudAllRows" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doCrudAllRows(list:List[Crudify.this.TheCrudType]):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="doCrudAllRows(List[TheCrudType]):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#doCrudAllRows(list:List[Crudify.this.TheCrudType]):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doCrudAllRows</span><span class="params">(<span name="list">list: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a>]</span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to determine how all the rows on a crud
+page are displayed
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to determine how all the rows on a crud
+page are displayed
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#doDeleteFields" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doDeleteFields(item:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="doDeleteFields(TheCrudType):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#doDeleteFields(item:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doDeleteFields</span><span class="params">(<span name="item">item: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to change how fields are displayed for delete
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change how fields are displayed for delete
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#doDeleteSubmit" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doDeleteSubmit(item:Crudify.this.TheCrudType,from:String)():Nothing"></a><a id="doDeleteSubmit(TheCrudType,String)():Nothing"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#doDeleteSubmit(item:Crudify.this.TheCrudType,from:String)():Nothing" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doDeleteSubmit</span><span class="params">(<span name="item">item: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>, <span name="from">from: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Nothing" class="extype" target="_top">Nothing</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to change the behavior of deleting an item
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to change the behavior of deleting an item
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#doDisplayRecordRow" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doDisplayRecordRow(entry:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq"></a><a id="doDisplayRecordRow(TheCrudType):(NodeSeq)⇒NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#doDisplayRecordRow(entry:Crudify.this.TheCrudType):scala.xml.NodeSeq=&gt;scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doDisplayRecordRow</span><span class="params">(<span name="entry">entry: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>)</span><span class="result">: (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Customize the display of a row for displayRecord
+</p><div class="fullcomment"><div class="comment cmt"><p>Customize the display of a row for displayRecord
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#editButton" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editButton:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editButton:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editButton</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#editClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editClass:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editClass:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#editErrorClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editErrorClass:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editErrorClass:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editErrorClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#editId" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editId:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editId:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#editMenuLoc" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a><a id="editMenuLoc:Box[Menu]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The menu item for editing an item (make this &quot;Empty&quot; to disable)
+</p>
+    </li><li name="net.liftweb.proto.Crudify#editMenuLocParams" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]"></a><a id="editMenuLocParams:List[LocParam[TheCrudType]]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editMenuLocParams</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[<a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Override to include new Params for the edit menu
+</p>
+    </li><li name="net.liftweb.proto.Crudify#editMenuName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editMenuName:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editMenuName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The String displayed for menu editing
+</p>
+    </li><li name="net.liftweb.proto.Crudify#editPath" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editPath:List[String]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editPath:List[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editPath</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#editPathString" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editPathString:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editPathString:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#editTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editTemplate():scala.xml.NodeSeq"></a><a id="editTemplate():NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#editTemplate():scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is the template that's used to render the page after the
+optional wrapping of the template in the page wrapper
+</p>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#fieldsForEditing" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fieldsForEditing:List[Crudify.this.FieldPointerType]"></a><a id="fieldsForEditing:List[FieldPointerType]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#fieldsForEditing:List[Crudify.this.FieldPointerType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldsForEditing</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#FieldPointerType" class="extmbr" name="net.liftweb.proto.Crudify.FieldPointerType">FieldPointerType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The list of fields to present on a form form editing
+</p>
+    </li><li name="net.liftweb.proto.Crudify#fieldsForList" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fieldsForList:List[Crudify.this.FieldPointerType]"></a><a id="fieldsForList:List[FieldPointerType]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#fieldsForList:List[Crudify.this.FieldPointerType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldsForList</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="#FieldPointerType" class="extmbr" name="net.liftweb.proto.Crudify.FieldPointerType">FieldPointerType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The fields displayed on the list page.</p><div class="fullcomment"><div class="comment cmt"><p>The fields displayed on the list page.  By default all
+the displayed fields, but this list
+can be shortened.
+</p></div></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#listPath" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="listPath:List[String]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#listPath:List[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">listPath</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#listPathString" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="listPathString:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#listPathString:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">listPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#locSnippets" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="locSnippets:net.liftweb.sitemap.Loc.DispatchLocSnippets{valdispatch:PartialFunction[String,scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]}"></a><a id="locSnippets:DispatchLocSnippets{valdispatch:PartialFunction[String,scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#locSnippets:net.liftweb.sitemap.Loc.DispatchLocSnippets{valdispatch:PartialFunction[String,scala.xml.NodeSeq=&gt;scala.xml.NodeSeq]}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">locSnippets</span><span class="result">: <a href="../sitemap/Loc$$DispatchLocSnippets.html" class="extype" name="net.liftweb.sitemap.Loc.DispatchLocSnippets">DispatchLocSnippets</a> { val dispatch: PartialFunction[String,scala.xml.NodeSeq =&gt; scala.xml.NodeSeq] }</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#menus" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="menus:List[net.liftweb.sitemap.Menu]"></a><a id="menus:List[Menu]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#menus:List[net.liftweb.sitemap.Menu]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">menus</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#nextWord" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextWord:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#nextWord:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextWord</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#obscurePrimaryKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="obscurePrimaryKey(in:String):String"></a><a id="obscurePrimaryKey(String):String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#obscurePrimaryKey(in:String):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">obscurePrimaryKey</span><span class="params">(<span name="in">in: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method can be used to obscure the primary key.</p><div class="fullcomment"><div class="comment cmt"><p>This method can be used to obscure the primary key.  This is more secure
+because end users will not have access to the primary key.  This method
+actually does the obfuscation.  You can use Mapper's KeyObfuscator class
+to implement a nice implementation of this method for session-by-session
+obfuscation.<br/><br/></p><p>By default, there's no obfuscation.  Note that if you obfuscate the
+primary key, you need to update the findForParam method to accept
+the obfuscated keys (and translate them back.)
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#obscurePrimaryKey" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="obscurePrimaryKey(in:Crudify.this.TheCrudType):String"></a><a id="obscurePrimaryKey(TheCrudType):String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#obscurePrimaryKey(in:Crudify.this.TheCrudType):String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">obscurePrimaryKey</span><span class="params">(<span name="in">in: <a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method can be used to obscure the primary key.</p><div class="fullcomment"><div class="comment cmt"><p>This method can be used to obscure the primary key.  This is more secure
+because end users will not have access to the primary key.
+</p></div></div>
+    </li><li name="net.liftweb.proto.Crudify#pageWrapper" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pageWrapper(body:scala.xml.NodeSeq):scala.xml.NodeSeq"></a><a id="pageWrapper(NodeSeq):NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#pageWrapper(body:scala.xml.NodeSeq):scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pageWrapper</span><span class="params">(<span name="body">body: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#previousWord" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="previousWord:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#previousWord:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">previousWord</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#referer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="referer:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#referer:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">referer</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#rowsPerPage" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rowsPerPage:Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#rowsPerPage:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rowsPerPage</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">This method defines how many rows are displayed per page.</p><div class="fullcomment"><div class="comment cmt"><p>This method defines how many rows are displayed per page.  By
+default, it's hard coded at 20, but you can make it session specific
+or change the default by overriding this method.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#showAllClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showAllClass:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#showAllClass:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showAllClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#showAllId" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showAllId:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#showAllId:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showAllId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#showAllMenuLoc" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showAllMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a><a id="showAllMenuLoc:Box[Menu]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#showAllMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showAllMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The menu item for listing items (make this &quot;Empty&quot; to disable)
+</p>
+    </li><li name="net.liftweb.proto.Crudify#showAllMenuLocParams" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showAllMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]"></a><a id="showAllMenuLocParams:List[AnyLocParam]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#showAllMenuLocParams:List[net.liftweb.sitemap.Loc.AnyLocParam]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showAllMenuLocParams</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$.html#AnyLocParam=net.liftweb.sitemap.Loc.LocParam[Any]" class="extmbr" name="net.liftweb.sitemap.Loc.AnyLocParam">AnyLocParam</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Override to include new Params for the show all menu
+</p>
+    </li><li name="net.liftweb.proto.Crudify#showAllMenuName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showAllMenuName:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#showAllMenuName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showAllMenuName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#showAllTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showAllTemplate():scala.xml.NodeSeq"></a><a id="showAllTemplate():NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#showAllTemplate():scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">showAllTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is the template that's used to render the page after the
+optional wrapping of the template in the page wrapper
+</p>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#viewClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewClass:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewClass:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewClass</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#viewId" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewId:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewId:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewId</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#viewMenuLoc" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]"></a><a id="viewMenuLoc:Box[Menu]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewMenuLoc:net.liftweb.common.Box[net.liftweb.sitemap.Menu]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewMenuLoc</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../sitemap/Menu.html" class="extype" name="net.liftweb.sitemap.Menu">Menu</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The menu item for viewing an item (make this &quot;Empty&quot; to disable)
+</p>
+    </li><li name="net.liftweb.proto.Crudify#viewMenuLocParams" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]"></a><a id="viewMenuLocParams:List[LocParam[TheCrudType]]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewMenuLocParams:List[net.liftweb.sitemap.Loc.LocParam[Crudify.this.TheCrudType]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewMenuLocParams</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../sitemap/Loc$$LocParam.html" class="extype" name="net.liftweb.sitemap.Loc.LocParam">LocParam</a>[<a href="#TheCrudType" class="extmbr" name="net.liftweb.proto.Crudify.TheCrudType">TheCrudType</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Override to include new Params for the view menu
+</p>
+    </li><li name="net.liftweb.proto.Crudify#viewMenuName" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewMenuName:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewMenuName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewMenuName</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#viewPath" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewPath:List[String]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewPath:List[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewPath</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#viewPathString" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewPathString:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewPathString:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewPathString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.proto.Crudify#viewTemplate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="viewTemplate():scala.xml.NodeSeq"></a><a id="viewTemplate():NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#viewTemplate():scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">viewTemplate</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This is the template that's used to render the page after the
+optional wrapping of the template in the page wrapper
+</p>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.proto.Crudify#wrapNameInRequired" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wrapNameInRequired(fieldName:scala.xml.NodeSeq,required:Boolean):scala.xml.NodeSeq"></a><a id="wrapNameInRequired(NodeSeq,Boolean):NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/proto/Crudify.html#wrapNameInRequired(fieldName:scala.xml.NodeSeq,required:Boolean):scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wrapNameInRequired</span><span class="params">(<span name="fieldName">fieldName: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>, <span name="required">required: <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">As the field names are being displayed for editing, this method
+is called with the XHTML that will be displayed as the field name
+and a flag indicating whether the field is required.</p><div class="fullcomment"><div class="comment cmt"><p>As the field names are being displayed for editing, this method
+is called with the XHTML that will be displayed as the field name
+and a flag indicating whether the field is required.  You
+can wrap the fieldName in a span with a css class indicating that
+the field is required or otherwise do something to update the field
+name indicating to the user that the field is required.  By default
+the method wraps the fieldName in a span with the class attribute set
+to &quot;required_field&quot;.
+</p></div></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.2/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
