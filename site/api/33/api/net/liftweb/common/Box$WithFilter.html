@@ -1,0 +1,757 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Lift Framework 3.3.0-M2 - net.liftweb.common.Box.WithFilter</title>
+          <meta name="description" content="Lift Framework 3.3.0 - M2 - net.liftweb.common.Box.WithFilter" />
+          <meta name="keywords" content="Lift Framework 3.3.0 M2 net.liftweb.common.Box.WithFilter" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Lift Framework<span id="doc-version">3.3.0-M2</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.net" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="net"></a><a id="net:net"></a>
+      <span class="permalink">
+      <a href="index.html#net" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">net</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="net.liftweb" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftweb"></a><a id="liftweb:liftweb"></a>
+      <span class="permalink">
+      <a href="../net/index.html#liftweb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">liftweb</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="net">net</a></dd></dl></div>
+    </li><li name="net.liftweb.common" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="common"></a><a id="common:common"></a>
+      <span class="permalink">
+      <a href="../../net/liftweb/index.html#common" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">common</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="net.liftweb">liftweb</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Box" visbl="pub" class="indented4 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Box[+A]extendsProductwithSerializable"></a><a id="Box[+A]:Box[A]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/index.html#Box[+A]extendsProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The Box class is a container which is able to declare if it is Full (containing a single non-null value) or EmptyBox." href="Box.html"><span class="name">Box</span></a><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The <code>Box</code> class is a container which is able to declare if it is <code>Full</code>
+(containing a single non-null value) or <code><a href="EmptyBox.html" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a></code>.</p><div class="fullcomment"><div class="comment cmt"><p>The <code>Box</code> class is a container which is able to declare if it is <code>Full</code>
+(containing a single non-null value) or <code><a href="EmptyBox.html" class="extype" name="net.liftweb.common.EmptyBox">EmptyBox</a></code>. An <code>EmptyBox</code>,
+or empty, can be the <code><a href="Empty$.html" class="extype" name="net.liftweb.common.Empty">Empty</a></code> singleton, <code><a href="Failure.html" class="extype" name="net.liftweb.common.Failure">Failure</a></code> or
+<code><a href="ParamFailure.html" class="extype" name="net.liftweb.common.ParamFailure">ParamFailure</a></code>. <code>Failure</code> and <code>ParamFailure</code> contain information about
+why the <code>Box</code> is empty including exception information, possibly chained
+<code>Failure</code>s and a <code>String</code> message.</p><p>This serves a similar purpose to the <code><a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html" class="extype" name="scala.Option">Option</a></code> class from
+Scala standard library but adds several features:</p><ul><li>You can transform it to a <code>Failure</code> object if it is <code>Empty</code> (with the
+   <code><a href="Box.html#?~(msg:=&gt;String):net.liftweb.common.Box[A]" class="extmbr" name="net.liftweb.common.Box#?~">?~</a></code> or <code><a href="Box.html#failMsg(msg:=&gt;String):net.liftweb.common.Box[A]" class="extmbr" name="net.liftweb.common.Box#failMsg">failMsg</a></code> method).</li><li>You can chain failure messages on <code>Failure</code>s (with the <code>?~!</code> or
+   <code><a href="Box.html#compoundFailMsg(msg:=&gt;String):net.liftweb.common.Box[A]" class="extmbr" name="net.liftweb.common.Box#compoundFailMsg">compoundFailMsg</a></code> method).</li><li>You can &quot;run&quot; a function on a <code>Box</code>, with a default to return if the box
+   is <code>Empty</code>:</li></ul><pre><span class="kw">val</span> littleTeddyBears: Box[<span class="std">Int</span>] = Full(<span class="num">10</span>)
+littleTeddyBears.run(<span class="lit">"and then there were none"</span>) { (default: <span class="std">String</span>, teddyBears: <span class="std">Int</span>) <span class="kw">=&gt;</span>
+  s<span class="lit">"$teddyBears little teddy bears"</span>
+} <span class="cmt">// => 10 little teddy bears</span>
+
+<span class="kw">val</span> updatedTeddyBears: Box[<span class="std">Int</span>] = Empty
+littleTeddyBears.run(<span class="lit">"and then there were none"</span>) { (default: <span class="std">String</span>, teddyBears: <span class="std">Int</span>) <span class="kw">=&gt;</span>
+  s<span class="lit">"$teddyBears little teddy bears"</span>
+} <span class="cmt">// => and then there were none</span></pre><ul><li>You can &quot;pass&quot; a <code>Box</code> to a function for side effects:</li></ul><pre><span class="kw">val</span> littleTeddyBears: Box[<span class="std">Int</span>] = Full(<span class="num">10</span>)
+
+doSomething(
+  littleTeddyBears $ { teddyBears: Box[<span class="std">Int</span>] <span class="kw">=&gt;</span>
+    println(<span class="lit">"Are there any?"</span>)
+    println(teddyBears openOr <span class="num">0</span>)
+  }
+) <span class="cmt">// doSomething gets a Box[Int] as well</span></pre><h5> Exceptions and Empty Box Handling </h5><p>If you grew up on Java, you're used to <code>Exception</code>s as part of your program
+logic.  The Scala philosophy and the Lift philosophy is that exceptions are
+for exceptional conditions such as failure of an external resource (e.g.,
+your database goes offline) rather than simply indicating that a parameter
+wasn't supplied or couldn't be parsed.</p><p>Lift's <code>Box</code> and Scala's <code>Option</code> provide mechanisms for being explicit
+about a value existing or not existing rather than relying on a reference
+being not-null.  However, extracting a value from a <code>Box</code> should be done
+correctly. Available options are:</p><ul><li>Using a <code>for</code> comprehension, especially for multiple boxes:</li></ul><pre><span class="kw">val</span> loggedInUser: Box[User] =
+  <span class="kw">for</span> {
+    username <span class="kw">&lt;-</span> possibleUsername
+    password <span class="kw">&lt;-</span> possiblePassword
+    user <span class="kw">&lt;-</span> User.find(<span class="lit">"username"</span> -&gt; username)
+    <span class="kw">if</span> User.checkPassword(password, user.password)
+  } <span class="kw">yield</span> {
+    user
+  }</pre><ul><li>Using <code>map</code>, <code>flatMap</code>, <code>filter</code>, and <code>foreach</code> (<code>for</code> comprehensions
+   use these under the covers):</li></ul><pre><span class="kw">val</span> fullName: Box[<span class="std">String</span>] =
+  loggedInUser.map { user <span class="kw">=&gt;</span>
+    user.name + <span class="lit">" ("</span> + user.nickname + <span class="lit">")"</span>
+  }
+<span class="kw">val</span> bestFriend: Box[User] =
+  loggedInUser.flatMap { user <span class="kw">=&gt;</span>
+    UserFriends.find(user.bestFriend.id)
+  }
+<span class="kw">val</span> allowedUser: Box[User] =
+  loggedInUser.filter(_.canAccess_?(currentPage))
+
+fullName.foreach { name <span class="kw">=&gt;</span>
+  logger.info(s<span class="lit">"User $name is in the building."</span>)
+}</pre><ul><li>Using pattern-matching (a good way to deal with <code>Failure</code>s):</li></ul><pre><span class="kw">val</span> loginMessage: <span class="std">String</span> =
+  loggedInUser <span class="kw">match</span> {
+    <span class="kw">case</span> Full(user) <span class="kw">=&gt;</span>
+      <span class="lit">"Login successful!"</span>
+    <span class="kw">case</span> Failure(message, _, _) <span class="kw">=&gt;</span>
+      s<span class="lit">"Login failed: $message"</span>
+    <span class="kw">case</span> Empty <span class="kw">=&gt;</span>
+      s<span class="lit">"Unknown failure logging in."</span>
+  }</pre><ul><li>For comparisons (e.g., in tests), use <code>==</code> and <code>===</code>:</li></ul><pre>loggedInUser must_== Full(mockUser)
+(loggedInUser === mockUser) must beTrue</pre></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.common">common</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="" title="Makes Box play better with Scala for comprehensions."></a>
+                        <a href="" title="Makes Box play better with Scala for comprehensions.">WithFilter</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <div class="big-circle class">c</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="net">net</a>.<a href="../index.html" class="extype" name="net.liftweb">liftweb</a>.<a href="index.html" class="extype" name="net.liftweb.common">common</a>.<a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a></p>
+        <h1>WithFilter<span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">WithFilter</span><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Makes <code>Box</code> play better with Scala <code>for</code> comprehensions.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="net.liftweb.common.Box.WithFilter"><span>WithFilter</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="net.liftweb.common.Box.WithFilter#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(p:A=&gt;Boolean):Box.this.WithFilter"></a><a id="&lt;init&gt;:WithFilter"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#&lt;init&gt;(p:A=&gt;Boolean):Box.this.WithFilter" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">WithFilter</span><span class="params">(<span name="p">p: (<span class="extype" name="net.liftweb.common.Box.A">A</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.common.Box.WithFilter#flatMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="flatMap[B](f:A=&gt;net.liftweb.common.Box[B]):net.liftweb.common.Box[B]"></a><a id="flatMap[B]((A)⇒Box[B]):Box[B]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#flatMap[B](f:A=&gt;net.liftweb.common.Box[B]):net.liftweb.common.Box[B]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.common.Box.A">A</span>) ⇒ <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.WithFilter.flatMap.B">B</span>]</span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.WithFilter.flatMap.B">B</span>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.common.Box.WithFilter#foreach" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="foreach[U](f:A=&gt;U):Unit"></a><a id="foreach[U]((A)⇒U):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#foreach[U](f:A=&gt;U):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">foreach</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.common.Box.A">A</span>) ⇒ <span class="extype" name="net.liftweb.common.Box.WithFilter.foreach.U">U</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.common.Box.WithFilter#map" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="map[B](f:A=&gt;B):net.liftweb.common.Box[B]"></a><a id="map[B]((A)⇒B):Box[B]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#map[B](f:A=&gt;B):net.liftweb.common.Box[B]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.common.Box.A">A</span>) ⇒ <span class="extype" name="net.liftweb.common.Box.WithFilter.map.B">B</span></span>)</span><span class="result">: <a href="Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.common.Box.WithFilter.map.B">B</span>]</span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.common.Box.WithFilter#withFilter" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withFilter(q:A=&gt;Boolean):Box.this.WithFilter"></a><a id="withFilter((A)⇒Boolean):WithFilter"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/common/Box$WithFilter.html#withFilter(q:A=&gt;Boolean):Box.this.WithFilter" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withFilter</span><span class="params">(<span name="q">q: (<span class="extype" name="net.liftweb.common.Box.A">A</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="" class="extype" name="net.liftweb.common.Box.WithFilter">WithFilter</a></span>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

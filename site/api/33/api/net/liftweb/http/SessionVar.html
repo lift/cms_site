@@ -1,0 +1,2287 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Lift Framework 3.3.0-M2 - net.liftweb.http.SessionVar</title>
+          <meta name="description" content="Lift Framework 3.3.0 - M2 - net.liftweb.http.SessionVar" />
+          <meta name="keywords" content="Lift Framework 3.3.0 M2 net.liftweb.http.SessionVar" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Lift Framework<span id="doc-version">3.3.0-M2</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.net" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="net"></a><a id="net:net"></a>
+      <span class="permalink">
+      <a href="index.html#net" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">net</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="net.liftweb" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftweb"></a><a id="liftweb:liftweb"></a>
+      <span class="permalink">
+      <a href="../net/index.html#liftweb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">liftweb</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="net">net</a></dd></dl></div>
+    </li><li name="net.liftweb.http" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="http"></a><a id="http:http"></a>
+      <span class="permalink">
+      <a href="../../net/liftweb/index.html#http" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">http</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="net.liftweb">liftweb</a></dd></dl></div>
+    </li><li name="net.liftweb.http.auth" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="auth"></a><a id="auth:auth"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/index.html#auth" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="auth/index.html"><span class="name">auth</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.http">http</a></dd></dl></div>
+    </li><li name="net.liftweb.http.js" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="js"></a><a id="js:js"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/index.html#js" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="js/index.html"><span class="name">js</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.http">http</a></dd></dl></div>
+    </li><li name="net.liftweb.http.provider" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="provider"></a><a id="provider:provider"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/index.html#provider" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="provider/index.html"><span class="name">provider</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.http">http</a></dd></dl></div>
+    </li><li name="net.liftweb.http.rest" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="rest"></a><a id="rest:rest"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/index.html#rest" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="rest/index.html"><span class="name">rest</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.http">http</a></dd></dl></div>
+    </li><li name="net.liftweb.http.testing" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="testing"></a><a id="testing:testing"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/index.html#testing" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="testing/index.html"><span class="name">testing</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.http">http</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="AbstractScreen.html" title="The trait that forms the basis for LiftScreen and the Screen instances in Wizard"></a>
+                        <a href="AbstractScreen.html" title="The trait that forms the basis for LiftScreen and the Screen instances in Wizard">AbstractScreen</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AcceptedResponse.html" title="202 response but without body."></a>
+                        <a href="AcceptedResponse.html" title="202 response but without body.">AcceptedResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ActionMessageSet.html" title=""></a>
+                        <a href="ActionMessageSet.html" title="">ActionMessageSet</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AddAListener$.html" title=""></a>
+                        <a class="class" href="AddAListener.html" title="This is a message class for use with ListenerManager and CometListener instances."></a>
+                        <a href="AddAListener.html" title="This is a message class for use with ListenerManager and CometListener instances.">AddAListener</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="AjaxContext$.html" title=""></a>
+                        <a class="class" href="AjaxContext.html" title=""></a>
+                        <a href="AjaxContext.html" title="">AjaxContext</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AjaxType$.html" title=""></a>
+                        <a href="AjaxType$.html" title="">AjaxType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AnswerQuestion.html" title=""></a>
+                        <a href="AnswerQuestion.html" title="">AnswerQuestion</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AnswerRender.html" title=""></a>
+                        <a href="AnswerRender.html" title="">AnswerRender</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AnyVar$.html" title=""></a>
+                        <a href="AnyVar$.html" title="">AnyVar</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AppXmlResponse$.html" title=""></a>
+                        <a href="AppXmlResponse$.html" title="">AppXmlResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AskQuestion.html" title=""></a>
+                        <a href="AskQuestion.html" title="">AskQuestion</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="AskRender$.html" title=""></a>
+                        <a href="AskRender$.html" title="">AskRender</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AtomCategoryResponse.html" title="Returning an Atom category document."></a>
+                        <a href="AtomCategoryResponse.html" title="Returning an Atom category document.">AtomCategoryResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AtomCreatedResponse.html" title="The Atom entity was successfully created and is shown to the client."></a>
+                        <a href="AtomCreatedResponse.html" title="The Atom entity was successfully created and is shown to the client.">AtomCreatedResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AtomResponse.html" title="Returning an Atom document."></a>
+                        <a href="AtomResponse.html" title="Returning an Atom document.">AtomResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="AtomServiceResponse.html" title="Returning an Atom Service Document."></a>
+                        <a href="AtomServiceResponse.html" title="Returning an Atom Service Document.">AtomServiceResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BadGatewayResponse.html" title="502 Bad Gateway"></a>
+                        <a href="BadGatewayResponse.html" title="502 Bad Gateway">BadGatewayResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BadRequestResponse.html" title="400 Bad Request"></a>
+                        <a href="BadRequestResponse.html" title="400 Bad Request">BadRequestResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="BadResponse$.html" title=""></a>
+                        <a href="BadResponse$.html" title="">BadResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="BaseCometActor.html" title="Takes care of the plumbing for building Comet-based Web Apps"></a>
+                        <a href="BaseCometActor.html" title="Takes care of the plumbing for building Comet-based Web Apps">BaseCometActor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="BasicResponse.html" title=""></a>
+                        <a href="BasicResponse.html" title="">BasicResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Bindings$.html" title="A collection of types and implicit transformations used to allow composition of page elements based upon the types of rendered objects."></a>
+                        <a href="Bindings$.html" title="A collection of types and implicit transformations used to allow composition of page elements based upon the types of rendered objects.">Bindings</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="BlankStatelessBehavior.html" title="A &quot;default&quot; implementation of StatelessBehavior."></a>
+                        <a href="BlankStatelessBehavior.html" title="A &quot;default&quot; implementation of StatelessBehavior.">BlankStatelessBehavior</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BodyOrInputStream.html" title="Holds either the body or the request input stream, depending on which was requested first"></a>
+                        <a href="BodyOrInputStream.html" title="Holds either the body or the request input stream, depending on which was requested first">BodyOrInputStream</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="BooleanField.html" title=""></a>
+                        <a href="BooleanField.html" title="">BooleanField</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Bootable.html" title=""></a>
+                        <a href="Bootable.html" title="">Bootable</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="BreakOut.html" title=""></a>
+                        <a href="BreakOut.html" title="">BreakOut</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CSSResponse$.html" title=""></a>
+                        <a class="class" href="CSSResponse.html" title=""></a>
+                        <a href="CSSResponse.html" title="">CSSResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CVP.html" title=""></a>
+                        <a href="CVP.html" title="">CVP</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CleanRequestVarOnSessionTransition.html" title=""></a>
+                        <a href="CleanRequestVarOnSessionTransition.html" title="">CleanRequestVarOnSessionTransition</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ClearNotices$.html" title=""></a>
+                        <a href="ClearNotices$.html" title="">ClearNotices</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CometActor.html" title=""></a>
+                        <a href="CometActor.html" title="">CometActor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CometActorJ.html" title="Subclass from this class if you're in Java-land and want a CometActor"></a>
+                        <a href="CometActorJ.html" title="Subclass from this class if you're in Java-land and want a CometActor">CometActorJ</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CometActorJWithCometListener.html" title="Subclass from this class if you want a CometActorJ with CometListeners"></a>
+                        <a href="CometActorJWithCometListener.html" title="Subclass from this class if you want a CometActorJ with CometListeners">CometActorJWithCometListener</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CometCreationInfo.html" title="A case class that contains the information necessary to set up a CometActor"></a>
+                        <a href="CometCreationInfo.html" title="A case class that contains the information necessary to set up a CometActor">CometCreationInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CometListener.html" title="This trait adds functionality to automatically register with a given Actor using AddAListener and RemoveAListener control messages."></a>
+                        <a href="CometListener.html" title="This trait adds functionality to automatically register with a given Actor using AddAListener and RemoveAListener control messages.">CometListener</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CometMessage.html" title=""></a>
+                        <a href="CometMessage.html" title="">CometMessage</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="CometName.html" title=""></a>
+                        <a href="CometName.html" title="">CometName</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CometState.html" title=""></a>
+                        <a href="CometState.html" title="">CometState</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="CometStateWithUpdate.html" title=""></a>
+                        <a href="CometStateWithUpdate.html" title="">CometStateWithUpdate</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CometVersionPair$.html" title=""></a>
+                        <a class="trait" href="CometVersionPair.html" title="Holds the Comet identification information"></a>
+                        <a href="CometVersionPair.html" title="Holds the Comet identification information">CometVersionPair</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContainerSerializer$.html" title=""></a>
+                        <a class="trait" href="ContainerSerializer.html" title="A trait that provides *actual* serialization of a type so that the type can be stored into a container's session and be migrated across servers"></a>
+                        <a href="ContainerSerializer.html" title="A trait that provides *actual* serialization of a type so that the type can be stored into a container's session and be migrated across servers">ContainerSerializer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ContainerVar.html" title="A typesafe container for data with a lifetime nominally equivalent to the lifetime of HttpSession attributes."></a>
+                        <a href="ContainerVar.html" title="A typesafe container for data with a lifetime nominally equivalent to the lifetime of HttpSession attributes.">ContainerVar</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContentParser$.html" title=""></a>
+                        <a class="trait" href="ContentParser.html" title="Objects which can parse content should implement this trait."></a>
+                        <a href="ContentParser.html" title="Objects which can parse content should implement this trait.">ContentParser</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContentSecurityPolicy$.html" title=""></a>
+                        <a class="class" href="ContentSecurityPolicy.html" title="Specifies a Content-Security-Policy for this site."></a>
+                        <a href="ContentSecurityPolicy.html" title="Specifies a Content-Security-Policy for this site.">ContentSecurityPolicy</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContentSecurityPolicyViolation$.html" title=""></a>
+                        <a class="class" href="ContentSecurityPolicyViolation.html" title="The expected payload of a content security policy violation report."></a>
+                        <a href="ContentSecurityPolicyViolation.html" title="The expected payload of a content security policy violation report.">ContentSecurityPolicyViolation</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContentSourceRestriction$.html" title=""></a>
+                        <a class="trait" href="ContentSourceRestriction.html" title="Base trait for content source restrictions."></a>
+                        <a href="ContentSourceRestriction.html" title="Base trait for content source restrictions.">ContentSourceRestriction</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContentType$.html" title="The ContentType companion object that has helper methods for parsing Accept headers and other things that contain multiple ContentType information."></a>
+                        <a class="class" href="ContentType.html" title="Holds information about the content type and subtype including the q parameter and extension information."></a>
+                        <a href="ContentType.html" title="Holds information about the content type and subtype including the q parameter and extension information.">ContentType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ContinueResponseException$.html" title=""></a>
+                        <a class="class" href="ContinueResponseException.html" title="This exception is used by LiftSession.destroySessionAndContinueInNewSession to unwind the stack so that the session can be destroyed and a new session can be created and have the balance of the continuation executed in the context of the new session."></a>
+                        <a href="ContinueResponseException.html" title="This exception is used by LiftSession.destroySessionAndContinueInNewSession to unwind the stack so that the session can be destroyed and a new session can be created and have the balance of the continuation executed in the context of the new session.">ContinueResponseException</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="CreatedResponse$.html" title="201 Created Response"></a>
+                        <a class="class" href="CreatedResponse.html" title="201 Created Response"></a>
+                        <a href="CreatedResponse.html" title="201 Created Response">CreatedResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CurrentCometActor$.html" title=""></a>
+                        <a href="CurrentCometActor$.html" title="">CurrentCometActor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CurrentHTTPReqResp$.html" title="A ThreadGlobal containing the low-level HTTPRequest and HTTPResponse instances Set very, very early."></a>
+                        <a href="CurrentHTTPReqResp$.html" title="A ThreadGlobal containing the low-level HTTPRequest and HTTPResponse instances Set very, very early.">CurrentHTTPReqResp</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="CurrentReq$.html" title="A Thread-global containing the current Req."></a>
+                        <a href="CurrentReq$.html" title="A Thread-global containing the current Req.">CurrentReq</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="DataAttributeProcessorAnswer$.html" title="The companion object that has the implicit conversions"></a>
+                        <a class="trait" href="DataAttributeProcessorAnswer.html" title="Sometimes we're going to have to surface more data from one of these requests than we might like (for example, extra info about continuing the computation on a different thread), so we'll start off right by having an Answer trait that will have some subclasses and implicit conversions"></a>
+                        <a href="DataAttributeProcessorAnswer.html" title="Sometimes we're going to have to surface more data from one of these requests than we might like (for example, extra info about continuing the computation on a different thread), so we'll start off right by having an Answer trait that will have some subclasses and implicit conversions">DataAttributeProcessorAnswer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="DataAttributeProcessorAnswerFork.html" title="A function that returns a bunch of nodes..."></a>
+                        <a href="DataAttributeProcessorAnswerFork.html" title="A function that returns a bunch of nodes...">DataAttributeProcessorAnswerFork</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="DataAttributeProcessorAnswerFuture.html" title="A future that returns nodes..."></a>
+                        <a href="DataAttributeProcessorAnswerFuture.html" title="A future that returns nodes...">DataAttributeProcessorAnswerFuture</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="DataAttributeProcessorAnswerNodes.html" title="Yep..."></a>
+                        <a href="DataAttributeProcessorAnswerNodes.html" title="Yep...">DataAttributeProcessorAnswerNodes</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DefaultNotFound$.html" title=""></a>
+                        <a href="DefaultNotFound$.html" title="">DefaultNotFound</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DefaultRoutines$.html" title="Many routines in Lift can be customized in LiftRules, but have default behaviors."></a>
+                        <a href="DefaultRoutines$.html" title="Many routines in Lift can be customized in LiftRules, but have default behaviors.">DefaultRoutines</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DeleteRequest$.html" title=""></a>
+                        <a href="DeleteRequest$.html" title="">DeleteRequest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Delta.html" title=""></a>
+                        <a href="Delta.html" title="">Delta</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DeltaTrait.html" title=""></a>
+                        <a href="DeltaTrait.html" title="">DeltaTrait</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="DispatchSnippet.html" title=""></a>
+                        <a href="DispatchSnippet.html" title="">DispatchSnippet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DoRedirectResponse$.html" title=""></a>
+                        <a href="DoRedirectResponse$.html" title="">DoRedirectResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="DocType$.html" title="Stock XHTML doctypes available to the lift programmer."></a>
+                        <a href="DocType$.html" title="Stock XHTML doctypes available to the lift programmer.">DocType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Error$.html" title=""></a>
+                        <a class="class" href="Error.html" title=""></a>
+                        <a href="Error.html" title="">Error</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Factory.html" title="A base trait for a Factory."></a>
+                        <a href="Factory.html" title="A base trait for a Factory.">Factory</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FieldBinding$.html" title=""></a>
+                        <a class="class" href="FieldBinding.html" title=""></a>
+                        <a href="FieldBinding.html" title="">FieldBinding</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FileParamHolder$.html" title=""></a>
+                        <a class="class" href="FileParamHolder.html" title="A FileParamHolder contains a file uploaded via a multipart form."></a>
+                        <a href="FileParamHolder.html" title="A FileParamHolder contains a file uploaded via a multipart form.">FileParamHolder</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ForbiddenResponse$.html" title=""></a>
+                        <a class="class" href="ForbiddenResponse.html" title="403 Forbidden"></a>
+                        <a href="ForbiddenResponse.html" title="403 Forbidden">ForbiddenResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="FormVendor.html" title=""></a>
+                        <a href="FormVendor.html" title="">FormVendor</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="FrameRestrictions$.html" title=""></a>
+                        <a class="trait" href="FrameRestrictions.html" title="Defines restrictions on allowing served pages to be embedded in frames."></a>
+                        <a href="FrameRestrictions.html" title="Defines restrictions on allowing served pages to be embedded in frames.">FrameRestrictions</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="FutureWithSession$.html" title=""></a>
+                        <a href="FutureWithSession$.html" title="">FutureWithSession</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="GUIDJsExp$.html" title="The companion object for GUIDJsExp that does helpful implicit conversions."></a>
+                        <a class="class" href="GUIDJsExp.html" title="A long time ago, Lift was going to track every function/GUID combination vended to a web page with extreme granularity."></a>
+                        <a href="GUIDJsExp.html" title="A long time ago, Lift was going to track every function/GUID combination vended to a web page with extreme granularity.">GUIDJsExp</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="GeneralSourceRestriction.html" title=""></a>
+                        <a href="GeneralSourceRestriction.html" title="">GeneralSourceRestriction</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="GenericValidator.html" title=""></a>
+                        <a href="GenericValidator.html" title="">GenericValidator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="GetRequest$.html" title=""></a>
+                        <a href="GetRequest$.html" title="">GetRequest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="GoneResponse.html" title="410 Resource Gone"></a>
+                        <a href="GoneResponse.html" title="410 Resource Gone">GoneResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="HandledRoundTrip.html" title=""></a>
+                        <a href="HandledRoundTrip.html" title="">HandledRoundTrip</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="HeadRequest$.html" title=""></a>
+                        <a href="HeadRequest$.html" title="">HeadRequest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="HeaderDefaults.html" title=""></a>
+                        <a href="HeaderDefaults.html" title="">HeaderDefaults</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="HowStateful.html" title="A trait defining how stateful the session is"></a>
+                        <a href="HowStateful.html" title="A trait defining how stateful the session is">HowStateful</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Html5ElemAttr$.html" title=""></a>
+                        <a href="Html5ElemAttr$.html" title="">Html5ElemAttr</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Html5Properties.html" title="If you're going to use HTML5, then this is the set of properties to use"></a>
+                        <a href="Html5Properties.html" title="If you're going to use HTML5, then this is the set of properties to use">Html5Properties</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="HtmlProperties.html" title="This trait encapsulates the various choices related to parsing and emitting HTML/XHTML"></a>
+                        <a href="HtmlProperties.html" title="This trait encapsulates the various choices related to parsing and emitting HTML/XHTML">HtmlProperties</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="HttpsRules$.html" title=""></a>
+                        <a class="class" href="HttpsRules.html" title="Rules for HTTPS usage by a Lift application."></a>
+                        <a href="HttpsRules.html" title="Rules for HTTPS usage by a Lift application.">HttpsRules</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="IdMemoizeTransform.html" title="A mechanism to memoize a transformation and then re-use the most recent html and ID to redraw the content or even use an Ajax call to update the content"></a>
+                        <a href="IdMemoizeTransform.html" title="A mechanism to memoize a transformation and then re-use the most recent html and ID to redraw the content or even use an Ajax call to update the content">IdMemoizeTransform</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InMemFileParamHolder.html" title="This FileParamHolder stores the uploaded file directly into memory."></a>
+                        <a href="InMemFileParamHolder.html" title="This FileParamHolder stores the uploaded file directly into memory.">InMemFileParamHolder</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InMemoryResponse.html" title=""></a>
+                        <a href="InMemoryResponse.html" title="">InMemoryResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="InsecureLiftView.html" title="If a class is to be used as a lift view (rendering from code rather than a static template) and the method names are to be used as &quot;actions&quot;, the view must be marked as &quot;InsecureLiftView&quot; because there exists the ability to execute arbitrary methods based on wire content"></a>
+                        <a href="InsecureLiftView.html" title="If a class is to be used as a lift view (rendering from code rather than a static template) and the method names are to be used as &quot;actions&quot;, the view must be marked as &quot;InsecureLiftView&quot; because there exists the ability to execute arbitrary methods based on wire content">InsecureLiftView</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="IntField.html" title=""></a>
+                        <a href="IntField.html" title="">IntField</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="InternalServerErrorResponse.html" title="500 Internal Server Error"></a>
+                        <a href="InternalServerErrorResponse.html" title="500 Internal Server Error">InternalServerErrorResponse</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="JavaScriptResponse$.html" title=""></a>
+                        <a class="class" href="JavaScriptResponse.html" title="Impersonates a HTTP response having Content-Type = text/javascript"></a>
+                        <a href="JavaScriptResponse.html" title="Impersonates a HTTP response having Content-Type = text/javascript">JavaScriptResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="JavaScriptSourceRestriction.html" title="Marker trait for restrictions that only apply to JavaScript."></a>
+                        <a href="JavaScriptSourceRestriction.html" title="Marker trait for restrictions that only apply to JavaScript.">JavaScriptSourceRestriction</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="JsContext.html" title=""></a>
+                        <a href="JsContext.html" title="">JsContext</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="JsDelta.html" title=""></a>
+                        <a href="JsDelta.html" title="">JsDelta</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="JsonContext.html" title=""></a>
+                        <a href="JsonContext.html" title="">JsonContext</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="JsonResponse$.html" title=""></a>
+                        <a class="class" href="JsonResponse.html" title=""></a>
+                        <a href="JsonResponse.html" title="">JsonResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LAFutureWithSession$.html" title=""></a>
+                        <a href="LAFutureWithSession$.html" title="">LAFutureWithSession</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LiftActorJWithListenerManager.html" title="A LiftActorJ with ListenerManager."></a>
+                        <a href="LiftActorJWithListenerManager.html" title="A LiftActorJ with ListenerManager.">LiftActorJWithListenerManager</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LiftCometActor.html" title=""></a>
+                        <a href="LiftCometActor.html" title="">LiftCometActor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LiftFilter.html" title=""></a>
+                        <a href="LiftFilter.html" title="">LiftFilter</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LiftResponse.html" title=""></a>
+                        <a href="LiftResponse.html" title="">LiftResponse</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LiftRules$.html" title="The Lift configuration singleton"></a>
+                        <a class="class" href="LiftRules.html" title="LiftRules is the global object that holds all of Lift's configuration."></a>
+                        <a href="LiftRules.html" title="LiftRules is the global object that holds all of Lift's configuration.">LiftRules</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LiftRulesGuardedSetting$.html" title=""></a>
+                        <a class="class" href="LiftRulesGuardedSetting.html" title="This class encapsulates a mutable LiftRules setting which guards its value against changes which can produce unexpected results in a Lift application."></a>
+                        <a href="LiftRulesGuardedSetting.html" title="This class encapsulates a mutable LiftRules setting which guards its value against changes which can produce unexpected results in a Lift application.">LiftRulesGuardedSetting</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LiftRulesJ.html" title=""></a>
+                        <a href="LiftRulesJ.html" title="">LiftRulesJ</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LiftRulesJBridge.html" title=""></a>
+                        <a href="LiftRulesJBridge.html" title="">LiftRulesJBridge</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LiftRulesMocker$.html" title=""></a>
+                        <a class="trait" href="LiftRulesMocker.html" title=""></a>
+                        <a href="LiftRulesMocker.html" title="">LiftRulesMocker</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LiftScreen.html" title=""></a>
+                        <a href="LiftScreen.html" title="">LiftScreen</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LiftScreenRules$.html" title=""></a>
+                        <a href="LiftScreenRules$.html" title="">LiftScreenRules</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="LiftServlet.html" title=""></a>
+                        <a href="LiftServlet.html" title="">LiftServlet</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="LiftSession$.html" title=""></a>
+                        <a class="class" href="LiftSession.html" title="The LiftSession class containing the session state information"></a>
+                        <a href="LiftSession.html" title="The LiftSession class containing the session state information">LiftSession</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="LiftView.html" title="The preferred way to do lift views..."></a>
+                        <a href="LiftView.html" title="The preferred way to do lift views...">LiftView</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Listen.html" title=""></a>
+                        <a href="Listen.html" title="">Listen</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ListenerId.html" title=""></a>
+                        <a href="ListenerId.html" title="">ListenerId</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ListenerManager$.html" title=""></a>
+                        <a class="trait" href="ListenerManager.html" title="This trait manages a set of Actors in a publish/subscribe pattern."></a>
+                        <a href="ListenerManager.html" title="This trait manages a set of Actors in a publish/subscribe pattern.">ListenerManager</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="LoggingSnippetTimer$.html" title="A SnippetTimer that logs its timings to the console."></a>
+                        <a href="LoggingSnippetTimer$.html" title="A SnippetTimer that logs its timings to the console.">LoggingSnippetTimer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MVCHelper.html" title="Mix this trait into a class to provide support for MVC style coding."></a>
+                        <a href="MVCHelper.html" title="Mix this trait into a class to provide support for MVC style coding.">MVCHelper</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MemoizeTransform.html" title="Memoize the CSS Selector Transform and the most recent NodeSeq sent to the NodeSeq =&gt; NodeSeq so that when applyAgain() is called, the NodeSeq most recently used in apply() is used."></a>
+                        <a href="MemoizeTransform.html" title="Memoize the CSS Selector Transform and the most recent NodeSeq sent to the NodeSeq =&gt; NodeSeq so that when applyAgain() is called, the NodeSeq most recently used in apply() is used.">MemoizeTransform</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MessageCometActor.html" title=""></a>
+                        <a href="MessageCometActor.html" title="">MessageCometActor</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="MessageState$.html" title=""></a>
+                        <a class="class" href="MessageState.html" title=""></a>
+                        <a href="MessageState.html" title="">MessageState</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="MethodNotAllowedResponse.html" title="405 Method Not Allowed"></a>
+                        <a href="MethodNotAllowedResponse.html" title="405 Method Not Allowed">MethodNotAllowedResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="MigratorySession.html" title="Sessions that include this trait will only have access to the container's state via ContainerVars."></a>
+                        <a href="MigratorySession.html" title="Sessions that include this trait will only have access to the container's state via ContainerVars.">MigratorySession</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="NamedCometActorSnippet.html" title="This trait adds a named comet actor on the page."></a>
+                        <a href="NamedCometActorSnippet.html" title="This trait adds a named comet actor on the page.">NamedCometActorSnippet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="NamedCometActorTrait.html" title=""></a>
+                        <a href="NamedCometActorTrait.html" title="">NamedCometActorTrait</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NamedCometDispatcher.html" title="This class keeps a list of comet actors that need to update the UI"></a>
+                        <a href="NamedCometDispatcher.html" title="This class keeps a list of comet actors that need to update the UI">NamedCometDispatcher</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NamedCometListener$.html" title="Maintain a Map[Value the actor monitors -&gt; Ref to the Actor Dispatcher]"></a>
+                        <a href="NamedCometListener$.html" title="Maintain a Map[Value the actor monitors -&gt; Ref to the Actor Dispatcher]">NamedCometListener</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NoContentResponse.html" title="204 response but without body."></a>
+                        <a href="NoContentResponse.html" title="204 response but without body.">NoContentResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NoOpServiceTimer$.html" title=""></a>
+                        <a href="NoOpServiceTimer$.html" title="">NoOpServiceTimer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NoOpSnippetTimer$.html" title="A SnippetTimer that does not do anything."></a>
+                        <a href="NoOpSnippetTimer$.html" title="A SnippetTimer that does not do anything.">NoOpSnippetTimer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="NodeResponse.html" title=""></a>
+                        <a href="NodeResponse.html" title="">NodeResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NodeSeqFunc.html" title=""></a>
+                        <a href="NodeSeqFunc.html" title="">NodeSeqFunc</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="NodeSeqFuncOrSeqNodeSeqFunc$.html" title=""></a>
+                        <a class="trait" href="NodeSeqFuncOrSeqNodeSeqFunc.html" title=""></a>
+                        <a href="NodeSeqFuncOrSeqNodeSeqFunc.html" title="">NodeSeqFuncOrSeqNodeSeqFunc</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NodesAndEventJs.html" title=""></a>
+                        <a href="NodesAndEventJs.html" title="">NodesAndEventJs</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NormalParamHolder.html" title=""></a>
+                        <a href="NormalParamHolder.html" title="">NormalParamHolder</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="NotAcceptableResponse$.html" title=""></a>
+                        <a class="class" href="NotAcceptableResponse.html" title="406 Not Acceptable"></a>
+                        <a href="NotAcceptableResponse.html" title="406 Not Acceptable">NotAcceptableResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="NotFound.html" title=""></a>
+                        <a href="NotFound.html" title="">NotFound</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NotFoundAsNode.html" title=""></a>
+                        <a href="NotFoundAsNode.html" title="">NotFoundAsNode</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NotFoundAsResponse.html" title=""></a>
+                        <a href="NotFoundAsResponse.html" title="">NotFoundAsResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NotFoundAsTemplate.html" title=""></a>
+                        <a href="NotFoundAsTemplate.html" title="">NotFoundAsTemplate</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="NotFoundResponse$.html" title=""></a>
+                        <a class="class" href="NotFoundResponse.html" title="404 Not Found"></a>
+                        <a href="NotFoundResponse.html" title="404 Not Found">NotFoundResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="NotImplementedResponse.html" title="501 Not Implemented"></a>
+                        <a href="NotImplementedResponse.html" title="501 Not Implemented">NotImplementedResponse</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Notice$.html" title=""></a>
+                        <a class="class" href="Notice.html" title=""></a>
+                        <a href="Notice.html" title="">Notice</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="NoticeType$.html" title="Defines the notices types"></a>
+                        <a href="NoticeType$.html" title="Defines the notices types">NoticeType</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="OkResponse.html" title="200 response but without body."></a>
+                        <a href="OkResponse.html" title="200 response but without body.">OkResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="OldHtmlProperties.html" title="This set of properties is based on Lift's current XHTML support"></a>
+                        <a href="OldHtmlProperties.html" title="This set of properties is based on Lift's current XHTML support">OldHtmlProperties</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="OnDiskFileParamHolder$.html" title=""></a>
+                        <a class="class" href="OnDiskFileParamHolder.html" title="This FileParamHolder stores the uploaded file in a temporary file on disk."></a>
+                        <a href="OnDiskFileParamHolder.html" title="This FileParamHolder stores the uploaded file in a temporary file on disk.">OnDiskFileParamHolder</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="OpenSearchResponse.html" title="Returning an OpenSearch Description Document."></a>
+                        <a href="OpenSearchResponse.html" title="Returning an OpenSearch Description Document.">OpenSearchResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="OptionsRequest$.html" title=""></a>
+                        <a href="OptionsRequest$.html" title="">OptionsRequest</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="OutputStreamResponse$.html" title=""></a>
+                        <a class="class" href="OutputStreamResponse.html" title="Use this response to write your data directly to the response pipe."></a>
+                        <a href="OutputStreamResponse.html" title="Use this response to write your data directly to the response pipe.">OutputStreamResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="PageName$.html" title=""></a>
+                        <a href="PageName$.html" title="">PageName</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Paginator.html" title="Base class for things that require pagination."></a>
+                        <a href="Paginator.html" title="Base class for things that require pagination.">Paginator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="PaginatorSnippet.html" title="This is the paginator snippet."></a>
+                        <a href="PaginatorSnippet.html" title="This is the paginator snippet.">PaginatorSnippet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ParamCalcInfo.html" title=""></a>
+                        <a href="ParamCalcInfo.html" title="">ParamCalcInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ParamHolder.html" title=""></a>
+                        <a href="ParamHolder.html" title="">ParamHolder</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ParsePath.html" title="The representation of an URI path"></a>
+                        <a href="ParsePath.html" title="The representation of an URI path">ParsePath</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="PartialUpdateMsg.html" title=""></a>
+                        <a href="PartialUpdateMsg.html" title="">PartialUpdateMsg</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="PatchRequest$.html" title=""></a>
+                        <a href="PatchRequest$.html" title="">PatchRequest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="PerformSetupComet2.html" title=""></a>
+                        <a href="PerformSetupComet2.html" title="">PerformSetupComet2</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="PermRedirectResponse.html" title="301 Redirect."></a>
+                        <a href="PermRedirectResponse.html" title="301 Redirect.">PermRedirectResponse</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="PlainTextResponse$.html" title=""></a>
+                        <a class="class" href="PlainTextResponse.html" title=""></a>
+                        <a href="PlainTextResponse.html" title="">PlainTextResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="PostRequest$.html" title=""></a>
+                        <a href="PostRequest$.html" title="">PostRequest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="PutRequest$.html" title=""></a>
+                        <a href="PutRequest$.html" title="">PutRequest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Qop$.html" title=""></a>
+                        <a href="Qop$.html" title="">Qop</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ReRender.html" title=""></a>
+                        <a href="ReRender.html" title="">ReRender</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RedirectResponse$.html" title="Companion object to RedirectResponse"></a>
+                        <a class="class" href="RedirectResponse.html" title="302"></a>
+                        <a href="RedirectResponse.html" title="302">RedirectResponse</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RedirectState$.html" title=""></a>
+                        <a class="class" href="RedirectState.html" title=""></a>
+                        <a href="RedirectState.html" title="">RedirectState</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RedirectWithState$.html" title=""></a>
+                        <a class="class" href="RedirectWithState.html" title=""></a>
+                        <a href="RedirectWithState.html" title="">RedirectWithState</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RemoveAListener.html" title="This is a message class for use with ListenerManager and CometListener instances."></a>
+                        <a href="RemoveAListener.html" title="This is a message class for use with ListenerManager and CometListener instances.">RemoveAListener</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="RenderDispatch.html" title="Mix this into a StatefulSnippet if you want a defined render method."></a>
+                        <a href="RenderDispatch.html" title="Mix this into a StatefulSnippet if you want a defined render method.">RenderDispatch</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="RenderFuncDispatch.html" title="Mix this into a StatefulSnippet if you want a defined render method."></a>
+                        <a href="RenderFuncDispatch.html" title="Mix this into a StatefulSnippet if you want a defined render method.">RenderFuncDispatch</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RenderOut.html" title="The RenderOut case class contains the rendering for the CometActor."></a>
+                        <a href="RenderOut.html" title="The RenderOut case class contains the rendering for the CometActor.">RenderOut</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Req$.html" title="Helper object for constructing Req instances"></a>
+                        <a class="class" href="Req.html" title="Contains request information"></a>
+                        <a href="Req.html" title="Contains request information">Req</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RequestMemoize.html" title="Memoize a value for the duration of the current request (and subsequent Ajax requests made as a result of viewing the page)"></a>
+                        <a href="RequestMemoize.html" title="Memoize a value for the duration of the current request (and subsequent Ajax requests made as a result of viewing the page)">RequestMemoize</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RequestType$.html" title=""></a>
+                        <a class="class" href="RequestType.html" title=""></a>
+                        <a href="RequestType.html" title="">RequestType</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RequestVar$.html" title="The companion object to RequestVars"></a>
+                        <a class="class" href="RequestVar.html" title="A typesafe container for data with a lifetime nominally equivalent to the lifetime of a page rendered by an HTTP request."></a>
+                        <a href="RequestVar.html" title="A typesafe container for data with a lifetime nominally equivalent to the lifetime of a page rendered by an HTTP request.">RequestVar</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="RequestVarSnapshotGroup.html" title="Create case objects that implement this trait and use the case objects to denote specific SnapshotGroups for RequestVars"></a>
+                        <a href="RequestVarSnapshotGroup.html" title="Create case objects that implement this trait and use the case objects to denote specific SnapshotGroups for RequestVars">RequestVarSnapshotGroup</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ResetContentResponse.html" title="205 response but without body."></a>
+                        <a href="ResetContentResponse.html" title="205 response but without body.">ResetContentResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ResourceServer$.html" title=""></a>
+                        <a href="ResourceServer$.html" title="">ResourceServer</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ResponseShortcutException$.html" title=""></a>
+                        <a class="class" href="ResponseShortcutException.html" title=""></a>
+                        <a href="ResponseShortcutException.html" title="">ResponseShortcutException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ResponseWithReason.html" title="Wraps a LiftResponse along with a HTTP reason-phrase."></a>
+                        <a href="ResponseWithReason.html" title="Wraps a LiftResponse along with a HTTP reason-phrase.">ResponseWithReason</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="RewriteRequest.html" title="This case class is used for pattern matching."></a>
+                        <a href="RewriteRequest.html" title="This case class is used for pattern matching.">RewriteRequest</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RewriteResponse$.html" title="Maintains the context of resolving the URL when cookies are disabled from container."></a>
+                        <a class="class" href="RewriteResponse.html" title=""></a>
+                        <a href="RewriteResponse.html" title="">RewriteResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="RoundTripHandlerFunc.html" title="A function (well, an interface with a bunch of methods on it) to call depending on the state of the round trip function."></a>
+                        <a href="RoundTripHandlerFunc.html" title="A function (well, an interface with a bunch of methods on it) to call depending on the state of the round trip function.">RoundTripHandlerFunc</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="RoundTripInfo$.html" title="The companion objects."></a>
+                        <a class="trait" href="RoundTripInfo.html" title="Stuff related to round trip messages"></a>
+                        <a href="RoundTripInfo.html" title="Stuff related to round trip messages">RoundTripInfo</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="S$.html" title="An object representing the current state of the HTTP request and response."></a>
+                        <a class="trait" href="S.html" title="An object representing the current state of the HTTP request and response."></a>
+                        <a href="S.html" title="An object representing the current state of the HTTP request and response.">S</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SHtml$.html" title="The SHtml object defines a suite of XHTML element generator methods to simplify the creation of markup, particularly with forms and AJAX."></a>
+                        <a class="trait" href="SHtml.html" title="The SHtml object defines a suite of XHTML element generator methods to simplify the creation of markup, particularly with forms and AJAX."></a>
+                        <a href="SHtml.html" title="The SHtml object defines a suite of XHTML element generator methods to simplify the creation of markup, particularly with forms and AJAX.">SHtml</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SHtmlJ.html" title=""></a>
+                        <a href="SHtmlJ.html" title="">SHtmlJ</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SHtmlJBridge.html" title=""></a>
+                        <a href="SHtmlJBridge.html" title="">SHtmlJBridge</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SJ.html" title=""></a>
+                        <a href="SJ.html" title="">SJ</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SJBridge.html" title=""></a>
+                        <a href="SJBridge.html" title="">SJBridge</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ScopedLiftActor.html" title="A LiftActor that runs in the scope of the current Session, repleat with SessionVars, etc."></a>
+                        <a href="ScopedLiftActor.html" title="A LiftActor that runs in the scope of the current Session, repleat with SessionVars, etc.">ScopedLiftActor</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="ScreenFieldInfo$.html" title=""></a>
+                        <a class="class" href="ScreenFieldInfo.html" title=""></a>
+                        <a href="ScreenFieldInfo.html" title="">ScreenFieldInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ScreenWizardRendered.html" title=""></a>
+                        <a href="ScreenWizardRendered.html" title="">ScreenWizardRendered</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SecurityRules$.html" title=""></a>
+                        <a class="class" href="SecurityRules.html" title="Specifies security rules for a Lift application."></a>
+                        <a href="SecurityRules.html" title="Specifies security rules for a Lift application.">SecurityRules</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="SeeOtherResponse$.html" title="Companion object to RedirectResponse"></a>
+                        <a class="class" href="SeeOtherResponse.html" title="303"></a>
+                        <a href="SeeOtherResponse.html" title="303">SeeOtherResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SeqNodeSeqFunc.html" title=""></a>
+                        <a href="SeqNodeSeqFunc.html" title="">SeqNodeSeqFunc</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="ServiceRequestTimer.html" title=""></a>
+                        <a href="ServiceRequestTimer.html" title="">ServiceRequestTimer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="ServiceUnavailableResponse.html" title="503 Bad Gateway"></a>
+                        <a href="ServiceUnavailableResponse.html" title="503 Bad Gateway">ServiceUnavailableResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SessionInfo.html" title="Information about sessions"></a>
+                        <a href="SessionInfo.html" title="Information about sessions">SessionInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="SessionMaster$.html" title="Manages LiftSessions because the servlet container is less than optimal at timing sessions out."></a>
+                        <a href="SessionMaster$.html" title="Manages LiftSessions because the servlet container is less than optimal at timing sessions out.">SessionMaster</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SessionMemoize.html" title="Memoize a value for the duration of the user's session"></a>
+                        <a href="SessionMemoize.html" title="Memoize a value for the duration of the user's session">SessionMemoize</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="" title="A typesafe container for data with a lifetime nominally equivalent to the lifetime of HttpSession attributes."></a>
+                        <a href="" title="A typesafe container for data with a lifetime nominally equivalent to the lifetime of HttpSession attributes.">SessionVar</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SessionWatcherInfo.html" title=""></a>
+                        <a href="SessionWatcherInfo.html" title="">SessionWatcherInfo</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SetDeltaPruner.html" title=""></a>
+                        <a href="SetDeltaPruner.html" title="">SetDeltaPruner</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ShutDown$.html" title="The response from a page saying that it's been rendered"></a>
+                        <a href="ShutDown$.html" title="The response from a page saying that it's been rendered">ShutDown</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="ShutdownIfPastLifespan$.html" title=""></a>
+                        <a href="ShutdownIfPastLifespan$.html" title="">ShutdownIfPastLifespan</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SimpleController.html" title="The base trait of Controllers that handle pre-view requests"></a>
+                        <a href="SimpleController.html" title="The base trait of Controllers that handle pre-view requests">SimpleController</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SimpleRoundTrip.html" title=""></a>
+                        <a href="SimpleRoundTrip.html" title="">SimpleRoundTrip</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SimpleStateful.html" title="The simple composition of StatefulSnippet, Whence and RenderFuncDispatch."></a>
+                        <a href="SimpleStateful.html" title="The simple composition of StatefulSnippet, Whence and RenderFuncDispatch.">SimpleStateful</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SimpleStatelessBehavior.html" title="A simpler way to define behavior if the snippet is invoked."></a>
+                        <a href="SimpleStatelessBehavior.html" title="A simpler way to define behavior if the snippet is invoked.">SimpleStatelessBehavior</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SnapshotRequestVar.html" title="This subclass of RequestVars that allow the specification of a RequestVarSnapshotGroup."></a>
+                        <a href="SnapshotRequestVar.html" title="This subclass of RequestVars that allow the specification of a RequestVarSnapshotGroup.">SnapshotRequestVar</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SnippetExecutionException.html" title="Throw this exception if there's a catostrophic failure executing a snippet"></a>
+                        <a href="SnippetExecutionException.html" title="Throw this exception if there's a catostrophic failure executing a snippet">SnippetExecutionException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SnippetFailureException.html" title="An abstract exception that may be thrown during page rendering."></a>
+                        <a href="SnippetFailureException.html" title="An abstract exception that may be thrown during page rendering.">SnippetFailureException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="SnippetPFJ.html" title=""></a>
+                        <a href="SnippetPFJ.html" title="">SnippetPFJ</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SnippetTimer.html" title="A snippet timer is a general interface for timing snippets."></a>
+                        <a href="SnippetTimer.html" title="A snippet timer is a general interface for timing snippets.">SnippetTimer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SortedPaginator.html" title="In many situations you'll want to sort things in your paginated view."></a>
+                        <a href="SortedPaginator.html" title="In many situations you'll want to sort things in your paginated view.">SortedPaginator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="SortedPaginatorSnippet.html" title="This trait adds snippet functionality for sorted paginators."></a>
+                        <a href="SortedPaginatorSnippet.html" title="This trait adds snippet functionality for sorted paginators.">SortedPaginatorSnippet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="StandardServiceTimer$.html" title=""></a>
+                        <a href="StandardServiceTimer$.html" title="">StandardServiceTimer</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="StateInStatelessException.html" title=""></a>
+                        <a href="StateInStatelessException.html" title="">StateInStatelessException</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StatefulComet.html" title=""></a>
+                        <a href="StatefulComet.html" title="">StatefulComet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StatefulSnippet.html" title="The same StatefulSnippet instance is used across a given page rendering."></a>
+                        <a href="StatefulSnippet.html" title="The same StatefulSnippet instance is used across a given page rendering.">StatefulSnippet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StatefulSortedPaginatorSnippet.html" title="Sort your paginated views by using lifts functions mapping."></a>
+                        <a href="StatefulSortedPaginatorSnippet.html" title="Sort your paginated views by using lifts functions mapping.">StatefulSortedPaginatorSnippet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StatelessBehavior.html" title="Mix this snippet into any snippet."></a>
+                        <a href="StatelessBehavior.html" title="Mix this snippet into any snippet.">StatelessBehavior</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="StatelessReqTest.html" title="The data structure that contains information to determine if the request should be treated as a stateful or stateless request"></a>
+                        <a href="StatelessReqTest.html" title="The data structure that contains information to determine if the request should be treated as a stateful or stateless request">StatelessReqTest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StatelessSession.html" title="Sessions that include this trait will not be retained past the current request and will give notifications of failure if stateful features of Lift are accessed"></a>
+                        <a href="StatelessSession.html" title="Sessions that include this trait will not be retained past the current request and will give notifications of failure if stateful features of Lift are accessed">StatelessSession</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="StreamRoundTrip.html" title=""></a>
+                        <a href="StreamRoundTrip.html" title="">StreamRoundTrip</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="StreamingResponse.html" title=""></a>
+                        <a href="StreamingResponse.html" title="">StreamingResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="StrictXHTML1_0Validator$.html" title=""></a>
+                        <a href="StrictXHTML1_0Validator$.html" title="">StrictXHTML1_0Validator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StringField.html" title=""></a>
+                        <a href="StringField.html" title="">StringField</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="StylesheetSourceRestriction.html" title="Marker trait for restrictions that only apply to stylesheets."></a>
+                        <a href="StylesheetSourceRestriction.html" title="Marker trait for restrictions that only apply to stylesheets.">StylesheetSourceRestriction</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="Templates$.html" title="Contains functions for obtaining templates"></a>
+                        <a href="Templates$.html" title="Contains functions for obtaining templates">Templates</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TemporaryRedirectResponse.html" title="307 Redirect."></a>
+                        <a href="TemporaryRedirectResponse.html" title="307 Redirect.">TemporaryRedirectResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TransientRequestMemoize.html" title="Memoize a value for the duration of the current HTTP request"></a>
+                        <a href="TransientRequestMemoize.html" title="Memoize a value for the duration of the current HTTP request">TransientRequestMemoize</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="TransientRequestVar.html" title="A typesafe container for data with a lifetime strictly equal to the processing of a single HTTP request."></a>
+                        <a href="TransientRequestVar.html" title="A typesafe container for data with a lifetime strictly equal to the processing of a single HTTP request.">TransientRequestVar</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="TransientSnippet$.html" title="The companion object to the TransientSnippet trait"></a>
+                        <a class="trait" href="TransientSnippet.html" title="This trait indicates if the snippet instance should be kept around for the duration of the Request."></a>
+                        <a href="TransientSnippet.html" title="This trait indicates if the snippet instance should be kept around for the duration of the Request.">TransientSnippet</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="TransitionalXHTML1_0Validator$.html" title=""></a>
+                        <a href="TransitionalXHTML1_0Validator$.html" title="">TransitionalXHTML1_0Validator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="URLRewriter$.html" title="Provides access to a thread-local URL rewriter."></a>
+                        <a href="URLRewriter$.html" title="Provides access to a thread-local URL rewriter.">URLRewriter</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="UnauthorizedDigestResponse$.html" title="Companion object with builder"></a>
+                        <a class="class" href="UnauthorizedDigestResponse.html" title="401 Unauthorized Response."></a>
+                        <a href="UnauthorizedDigestResponse.html" title="401 Unauthorized Response.">UnauthorizedDigestResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="UnauthorizedResponse.html" title="401 Unauthorized Response."></a>
+                        <a href="UnauthorizedResponse.html" title="401 Unauthorized Response.">UnauthorizedResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="UnknownRequest.html" title=""></a>
+                        <a href="UnknownRequest.html" title="">UnknownRequest</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="Unlisten.html" title=""></a>
+                        <a href="Unlisten.html" title="">Unlisten</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="UnsupportedMediaTypeResponse.html" title="415 Resource Gone"></a>
+                        <a href="UnsupportedMediaTypeResponse.html" title="415 Resource Gone">UnsupportedMediaTypeResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="UpdateDefaultHtml.html" title="Update the comet XML on each page reload in dev mode"></a>
+                        <a href="UpdateDefaultHtml.html" title="Update the comet XML on each page reload in dev mode">UpdateDefaultHtml</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="UserAgentCalculator$.html" title=""></a>
+                        <a class="trait" href="UserAgentCalculator.html" title=""></a>
+                        <a href="UserAgentCalculator.html" title="">UserAgentCalculator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VarsJ.html" title=""></a>
+                        <a href="VarsJ.html" title="">VarsJ</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="VarsJBridge.html" title="The bridge between Scala *Vars implementations and the"></a>
+                        <a href="VarsJBridge.html" title="The bridge between Scala *Vars implementations and the">VarsJBridge</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="Warning$.html" title=""></a>
+                        <a class="class" href="Warning.html" title=""></a>
+                        <a href="Warning.html" title="">Warning</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Whence.html" title="Mix this trait into a snippet class so that you have a convenient value to redirect back to (whence)."></a>
+                        <a href="Whence.html" title="Mix this trait into a snippet class so that you have a convenient value to redirect back to (whence).">Whence</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="WiringUI$.html" title="Surface a user interface on top of Wiring"></a>
+                        <a href="WiringUI$.html" title="Surface a user interface on top of Wiring">WiringUI</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="Wizard.html" title="A wizard allows you to create a multi-screen set of input forms with back-button support and state support"></a>
+                        <a href="Wizard.html" title="A wizard allows you to create a multi-screen set of input forms with back-button support and state support">Wizard</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="WizardRules$.html" title=""></a>
+                        <a href="WizardRules$.html" title="">WizardRules</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="XHTMLValidationError.html" title=""></a>
+                        <a href="XHTMLValidationError.html" title="">XHTMLValidationError</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="XHtmlInHtml5OutProperties.html" title="If you're going to use HTML5 out, but want XHTML in (so you can have mixed case snippet tags and you don't get the Html5 parsers obnoxious table behavior), then this is the set of properties to use"></a>
+                        <a href="XHtmlInHtml5OutProperties.html" title="If you're going to use HTML5 out, but want XHTML in (so you can have mixed case snippet tags and you don't get the Html5 parsers obnoxious table behavior), then this is the set of properties to use">XHtmlInHtml5OutProperties</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="XHtmlValidator.html" title=""></a>
+                        <a href="XHtmlValidator.html" title="">XHtmlValidator</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="XhtmlResponse.html" title=""></a>
+                        <a href="XhtmlResponse.html" title="">XhtmlResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="XmlMimeResponse.html" title="Allows you to create custom 200 responses for clients using different Content-Types."></a>
+                        <a href="XmlMimeResponse.html" title="Allows you to create custom 200 responses for clients using different Content-Types.">XmlMimeResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="XmlNodeResponse.html" title=""></a>
+                        <a href="XmlNodeResponse.html" title="">XmlNodeResponse</a>
+                      </li><li class="current-entities indented3">
+                        <a class="object" href="XmlResponse$.html" title=""></a>
+                        <a class="class" href="XmlResponse.html" title=""></a>
+                        <a href="XmlResponse.html" title="">XmlResponse</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="registerCometActor.html" title="These are the message we pass around to register each named comet actor with a dispatcher that only updates the specific version it monitors"></a>
+                        <a href="registerCometActor.html" title="These are the message we pass around to register each named comet actor with a dispatcher that only updates the specific version it monitors">registerCometActor</a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="unregisterCometActor.html" title=""></a>
+                        <a href="unregisterCometActor.html" title="">unregisterCometActor</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="class type">
+      <div id="definition">
+        <div class="big-circle class">c</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="net">net</a>.<a href="../index.html" class="extype" name="net.liftweb">liftweb</a>.<a href="index.html" class="extype" name="net.liftweb.http">http</a></p>
+        <h1>SessionVar<span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SessionVar</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/AnyVar.html" class="extype" name="net.liftweb.util.AnyVar">util.AnyVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>, <a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]] with <a href="../common/LazyLoggable.html" class="extype" name="net.liftweb.common.LazyLoggable">LazyLoggable</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A typesafe container for data with a lifetime nominally equivalent to the
+lifetime of HttpSession attributes.</p><p><code>
+object MySnippetCompanion {
+  object mySessionVar extends SessionVar[String]("hello")
+}
+</code></p><p>The standard pattern is to create a singleton object extending SessionVar instead
+of creating an instance variable of a concrete SessionVar subclass. This is preferred
+because SessionVar will use the name of its instantiating class for part of its state
+maintenance mechanism.</p><p>If you find it necessary to create a SessionVar subclass of which there may be more
+than one instance, it is necessary to override the <u>nameSalt() method to return
+a unique salt value for each instance to prevent name collisions.</u></p><p>Note: SessionVars can be used within CometActors
+</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="../common/LazyLoggable.html" class="extype" name="net.liftweb.common.LazyLoggable">LazyLoggable</a>, <a href="../util/AnyVar.html" class="extype" name="net.liftweb.util.AnyVar">util.AnyVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>, <a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]], <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>, <a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]], <a href="../util/HasCalcDefaultValue.html" class="extype" name="net.liftweb.util.HasCalcDefaultValue">HasCalcDefaultValue</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>], <a href="../util/PSettableValueHolder.html" class="extype" name="net.liftweb.util.PSettableValueHolder">PSettableValueHolder</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>], <a href="../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a>, <a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a>, <a href="../util/PValueHolder.html" class="extype" name="net.liftweb.util.PValueHolder">PValueHolder</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>], <a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a>, <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">
+              Known Subclasses
+            </span>
+            <div class="subClasses hiddenContent"><a href="../builtin/snippet/MsgErrorMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgErrorMeta">MsgErrorMeta</a>, <a href="../builtin/snippet/MsgNoticeMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgNoticeMeta">MsgNoticeMeta</a>, <a href="../builtin/snippet/MsgWarningMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgWarningMeta">MsgWarningMeta</a>, <a href="../builtin/snippet/MsgsErrorMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgsErrorMeta">MsgsErrorMeta</a>, <a href="../builtin/snippet/MsgsNoticeMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgsNoticeMeta">MsgsNoticeMeta</a>, <a href="../builtin/snippet/MsgsWarningMeta$.html" class="extype" name="net.liftweb.builtin.snippet.MsgsWarningMeta">MsgsWarningMeta</a>, <a href="Factory$FactoryMaker$session$.html" class="extype" name="net.liftweb.http.Factory.FactoryMaker.session">session</a>, <a href="LiftSession$legacyIeCompatibilityMode$.html" class="extype" name="net.liftweb.http.LiftSession.legacyIeCompatibilityMode">legacyIeCompatibilityMode</a>, <a href="SessionMemoize$coreVar$.html" class="extype" name="net.liftweb.http.SessionMemoize.coreVar">coreVar</a>, <a href="rest/ContinuationsStore$.html" class="extype" name="net.liftweb.http.rest.ContinuationsStore">ContinuationsStore</a>, <a href="../proto/ProtoUser$loginRedirect$.html" class="extype" name="net.liftweb.proto.ProtoUser.loginRedirect">loginRedirect</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="net.liftweb.http.SessionVar"><span>SessionVar</span></li><li class="in" name="net.liftweb.common.LazyLoggable"><span>LazyLoggable</span></li><li class="in" name="net.liftweb.util.AnyVar"><span>AnyVar</span></li><li class="in" name="net.liftweb.util.AnyVarTrait"><span>AnyVarTrait</span></li><li class="in" name="net.liftweb.util.HasCalcDefaultValue"><span>HasCalcDefaultValue</span></li><li class="in" name="net.liftweb.util.PSettableValueHolder"><span>PSettableValueHolder</span></li><li class="in" name="net.liftweb.util.SettableValueHolder"><span>SettableValueHolder</span></li><li class="in" name="net.liftweb.util.Settable"><span>Settable</span></li><li class="in" name="net.liftweb.util.PValueHolder"><span>PValueHolder</span></li><li class="in" name="net.liftweb.util.ValueHolder"><span>ValueHolder</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="net.liftweb.http.SessionVar#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(dflt:=&gt;T):net.liftweb.http.SessionVar[T]"></a><a id="&lt;init&gt;:SessionVar[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#&lt;init&gt;(dflt:=&gt;T):net.liftweb.http.SessionVar[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SessionVar</span><span class="params">(<span name="dflt">dflt: ⇒ <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>)</span>
+      </span>
+      
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">dflt</dt><dd class="cmt"><p>- the default value to be returned if none was set prior to
+requesting a value to be returned from the container</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.http.SessionVar.CleanUpParam" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CleanUpParam=net.liftweb.http.LiftSession"></a><a id="CleanUpParam:CleanUpParam"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#CleanUpParam=net.liftweb.http.LiftSession" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CleanUpParam</span><span class="result alias"> = <a href="LiftSession.html" class="extype" name="net.liftweb.http.LiftSession">LiftSession</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait.FuncType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FuncType=(net.liftweb.common.Box[T],Boolean)=&gt;Unit"></a><a id="FuncType:FuncType"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#FuncType=(net.liftweb.common.Box[T],Boolean)=&gt;Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FuncType</span><span class="result alias"> = (<a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>], <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The function takes a <code>Box[T]</code> (Full if the Var is being set, Empty if it's being cleared) and
+a Boolean indicating that the set function is setting to the default value.</p><div class="fullcomment"><div class="comment cmt"><p>The function takes a <code>Box[T]</code> (Full if the Var is being set, Empty if it's being cleared) and
+a Boolean indicating that the set function is setting to the default value.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.PValueHolder.ValueType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ValueType=T"></a><a id="ValueType:ValueType"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#ValueType=T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ValueType</span><span class="result alias"> = <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/PValueHolder.html" class="extype" name="net.liftweb.util.PValueHolder">PValueHolder</a> → <a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#__nameSalt" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="__nameSalt:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#__nameSalt:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">__nameSalt</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(what:T):T"></a><a id="apply(T):T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#apply(what:T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="what">what: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Set the session variable
+</p><div class="fullcomment"><div class="comment cmt"><p>Set the session variable
+</p></div><dl class="paramcmts block"><dt class="param">what</dt><dd class="cmt"><p>-- the value to set the session variable to</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#atomicUpdate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType"></a><a id="atomicUpdate((ValueType)⇒ValueType):ValueType"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">atomicUpdate</span><span class="params">(<span name="f">f: (<a href="#ValueType=T" class="extmbr" name="net.liftweb.http.SessionVar.ValueType">ValueType</a>) ⇒ <a href="#ValueType=T" class="extmbr" name="net.liftweb.http.SessionVar.ValueType">ValueType</a></span>)</span><span class="result">: <a href="#ValueType=T" class="extmbr" name="net.liftweb.http.SessionVar.ValueType">ValueType</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Perform an atomic update of this Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic update of this Settable.
+The current value is passed to the function and the ValueHolder
+is set to the result of the function.  This is enclosed in the
+performAtomicOperation method which will, by default, synchronize
+this instance
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVar#calcDefaultValue" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="calcDefaultValue:T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#calcDefaultValue:T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">calcDefaultValue</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/AnyVar.html" class="extype" name="net.liftweb.util.AnyVar">AnyVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → <a href="../util/HasCalcDefaultValue.html" class="extype" name="net.liftweb.util.HasCalcDefaultValue">HasCalcDefaultValue</a></dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#clearFunc" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clearFunc(name:String):Unit"></a><a id="clearFunc(String):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#clearFunc(name:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clearFunc</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#doSync" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doSync[F](f:=&gt;F):F"></a><a id="doSync[F](⇒F):F"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#doSync[F](f:=&gt;F):F" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doSync</span><span class="tparams">[<span name="F">F</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.http.SessionVar.doSync.F">F</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.doSync.F">F</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Different Vars require different mechanisms for synchronization.</p><div class="fullcomment"><div class="comment cmt"><p>Different Vars require different mechanisms for synchronization.  This method implements
+the Var specific synchronization mechanism
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#doWith" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="doWith[F](newVal:T)(f:=&gt;F):F"></a><a id="doWith[F](T)(⇒F):F"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#doWith[F](newVal:T)(f:=&gt;F):F" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">doWith</span><span class="tparams">[<span name="F">F</span>]</span><span class="params">(<span name="newVal">newVal: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.AnyVarTrait.doWith.F">F</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.AnyVarTrait.doWith.F">F</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Change the value of the Var for the lifespan of the function
+</p><div class="fullcomment"><div class="comment cmt"><p>Change the value of the Var for the lifespan of the function
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#findFunc" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findFunc(name:String):net.liftweb.common.Box[T]"></a><a id="findFunc(String):Box[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#findFunc(name:String):net.liftweb.common.Box[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findFunc</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#get" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="get:T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#get:T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Shadow of the 'is' method
+</p><div class="fullcomment"><div class="comment cmt"><p>Shadow of the 'is' method
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → <a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#is" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="is:T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#is:T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">is</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The current value of the variable
+</p><div class="fullcomment"><div class="comment cmt"><p>The current value of the variable
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.common.LazyLoggable#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:net.liftweb.common.Logger"></a><a id="logger:Logger"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#logger:net.liftweb.common.Logger" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/LazyLoggable.html" class="extype" name="net.liftweb.common.LazyLoggable">LazyLoggable</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@transient</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#name" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#name:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#onChange" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onChange(f:AnyVarTrait.this.FuncType):Unit"></a><a id="onChange(FuncType):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#onChange(f:AnyVarTrait.this.FuncType):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onChange</span><span class="params">(<span name="f">f: <a href="#FuncType=(net.liftweb.common.Box[T],Boolean)=&gt;Unit" class="extmbr" name="net.liftweb.http.SessionVar.FuncType">FuncType</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">On any change to this Var, invoke the function.</p><div class="fullcomment"><div class="comment cmt"><p>On any change to this Var, invoke the function. Changes are setting the value, clearing the value.
+There may not be a call if the Var goes out of scope (e.g., a RequestVar at the end of the Request).</p><p>The function takes a <code>Box[T]</code> (Full if the Var is being set, Empty if it's being cleared) and
+a Boolean indicating that the set function is setting to the default value.</p><p>The function should execute *very* quickly (e.g., Schedule a function to be executed on a different thread).</p><p>The function should generally be set in Boot or when a singleton is created.
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>the function to execute on change</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#onShutdown" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onShutdown(session:AnyVarTrait.this.CleanUpParam):Unit"></a><a id="onShutdown(CleanUpParam):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#onShutdown(session:AnyVarTrait.this.CleanUpParam):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onShutdown</span><span class="params">(<span name="session">session: <a href="#CleanUpParam=net.liftweb.http.LiftSession" class="extmbr" name="net.liftweb.http.SessionVar.CleanUpParam">CleanUpParam</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#performAtomicOperation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="performAtomicOperation[T](f:=&gt;T):T"></a><a id="performAtomicOperation[T](⇒T):T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#performAtomicOperation[T](f:=&gt;T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">performAtomicOperation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Perform an atomic operation on the Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic operation on the Settable. By default
+synchronizes the instance, but it could use other mechanisms
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#registerCleanupFunc" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerCleanupFunc(in:net.liftweb.http.LiftSession=&gt;Unit):Unit"></a><a id="registerCleanupFunc((LiftSession)⇒Unit):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#registerCleanupFunc(in:net.liftweb.http.LiftSession=&gt;Unit):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerCleanupFunc</span><span class="params">(<span name="in">in: (<a href="LiftSession.html" class="extype" name="net.liftweb.http.LiftSession">LiftSession</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#registerGlobalCleanupFunc" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerGlobalCleanupFunc(in:AnyVarTrait.this.CleanUpParam=&gt;Unit):Unit"></a><a id="registerGlobalCleanupFunc((CleanUpParam)⇒Unit):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#registerGlobalCleanupFunc(in:AnyVarTrait.this.CleanUpParam=&gt;Unit):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerGlobalCleanupFunc</span><span class="params">(<span name="in">in: (<a href="#CleanUpParam=net.liftweb.http.LiftSession" class="extmbr" name="net.liftweb.http.SessionVar.CleanUpParam">CleanUpParam</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#remove" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="remove():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#remove():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">remove</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#set" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set(what:T):T"></a><a id="set(T):T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#set(what:T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">set</span><span class="params">(<span name="what">what: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Shadow of the apply method
+</p><div class="fullcomment"><div class="comment cmt"><p>Shadow of the apply method
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → <a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#setFunc" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFunc(name:String,value:T):Unit"></a><a id="setFunc(String,T):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#setFunc(name:String,value:T):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFunc</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="value">value: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#setIfUnset" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setIfUnset(value:=&gt;T):T"></a><a id="setIfUnset(⇒T):T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#setIfUnset(value:=&gt;T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setIfUnset</span><span class="params">(<span name="value">value: ⇒ <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Set the Var if it has not been calculated
+</p><div class="fullcomment"><div class="comment cmt"><p>Set the Var if it has not been calculated
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#set_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#set_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: set_$qmark" class="name">set_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Has this Var been set or accessed and had its default value calculated
+</p><div class="fullcomment"><div class="comment cmt"><p>Has this Var been set or accessed and had its default value calculated
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#settingDefault_?" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="settingDefault_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#settingDefault_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: settingDefault_$qmark" class="name">settingDefault_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#showWarningWhenAccessedOutOfSessionScope_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="showWarningWhenAccessedOutOfSessionScope_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#showWarningWhenAccessedOutOfSessionScope_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: showWarningWhenAccessedOutOfSessionScope_$qmark" class="name">showWarningWhenAccessedOutOfSessionScope_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#testWasSet" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="testWasSet(name:String,bn:String):Boolean"></a><a id="testWasSet(String,String):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#testWasSet(name:String,bn:String):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">testWasSet</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="bn">bn: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A non-side-effecting test if the value was initialized
+</p><div class="fullcomment"><div class="comment cmt"><p>A non-side-effecting test if the value was initialized
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.AnyVarTrait#update" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update(f:T=&gt;T):T"></a><a id="update((T)⇒T):T"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#update(f:T=&gt;T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">update</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>) ⇒ <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.SessionVar.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Applies the given function to the contents of this
+variable and sets the variable to the resulting value.</p><div class="fullcomment"><div class="comment cmt"><p>Applies the given function to the contents of this
+variable and sets the variable to the resulting value.
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>-- the function to apply and set the result from.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.SessionVar#wasInitialized" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wasInitialized(name:String,bn:String):Boolean"></a><a id="wasInitialized(String,String):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/SessionVar.html#wasInitialized(name:String,bn:String):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wasInitialized</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="bn">bn: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a> → <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a></dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.common.LazyLoggable">
+              <h3>Inherited from <a href="../common/LazyLoggable.html" class="extype" name="net.liftweb.common.LazyLoggable">LazyLoggable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.AnyVar">
+              <h3>Inherited from <a href="../util/AnyVar.html" class="extype" name="net.liftweb.util.AnyVar">util.AnyVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>, <a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]]</h3>
+            </div><div class="parent" name="net.liftweb.util.AnyVarTrait">
+              <h3>Inherited from <a href="../util/AnyVarTrait.html" class="extype" name="net.liftweb.util.AnyVarTrait">AnyVarTrait</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>, <a href="" class="extype" name="net.liftweb.http.SessionVar">SessionVar</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]]</h3>
+            </div><div class="parent" name="net.liftweb.util.HasCalcDefaultValue">
+              <h3>Inherited from <a href="../util/HasCalcDefaultValue.html" class="extype" name="net.liftweb.util.HasCalcDefaultValue">HasCalcDefaultValue</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.util.PSettableValueHolder">
+              <h3>Inherited from <a href="../util/PSettableValueHolder.html" class="extype" name="net.liftweb.util.PSettableValueHolder">PSettableValueHolder</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.util.SettableValueHolder">
+              <h3>Inherited from <a href="../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Settable">
+              <h3>Inherited from <a href="../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.PValueHolder">
+              <h3>Inherited from <a href="../util/PValueHolder.html" class="extype" name="net.liftweb.util.PValueHolder">PValueHolder</a>[<span class="extype" name="net.liftweb.http.SessionVar.T">T</span>]</h3>
+            </div><div class="parent" name="net.liftweb.util.ValueHolder">
+              <h3>Inherited from <a href="../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

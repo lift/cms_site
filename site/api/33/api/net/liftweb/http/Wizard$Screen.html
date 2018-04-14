@@ -1,0 +1,2152 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Lift Framework 3.3.0-M2 - net.liftweb.http.Wizard.Screen</title>
+          <meta name="description" content="Lift Framework 3.3.0 - M2 - net.liftweb.http.Wizard.Screen" />
+          <meta name="keywords" content="Lift Framework 3.3.0 M2 net.liftweb.http.Wizard.Screen" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Lift Framework<span id="doc-version">3.3.0-M2</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.net" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="net"></a><a id="net:net"></a>
+      <span class="permalink">
+      <a href="index.html#net" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">net</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="net.liftweb" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftweb"></a><a id="liftweb:liftweb"></a>
+      <span class="permalink">
+      <a href="../net/index.html#liftweb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">liftweb</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="net">net</a></dd></dl></div>
+    </li><li name="net.liftweb.http" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="http"></a><a id="http:http"></a>
+      <span class="permalink">
+      <a href="../../net/liftweb/index.html#http" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">http</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="net.liftweb">liftweb</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard" visbl="pub" class="indented4 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="WizardextendsStatefulSnippetwithFactorywithScreenWizardRendered"></a><a id="Wizard:Wizard"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/index.html#WizardextendsStatefulSnippetwithFactorywithScreenWizardRendered" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A wizard allows you to create a multi-screen set of input forms with back-button support and state support" href="Wizard.html"><span class="name">Wizard</span></a><span class="result"> extends <a href="StatefulSnippet.html" class="extype" name="net.liftweb.http.StatefulSnippet">StatefulSnippet</a> with <a href="Factory.html" class="extype" name="net.liftweb.http.Factory">Factory</a> with <a href="ScreenWizardRendered.html" class="extype" name="net.liftweb.http.ScreenWizardRendered">ScreenWizardRendered</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A wizard allows you to create a multi-screen set of input forms
+with back-button support and state support
+</p><div class="fullcomment"><div class="comment cmt"><p>A wizard allows you to create a multi-screen set of input forms
+with back-button support and state support
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.http">http</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$AjaxOnDone$.html" title="What to do when the Screen is done."></a>
+                        <a href="Wizard$AjaxOnDone$.html" title="What to do when the Screen is done.">AjaxOnDone</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$Ajax_$qmark$.html" title=""></a>
+                        <a href="Wizard$Ajax_$qmark$.html" title="">Ajax_?</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="ScreenWizardRendered$CssClassBinding.html" title=""></a>
+                        <a href="ScreenWizardRendered$CssClassBinding.html" title="">CssClassBinding</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$CurrentScreen$.html" title=""></a>
+                        <a href="Wizard$CurrentScreen$.html" title="">CurrentScreen</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Factory$FactoryMaker.html" title="Create an object or val that is a subclass of the FactoryMaker to generate factory for a particular class as well as define session and request specific vendors and use doWith to define the vendor just for the scope of the call."></a>
+                        <a href="Factory$FactoryMaker.html" title="Create an object or val that is a subclass of the FactoryMaker to generate factory for a particular class as well as define session and request specific vendors and use doWith to define the vendor just for the scope of the call.">FactoryMaker</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$FormGUID$.html" title="A unique GUID for the form..."></a>
+                        <a href="Wizard$FormGUID$.html" title="A unique GUID for the form...">FormGUID</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="../util/SimpleInjector$Inject.html" title="Create an object or val that is a subclass of the FactoryMaker to generate factory for a particular class as well as define session and request specific vendors and use doWith to define the vendor just for the scope of the call."></a>
+                        <a href="../util/SimpleInjector$Inject.html" title="Create an object or val that is a subclass of the FactoryMaker to generate factory for a particular class as well as define session and request specific vendors and use doWith to define the vendor just for the scope of the call.">Inject</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$OnFirstScreen$.html" title=""></a>
+                        <a href="Wizard$OnFirstScreen$.html" title="">OnFirstScreen</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$Referer$.html" title=""></a>
+                        <a href="Wizard$Referer$.html" title="">Referer</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="" title="Define a screen within this wizard"></a>
+                        <a href="" title="Define a screen within this wizard">Screen</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="ScreenWizardRendered$Snapshot.html" title=""></a>
+                        <a href="ScreenWizardRendered$Snapshot.html" title="">Snapshot</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$VisitedScreens$.html" title=""></a>
+                        <a href="Wizard$VisitedScreens$.html" title="">VisitedScreens</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Wizard$WizardSnapshot.html" title=""></a>
+                        <a href="Wizard$WizardSnapshot.html" title="">WizardSnapshot</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="Wizard$WizardVar.html" title="Keep request-local information around without the nastiness of naming session variables or the type-unsafety of casting the results."></a>
+                        <a href="Wizard$WizardVar.html" title="Keep request-local information around without the nastiness of naming session variables or the type-unsafety of casting the results.">WizardVar</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Wizard$_defaultXml$.html" title="Holds the template passed via the snippet for the duration of the request"></a>
+                        <a href="Wizard$_defaultXml$.html" title="Holds the template passed via the snippet for the duration of the request">_defaultXml</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="trait type">
+      <div id="definition">
+        <div class="big-circle trait">t</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="net">net</a>.<a href="../index.html" class="extype" name="net.liftweb">liftweb</a>.<a href="index.html" class="extype" name="net.liftweb.http">http</a>.<a href="Wizard.html" class="extype" name="net.liftweb.http.Wizard">Wizard</a></p>
+        <h1>Screen<span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Screen</span><span class="result"> extends <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Define a screen within this wizard
+</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a>, <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a>, <a href="Factory.html" class="extype" name="net.liftweb.http.Factory">Factory</a>, <a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a>, <a href="../util/Injector.html" class="extype" name="net.liftweb.util.Injector">Injector</a>, <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="net.liftweb.http.Wizard.Screen"><span>Screen</span></li><li class="in" name="net.liftweb.http.AbstractScreen"><span>AbstractScreen</span></li><li class="in" name="net.liftweb.common.Loggable"><span>Loggable</span></li><li class="in" name="net.liftweb.http.Factory"><span>Factory</span></li><li class="in" name="net.liftweb.util.SimpleInjector"><span>SimpleInjector</span></li><li class="in" name="net.liftweb.util.Injector"><span>Injector</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.http.AbstractScreen.AFieldBinding" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AFieldBindingextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable"></a><a id="AFieldBinding:AFieldBinding"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#AFieldBindingextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$AFieldBinding.html"><span class="name">AFieldBinding</span></a><span class="params">(<span name="binding">binding: <a href="FieldBinding.html" class="extype" name="net.liftweb.http.FieldBinding">FieldBinding</a></span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.AFilter" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AFilter[T]extendsAbstractScreen.this.FilterOrValidate[T]withProductwithSerializable"></a><a id="AFilter[T]:AFilter[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#AFilter[T]extendsAbstractScreen.this.FilterOrValidate[T]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$AFilter.html"><span class="name">AFilter</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="net.liftweb.http.AbstractScreen.AFilter.T">T</span>) ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.AFilter.T">T</span></span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.AFilter.T">T</span>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.AVal" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AVal[T]extendsAbstractScreen.this.FilterOrValidate[T]withProductwithSerializable"></a><a id="AVal[T]:AVal[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#AVal[T]extendsAbstractScreen.this.FilterOrValidate[T]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$AVal.html"><span class="name">AVal</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="v">v: (<span class="extype" name="net.liftweb.http.AbstractScreen.AVal.T">T</span>) ⇒ <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.AVal.T">T</span>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.BoxMarker" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="BoxMarkerextendsAnyRef"></a><a id="BoxMarker:BoxMarker"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#BoxMarkerextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$BoxMarker.html"><span class="name">BoxMarker</span></a><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.DisplayIf" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DisplayIfextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable"></a><a id="DisplayIf:DisplayIf"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#DisplayIfextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$DisplayIf.html"><span class="name">DisplayIf</span></a><span class="params">(<span name="func">func: (<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.FieldBuilder" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FieldBuilder[T]extendsAnyRef"></a><a id="FieldBuilder[T]:FieldBuilder[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#FieldBuilder[T]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$FieldBuilder.html"><span class="name">FieldBuilder</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.FieldTransform" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FieldTransformextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable"></a><a id="FieldTransform:FieldTransform"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#FieldTransformextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$FieldTransform.html"><span class="name">FieldTransform</span></a><span class="params">(<span name="func">func: (<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>) ⇒ (<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.FilterOrValidate" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FilterOrValidate[+T]extendsAnyRef"></a><a id="FilterOrValidate[+T]:FilterOrValidate[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#FilterOrValidate[+T]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$FilterOrValidate.html"><span class="name">FilterOrValidate</span></a><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.FormFieldId" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FormFieldIdextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable"></a><a id="FormFieldId:FormFieldId"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#FormFieldIdextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$FormFieldId.html"><span class="name">FormFieldId</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.FormParam" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FormParamextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable"></a><a id="FormParam:FormParam"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#FormParamextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$FormParam.html"><span class="name">FormParam</span></a><span class="params">(<span name="fp">fp: <a href="SHtml$.html#ElemAttrextendsxml.Elem=&gt;scala.xml.Elem" class="extmbr" name="net.liftweb.http.SHtml.ElemAttr">SHtml.ElemAttr</a></span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.Help" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="HelpextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable"></a><a id="Help:Help"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#HelpextendsAbstractScreen.this.FilterOrValidate[Nothing]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$Help.html"><span class="name">Help</span></a><span class="params">(<span name="ns">ns: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.OtherValueInitializer" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="OtherValueInitializer[T]extendsAnyRef"></a><a id="OtherValueInitializer[T]:OtherValueInitializer[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#OtherValueInitializer[T]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$OtherValueInitializer.html"><span class="name">OtherValueInitializer</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.OtherValueInitializerImpl" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="OtherValueInitializerImpl[T]extendsAbstractScreen.this.OtherValueInitializer[T]withProductwithSerializable"></a><a id="OtherValueInitializerImpl[T]:OtherValueInitializerImpl[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#OtherValueInitializerImpl[T]extendsAbstractScreen.this.OtherValueInitializer[T]withProductwithSerializable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$OtherValueInitializerImpl.html"><span class="name">OtherValueInitializerImpl</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: () ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.OtherValueInitializerImpl.T">T</span></span>)</span><span class="result"> extends <a href="AbstractScreen$OtherValueInitializer.html" class="extype" name="net.liftweb.http.AbstractScreen.OtherValueInitializer">OtherValueInitializer</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.OtherValueInitializerImpl.T">T</span>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Factory.FactoryMaker" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FactoryMaker[T]extendsStackableMaker[T]withVendor[T]"></a><a id="FactoryMaker[T]:FactoryMaker[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Factory.html#FactoryMaker[T]extendsStackableMaker[T]withVendor[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Create an object or val that is a subclass of the FactoryMaker to generate factory for a particular class as well as define session and request specific vendors and use doWith to define the vendor just for the scope of the call." href="Factory$FactoryMaker.html"><span class="name">FactoryMaker</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/StackableMaker.html" class="extype" name="net.liftweb.util.StackableMaker">StackableMaker</a>[<span class="extype" name="net.liftweb.http.Factory.FactoryMaker.T">T</span>] with <a href="../util/Vendor.html" class="extype" name="net.liftweb.util.Vendor">Vendor</a>[<span class="extype" name="net.liftweb.http.Factory.FactoryMaker.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create an object or val that is a subclass of the FactoryMaker to
+generate factory for a particular class as well as define session and
+request specific vendors and use doWith to define the vendor just for
+the scope of the call.</p><div class="fullcomment"><div class="comment cmt"><p>Create an object or val that is a subclass of the FactoryMaker to
+generate factory for a particular class as well as define session and
+request specific vendors and use doWith to define the vendor just for
+the scope of the call.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Factory.html" class="extype" name="net.liftweb.http.Factory">Factory</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.Errors" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Errors=List[net.liftweb.util.FieldError]"></a><a id="Errors:Errors"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#Errors=List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Errors</span><span class="result alias"> = <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.collection.immutable.List" class="extype" name="scala.collection.immutable.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen.Field" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FieldextendsScreen.this.FieldwithConfirmField"></a><a id="Field:Field"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#FieldextendsScreen.this.FieldwithConfirmField" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Define a field within the screen" href="Wizard$Screen$Field.html"><span class="name">Field</span></a><span class="result"> extends <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> with <a href="../util/ConfirmField.html" class="extype" name="net.liftweb.util.ConfirmField">ConfirmField</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Define a field within the screen
+</p>
+    </li><li name="net.liftweb.util.SimpleInjector.Inject" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Inject[T]extendsStackableMaker[T]withVendor[T]"></a><a id="Inject[T]:Inject[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/util/SimpleInjector.html#Inject[T]extendsStackableMaker[T]withVendor[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Create an object or val that is a subclass of the FactoryMaker to generate factory for a particular class as well as define session and request specific vendors and use doWith to define the vendor just for the scope of the call." href="../util/SimpleInjector$Inject.html"><span class="name">Inject</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../util/StackableMaker.html" class="extype" name="net.liftweb.util.StackableMaker">StackableMaker</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>] with <a href="../util/Vendor.html" class="extype" name="net.liftweb.util.Vendor">Vendor</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.Inject.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create an object or val that is a subclass of the FactoryMaker to
+generate factory for a particular class as well as define session and
+request specific vendors and use doWith to define the vendor just for
+the scope of the call.</p><div class="fullcomment"><div class="comment cmt"><p>Create an object or val that is a subclass of the FactoryMaker to
+generate factory for a particular class as well as define session and
+request specific vendors and use doWith to define the vendor just for
+the scope of the call.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="net.liftweb.http.AbstractScreen.BoxMarkerObj" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BoxMarkerObj"></a><a id="BoxMarkerObj:BoxMarkerObj"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#BoxMarkerObj" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="A little hack because =&gt; BaseField and =&gt; Box[BaseField] have the same method signature" href="AbstractScreen$BoxMarkerObj$.html"><span class="name">BoxMarkerObj</span></a><span class="result"> extends <a href="AbstractScreen$BoxMarker.html" class="extype" name="net.liftweb.http.AbstractScreen.BoxMarker">BoxMarker</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A little hack because =&gt; BaseField and =&gt; Box[BaseField]
+have the same method signature
+</p><div class="fullcomment"><div class="comment cmt"><p>A little hack because =&gt; BaseField and =&gt; Box[BaseField]
+have the same method signature
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.Field" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Field"></a><a id="Field:Field"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#Field" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$Field$.html"><span class="name">Field</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.FilterOrValidate" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FilterOrValidate"></a><a id="FilterOrValidate:FilterOrValidate"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#FilterOrValidate" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$FilterOrValidate$.html"><span class="name">FilterOrValidate</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.NotOnConfirmScreen" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NotOnConfirmScreen"></a><a id="NotOnConfirmScreen:NotOnConfirmScreen"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#NotOnConfirmScreen" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Override the screen default for fields appearing on the confirm screen and force this field not to appear on the confirm screen" href="AbstractScreen$NotOnConfirmScreen$.html"><span class="name">NotOnConfirmScreen</span></a><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override the screen default for fields appearing on the confirm
+screen and force this field not to appear on the confirm screen
+</p><div class="fullcomment"><div class="comment cmt"><p>Override the screen default for fields appearing on the confirm
+screen and force this field not to appear on the confirm screen
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.NothingOtherValueInitializer" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NothingOtherValueInitializer"></a><a id="NothingOtherValueInitializer:NothingOtherValueInitializer"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#NothingOtherValueInitializer" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$NothingOtherValueInitializer$.html"><span class="name">NothingOtherValueInitializer</span></a><span class="result"> extends <a href="AbstractScreen$OtherValueInitializer.html" class="extype" name="net.liftweb.http.AbstractScreen.OtherValueInitializer">OtherValueInitializer</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.OnConfirmScreen" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="OnConfirmScreen"></a><a id="OnConfirmScreen:OnConfirmScreen"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#OnConfirmScreen" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="Override the screen default for fields appearing on the confirm screen and force this field to appear on the confirm screen" href="AbstractScreen$OnConfirmScreen$.html"><span class="name">OnConfirmScreen</span></a><span class="result"> extends <a href="AbstractScreen$FilterOrValidate.html" class="extype" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override the screen default for fields appearing on the confirm
+screen and force this field to appear on the confirm screen
+</p><div class="fullcomment"><div class="comment cmt"><p>Override the screen default for fields appearing on the confirm
+screen and force this field to appear on the confirm screen
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen.currentField" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="currentField"></a><a id="currentField:currentField"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/AbstractScreen.html#currentField" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="AbstractScreen$currentField$.html"><span class="name">currentField</span></a><span class="result"> extends <a href="../util/ThreadGlobal.html" class="extype" name="net.liftweb.util.ThreadGlobal">ThreadGlobal</a>[<a href="../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#addFields" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addFields(fields:()=&gt;net.liftweb.util.FieldContainer):Unit"></a><a id="addFields(()⇒FieldContainer):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#addFields(fields:()=&gt;net.liftweb.util.FieldContainer):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addFields</span><span class="params">(<span name="fields">fields: () ⇒ <a href="../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Add a FieldContainer to the Screen.</p><div class="fullcomment"><div class="comment cmt"><p>Add a FieldContainer to the Screen.  A FieldContainer
+can contain either a single field (a BaseField) or
+a collection of BaseFields.  The key take-away is that
+if the LiftScreen or Wizard is a singleton, you can still
+display variable number of fields by returning a variable
+number of BaseField instances from the FieldContainer.
+<br/>
+WARNING -- this method is public so it can be called
+from a Wizard.  This method should only be called from within
+the Screen or Wizard that owns the Screen and not
+from external code.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#additionalAttributes" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="additionalAttributes:scala.xml.MetaData"></a><a id="additionalAttributes:MetaData"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#additionalAttributes:scala.xml.MetaData" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">additionalAttributes</span><span class="result">: <span class="extype" name="scala.xml.MetaData">MetaData</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Any additional parameters that need to be put on the form (e.g., mime type)
+</p><div class="fullcomment"><div class="comment cmt"><p>Any additional parameters that need to be put on the form (e.g., mime type)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#boxOfScreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="boxOfScreen[T&lt;:net.liftweb.http.AbstractScreen](in:T):net.liftweb.common.Box[T]"></a><a id="boxOfScreen[T&lt;:AbstractScreen](T):Box[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#boxOfScreen[T&lt;:net.liftweb.http.AbstractScreen](in:T):net.liftweb.common.Box[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">boxOfScreen</span><span class="tparams">[<span name="T">T &lt;: <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></span>]</span><span class="params">(<span name="in">in: <span class="extype" name="net.liftweb.http.AbstractScreen.boxOfScreen.T">T</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.boxOfScreen.T">T</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#boxStrToListFieldError" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="boxStrToListFieldError(msg:net.liftweb.common.Box[String]):List[net.liftweb.util.FieldError]"></a><a id="boxStrToListFieldError(Box[String]):List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#boxStrToListFieldError(msg:net.liftweb.common.Box[String]):List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">boxStrToListFieldError</span><span class="params">(<span name="msg">msg: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#boxXmlToListFieldError" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="boxXmlToListFieldError(msg:net.liftweb.common.Box[scala.xml.NodeSeq]):List[net.liftweb.util.FieldError]"></a><a id="boxXmlToListFieldError(Box[NodeSeq]):List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#boxXmlToListFieldError(msg:net.liftweb.common.Box[scala.xml.NodeSeq]):List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">boxXmlToListFieldError</span><span class="params">(<span name="msg">msg: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>)</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#builder" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="builder[T](name:=&gt;String,default:=&gt;T,stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T]):AbstractScreen.this.FieldBuilder[T]"></a><a id="builder[T](⇒String,⇒T,FilterOrValidate[T]*)(Manifest[T]):FieldBuilder[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#builder[T](name:=&gt;String,default:=&gt;T,stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T]):AbstractScreen.this.FieldBuilder[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">builder</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="default">default: ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.builder.T">T</span></span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.builder.T">T</span>]*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.builder.T">T</span>]</span>)</span><span class="result">: <a href="#FieldBuilder[T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FieldBuilder">FieldBuilder</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.builder.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a FieldBuilder so you can add help screens, validations and filters.</p><div class="fullcomment"><div class="comment cmt"><p>Create a FieldBuilder so you can add help screens, validations and filters.  Remember to invoke &quot;make&quot; on
+the returned FieldBuilder to convert it into a field
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>- the name of the field.  This is a call-by-name parameter, so you can dynamically calculate
+the name of the field (e.g., localize its name)</p></dd><dt class="param">default</dt><dd class="cmt"><p>- the default value of the field</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>- any filter or validation functions</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#cancelButton" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cancelButton:scala.xml.Elem"></a><a id="cancelButton:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#cancelButton:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cancelButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a> → <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#confirmScreen_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="confirmScreen_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#confirmScreen_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: confirmScreen_$qmark" class="name">confirmScreen_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Is this screen a confirm screen?
+</p>
+    </li><li name="net.liftweb.http.AbstractScreen#elemInABox" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="elemInABox(in:scala.xml.Elem):net.liftweb.common.Box[scala.xml.Elem]"></a><a id="elemInABox(Elem):Box[Elem]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#elemInABox(in:scala.xml.Elem):net.liftweb.common.Box[scala.xml.Elem]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">elemInABox</span><span class="params">(<span name="in">in: <span class="extype" name="scala.xml.Elem">Elem</span></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#field" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="field[T](name:=&gt;String,default:=&gt;T,stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T]):AbstractScreen.this.Field{typeValueType=T}"></a><a id="field[T](⇒String,⇒T,FilterOrValidate[T]*)(Manifest[T]):Screen.Field{typeValueType=T}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#field[T](name:=&gt;String,default:=&gt;T,stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T]):AbstractScreen.this.Field{typeValueType=T}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">field</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="default">default: ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.field.T">T</span></span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.field.T">T</span>]*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.field.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { type ValueType = T }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a field with a name, default value, and
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a field with a name, default value, and
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>- the name of the field.  This is a call-by-name parameter, so you can dynamically calculate
+the name of the fiels (e.g., localize its name)</p></dd><dt class="param">default</dt><dd class="cmt"><p>- the default value of the field</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#field" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="field[T](underlying:=&gt;net.liftweb.common.Box[net.liftweb.util.BaseField{typeValueType=T}],stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T],implicitmarker:AbstractScreen.this.BoxMarker):AbstractScreen.this.Field{typeValueType=T}"></a><a id="field[T](⇒Box[BaseField{typeValueType=T}],FilterOrValidate[T]*)(Manifest[T],BoxMarker):Screen.Field{typeValueType=T}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#field[T](underlying:=&gt;net.liftweb.common.Box[net.liftweb.util.BaseField{typeValueType=T}],stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T],implicitmarker:AbstractScreen.this.BoxMarker):AbstractScreen.this.Field{typeValueType=T}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">field</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="underlying">underlying: ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a> { type ValueType = T }]</span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.field.T">T</span>]*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.field.T">T</span>]</span>, <span name="marker">marker: <a href="#BoxMarkerextendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.BoxMarker">BoxMarker</a></span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { type ValueType = T }</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#field" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="field[T](underlying:=&gt;net.liftweb.util.BaseField{typeValueType=T},stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T]):AbstractScreen.this.Field{typeValueType=T}"></a><a id="field[T](⇒BaseField{typeValueType=T},FilterOrValidate[T]*)(Manifest[T]):Screen.Field{typeValueType=T}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#field[T](underlying:=&gt;net.liftweb.util.BaseField{typeValueType=T},stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitman:scala.reflect.Manifest[T]):AbstractScreen.this.Field{typeValueType=T}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">field</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="underlying">underlying: ⇒ <a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a> { type ValueType = T }</span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.field.T">T</span>]*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.field.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { type ValueType = T }</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#finish" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finish():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#finish():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finish</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">override this method if there's a screen-specific thing
+to do on finish.</p><div class="fullcomment"><div class="comment cmt"><p>override this method if there's a screen-specific thing
+to do on finish.  This method is called before the main Wizard's
+finish method
+</p></div></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#finishButton" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finishButton:scala.xml.Elem"></a><a id="finishButton:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#finishButton:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finishButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a> → <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#grabParams" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="grabParams(in:Seq[AbstractScreen.this.FilterOrValidate[_]]):List[net.liftweb.http.SHtml.ElemAttr]"></a><a id="grabParams(Seq[FilterOrValidate[_]]):List[SHtml.ElemAttr]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#grabParams(in:Seq[AbstractScreen.this.FilterOrValidate[_]]):List[net.liftweb.http.SHtml.ElemAttr]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">grabParams</span><span class="params">(<span name="in">in: <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[_]]</span>)</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="SHtml$.html#ElemAttrextendsxml.Elem=&gt;scala.xml.Elem" class="extmbr" name="net.liftweb.http.SHtml.ElemAttr">SHtml.ElemAttr</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Grabs the FormFieldId and FormParam parameters
+</p><div class="fullcomment"><div class="comment cmt"><p>Grabs the FormFieldId and FormParam parameters
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#hasUploadField" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasUploadField:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#hasUploadField:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasUploadField</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.SimpleInjector#inject" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="inject[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[T]"></a><a id="inject[T](Manifest[T]):Box[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#inject[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">inject</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.inject.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Perform the injection for the given type.</p><div class="fullcomment"><div class="comment cmt"><p>Perform the injection for the given type.  You can call:
+inject[Date] or inject[List[Map[String, PaymentThing]]].  The
+appropriate Manifest will be
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a> → <a href="../util/Injector.html" class="extype" name="net.liftweb.util.Injector">Injector</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#isLastScreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isLastScreen:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#isLastScreen:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isLastScreen</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.http.AbstractScreen#localSetup" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localSetup():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#localSetup():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localSetup</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Override this method to do any setup of this screen
+</p><div class="fullcomment"><div class="comment cmt"><p>Override this method to do any setup of this screen
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.common.Loggable#logger" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="logger:net.liftweb.common.Logger"></a><a id="logger:Logger"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#logger:net.liftweb.common.Logger" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">logger</span><span class="result">: <a href="../common/Logger.html" class="extype" name="net.liftweb.common.Logger">Logger</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@transient</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#makeField" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="makeField[T,OV](theName:=&gt;String,defaultValue:=&gt;T,theToForm:AbstractScreen.this.Field{typeOtherValueType=OV;typeValueType=T}=&gt;net.liftweb.common.Box[scala.xml.NodeSeq],otherValue:AbstractScreen.this.OtherValueInitializer[OV],stuff:AbstractScreen.this.FilterOrValidate[T]*):AbstractScreen.this.Field{typeValueType=T;typeOtherValueType=OV}"></a><a id="makeField[T,OV](⇒String,⇒T,(Screen.Field{.../*2definitionsintyperefinement*/})⇒Box[NodeSeq],OtherValueInitializer[OV],FilterOrValidate[T]*):Screen.Field{.../*2definitionsintyperefinement*/}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#makeField[T,OV](theName:=&gt;String,defaultValue:=&gt;T,theToForm:AbstractScreen.this.Field{typeOtherValueType=OV;typeValueType=T}=&gt;net.liftweb.common.Box[scala.xml.NodeSeq],otherValue:AbstractScreen.this.OtherValueInitializer[OV],stuff:AbstractScreen.this.FilterOrValidate[T]*):AbstractScreen.this.Field{typeValueType=T;typeOtherValueType=OV}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">makeField</span><span class="tparams">[<span name="T">T</span>, <span name="OV">OV</span>]</span><span class="params">(<span name="theName">theName: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defaultValue">defaultValue: ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.makeField.T">T</span></span>, <span name="theToForm">theToForm: (<span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { ... /* 2 definitions in type refinement */ }) ⇒ <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>, <span name="otherValue">otherValue: <a href="#OtherValueInitializer[T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.OtherValueInitializer">OtherValueInitializer</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.makeField.OV">OV</span>]</span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.makeField.T">T</span>]*</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a field that's added to the Screen
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a field that's added to the Screen
+</p></div><dl class="paramcmts block"><dt class="param">theName</dt><dd class="cmt"><p>the name of the field.  This is call-by-name, so you
+can do things like S.?(&quot;Dog's Name&quot;) such that the string will be
+localized</p></dd><dt class="param">defaultValue</dt><dd class="cmt"><p>the starting value for the field.  This is
+also call-by-name which is handy for constructs like:
+<code class="scala">SomeExternalRequestVarOrSessionVar.get</code></p></dd><dt class="param">theToForm</dt><dd class="cmt"><p>a function to convert the field into a form</p></dd><dt class="param">otherValue</dt><dd class="cmt"><p>a handy way include other values in the field.  The other value is
+calcualted when the field is initialized.  You can, for example, put
+a list of valid options in the field.</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>a list of filters and validations for the field</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#maxVal" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="maxVal[T](len:=&gt;T,msg:=&gt;String)(implicitf:T=&gt;Number):T=&gt;List[net.liftweb.util.FieldError]"></a><a id="maxVal[T](⇒T,⇒String)((T)⇒Number):(T)⇒List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#maxVal[T](len:=&gt;T,msg:=&gt;String)(implicitf:T=&gt;Number):T=&gt;List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">maxVal</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="len">len: ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.maxVal.T">T</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="f">f: (<span class="extype" name="net.liftweb.http.AbstractScreen.maxVal.T">T</span>) ⇒ <span class="extype" name="java.lang.Number">Number</span></span>)</span><span class="result">: (<span class="extype" name="net.liftweb.http.AbstractScreen.maxVal.T">T</span>) ⇒ <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#minVal" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="minVal[T](len:=&gt;T,msg:=&gt;String)(implicitf:T=&gt;Number):T=&gt;List[net.liftweb.util.FieldError]"></a><a id="minVal[T](⇒T,⇒String)((T)⇒Number):(T)⇒List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#minVal[T](len:=&gt;T,msg:=&gt;String)(implicitf:T=&gt;Number):T=&gt;List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minVal</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="len">len: ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.minVal.T">T</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="f">f: (<span class="extype" name="net.liftweb.http.AbstractScreen.minVal.T">T</span>) ⇒ <span class="extype" name="java.lang.Number">Number</span></span>)</span><span class="result">: (<span class="extype" name="net.liftweb.http.AbstractScreen.minVal.T">T</span>) ⇒ <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#multiselect" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="multiselect[T](name:=&gt;String,default:=&gt;Seq[T],choices:=&gt;Seq[T],stuff:AbstractScreen.this.FilterOrValidate[Seq[T]]*)(implicitf:net.liftweb.http.SHtml.PairStringPromoter[T]):AbstractScreen.this.Field{typeValueType=Seq[T];typeOtherValueType=Seq[T]}"></a><a id="multiselect[T](⇒String,⇒Seq[T],⇒Seq[T],FilterOrValidate[Seq[T]]*)(SHtml.PairStringPromoter[T]):Screen.Field{.../*2definitionsintyperefinement*/}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#multiselect[T](name:=&gt;String,default:=&gt;Seq[T],choices:=&gt;Seq[T],stuff:AbstractScreen.this.FilterOrValidate[Seq[T]]*)(implicitf:net.liftweb.http.SHtml.PairStringPromoter[T]):AbstractScreen.this.Field{typeValueType=Seq[T];typeOtherValueType=Seq[T]}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">multiselect</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="default">default: ⇒ <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.multiselect.T">T</span>]</span>, <span name="choices">choices: ⇒ <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.multiselect.T">T</span>]</span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.multiselect.T">T</span>]]*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="f">f: <a href="SHtml$.html#PairStringPromoter[T]extendsT=&gt;String" class="extmbr" name="net.liftweb.http.SHtml.PairStringPromoter">SHtml.PairStringPromoter</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.multiselect.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a multi select HTML element
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a multi select HTML element
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the field (call-by-name)</p></dd><dt class="param">default</dt><dd class="cmt"><p>the starting value of the field (call-by-name)</p></dd><dt class="param">choices</dt><dd class="cmt"><p>the possible choices for the select</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>- a list of filters and validations for the field</p></dd><dt class="param">f</dt><dd class="cmt"><p>a PairStringPromoter (a wrapper around a function) that converts T =&gt; display String</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field{type ValueType = String}</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#myScreenNum" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myScreenNum:Int"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#myScreenNum:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">myScreenNum</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#nextButton" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextButton:scala.xml.Elem"></a><a id="nextButton:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#nextButton:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.http.Wizard.Screen#nextScreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nextScreen:net.liftweb.common.Box[Wizard.this.Screen]"></a><a id="nextScreen:Box[Screen]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#nextScreen:net.liftweb.common.Box[Wizard.this.Screen]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nextScreen</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a>]</span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.http.AbstractScreen#notNull" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notNull:String=&gt;String"></a><a id="notNull:(String)⇒String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#notNull:String=&gt;String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notNull</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#noticeTypeToAttr" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="noticeTypeToAttr(screen:net.liftweb.http.AbstractScreen):net.liftweb.common.Box[net.liftweb.http.NoticeType.Value=&gt;scala.xml.MetaData]"></a><a id="noticeTypeToAttr(AbstractScreen):Box[(Value)⇒MetaData]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#noticeTypeToAttr(screen:net.liftweb.http.AbstractScreen):net.liftweb.common.Box[net.liftweb.http.NoticeType.Value=&gt;scala.xml.MetaData]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">noticeTypeToAttr</span><span class="params">(<span name="screen">screen: <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<a href="NoticeType$$Value.html" class="extype" name="net.liftweb.http.NoticeType.Value">Value</a>) ⇒ <span class="extype" name="scala.xml.MetaData">MetaData</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#onConfirm_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onConfirm_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#onConfirm_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: onConfirm_$qmark" class="name">onConfirm_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">By default, are all the fields on this screen on the confirm screen?
+</p><div class="fullcomment"><div class="comment cmt"><p>By default, are all the fields on this screen on the confirm screen?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a> → <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#password" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="password(name:=&gt;String,defaultValue:=&gt;String,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}"></a><a id="password(⇒String,⇒String,FilterOrValidate[String]*):Screen.Field{typeValueType=String}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#password(name:=&gt;String,defaultValue:=&gt;String,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">password</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defaultValue">defaultValue: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="scala.Predef.String">String</span>]*</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { type ValueType = String }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a password field
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a password field
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the field (call-by-name)</p></dd><dt class="param">defaultValue</dt><dd class="cmt"><p>the starting value of the field (call-by-name)</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>the filters, validators and attributes</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#postFinish" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postFinish():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#postFinish():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postFinish</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">override this method if there's a screen-specific thing
+to do on finish.</p><div class="fullcomment"><div class="comment cmt"><p>override this method if there's a screen-specific thing
+to do on finish.  This method is executed after the main Wizards
+finish() method.
+</p></div></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#prevButton" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="prevButton:scala.xml.Elem"></a><a id="prevButton:Elem"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#prevButton:scala.xml.Elem" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prevButton</span><span class="result">: <span class="extype" name="scala.xml.Elem">Elem</span></span>
+      </span>
+      
+      
+    </li><li name="net.liftweb.http.AbstractScreen#radio" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="radio(name:=&gt;String,default:=&gt;String,choices:=&gt;Seq[String],stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String;typeOtherValueType=Seq[String]}"></a><a id="radio(⇒String,⇒String,⇒Seq[String],FilterOrValidate[String]*):Screen.Field{.../*2definitionsintyperefinement*/}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#radio(name:=&gt;String,default:=&gt;String,choices:=&gt;Seq[String],stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String;typeOtherValueType=Seq[String]}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">radio</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="default">default: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="choices">choices: ⇒ <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="scala.Predef.String">String</span>]*</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a radio HTML element
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a radio HTML element
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the field (call-by-name)</p></dd><dt class="param">default</dt><dd class="cmt"><p>the starting value of the field (call-by-name)</p></dd><dt class="param">choices</dt><dd class="cmt"><p>the possible choices for the select</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>- a list of filters and validations for the field</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field{type ValueType = String}</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SimpleInjector#registerInjection" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="registerInjection[T](f:()=&gt;T)(implicitman:scala.reflect.Manifest[T]):Unit"></a><a id="registerInjection[T](()⇒T)(Manifest[T]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#registerInjection[T](f:()=&gt;T)(implicitman:scala.reflect.Manifest[T]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">registerInjection</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: () ⇒ <span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<span class="extype" name="net.liftweb.util.SimpleInjector.registerInjection.T">T</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Register a function that will inject for the given Manifest
+</p><div class="fullcomment"><div class="comment cmt"><p>Register a function that will inject for the given Manifest
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#removeRegExChars" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeRegExChars(regEx:String):String=&gt;String"></a><a id="removeRegExChars(String):(String)⇒String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#removeRegExChars(regEx:String):String=&gt;String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeRegExChars</span><span class="params">(<span name="regEx">regEx: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#screenBottom" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="screenBottom:net.liftweb.common.Box[scala.xml.Elem]"></a><a id="screenBottom:Box[Elem]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#screenBottom:net.liftweb.common.Box[scala.xml.Elem]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">screenBottom</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#screenFields" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="screenFields:List[net.liftweb.util.BaseField]"></a><a id="screenFields:List[BaseField]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#screenFields:List[net.liftweb.util.BaseField]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">screenFields</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt"> A list of fields in this screen
+</p><div class="fullcomment"><div class="comment cmt"><p> A list of fields in this screen
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#screenName" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="screenName:String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#screenName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">screenName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The name of the screen.</p><div class="fullcomment"><div class="comment cmt"><p>The name of the screen.  Override this to change the screen name
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a> → <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#screenNameAsHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="screenNameAsHtml:scala.xml.NodeSeq"></a><a id="screenNameAsHtml:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#screenNameAsHtml:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">screenNameAsHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#screenTitle" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="screenTitle:scala.xml.NodeSeq"></a><a id="screenTitle:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#screenTitle:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">screenTitle</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#screenTop" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="screenTop:net.liftweb.common.Box[scala.xml.Elem]"></a><a id="screenTop:Box[Elem]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#screenTop:net.liftweb.common.Box[scala.xml.Elem]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">screenTop</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Elem">Elem</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#screenValidate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="screenValidate:List[net.liftweb.util.FieldError]"></a><a id="screenValidate:List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#screenValidate:List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">screenValidate</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#select" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="select[T](name:=&gt;String,default:=&gt;T,choices:=&gt;Seq[T],stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitf:net.liftweb.http.SHtml.PairStringPromoter[T]):AbstractScreen.this.Field{typeValueType=T;typeOtherValueType=Seq[T]}"></a><a id="select[T](⇒String,⇒T,⇒Seq[T],FilterOrValidate[T]*)(SHtml.PairStringPromoter[T]):Screen.Field{.../*2definitionsintyperefinement*/}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#select[T](name:=&gt;String,default:=&gt;T,choices:=&gt;Seq[T],stuff:AbstractScreen.this.FilterOrValidate[T]*)(implicitf:net.liftweb.http.SHtml.PairStringPromoter[T]):AbstractScreen.this.Field{typeValueType=T;typeOtherValueType=Seq[T]}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">select</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="default">default: ⇒ <span class="extype" name="net.liftweb.http.AbstractScreen.select.T">T</span></span>, <span name="choices">choices: ⇒ <a href="../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.select.T">T</span>]</span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.select.T">T</span>]*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="f">f: <a href="SHtml$.html#PairStringPromoter[T]extendsT=&gt;String" class="extmbr" name="net.liftweb.http.SHtml.PairStringPromoter">SHtml.PairStringPromoter</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.select.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { ... /* 2 definitions in type refinement */ }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a select HTML element
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a select HTML element
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the field (call-by-name)</p></dd><dt class="param">default</dt><dd class="cmt"><p>the starting value of the field (call-by-name)</p></dd><dt class="param">choices</dt><dd class="cmt"><p>the possible choices for the select</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>- a list of filters and validations for the field</p></dd><dt class="param">f</dt><dd class="cmt"><p>a PairStringPromoter (a wrapper around a function) that converts T =&gt; display String</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field{type ValueType = String}</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#strToListFieldError" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="strToListFieldError(msg:String):List[net.liftweb.util.FieldError]"></a><a id="strToListFieldError(String):List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#strToListFieldError(msg:String):List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">strToListFieldError</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#text" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="text(name:=&gt;String,defaultValue:=&gt;String,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}"></a><a id="text(⇒String,⇒String,FilterOrValidate[String]*):Screen.Field{typeValueType=String}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#text(name:=&gt;String,defaultValue:=&gt;String,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">text</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defaultValue">defaultValue: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="scala.Predef.String">String</span>]*</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { type ValueType = String }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a text field
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a text field
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the field (call-by-name)</p></dd><dt class="param">defaultValue</dt><dd class="cmt"><p>the starting value of the field (call-by-name)</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>the filters, validators and attributes</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#textarea" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="textarea(name:=&gt;String,defaultValue:=&gt;String,rows:Int,cols:Int,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}"></a><a id="textarea(⇒String,⇒String,Int,Int,FilterOrValidate[String]*):Screen.Field{typeValueType=String}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#textarea(name:=&gt;String,defaultValue:=&gt;String,rows:Int,cols:Int,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">textarea</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defaultValue">defaultValue: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rows">rows: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>, <span name="cols">cols: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="scala.Predef.String">String</span>]*</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { type ValueType = String }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a textarea field
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a textarea field
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the field (call-by-name)</p></dd><dt class="param">defaultValue</dt><dd class="cmt"><p>the starting value of the field (call-by-name)</p></dd><dt class="param">rows</dt><dd class="cmt"><p>the number of rows in the textarea</p></dd><dt class="param">cols</dt><dd class="cmt"><p>the number of columns in the textarea</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>- a list of filters and validations for the field</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field{type ValueType = String}</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#textarea" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="textarea(name:=&gt;String,defaultValue:=&gt;String,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}"></a><a id="textarea(⇒String,⇒String,FilterOrValidate[String]*):Screen.Field{typeValueType=String}"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#textarea(name:=&gt;String,defaultValue:=&gt;String,stuff:AbstractScreen.this.FilterOrValidate[String]*):AbstractScreen.this.Field{typeValueType=String}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">textarea</span><span class="params">(<span name="name">name: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defaultValue">defaultValue: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>, <span name="stuff">stuff: <a href="#FilterOrValidate[+T]extendsAnyRef" class="extmbr" name="net.liftweb.http.AbstractScreen.FilterOrValidate">FilterOrValidate</a>[<span class="extype" name="scala.Predef.String">String</span>]*</span>)</span><span class="result">: <span class="extype" name="net.liftweb.http.AbstractScreen.Field">Screen.Field</span> { type ValueType = String }</span>
+      </span>
+      
+      <p class="shortcomment cmt">Create a textarea field with 80 columns and 5 rows
+</p><div class="fullcomment"><div class="comment cmt"><p>Create a textarea field with 80 columns and 5 rows
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the field (call-by-name)</p></dd><dt class="param">defaultValue</dt><dd class="cmt"><p>the starting value of the field (call-by-name)</p></dd><dt class="param">stuff</dt><dd class="cmt"><p>- a list of filters and validations for the field</p></dd><dt>returns</dt><dd class="cmt"><p>a newly minted Field{type ValueType = String}</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#toLower" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toLower:String=&gt;String"></a><a id="toLower:(String)⇒String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#toLower:String=&gt;String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toLower</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#toUpper" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toUpper:String=&gt;String"></a><a id="toUpper:(String)⇒String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#toUpper:String=&gt;String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toUpper</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#transitionIntoFrom" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="transitionIntoFrom(from:net.liftweb.common.Box[Wizard.this.Screen]):Unit"></a><a id="transitionIntoFrom(Box[Screen]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#transitionIntoFrom(from:net.liftweb.common.Box[Wizard.this.Screen]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transitionIntoFrom</span><span class="params">(<span name="from">from: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A notification that we are transitioning into
+this screen.</p><div class="fullcomment"><div class="comment cmt"><p>A notification that we are transitioning into
+this screen.  Override this method to perform
+some screen-specific actions
+</p></div><dl class="paramcmts block"><dt class="param">from</dt><dd class="cmt"><p>the screen we're coming from</p></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#transitionOutOfTo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="transitionOutOfTo(to:net.liftweb.common.Box[Wizard.this.Screen]):Unit"></a><a id="transitionOutOfTo(Box[Screen]):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#transitionOutOfTo(to:net.liftweb.common.Box[Wizard.this.Screen]):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transitionOutOfTo</span><span class="params">(<span name="to">to: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A notification that we are transitioning out of
+this screen.</p><div class="fullcomment"><div class="comment cmt"><p>A notification that we are transitioning out of
+this screen.  Override this method to perform
+some screen-specific actions
+</p></div><dl class="paramcmts block"><dt class="param">to</dt><dd class="cmt"><p>the screen we're transitioning to</p></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#trim" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="trim:String=&gt;String"></a><a id="trim:(String)⇒String"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#trim:String=&gt;String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">trim</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#valMaxLen" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="valMaxLen(len:=&gt;Int,msg:=&gt;String):String=&gt;List[net.liftweb.util.FieldError]"></a><a id="valMaxLen(⇒Int,⇒String):(String)⇒List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#valMaxLen(len:=&gt;Int,msg:=&gt;String):String=&gt;List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">valMaxLen</span><span class="params">(<span name="len">len: ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A validation helper.</p><div class="fullcomment"><div class="comment cmt"><p>A validation helper.  Make sure the string is no more than a particular
+length and generate a validation issue if not.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#valMinLen" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="valMinLen(len:=&gt;Int,msg:=&gt;String):String=&gt;List[net.liftweb.util.FieldError]"></a><a id="valMinLen(⇒Int,⇒String):(String)⇒List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#valMinLen(len:=&gt;Int,msg:=&gt;String):String=&gt;List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">valMinLen</span><span class="params">(<span name="len">len: ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A validation helper.</p><div class="fullcomment"><div class="comment cmt"><p>A validation helper.  Make sure the string is at least a particular
+length and generate a validation issue if not.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#valRegex" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="valRegex(pat:=&gt;java.util.regex.Pattern,msg:=&gt;String):String=&gt;List[net.liftweb.util.FieldError]"></a><a id="valRegex(⇒Pattern,⇒String):(String)⇒List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#valRegex(pat:=&gt;java.util.regex.Pattern,msg:=&gt;String):String=&gt;List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">valRegex</span><span class="params">(<span name="pat">pat: ⇒ <span class="extype" name="java.util.regex.Pattern">Pattern</span></span>, <span name="msg">msg: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Make sure the field matches a regular expression
+</p><div class="fullcomment"><div class="comment cmt"><p>Make sure the field matches a regular expression
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#validate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validate:List[net.liftweb.util.FieldError]"></a><a id="validate:List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#validate:List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validate</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#validations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validations:List[()=&gt;List[net.liftweb.util.FieldError]]"></a><a id="validations:List[()⇒List[FieldError]]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#validations:List[()=&gt;List[net.liftweb.util.FieldError]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validations</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[() ⇒ <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.Wizard.Screen#vendAVar" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="vendAVar[T](dflt:=&gt;T):net.liftweb.util.NonCleanAnyVar[T]"></a><a id="vendAVar[T](⇒T):NonCleanAnyVar[T]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#vendAVar[T](dflt:=&gt;T):net.liftweb.util.NonCleanAnyVar[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">vendAVar</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="dflt">dflt: ⇒ <span class="extype" name="net.liftweb.http.Wizard.Screen.vendAVar.T">T</span></span>)</span><span class="result">: <a href="../util/NonCleanAnyVar.html" class="extype" name="net.liftweb.util.NonCleanAnyVar">NonCleanAnyVar</a>[<span class="extype" name="net.liftweb.http.Wizard.Screen.vendAVar.T">T</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.http.Wizard.Screen">Screen</a> → <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#vendForm" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="vendForm[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[(T,T=&gt;Any)=&gt;scala.xml.NodeSeq]"></a><a id="vendForm[T](Manifest[T]):Box[(T,(T)⇒Any)⇒NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#vendForm[T](implicitman:scala.reflect.Manifest[T]):net.liftweb.common.Box[(T,T=&gt;Any)=&gt;scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">vendForm</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="man">man: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<span class="extype" name="net.liftweb.http.AbstractScreen.vendForm.T">T</span>]</span>)</span><span class="result">: <a href="../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[(<span class="extype" name="net.liftweb.http.AbstractScreen.vendForm.T">T</span>, (<span class="extype" name="net.liftweb.http.AbstractScreen.vendForm.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a>) ⇒ <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.http.AbstractScreen#xmlToListFieldError" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="xmlToListFieldError(msg:scala.xml.NodeSeq):List[net.liftweb.util.FieldError]"></a><a id="xmlToListFieldError(NodeSeq):List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/http/Wizard$Screen.html#xmlToListFieldError(msg:scala.xml.NodeSeq):List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">xmlToListFieldError</span><span class="params">(<span name="msg">msg: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>)</span><span class="result">: <a href="../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.http.AbstractScreen">
+              <h3>Inherited from <a href="AbstractScreen.html" class="extype" name="net.liftweb.http.AbstractScreen">AbstractScreen</a></h3>
+            </div><div class="parent" name="net.liftweb.common.Loggable">
+              <h3>Inherited from <a href="../common/Loggable.html" class="extype" name="net.liftweb.common.Loggable">Loggable</a></h3>
+            </div><div class="parent" name="net.liftweb.http.Factory">
+              <h3>Inherited from <a href="Factory.html" class="extype" name="net.liftweb.http.Factory">Factory</a></h3>
+            </div><div class="parent" name="net.liftweb.util.SimpleInjector">
+              <h3>Inherited from <a href="../util/SimpleInjector.html" class="extype" name="net.liftweb.util.SimpleInjector">SimpleInjector</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Injector">
+              <h3>Inherited from <a href="../util/Injector.html" class="extype" name="net.liftweb.util.Injector">Injector</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

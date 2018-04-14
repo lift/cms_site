@@ -1,0 +1,1999 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title>Lift Framework 3.3.0-M2 - net.liftweb.record.field.EmailTypedField</title>
+          <meta name="description" content="Lift Framework 3.3.0 - M2 - net.liftweb.record.field.EmailTypedField" />
+          <meta name="keywords" content="Lift Framework 3.3.0 M2 net.liftweb.record.field.EmailTypedField" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../../index.js"></script>
+      <script type="text/javascript" src="../../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../../';
+      </script>
+    
+        </head>
+        <body>
+      <div id="search">
+        <span id="doc-title">Lift Framework<span id="doc-version">3.3.0-M2</span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../../index.html"><span class="name">root</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.net" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="net"></a><a id="net:net"></a>
+      <span class="permalink">
+      <a href="index.html#net" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html"><span class="name">net</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="net.liftweb" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="liftweb"></a><a id="liftweb:liftweb"></a>
+      <span class="permalink">
+      <a href="../net/index.html#liftweb" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html"><span class="name">liftweb</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="net">net</a></dd></dl></div>
+    </li><li name="net.liftweb.record" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="record"></a><a id="record:record"></a>
+      <span class="permalink">
+      <a href="../../net/liftweb/index.html#record" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html"><span class="name">record</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="net.liftweb">liftweb</a></dd></dl></div>
+    </li><li name="net.liftweb.record.field" visbl="pub" class="indented4 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="field"></a><a id="field:field"></a>
+      <span class="permalink">
+      <a href="../../../net/liftweb/record/index.html#field" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="index.html"><span class="name">field</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="net.liftweb.record">record</a></dd></dl></div>
+    </li><li name="net.liftweb.record.field.joda" visbl="pub" class="indented5 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="joda"></a><a id="joda:joda"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/index.html#joda" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="joda/index.html"><span class="name">joda</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="net.liftweb.record.field">field</a></dd></dl></div>
+    </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="BinaryField.html" title=""></a>
+                        <a href="BinaryField.html" title="">BinaryField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="BinaryTypedField.html" title=""></a>
+                        <a href="BinaryTypedField.html" title="">BinaryTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="BooleanField.html" title=""></a>
+                        <a href="BooleanField.html" title="">BooleanField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="BooleanTypedField.html" title=""></a>
+                        <a href="BooleanTypedField.html" title="">BooleanTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="object" href="Countries$.html" title=""></a>
+                        <a href="Countries$.html" title="">Countries</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="CountryField.html" title=""></a>
+                        <a href="CountryField.html" title="">CountryField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="DateTimeField.html" title=""></a>
+                        <a href="DateTimeField.html" title="">DateTimeField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DateTimeTypedField.html" title=""></a>
+                        <a href="DateTimeTypedField.html" title="">DateTimeTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="DecimalField.html" title="A field that maps to a decimal value."></a>
+                        <a href="DecimalField.html" title="A field that maps to a decimal value.">DecimalField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DecimalTypedField.html" title=""></a>
+                        <a href="DecimalTypedField.html" title="">DecimalTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="DoubleField.html" title=""></a>
+                        <a href="DoubleField.html" title="">DoubleField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="DoubleTypedField.html" title=""></a>
+                        <a href="DoubleTypedField.html" title="">DoubleTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="EmailField$.html" title=""></a>
+                        <a class="class" href="EmailField.html" title=""></a>
+                        <a href="EmailField.html" title="">EmailField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="" title=""></a>
+                        <a href="" title="">EmailTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="EnumField.html" title=""></a>
+                        <a href="EnumField.html" title="">EnumField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="EnumNameField.html" title=""></a>
+                        <a href="EnumNameField.html" title="">EnumNameField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="EnumNameTypedField.html" title=""></a>
+                        <a href="EnumNameTypedField.html" title="">EnumNameTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="EnumTypedField.html" title=""></a>
+                        <a href="EnumTypedField.html" title="">EnumTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="IntField.html" title=""></a>
+                        <a href="IntField.html" title="">IntField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="IntTypedField.html" title=""></a>
+                        <a href="IntTypedField.html" title="">IntTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="LocaleField$.html" title=""></a>
+                        <a class="class" href="LocaleField.html" title=""></a>
+                        <a href="LocaleField.html" title="">LocaleField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LocaleTypedField.html" title=""></a>
+                        <a href="LocaleTypedField.html" title="">LocaleTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="LongField.html" title=""></a>
+                        <a href="LongField.html" title="">LongField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="LongTypedField.html" title=""></a>
+                        <a href="LongTypedField.html" title="">LongTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="NumericTypedField.html" title=""></a>
+                        <a href="NumericTypedField.html" title="">NumericTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalBinaryField.html" title=""></a>
+                        <a href="OptionalBinaryField.html" title="">OptionalBinaryField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalBooleanField.html" title=""></a>
+                        <a href="OptionalBooleanField.html" title="">OptionalBooleanField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalCountryField.html" title=""></a>
+                        <a href="OptionalCountryField.html" title="">OptionalCountryField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalDateTimeField.html" title=""></a>
+                        <a href="OptionalDateTimeField.html" title="">OptionalDateTimeField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalDecimalField.html" title="A field that maps to a decimal value."></a>
+                        <a href="OptionalDecimalField.html" title="A field that maps to a decimal value.">OptionalDecimalField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalDoubleField.html" title=""></a>
+                        <a href="OptionalDoubleField.html" title="">OptionalDoubleField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalEmailField.html" title=""></a>
+                        <a href="OptionalEmailField.html" title="">OptionalEmailField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalEnumField.html" title=""></a>
+                        <a href="OptionalEnumField.html" title="">OptionalEnumField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalEnumNameField.html" title=""></a>
+                        <a href="OptionalEnumNameField.html" title="">OptionalEnumNameField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalIntField.html" title=""></a>
+                        <a href="OptionalIntField.html" title="">OptionalIntField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalLocaleField.html" title=""></a>
+                        <a href="OptionalLocaleField.html" title="">OptionalLocaleField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalLongField.html" title=""></a>
+                        <a href="OptionalLongField.html" title="">OptionalLongField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalPasswordField.html" title=""></a>
+                        <a href="OptionalPasswordField.html" title="">OptionalPasswordField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalPostalCodeField.html" title=""></a>
+                        <a href="OptionalPostalCodeField.html" title="">OptionalPostalCodeField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalStringField.html" title=""></a>
+                        <a href="OptionalStringField.html" title="">OptionalStringField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalTextareaField.html" title=""></a>
+                        <a href="OptionalTextareaField.html" title="">OptionalTextareaField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="OptionalTimeZoneField.html" title=""></a>
+                        <a href="OptionalTimeZoneField.html" title="">OptionalTimeZoneField</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="PasswordField$.html" title=""></a>
+                        <a class="class" href="PasswordField.html" title=""></a>
+                        <a href="PasswordField.html" title="">PasswordField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="PasswordTypedField.html" title=""></a>
+                        <a href="PasswordTypedField.html" title="">PasswordTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="PostalCodeField.html" title=""></a>
+                        <a href="PostalCodeField.html" title="">PostalCodeField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="PostalCodeTypedField.html" title=""></a>
+                        <a href="PostalCodeTypedField.html" title="">PostalCodeTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="StringField.html" title=""></a>
+                        <a href="StringField.html" title="">StringField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="StringTypedField.html" title=""></a>
+                        <a href="StringTypedField.html" title="">StringTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="TextareaField.html" title=""></a>
+                        <a href="TextareaField.html" title="">TextareaField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TextareaTypedField.html" title=""></a>
+                        <a href="TextareaTypedField.html" title="">TextareaTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <a class="object" href="TimeZoneField$.html" title=""></a>
+                        <a class="class" href="TimeZoneField.html" title=""></a>
+                        <a href="TimeZoneField.html" title="">TimeZoneField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="trait" href="TimeZoneTypedField.html" title=""></a>
+                        <a href="TimeZoneTypedField.html" title="">TimeZoneTypedField</a>
+                      </li><li class="current-entities indented4">
+                        <span class="separator"></span>
+                        <a class="class" href="UniqueIdField.html" title=""></a>
+                        <a href="UniqueIdField.html" title="">UniqueIdField</a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body class="trait type">
+      <div id="definition">
+        <div class="big-circle trait">t</div>
+        <p id="owner"><a href="../../../index.html" class="extype" name="net">net</a>.<a href="../../index.html" class="extype" name="net.liftweb">liftweb</a>.<a href="../index.html" class="extype" name="net.liftweb.record">record</a>.<a href="index.html" class="extype" name="net.liftweb.record.field">field</a></p>
+        <h1>EmailTypedField<span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">EmailTypedField</span><span class="result"> extends <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Predef.String">String</span>], <a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a>, <a href="../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">util.BaseField</a>, <a href="../../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a>, <a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a>, <a href="../../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a>, <a href="../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a>, <a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a>, <a href="../../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a>, <a href="../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a>, <a href="../../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a>, <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">
+              Known Subclasses
+            </span>
+            <div class="subClasses hiddenContent"><a href="../ProtoUser$MyEmail.html" class="extype" name="net.liftweb.record.ProtoUser.MyEmail">MyEmail</a>, <a href="EmailField.html" class="extype" name="net.liftweb.record.field.EmailField">EmailField</a>, <a href="OptionalEmailField.html" class="extype" name="net.liftweb.record.field.OptionalEmailField">OptionalEmailField</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="net.liftweb.record.field.EmailTypedField"><span>EmailTypedField</span></li><li class="in" name="net.liftweb.record.TypedField"><span>TypedField</span></li><li class="in" name="net.liftweb.record.BaseField"><span>BaseField</span></li><li class="in" name="net.liftweb.util.BaseField"><span>BaseField</span></li><li class="in" name="net.liftweb.util.FieldContainer"><span>FieldContainer</span></li><li class="in" name="net.liftweb.util.SettableField"><span>SettableField</span></li><li class="in" name="net.liftweb.util.SettableValueHolder"><span>SettableValueHolder</span></li><li class="in" name="net.liftweb.util.Settable"><span>Settable</span></li><li class="in" name="net.liftweb.util.ReadableField"><span>ReadableField</span></li><li class="in" name="net.liftweb.util.Bindable"><span>Bindable</span></li><li class="in" name="net.liftweb.util.ValueHolder"><span>ValueHolder</span></li><li class="in" name="net.liftweb.util.FieldIdentifier"><span>FieldIdentifier</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="net.liftweb.record.TypedField.MyType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MyType=ThisType"></a><a id="MyType:MyType"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#MyType=ThisType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MyType</span><span class="result alias"> = <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField.ValidationFunction" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ValidationFunction=TypedField.this.ValueType=&gt;List[net.liftweb.util.FieldError]"></a><a id="ValidationFunction:ValidationFunction"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#ValidationFunction=TypedField.this.ValueType=&gt;List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ValidationFunction</span><span class="result alias"> = (<a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a>) ⇒ <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ValueHolder.ValueType" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ValueType"></a><a id="ValueType:ValueType"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#ValueType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ValueType</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="net.liftweb.record.BaseField#asJValue" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="asJValue:net.liftweb.json.JsonAST.JValue"></a><a id="asJValue:JValue"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#asJValue:net.liftweb.json.JsonAST.JValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJValue</span><span class="result">: <a href="../../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Encode the field value into a JValue</p><div class="fullcomment"><div class="comment cmt"><p>Encode the field value into a JValue</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#asJs" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="asJs:net.liftweb.http.js.JsExp"></a><a id="asJs:JsExp"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#asJs:net.liftweb.http.js.JsExp" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJs</span><span class="result">: <a href="../../http/js/JsExp.html" class="extype" name="net.liftweb.http.js.JsExp">JsExp</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the field's value as a valid JavaScript expression
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns the field's value as a valid JavaScript expression
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#defaultValueBox" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="defaultValueBox:net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="defaultValueBox:Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#defaultValueBox:net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">defaultValueBox</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">The default value of the field when no value is set.</p><div class="fullcomment"><div class="comment cmt"><p>The default value of the field when no value is set. Must return a Full Box unless optional_? is true</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ValueHolder#get" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="get:ValueHolder.this.ValueType"></a><a id="get:ValueType"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#get:ValueHolder.this.ValueType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="result">: <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">get the value
+</p><div class="fullcomment"><div class="comment cmt"><p>get the value
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#liftSetFilterToBox" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="liftSetFilterToBox(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="liftSetFilterToBox(Box[MyType]):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#liftSetFilterToBox(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">liftSetFilterToBox</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">OptionalTypedField and MandatoryTypedField implement this to do the appropriate lifting of Box[MyType] to ValueType</p><div class="fullcomment"><div class="comment cmt"><p>OptionalTypedField and MandatoryTypedField implement this to do the appropriate lifting of Box[MyType] to ValueType</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#name" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#name:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The human name of this field
+</p><div class="fullcomment"><div class="comment cmt"><p>The human name of this field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#set" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="set(in:Settable.this.ValueType):Settable.this.ValueType"></a><a id="set(ValueType):ValueType"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#set(in:Settable.this.ValueType):Settable.this.ValueType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">set</span><span class="params">(<span name="in">in: <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a></span>)</span><span class="result">: <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFromAny" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="setFromAny(in:Any):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="setFromAny(Any):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#setFromAny(in:Any):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromAny</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Set the value of the field from anything.</p><div class="fullcomment"><div class="comment cmt"><p>Set the value of the field from anything.
+Implementations of this method should accept at least the following (pattern =&gt; valueBox)</p><ul><li>value: MyType       =&gt; setBox(Full(value))</li><li>Some(value: MyType) =&gt; setBox(Full(value))</li><li>Full(value: MyType) =&gt; setBox(Full(value))</li><li>(value: MyType)::_  =&gt; setBox(Full(value))</li><li>s: String           =&gt; setFromString(s)</li><li>Some(s: String)     =&gt; setFromString(s)</li><li>Full(s: String)     =&gt; setFromString(s)</li><li>null|None|Empty     =&gt; setBox(defaultValueBox)</li><li>f: Failure          =&gt; setBox(f)
+And usually convert the input to a string and uses setFromString as a last resort.</li></ul><p>Note that setFromAny should _always_ call setBox, even if the conversion fails. This is so that validation
+properly notes the error.</p><p>The method genericSetFromAny implements this guideline.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFromJValue" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="setFromJValue(jvalue:net.liftweb.json.JsonAST.JValue):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="setFromJValue(JValue):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#setFromJValue(jvalue:net.liftweb.json.JsonAST.JValue):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromJValue</span><span class="params">(<span name="jvalue">jvalue: <a href="../../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Decode the JValue and set the field to the decoded value.</p><div class="fullcomment"><div class="comment cmt"><p>Decode the JValue and set the field to the decoded value. Returns Empty or Failure if the value could not be set</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFromString" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="setFromString(s:String):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="setFromString(String):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#setFromString(s:String):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromString</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Set the value of the field using some kind of type-specific conversion from a String.</p><div class="fullcomment"><div class="comment cmt"><p>Set the value of the field using some kind of type-specific conversion from a String.
+By convention, if the field is optional_?, then the empty string should be treated as no-value (Empty).
+Note that setFromString should _always_ call setBox, even if the conversion fails. This is so that validation
+properly notes the error.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Full(convertedValue) if the conversion succeeds (the field value will be set by side-effect)
+        Empty or Failure if the conversion does not succeed</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#toBoxMyType" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toBoxMyType(in:TypedField.this.ValueType):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="toBoxMyType(ValueType):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#toBoxMyType(in:TypedField.this.ValueType):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBoxMyType</span><span class="params">(<span name="in">in: <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#toForm" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toForm:net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="toForm:Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#toForm:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toForm</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Generate a form control for the field
+</p><div class="fullcomment"><div class="comment cmt"><p>Generate a form control for the field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a> → <a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#toValueType" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="toValueType(in:net.liftweb.common.Box[TypedField.this.MyType]):TypedField.this.ValueType"></a><a id="toValueType(Box[MyType]):ValueType"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#toValueType(in:net.liftweb.common.Box[TypedField.this.MyType]):TypedField.this.ValueType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toValueType</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.BaseField#allFields" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="allFields:Seq[net.liftweb.util.BaseField]"></a><a id="allFields:Seq[util.BaseField]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#allFields:Seq[net.liftweb.util.BaseField]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">allFields</span><span class="result">: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">util.BaseField</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">BaseField</a> → <a href="../../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#asHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asHtml:scala.xml.NodeSeq"></a><a id="asHtml:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#asHtml:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Default read-only rendering of field
+</p><div class="fullcomment"><div class="comment cmt"><p>Default read-only rendering of field
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a> → <a href="../../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#asJString" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJString(encode:TypedField.this.MyType=&gt;String):net.liftweb.json.JsonAST.JValue"></a><a id="asJString((MyType)⇒String):JValue"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#asJString(encode:TypedField.this.MyType=&gt;String):net.liftweb.json.JsonAST.JValue" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJString</span><span class="params">(<span name="encode">encode: (<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Helper for implementing asJValue for a conversion to an encoded JString
+</p><div class="fullcomment"><div class="comment cmt"><p>Helper for implementing asJValue for a conversion to an encoded JString
+</p></div><dl class="paramcmts block"><dt class="param">encode</dt><dd class="cmt"><p>function to transform the field value into a String</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#asString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asString:String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#asString:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asString</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Convert the field to a String...</p><div class="fullcomment"><div class="comment cmt"><p>Convert the field to a String... usually of the form &quot;displayName=value&quot;
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#atomicUpdate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType"></a><a id="atomicUpdate((ValueType)⇒ValueType):ValueType"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#atomicUpdate(f:Settable.this.ValueType=&gt;Settable.this.ValueType):Settable.this.ValueType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">atomicUpdate</span><span class="params">(<span name="f">f: (<a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a>) ⇒ <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a></span>)</span><span class="result">: <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Perform an atomic update of this Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic update of this Settable.
+The current value is passed to the function and the ValueHolder
+is set to the result of the function.  This is enclosed in the
+performAtomicOperation method which will, by default, synchronize
+this instance
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#boxNodeFuncToFieldError" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="boxNodeFuncToFieldError(in:net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[scala.xml.Node]):net.liftweb.common.Box[TypedField.this.MyType]=&gt;List[net.liftweb.util.FieldError]"></a><a id="boxNodeFuncToFieldError((Box[MyType])⇒Box[Node]):(Box[MyType])⇒List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#boxNodeFuncToFieldError(in:net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[scala.xml.Node]):net.liftweb.common.Box[TypedField.this.MyType]=&gt;List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">boxNodeFuncToFieldError</span><span class="params">(<span name="in">in: (<a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]) ⇒ <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Node">Node</span>]</span>)</span><span class="result">: (<a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]) ⇒ <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#boxNodeToFieldError" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="boxNodeToFieldError(in:net.liftweb.common.Box[scala.xml.Node]):List[net.liftweb.util.FieldError]"></a><a id="boxNodeToFieldError(Box[Node]):List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#boxNodeToFieldError(in:net.liftweb.common.Box[scala.xml.Node]):List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">boxNodeToFieldError</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.Node">Node</span>]</span>)</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#canRead_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canRead_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#canRead_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: canRead_$qmark" class="name">canRead_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Can the value of this field be read without obscuring the result?
+</p><div class="fullcomment"><div class="comment cmt"><p>Can the value of this field be read without obscuring the result?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#canWrite_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="canWrite_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#canWrite_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: canWrite_$qmark" class="name">canWrite_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Can the value of this field be written?
+</p><div class="fullcomment"><div class="comment cmt"><p>Can the value of this field be written?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#checkCanRead_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkCanRead_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#checkCanRead_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: checkCanRead_$qmark" class="name">checkCanRead_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be read
+</p><div class="fullcomment"><div class="comment cmt"><p>If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be read
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#checkCanWrite_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="checkCanWrite_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#checkCanWrite_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: checkCanWrite_$qmark" class="name">checkCanWrite_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be written
+</p><div class="fullcomment"><div class="comment cmt"><p>If the owner is not in &quot;safe&quot; mode, check the current environment to see if
+the field can be written
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#clear" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clear:Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#clear:Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clear</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Clear the value of this field</p><div class="fullcomment"><div class="comment cmt"><p>Clear the value of this field</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#dirty_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dirty_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#dirty_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dirty_$qmark" class="name">dirty_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#dirty_?" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dirty_?(b:Boolean):Unit"></a><a id="dirty_?(Boolean):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#dirty_?(b:Boolean):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: dirty_$qmark" class="name">dirty_?</span><span class="params">(<span name="b">b: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayHtml:scala.xml.NodeSeq"></a><a id="displayHtml:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#displayHtml:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayName" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayName:String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#displayName:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The display name of this field (e.g., &quot;First Name&quot;)
+</p><div class="fullcomment"><div class="comment cmt"><p>The display name of this field (e.g., &quot;First Name&quot;)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#displayNameHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="displayNameHtml:net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="displayNameHtml:Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#displayNameHtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">displayNameHtml</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#fieldId" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fieldId:Option[scala.xml.NodeSeq]"></a><a id="fieldId:Option[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#fieldId:Option[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldId</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A unique 'id' for the field for form generation
+</p><div class="fullcomment"><div class="comment cmt"><p>A unique 'id' for the field for form generation
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#forceDirty_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forceDirty_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#forceDirty_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: forceDirty_$qmark" class="name">forceDirty_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Should the dirty flag always be set when setBox is called
+</p><div class="fullcomment"><div class="comment cmt"><p>Should the dirty flag always be set when setBox is called
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#formElemAttrs" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formElemAttrs:Seq[net.liftweb.http.SHtml.ElemAttr]"></a><a id="formElemAttrs:Seq[http.SHtml.ElemAttr]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#formElemAttrs:Seq[net.liftweb.http.SHtml.ElemAttr]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">formElemAttrs</span><span class="result">: <a href="../../../../scala/index.html#Seq[+A]=Seq[A]" class="extmbr" name="scala.Seq">Seq</a>[<a href="../../http/SHtml$.html#ElemAttrextendsxml.Elem=&gt;scala.xml.Elem" class="extmbr" name="net.liftweb.http.SHtml.ElemAttr">http.SHtml.ElemAttr</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">What form elements are we going to add to this field?
+</p><div class="fullcomment"><div class="comment cmt"><p>What form elements are we going to add to this field?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#formInputType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="formInputType:String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#formInputType:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">formInputType</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Form field's type.</p><div class="fullcomment"><div class="comment cmt"><p>Form field's type.
+Defaults to 'text', but you may want to change it to other HTML5 values.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#genericSetFromAny" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="genericSetFromAny(in:Any)(implicitm:scala.reflect.Manifest[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="genericSetFromAny(Any)(Manifest[MyType]):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#genericSetFromAny(in:Any)(implicitm:scala.reflect.Manifest[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">genericSetFromAny</span><span class="params">(<span name="in">in: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="m">m: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/Manifest.html#scala.reflect.Manifest" class="extype" name="scala.reflect.Manifest">Manifest</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Generic implementation of setFromAny that implements exactly what the doc for setFromAny specifies, using a Manifest to check types</p><div class="fullcomment"><div class="comment cmt"><p>Generic implementation of setFromAny that implements exactly what the doc for setFromAny specifies, using a Manifest to check types</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#helpAsHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="helpAsHtml:net.liftweb.common.Box[scala.xml.NodeSeq]"></a><a id="helpAsHtml:Box[NodeSeq]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#helpAsHtml:net.liftweb.common.Box[scala.xml.NodeSeq]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">helpAsHtml</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.xml.NodeSeq">NodeSeq</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#ignoreField_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ignoreField_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#ignoreField_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: ignoreField_$qmark" class="name">ignoreField_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Should the field be ignored by the OR Mapper?
+</p><div class="fullcomment"><div class="comment cmt"><p>Should the field be ignored by the OR Mapper?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#label" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="label:scala.xml.NodeSeq"></a><a id="label:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#label:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">label</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#noValueErrorMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="noValueErrorMessage:String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#noValueErrorMessage:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">noValueErrorMessage</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The error message used when the field value could not be set
+</p><div class="fullcomment"><div class="comment cmt"><p>The error message used when the field value could not be set
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#nodeToFieldError" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodeToFieldError(node:scala.xml.Node):List[net.liftweb.util.FieldError]"></a><a id="nodeToFieldError(Node):List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#nodeToFieldError(node:scala.xml.Node):List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodeToFieldError</span><span class="params">(<span name="node">node: <span class="extype" name="scala.xml.Node">Node</span></span>)</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#notOptionalErrorMessage" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notOptionalErrorMessage:String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#notOptionalErrorMessage:String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notOptionalErrorMessage</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The error message used when the field value must be set
+</p><div class="fullcomment"><div class="comment cmt"><p>The error message used when the field value must be set
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#obscure" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="obscure(in:TypedField.this.MyType):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="obscure(MyType):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#obscure(in:TypedField.this.MyType):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">obscure</span><span class="params">(<span name="in">in: <a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a></span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#optional_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="optional_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#optional_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: optional_$qmark" class="name">optional_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Is the value of this field optional (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Is the value of this field optional (e.g. NULLable)?
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.Settable#performAtomicOperation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="performAtomicOperation[T](f:=&gt;T):T"></a><a id="performAtomicOperation[T](⇒T):T"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#performAtomicOperation[T](f:=&gt;T):T" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">performAtomicOperation</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>)</span><span class="result">: <span class="extype" name="net.liftweb.util.Settable.performAtomicOperation.T">T</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Perform an atomic operation on the Settable.</p><div class="fullcomment"><div class="comment cmt"><p>Perform an atomic operation on the Settable. By default
+synchronizes the instance, but it could use other mechanisms
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#required_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="required_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#required_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: required_$qmark" class="name">required_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Is the Field required (and will have a style designating it as such)
+</p><div class="fullcomment"><div class="comment cmt"><p>Is the Field required (and will have a style designating it as such)
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#resetDirty" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resetDirty:Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#resetDirty:Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resetDirty</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#runFilters" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runFilters(in:net.liftweb.common.Box[TypedField.this.MyType],filter:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="runFilters(Box[MyType],List[(Box[MyType])⇒Box[MyType]]):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#runFilters(in:net.liftweb.common.Box[TypedField.this.MyType],filter:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runFilters</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>, <span name="filter">filter: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]) ⇒ <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]]</span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#runValidation" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runValidation(in:net.liftweb.common.Box[TypedField.this.MyType]):List[net.liftweb.util.FieldError]"></a><a id="runValidation(Box[MyType]):List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#runValidation(in:net.liftweb.common.Box[TypedField.this.MyType]):List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runValidation</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Helper function that does validation of a value by using the validators specified for the field</p><div class="fullcomment"><div class="comment cmt"><p>Helper function that does validation of a value by using the validators specified for the field</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#safe_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="safe_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#safe_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: safe_$qmark" class="name">safe_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setBox" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setBox(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="setBox(Box[MyType]):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#setBox(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setBox</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFilter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFilter:List[TypedField.this.ValueType=&gt;TypedField.this.ValueType]"></a><a id="setFilter:List[(ValueType)⇒ValueType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#setFilter:List[TypedField.this.ValueType=&gt;TypedField.this.ValueType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFilter</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a>) ⇒ <a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A list of functions that transform the value before it is set.</p><div class="fullcomment"><div class="comment cmt"><p>A list of functions that transform the value before it is set.  The transformations
+are also applied before the value is used in a query.  Typical applications
+of this are trimming and/or toLowerCase-ing strings
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFilterBox" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFilterBox:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]"></a><a id="setFilterBox:List[(Box[MyType])⇒Box[MyType]]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#setFilterBox:List[net.liftweb.common.Box[TypedField.this.MyType]=&gt;net.liftweb.common.Box[TypedField.this.MyType]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFilterBox</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[(<a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]) ⇒ <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">A list of functions that transform the value before it is set.</p><div class="fullcomment"><div class="comment cmt"><p>A list of functions that transform the value before it is set.  The transformations
+are also applied before the value is used in a query.  Typical applications
+of this are trimming and/or toLowerCase-ing strings
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#setFromJString" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setFromJString(jvalue:net.liftweb.json.JsonAST.JValue)(decode:String=&gt;net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="setFromJString(JValue)((String)⇒Box[MyType]):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#setFromJString(jvalue:net.liftweb.json.JsonAST.JValue)(decode:String=&gt;net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setFromJString</span><span class="params">(<span name="jvalue">jvalue: <a href="../../json/JsonAST$$JValue.html" class="extype" name="net.liftweb.json.JsonAST.JValue">JValue</a></span>)</span><span class="params">(<span name="decode">decode: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Helper for implementing setFromJValue for a conversion from an encoded JString
+</p><div class="fullcomment"><div class="comment cmt"><p>Helper for implementing setFromJValue for a conversion from an encoded JString
+</p></div><dl class="paramcmts block"><dt class="param">decode</dt><dd class="cmt"><p>function to try and transform a String into a field value</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#set_!" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="set_!(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="set_!(Box[MyType]):Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#set_!(in:net.liftweb.common.Box[TypedField.this.MyType]):net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: set_$bang" class="name">set_!</span><span class="params">(<span name="in">in: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>)</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.ReadableField#shouldDisplay_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="shouldDisplay_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#shouldDisplay_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: shouldDisplay_$qmark" class="name">shouldDisplay_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Given the current context, should this field be displayed
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the current context, should this field be displayed
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#show_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="show_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#show_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: show_$qmark" class="name">show_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Given the current state of things, should this field be shown
+</p><div class="fullcomment"><div class="comment cmt"><p>Given the current state of things, should this field be shown
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#tabIndex" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tabIndex:Int"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#tabIndex:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tabIndex</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#toXHtml" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toXHtml:scala.xml.NodeSeq"></a><a id="toXHtml:NodeSeq"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#toXHtml:scala.xml.NodeSeq" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toXHtml</span><span class="result">: <span class="extype" name="scala.xml.NodeSeq">NodeSeq</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Convert the field value to an XHTML representation
+</p><div class="fullcomment"><div class="comment cmt"><p>Convert the field value to an XHTML representation
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.BaseField#uniqueFieldId" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uniqueFieldId:net.liftweb.common.Box[String]"></a><a id="uniqueFieldId:Box[String]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#uniqueFieldId:net.liftweb.common.Box[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">uniqueFieldId</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a> → <a href="../../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a></dd></dl></div>
+    </li><li name="net.liftweb.util.SettableField#uploadField_?" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="uploadField_?:Boolean"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#uploadField_?:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: uploadField_$qmark" class="name">uploadField_?</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Is this an upload field so that a form that includes this field must be multi-part mime
+</p><div class="fullcomment"><div class="comment cmt"><p>Is this an upload field so that a form that includes this field must be multi-part mime
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#validate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validate:List[net.liftweb.util.FieldError]"></a><a id="validate:List[FieldError]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#validate:List[net.liftweb.util.FieldError]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validate</span><span class="result">: <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Validate this field's setting, returning any errors found</p><div class="fullcomment"><div class="comment cmt"><p>Validate this field's setting, returning any errors found</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.field.EmailTypedField#validations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="validations:List[EmailTypedField.this.ValueType=&gt;List[net.liftweb.util.FieldError]]"></a><a id="validations:List[(ValueType)⇒List[FieldError]]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#validations:List[EmailTypedField.this.ValueType=&gt;List[net.liftweb.util.FieldError]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">validations</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.collection.immutable.List" class="extype" name="scala.collection.immutable.List">List</a>[(<a href="#ValueType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.ValueType">ValueType</a>) ⇒ <a href="../../../../scala/index.html#List[+A]=List[A]" class="extmbr" name="scala.List">List</a>[<a href="../../util/FieldError.html" class="extype" name="net.liftweb.util.FieldError">FieldError</a>]]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="net.liftweb.record.field.EmailTypedField">EmailTypedField</a> → <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a> → <a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></dd></dl></div>
+    </li><li name="net.liftweb.record.TypedField#valueBox" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="valueBox:net.liftweb.common.Box[TypedField.this.MyType]"></a><a id="valueBox:Box[MyType]"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#valueBox:net.liftweb.common.Box[TypedField.this.MyType]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">valueBox</span><span class="result">: <a href="../../common/Box.html" class="extype" name="net.liftweb.common.Box">Box</a>[<a href="#MyType=ThisType" class="extmbr" name="net.liftweb.record.field.EmailTypedField.MyType">MyType</a>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../../../net/liftweb/record/field/EmailTypedField.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="net.liftweb.record.TypedField">
+              <h3>Inherited from <a href="../TypedField.html" class="extype" name="net.liftweb.record.TypedField">TypedField</a>[<span class="extype" name="scala.Predef.String">String</span>]</h3>
+            </div><div class="parent" name="net.liftweb.record.BaseField">
+              <h3>Inherited from <a href="../BaseField.html" class="extype" name="net.liftweb.record.BaseField">BaseField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.BaseField">
+              <h3>Inherited from <a href="../../util/BaseField.html" class="extype" name="net.liftweb.util.BaseField">util.BaseField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.FieldContainer">
+              <h3>Inherited from <a href="../../util/FieldContainer.html" class="extype" name="net.liftweb.util.FieldContainer">FieldContainer</a></h3>
+            </div><div class="parent" name="net.liftweb.util.SettableField">
+              <h3>Inherited from <a href="../../util/SettableField.html" class="extype" name="net.liftweb.util.SettableField">SettableField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.SettableValueHolder">
+              <h3>Inherited from <a href="../../util/SettableValueHolder.html" class="extype" name="net.liftweb.util.SettableValueHolder">SettableValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Settable">
+              <h3>Inherited from <a href="../../util/Settable.html" class="extype" name="net.liftweb.util.Settable">Settable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ReadableField">
+              <h3>Inherited from <a href="../../util/ReadableField.html" class="extype" name="net.liftweb.util.ReadableField">ReadableField</a></h3>
+            </div><div class="parent" name="net.liftweb.util.Bindable">
+              <h3>Inherited from <a href="../../util/Bindable.html" class="extype" name="net.liftweb.util.Bindable">Bindable</a></h3>
+            </div><div class="parent" name="net.liftweb.util.ValueHolder">
+              <h3>Inherited from <a href="../../util/ValueHolder.html" class="extype" name="net.liftweb.util.ValueHolder">ValueHolder</a></h3>
+            </div><div class="parent" name="net.liftweb.util.FieldIdentifier">
+              <h3>Inherited from <a href="../../util/FieldIdentifier.html" class="extype" name="net.liftweb.util.FieldIdentifier">FieldIdentifier</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="../../../../scala/index.html#AnyRef=Object" class="extmbr" name="scala.AnyRef">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
