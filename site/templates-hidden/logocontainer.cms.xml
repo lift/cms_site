@@ -32,7 +32,7 @@
 
 							<div class="gradient-panel">
 								<h3>
-									<a href="http://liftweb.com">Flying Commercial</a>
+									Flying Commercial
 								</h3>
 								<p><strong>Get professional Lift support and consulting from the Lift committers.</strong></p>
 							</div>
@@ -86,14 +86,12 @@
 								
 									<div class="logo">
 										<a href="http://snapsort.com">
-<!-- 										    src="http://static.liftweb.com/logo-snapsort.gif" -->
 											<img height="50" 
 											    src="/images/comp-logo/snapsort.png"
 												alt="Snapsort" />
 										</a>
 									</div>
 									<div class="logo">
-<!-- 									src="http://static.liftweb.com/logo-innovation.gif" -->
 										<a href="http://innovationgames.com">
 											<img height="50" 
 											    src="/images/comp-logo/innovation_games.png"
@@ -101,7 +99,6 @@
 										</a>
 									</div>
 									<div class="logo">
-<!-- 									src="http://static.liftweb.com/t8-webware-logo.gif" -->
 										<a href="https://banno.com/">
 											<img height="50"  
 											    src="/images/comp-logo/banno.png"
@@ -109,7 +106,6 @@
 										</a>
 									</div>
 									<div class="logo">
-<!-- 									src="http://static.liftweb.com/logo-underscore.gif" -->
 										<a href="http://underscore.io">
 											<img height="50"
 											    src="/images/comp-logo/underscore.png"
@@ -183,7 +179,6 @@
 
 								</lift:choose>
 								<div class="logo" style="margin-right: 0px;">
-<!-- 								    src="http://static.liftweb.com/logo-foursquare.gif" -->
 									<a href="http://foursquare.com">
 										<img src="/images/comp-logo/foursquare.png"
 											alt="Foursquare" />
