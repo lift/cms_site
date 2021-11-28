@@ -70,9 +70,6 @@
 	  
 	</li>
 	<li>
-	  <a class="URL" href="http://demo.liftweb.net/invoice_wiring">Wiring</a>: Spreadsheets meet web application yielding an automatic mechanism for updating dependent elements on a page, making it even easier to build dynamic apps with Lift
-	</li>
-	<li>
 	  Wizard and Screen Improvements: Build complex screens more easily with new helper methods for creating form elements and improved life-cycle callbacks
 	</li>
 	<li>

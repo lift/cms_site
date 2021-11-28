@@ -26,9 +26,7 @@
 								Lift is the most powerful, most secure web framework available
 								today.
 								There are
-								<a id="lift-7tt" title="Lift has 7 things that are hard or impossible in other web frameworks. Click to find out more..." href="http://seventhings.liftweb.net">
 								Seven Things
-								</a>
 								that distinguish Lift from other web frameworks.
 								
 							</p>
@@ -64,9 +62,6 @@
 							<p>Lift open source software licensed under an Apache 2.0
 								license.</p>
 
-							<p>
-								<a href="http://demo.liftweb.net">See a Demo</a>
-							</p>
 
 							<p>Because Lift applications are written in Scala, an elegant JVM
 								language, you can still use your favorite Java libraries and
